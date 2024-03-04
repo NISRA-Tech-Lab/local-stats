@@ -2,8 +2,10 @@
 	export const prerender = true;
 	// getData is a function in utils.js that goes to a url input and looks for a return of csv data
 	import { getData, adjectify } from "$lib/utils";
-	// a constant with 3 string app_inputs, search_data - the places.csv, app_json_data - json files for each area code (accessed via app_inputs.app_json_data),
-	// quantiles - not sure but not used in index currently
+	// a constant with 3 string app_inputs, 
+	// search_data - the places.csv, app_json_data
+	// json files for each area code (accessed via app_inputs.app_json_data)
+	// base
 	import { app_inputs } from "$lib/config";
 
 	// create a reference to the json for the current area to be loaded - called in the load() func below
@@ -64,6 +66,7 @@
 	import GroupChart from "$lib/chart/GroupChart.svelte";
 	import BarChart from "$lib/chart/BarChart.svelte";
 	import ProfileChart from "$lib/chart/ProfileChart.svelte";
+	// not called - needed?
 	import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
 	import ScrollToTop from "$lib/ui/scroll.svelte";
     import { LayerCake } from "layercake";
@@ -302,7 +305,10 @@
 		content="Explore NISRA Statistics for {place.name}."
 	/>
 </svelte:head>
+
+<!-- Scroll to top footer -->
 <ScrollToTop />
+
 <Section column="wide">
 	{#if place && ni}
 		<div class="grid mtl">
@@ -380,10 +386,6 @@
 					/>
 
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
-
-					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
-					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
-					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 					<script>
 						// Share button
 						// Possible tooltip: https://stackoverflow.com/questions/37798967/tooltip-on-click-of-a-button
@@ -426,8 +428,7 @@
 						})(this, this.document);
 					</script>
 
-					<!-- 			<button style="cursor: pointer; background-image: url('https://icons.getbootstrap.com/assets/icons/share.svg'); float: right; margin-top: 5px; margin-left: 8px; background-color: transparent !important; background-size: cover; width: 30px; height: 30px; border: 0" type="share"></button>
- -->
+					<!--<button style="cursor: pointer; background-image: url('https://icons.getbootstrap.com/assets/icons/share.svg'); float: right; margin-top: 5px; margin-left: 8px; background-color: transparent !important; background-size: cover; width: 30px; height: 30px; border: 0" type="share"></button>-->
 					<div width="100%">
 						<button
 							class="btn"
@@ -682,11 +683,9 @@
 				{/if}
 			</div>
 		</div>
-		<!-- a19e9e -->
 		<div class="grid mt" bind:clientWidth={w}>
 			<div style="grid-column: span {cols};">
 				<h3>
-					<!-- Explore <span style="color: #93328E">{place.name}</span> -->
 					{#if place.type != "ni"}
 						Explore <span style="color: #93328E">{place.name}</span>
 						<span style="color: #a19e9e"
