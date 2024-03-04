@@ -69,6 +69,7 @@
 	// not called - needed?
 	import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
 	import ScrollToTop from "$lib/ui/scroll.svelte";
+	// not called - needed?
     import { LayerCake } from "layercake";
 
 	export let search_data, place, ni;
@@ -390,6 +391,7 @@
 						// Share button
 						// Possible tooltip: https://stackoverflow.com/questions/37798967/tooltip-on-click-of-a-button
 
+						// could these functions be moved to utils?
 						function copyToClipboard(text) {
 							var inputc = document.body.appendChild(
 								document.createElement("input"),
@@ -456,7 +458,10 @@
 			</div>
 		</div>
 
+
+		<!-- first grid - overview - population - households -->
 		<div id="grid" class="grid mt">
+			<!-- Overview -->
 			<div class="div-grey-box" style="line-height: 1.3;">
 				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
 					Overview - box with words
@@ -511,6 +516,7 @@
 					{/if}
 				{/if}
 			</div>
+			<!-- Population -->
 			<div class="div-grey-box">
 				<div
 					class="row"
@@ -612,6 +618,7 @@
 					>
 				{/if}
 			</div>
+			<!-- Households -->
 			<div class="div-grey-box">
 				<div
 					class="row"
@@ -683,7 +690,11 @@
 				{/if}
 			</div>
 		</div>
+
+
+		<!-- Map grid -->
 		<div class="grid mt" bind:clientWidth={w}>
+			<!-- Map title -->
 			<div style="grid-column: span {cols};">
 				<h3>
 					{#if place.type != "ni"}
@@ -696,6 +707,7 @@
 					{/if}
 				</h3>
 			</div>
+			<!-- Map -->
 			<div
 				id="map"
 				style="padding-right: 45px; grid-column: span {cols == 2
@@ -774,6 +786,9 @@
 					{/each}
 				</Map>
 			</div>
+
+			<!-- NEEDED? -->
+
 			<!-- OPTION 1 a list of LGDs - probably only suitable for LGD data only -->
 			<!-- 			<div>
 				<span>
@@ -816,6 +831,8 @@
 				>
 			</div> -->
 			<!-- OPTION 2 like original app navigation to RHS of map -->
+			
+			<!-- Area list -->
 			<div>
 				{#if place.parents[0]}
 					<span class="text-bold">Parents of {place.name} </span><br
@@ -861,6 +878,7 @@
 			</div>
 		</div>
 
+		
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
 			<div class="accordion-item">
