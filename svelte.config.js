@@ -12,14 +12,10 @@ const config = {
 			assets: 'build',
 			fallback: '404.html'
 		}),
-		prerender: {
-				entries: []
-		},
 		paths: {
 				assets: production ? 'https://mairebrolly.github.io/nisra-explorer' : '',
 				base: production ? '/nisra-explorer' : ''
-		},
-		trailingSlash: 'always'
+		}
 	}
 };
 
