@@ -18,8 +18,7 @@ const config = {
 		paths: {
 				assets: production ? 'https://mairebrolly.github.io/nisra-explorer' : '',
 				base: production ? '/nisra-explorer' : ''
-		},
-		trailingSlash: 'always'
+		}
 	}
 };
 
