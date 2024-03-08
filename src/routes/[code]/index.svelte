@@ -71,6 +71,7 @@
 	import ScrollToTop from "$lib/ui/scroll.svelte";
 	// not called - needed?
     import { LayerCake } from "layercake";
+    import { text } from "svelte/internal";
 
 	export let search_data, place, ni;
 
@@ -289,6 +290,23 @@
 
 		
 	// $: place.type = place.type;
+
+	let i_button_info = {
+		location: "Information about the area including its geographical hierarchy.",
+		area: "Area is measured in hectares (ha), it is rounded to the nearest whole number.",
+		popden: "Population density is the number of usual residents per hectare. It is rounded to 1 d.p."
+	}
+
+	function i_button_text(id) {
+
+		return '<div class="collapse s-OrSHbitiAkZX" id="' + id + '-info">' +
+		'<div class="card card-body s-OrSHbitiAkZX">' +
+			i_button_info[id] +
+			'</div>' +
+			'</div>'
+
+	}
+
 </script>
 
 <svelte:head>
@@ -527,10 +545,7 @@
 					aria-controls="pop-info"
 				>
 					<div class="blocktitle" style="margin: 0; width: 100%">
-						Population - box with numbers<span
-							style="color: gray; font-size: 14pt;"
-							>{@html " &#x24D8; "}
-						</span>
+						Population - box with numbers<span class = "i-button"></span>
 					</div>
 				</div>
 				<div class="collapse" id="pop-info">
@@ -629,10 +644,7 @@
 					aria-controls="households-info"
 				>
 					<div class="blocktitle" style="margin: 0; width: 100%">
-						Households - box with numbers<span
-							style="color: gray; font-size: 14pt;"
-							>{@html " &#x24D8; "}</span
-						>
+						Households - box with numbers<span class = "i-button"></span>
 					</div>
 				</div>
 				<div class="collapse" id="households-info">
@@ -927,18 +939,10 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Location<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Location<span class = "i-button"></span>
 									</div>
 								</div>
-								<div class="collapse" id="location-info">
-									<div class="card card-body">
-										Information about the area including its
-										geographical hierarchy.
-									</div>
-								</div>
+								{@html i_button_text("location")}
 								<br
 								/>{#if (place.type != "ni") & (place.type != "lgd")}
 									{place.name} is one of {place.count.toLocaleString()}
@@ -968,25 +972,19 @@
 									class="row"
 									style="display: flex; cursor: pointer;"
 									data-bs-toggle="collapse"
-									data-bs-target="#Area-info"
+									data-bs-target="#area-info"
 									aria-expanded="false"
-									aria-controls="Area-info"
+									aria-controls="area-info"
 								>
 									<div
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Area <span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Area <span class = "i-button"></span>
 									</div>
 								</div>
-								<div class="collapse" id="Area-info">
-									<div class="card card-body">
-										Area is measured in hectares (ha), it is
-										rounded to the nearest whole number.
-									</div>
+								<div class="collapse" id="area-info">
+									{@html i_button_text("area")}
 								</div>
 								<span class="text-big" style="font-size: 2.8em;"
 									>{place.hectares >= 0.1
@@ -1013,19 +1011,10 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Population density<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Population density<span class = "i-button"></span>
 									</div>
 								</div>
-								<div class="collapse" id="popden-info">
-									<div class="card card-body">
-										Population density is the number of
-										usual residents per hectare. It is
-										rounded to 1 d.p.
-									</div>
-								</div>
+								{@html i_button_text("popden")}
 								<span class="text-big" style="font-size: 2.8em;"
 									>{place.data.population.value["2021"].all /
 										place.hectares >=
@@ -1136,10 +1125,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Box of info<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Box of info<span class = "i-button"></span>
 									</div>
 								</div>
 								<div class="collapse" id="location-info">
@@ -1169,10 +1155,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Country of birth - Group chart<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Country of birth - Group chart<span class = "i-button"></span>
 									</div>
 								</div>
 								<div class="collapse" id="farms-info">
@@ -1214,10 +1197,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										COB - Profile chart<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										COB - Profile chart<span class = "i-button"></span>
 									</div>
 								</div>
 								<div class="collapse" id="cob1-info">
@@ -1251,10 +1231,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										COB - Bar chart<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										COB - Bar chart<span class = "i-button"></span>
 									</div>
 								</div>
 								<div class="collapse" id="cob-info">
@@ -1297,10 +1274,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Broad age bands (years) Col GroupChart<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Broad age bands (years) Col GroupChart<span class = "i-button"></span>
 									</div>
 								</div>
 								<div
@@ -1363,10 +1337,7 @@
 										class="blocktitle"
 										style="margin: 0; width: 100%"
 									>
-										Main language - Stacked bar<span
-											style="color: gray; font-size: 14pt;"
-											>{@html " &#x24D8; "}</span
-										>
+										Main language - Stacked bar<span class = "i-button"></span>
 									</div>
 								</div>
 								<div class="collapse" id="mainlang-info">
@@ -1593,10 +1564,7 @@
 											class="blocktitle"
 											style="margin: 0; width: 100%"
 										>
-											Male Life expectancy<span
-												style="color: gray; font-size: 14pt;"
-												>{@html " &#x24D8; "}
-											</span>
+											Male Life expectancy<span class = "i-button"></span>
 										</div>
 									</div>
 									<div class="collapse" id="le_m-info">
@@ -1639,10 +1607,7 @@
 											class="blocktitle"
 											style="margin: 0; width: 100%"
 										>
-											Female Life expectancy<span
-												style="color: gray; font-size: 14pt;"
-												>{@html " &#x24D8; "}
-											</span>
+											Female Life expectancy<span class = "i-button"></span>
 										</div>
 									</div>
 									<div class="collapse" id="le_f-info">
@@ -1689,10 +1654,7 @@
 											class="blocktitle"
 											style="margin: 0; width: 100%"
 										>
-											Number of dental registrations<span
-												style="color: gray; font-size: 14pt;"
-												>{@html " &#x24D8; "}
-											</span>
+											Number of dental registrations<span class = "i-button"></span>
 										</div>
 									</div>
 									<div class="collapse" id="dentalreg-info">
@@ -1875,10 +1837,7 @@
 											class="blocktitle"
 											style="margin: 0; width: 100%"
 										>
-											Benefits claimants <span
-												style="color: gray; font-size: 14pt;"
-												>{@html " &#x24D8; "}
-											</span>
+											Benefits claimants <span class = "i-button"></span>
 										</div>
 									</div>
 									<div class="collapse" id="dentalreg-info">
