@@ -72,6 +72,7 @@
 	// not called - needed?
     import { LayerCake } from "layercake";
     import { text } from "svelte/internal";
+	import IButtons from "$lib/layout/IButtons.svelte";
 
 	export let search_data, place, ni;
 
@@ -291,21 +292,9 @@
 		
 	// $: place.type = place.type;
 
-	let i_button_info = {
-		location: "Information about the area including its geographical hierarchy.",
-		area: "Area is measured in hectares (ha), it is rounded to the nearest whole number.",
-		popden: "Population density is the number of usual residents per hectare. It is rounded to 1 d.p."
-	}
+	
 
-	function i_button_text(id) {
-
-		return '<div class="collapse s-OrSHbitiAkZX" id="' + id + '-info">' +
-		'<div class="card card-body s-OrSHbitiAkZX">' +
-			i_button_info[id] +
-			'</div>' +
-			'</div>'
-
-	}
+	
 
 </script>
 
@@ -536,31 +525,7 @@
 			</div>
 			<!-- Population -->
 			<div class="div-grey-box">
-				<div
-					class="row"
-					style="display: flex; cursor: pointer;"
-					data-bs-toggle="collapse"
-					data-bs-target="#pop-info"
-					aria-expanded="false"
-					aria-controls="pop-info"
-				>
-					<div class="blocktitle" style="margin: 0; width: 100%">
-						Population - box with numbers<span class = "i-button"></span>
-					</div>
-				</div>
-				<div class="collapse" id="pop-info">
-					<div class="card card-body">
-						Population is based on the number of usual residents. A
-						usual resident is anyone who, on 21 March 2021 is in the
-						UK, and staying in the UK for a period of 3 months or
-						more; or has a permanent UK address and is outside the
-						UK and is staying outside the UK for less than 12
-						months. <a
-							href="https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins"
-							><strong>Statistical bulletins</strong></a
-						>
-					</div>
-				</div>
+				<IButtons id = "pop" place = {place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{place.data.population.value[
 						"2021"
@@ -635,29 +600,7 @@
 			</div>
 			<!-- Households -->
 			<div class="div-grey-box">
-				<div
-					class="row"
-					style="display: flex; cursor: pointer;"
-					data-bs-toggle="collapse"
-					data-bs-target="#households-info"
-					aria-expanded="false"
-					aria-controls="households-info"
-				>
-					<div class="blocktitle" style="margin: 0; width: 100%">
-						Households - box with numbers<span class = "i-button"></span>
-					</div>
-				</div>
-				<div class="collapse" id="households-info">
-					<div class="card card-body">
-						A household is either one person living alone or a group
-						of people living at the same address who share cooking
-						facilities and share a living room, sitting room or
-						dining area. <a
-							href="https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins"
-							><strong>Statistical bulletins</strong></a
-						>
-					</div>
-				</div>
+				<IButtons id = "households" place = {place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{place.data.households.value[
 						"2021"
@@ -927,22 +870,7 @@
 
 						<div class="grid mt" bind:clientWidth={w}>
 							<div class="div-grey-box" style="line-height: 1.3;">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#location-info"
-									aria-expanded="false"
-									aria-controls="location-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Location<span class = "i-button"></span>
-									</div>
-								</div>
-								{@html i_button_text("location")}
+								<IButtons id = "location" place = {place}/>
 								<br
 								/>{#if (place.type != "ni") & (place.type != "lgd")}
 									{place.name} is one of {place.count.toLocaleString()}
@@ -968,24 +896,7 @@
 								{/if}
 							</div>
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#area-info"
-									aria-expanded="false"
-									aria-controls="area-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Area <span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="area-info">
-									{@html i_button_text("area")}
-								</div>
+								<IButtons id = "area" place = {place}/>
 								<span class="text-big" style="font-size: 2.8em;"
 									>{place.hectares >= 0.1
 										? place.hectares.toLocaleString(
@@ -999,22 +910,7 @@
 								</span>
 							</div>
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#popden-info"
-									aria-expanded="false"
-									aria-controls="popden-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Population density<span class = "i-button"></span>
-									</div>
-								</div>
-								{@html i_button_text("popden")}
+								<IButtons id = "popden" place = {place}/>
 								<span class="text-big" style="font-size: 2.8em;"
 									>{place.data.population.value["2021"].all /
 										place.hectares >=
@@ -1113,27 +1009,7 @@
 								class="div-grey-box"
 								style="line-height: 1.3;"
 							>
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#location-info"
-									aria-expanded="false"
-									aria-controls="location-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Box of info<span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="location-info">
-									<div class="card card-body">
-										Information about the area including
-										its geographical hierarchy.
-									</div>
-								</div>
+								<IButtons id = "location" place = {place}/>
 								<div>
 									<span
 										class="text-big"
@@ -1143,34 +1019,7 @@
 								</div>
 							</div>
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#farms-info"
-									aria-expanded="false"
-									aria-controls="farms-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Country of birth - Group chart<span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="farms-info">
-									<div class="card card-body">
-										Publication : <a
-											href="https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023"
-											><strong>Farm Census</strong></a
-										>
-										Data portal :
-										<a
-											href="https://data.nisra.gov.uk/table/FCDEA"
-											><strong>Farm Census</strong></a
-										>
-									</div>
-								</div>
+								<IButtons id = "farms" place = {place}/>
 
 							{#if comp_none || (comp_ni && place.type == "ni")}
 								<GroupChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1185,26 +1034,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#cob1-info"
-									aria-expanded="false"
-									aria-controls="cob1-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										COB - Profile chart<span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="cob1-info">
-									<div class="card card-body">
-		
-									</div>
-								</div>
+								<IButtons id = "cob1" place = {place}/>
 
 							{#if comp_none || (comp_ni && place.type == "ni")}
 								<ProfileChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1219,34 +1049,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#cob-info"
-									aria-expanded="false"
-									aria-controls="cob-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										COB - Bar chart<span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="cob-info">
-									<div class="card card-body">
-										Publication : <a
-											href="https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023"
-											><strong>Farm Census</strong></a
-										>
-										Data portal :
-										<a
-											href="https://data.nisra.gov.uk/table/FCDEA"
-											><strong>Farm Census</strong></a
-										>
-									</div>
-								</div>
+								<IButtons id = "cob" place = {place}/>
 
 								{#if comp_none || (comp_ni && place.type == "ni")}
 								<BarChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1262,37 +1065,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#broadagebands-info"
-									aria-expanded="false"
-									aria-controls="broadagebands-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Broad age bands (years) Col GroupChart<span class = "i-button"></span>
-									</div>
-								</div>
-								<div
-									class="collapse"
-									id="broadagebands-info"
-								>
-									<div class="card card-body">
-										A grouping of ages where a person’s
-										age is their age at their last
-										birthday on or prior to census day. <a
-											href="https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins"
-											><strong
-												>Statistical bulletins</strong
-											></a
-										>
-									</div>
-								</div>
-
+								<IButtons id = "broadagebands" place = {place}/>
 								<div
 									class="chart"
 									style="height: 100px; padding-bottom: 5px"
@@ -1325,34 +1098,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<div
-									class="row"
-									style="display: flex; cursor: pointer;"
-									data-bs-toggle="collapse"
-									data-bs-target="#mainlang-info"
-									aria-expanded="false"
-									aria-controls="mainlang-info"
-								>
-									<div
-										class="blocktitle"
-										style="margin: 0; width: 100%"
-									>
-										Main language - Stacked bar<span class = "i-button"></span>
-									</div>
-								</div>
-								<div class="collapse" id="mainlang-info">
-									<div class="card card-body">
-										Person's main language as declared
-										in the Census. Statistics for all
-										language questions are restricted to
-										persons aged 3 and over. <a
-											href="https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins"
-											><strong
-												>Statistical bulletins</strong
-											></a
-										>
-									</div>
-								</div>
+								<IButtons id = "mainlang" place = {place}/>
 							{#if place.type != "dea"}
 								<StackedBarChart
 								data={place && makeData_year(["mainlang"],["2011"],["2021"])}
@@ -1552,33 +1298,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<div
-										class="row"
-										style="display: flex; cursor: pointer;"
-										data-bs-toggle="collapse"
-										data-bs-target="#le_m-info"
-										aria-expanded="false"
-										aria-controls="le_m-info"
-									>
-										<div
-											class="blocktitle"
-											style="margin: 0; width: 100%"
-										>
-											Male Life expectancy<span class = "i-button"></span>
-										</div>
-									</div>
-									<div class="collapse" id="le_m-info">
-										<div class="card card-body">
-											<a href="mailto:{place.meta_data.LE.email}">Email for more information</a>
-											Last updated: {place.meta_data.LE
-												.last_updated}
-										Access data at: <a href="{place.meta_data.LE
-											.dataset_url}">{place.meta_data.LE.title} </a
-										>
-
-	
-										</div>
-									</div>
+									<IButtons id = "le_m" place = {place}/>
 									
 									<span class="text-big" style="font-size: 2.8em; color: black">
 										{place.data["LE"].value["2019-21"].LEbirth_gender2.toLocaleString()}</span>
@@ -1595,31 +1315,7 @@
 
 								</div>
 								<div class="div-grey-box">
-									<div
-										class="row"
-										style="display: flex; cursor: pointer;"
-										data-bs-toggle="collapse"
-										data-bs-target="#le_f-info"
-										aria-expanded="false"
-										aria-controls="le_f-info"
-									>
-										<div
-											class="blocktitle"
-											style="margin: 0; width: 100%"
-										>
-											Female Life expectancy<span class = "i-button"></span>
-										</div>
-									</div>
-									<div class="collapse" id="le_f-info">
-										<div class="card card-body">
-											<a href="mailto:{place.meta_data.LE.email}">Email for more information</a>
-											Last updated: {place.meta_data.LE
-												.last_updated}
-										Access data at: <a href="{place.meta_data.LE
-											.dataset_url}">{place.meta_data.LE.title} </a
-										></div>
-									
-								</div>
+									<IButtons id = "le_f" place = {place}/>
 
 								<span class="text-big" style="font-size: 2.8em; color: black">
 									{place.data["LE"].value["2019-21"].LEbirth_gender1.toLocaleString()}</span>
@@ -1642,33 +1338,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<div
-										class="row"
-										style="display: flex; cursor: pointer;"
-										data-bs-toggle="collapse"
-										data-bs-target="#dentalreg-info"
-										aria-expanded="false"
-										aria-controls="dentalreg-info"
-									>
-										<div
-											class="blocktitle"
-											style="margin: 0; width: 100%"
-										>
-											Number of dental registrations<span class = "i-button"></span>
-										</div>
-									</div>
-									<div class="collapse" id="dentalreg-info">
-										<div class="card card-body">
-											<a href="mailto:{place.meta_data.FPSGDSDR.email}">Email for more information</a>
-											Last updated: {place.meta_data.FPSGDSDR
-												.last_updated}
-										Access data at: <a href="{place.meta_data.FPSGDSDR
-											.dataset_url}">{place.meta_data.FPSGDSDR.title} </a
-										>
-
-	
-										</div>
-									</div>
+									<IButtons id = "dentalreg" place = {place}/>
 									<span
 										class="text-big"
 										style="font-size: 2.8em; color: black">
@@ -1825,33 +1495,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<div
-										class="row"
-										style="display: flex; cursor: pointer;"
-										data-bs-toggle="collapse"
-										data-bs-target="#dentalreg-info"
-										aria-expanded="false"
-										aria-controls="dentalreg-info"
-									>
-										<div
-											class="blocktitle"
-											style="margin: 0; width: 100%"
-										>
-											Benefits claimants <span class = "i-button"></span>
-										</div>
-									</div>
-									<div class="collapse" id="dentalreg-info">
-										<div class="card card-body">
-											<a href="mailto:{place.meta_data.BS.email}">Email for more information</a>
-											Last updated: {place.meta_data.BS
-												.last_updated}
-										Access data at: <a href="{place.meta_data.BS
-											.dataset_url}">{place.meta_data.BS.title} </a
-										>
-
-	
-										</div>
-									</div>
+									<IButtons id = "dentalreg" place = {place}/>
 									<br>
 									Universal Credit  <span class="text-big" style="font-size: 1.4em; color: black">
 										{place.data["BS"].value["2022"].UC.toLocaleString()}</span>
