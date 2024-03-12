@@ -320,9 +320,12 @@
 <Section column="wide">
 	{#if place && ni}
 		<div class="grid mtl">
+			
+			
+			{#if place.code != "home"}
 			<div>
 				<span class="text-small">
-					<a href="{base}/" sveltekit:noscroll>Home</a
+					<a href="{base}/home" >Home</a
 					>{@html " &gt; "}
 					{#if place.parents[0]}
 						{#each [...place.parents].reverse() as parent, i}
@@ -379,7 +382,11 @@
 						>
 				</div>
 			</div>
-
+			{:else}
+			<div>This application contains key statistics for Northern Ireland, the 11 Local Government Districts and the areas within.  
+				It will be updated with new data, more topics and lower geographies as they become available.  
+			  </div>
+			  {/if}
 			<div>
 				<div
 					style="width: 350px; padding-top: 5px;"
@@ -438,6 +445,7 @@
 					</script>
 
 					<!--<button style="cursor: pointer; background-image: url('https://icons.getbootstrap.com/assets/icons/share.svg'); float: right; margin-top: 5px; margin-left: 8px; background-color: transparent !important; background-size: cover; width: 30px; height: 30px; border: 0" type="share"></button>-->
+					{#if place.code != "home"}
 					<div width="100%">
 						<button
 							class="btn"
@@ -461,10 +469,12 @@
 							>Share
 						</button>
 					</div>
+					{/if}
 				</div>
 			</div>
 		</div>
 
+		{#if place.code != "home"}
 
 		<!-- first grid - overview - population - households -->
 		<div id="grid" class="grid mt">
@@ -646,7 +656,7 @@
 			</div>
 		</div>
 
-
+		{/if}
 		<!-- Map grid -->
 		<div class="grid mt" bind:clientWidth={w}>
 			<!-- Map title -->
@@ -657,9 +667,26 @@
 						<span style="color: #a19e9e"
 							>- {geog_types[place.type].name}</span
 						>
-					{:else}
-						Explore <span style="color: #93328E">{place.name}</span>
-					{/if}
+					{:else if place.code == "home"}
+					
+					  Explore <span style="color: #93328E">{place.name}</span>
+						<br>Click on council name or on Map.
+						<ul style="font-size: 0.8em;">
+							<li><a href="{base}/N09000001">Antrim and Newtownabbey</a></li>
+							<li><a href="{base}/N09000011">Ards and North Down</a></li>
+							<li><a href="{base}/N09000002">Armagh City, Banbridge and Craigavon</a></li>
+							<li><a href="{base}/N09000003">Belfast</a></li>
+							<li><a href="{base}/N09000004">Causeway Coast and Glens</a></li>
+							<li><a href="{base}/N09000005">Derry City and Strabane</a></li>
+							<li><a href="{base}/N09000006">Fermanagh and Omagh</a></li>
+							<li><a href="{base}/N09000007">Lisburn and Castlereagh</a></li>
+							<li><a href="{base}/N09000008">Mid and East Antrim</a></li>
+							<li><a href="{base}/N09000009">Mid Ulster</a></li>
+							<li><a href="{base}/N09000010">Newry, Mourne and Down</a></li>
+						 </ul>
+						 {:else}
+						 Explore <span style="color: #93328E">{place.name}</span>
+						 {/if}
 				</h3>
 			</div>
 			<!-- Map -->
@@ -744,47 +771,9 @@
 
 			<!-- NEEDED? -->
 
-			<!-- OPTION 1 a list of LGDs - probably only suitable for LGD data only -->
-			<!-- 			<div>
-				<span>
-					{#if place.parents[0]}
-						{#each [...place.parents].reverse() as parent, i}
-							<span>{place.name} is located in </span><span
-								class="text-bold"
-								><a
-									href="{base}/{parent.code}/"
-									sveltekit:noscroll>{parent.name}</a
-								></span
-							>
-						{/each}
-					{/if}
-				</span>
-			</div>
-			<div>
-				<span
-					><ul style="padding-left:0;">
-						{#if ni.children[0]}
-							<span class="text-bold"
-								>Districts within Northern Ireland</span
-							><br />
-							{#each ni.children as child, i}
-								<li
-									style="margin: 3px; display: block; line-height: 20px; padding-bottom: 5px"
-								>
-									<a
-										href="{base}/{child.code}/"
-										sveltekit:noscroll>{child.name}</a
-									>{i < ni.children.length - 1 ? "" : ""}
-								</li>
-							{/each}
-						{:else}
-							<span class="muted"
-								>No areas within {place.name}</span
-							>
-						{/if}
-					</ul></span
-				>
-			</div> -->
+			{#if place.code != "home"}
+
+
 			<!-- OPTION 2 like original app navigation to RHS of map -->
 			
 			<!-- Area list -->
@@ -831,9 +820,10 @@
 					>
 				{/if}
 			</div>
+			{/if}
 		</div>
 
-		
+		{#if place.code != "home"}
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
 			<div class="accordion-item">
@@ -1859,6 +1849,7 @@
 
 
 		</div>
+		{/if}
 	{/if}
 </Section>
 

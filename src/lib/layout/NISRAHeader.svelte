@@ -20,7 +20,7 @@
 					{/if}
 				</picture>
 			</a>
-			
+			<span style="color: #93328E; font-size: 1.5em;"> Area Explorer</span>
 		</div>
 	</nav>
   
