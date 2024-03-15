@@ -72,7 +72,9 @@
 	// not called - needed?
     import { LayerCake } from "layercake";
     import { text } from "svelte/internal";
-	import IButtons from "$lib/layout/IButtons.svelte";
+	import IButton from "$lib/layout/IButton.svelte";
+	import Accordion from "$lib/layout/Accordion.svelte";
+	import GreyBox from "$lib/layout/GreyBox.svelte";
 
 	export let search_data, place, ni;
 
@@ -525,7 +527,7 @@
 			</div>
 			<!-- Population -->
 			<div class="div-grey-box">
-				<IButtons id = "pop" place = {place}/>
+				<IButton id = "pop" place = {place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{place.data.population.value[
 						"2021"
@@ -600,7 +602,7 @@
 			</div>
 			<!-- Households -->
 			<div class="div-grey-box">
-				<IButtons id = "households" place = {place}/>
+				<IButton id = "households" place = {place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{place.data.households.value[
 						"2021"
@@ -836,127 +838,36 @@
 		
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingZero">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseZero"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseZero"
-					>
-						<span class="accordion-button-title">
-							<img
-								src="{base}/img/map.png"
-								alt="logo"
-								height="40"
-								class="accordion-dept-logo"
-							/>
-							Area Information</span
-						>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseZero"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingZero"
-				>
-					<div class="accordion-body">
-						Area - {place.name} -
-						<span class="accordion-button-title-sub"
-							>Location, Area and Population density</span
-						>
 
-						<div class="grid mt" bind:clientWidth={w}>
-							<div class="div-grey-box" style="line-height: 1.3;">
-								<IButtons id = "location" place = {place}/>
-								<br
-								/>{#if (place.type != "ni") & (place.type != "lgd")}
-									{place.name} is one of {place.count.toLocaleString()}
-									{geog_types[place.type].pl}. It is located
-									within {place.parents[0].name}
-									{geog_types[place.parents[0].type].name}.
-								{:else if (place.type != "ni") & (place.type == "lgd")}
-									{place.name} is one of {place.count.toLocaleString()}
-									{geog_types[place.type].pl}. It is located
-									within {place.parents[0].name}.
-
-									<!--and is {(place.hectares.toLocaleString())} hectares in size-->
-									<!--
-							{#if place.type != "lgd"}
-							It has {place.data.population.value_rank["2021"].all > place.count * 0.333 && place.data.population.value_rank["2021"].all < place.count * 0.667 ? "an average size "
-							 : place.data.population.value_rank["2021"].all < place.count * 0.333 ? "a large "
-								: "a small "}  {geog_types[place.type].name} population.
-							{/if}-->
-								{:else}
-									{place.name} contains 11 Local Goverment Districts,
-									80 District Electoral Areas, 850 Super Data Zones
-									and 3780 Data Zones.
-								{/if}
-							</div>
-							<div class="div-grey-box">
-								<IButtons id = "area" place = {place}/>
-								<span class="text-big" style="font-size: 2.8em;"
-									>{place.hectares >= 0.1
-										? place.hectares.toLocaleString(
-												undefined,
-												{
-													minimumFractionDigits: 0,
-													maximumFractionDigits: 0,
-												},
-											)
-										: "<0.1"} ha
-								</span>
-							</div>
-							<div class="div-grey-box">
-								<IButtons id = "popden" place = {place}/>
-								<span class="text-big" style="font-size: 2.8em;"
-									>{place.data.population.value["2021"].all /
-										place.hectares >=
-									0.1
-										? (
-												place.data.population.value[
-													"2021"
-												].all / place.hectares
-											).toFixed(1)
-										: "<0.1"}
-								</span>
-								{#if place.type != "ni" && comp_ni}
-									<br />
-									<span class="text-small"
-										>{place.data.population.value["2021"]
-											.all /
-											place.hectares >
-										(ni.data.population.value["2021"].all /
-											ni.hectares) *
-											1.1
-											? "Higher than Northern Ireland value of "
-											: place.data.population.value[
-														"2021"
-												  ].all /
-														place.hectares <
-												  (ni.data.population.value[
-														"2021"
-												  ].all /
-														ni.hectares) *
-														0.9
-												? "Lower than Northern Ireland value of "
-												: "Similar to the Northern Ireland value of "}
-										{(
-											ni.data.population.value["2021"]
-												.all / ni.hectares
-										).toFixed(1)} persons per hectare</span
-									>
-								{/if}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
+			<Accordion
+				id = "Area"
+				img = "map.png"
+				heading = "Area Information"
+				place = {place}
+				sub_heading = "Area"
+				description = "Location, Area and Population density"
+				grey_boxes = {{
+					box_0: {
+						id: "location",
+						style: "line-height: 1.3;",
+						content: {
+							ni: place.name + " contains 11 Local Goverment Districts, 80 District Electoral Areas, 850 Super Data Zones and 3,780 Data Zones.",
+							lgd: place.name + " is one of " + place.count.toLocaleString() + " " + geog_types.lgd.pl + ". It is located within " + place.parents[0].name + ".",
+							dea: place.name + " is one of " + place.count.toLocaleString() + " " + geog_types[place.type].pl + ". It is located within " + place.parents[0].name + "."
+						}
+					},
+					box_1: {
+						id: "area",
+						style: "",
+						content: "<span class='text-big' style='font-size: 2.8em'>" + place.hectares.toLocaleString() + " ha</span>"
+					},
+					box_2: {
+						id: "popden",
+						style: "",
+						content: "<span class='text-big' style='font-size: 2.8em'>" + (place.data.population.value["2021"].all / place.hectares).toFixed(1) + "</span>"
+					}
+				}}
+			/>
 			
 			<!-- ACCORDION census -->
 			<div class="accordion-item">
@@ -1009,7 +920,7 @@
 								class="div-grey-box"
 								style="line-height: 1.3;"
 							>
-								<IButtons id = "location" place = {place}/>
+								<IButton id = "location" place = {place}/>
 								<div>
 									<span
 										class="text-big"
@@ -1019,7 +930,7 @@
 								</div>
 							</div>
 							<div class="div-grey-box">
-								<IButtons id = "farms" place = {place}/>
+								<IButton id = "farms" place = {place}/>
 
 							{#if comp_none || (comp_ni && place.type == "ni")}
 								<GroupChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1034,7 +945,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<IButtons id = "cob1" place = {place}/>
+								<IButton id = "cob1" place = {place}/>
 
 							{#if comp_none || (comp_ni && place.type == "ni")}
 								<ProfileChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1049,7 +960,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<IButtons id = "cob" place = {place}/>
+								<IButton id = "cob" place = {place}/>
 
 								{#if comp_none || (comp_ni && place.type == "ni")}
 								<BarChart data={makeDataGroupSort(place.grouped_data_nocompare.cob,"cob")} zKey="group"	label={chartLabel}/>
@@ -1065,7 +976,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<IButtons id = "broadagebands" place = {place}/>
+								<IButton id = "broadagebands" place = {place}/>
 								<div
 									class="chart"
 									style="height: 100px; padding-bottom: 5px"
@@ -1098,7 +1009,7 @@
 							</div>
 
 							<div class="div-grey-box">
-								<IButtons id = "mainlang" place = {place}/>
+								<IButton id = "mainlang" place = {place}/>
 							{#if place.type != "dea"}
 								<StackedBarChart
 								data={place && makeData_year(["mainlang"],["2011"],["2021"])}
@@ -1298,7 +1209,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<IButtons id = "le_m" place = {place}/>
+									<IButton id = "le_m" place = {place}/>
 									
 									<span class="text-big" style="font-size: 2.8em; color: black">
 										{place.data["LE"].value["2019-21"].LEbirth_gender2.toLocaleString()}</span>
@@ -1315,7 +1226,7 @@
 
 								</div>
 								<div class="div-grey-box">
-									<IButtons id = "le_f" place = {place}/>
+									<IButton id = "le_f" place = {place}/>
 
 								<span class="text-big" style="font-size: 2.8em; color: black">
 									{place.data["LE"].value["2019-21"].LEbirth_gender1.toLocaleString()}</span>
@@ -1338,7 +1249,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<IButtons id = "dentalreg" place = {place}/>
+									<IButton id = "dentalreg" place = {place}/>
 									<span
 										class="text-big"
 										style="font-size: 2.8em; color: black">
@@ -1495,7 +1406,7 @@
 
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
-									<IButtons id = "dentalreg" place = {place}/>
+									<IButton id = "dentalreg" place = {place}/>
 									<br>
 									Universal Credit  <span class="text-big" style="font-size: 1.4em; color: black">
 										{place.data["BS"].value["2022"].UC.toLocaleString()}</span>
