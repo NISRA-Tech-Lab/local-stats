@@ -16,8 +16,8 @@ const config = {
 				entries: []
 		},
 		paths: {
-				assets: production ? 'https://mairebrolly.github.io/nisra-explorer' : '',
-				base: production ? '/nisra-explorer' : ''
+				assets: production ? 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer' : '',
+				base: production ? '/nisra-geog-explorer' : ''
 		}
 	}
 };

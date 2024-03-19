@@ -22,7 +22,7 @@ export const app_inputs = {
 	//search_data: '/data_jsons_dea/places_dz.csv',
 	//app_json_data: 'https://datavis.nisra.gov.uk/techlab/nnxcjn/',
 	app_json_data: '/data_jsons_dea_2302/',
-	base: 'https://mairebrolly.github.io/nisra-explorer/'
+	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
 export const geog_types = {
