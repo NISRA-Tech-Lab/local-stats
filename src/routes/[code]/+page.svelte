@@ -1,5 +1,4 @@
 <script context="module">
-	export const prerender = true;
 	// getData is a function in utils.js that goes to a url input and looks for a return of csv data
 	import { getData, adjectify } from "$lib/utils";
 	// a constant with 3 string app_inputs, search_data - the places.csv, app_json_data - json files for each area code (accessed via app_inputs.app_json_data),
