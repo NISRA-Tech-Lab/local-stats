@@ -858,13 +858,15 @@
 					},
 					box_1: {
 						id: "area",
-						style: "",
 						content: "<span class='text-big' style='font-size: 2.8em'>" + place.hectares.toLocaleString() + " ha</span>"
 					},
 					box_2: {
 						id: "popden",
-						style: "",
 						content: "<span class='text-big' style='font-size: 2.8em'>" + (place.data.population.value["2021"].all / place.hectares).toFixed(1) + "</span>"
+					},
+					box_3: {
+						id: "mainlang",
+						content: '<StackedBarChart data={place && makeData_year(["mainlang"],["2011"],["2021"])} zKey={chart_compare_type} label={chartLabel}, topic_prev_available = {false}/>'
 					}
 				}}
 			/>
@@ -1008,7 +1010,7 @@
 								{chart_compare_type}
 							</div>
 
-							<div class="div-grey-box">
+							<!-- <div class="div-grey-box">
 								<IButton id = "mainlang" place = {place}/>
 							{#if place.type != "dea"}
 								<StackedBarChart
@@ -1024,7 +1026,7 @@
 								topic_prev_available = {false}
 							/>
 							{/if}			
-							</div>
+							</div> -->
 						</div>
 					</div>
 					

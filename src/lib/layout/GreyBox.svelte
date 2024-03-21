@@ -1,11 +1,20 @@
 <script>
 
 import IButton from "$lib/layout/IButton.svelte";
+import { parse } from 'svelte-parse';
 
 export let id;
-export let style;
+export let style = "";
 export let place;
 export let content;
+
+if (content.includes("StackedBarChart")) {
+
+    let svelte_item = parse({value: content, generatePositions: true});
+    console.log(svelte_item)
+
+}
+
 
 </script>
 
@@ -14,5 +23,6 @@ export let content;
     <IButton id = {id} place = {place}/>
     <br/>
     {@html content}
+
 
 </div>
