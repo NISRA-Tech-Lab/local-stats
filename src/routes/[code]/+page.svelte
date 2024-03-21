@@ -12,6 +12,7 @@
       mapSources,
       mapLayers,
       mapPaint,
+      app_inputs
     } from "$lib/config";
     import Section from "$lib/layout/Section.svelte";
     import Em from "$lib/ui/Em.svelte";
@@ -31,7 +32,11 @@
     
     
     
-    export let search_data, place, ni;
+    export let data;
+
+    let place = data.place;
+    let ni = data.ni;
+    let search_data = data.search_data;
 
     let w, cols;
     let map = null;
