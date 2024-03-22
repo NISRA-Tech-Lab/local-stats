@@ -199,7 +199,7 @@
 		width: 30px;
 	}
 	.search {
-		background-image: url("/nisra-explorer/img/search.svg");
+		background-image: url("/img/search.svg");
 		width: 30px;
 	}
 	.close {
