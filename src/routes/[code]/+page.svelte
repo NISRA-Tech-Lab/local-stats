@@ -39,6 +39,7 @@
     let place = data.place;
     let ni = data.ni;
     let search_data = data.search_data;
+    console.log(search_data, place, ni)
 
     let w, cols;
     let map = null;
