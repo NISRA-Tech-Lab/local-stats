@@ -280,10 +280,6 @@
 	$: place && update(place);
 	$: comp_ni = false;
 	$: comp_none = true;
-
-
-		
-	// $: place.type = place.type;
 </script>
 
 <svelte:head>

@@ -37,13 +37,3 @@ export async function load({ params, fetch }) {
     };
 
 }
-
-// /** @type {import('./$types').PageLoad} */
-// export function load({ params }) {
-//     return {
-//       post: {
-//         title: `Title for ${params.code} goes here`,
-//         content: `Content for ${params.code} goes here`
-//       }
-//     };
-//   }
