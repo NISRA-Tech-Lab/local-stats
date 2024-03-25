@@ -36,9 +36,9 @@
     
     export let data;
 
-    let place = data.place;
-    let ni = data.ni;
-    let search_data = data.search_data;
+    // let place = data.place;
+    // let ni = data.ni;
+    // let search_data = data.search_data;
     // console.log(search_data, place, ni)
 	// console.log(data.place)
 
@@ -66,15 +66,15 @@
       let past_year = y1[0];
       let val = "perc";
 
-      let source = place.data[category][val][curr_year];
-      let sourcePrev = place.data[category][val][past_year];
-      let sourceNI = ni.data[category][val][curr_year];
+      let source = data.place.data[category][val][curr_year];
+      let sourcePrev = data.place.data[category][val][past_year];
+      let sourceNI = data.ni.data[category][val][curr_year];
 
       let keys = topics[category].map((d) => d.category);
       let labels = topics[category].map((d) =>
         d.label ? d.label : d.category,
       );
-      let data = keys.map((key, i) => {
+      let y_data = keys.map((key, i) => {
         if (Array.isArray(key)) {
           return {
             x: labels[i],
@@ -92,18 +92,18 @@
         }
       });
 
-      return data;
+      return y_data;
     }
 
 
     
 
 
-    function makeDataGroupSort(data, key) {
+    function makeDataGroupSort(g_data, key) {
       const categ = topics[key];
       let newdata = [];
       categ.forEach((c) => {
-        let rows = data.filter((d) => d.category === c.category);
+        let rows = g_data.filter((d) => d.category === c.category);
         let newrows = rows.map((d) => ({
           group: d.group,
           category: c.label,
@@ -341,7 +341,7 @@
 				>
 					<b>Search for your area:</b>
 					<Select
-						{search_data}
+						search_data = {data.search_data}
 						group="typestr"
 						search={true}
 						on:select={menuSelect}
