@@ -1,7 +1,7 @@
 {
-  "name": "nisra-explorer",
+  "name": "nisra-geog-explorer",
   "version": "0.0.1",
-  "homepage": "https://mairebrolly.github.io/nisra-explorer/",
+  "homepage": "https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -9,15 +9,15 @@
     "deploy": "gh-pages -d build -t true"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/adapter-static": "^1.0.0",
+    "@sveltejs/kit": "1.30.4",
     "gh-pages": "^3.2.3",
     "layercake": "^6.1.1",
     "mapbox-gl": "1.x",
     "parse-color": "^1.0.0",
     "svelte": "^3.34.0",
     "svelte-preprocess": "^4.7.3",
-    "vite": "^3.0.2"
+    "vite": "^4.0.0"
   },
   "dependencies": {
     "d3-dsv": "latest",

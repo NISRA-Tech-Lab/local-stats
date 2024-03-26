@@ -91,13 +91,19 @@ let i_button_info = {
 
 </script>
 
-<div class="row s-OrSHbitiAkZX" style="display: flex; cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#{id}-info" aria-expanded="false" aria-controls="{id}-info">
-	<div class="blocktitle s-OrSHbitiAkZX" style="margin: 0; width: 100%">
+<div class="row s-Vk7w7Sfe-0Fk"
+	style="display: flex; cursor: pointer;"
+	data-bs-toggle="collapse"
+	data-bs-target="#{id}-info"
+	aria-expanded="false"
+	aria-controls="{id}-info"
+>
+	<div class="blocktitle s-Vk7w7Sfe-0Fk" style="margin: 0; width: 100%">
 		{i_button_info[id].title}<span class = "i-button"></span>
 	</div>
 </div>
-<div class="collapse s-OrSHbitiAkZX" id="{id}-info">
-    <div class="card card-body s-OrSHbitiAkZX">
+<div class="collapse s-Vk7w7Sfe-0Fk" id="{id}-info">
+    <div class="card card-body s-Vk7w7Sfe-0Fk">
         {@html i_button_info[id].info} 
     </div>
 </div>

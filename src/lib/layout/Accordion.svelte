@@ -19,16 +19,16 @@ let w, cols;
 
 <div class = "accordion-item">
 
-    <h2 class="accordion-header s-OrSHbitiAkZX" id="panelsStayOpen-heading{id}">
+    <h2 class="accordion-header s-Vk7w7Sfe-0Fk" id="panelsStayOpen-heading{id}">
         <button
-            class="accordion-button collapsed s-OrSHbitiAkZX"
+            class="accordion-button collapsed s-Vk7w7Sfe-0Fk"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#panelsStayOpen-collapse{id}"
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapse{id}"
         >
-            <span class="accordion-button-title s-OrSHbitiAkZX">
+            <span class="accordion-button-title s-Vk7w7Sfe-0Fk">
                 <img
                     src="{base}/img/{img}"
                     alt="logo"
@@ -41,16 +41,16 @@ let w, cols;
 
     <div
         id="panelsStayOpen-collapse{id}"
-        class="accordion-collapse collapse s-OrSHbitiAkZX"
+        class="accordion-collapse collapse s-Vk7w7Sfe-0Fk"
         aria-labelledby="panelsStayOpen-heading{id}"
     >
 
-        <div class="accordion-body s-OrSHbitiAkZX">
+        <div class="accordion-body s-Vk7w7Sfe-0Fk">
             {sub_heading} - {place.name} -
-            <span class="accordion-button-title-sub s-OrSHbitiAkZX"
+            <span class="accordion-button-title-sub s-Vk7w7Sfe-0Fk"
                 >{description}</span>
 
-            <div class="grid mt s-OrSHbitiAkZX" bind:clientWidth={w}>
+            <div class="grid mt s-Vk7w7Sfe-0Fk" bind:clientWidth={w}>
 
                 {#each {length: boxes.length} as _, i}
 
