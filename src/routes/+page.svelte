@@ -5,6 +5,14 @@
   import { assets } from "$app/paths";
   import { app_inputs } from "$lib/config";
   import Section from "$lib/layout/Section.svelte";
+  import Select from "$lib/ui/Select.svelte";
+
+  export let data;
+
+  function menuSelect(ev) {
+      goto(`${base}/${ev.detail.value}/`, { noscroll: true });
+    }
+
 </script>
 
 <svelte:head>
@@ -20,6 +28,17 @@
 <Section column="wide">
   <div class="block">
     <span class="text-big title">NISRA Area Explorer</span>
+
+    <div style="width: 350px; padding-top: 5px;">
+      <b>Search for your area:</b>
+        <Select
+          search_data = {data.search_data}
+          group="typestr"
+          search={true}
+          on:select={menuSelect}
+        />
+    </div>
+
     <p>Select an area below to start exploring NISRA Key Statistics.</p>
     <ul>
       <li><a href="{base}/N92000002"><strong>Northern Ireland</strong></a></li>
