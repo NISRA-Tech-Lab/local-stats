@@ -894,7 +894,7 @@
 										).toFixed(1)} persons per hectare</span
 									>
 									<br>
-									<span><b style="background-color: lightgrey">{adjectify((data.place.data.population.value["2021"].all / data.place.hectares), 1.4)}</b> Northern Ireland value of {(data.ni.data.population.value["2021"].all / data.ni.hectares).toFixed(1)} persons per hectare </span>
+									<span><Em>{adjectify((data.place.data.population.value["2021"].all / data.place.hectares), 1.4)}</Em> Northern Ireland value of {(data.ni.data.population.value["2021"].all / data.ni.hectares).toFixed(1)} persons per hectare </span>
 								{/if}
 							</div>
 						</div>
