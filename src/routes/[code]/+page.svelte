@@ -39,12 +39,6 @@
     
     export let data;
 
-    // let place = data.place;
-    // let ni = data.ni;
-    // let search_data = data.search_data;
-    // console.log(search_data, place, ni)
-	// console.log(data.place)
-
     let w, cols;
     let map = null;
     let comp_2011 = false;
@@ -811,13 +805,17 @@
 					},
 					box_3: {
 						id: "mainlang",
-						content: '<StackedBarChart data={place && makeData_year(["mainlang"],["2011"],["2021"])} zKey={chart_compare_type} label={chartLabel}, topic_prev_available = {false}/>'
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "false"
 					}
 				}}
 			/>
 			
 			<!-- ACCORDION census -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingcensus">
 					<button
 						class="accordion-button collapsed"
@@ -976,15 +974,15 @@
 								topic_prev_available = {false}
 							/>
 							{/if}			
-							</div> -->
+							</div>
 						</div>
 					</div>
 					
 				</div>
-			</div>
+			</div> -->
 		
 			<!-- ACCORDION ONE -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingOne">
 					<button
 						class="accordion-button collapsed"
@@ -1080,10 +1078,10 @@
 						>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION TWO -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
 					<button
 						class="accordion-button collapsed"
@@ -1123,10 +1121,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION THREE -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingThree">
 					<button
 						class="accordion-button collapsed"
@@ -1313,10 +1311,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION FOUR -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingFour">
 					<button
 						class="accordion-button collapsed"
@@ -1379,10 +1377,10 @@
 												Disability Living Allowance {(data.place.data["BS"].value["2022"].DLA/data.ni.data["BS"].value["2022"].DLA*100).toLocaleString()}%
 												</Em
 											></span
-										> 		
+										> 		 -->
 										<!-- could use adjectify here if we had the ranks - or make new function to compare to the average???? -->
 										
-										{/if}
+										<!-- {/if}
 								</div>
 								<div class="div-grey-box">
 
@@ -1434,10 +1432,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION five -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingFive">
 					<button
 						class="accordion-button collapsed"
@@ -1478,10 +1476,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION six -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingsix">
 					<button
 						class="accordion-button collapsed"
@@ -1533,10 +1531,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION Seven -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingSeven">
 					<button
 						class="accordion-button collapsed"
@@ -1577,10 +1575,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION Eight -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingEight">
 					<button
 						class="accordion-button collapsed"
@@ -1621,10 +1619,10 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION Nine -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingNine">
 					<button
 						class="accordion-button collapsed"
@@ -1665,12 +1663,12 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- </div> -->
 
 			
 			<!-- ACCORDION ten -->
-			<div class="accordion-item">
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingten">
 					<button
 						class="accordion-button collapsed"
@@ -1722,7 +1720,7 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 
 		</div>

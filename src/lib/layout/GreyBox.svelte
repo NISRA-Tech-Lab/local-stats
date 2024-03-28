@@ -1,11 +1,23 @@
 <script>
 
 import IButton from "$lib/layout/IButton.svelte";
+import StackedBarChart from "$lib/chart/StackedBarChart.svelte";
 
 export let id;
 export let style = "";
 export let place;
 export let content;
+export let chart_data;
+export let zKey;
+export let label;
+export let topic_prev_available;
+export let topic_boolean;
+
+if (topic_prev_available == "false") {
+    topic_boolean = false
+} else {
+    topic_boolean = true
+}
 
 </script>
 
@@ -13,7 +25,11 @@ export let content;
 
     <IButton id = {id} place = {place}/>
     <br/>
-    {@html content}
+    {#if (content == "StackedBarChart")}
+        <StackedBarChart data = {chart_data} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
+    {:else}
+        {@html content}
+    {/if}
 
 
 </div>

@@ -61,6 +61,10 @@ let w, cols;
                             style = {grey_boxes["box_" + i].style}
                             place = {place}
                             content = {grey_boxes["box_" + i].content[place.type]}
+                            chart_data = {grey_boxes["box_" + i].chart_data}
+                            zKey = {grey_boxes["box_" + i].zKey}
+                            label = {grey_boxes["box_" + i].label}
+                            topic_prev_available = {grey_boxes["box_" + i].topic_prev_available}
                         />
 
                     {:else}
@@ -70,6 +74,10 @@ let w, cols;
                             style = {grey_boxes["box_" + i].style}
                             place = {place}
                             content = {grey_boxes["box_" + i].content}
+                            chart_data = {grey_boxes["box_" + i].chart_data}
+                            zKey = {grey_boxes["box_" + i].zKey}
+                            label = {grey_boxes["box_" + i].label}
+                            topic_prev_available = {grey_boxes["box_" + i].topic_prev_available}
                         />
 
                     {/if}
