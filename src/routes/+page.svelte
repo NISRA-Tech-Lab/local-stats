@@ -6,6 +6,7 @@
   import { app_inputs } from "$lib/config";
   import Section from "$lib/layout/Section.svelte";
   import Select from "$lib/ui/Select.svelte";
+  import { goto } from "$app/navigation";
 
   export let data;
 
