@@ -20,7 +20,8 @@
 					{/if}
 				</picture>
 			</a>
-			NISRA Area Explorer (TO BE STYLED)
+			<span class="text-big title;" style="color: #3878c5;" >NISRA Area Explorer</span>
+
 		</div>
 	</nav>
   
