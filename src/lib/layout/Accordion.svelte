@@ -9,9 +9,10 @@ export let heading;
 export let place;
 export let sub_heading;
 export let description;
-export let grey_boxes;
+export let boxes;
+export let more;
 
-let boxes = Object.keys(grey_boxes);
+let box_list = Object.keys(boxes);
 
 let w, cols;
 
@@ -52,42 +53,56 @@ let w, cols;
 
             <div class="grid mt s-Vk7w7Sfe-0Fk" bind:clientWidth={w}>
 
-                {#each {length: boxes.length} as _, i}
+                {#each {length: box_list.length} as _, i}
 
-                    {#if (grey_boxes["box_" + i].content.hasOwnProperty(place.type))}
+                    {#if (boxes[box_list[i]].content.hasOwnProperty(place.type))}
 
                         <GreyBox
-                            id = {grey_boxes["box_" + i].id}
-                            style = {grey_boxes["box_" + i].style}
+                            id = {boxes[box_list[i]].id}
+                            style = {boxes[box_list[i]].style}
                             place = {place}
-                            content = {grey_boxes["box_" + i].content[place.type]}
-                            chart_data = {grey_boxes["box_" + i].chart_data}
-                            zKey = {grey_boxes["box_" + i].zKey}
-                            label = {grey_boxes["box_" + i].label}
-                            topic_prev_available = {grey_boxes["box_" + i].topic_prev_available}
+                            content = {boxes[box_list[i]].content[place.type]}
+                            chart_data = {boxes[box_list[i]].chart_data}
+                            zKey = {boxes[box_list[i]].zKey}
+                            label = {boxes[box_list[i]].label}
+                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                         />
 
                     {:else}
 
                         <GreyBox
-                            id = {grey_boxes["box_" + i].id}
-                            style = {grey_boxes["box_" + i].style}
+                            id = {boxes[box_list[i]].id}
+                            style = {boxes[box_list[i]].style}
                             place = {place}
-                            content = {grey_boxes["box_" + i].content}
-                            chart_data = {grey_boxes["box_" + i].chart_data}
-                            zKey = {grey_boxes["box_" + i].zKey}
-                            label = {grey_boxes["box_" + i].label}
-                            topic_prev_available = {grey_boxes["box_" + i].topic_prev_available}
+                            content = {boxes[box_list[i]].content}
+                            chart_data = {boxes[box_list[i]].chart_data}
+                            zKey = {boxes[box_list[i]].zKey}
+                            label = {boxes[box_list[i]].label}
+                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                         />
 
                     {/if}
+
                 {/each}
 
             </div>
+
+            {#if more != ""}
+                <h3>More Statistics</h3>
+                <div class = "accordion-more s-Vk7w7Sfe-0Fk">{@html more}</div>
+            {/if}
 
         </div>
 
     </div>
 
 </div>
+
+<style>
+
+    .accordion-more {
+        margin-top: 1em;
+    }
+
+</style>
 
