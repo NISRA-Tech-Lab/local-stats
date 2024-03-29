@@ -55,33 +55,17 @@ let w, cols;
 
                 {#each {length: box_list.length} as _, i}
 
-                    {#if (boxes[box_list[i]].content.hasOwnProperty(place.type))}
 
-                        <GreyBox
-                            id = {boxes[box_list[i]].id}
-                            style = {boxes[box_list[i]].style}
-                            place = {place}
-                            content = {boxes[box_list[i]].content[place.type]}
-                            chart_data = {boxes[box_list[i]].chart_data}
-                            zKey = {boxes[box_list[i]].zKey}
-                            label = {boxes[box_list[i]].label}
-                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
-                        />
-
-                    {:else}
-
-                        <GreyBox
-                            id = {boxes[box_list[i]].id}
-                            style = {boxes[box_list[i]].style}
-                            place = {place}
-                            content = {boxes[box_list[i]].content}
-                            chart_data = {boxes[box_list[i]].chart_data}
-                            zKey = {boxes[box_list[i]].zKey}
-                            label = {boxes[box_list[i]].label}
-                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
-                        />
-
-                    {/if}
+                    <GreyBox
+                        id = {boxes[box_list[i]].id}
+                        style = {boxes[box_list[i]].style}
+                        place = {place}
+                        content = {boxes[box_list[i]].content}
+                        chart_data = {boxes[box_list[i]].chart_data}
+                        zKey = {boxes[box_list[i]].zKey}
+                        label = {boxes[box_list[i]].label}
+                        topic_prev_available = {boxes[box_list[i]].topic_prev_available}
+                    />
 
                 {/each}
 

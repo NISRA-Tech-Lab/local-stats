@@ -420,8 +420,22 @@
 			</div>
 		</div>
 
+
 		<div id="grid" class="grid mt">
-			<div class="div-grey-box" style="line-height: 1.3;">
+			<GreyBox
+				id = "overview"
+				i_button = {false}
+				heading = "Overview - box with words"
+				place = {data.place}
+				style = "line-height: 1.3;"
+				content = {{
+					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
+				}}
+			/>
+
+			<!-- <div class="div-grey-box" style="line-height: 1.3;">
 				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
 					Overview - box with words
 				</h3>
@@ -474,8 +488,15 @@
 						)} since the 2011 Census.
 					{/if}
 				{/if}
-			</div>
-			<div class="div-grey-box">
+			</div> -->
+
+			<GreyBox
+				id = "pop"
+				place = {data.place}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+			/>
+
+			<!-- <div class="div-grey-box">
 				<IButton id = "pop" place = {data.place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{data.place.data.population.value[
@@ -548,8 +569,15 @@
 						> since 2011 Census</span
 					>
 				{/if}
-			</div>
-			<div class="div-grey-box">
+			</div> -->
+
+			<GreyBox
+				id = "households"
+				place = {data.place}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+			/>
+
+			<!-- <div class="div-grey-box">
 				<IButton id = "households" place = {data.place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{data.place.data.households.value[
@@ -593,7 +621,7 @@
 						> since 2011 Census</span
 					>
 				{/if}
-			</div>
+			</div> -->
 		</div>
 		<!-- a19e9e -->
 		<div class="grid mt" bind:clientWidth={w}>
