@@ -933,7 +933,7 @@
 					aria-labelledby="panelsStayOpen-headingcensus"
 				>
 					<div class="accordion-body">
-						Census 2021 - <span style="color: #3878c5">{data.place.name}</span> -
+						Census 2021 - <span style="color: #3878c5">{data.place.name}</span>{data.place.name} -
 						<span class="accordion-button-title-sub"
 							>Broad age bands (years), Country of Birth and Main language</span
 						>
