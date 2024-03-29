@@ -10,7 +10,7 @@
 <!-- svelte-ignore missing-declaration -->
 <Section column="wide">
 <div class="block" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); justify-content: stretch;">
-<div style="margin-left:16px; padding-right:16px;">
+<!-- <div style="margin-left:16px; padding-right:16px;">
 	<h3 style="margin-bottom:10px; line-height: 1.78;">Download</h3>
 	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
 		 <a href="https://www.nisra.gov.uk/publications/census-area-explorer-2021-and-2011-data" class="link"><strong>Download</strong> Census 2011 and 2021 data from this app</a>
@@ -44,14 +44,14 @@
 		
   </div>
 
-  </div>
+  </div> -->
 </Section>
   
 <footer style="color: #ffffff; background-color: #00205b;">
 	<div class="col-wide" data-analytics="footer">
 		<div class="row">
 			<div class="column left">
-				<h3>Links</h3><br>
+				<h3 style="padding-top: 0px">Links</h3><br>
 				<ul>
 					<li><a href="https://data.nisra.gov.uk/" class="link" style="color: #ffffff">NISRA Data Portal</a></li><br/>
 					<li><a href="https://build.nisra.gov.uk/" class="link" style="color: #ffffff">Census Flexible Table Builder</a></li><br/>
@@ -69,7 +69,7 @@
 				</ul>
 			</div>
 		</div>
-		<br>
+
 		<div class="flex-list">
 			<ul>
 				<li>&copy Crown Copyright</li>
@@ -129,25 +129,36 @@
 /* 	a img:hover {
 		cursor: pointer;
 	} */
-	.column {
+		.column {
   		float: left;
-  		padding: 40px;
+  		padding-left: 40px;
+  		padding-right: 40px;
+		padding-top: 10px;
+  		padding-bottom: 10px;
+  		
 	}
 	.left {
 		max-width: 30%;
+		padding-top: 0px;
+  		padding-bottom: 10px;
 	}
 	.right {
 		max-width: 70%;
-	}
+		padding-top: 0px;
+  		padding-bottom: 10px;	}
 	.row:after {
 		content: "";
 		display: table;
 		clear: both;
+		
 	}
 	.flex-list {
 		position: relative;
-		margin: 1em;
+		margin: 0em;
 		overflow: hidden;
+		padding-top: 10px;
+  		padding-bottom: 0px;
+
 
 	}
 	.flex-list ul {
