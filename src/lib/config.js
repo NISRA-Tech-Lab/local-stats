@@ -17,9 +17,9 @@ export const themes = {
 };
 
 export const app_inputs = {
-	search_data: 'https://datavis.nisra.gov.uk/techlab/nnxcjn/places_dz.csv',
+//	search_data: 'https://datavis.nisra.gov.uk/techlab/nnxcjn/places_dz.csv',
 	//search_data: 'https://datavis.nisra.gov.uk/census/aex-hj77sh/places_dz.csv',
-	//search_data: '/data_jsons_dea/places_dz.csv',
+	search_data: '/data_jsons_dea_2302/places_dz_extra.csv',
 	//app_json_data: 'https://datavis.nisra.gov.uk/techlab/nnxcjn/',
 	app_json_data: '/data_jsons_dea_2302/',
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'

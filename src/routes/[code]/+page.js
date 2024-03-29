@@ -22,11 +22,19 @@ export async function load({ params, fetch }) {
     res.forEach((d) => {
         d.typepl = geog_types[d.type].pl;
         d.typenm = geog_types[d.type].name;
-        //		  d.typestr = lookup[d.parent] ? `${lookup[d.parent]} includes ${types[d.type].name} within ${lookup[d.parent]}` : '';
-        d.typestr = lookup[d.parent]
-            ? `${geog_types[d.type].name} within ${lookup[d.parent]}`
+        //		  
+        // d.typestr = lookup[d.parent] 
+        //         ? `${lookup[d.parent]} includes ${geog_types[d.type].name} within ${lookup[d.parent]}` 
+        //         : '';
+        d.typestr = lookup[d.parent]  && d.parent == d.code
+        ? `${geog_types[d.type].name} is within  ${lookup[d.parent]}
+        ${geog_types[d.parent_type].name}  `
+            : lookup[d.parent]  && d.parent != d.code
+            ? `${geog_types[d.type].name} `
             : "";
-    });
+
+
+});
 
     let search_data = res.sort((a, b) => a.name.localeCompare(b.name));
     let ni = await loadArea("N92000002", fetch);

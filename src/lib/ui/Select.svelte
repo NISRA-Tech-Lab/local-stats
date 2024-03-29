@@ -213,7 +213,7 @@
 		color: lightgrey;
 	}
 	#dropdown small {
-		color: grey;
+		/* font-weight: bold; */
 	}
 </style>
 
