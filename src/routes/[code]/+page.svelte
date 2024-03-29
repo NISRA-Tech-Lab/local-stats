@@ -605,12 +605,13 @@
 				<h3>
 					<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
 					{#if data.place.type != "ni"}
-						Explore <span style="color: #93328E">{data.place.name}</span>
-						<span style="color: #a19e9e"
-							>- {geog_types[data.place.type].name}</span
+					Explore 
+					<span style="color: #3878c5">{data.place.name}</span>
+						<span style="color: #00205b"
+							> {geog_types[data.place.type].name}</span
 						>
 					{:else}
-						Explore <span style="color: #93328E">{data.place.name}</span>
+						Explore <span style="color: #3878c5">{data.place.name}</span>
 					{/if}
 				</h3>
 			</div>
@@ -932,7 +933,7 @@
 					aria-labelledby="panelsStayOpen-headingcensus"
 				>
 					<div class="accordion-body">
-						Census 2021 - {data.place.name} -
+						Census 2021 - <span style="color: #3878c5">{data.place.name}</span> -
 						<span class="accordion-button-title-sub"
 							>Broad age bands (years), Country of Birth and Main language</span
 						>
@@ -1031,7 +1032,7 @@
 											<rect
 												width="25"
 												height="4"
-												style="fill:#CEDC20;"
+												style="fill:#308182;"
 											/>
 										</svg>
 										{chartLabel}

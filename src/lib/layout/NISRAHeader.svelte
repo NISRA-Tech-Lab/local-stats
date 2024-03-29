@@ -12,15 +12,15 @@
 			<a href="https://www.nisra.gov.uk/">
 				<picture>
 					{#if theme.name == 'dark'}
-					<img style="width:130px;" src="{assets}/img/nisra-only-white.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/nisra-only-white.png" alt="Northern Ireland Statistics and Research Agency">
 					{:else if filled == true}
-					<img style="width:130px;" src="{assets}/img/nisra-only-colour.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/NISRA DUAL LOGO - STANDARD.jpg" alt="Northern Ireland Statistics and Research Agency">
 					{:else}
-					<img style="width:130px;" src="{assets}/img/nisra-only-colour.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/NISRA DUAL LOGO - STANDARD.jpg" alt="Northern Ireland Statistics and Research Agency">
 					{/if}
 				</picture>
 			</a>
-			
+			NISRA Area Explorer (TO BE STYLED)
 		</div>
 	</nav>
   
@@ -29,7 +29,7 @@
 		  -webkit-box-sizing: border-box;
 		  box-sizing: border-box;
 		  position: relative;
-		  height: 65px;
+		  height: 120px;
 		  margin-bottom: -46px;
 		  border-bottom: 1px solid #777;
 		  z-index: 1;
@@ -41,7 +41,7 @@
 	  }
 	  img {
 		  width: 110px;
-	  }
+		  	  }
 	  a img:hover {
 		  cursor: pointer;
 	  }
