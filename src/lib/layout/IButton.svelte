@@ -36,32 +36,32 @@ let i_button_info = {
 		},
 
 		farms: {
-			title: "Farms",
+			title: "Farms GroupChart",
 			info: "Publication : <a href='https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023'>" +
 				  "<strong>Farm Census</strong></a> Data portal : " +
 				  "<a href='https://data.nisra.gov.uk/table/FCDEA'><strong>Farm Census</strong></a>"
 		},
 
 		cob1: {
-			title: "COB - Profile chart",
+			title: "COB - ProfileChart",
 			info: ""
 		},
 
 		cob: {
-			title: "COB - Bar chart",
+			title: "COB - BarChart",
 			info: "Publication : <a href='https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023'>" +
 				  "<strong>Farm Census</strong></a> Data portal : " +
 				  "<a href='https://data.nisra.gov.uk/table/FCDEA'><strong>Farm Census</strong></a>"
 		},
 
 		broadagebands: {
-			title: "Broad age bands (years) Col GroupChart",
+			title: "Broad age bands (years) ColChart",
 			info: "A grouping of ages where a person's age is their age at their last birthday on or prior to census day. "+
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
 		},
 
 		mainlang: {
-			title: "Main language - Stacked bar",
+			title: "Main language - StackedBarChart",
 			info: "Person's main language as declared in the Census. Statistics for all language questions are restricted to persons aged 3 and over. " +
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
 		},

@@ -97,10 +97,10 @@
 		top: 0;
 	}
 	.bar {
-		background-color: #781C87;
+		background-color: #00205b;
 	}
 	.marker {
-		border-left-color: black;
+		border-left-color: #308182;
 		border-left-style: solid;
 	}
 	ul.legend {

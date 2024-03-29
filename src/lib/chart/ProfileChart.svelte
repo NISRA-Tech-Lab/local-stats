@@ -106,17 +106,17 @@
 		top: 0;
 	}
 	.bar {
-		background-color: #781C87;
+		background-color: #00205b;
 		border-left: 2px solid rgb(245, 245, 246);
 		border-right: 2px solid rgb(245, 245, 246);
 	}
 	.markerSmall {
-		border-left: 4px solid black;
+		border-left: 4px solid #308182;
 	}
 	.marker {
-		border-left: 4px solid black;
-		border-bottom: 4px solid black;
-		border-top: 4px solid black;
+		border-left: 4px solid #308182;
+		border-bottom: 4px solid #308182;
+		border-top: 4px solid #308182;
 	}
 	ul.legend {
 		list-style-type: none;

@@ -5,7 +5,7 @@
 	
 	export let search_data;
 	export let selected = null;
-	export let placeholder = "Enter a town or area name";
+	export let placeholder = "Enter a town, postcode or area name";
 	export let value = "code";
 	export let label = "name";
 	export let group = null;
