@@ -811,12 +811,12 @@
 			img = "nisra-taxonomy-icon-census.png"
 			heading = "People and Households"
 			place = {data.place}
-			sub_heading = "Area"
-			description = "Population and households characteristics"
+			sub_heading = ""
+			description = ""
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " population growth/shrink to be added</span>"},
+						content: "<span >"  + " population growth/shrink to be added</span>"},
 					box_2: {
 						id: "age",
 						content: "StackedBarChart",
@@ -827,7 +827,7 @@
 					},
 					box_3: {
 						id: "sex",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " sex split to be added</span>"
+						content: "<span >"  + " sex split to be added</span>"
 					},
 					box_4: {
 						id: "hhsize",
@@ -880,23 +880,23 @@
 						topic_prev_available: "true"},
 				box_2: {
 						id: "wellbeing",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " wellbeing to be added</span>"},
+						content: "<span class='text-big' style='font-size: 2.8em'>"  + "7.5 / 10 </span>"},
 				box_3: {
 						id: "lifeexpectancy",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " life expectancyto be added</span>"},
-				box_6: {
+						content: "<span>life expectancy to be added</span>"},
+				box_4: {
 						id: "carers",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["provision_care"], ["2011"], ["2021"]),
 						zkey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
-				box_7: {
+				box_5: {
 						id: "hospitalactivity",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " hospital activity to be added</span>"},
-				box_8: {
+						content: "<span >"  + " hospital activity to be added</span>"},
+				box_6: {
 						id: "primarycare",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " primary care to be added</span>"},
+						content: "<span >"  + " primary care to be added</span>"},
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
 			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
@@ -927,19 +927,19 @@
 				
 				box_1: {
 						id: "employmentrates",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " employment to be added</span>"},
+						content: "<span >"  + " employment to be added</span>"},
 				
 				box_2: {
 						id: "employed",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " numbers employed to be added</span>"},
+						content: "<span >"  + " numbers employed to be added</span>"},
 				
 				box_3: {
 						id: "wages",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " wages to be added</span>"},
+						content: "<span >"  + " wages to be added</span>"},
 
 				box_4: {
 						id: "benefits",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " benefits claimants to be added</span>"},
+						content: "<span >"  + " benefits claimants to be added</span>"},
 				
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
@@ -961,21 +961,21 @@
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education"
 		place = {data.place}
-		sub_heading = "Education"
-		description = "Schools, colleges and universities"
+		sub_heading = "Schools, colleges and universities"
+		description = ""
 		boxes = {{
 
 			box_1: {
 						id: "enrollments",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " enrollments to be added</span>"},
+						content: "<span >"  + " enrollments to be added</span>"},
 				
 			box_2: {
 						id: "fsme",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " fsme to be added</span>"},
+						content: "<span >"  + " fsme to be added</span>"},
 			
 			box_3: {
 						id: "teachers",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " teachers to be added</span>"},
+						content: "<span >"  + " teachers to be added</span>"},
 		
 			box_4: {
 						id: "qualifications",
@@ -987,7 +987,7 @@
 
 			box_5: {
 						id: "attainment",
-						content: "<span class='text-big' style='font-size: 1em'>"  + " attainment to be added</span>"},		}}
+						content: "<span >"  + " attainment to be added</span>"},		}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 	/>
 

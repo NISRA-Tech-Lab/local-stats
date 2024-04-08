@@ -37,20 +37,17 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Happiness",
-			info: "words to be added"},
+			info: "Average Happiness score out of 10 for people aged 16+" + 
+				"source:" +
+				"Last Updated:" +
+				"Further Information:"},
 
 		lifeexpectancy: {
 			title: "Life Expectancy",
-			info: "words to be added"},
+			info: "words to be added" 
+			},
 
-		births: {
-			title: "Birth rate",
-			info: "words to be added"},
-
-		deaths: {
-			title: "Death rate",
-			info: "words to be added"},
-
+		
 		carers: {
 			title: "Provision on unpaid care",
 			info: "words to be added"},
@@ -116,7 +113,7 @@ let i_button_info = {
 
 		age: {
 			title: "Broad age bands",
-			info: "words to be added"},
+			info: "A grouping of ages where a person’s age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 			
 		sex: {
 			title: "Sex",
