@@ -1,3 +1,7 @@
+<script>
+	import Section from "$lib/layout/Section.svelte";
+
+  </script>
 
 
 <nav>
@@ -5,12 +9,13 @@
 </nav>
 
 
+<Section column="wide">
+
 	<div class="row">
 
 
 		<h1>About the NISRA Area Explorer</h1>
-		<p>this is the About page.</p>
-
+		
 
 		<h2>What is the app</h2>
 		<p>Welcome to the NISRA Area Explorer: Your overview of Northern Ireland's statistical information</p>
@@ -38,22 +43,19 @@
 		<h2>Information</h2>
 		<p>This application contains data for Northern Ireland, the 11 Local Government Districts and the areas within. This was most recently updated on XXXX to update the data and XXXX</p>
 		<h2>Video guides</h2>
-		<ul>
-			<li>Area Explorer</li>
-			<li>Data Portal </li>
-			<li>Flexible Table Builder</li>
-		</ul>
-
-		<h2>Sources of data</h2>
-		<p>All of the data is sourced from the Census Area Explorer or the NISRA Data Portal.  At each statistics the ‘i’ button provides definitions, source, contact details and date last updated.  A more information section provides details of other statistics that are available.</p>
-		Map boundaries & lookup tables ….. 
-		
-		<h2>About this app</h2>
-		<p>This web application is based on and inspired by the ONS Digital Content team prototypes. It has been modified by NISRA and released as a prototype to explore Census data for Northern Ireland. </p>
-		<p>We welcome feedback from users through our short survey.</p>
+<p>Area Explorer</p>
+<p><a href="https://www.youtube.com/watch?v=HwGsqgdsiHM">Data Portal</a></p>
+<p><a href="https://www.youtube.com/watch?v=a6cn2yyITHU">Flexible Table Builder</a></p>
+<h2>Sources of data</h2>
+<p>All of the data is sourced from the <a href="https://explore.nisra.gov.uk/area-explorer-2021/">Census Area Explorer</a> or the <a href="https://data.nisra.gov.uk">NISRA Data Portal</a>.&nbsp; At each statistics the &lsquo;i&rsquo; button provides definitions, source, contact details and date last updated.&nbsp; A more information section provides details of other statistics that are available.</p>
+<p>Map boundaries &amp; lookup tables &hellip;..</p>
+<h2>About this app</h2>
+<p>This web application is based on and inspired by the&nbsp;<a href="https://github.com/ONSvisual">ONS Digital Content team prototypes</a>. It has been modified by NISRA and released as a prototype to explore Census data for Northern Ireland.</p>
+<p>We welcome feedback from users through our short&nbsp;<a href="https://consultations2.nidirect.gov.uk/dof/area-explorer-feedback/">survey</a>.</p>
 
 
 
 	</div>
 
 
+</Section>
