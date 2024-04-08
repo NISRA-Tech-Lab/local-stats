@@ -46,13 +46,13 @@ export const topics = {
 		{ category: 'a65plus', label: '65+' }
 	],
 	highest_level_of_qualifications : [
-		{ category: "apprenticeship", label: 'qual1' },
-		{ category: "level_1_qualifications", label: 'qual2' },
-		{ category: "level_2_qualifications", label: 'qual3' },
-		{ category: "level_3_qualifications", label: 'qual4' },
-		{ category: "level_4_qualifications_and_above", label: 'qual5' },
-		{ category: "no_qualifications", label: 'qual6' },
-		{ category: "other_qualifications", label: 'qual7' }
+		{ category: "apprenticeship", label: 'No qualifications' },
+		{ category: "level_1_qualifications", label: 'Level 1' },
+		{ category: "level_2_qualifications", label: 'Level 2' },
+		{ category: "level_3_qualifications", label: 'Apprenticeship 3' },
+		{ category: "level_4_qualifications_and_above", label: 'Level 3' },
+		{ category: "no_qualifications", label: 'Level 4 and above ' },
+		{ category: "other_qualifications", label: 'Other' }
 		  ],
 
 	religion_or_religion_brought_up_in: [

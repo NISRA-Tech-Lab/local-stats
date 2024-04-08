@@ -5,10 +5,12 @@ export let place;
 
 let i_button_info = {
 
-		location: {
-			title: "Location",
+	location: {
+			title: "About the area",
 			info: "Information about the area including its geographical hierarchy."
 		},
+		
+
 
 		area: {
 			title: "Area",
@@ -21,14 +23,124 @@ let i_button_info = {
 		},
 
 		pop: {
-			title: "Population - box with numbers",
+			title: "Population",
 			info: "Population is based on the number of usual residents. " +
 				  "A usual resident is anyone who, on 21 March 2021 is in the UK, and staying in the UK for a period of 3 months or more; " +
 			 	  "or has a permanent UK address and is outside the UK and is staying outside the UK for less than 12 months. " +
 			      "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
 		},
 
-		households: {
+		generalhealth: {
+			title: "General Health",
+			info: "General health is a self-assessment of a person’s general state of health. It is not " +
+					"based over any specified period of time. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+
+		wellbeing: {
+			title: "Happiness",
+			info: "words to be added"},
+
+		lifeexpectancy: {
+			title: "Life Expectancy",
+			info: "words to be added"},
+
+		births: {
+			title: "Birth rate",
+			info: "words to be added"},
+
+		deaths: {
+			title: "Death rate",
+			info: "words to be added"},
+
+		carers: {
+			title: "Provision on unpaid care",
+			info: "words to be added"},
+
+		hospitalactivity: {
+			title: "Activity in hospitals / waiting lists",
+			info: "words to be added"},
+
+		primarycare: {
+			title: "Primary care providers",
+			info: "words to be added"},
+
+			employmentrates: {
+			title: "Employment rates",
+			info: "words to be added"},
+
+
+			employed: {
+			title: "Number of people employed",
+			info: "words to be added"},
+
+
+			wages: {
+			title: "Average wages",
+			info: "words to be added"},
+
+
+			benefits: {
+			title: "Number of people on work-related benefits",
+			info: "words to be added"},
+
+
+
+			enrollments: {
+			title: "Number of enrolled in schools and colleges",
+			info: "words to be added"},
+
+
+			fsme: {
+			title: "Entitlement to Free School Meals",
+			info: "words to be added"},
+
+
+			teachers: {
+			title: "Teachers",
+			info: "words to be added"},
+
+
+			qualifications: {
+			title: "Highest level of Qualifications",
+			info: "words to be added"},
+
+
+			attainment: {
+			title: "Attainment of Qualifications",
+			info: "words to be added"},
+
+
+
+			popchange: {
+			title: "Population change",
+			info: "words to be added"},
+
+		age: {
+			title: "Broad age bands",
+			info: "words to be added"},
+			
+		sex: {
+			title: "Sex",
+			info: "words to be added"},
+			
+		hhsize: {
+			title: "Household size",
+			info: "The number of usual residents in the household.      <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+			
+		religion: {
+			title: "Religion, Religion brought up",
+			info: "The religious group the person belongs to or for people with no current religion their religious group of upbringing." +
+				"People with no current religion and no religion of upbringing are labelled 'None'." + 
+				"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+			
+		language: {
+			title: "Main language",
+			info: "Person's main language as declared in the Census." + 
+					"Statistics for all language questions are restricted" + 
+					"to persons aged 3 and over. <a" + 
+					"href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'" + 
+					"><strong>Statistical bulletins</strong></a>"},
+			
+			households: {
 			title: "Households - box with numbers",
 			info: "A household is either one person living alone or a group of people living at the same address " +
 				  "who share cooking facilities and share a living room, sitting room or dining area. " +
