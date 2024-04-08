@@ -346,7 +346,7 @@
 
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 
-					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
+					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ --
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 					<script>
@@ -805,6 +805,9 @@
 
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
+			<!-- New additions (all original in tact) -->
+			
+
 
 			<Accordion
 				id = "Area"

@@ -6,7 +6,7 @@ const config = {
 
         server: {
                     fs: {
-                        allow: ['data_jsons','data_jsons_dz', 'data_jsons_dea','data_jsons_dea_2202','data_jsons_dea_2302']
+                        allow: ['data_jsons','data_jsons_dz', 'data_jsons_dea','data_jsons_dea_2202','data_jsons_dea_2302','data_jsons_dea_20240408']
                     }
                 }
 };

@@ -1,0 +1,4612 @@
+{
+  "code": "N10000507",
+  "name": "Waterside",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000005",
+      "name": "Derry City and Strabane",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-7.2535, 54.9653],
+    [-7.3425, 55.0189]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 29045
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 18
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 12265
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 6.2629,
+          "fair": 13.8858,
+          "good": 28.054,
+          "very_bad": 2.0796,
+          "very_good": 49.7177
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 6.9716,
+          "four_people": 13.3235,
+          "one_person": 33.3578,
+          "three_people": 16.1122,
+          "two_people": 30.2348
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 5.0602,
+          "level_1_qualifications": 5.6884,
+          "level_2_qualifications": 13.2699,
+          "level_3_qualifications": 15.8218,
+          "level_4_qualifications_and_above": 33.7027,
+          "no_qualifications": 24.4024,
+          "other_qualifications": 2.0546
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.6517,
+          "northern_ireland": 84.8018,
+          "other_cob": 5.7122,
+          "republic_of_ireland": 3.6739,
+          "scotland": 1.0467,
+          "wales": 0.1136
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 96.8792,
+          "other_languages": 3.1208
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 19.8795,
+          "a15to39": 30.8177,
+          "a40to64": 33.1727,
+          "a65plus": 16.1301
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.2639,
+          "a20to49_hours": 3.0363,
+          "a50plus_hours": 3.8818,
+          "no_care": 87.818
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 50.2909,
+          "none": 6.1078,
+          "other_religions": 1.9866,
+          "protestant_and_other_christian_including_christian_related": 41.6147
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 51.3066,
+          "males": 48.6934
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "SENNonStatemented": 12.5088,
+          "FSME": 33.4505,
+          "All": 100,
+          "Reception": 0.1054,
+          "Female": 48.981,
+          "SENStatement": 5.2354,
+          "Year5": 13.9143,
+          "Nursery": 6.8166,
+          "Year6": 13.8791,
+          "Year4": 13.2818,
+          "Year1": 12.6493,
+          "Year2": 12.6493,
+          "Year7": 13.2818,
+          "Male": 51.019,
+          "Year3": 13.4223
+        },
+        "2017/18": {
+          "Male": 52.6555,
+          "SENNonStatemented": 19.8113,
+          "FSME": 36.7226,
+          "Year3": 13.6618,
+          "All": 100,
+          "Year2": 13.2425,
+          "Year6": 13.557,
+          "SENStatement": 2.935,
+          "Year1": 13.1377,
+          "Female": 47.3445,
+          "Year5": 14.5702,
+          "Year4": 12.2642,
+          "Nursery": 7.2676,
+          "Year7": 12.1943,
+          "Reception": 0.1048
+        }
+      },
+      "value": {
+        "2022/23": {
+          "SENNonStatemented": 356,
+          "FSME": 952,
+          "All": 2846,
+          "Reception": 3,
+          "Female": 1394,
+          "SENStatement": 149,
+          "Year5": 396,
+          "Nursery": 194,
+          "Year6": 395,
+          "Year4": 378,
+          "Year1": 360,
+          "Year2": 360,
+          "Year7": 378,
+          "Male": 1452,
+          "Year3": 382
+        },
+        "2017/18": {
+          "Male": 1507,
+          "SENNonStatemented": 567,
+          "FSME": 1051,
+          "Year3": 391,
+          "All": 2862,
+          "Year2": 379,
+          "Year6": 388,
+          "SENStatement": 84,
+          "Year1": 376,
+          "Female": 1355,
+          "Year5": 417,
+          "Year4": 351,
+          "Nursery": 208,
+          "Year7": 349,
+          "Reception": 3
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "FSME": 29.5634,
+          "Female": 48.9813,
+          "SENStatement": 5.8628,
+          "All": 100,
+          "Year11": 16.8399,
+          "Year10": 17.5884,
+          "Year14": 8.6902,
+          "Year9": 15.6757,
+          "Year12": 14.8857,
+          "SENNonStatemented": 7.526,
+          "Male": 51.0187,
+          "Year13": 9.5218,
+          "Year8": 16.7983
+        },
+        "2017/18": {
+          "Year13": 10.6944,
+          "Female": 52.002,
+          "Year9": 16.8779,
+          "FSME": 35.5297,
+          "Male": 47.998,
+          "SENStatement": 5.7273,
+          "All": 100,
+          "Year8": 17.4354,
+          "Year14": 8.3122,
+          "Year12": 15.5094,
+          "SENNonStatemented": 19.8682,
+          "Year11": 15.7628,
+          "Year10": 15.408
+        }
+      },
+      "value": {
+        "2022/23": {
+          "FSME": 711,
+          "Female": 1178,
+          "SENStatement": 141,
+          "All": 2405,
+          "Year11": 405,
+          "Year10": 423,
+          "Year14": 209,
+          "Year9": 377,
+          "Year12": 358,
+          "SENNonStatemented": 181,
+          "Male": 1227,
+          "Year13": 229,
+          "Year8": 404
+        },
+        "2017/18": {
+          "Year13": 211,
+          "Female": 1026,
+          "Year9": 333,
+          "FSME": 701,
+          "Male": 947,
+          "SENStatement": 113,
+          "All": 1973,
+          "Year8": 344,
+          "Year14": 164,
+          "Year12": 306,
+          "SENNonStatemented": 392,
+          "Year11": 311,
+          "Year10": 304
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "Year1": 9.2105,
+          "Year9": 5.2632,
+          "Year13": 2.6316,
+          "Year10": 6.5789,
+          "Year6": 7.8947,
+          "Year8": 7.8947,
+          "SENNonStatemented": 0,
+          "Year11": 11.8421,
+          "Male": 69.7368,
+          "Female": 30.2632,
+          "Year7": 6.5789,
+          "All": 100,
+          "Year4": 6.5789,
+          "Year3": 5.2632,
+          "Year5": 11.8421,
+          "Year14": 6.5789,
+          "FSME": 60.5263,
+          "Year2": 2.6316,
+          "SENStatement": 100,
+          "Year12": 5.2632,
+          "Nursery": 2.6316,
+          "Year15": 1.3158,
+          "Reception": 0
+        },
+        "2017/18": {
+          "Male": 73.4375,
+          "FSME": 59.375,
+          "Year8": 7.8125,
+          "Year15": 4.6875,
+          "All": 100,
+          "SENNonStatemented": null,
+          "Year5": 4.6875,
+          "SENStatement": 95.3125,
+          "Female": 26.5625,
+          "Year4": 3.125,
+          "Reception": 0,
+          "Year3": 4.6875,
+          "Year1": 7.8125,
+          "Year10": 1.5625,
+          "Year13": 10.9375,
+          "Year11": 6.25,
+          "Year7": 6.25,
+          "Year6": 9.375,
+          "Nursery": 10.9375,
+          "Year9": 4.6875,
+          "Year12": 9.375,
+          "Year14": 3.125,
+          "Year2": 4.6875
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year1": 7,
+          "Year9": 4,
+          "Year13": 2,
+          "Year10": 5,
+          "Year6": 6,
+          "Year8": 6,
+          "SENNonStatemented": 0,
+          "Year11": 9,
+          "Male": 53,
+          "Female": 23,
+          "Year7": 5,
+          "All": 76,
+          "Year4": 5,
+          "Year3": 4,
+          "Year5": 9,
+          "Year14": 5,
+          "FSME": 46,
+          "Year2": 2,
+          "SENStatement": 76,
+          "Year12": 4,
+          "Nursery": 2,
+          "Year15": 1,
+          "Reception": 0
+        },
+        "2017/18": {
+          "Male": 47,
+          "FSME": 38,
+          "Year8": 5,
+          "Year15": 3,
+          "All": 64,
+          "SENNonStatemented": null,
+          "Year5": 3,
+          "SENStatement": 61,
+          "Female": 17,
+          "Year4": 2,
+          "Reception": 0,
+          "Year3": 3,
+          "Year1": 5,
+          "Year10": 1,
+          "Year13": 7,
+          "Year11": 4,
+          "Year7": 4,
+          "Year6": 6,
+          "Nursery": 7,
+          "Year9": 3,
+          "Year12": 6,
+          "Year14": 2,
+          "Year2": 3
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 0.8347,
+          "Dental_Registrations_ageGDSDR3_5": 2.7286,
+          "Dental_Registrations_ageGDSDR18plus": 76.8829,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.2075,
+          "Dental_Registrations_ageGDSDR3_5": 4.5417,
+          "Dental_Registrations_ageGDSDR18plus": 74.7076,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 171,
+          "Dental_Registrations_ageGDSDR3_5": 559,
+          "Dental_Registrations_ageGDSDR18plus": 15751,
+          "Dental_Registrations_ageAll": 20487
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 222,
+          "Dental_Registrations_ageGDSDR3_5": 835,
+          "Dental_Registrations_ageGDSDR18plus": 13735,
+          "Dental_Registrations_ageAll": 18385
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTX": 37.17,
+          "GDSDTC": 1.0413,
+          "GDSDTE": 8.6912,
+          "GDSDTF": 53.0975
+        },
+        "2017/18": {
+          "GDSDTF": 55.1438,
+          "GDSDTE": 8.4173,
+          "GDSDTX": 34.5501,
+          "GDSDTC": 1.8888
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTX": 10602,
+          "GDSDTC": 297,
+          "GDSDTE": 2479,
+          "GDSDTF": 15145
+        },
+        "2017/18": {
+          "GDSDTF": 17780,
+          "GDSDTE": 2714,
+          "GDSDTX": 11140,
+          "GDSDTC": 609
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "DLA": 7.6225,
+          "UC": 15.0635,
+          "ESA": 11.3128,
+          "JSA": 1.2099,
+          "IS": 1.5124,
+          "PIP": 18.9353,
+          "PC": 5.9286,
+          "CA": 7.5015,
+          "RP": 26.3763,
+          "AA": 4.5372
+        },
+        "2017": {
+          "UC": 0,
+          "ESA": 14.9273,
+          "JSA": 5.7464,
+          "IS": 4.8877,
+          "PIP": 0.9908,
+          "CA": 7.5958,
+          "DLA": 23.8441,
+          "RP": 28.7979,
+          "PC": 8.0581,
+          "AA": 5.1519
+        }
+      },
+      "value": {
+        "2022": {
+          "DLA": 1260,
+          "UC": 2490,
+          "ESA": 1870,
+          "JSA": 200,
+          "IS": 250,
+          "PIP": 3130,
+          "PC": 980,
+          "CA": 1240,
+          "RP": 4360,
+          "AA": 750
+        },
+        "2017": {
+          "UC": 0,
+          "ESA": 2260,
+          "JSA": 870,
+          "IS": 740,
+          "PIP": 150,
+          "CA": 1150,
+          "DLA": 3610,
+          "RP": 4360,
+          "PC": 1220,
+          "AA": 780
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 1210
+        },
+        "2017/18": {
+          "FEENROLn": 1575
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 970
+        },
+        "2017/18": {
+          "HEENROLn": 945
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 80.1,
+          "LEbirth_gender2": 77.9
+        },
+        "2015-17": {
+          "LEbirth_gender1": 79.9,
+          "LEbirth_gender2": 77
+        }
+      }
+    }
+  },
+  "hectares": 1583,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Waterside",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Waterside",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Waterside",
+        "category": "bad",
+        "perc": 6.2629
+      },
+      {
+        "group": "Waterside",
+        "category": "fair",
+        "perc": 13.8858
+      },
+      {
+        "group": "Waterside",
+        "category": "good",
+        "perc": 28.054
+      },
+      {
+        "group": "Waterside",
+        "category": "very_bad",
+        "perc": 2.0796
+      },
+      {
+        "group": "Waterside",
+        "category": "very_good",
+        "perc": 49.7177
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Waterside",
+        "category": "five_people",
+        "perc": 6.9716
+      },
+      {
+        "group": "Waterside",
+        "category": "four_people",
+        "perc": 13.3235
+      },
+      {
+        "group": "Waterside",
+        "category": "one_person",
+        "perc": 33.3578
+      },
+      {
+        "group": "Waterside",
+        "category": "three_people",
+        "perc": 16.1122
+      },
+      {
+        "group": "Waterside",
+        "category": "two_people",
+        "perc": 30.2348
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Waterside",
+        "category": "apprenticeship",
+        "perc": 5.0602
+      },
+      {
+        "group": "Waterside",
+        "category": "level_1_qualifications",
+        "perc": 5.6884
+      },
+      {
+        "group": "Waterside",
+        "category": "level_2_qualifications",
+        "perc": 13.2699
+      },
+      {
+        "group": "Waterside",
+        "category": "level_3_qualifications",
+        "perc": 15.8218
+      },
+      {
+        "group": "Waterside",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.7027
+      },
+      {
+        "group": "Waterside",
+        "category": "no_qualifications",
+        "perc": 24.4024
+      },
+      {
+        "group": "Waterside",
+        "category": "other_qualifications",
+        "perc": 2.0546
+      }
+    ],
+    "cob": [
+      {
+        "group": "Waterside",
+        "category": "england",
+        "perc": 4.6517
+      },
+      {
+        "group": "Waterside",
+        "category": "northern_ireland",
+        "perc": 84.8018
+      },
+      {
+        "group": "Waterside",
+        "category": "other_cob",
+        "perc": 5.7122
+      },
+      {
+        "group": "Waterside",
+        "category": "republic_of_ireland",
+        "perc": 3.6739
+      },
+      {
+        "group": "Waterside",
+        "category": "scotland",
+        "perc": 1.0467
+      },
+      {
+        "group": "Waterside",
+        "category": "wales",
+        "perc": 0.1136
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Waterside",
+        "category": "english",
+        "perc": 96.8792
+      },
+      {
+        "group": "Waterside",
+        "category": "other_languages",
+        "perc": 3.1208
+      }
+    ],
+    "age": [
+      {
+        "group": "Waterside",
+        "category": "a0to14",
+        "perc": 19.8795
+      },
+      {
+        "group": "Waterside",
+        "category": "a15to39",
+        "perc": 30.8177
+      },
+      {
+        "group": "Waterside",
+        "category": "a40to64",
+        "perc": 33.1727
+      },
+      {
+        "group": "Waterside",
+        "category": "a65plus",
+        "perc": 16.1301
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Waterside",
+        "category": "a1to19_hours",
+        "perc": 5.2639
+      },
+      {
+        "group": "Waterside",
+        "category": "a20to49_hours",
+        "perc": 3.0363
+      },
+      {
+        "group": "Waterside",
+        "category": "a50plus_hours",
+        "perc": 3.8818
+      },
+      {
+        "group": "Waterside",
+        "category": "no_care",
+        "perc": 87.818
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Waterside",
+        "category": "catholic",
+        "perc": 50.2909
+      },
+      {
+        "group": "Waterside",
+        "category": "none",
+        "perc": 6.1078
+      },
+      {
+        "group": "Waterside",
+        "category": "other_religions",
+        "perc": 1.9866
+      },
+      {
+        "group": "Waterside",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.6147
+      }
+    ],
+    "sex": [
+      {
+        "group": "Waterside",
+        "category": "females",
+        "perc": 51.3066
+      },
+      {
+        "group": "Waterside",
+        "category": "males",
+        "perc": 48.6934
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 12.5088
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 33.4505
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0.1054
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 48.981
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.2354
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 13.9143
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 6.8166
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 13.8791
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 13.2818
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 12.6493
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 12.6493
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 13.2818
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 51.019
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 13.4223
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 52.6555
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 19.8113
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 36.7226
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 13.6618
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 13.2425
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 13.557
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 2.935
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 13.1377
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 47.3445
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 14.5702
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 12.2642
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 7.2676
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 12.1943
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0.1048
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 29.5634
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 48.9813
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.8628
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 16.8399
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 17.5884
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 8.6902
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 15.6757
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 14.8857
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 7.526
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 51.0187
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 9.5218
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 16.7983
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 10.6944
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 52.002
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 16.8779
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 35.5297
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 47.998
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.7273
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 17.4354
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 8.3122
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 15.5094
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 19.8682
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 15.7628
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 15.408
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 9.2105
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 7.8947
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 7.8947
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 11.8421
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 69.7368
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 30.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 11.8421
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 60.5263
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "Year15",
+          "perc": 1.3158
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 73.4375
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 59.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 7.8125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year15",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 95.3125
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 26.5625
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 3.125
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 7.8125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 1.5625
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 10.9375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 6.25
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 6.25
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 9.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 10.9375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 9.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 3.125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 4.6875
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.8347
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.7286
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.8829
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.2075
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.5417
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.7076
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTX",
+          "perc": 37.17
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTC",
+          "perc": 1.0413
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTE",
+          "perc": 8.6912
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTF",
+          "perc": 53.0975
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTF",
+          "perc": 55.1438
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTE",
+          "perc": 8.4173
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTX",
+          "perc": 34.5501
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTC",
+          "perc": 1.8888
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "WATERSIDE",
+          "category": "DLA",
+          "perc": 7.6225
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "UC",
+          "perc": 15.0635
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "ESA",
+          "perc": 11.3128
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "JSA",
+          "perc": 1.2099
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "IS",
+          "perc": 1.5124
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PIP",
+          "perc": 18.9353
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PC",
+          "perc": 5.9286
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "CA",
+          "perc": 7.5015
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "RP",
+          "perc": 26.3763
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "AA",
+          "perc": 4.5372
+        }
+      ],
+      "2017": [
+        {
+          "group": "WATERSIDE",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "ESA",
+          "perc": 14.9273
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "JSA",
+          "perc": 5.7464
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "IS",
+          "perc": 4.8877
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PIP",
+          "perc": 0.9908
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "CA",
+          "perc": 7.5958
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "DLA",
+          "perc": 23.8441
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "RP",
+          "perc": 28.7979
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PC",
+          "perc": 8.0581
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "AA",
+          "perc": 5.1519
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Waterside",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Waterside",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 6.2629
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.8858
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 28.054
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.0796
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 49.7177
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 6.9716
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 13.3235
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 33.3578
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.1122
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.2348
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 5.0602
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.6884
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.2699
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.8218
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.7027
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 24.4024
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.0546
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.6517
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 84.8018
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 5.7122
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 3.6739
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0467
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1136
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 96.8792
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 3.1208
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 19.8795
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 30.8177
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 33.1727
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 16.1301
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.2639
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.0363
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.8818
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.818
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 50.2909
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 6.1078
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.9866
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.6147
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 51.3066
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 48.6934
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 12.5088
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 33.4505
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0.1054
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.981
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.2354
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 13.9143
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 6.8166
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.8791
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.2818
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 12.6493
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 12.6493
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 13.2818
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.019
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 13.4223
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 52.6555
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 19.8113
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 36.7226
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 13.6618
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 13.2425
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 13.557
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.935
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 13.1377
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 47.3445
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 14.5702
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 12.2642
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 7.2676
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 12.1943
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0.1048
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 29.5634
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.9813
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.8628
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.8399
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 17.5884
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 8.6902
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 15.6757
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 14.8857
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 7.526
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.0187
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 9.5218
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 16.7983
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 10.6944
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 52.002
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 16.8779
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 35.5297
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 47.998
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 5.7273
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 17.4354
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 8.3122
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 15.5094
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 19.8682
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 15.7628
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 15.408
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 9.2105
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 5.2632
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 2.6316
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 6.5789
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 7.8947
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 7.8947
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 11.8421
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 69.7368
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 30.2632
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 6.5789
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 6.5789
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 5.2632
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 11.8421
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 6.5789
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 60.5263
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 2.6316
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 5.2632
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 2.6316
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 1.3158
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 73.4375
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 59.375
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 7.8125
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 4.6875
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented"
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 4.6875
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 95.3125
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 26.5625
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 3.125
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 4.6875
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 7.8125
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 1.5625
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 10.9375
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 6.25
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 6.25
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 9.375
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 10.9375
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 4.6875
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 9.375
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 3.125
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 4.6875
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 0.8347
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 2.7286
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 76.8829
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.2075
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 4.5417
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 74.7076
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 37.17
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.0413
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 8.6912
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 53.0975
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 55.1438
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 8.4173
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 34.5501
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.8888
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.6225
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 15.0635
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 11.3128
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 1.2099
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.5124
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 18.9353
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.9286
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 7.5015
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 26.3763
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 4.5372
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 14.9273
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 5.7464
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 4.8877
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.9908
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 7.5958
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 23.8441
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 28.7979
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 8.0581
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.1519
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Waterside",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Waterside",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Waterside",
+        "category": "bad",
+        "perc": 6.2629
+      },
+      {
+        "group": "Waterside",
+        "category": "fair",
+        "perc": 13.8858
+      },
+      {
+        "group": "Waterside",
+        "category": "good",
+        "perc": 28.054
+      },
+      {
+        "group": "Waterside",
+        "category": "very_bad",
+        "perc": 2.0796
+      },
+      {
+        "group": "Waterside",
+        "category": "very_good",
+        "perc": 49.7177
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Waterside",
+        "category": "five_people",
+        "perc": 6.9716
+      },
+      {
+        "group": "Waterside",
+        "category": "four_people",
+        "perc": 13.3235
+      },
+      {
+        "group": "Waterside",
+        "category": "one_person",
+        "perc": 33.3578
+      },
+      {
+        "group": "Waterside",
+        "category": "three_people",
+        "perc": 16.1122
+      },
+      {
+        "group": "Waterside",
+        "category": "two_people",
+        "perc": 30.2348
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Waterside",
+        "category": "apprenticeship",
+        "perc": 5.0602
+      },
+      {
+        "group": "Waterside",
+        "category": "level_1_qualifications",
+        "perc": 5.6884
+      },
+      {
+        "group": "Waterside",
+        "category": "level_2_qualifications",
+        "perc": 13.2699
+      },
+      {
+        "group": "Waterside",
+        "category": "level_3_qualifications",
+        "perc": 15.8218
+      },
+      {
+        "group": "Waterside",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.7027
+      },
+      {
+        "group": "Waterside",
+        "category": "no_qualifications",
+        "perc": 24.4024
+      },
+      {
+        "group": "Waterside",
+        "category": "other_qualifications",
+        "perc": 2.0546
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Waterside",
+        "category": "england",
+        "perc": 4.6517
+      },
+      {
+        "group": "Waterside",
+        "category": "northern_ireland",
+        "perc": 84.8018
+      },
+      {
+        "group": "Waterside",
+        "category": "other_cob",
+        "perc": 5.7122
+      },
+      {
+        "group": "Waterside",
+        "category": "republic_of_ireland",
+        "perc": 3.6739
+      },
+      {
+        "group": "Waterside",
+        "category": "scotland",
+        "perc": 1.0467
+      },
+      {
+        "group": "Waterside",
+        "category": "wales",
+        "perc": 0.1136
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Waterside",
+        "category": "english",
+        "perc": 96.8792
+      },
+      {
+        "group": "Waterside",
+        "category": "other_languages",
+        "perc": 3.1208
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Waterside",
+        "category": "a0to14",
+        "perc": 19.8795
+      },
+      {
+        "group": "Waterside",
+        "category": "a15to39",
+        "perc": 30.8177
+      },
+      {
+        "group": "Waterside",
+        "category": "a40to64",
+        "perc": 33.1727
+      },
+      {
+        "group": "Waterside",
+        "category": "a65plus",
+        "perc": 16.1301
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Waterside",
+        "category": "a1to19_hours",
+        "perc": 5.2639
+      },
+      {
+        "group": "Waterside",
+        "category": "a20to49_hours",
+        "perc": 3.0363
+      },
+      {
+        "group": "Waterside",
+        "category": "a50plus_hours",
+        "perc": 3.8818
+      },
+      {
+        "group": "Waterside",
+        "category": "no_care",
+        "perc": 87.818
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Waterside",
+        "category": "catholic",
+        "perc": 50.2909
+      },
+      {
+        "group": "Waterside",
+        "category": "none",
+        "perc": 6.1078
+      },
+      {
+        "group": "Waterside",
+        "category": "other_religions",
+        "perc": 1.9866
+      },
+      {
+        "group": "Waterside",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.6147
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Waterside",
+        "category": "females",
+        "perc": 51.3066
+      },
+      {
+        "group": "Waterside",
+        "category": "males",
+        "perc": 48.6934
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 12.5088
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 33.4505
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0.1054
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 48.981
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.2354
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 13.9143
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 6.8166
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 13.8791
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 13.2818
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 12.6493
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 12.6493
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 13.2818
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 51.019
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 13.4223
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 52.6555
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 19.8113
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 36.7226
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 13.6618
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 13.2425
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 13.557
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 2.935
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 13.1377
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 47.3445
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 14.5702
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 12.2642
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 7.2676
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 12.1943
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0.1048
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 29.5634
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 48.9813
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.8628
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 16.8399
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 17.5884
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 8.6902
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 15.6757
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 14.8857
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 7.526
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 51.0187
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 9.5218
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 16.7983
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 10.6944
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 52.002
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 16.8779
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 35.5297
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 47.998
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 5.7273
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 17.4354
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 8.3122
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 15.5094
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 19.8682
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 15.7628
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 15.408
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 9.2105
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 7.8947
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 7.8947
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 11.8421
+        },
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 69.7368
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 30.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 11.8421
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 6.5789
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 60.5263
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 5.2632
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 2.6316
+        },
+        {
+          "group": "Waterside",
+          "category": "Year15",
+          "perc": 1.3158
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "Male",
+          "perc": 73.4375
+        },
+        {
+          "group": "Waterside",
+          "category": "FSME",
+          "perc": 59.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year8",
+          "perc": 7.8125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year15",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Waterside",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Waterside",
+          "category": "Year5",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "SENStatement",
+          "perc": 95.3125
+        },
+        {
+          "group": "Waterside",
+          "category": "Female",
+          "perc": 26.5625
+        },
+        {
+          "group": "Waterside",
+          "category": "Year4",
+          "perc": 3.125
+        },
+        {
+          "group": "Waterside",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Waterside",
+          "category": "Year3",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "Year1",
+          "perc": 7.8125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year10",
+          "perc": 1.5625
+        },
+        {
+          "group": "Waterside",
+          "category": "Year13",
+          "perc": 10.9375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year11",
+          "perc": 6.25
+        },
+        {
+          "group": "Waterside",
+          "category": "Year7",
+          "perc": 6.25
+        },
+        {
+          "group": "Waterside",
+          "category": "Year6",
+          "perc": 9.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Nursery",
+          "perc": 10.9375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year9",
+          "perc": 4.6875
+        },
+        {
+          "group": "Waterside",
+          "category": "Year12",
+          "perc": 9.375
+        },
+        {
+          "group": "Waterside",
+          "category": "Year14",
+          "perc": 3.125
+        },
+        {
+          "group": "Waterside",
+          "category": "Year2",
+          "perc": 4.6875
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.8347
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.7286
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.8829
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.2075
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.5417
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.7076
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTX",
+          "perc": 37.17
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTC",
+          "perc": 1.0413
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTE",
+          "perc": 8.6912
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTF",
+          "perc": 53.0975
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTF",
+          "perc": 55.1438
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTE",
+          "perc": 8.4173
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTX",
+          "perc": 34.5501
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "GDSDTC",
+          "perc": 1.8888
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "WATERSIDE",
+          "category": "DLA",
+          "perc": 7.6225
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "UC",
+          "perc": 15.0635
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "ESA",
+          "perc": 11.3128
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "JSA",
+          "perc": 1.2099
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "IS",
+          "perc": 1.5124
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PIP",
+          "perc": 18.9353
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PC",
+          "perc": 5.9286
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "CA",
+          "perc": 7.5015
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "RP",
+          "perc": 26.3763
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "AA",
+          "perc": 4.5372
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "WATERSIDE",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "ESA",
+          "perc": 14.9273
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "JSA",
+          "perc": 5.7464
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "IS",
+          "perc": 4.8877
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PIP",
+          "perc": 0.9908
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "CA",
+          "perc": 7.5958
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "DLA",
+          "perc": 23.8441
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "RP",
+          "perc": 28.7979
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "PC",
+          "perc": 8.0581
+        },
+        {
+          "group": "WATERSIDE",
+          "category": "AA",
+          "perc": 5.1519
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Waterside",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Waterside",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Waterside",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Waterside",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

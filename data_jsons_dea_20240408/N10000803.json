@@ -1,0 +1,4615 @@
+{
+  "code": "N10000803",
+  "name": "Braid",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000008",
+      "name": "Mid and East Antrim",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.9448, 54.774],
+    [-6.3657, 55.0344]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 23826
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 35
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 9321
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.4787,
+          "fair": 13.138,
+          "good": 29.0128,
+          "very_bad": 1.4649,
+          "very_good": 51.9056
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 9.602,
+          "four_people": 15.331,
+          "one_person": 26.6173,
+          "three_people": 16.3073,
+          "two_people": 32.1425
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.2073,
+          "level_1_qualifications": 5.8182,
+          "level_2_qualifications": 14.2415,
+          "level_3_qualifications": 15.9922,
+          "level_4_qualifications_and_above": 29.0806,
+          "no_qualifications": 25.2385,
+          "other_qualifications": 2.4216
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 3.0763,
+          "northern_ireland": 91.5726,
+          "other_cob": 3.5254,
+          "republic_of_ireland": 0.7009,
+          "scotland": 1.0115,
+          "wales": 0.1133
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.9243,
+          "other_languages": 2.0757
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 18.5698,
+          "a15to39": 28.1925,
+          "a40to64": 34.0006,
+          "a65plus": 19.2371
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.3323,
+          "a20to49_hours": 2.8024,
+          "a50plus_hours": 3.5611,
+          "no_care": 87.3042
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 18.2993,
+          "none": 8.9188,
+          "other_religions": 0.7639,
+          "protestant_and_other_christian_including_christian_related": 72.018
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.2434,
+          "males": 49.7566
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "SENNonStatemented": 11.1471,
+          "Male": 50.7401,
+          "Reception": 0,
+          "Year3": 14.1536,
+          "SENStatement": 4.0703,
+          "Year5": 12.951,
+          "FSME": 17.8538,
+          "Year1": 13.691,
+          "Female": 49.2599,
+          "Year7": 12.4422,
+          "All": 100,
+          "Year6": 13.7373,
+          "Year4": 13.7835,
+          "Nursery": 3.5615,
+          "Year2": 15.6799
+        },
+        "2017/18": {
+          "FSME": 20.4286,
+          "SENNonStatemented": 16.4159,
+          "Male": 52.8044,
+          "Year6": 14.9111,
+          "SENStatement": 2.4624,
+          "Reception": 0.0456,
+          "Year1": 13.8167,
+          "Year2": 12.2207,
+          "All": 100,
+          "Year4": 13.7711,
+          "Year7": 14.5007,
+          "Year5": 13.0871,
+          "Female": 47.1956,
+          "Nursery": 4.1496,
+          "Year3": 13.4975
+        }
+      },
+      "value": {
+        "2022/23": {
+          "SENNonStatemented": 241,
+          "Male": 1097,
+          "Reception": 0,
+          "Year3": 306,
+          "SENStatement": 88,
+          "Year5": 280,
+          "FSME": 386,
+          "Year1": 296,
+          "Female": 1065,
+          "Year7": 269,
+          "All": 2162,
+          "Year6": 297,
+          "Year4": 298,
+          "Nursery": 77,
+          "Year2": 339
+        },
+        "2017/18": {
+          "FSME": 448,
+          "SENNonStatemented": 360,
+          "Male": 1158,
+          "Year6": 327,
+          "SENStatement": 54,
+          "Reception": 1,
+          "Year1": 303,
+          "Year2": 268,
+          "All": 2193,
+          "Year4": 302,
+          "Year7": 318,
+          "Year5": 287,
+          "Female": 1035,
+          "Nursery": 91,
+          "Year3": 296
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year14": 10.0767,
+          "Year10": 14.8849,
+          "FSME": 16.4706,
+          "Year12": 16.266,
+          "Year11": 17.1355,
+          "Year9": 15.4476,
+          "SENStatement": 4.2455,
+          "Year13": 11.1509,
+          "All": 100,
+          "Year8": 15.0384,
+          "Female": 48.491,
+          "SENNonStatemented": 8.6957,
+          "Male": 51.509
+        },
+        "2017/18": {
+          "FSME": 18.9496,
+          "Year12": 16.2426,
+          "SENStatement": 2.5988,
+          "Year13": 10.2328,
+          "Female": 50.9475,
+          "All": 100,
+          "Year14": 8.8251,
+          "Year10": 16.3508,
+          "Male": 49.0525,
+          "Year11": 15.7553,
+          "Year8": 15.5387,
+          "Year9": 17.0547,
+          "SENNonStatemented": 15.1056
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year14": 197,
+          "Year10": 291,
+          "FSME": 322,
+          "Year12": 318,
+          "Year11": 335,
+          "Year9": 302,
+          "SENStatement": 83,
+          "Year13": 218,
+          "All": 1955,
+          "Year8": 294,
+          "Female": 948,
+          "SENNonStatemented": 170,
+          "Male": 1007
+        },
+        "2017/18": {
+          "FSME": 350,
+          "Year12": 300,
+          "SENStatement": 48,
+          "Year13": 189,
+          "Female": 941,
+          "All": 1847,
+          "Year14": 163,
+          "Year10": 302,
+          "Male": 906,
+          "Year11": 291,
+          "Year8": 287,
+          "Year9": 315,
+          "SENNonStatemented": 279
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "Female": 32.4675,
+          "Year14": 6.4935,
+          "Year11": 9.0909,
+          "Year13": 6.4935,
+          "Year9": 7.7922,
+          "Year6": 10.3896,
+          "Year3": 9.0909,
+          "Year7": 3.8961,
+          "Year2": 7.7922,
+          "FSME": 46.7532,
+          "SENNonStatemented": 0,
+          "Year10": 6.4935,
+          "Year4": 1.2987,
+          "Year12": 6.4935,
+          "Male": 67.5325,
+          "Reception": 0,
+          "Nursery": 5.1948,
+          "Year8": 9.0909,
+          "Year1": 5.1948,
+          "SENStatement": 100,
+          "Year15": 2.5974,
+          "All": 100,
+          "Year5": 2.5974
+        },
+        "2017/18": {
+          "Year5": 9.5238,
+          "Year4": 6.3492,
+          "Year10": 9.5238,
+          "FSME": 46.0317,
+          "Female": 34.9206,
+          "SENStatement": 100,
+          "All": 100,
+          "Year3": 11.1111,
+          "Reception": 1.5873,
+          "Year13": 1.5873,
+          "Year14": 3.1746,
+          "Year12": 7.9365,
+          "SENNonStatemented": 0,
+          "Year1": 9.5238,
+          "Year15": 0,
+          "Year9": 9.5238,
+          "Year7": 4.7619,
+          "Nursery": 0,
+          "Year11": 3.1746,
+          "Year8": 7.9365,
+          "Male": 65.0794,
+          "Year6": 6.3492,
+          "Year2": 7.9365
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Female": 25,
+          "Year14": 5,
+          "Year11": 7,
+          "Year13": 5,
+          "Year9": 6,
+          "Year6": 8,
+          "Year3": 7,
+          "Year7": 3,
+          "Year2": 6,
+          "FSME": 36,
+          "SENNonStatemented": 0,
+          "Year10": 5,
+          "Year4": 1,
+          "Year12": 5,
+          "Male": 52,
+          "Reception": 0,
+          "Nursery": 4,
+          "Year8": 7,
+          "Year1": 4,
+          "SENStatement": 77,
+          "Year15": 2,
+          "All": 77,
+          "Year5": 2
+        },
+        "2017/18": {
+          "Year5": 6,
+          "Year4": 4,
+          "Year10": 6,
+          "FSME": 29,
+          "Female": 22,
+          "SENStatement": 63,
+          "All": 63,
+          "Year3": 7,
+          "Reception": 1,
+          "Year13": 1,
+          "Year14": 2,
+          "Year12": 5,
+          "SENNonStatemented": 0,
+          "Year1": 6,
+          "Year15": 0,
+          "Year9": 6,
+          "Year7": 3,
+          "Nursery": 0,
+          "Year11": 2,
+          "Year8": 5,
+          "Male": 41,
+          "Year6": 4,
+          "Year2": 5
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 1.0418,
+          "Dental_Registrations_ageGDSDR3_5": 3.335,
+          "Dental_Registrations_ageGDSDR18plus": 76.332,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.5519,
+          "Dental_Registrations_ageGDSDR3_5": 4.418,
+          "Dental_Registrations_ageGDSDR18plus": 73.8173,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 184,
+          "Dental_Registrations_ageGDSDR3_5": 589,
+          "Dental_Registrations_ageGDSDR18plus": 13481,
+          "Dental_Registrations_ageAll": 17661
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 248,
+          "Dental_Registrations_ageGDSDR3_5": 706,
+          "Dental_Registrations_ageGDSDR18plus": 11796,
+          "Dental_Registrations_ageAll": 15980
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTC": 0.9458,
+          "GDSDTE": 9.141,
+          "GDSDTX": 45.2264,
+          "GDSDTF": 44.6868
+        },
+        "2017/18": {
+          "GDSDTE": 9.2217,
+          "GDSDTC": 1.9886,
+          "GDSDTF": 48.0745,
+          "GDSDTX": 40.7152
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTC": 170,
+          "GDSDTE": 1643,
+          "GDSDTX": 8129,
+          "GDSDTF": 8032
+        },
+        "2017/18": {
+          "GDSDTE": 2045,
+          "GDSDTC": 441,
+          "GDSDTF": 10661,
+          "GDSDTX": 9029
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "IS": 0.8929,
+          "PC": 5.8929,
+          "CA": 6.4286,
+          "JSA": 0.7143,
+          "PIP": 14.1964,
+          "ESA": 9.8214,
+          "RP": 37.9464,
+          "AA": 7.1429,
+          "UC": 11.0714,
+          "DLA": 5.8929
+        },
+        "2017": {
+          "AA": 7.655,
+          "PC": 8.1395,
+          "RP": 42.5388,
+          "DLA": 17.7326,
+          "UC": 0,
+          "ESA": 11.6279,
+          "PIP": 0.8721,
+          "JSA": 2.5194,
+          "CA": 6.2984,
+          "IS": 2.6163
+        }
+      },
+      "value": {
+        "2022": {
+          "IS": 100,
+          "PC": 660,
+          "CA": 720,
+          "JSA": 80,
+          "PIP": 1590,
+          "ESA": 1100,
+          "RP": 4250,
+          "AA": 800,
+          "UC": 1240,
+          "DLA": 660
+        },
+        "2017": {
+          "AA": 790,
+          "PC": 840,
+          "RP": 4390,
+          "DLA": 1830,
+          "UC": 0,
+          "ESA": 1200,
+          "PIP": 90,
+          "JSA": 260,
+          "CA": 650,
+          "IS": 270
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 870
+        },
+        "2017/18": {
+          "FEENROLn": 1155
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 795
+        },
+        "2017/18": {
+          "HEENROLn": 720
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 83.2,
+          "LEbirth_gender2": 78.8
+        },
+        "2015-17": {
+          "LEbirth_gender1": 82.5,
+          "LEbirth_gender2": 79.2
+        }
+      }
+    }
+  },
+  "hectares": 48307,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Braid",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Braid",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Braid",
+        "category": "bad",
+        "perc": 4.4787
+      },
+      {
+        "group": "Braid",
+        "category": "fair",
+        "perc": 13.138
+      },
+      {
+        "group": "Braid",
+        "category": "good",
+        "perc": 29.0128
+      },
+      {
+        "group": "Braid",
+        "category": "very_bad",
+        "perc": 1.4649
+      },
+      {
+        "group": "Braid",
+        "category": "very_good",
+        "perc": 51.9056
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Braid",
+        "category": "five_people",
+        "perc": 9.602
+      },
+      {
+        "group": "Braid",
+        "category": "four_people",
+        "perc": 15.331
+      },
+      {
+        "group": "Braid",
+        "category": "one_person",
+        "perc": 26.6173
+      },
+      {
+        "group": "Braid",
+        "category": "three_people",
+        "perc": 16.3073
+      },
+      {
+        "group": "Braid",
+        "category": "two_people",
+        "perc": 32.1425
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Braid",
+        "category": "apprenticeship",
+        "perc": 7.2073
+      },
+      {
+        "group": "Braid",
+        "category": "level_1_qualifications",
+        "perc": 5.8182
+      },
+      {
+        "group": "Braid",
+        "category": "level_2_qualifications",
+        "perc": 14.2415
+      },
+      {
+        "group": "Braid",
+        "category": "level_3_qualifications",
+        "perc": 15.9922
+      },
+      {
+        "group": "Braid",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.0806
+      },
+      {
+        "group": "Braid",
+        "category": "no_qualifications",
+        "perc": 25.2385
+      },
+      {
+        "group": "Braid",
+        "category": "other_qualifications",
+        "perc": 2.4216
+      }
+    ],
+    "cob": [
+      {
+        "group": "Braid",
+        "category": "england",
+        "perc": 3.0763
+      },
+      {
+        "group": "Braid",
+        "category": "northern_ireland",
+        "perc": 91.5726
+      },
+      {
+        "group": "Braid",
+        "category": "other_cob",
+        "perc": 3.5254
+      },
+      {
+        "group": "Braid",
+        "category": "republic_of_ireland",
+        "perc": 0.7009
+      },
+      {
+        "group": "Braid",
+        "category": "scotland",
+        "perc": 1.0115
+      },
+      {
+        "group": "Braid",
+        "category": "wales",
+        "perc": 0.1133
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Braid",
+        "category": "english",
+        "perc": 97.9243
+      },
+      {
+        "group": "Braid",
+        "category": "other_languages",
+        "perc": 2.0757
+      }
+    ],
+    "age": [
+      {
+        "group": "Braid",
+        "category": "a0to14",
+        "perc": 18.5698
+      },
+      {
+        "group": "Braid",
+        "category": "a15to39",
+        "perc": 28.1925
+      },
+      {
+        "group": "Braid",
+        "category": "a40to64",
+        "perc": 34.0006
+      },
+      {
+        "group": "Braid",
+        "category": "a65plus",
+        "perc": 19.2371
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Braid",
+        "category": "a1to19_hours",
+        "perc": 6.3323
+      },
+      {
+        "group": "Braid",
+        "category": "a20to49_hours",
+        "perc": 2.8024
+      },
+      {
+        "group": "Braid",
+        "category": "a50plus_hours",
+        "perc": 3.5611
+      },
+      {
+        "group": "Braid",
+        "category": "no_care",
+        "perc": 87.3042
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Braid",
+        "category": "catholic",
+        "perc": 18.2993
+      },
+      {
+        "group": "Braid",
+        "category": "none",
+        "perc": 8.9188
+      },
+      {
+        "group": "Braid",
+        "category": "other_religions",
+        "perc": 0.7639
+      },
+      {
+        "group": "Braid",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.018
+      }
+    ],
+    "sex": [
+      {
+        "group": "Braid",
+        "category": "females",
+        "perc": 50.2434
+      },
+      {
+        "group": "Braid",
+        "category": "males",
+        "perc": 49.7566
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 11.1471
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 50.7401
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 14.1536
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 4.0703
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 12.951
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 17.8538
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 13.691
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 49.2599
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 12.4422
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 13.7373
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 13.7835
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 3.5615
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 15.6799
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 20.4286
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 16.4159
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 52.8044
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 14.9111
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 2.4624
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0.0456
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 13.8167
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 12.2207
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 13.7711
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 14.5007
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 13.0871
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 47.1956
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 4.1496
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 13.4975
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 10.0767
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 14.8849
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 16.4706
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 16.266
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 17.1355
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 15.4476
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 4.2455
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 11.1509
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 15.0384
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 48.491
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 8.6957
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 51.509
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 18.9496
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 16.2426
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 2.5988
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 10.2328
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 50.9475
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 8.8251
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 16.3508
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 49.0525
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 15.7553
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 15.5387
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 17.0547
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 15.1056
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 32.4675
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 7.7922
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 10.3896
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 3.8961
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 7.7922
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 46.7532
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 1.2987
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 67.5325
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 5.1948
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 5.1948
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year15",
+          "perc": 2.5974
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 2.5974
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 6.3492
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 46.0317
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 34.9206
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 11.1111
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 1.5873
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 1.5873
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 3.1746
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 7.9365
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year15",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 4.7619
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 3.1746
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 7.9365
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 65.0794
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 6.3492
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 7.9365
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.0418
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.335
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.332
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.5519
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.418
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.8173
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "BRAID",
+          "category": "GDSDTC",
+          "perc": 0.9458
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTE",
+          "perc": 9.141
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTX",
+          "perc": 45.2264
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTF",
+          "perc": 44.6868
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BRAID",
+          "category": "GDSDTE",
+          "perc": 9.2217
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTC",
+          "perc": 1.9886
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTF",
+          "perc": 48.0745
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTX",
+          "perc": 40.7152
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "BRAID",
+          "category": "IS",
+          "perc": 0.8929
+        },
+        {
+          "group": "BRAID",
+          "category": "PC",
+          "perc": 5.8929
+        },
+        {
+          "group": "BRAID",
+          "category": "CA",
+          "perc": 6.4286
+        },
+        {
+          "group": "BRAID",
+          "category": "JSA",
+          "perc": 0.7143
+        },
+        {
+          "group": "BRAID",
+          "category": "PIP",
+          "perc": 14.1964
+        },
+        {
+          "group": "BRAID",
+          "category": "ESA",
+          "perc": 9.8214
+        },
+        {
+          "group": "BRAID",
+          "category": "RP",
+          "perc": 37.9464
+        },
+        {
+          "group": "BRAID",
+          "category": "AA",
+          "perc": 7.1429
+        },
+        {
+          "group": "BRAID",
+          "category": "UC",
+          "perc": 11.0714
+        },
+        {
+          "group": "BRAID",
+          "category": "DLA",
+          "perc": 5.8929
+        }
+      ],
+      "2017": [
+        {
+          "group": "BRAID",
+          "category": "AA",
+          "perc": 7.655
+        },
+        {
+          "group": "BRAID",
+          "category": "PC",
+          "perc": 8.1395
+        },
+        {
+          "group": "BRAID",
+          "category": "RP",
+          "perc": 42.5388
+        },
+        {
+          "group": "BRAID",
+          "category": "DLA",
+          "perc": 17.7326
+        },
+        {
+          "group": "BRAID",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "BRAID",
+          "category": "ESA",
+          "perc": 11.6279
+        },
+        {
+          "group": "BRAID",
+          "category": "PIP",
+          "perc": 0.8721
+        },
+        {
+          "group": "BRAID",
+          "category": "JSA",
+          "perc": 2.5194
+        },
+        {
+          "group": "BRAID",
+          "category": "CA",
+          "perc": 6.2984
+        },
+        {
+          "group": "BRAID",
+          "category": "IS",
+          "perc": 2.6163
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Braid",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Braid",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.4787
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.138
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.0128
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.4649
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 51.9056
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 9.602
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 15.331
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 26.6173
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.3073
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 32.1425
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.2073
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.8182
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.2415
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.9922
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.0806
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 25.2385
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.4216
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.0763
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 91.5726
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.5254
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.7009
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0115
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1133
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.9243
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.0757
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 18.5698
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 28.1925
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.0006
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 19.2371
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.3323
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.8024
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.5611
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.3042
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 18.2993
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 8.9188
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.7639
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.018
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.2434
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.7566
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 11.1471
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.7401
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 14.1536
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.0703
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 12.951
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 17.8538
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 13.691
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.2599
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 12.4422
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.7373
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.7835
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 3.5615
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 15.6799
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 20.4286
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 16.4159
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 52.8044
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 14.9111
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.4624
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0.0456
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 13.8167
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 12.2207
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 13.7711
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 14.5007
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 13.0871
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 47.1956
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 4.1496
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 13.4975
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 10.0767
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 14.8849
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 16.4706
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 16.266
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 17.1355
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 15.4476
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.2455
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 11.1509
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 15.0384
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.491
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 8.6957
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.509
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 18.9496
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 16.2426
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.5988
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 10.2328
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 50.9475
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 8.8251
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.3508
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 49.0525
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 15.7553
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 15.5387
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 17.0547
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 15.1056
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 32.4675
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 6.4935
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 9.0909
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 6.4935
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 7.7922
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 10.3896
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 9.0909
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 3.8961
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 7.7922
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 46.7532
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 6.4935
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 1.2987
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 6.4935
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 67.5325
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 5.1948
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 9.0909
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 5.1948
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 2.5974
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 2.5974
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 6.3492
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 46.0317
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 34.9206
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 11.1111
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 1.5873
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 1.5873
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 3.1746
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 7.9365
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 4.7619
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 3.1746
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 7.9365
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 65.0794
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 6.3492
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 7.9365
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.0418
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.335
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 76.332
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.5519
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 4.418
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 73.8173
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 0.9458
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 9.141
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 45.2264
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 44.6868
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 9.2217
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.9886
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 48.0745
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 40.7152
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0.8929
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.8929
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.4286
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.7143
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 14.1964
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 9.8214
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 37.9464
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 7.1429
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 11.0714
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 5.8929
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 7.655
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 8.1395
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 42.5388
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 17.7326
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 11.6279
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.8721
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.5194
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 6.2984
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 2.6163
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Braid",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Braid",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Braid",
+        "category": "bad",
+        "perc": 4.4787
+      },
+      {
+        "group": "Braid",
+        "category": "fair",
+        "perc": 13.138
+      },
+      {
+        "group": "Braid",
+        "category": "good",
+        "perc": 29.0128
+      },
+      {
+        "group": "Braid",
+        "category": "very_bad",
+        "perc": 1.4649
+      },
+      {
+        "group": "Braid",
+        "category": "very_good",
+        "perc": 51.9056
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Braid",
+        "category": "five_people",
+        "perc": 9.602
+      },
+      {
+        "group": "Braid",
+        "category": "four_people",
+        "perc": 15.331
+      },
+      {
+        "group": "Braid",
+        "category": "one_person",
+        "perc": 26.6173
+      },
+      {
+        "group": "Braid",
+        "category": "three_people",
+        "perc": 16.3073
+      },
+      {
+        "group": "Braid",
+        "category": "two_people",
+        "perc": 32.1425
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Braid",
+        "category": "apprenticeship",
+        "perc": 7.2073
+      },
+      {
+        "group": "Braid",
+        "category": "level_1_qualifications",
+        "perc": 5.8182
+      },
+      {
+        "group": "Braid",
+        "category": "level_2_qualifications",
+        "perc": 14.2415
+      },
+      {
+        "group": "Braid",
+        "category": "level_3_qualifications",
+        "perc": 15.9922
+      },
+      {
+        "group": "Braid",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.0806
+      },
+      {
+        "group": "Braid",
+        "category": "no_qualifications",
+        "perc": 25.2385
+      },
+      {
+        "group": "Braid",
+        "category": "other_qualifications",
+        "perc": 2.4216
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Braid",
+        "category": "england",
+        "perc": 3.0763
+      },
+      {
+        "group": "Braid",
+        "category": "northern_ireland",
+        "perc": 91.5726
+      },
+      {
+        "group": "Braid",
+        "category": "other_cob",
+        "perc": 3.5254
+      },
+      {
+        "group": "Braid",
+        "category": "republic_of_ireland",
+        "perc": 0.7009
+      },
+      {
+        "group": "Braid",
+        "category": "scotland",
+        "perc": 1.0115
+      },
+      {
+        "group": "Braid",
+        "category": "wales",
+        "perc": 0.1133
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Braid",
+        "category": "english",
+        "perc": 97.9243
+      },
+      {
+        "group": "Braid",
+        "category": "other_languages",
+        "perc": 2.0757
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Braid",
+        "category": "a0to14",
+        "perc": 18.5698
+      },
+      {
+        "group": "Braid",
+        "category": "a15to39",
+        "perc": 28.1925
+      },
+      {
+        "group": "Braid",
+        "category": "a40to64",
+        "perc": 34.0006
+      },
+      {
+        "group": "Braid",
+        "category": "a65plus",
+        "perc": 19.2371
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Braid",
+        "category": "a1to19_hours",
+        "perc": 6.3323
+      },
+      {
+        "group": "Braid",
+        "category": "a20to49_hours",
+        "perc": 2.8024
+      },
+      {
+        "group": "Braid",
+        "category": "a50plus_hours",
+        "perc": 3.5611
+      },
+      {
+        "group": "Braid",
+        "category": "no_care",
+        "perc": 87.3042
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Braid",
+        "category": "catholic",
+        "perc": 18.2993
+      },
+      {
+        "group": "Braid",
+        "category": "none",
+        "perc": 8.9188
+      },
+      {
+        "group": "Braid",
+        "category": "other_religions",
+        "perc": 0.7639
+      },
+      {
+        "group": "Braid",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.018
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Braid",
+        "category": "females",
+        "perc": 50.2434
+      },
+      {
+        "group": "Braid",
+        "category": "males",
+        "perc": 49.7566
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 11.1471
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 50.7401
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 14.1536
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 4.0703
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 12.951
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 17.8538
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 13.691
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 49.2599
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 12.4422
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 13.7373
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 13.7835
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 3.5615
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 15.6799
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 20.4286
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 16.4159
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 52.8044
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 14.9111
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 2.4624
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0.0456
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 13.8167
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 12.2207
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 13.7711
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 14.5007
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 13.0871
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 47.1956
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 4.1496
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 13.4975
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 10.0767
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 14.8849
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 16.4706
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 16.266
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 17.1355
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 15.4476
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 4.2455
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 11.1509
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 15.0384
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 48.491
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 8.6957
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 51.509
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 18.9496
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 16.2426
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 2.5988
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 10.2328
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 50.9475
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 8.8251
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 16.3508
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 49.0525
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 15.7553
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 15.5387
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 17.0547
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 15.1056
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 32.4675
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 7.7922
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 10.3896
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 3.8961
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 7.7922
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 46.7532
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 1.2987
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 6.4935
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 67.5325
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 5.1948
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 9.0909
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 5.1948
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year15",
+          "perc": 2.5974
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 2.5974
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "Year5",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year4",
+          "perc": 6.3492
+        },
+        {
+          "group": "Braid",
+          "category": "Year10",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "FSME",
+          "perc": 46.0317
+        },
+        {
+          "group": "Braid",
+          "category": "Female",
+          "perc": 34.9206
+        },
+        {
+          "group": "Braid",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Braid",
+          "category": "Year3",
+          "perc": 11.1111
+        },
+        {
+          "group": "Braid",
+          "category": "Reception",
+          "perc": 1.5873
+        },
+        {
+          "group": "Braid",
+          "category": "Year13",
+          "perc": 1.5873
+        },
+        {
+          "group": "Braid",
+          "category": "Year14",
+          "perc": 3.1746
+        },
+        {
+          "group": "Braid",
+          "category": "Year12",
+          "perc": 7.9365
+        },
+        {
+          "group": "Braid",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year1",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year15",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year9",
+          "perc": 9.5238
+        },
+        {
+          "group": "Braid",
+          "category": "Year7",
+          "perc": 4.7619
+        },
+        {
+          "group": "Braid",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Braid",
+          "category": "Year11",
+          "perc": 3.1746
+        },
+        {
+          "group": "Braid",
+          "category": "Year8",
+          "perc": 7.9365
+        },
+        {
+          "group": "Braid",
+          "category": "Male",
+          "perc": 65.0794
+        },
+        {
+          "group": "Braid",
+          "category": "Year6",
+          "perc": 6.3492
+        },
+        {
+          "group": "Braid",
+          "category": "Year2",
+          "perc": 7.9365
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.0418
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.335
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.332
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.5519
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.418
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.8173
+        },
+        {
+          "group": "BRAID",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "BRAID",
+          "category": "GDSDTC",
+          "perc": 0.9458
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTE",
+          "perc": 9.141
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTX",
+          "perc": 45.2264
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTF",
+          "perc": 44.6868
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BRAID",
+          "category": "GDSDTE",
+          "perc": 9.2217
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTC",
+          "perc": 1.9886
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTF",
+          "perc": 48.0745
+        },
+        {
+          "group": "BRAID",
+          "category": "GDSDTX",
+          "perc": 40.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "BRAID",
+          "category": "IS",
+          "perc": 0.8929
+        },
+        {
+          "group": "BRAID",
+          "category": "PC",
+          "perc": 5.8929
+        },
+        {
+          "group": "BRAID",
+          "category": "CA",
+          "perc": 6.4286
+        },
+        {
+          "group": "BRAID",
+          "category": "JSA",
+          "perc": 0.7143
+        },
+        {
+          "group": "BRAID",
+          "category": "PIP",
+          "perc": 14.1964
+        },
+        {
+          "group": "BRAID",
+          "category": "ESA",
+          "perc": 9.8214
+        },
+        {
+          "group": "BRAID",
+          "category": "RP",
+          "perc": 37.9464
+        },
+        {
+          "group": "BRAID",
+          "category": "AA",
+          "perc": 7.1429
+        },
+        {
+          "group": "BRAID",
+          "category": "UC",
+          "perc": 11.0714
+        },
+        {
+          "group": "BRAID",
+          "category": "DLA",
+          "perc": 5.8929
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "BRAID",
+          "category": "AA",
+          "perc": 7.655
+        },
+        {
+          "group": "BRAID",
+          "category": "PC",
+          "perc": 8.1395
+        },
+        {
+          "group": "BRAID",
+          "category": "RP",
+          "perc": 42.5388
+        },
+        {
+          "group": "BRAID",
+          "category": "DLA",
+          "perc": 17.7326
+        },
+        {
+          "group": "BRAID",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "BRAID",
+          "category": "ESA",
+          "perc": 11.6279
+        },
+        {
+          "group": "BRAID",
+          "category": "PIP",
+          "perc": 0.8721
+        },
+        {
+          "group": "BRAID",
+          "category": "JSA",
+          "perc": 2.5194
+        },
+        {
+          "group": "BRAID",
+          "category": "CA",
+          "perc": 6.2984
+        },
+        {
+          "group": "BRAID",
+          "category": "IS",
+          "perc": 2.6163
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Braid",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Braid",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Braid",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Braid",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

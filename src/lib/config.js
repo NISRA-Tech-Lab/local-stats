@@ -21,7 +21,7 @@ export const app_inputs = {
 	//search_data: 'https://datavis.nisra.gov.uk/census/aex-hj77sh/places_dz.csv',
 	search_data: '/data_jsons_dea_2302/places_dz_extra.csv',
 	//app_json_data: 'https://datavis.nisra.gov.uk/techlab/nnxcjn/',
-	app_json_data: '/data_jsons_dea_2302/',
+	app_json_data: '/data_jsons_dea_20240408/',
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
@@ -45,6 +45,46 @@ export const topics = {
 		{ category: 'a40to64', label: '40-64' },
 		{ category: 'a65plus', label: '65+' }
 	],
+	highest_level_of_qualifications : [
+		{ category: "apprenticeship", label: 'qual1' },
+		{ category: "level_1_qualifications", label: 'qual2' },
+		{ category: "level_2_qualifications", label: 'qual3' },
+		{ category: "level_3_qualifications", label: 'qual4' },
+		{ category: "level_4_qualifications_and_above", label: 'qual5' },
+		{ category: "no_qualifications", label: 'qual6' },
+		{ category: "other_qualifications", label: 'qual7' }
+		  ],
+
+	religion_or_religion_brought_up_in: [
+		{ category: 'catholic', label: 'Catholic' },
+		{ category: 'protestant_and_other_christian_including_christian_related', label: 'Protestant & other Christian religions' },
+		{ category: 'other_religions', label: 'Other religions' },
+		{ category: 'none', label: 'None' }
+	],
+	hh_size: [
+		{ category: 'one_person', label: '1 person' },
+		{ category: 'two_people', label: '2 people' },
+		{ category: 'three_people', label: '3 people' },
+		{ category: 'four_people', label: '4 people' },
+		{ category: 'five_people', label: '5 or more people' }
+	],
+	general_health: [
+		{ category: 'very_good', label: 'Very good' },
+		{ category: 'good', label: 'Good' },
+		{ category: 'fair', label: 'Fair' },
+		{ category: 'bad', label: 'Bad' },
+		{ category: 'very_bad', label: 'Very bad' }
+	],
+	provision_care: [
+		{ category: 'no_care', label: 'Provides no unpaid care' },
+		{ category: 'a1to19_hours', label: '1-19 hours' },
+		{ category: 'a20to49_hours', label: '20-49 hours' },
+		{ category: 'a50plus_hours', label: '50+ hours' }
+	],
+	mainlang: [
+		{ category: 'english', label: 'English' },
+		{ category: 'other_languages', label: 'Other languages' }
+	],
 	cob: [
 		{ category: 'northern_ireland', label: 'Northern Ireland' },
 		{ category: 'england', label: 'England' },
@@ -53,10 +93,7 @@ export const topics = {
 		{ category: 'republic_of_ireland', label: 'Republic of Ireland' },
  */		{ category: 'other_cob', label: 'Other country of birth' }
 	],
-	mainlang: [
-		{ category: 'english', label: 'English' },
-		{ category: 'other_languages', label: 'Other languages' }
-	],
+	
 	FPSGDSDT: [
 		{ category: 'GDSDTF', label: 'Fillings' },
 		{ category: 'GDSDTX', label: 'X-rays' },
