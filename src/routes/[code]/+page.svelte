@@ -629,12 +629,13 @@
 				<h3>
 					<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
 					{#if data.place.type != "ni"}
-						Explore <span style="color: #93328E">{data.place.name}</span>
-						<span style="color: #a19e9e"
-							>- {geog_types[data.place.type].name}</span
+					Explore 
+					<span style="color: #3878c5">{data.place.name}</span>
+						<span style="color: #00205b"
+							> {geog_types[data.place.type].name}</span
 						>
 					{:else}
-						Explore <span style="color: #93328E">{data.place.name}</span>
+						Explore <span style="color: #3878c5">{data.place.name}</span>
 					{/if}
 				</h3>
 			</div>
@@ -760,8 +761,7 @@
 			<!-- OPTION 2 like original app navigation to RHS of map -->
 			<div>
 				{#if data.place.parents[0]}
-					<span class="text-bold">Parents of {data.place.name} </span><br
-					/>
+					<span class="text-bold">Parents of {data.place.name} </span>
 					<span class="text-small">
 						{#each [...data.place.parents].reverse() as parent, i}
 							<span
@@ -919,7 +919,7 @@
 					aria-labelledby="panelsStayOpen-headingcensus"
 				>
 					<div class="accordion-body">
-						Census 2021 - {data.place.name} -
+						Census 2021 - <span style="color: #3878c5">{data.place.name}</span>{data.place.name} -
 						<span class="accordion-button-title-sub"
 							>Broad age bands (years), Country of Birth and Main language</span
 						>
@@ -1018,7 +1018,7 @@
 											<rect
 												width="25"
 												height="4"
-												style="fill:#CEDC20;"
+												style="fill:#308182;"
 											/>
 										</svg>
 										{chartLabel}
@@ -1444,19 +1444,22 @@
 							<div class="grid mt" bind:clientWidth={w}>
 								<div class="div-grey-box">
 									<IButton id = "dentalreg" place = {data.place}/>
-									<br>
+									
 									Universal Credit  <span class="text-big" style="font-size: 1.4em; color: black">
 										{data.place.data["BS"].value["2022"].UC.toLocaleString()}</span>
 										<br>
 										Disability Living Allowance <span class="text-big" style="font-size: 1.4em; color: black">
 											{data.place.data["BS"].value["2022"].DLA.toLocaleString()}</span>
-																			<br />
+																			
 									{#if (data.place.type != "ctry") & comp_ni & !comp_2011}
-										<span class="text-small"
-											>Percentage of NI: <Em
-												>
+										<span class="text-small">
+											Percentage of NI: 
+											<Em>
 												Universal Credit {(data.place.data["BS"].value["2022"].UC/data.ni.data["BS"].value["2022"].UC*100).toLocaleString()}%
-												<br>
+											</Em>
+										</span>
+										<span class="text-small">
+											<Em>
 												Disability Living Allowance {(data.place.data["BS"].value["2022"].DLA/data.ni.data["BS"].value["2022"].DLA*100).toLocaleString()}%
 												</Em
 											></span
@@ -1504,9 +1507,8 @@
 										{chartLabel}
 									</div>
 								{/if}
-								
-								<br>								<br>
-								Not ideal - labels need sorted and legend
+
+								<p style = "margin-top:30px">Not ideal - labels need sorted and legend</p>
 
 
 								</div>

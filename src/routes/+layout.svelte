@@ -2,7 +2,7 @@
 	import { setContext } from "svelte";
   import "../app.css";
 	import { themes } from "$lib/config";
-	import Warning from "$lib/ui/Warning.svelte";
+//	import Warning from "$lib/ui/Warning.svelte";
 	import NISRAHeader from "$lib/layout/NISRAHeader.svelte";
 	import NISRAFooter from "$lib/layout/NISRAFooter.svelte";
   import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte"
@@ -16,7 +16,7 @@
   // Settings for page analytics. Values must be shared with <AnalyticsBanner> component
   const analyticsId = "GTM-NK3SZVF";
   const analyticsProps = {
-    "contentTitle": "Northern Ireland Census Area Explorer",
+    "contentTitle": "Northern Ireland Area Explorer",
     "releaseDate": "20220823",
     "contentType": "exploratory"
   };
@@ -30,7 +30,7 @@
 
 <AnalyticsBanner {analyticsId} {analyticsProps}/>
 
-<Warning/>
+<!-- <Warning/> -->
 <NISRAHeader/>
 
 <slot/>

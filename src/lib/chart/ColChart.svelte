@@ -14,7 +14,7 @@
 	export let yKey = 'y';
 	export let zKey= null;
 	
-	export let colors = ['#00205B','#00205B', '#00205B',   '#00205B'];
+	// export let colors = ['#00205B','#00205B', '#00205B',   '#00205B'];
 
 	$: xDomain = data.map(d => d[xKey]);
 	$: yDomain = [0, Math.max(...data.map(d => d[yKey]))];
