@@ -34,7 +34,8 @@ export const geog_types = {
 	town: {name: 'settlement', pl: 'settlements'},
 	lgd: {name: 'Local Government District', pl: 'Local Government Districts'},
 	postcode: {name: 'postcode', pl: 'postcodes'},
-	ctry: { name: 'Country', pl: 'Countries' }
+	ctry: { name: 'Country', pl: 'Countries' },
+	ni: { name: 'Country', pl: 'Countries' }
 };
 
 export const topics = {
