@@ -31,17 +31,13 @@
     import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
     import ScrollToTop from "$lib/ui/scroll.svelte";
     import { LayerCake } from "layercake";
+    import { text } from "svelte/internal";
 	import IButton from "$lib/layout/IButton.svelte";
-    
+	import Accordion from "$lib/layout/Accordion.svelte";
+	import GreyBox from "$lib/layout/GreyBox.svelte";  
     
     
     export let data;
-
-    // let place = data.place;
-    // let ni = data.ni;
-    // let search_data = data.search_data;
-    // console.log(search_data, place, ni)
-	// console.log(data.place)
 
     let w, cols;
     let map = null;
@@ -424,8 +420,22 @@
 			</div>
 		</div>
 
+
 		<div id="grid" class="grid mt">
-			<div class="div-grey-box" style="line-height: 1.3;">
+			<GreyBox
+				id = "overview"
+				i_button = {false}
+				heading = "Overview - box with words"
+				place = {data.place}
+				style = "line-height: 1.3;"
+				content = {{
+					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
+				}}
+			/>
+
+			<!-- <div class="div-grey-box" style="line-height: 1.3;">
 				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
 					Overview - box with words
 				</h3>
@@ -478,8 +488,15 @@
 						)} since the 2011 Census.
 					{/if}
 				{/if}
-			</div>
-			<div class="div-grey-box">
+			</div> -->
+
+			<GreyBox
+				id = "pop"
+				place = {data.place}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+			/>
+
+			<!-- <div class="div-grey-box">
 				<IButton id = "pop" place = {data.place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{data.place.data.population.value[
@@ -552,8 +569,15 @@
 						> since 2011 Census</span
 					>
 				{/if}
-			</div>
-			<div class="div-grey-box">
+			</div> -->
+
+			<GreyBox
+				id = "households"
+				place = {data.place}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+			/>
+
+			<!-- <div class="div-grey-box">
 				<IButton id = "households" place = {data.place}/>
 				<span class="text-big" style="font-size: 2.8em;"
 					>{data.place.data.households.value[
@@ -597,7 +621,7 @@
 						> since 2011 Census</span
 					>
 				{/if}
-			</div>
+			</div> -->
 		</div>
 		<!-- a19e9e -->
 		<div class="grid mt" bind:clientWidth={w}>
@@ -781,130 +805,92 @@
 
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingZero">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseZero"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseZero"
-					>
-						<span class="accordion-button-title">
-							<img
-								src="{base}/img/map.png"
-								alt="logo"
-								height="40"
-								class="accordion-dept-logo"
-							/>
-							Area Information</span
-						>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseZero"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingZero"
-				>
-					<div class="accordion-body">
-						Area - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Location, Area and Population density</span
-						>
 
-						<div class="grid mt" bind:clientWidth={w}>
-							<div class="div-grey-box" style="line-height: 1.3;">
-								<IButton id = "location" place = {data.place}/>
-								<br
-								/>{#if (data.place.type != "ni") & (data.place.type != "lgd")}
-									{data.place.name} is one of {data.place.count.toLocaleString()}
-									{geog_types[data.place.type].pl}. It is located
-									within {data.place.parents[0].name}
-									{geog_types[data.place.parents[0].type].name}.
-								{:else if (data.place.type != "ni") & (data.place.type == "lgd")}
-									{data.place.name} is one of {data.place.count.toLocaleString()}
-									{geog_types[data.place.type].pl}. It is located
-									within {data.place.parents[0].name}.
-
-									<!--and is {(data.place.hectares.toLocaleString())} hectares in size-->
-									<!--
-							{#if data.place.type != "lgd"}
-							It has {data.place.data.population.value_rank["2021"].all > data.place.count * 0.333 && data.place.data.population.value_rank["2021"].all < data.place.count * 0.667 ? "an average size "
-							 : data.place.data.population.value_rank["2021"].all < data.place.count * 0.333 ? "a large "
-								: "a small "}  {geog_types[data.place.type].name} population.
-							{/if}-->
-								{:else}
-									{data.place.name} contains 11 Local Goverment Districts,
-									80 District Electoral Areas, 850 Super Data Zones
-									and 3780 Data Zones.
-								{/if}
-							</div>
-							<div class="div-grey-box">
-								<IButton id = "area" place = {data.place}/>
-								<span class="text-big" style="font-size: 2.8em;"
-									>{data.place.hectares >= 0.1
-										? data.place.hectares.toLocaleString(
-												undefined,
-												{
-													minimumFractionDigits: 0,
-													maximumFractionDigits: 0,
-												},
-											)
-										: "<0.1"} ha
-								</span>
-							</div>
-							<div class="div-grey-box">
-								<IButton id = "popden" place = {data.place}/>
-								<span class="text-big" style="font-size: 2.8em;"
-									>{data.place.data.population.value["2021"].all /
-										data.place.hectares >=
-									0.1
-										? (
-												data.place.data.population.value[
-													"2021"
-												].all / data.place.hectares
-											).toFixed(1)
-										: "<0.1"}
-								</span>
-								{#if data.place.type != "ni" && comp_ni}
-									<br />
-									<span class="text-small"
-										>{data.place.data.population.value["2021"]
-											.all /
-											data.place.hectares >
-										(data.ni.data.population.value["2021"].all /
-											data.ni.hectares) *
-											1.1
-											? "Higher than Northern Ireland value of "
-											: data.place.data.population.value[
-														"2021"
-												  ].all /
-														data.place.hectares <
-												  (data.ni.data.population.value[
-														"2021"
-												  ].all /
-														data.ni.hectares) *
-														0.9
-												? "Lower than Northern Ireland value of "
-												: "Similar to the Northern Ireland value of "}
-										{(
-											data.ni.data.population.value["2021"]
-												.all / data.ni.hectares
-										).toFixed(1)} persons per hectare</span
-									>
-								{/if}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
+			<Accordion
+				id = "Area"
+				img = "map.png"
+				heading = "Area Information"
+				place = {data.place}
+				sub_heading = "Area"
+				description = "Location, Area and Population density"
+				boxes = {{
+					box_1: {
+						id: "location",
+						style: "line-height: 1.3;",
+						content: {
+							ni: data.place.name + " contains 11 Local Goverment Districts, 80 District Electoral Areas, 850 Super Data Zones and 3,780 Data Zones.",
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types.lgd.pl + ". It is located within " + data.place.parents[0].name + ".",
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". It is located within " + data.place.parents[0].name + "."
+						}
+					},
+					box_2: {
+						id: "area",
+						content: "<span class='text-big' style='font-size: 2.8em'>" + data.place.hectares.toLocaleString() + " ha</span>"
+					},
+					box_3: {
+						id: "popden",
+						content: "<span class='text-big' style='font-size: 2.8em'>" + (data.place.data.population.value["2021"].all / data.place.hectares).toFixed(1) + "</span>"
+					}
+				}}
+				more = ""
+			/>
 			
 			<!-- ACCORDION census -->
-			<div class="accordion-item">
+			<Accordion
+				id = "census"
+				img = "nisra-taxonomy-icon-census.png"
+				heading = "Census 2021"
+				place = {data.place}
+				sub_heading = "Census 2021"
+				description = "Broad age bands (years), Country of Birth and Main language"
+				boxes = {{
+					box_1: {
+						id: "location",
+						content: '<span class="text-big" style="font-size: 2.8em;">25,000</span>'
+					},
+					box_2: {
+						id: "farms",
+						content: "GroupChart",
+						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						zKey: "group",
+						label: chartLabel
+					},
+					box_3: {
+						id: "cob1",
+						content: "ProfileChart",
+						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						zKey: "group",
+						label: chartLabel
+					},
+					box_4: {
+						id: "cob",
+						content: "BarChart",
+						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						zKey: "group",
+						label: chartLabel
+					},
+					box_5: {
+						id: "broadagebands",
+						content: "ColChart",
+						chart_data: data.place && makeData_year(["age"], ["2011"], ["2021"]),
+						zKey: chart_compare_type
+					},
+					box_6: {
+						id: "mainlang",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "false"
+					}
+				}}
+				more = "More information on the size of the population is available in the latest <a href = 'https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
+						which includes an <a href = 'https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, <a href = 'https://www.nisra.gov.uk/system/files/statistics/MYE22-Factsheets.pdf'>Fact Sheets</a>, a <a href = 'https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> and statistical tables.  
+						Population characteristics are from the census data which can be explored further in the <a href = 'https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
+						bespoke tables can be created using the <a href = 'https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has <a href = 'https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a>
+						providing commentary on a range of census population characteristics."
+			/>
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingcensus">
 					<button
 						class="accordion-button collapsed"
@@ -1068,10 +1054,23 @@
 					</div>
 					
 				</div>
-			</div>
+			</div> -->
 		
 			<!-- ACCORDION ONE -->
-			<div class="accordion-item">
+			<Accordion
+				id = "population"
+				img = "nisra-taxonomy-icon-population.png"
+				heading = "Demography"
+				place = {data.place}
+				sub_heading = "Births"
+				description = "Number of births, age of mother and xxxx"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
+
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingOne">
 					<button
 						class="accordion-button collapsed"
@@ -1167,53 +1166,36 @@
 						>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION TWO -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseTwo"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseTwo"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-deprivation.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px">Deprivation</span
-						>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseTwo"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingTwo"
-				>
-					<div class="accordion-body">
-						Deprivation - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>XXXXX , xxxx
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
+			<Accordion
+				id = "deprivation"
+				img = "nisra-taxonomy-icon-deprivation.png"
+				heading = "Deprivation"
+				place = {data.place}
+				sub_heading = "Deprivation"
+				description = "XXXXX , xxxx"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 
 			<!-- ACCORDION THREE -->
-			<div class="accordion-item">
+			<Accordion
+				id = "health"
+				img = "nisra-taxonomy-icon-health.png"
+				heading = "Health and Social Care"
+				place = {data.place}
+				sub_heading = "Public Health"
+				description = "Life expectancy, cause of death"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingThree">
 					<button
 						class="accordion-button collapsed"
@@ -1400,10 +1382,22 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION FOUR -->
-			<div class="accordion-item">
+			<Accordion
+				id = "labour-market"
+				img = "nisra-taxonomy-icon-labour-market.png"
+				heading = "Labour Market and Social Welfare"
+				place = {data.place}
+				sub_heading = "Labour Market"
+				description = "Employment rate, economic activity"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
+			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingFour">
 					<button
 						class="accordion-button collapsed"
@@ -1467,11 +1461,12 @@
 										<span class="text-small">
 											<Em>
 												Disability Living Allowance {(data.place.data["BS"].value["2022"].DLA/data.ni.data["BS"].value["2022"].DLA*100).toLocaleString()}%
-											</Em>
-										</span> 		
+												</Em
+											></span
+										> 		 -->
 										<!-- could use adjectify here if we had the ranks - or make new function to compare to the average???? -->
 										
-									{/if}
+										<!-- {/if}
 								</div>
 								<div class="div-grey-box">
 
@@ -1522,297 +1517,92 @@
 						</span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- ACCORDION five -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingFive">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseFive"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseFive"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-economy.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>Economy
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseFive"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingFive"
-				>
-					<div class="accordion-body">
-						Business - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Number of business, xxxx
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
+			<Accordion
+				id = "economy"
+				img = "nisra-taxonomy-icon-economy.png"
+				heading = "Economy"
+				place = {data.place}
+				sub_heading = "Business"
+				description = "Number of business, xxxx"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 
 			<!-- ACCORDION six -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingsix">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapsesix"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapsesix"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-crime-justice.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>Crime and Justice
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapsesix"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingsix"
-				>
-					<div class="accordion-body">
-						Crime - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Number of crimes
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-
-						Justice - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Court cases
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
+			<Accordion
+				id = "crime-justice"
+				img = "nisra-taxonomy-icon-crime-justice.png"
+				heading = "Crime and Justice"
+				place = {data.place}
+				sub_heading = "Crime"
+				description = "Number of crimes"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 
 			<!-- ACCORDION Seven -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseSeven"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseSeven"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-travel-transport.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>Travel and Transport
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseSeven"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingSeven"
-				>
-					<div class="accordion-body">
-						Travel - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Cars, miles
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
+			<Accordion
+				id = "travel-transport"
+				img = "nisra-taxonomy-icon-travel-transport.png"
+				heading = "Travel and Transport"
+				place = {data.place}
+				sub_heading = "Travel"
+				description = "Cars, miles"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 
 			<!-- ACCORDION Eight -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingEight">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseEight"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseEight"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-housing-stats.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>Housing, Community and Regeneration
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseEight"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingEight"
-				>
-					<div class="accordion-body">
-						Housing - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Number of houses, social sector
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
+			<Accordion
+				id = "housing-stats"
+				img = "nisra-taxonomy-icon-housing-stats.png"
+				heading = "Housing, Community and Regeneration"
+				place = {data.place}
+				sub_heading = "Housing"
+				description = "Number of houses, social sector"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 
 			<!-- ACCORDION Nine -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingNine">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseNine"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseNine"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-people-places.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>People, Places and Culture
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseNine"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingNine"
-				>
-					<div class="accordion-body">
-						Culture - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Number of arts....
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
-			<!-- </div> -->
-
+			<Accordion
+				id = "people-places"
+				img = "nisra-taxonomy-icon-people-places.png"
+				heading = "People, Places and Culture"
+				place = {data.place}
+				sub_heading = "Culture"
+				description = "Number of arts...."
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
 			
 			<!-- ACCORDION ten -->
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="panelsStayOpen-headingten">
-					<button
-						class="accordion-button collapsed"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#panelsStayOpen-collapseten"
-						aria-expanded="false"
-						aria-controls="panelsStayOpen-collapseten"
-					>
-						<img
-							src="{base}/img/nisra-taxonomy-icon-agriculture.png"
-							alt="logo"
-							height="40"
-							class="accordion-dept-logo"
-						/>
-						<span
-							class="accordion-button-title"
-							style="margin-left:10px"
-							>Agriculture and Environment
-						</span>
-					</button>
-				</h2>
-				<div
-					id="panelsStayOpen-collapseten"
-					class="accordion-collapse collapse"
-					aria-labelledby="panelsStayOpen-headingten"
-				>
-					<div class="accordion-body">
-						Agriculture - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Number of farms
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-
-						Environment - {data.place.name} -
-						<span class="accordion-button-title-sub"
-							>Greenhouse Gases
-
-							<div class="grid mt" bind:clientWidth={w}>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-								<div class="div-grey-box"></div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
-
-
+			<Accordion
+				id = "agriculture"
+				img = "nisra-taxonomy-icon-agriculture.png"
+				heading = "Agriculture and Environment"
+				place = {data.place}
+				sub_heading = "Agriculture"
+				description = "Number of farms"
+				boxes = {{
+					
+				}}
+				more = ""
+			/>
+			
 		</div>
 	{/if}
 </Section>
