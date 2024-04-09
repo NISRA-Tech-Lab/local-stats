@@ -433,6 +433,9 @@
 					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
 					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
 				}}
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box" style="line-height: 1.3;">
@@ -494,6 +497,9 @@
 				id = "pop"
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -575,6 +581,9 @@
 				id = "households"
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -813,6 +822,9 @@
 				place = {data.place}
 				sub_heading = "Area"
 				description = "Location, Area and Population density"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -843,6 +855,9 @@
 				place = {data.place}
 				sub_heading = "Census 2021"
 				description = "Broad age bands (years), Country of Birth and Main language"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -851,14 +866,22 @@
 					box_2: {
 						id: "farms",
 						content: "GroupChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+							time: makeDataGroupSort(data.place.grouped_data_timecompare.cob, "cob"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.cob, "cob"),
+						},
 						zKey: "group",
 						label: chartLabel
 					},
 					box_3: {
 						id: "cob1",
 						content: "ProfileChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+							time: makeDataGroupSort(data.place.grouped_data_timecompare.cob, "cob"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.cob, "cob"),
+						},
 						zKey: "group",
 						label: chartLabel
 					},
@@ -1064,6 +1087,9 @@
 				place = {data.place}
 				sub_heading = "Births"
 				description = "Number of births, age of mother and xxxx"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1176,6 +1202,9 @@
 				place = {data.place}
 				sub_heading = "Deprivation"
 				description = "XXXXX , xxxx"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1392,6 +1421,9 @@
 				place = {data.place}
 				sub_heading = "Labour Market"
 				description = "Employment rate, economic activity"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1527,6 +1559,9 @@
 				place = {data.place}
 				sub_heading = "Business"
 				description = "Number of business, xxxx"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1541,6 +1576,9 @@
 				place = {data.place}
 				sub_heading = "Crime"
 				description = "Number of crimes"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1555,6 +1593,9 @@
 				place = {data.place}
 				sub_heading = "Travel"
 				description = "Cars, miles"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1569,6 +1610,9 @@
 				place = {data.place}
 				sub_heading = "Housing"
 				description = "Number of houses, social sector"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1583,6 +1627,9 @@
 				place = {data.place}
 				sub_heading = "Culture"
 				description = "Number of arts...."
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1597,6 +1644,9 @@
 				place = {data.place}
 				sub_heading = "Agriculture"
 				description = "Number of farms"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_area = {comp_ni}
 				boxes = {{
 					
 				}}

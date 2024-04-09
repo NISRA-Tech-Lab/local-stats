@@ -18,6 +18,9 @@ export let topic_prev_available = null;
 export let topic_boolean = null;
 export let i_button = true;
 export let heading = null;
+export let comp_none;
+export let comp_time;
+export let comp_area;
 
 if (topic_prev_available == "false") {
     topic_boolean = false
@@ -38,9 +41,25 @@ if (topic_prev_available == "false") {
     {#if (content == "StackedBarChart")}
         <StackedBarChart data = {chart_data} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
     {:else if (content == "GroupChart")}
-        <GroupChart data = {chart_data} zKey = {zKey} label = {label}/>
+        {#if (chart_data.hasOwnProperty("none") & comp_none)}
+            <GroupChart data = {chart_data.none} zKey = {zKey} label = {label}/>
+        {:else if (chart_data.hasOwnProperty("time") & comp_time)}
+            <GroupChart data = {chart_data.time} zKey = {zKey} label = {label}/>
+        {:else if (chart_data.hasOwnProperty("ni") & comp_area)}
+            <GroupChart data = {chart_data.ni} zKey = {zKey} label = {label}/>
+        {:else}
+            <GroupChart data = {chart_data} zKey = {zKey} label = {label}/>
+        {/if}
     {:else if (content == "ProfileChart")}
-        <ProfileChart data = {chart_data} zKey = {zKey} label = {label}/>
+        {#if (chart_data.hasOwnProperty("none") & comp_none)}
+            <ProfileChart data = {chart_data.none} zKey = {zKey} label = {label}/>
+        {:else if (chart_data.hasOwnProperty("time") & comp_time)}
+            <ProfileChart data = {chart_data.time} zKey = {zKey} label = {label}/>
+        {:else if (chart_data.hasOwnProperty("ni") & comp_area)}
+            <ProfileChart data = {chart_data.ni} zKey = {zKey} label = {label}/>
+        {:else}
+            <ProfileChart data = {chart_data} zKey = {zKey} label = {label}/>
+        {/if}
     {:else if (content == "BarChart")}
         <BarChart data = {chart_data} zKey = {zKey} label = {label}/>
     {:else if (content == "ColChart")}
