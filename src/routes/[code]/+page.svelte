@@ -880,7 +880,7 @@
 						topic_prev_available: "true"},
 				box_2: {
 						id: "wellbeing",
-						content: "<p><span class='text-big' style='font-size: 1.8em'>7.5</span>"  + " / 10 </p>"},
+						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>"},
 				box_3: {
 						id: "lifeexpectancy",
 						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},

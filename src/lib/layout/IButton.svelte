@@ -37,20 +37,20 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Happiness",
-			info: "Average Happiness score out of 10 for people aged 16+" + 
-				"source:" +
-				"Last Updated:" +
-				"Further Information:"},
+			info: "Average Happiness score out of 10 for people aged 16+</p>" + 
+				"<p>source:</p>" +
+				"<p>Last Updated:</p>" +
+				"<p>Further Information:</p>"},
 
 		lifeexpectancy: {
-			title: "Life Expectancy",
+			title: "Life Expectancy at birth",
 			info: "words to be added" 
 			},
 
 		
 		carers: {
-			title: "Provision on unpaid care",
-			info: "words to be added"},
+			title: "Unpaid care",
+			info: "'Unpaid care' covers looking after, giving help or support to anyone because they have long-term physical or mental health conditions or illnesses, or problems related to old age. It does not include any activities as part of paid employment. All unpaid care statistics are restricted to persons aged 5 and over. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		hospitalactivity: {
 			title: "Activity in hospitals / waiting lists",
@@ -144,50 +144,6 @@ let i_button_info = {
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
 		},
 
-		farms: {
-			title: "Farms GroupChart",
-			info: "Publication : <a href='https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023'>" +
-				  "<strong>Farm Census</strong></a> Data portal : " +
-				  "<a href='https://data.nisra.gov.uk/table/FCDEA'><strong>Farm Census</strong></a>"
-		},
-
-		cob1: {
-			title: "COB - ProfileChart",
-			info: ""
-		},
-
-		cob: {
-			title: "COB - BarChart",
-			info: "Publication : <a href='https://www.daera-ni.gov.uk/publications/agricultural-census-northern-ireland-2023'>" +
-				  "<strong>Farm Census</strong></a> Data portal : " +
-				  "<a href='https://data.nisra.gov.uk/table/FCDEA'><strong>Farm Census</strong></a>"
-		},
-
-		broadagebands: {
-			title: "Broad age bands (years) ColChart",
-			info: "A grouping of ages where a person's age is their age at their last birthday on or prior to census day. "+
-				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
-		},
-
-		mainlang: {
-			title: "Main language - StackedBarChart",
-			info: "Person's main language as declared in the Census. Statistics for all language questions are restricted to persons aged 3 and over. " +
-				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
-		},
-
-		le_m: {
-			title: "Male Life expectancy",
-			info: "<a href='mailto:" + place.meta_data.LE.email + "'>Email for more information</a>" +
-			  	  "Last updated: " + place.meta_data.LE.last_updated + " " +
-			  	  "Access data at: <a href='" + place.meta_data.LE.dataset_url + "'>" + place.meta_data.LE.title + "</a>"
-		},
-
-		le_f: {
-			title: "Female Life expectancy",
-			info: "<a href='mailto:" + place.meta_data.LE.email + "'>Email for more information</a>" +
-			  	  "Last updated: " + place.meta_data.LE.last_updated + " " +
-			  	  "Access data at: <a href='" + place.meta_data.LE.dataset_url + "'>" + place.meta_data.LE.title + "</a>"
-		},
 
 		dentalreg: {
 			title: "Number of dental registrations",
