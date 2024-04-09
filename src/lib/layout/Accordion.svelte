@@ -13,7 +13,7 @@ export let boxes;
 export let more;
 export let comp_none = true;
 export let comp_time = false;
-export let comp_area = false;
+export let comp_ni = false;
 
 let box_list = Object.keys(boxes);
 
@@ -70,7 +70,7 @@ let w, cols;
                         topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                         comp_none = {comp_none}
                         comp_time = {comp_time}
-                        comp_area = {comp_area}
+                        comp_ni = {comp_ni}
                     />
 
                 {/each}

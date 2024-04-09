@@ -435,7 +435,7 @@
 				}}
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box" style="line-height: 1.3;">
@@ -499,7 +499,7 @@
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -583,7 +583,7 @@
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -824,7 +824,7 @@
 				description = "Location, Area and Population density"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -857,7 +857,7 @@
 				description = "Broad age bands (years), Country of Birth and Main language"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -1089,7 +1089,7 @@
 				description = "Number of births, age of mother and xxxx"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1204,7 +1204,7 @@
 				description = "XXXXX , xxxx"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1423,7 +1423,7 @@
 				description = "Employment rate, economic activity"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1561,7 +1561,7 @@
 				description = "Number of business, xxxx"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1578,7 +1578,7 @@
 				description = "Number of crimes"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1595,7 +1595,7 @@
 				description = "Cars, miles"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1612,7 +1612,7 @@
 				description = "Number of houses, social sector"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1629,7 +1629,7 @@
 				description = "Number of arts...."
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1646,7 +1646,7 @@
 				description = "Number of farms"
 				comp_none = {comp_none}
 				comp_time = {comp_2011}
-				comp_area = {comp_ni}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
