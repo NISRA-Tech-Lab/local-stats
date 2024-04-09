@@ -880,10 +880,10 @@
 						topic_prev_available: "true"},
 				box_2: {
 						id: "wellbeing",
-						content: "<span class='text-big' style='font-size: 2.8em'>"  + "7.5 / 10 </span>"},
+						content: "<p><span class='text-big' style='font-size: 1.8em'>7.5</span>"  + " / 10 </p>"},
 				box_3: {
 						id: "lifeexpectancy",
-						content: "<span>life expectancy to be added</span>"},
+						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},
 				box_4: {
 						id: "carers",
 						content: "StackedBarChart",
@@ -935,7 +935,7 @@
 				
 				box_3: {
 						id: "wages",
-						content: "<span >"  + " wages to be added</span>"},
+						content: "<p><span class='text-big' style='font-size: 1.8em'>£26,531</span> annual median salary</p>"},
 
 				box_4: {
 						id: "benefits",
@@ -967,11 +967,15 @@
 
 			box_1: {
 						id: "enrollments",
-						content: "<span >"  + " enrollments to be added</span>"},
+						content: "<p>Primary school <span class='text-big' style='font-size: 1.2em'>500 </span></p>"+
+						"<p>Secondary school <span class='text-big' style='font-size: 1.2em'>320 </span></p>" +
+						"<p>Further education colleges <span class='text-big' style='font-size: 1.2em'>45 </span></p>" +
+						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>"},
 				
 			box_2: {
 						id: "fsme",
-						content: "<span >"  + " fsme to be added</span>"},
+						content: "<p>Primary school <span class='text-big' style='font-size: 1.8em'>33.2%</span></p>"+
+						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>"},
 			
 			box_3: {
 						id: "teachers",
