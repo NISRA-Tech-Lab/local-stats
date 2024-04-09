@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/entry/start.2b355668.js">
+		<link rel="modulepreload" href="https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/chunks/index.baf6a862.js">
+		<link rel="modulepreload" href="https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/chunks/singletons.c186b68d.js">
+		<link rel="modulepreload" href="https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/chunks/paths.42349413.js">
+		<link rel="modulepreload" href="https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/entry/app.e322874d.js">
+	</head>
+	<body>
+		<div id="svelte">
+			<script>
+				{
+					__sveltekit_1qxkv6c = {
+						assets: "https://NISRA-Tech-Lab.github.io/nisra-geog-explorer",
+						base: "/nisra-geog-explorer",
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/entry/start.2b355668.js"),
+						import("https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/_app/immutable/entry/app.e322874d.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
