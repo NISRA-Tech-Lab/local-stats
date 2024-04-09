@@ -11,9 +11,7 @@ export let sub_heading;
 export let description;
 export let boxes;
 export let more;
-export let comp_none = true;
-export let comp_time = false;
-export let comp_ni = false;
+export let chart_compare_type;
 
 let box_list = Object.keys(boxes);
 
@@ -58,7 +56,6 @@ let w, cols;
 
                 {#each {length: box_list.length} as _, i}
 
-
                     <GreyBox
                         id = {boxes[box_list[i]].id}
                         style = {boxes[box_list[i]].style}
@@ -68,9 +65,7 @@ let w, cols;
                         zKey = {boxes[box_list[i]].zKey}
                         label = {boxes[box_list[i]].label}
                         topic_prev_available = {boxes[box_list[i]].topic_prev_available}
-                        comp_none = {comp_none}
-                        comp_time = {comp_time}
-                        comp_ni = {comp_ni}
+                        chart_compare_type = {chart_compare_type}
                     />
 
                 {/each}
