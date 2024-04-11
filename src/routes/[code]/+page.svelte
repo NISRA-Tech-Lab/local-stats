@@ -826,8 +826,12 @@
 						content: "<span >"  + " population growth/shrink to be added</span>"},
 					box_2: {
 						id: "age",
-						content: "StackedBarChart",
-						chart_data: data.place && makeData_year(["age"], ["2011"], ["2021"]),
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
+						},
 						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"
@@ -838,8 +842,12 @@
 					},
 					box_4: {
 						id: "hhsize",
-						content: "StackedBarChart",
-						chart_data: data.place && makeData_year(["hh_size"], ["2011"], ["2021"]),
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
+						},
 						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
@@ -857,8 +865,12 @@
 					},
 					box_6: {
 						id: "language",
-						content: "StackedBarChart",
-						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
+						},
 						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"
@@ -898,9 +910,13 @@
 						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},
 				box_4: {
 						id: "carers",
-						content: "StackedBarChart",
-						chart_data: data.place && makeData_year(["provision_care"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
+						},
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
 				box_5: {
@@ -997,9 +1013,13 @@
 		
 			box_4: {
 						id: "qualifications",
-						content: "StackedBarChart",
-						chart_data: data.place && makeData_year(["highest_level_of_qualifications"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
+						},
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
 
