@@ -250,6 +250,7 @@
     $: data.place && update(data.place);
     $: comp_ni = false;
     $: comp_none = true;
+
 </script>
 
 <svelte:head>
@@ -423,16 +424,19 @@
 
 		<div id="grid" class="grid mt">
 			<GreyBox
-			id = "location"
-			place = {data.place}
-			content =  {{
-				ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-				lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-				dea: "Dunsilly District Electoral Area is within Antrim and Newtownabbey Local Government District and covers part of Antrim town, all of Randalstown and surrounding  rural areas"
-			}}
-			
-		/>
-		
+				id = "overview"
+				i_button = {false}
+				heading = "Overview - box with words"
+				place = {data.place}
+				style = "line-height: 1.3;"
+				content = {{
+					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
+				}}
+				chart_compare_type = {chart_compare_type}
+			/>
+
 
 			<!-- <div class="div-grey-box" style="line-height: 1.3;">
 				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
@@ -493,6 +497,7 @@
 				id = "pop"
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+				chart_compare_type = {chart_compare_type}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -573,7 +578,8 @@
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				content = {'<span class="text-big" style="font-size: 1em;">' + 'density to be added</span>'}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+				chart_compare_type = {chart_compare_type}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -1033,6 +1039,7 @@
 				place = {data.place}
 				sub_heading = "Area"
 				description = "Location, Area and Population density"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -1063,6 +1070,7 @@
 				place = {data.place}
 				sub_heading = "Census 2021"
 				description = "Broad age bands (years), Country of Birth and Main language"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					box_1: {
 						id: "location",
@@ -1071,21 +1079,33 @@
 					box_2: {
 						id: "farms",
 						content: "GroupChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.cob, "cob"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.cob, "cob"),
+						},
 						zKey: "group",
 						label: chartLabel
 					},
 					box_3: {
 						id: "cob1",
 						content: "ProfileChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.cob, "cob"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.cob, "cob"),
+						},
 						zKey: "group",
 						label: chartLabel
 					},
 					box_4: {
 						id: "cob",
 						content: "BarChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.cob, "cob"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.cob, "cob"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.cob, "cob"),
+						},
 						zKey: "group",
 						label: chartLabel
 					},
@@ -1099,7 +1119,7 @@
 						id: "mainlang",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "false"
 					}
@@ -1284,6 +1304,7 @@
 				place = {data.place}
 				sub_heading = "Births"
 				description = "Number of births, age of mother and xxxx"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1396,6 +1417,7 @@
 				place = {data.place}
 				sub_heading = "Deprivation"
 				description = "XXXXX , xxxx"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1612,6 +1634,7 @@
 				place = {data.place}
 				sub_heading = "Labour Market"
 				description = "Employment rate, economic activity"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1747,6 +1770,7 @@
 				place = {data.place}
 				sub_heading = "Business"
 				description = "Number of business, xxxx"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1761,6 +1785,9 @@
 				place = {data.place}
 				sub_heading = "Crime"
 				description = "Number of crimes"
+				comp_none = {comp_none}
+				comp_time = {comp_2011}
+				comp_ni = {comp_ni}
 				boxes = {{
 					
 				}}
@@ -1775,6 +1802,7 @@
 				place = {data.place}
 				sub_heading = "Travel"
 				description = "Cars, miles"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1789,6 +1817,7 @@
 				place = {data.place}
 				sub_heading = "Housing"
 				description = "Number of houses, social sector"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1803,6 +1832,7 @@
 				place = {data.place}
 				sub_heading = "Culture"
 				description = "Number of arts...."
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
@@ -1817,6 +1847,7 @@
 				place = {data.place}
 				sub_heading = "Agriculture"
 				description = "Number of farms"
+				chart_compare_type = {chart_compare_type}
 				boxes = {{
 					
 				}}
