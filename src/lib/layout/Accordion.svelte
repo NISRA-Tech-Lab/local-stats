@@ -21,16 +21,16 @@ let w, cols;
 
 <div class = "accordion-item">
 
-    <h2 class="accordion-header s-Vk7w7Sfe-0Fk" id="panelsStayOpen-heading{id}">
+    <h2 class="accordion-header" id="panelsStayOpen-heading{id}">
         <button
-            class="accordion-button collapsed s-Vk7w7Sfe-0Fk"
+            class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#panelsStayOpen-collapse{id}"
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapse{id}"
         >
-            <span class="accordion-button-title s-Vk7w7Sfe-0Fk">
+            <span class="accordion-button-title">
                 <img
                     src="{base}/img/{img}"
                     alt="logo"
@@ -43,16 +43,16 @@ let w, cols;
 
     <div
         id="panelsStayOpen-collapse{id}"
-        class="accordion-collapse collapse s-Vk7w7Sfe-0Fk"
+        class="accordion-collapse collapse"
         aria-labelledby="panelsStayOpen-heading{id}"
     >
 
-        <div class="accordion-body s-Vk7w7Sfe-0Fk">
+        <div class="accordion-body">
             {sub_heading} - {place.name} -
-            <span class="accordion-button-title-sub s-Vk7w7Sfe-0Fk"
+            <span class="accordion-button-title-sub"
                 >{description}</span>
 
-            <div class="grid mt s-Vk7w7Sfe-0Fk" bind:clientWidth={w}>
+            <div class="grid mt" bind:clientWidth={w}>
 
                 {#each {length: box_list.length} as _, i}
 
@@ -74,7 +74,7 @@ let w, cols;
 
             {#if more != ""}
                 <h3>More Statistics</h3>
-                <div class = "accordion-more s-Vk7w7Sfe-0Fk">{@html more}</div>
+                <div class = "accordion-more">{@html more}</div>
             {/if}
 
         </div>
@@ -88,6 +88,19 @@ let w, cols;
     .accordion-more {
         margin-top: 1em;
     }
+
+    .grid {
+		display: grid;
+		width: 100%;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+		justify-content: stretch;
+		page-break-inside: avoid;
+	}
+
+    .mt {
+		margin-top: 20px;
+	}
 
 </style>
 
