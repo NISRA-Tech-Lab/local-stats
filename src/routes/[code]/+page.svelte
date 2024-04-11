@@ -899,7 +899,7 @@
 						id: "generalhealth",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
 				box_2: {
@@ -1297,7 +1297,7 @@
 								
 								<div><Legend_ColChart 
 									data = {data.place && makeData_year(["age"],["2011"],["2021"])} 
-									zkey = {chart_compare_type} /></div>
+									zKey = {chart_compare_type} /></div>
 								
 								{chart_compare_type}
 							</div>
