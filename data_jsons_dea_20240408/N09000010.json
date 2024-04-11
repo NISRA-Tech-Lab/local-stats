@@ -1,0 +1,5237 @@
+{
+  "code": "N09000010",
+  "name": "Newry, Mourne and Down",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "lgd",
+  "count": 11,
+  "parents": [
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N10001001",
+      "name": "Crotlieve",
+      "type": "dea"
+    },
+    {
+      "code": "N10001002",
+      "name": "Downpatrick",
+      "type": "dea"
+    },
+    {
+      "code": "N10001003",
+      "name": "Newry",
+      "type": "dea"
+    },
+    {
+      "code": "N10001004",
+      "name": "Rowallane",
+      "type": "dea"
+    },
+    {
+      "code": "N10001005",
+      "name": "Slieve Croob",
+      "type": "dea"
+    },
+    {
+      "code": "N10001006",
+      "name": "Slieve Gullion",
+      "type": "dea"
+    },
+    {
+      "code": "N10001007",
+      "name": "The Mournes",
+      "type": "dea"
+    }
+  ],
+  "bounds": [
+    [-5.4328, 54.0227],
+    [-6.769, 54.5957]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 171533
+        },
+        "change": {
+          "all": 6.1452
+        },
+        "2021": {
+          "all": 182074
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 3
+        },
+        "2021": {
+          "all": 3
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 61998
+        },
+        "change": {
+          "all_households": 10.3213
+        },
+        "2021": {
+          "all_households": 68397
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 4.0395,
+          "fair": 13.8924,
+          "good": 30.6623,
+          "very_bad": 1.0843,
+          "very_good": 50.3215
+        },
+        "2021": {
+          "bad": 5.1501,
+          "fair": 12.7986,
+          "good": 27.5278,
+          "very_bad": 1.7943,
+          "very_good": 52.7291
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 14.5505,
+          "four_people": 15.6376,
+          "one_person": 25.0863,
+          "three_people": 16.9376,
+          "two_people": 27.788
+        },
+        "2021": {
+          "five_people": 12.7856,
+          "four_people": 15.0226,
+          "one_person": 27.3009,
+          "three_people": 16.5943,
+          "two_people": 28.2966
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 5.1572,
+          "level_1_qualifications": 11.1177,
+          "level_2_qualifications": 15.3207,
+          "level_3_qualifications": 12.365,
+          "level_4_qualifications_and_above": 23.1248,
+          "no_qualifications": 28.1877,
+          "other_qualifications": 4.7269
+        },
+        "2021": {
+          "apprenticeship": 8.1031,
+          "level_1_qualifications": 5.2636,
+          "level_2_qualifications": 13.3477,
+          "level_3_qualifications": 16.278,
+          "level_4_qualifications_and_above": 31.7863,
+          "no_qualifications": 23.1262,
+          "other_qualifications": 2.0951
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 3.7934,
+          "northern_ireland": 88.0635,
+          "other_cob": 4.2243,
+          "republic_of_ireland": 3.1883,
+          "scotland": 0.6022,
+          "wales": 0.1283
+        },
+        "2021": {
+          "england": 3.7463,
+          "northern_ireland": 86.6571,
+          "other_cob": 5.2951,
+          "republic_of_ireland": 3.5431,
+          "scotland": 0.6311,
+          "wales": 0.1274
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 96.9692,
+          "other_languages": 3.0308
+        },
+        "2021": {
+          "english": 96.1002,
+          "other_languages": 3.8998
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 21.2665,
+          "a15to39": 34.0389,
+          "a40to64": 31.3164,
+          "a65plus": 13.3782
+        },
+        "2021": {
+          "a0to14": 20.774,
+          "a15to39": 30.0905,
+          "a40to64": 32.478,
+          "a65plus": 16.6575
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 7.0234,
+          "a20to49_hours": 2.195,
+          "a50plus_hours": 3.5111,
+          "no_care": 87.2705
+        },
+        "2021": {
+          "a1to19_hours": 5.5151,
+          "a20to49_hours": 3.0672,
+          "a50plus_hours": 3.9683,
+          "no_care": 87.4495
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 72.3237,
+          "none": 3.2664,
+          "other_religions": 0.5025,
+          "protestant_and_other_christian_including_christian_related": 23.9074
+        },
+        "2021": {
+          "catholic": 72.1135,
+          "none": 5.205,
+          "other_religions": 0.7288,
+          "protestant_and_other_christian_including_christian_related": 21.9526
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 50.3979,
+          "males": 49.6021
+        },
+        "2021": {
+          "females": 50.5349,
+          "males": 49.4651
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "Year6": 13.6344,
+          "Female": 48.8934,
+          "SENStatement": 6.3274,
+          "Year5": 13.9945,
+          "SENNonStatemented": 13.2532,
+          "Male": 51.1066,
+          "Year3": 14.1216,
+          "Year1": 12.3478,
+          "FSME": 26.2099,
+          "Year4": 13.5021,
+          "Year2": 13.0891,
+          "All": 100,
+          "Nursery": 4.9931,
+          "Year7": 14.0686,
+          "Reception": 0.2489
+        },
+        "2017/18": {
+          "Year5": 13.8557,
+          "Reception": 0.221,
+          "Year3": 13.3084,
+          "Nursery": 4.7203,
+          "Year6": 13.7084,
+          "SENStatement": 4.2046,
+          "Female": 49.4185,
+          "Year1": 13.3926,
+          "All": 100,
+          "Year2": 13.882,
+          "SENNonStatemented": 16.3553,
+          "Year4": 13.7399,
+          "Year7": 13.1716,
+          "Male": 50.5815,
+          "FSME": 28.9638
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year6": 2575,
+          "Female": 9234,
+          "SENStatement": 1195,
+          "Year5": 2643,
+          "SENNonStatemented": 2503,
+          "Male": 9652,
+          "Year3": 2667,
+          "Year1": 2332,
+          "FSME": 4950,
+          "Year4": 2550,
+          "Year2": 2472,
+          "All": 18886,
+          "Nursery": 943,
+          "Year7": 2657,
+          "Reception": 47
+        },
+        "2017/18": {
+          "Year5": 2633,
+          "Reception": 42,
+          "Year3": 2529,
+          "Nursery": 897,
+          "Year6": 2605,
+          "SENStatement": 799,
+          "Female": 9391,
+          "Year1": 2545,
+          "All": 19003,
+          "Year2": 2638,
+          "SENNonStatemented": 3108,
+          "Year4": 2611,
+          "Year7": 2503,
+          "Male": 9612,
+          "FSME": 5504
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year13": 9.7351,
+          "Year12": 15.586,
+          "FSME": 23.925,
+          "Female": 51.0083,
+          "Year9": 16.4423,
+          "Year8": 16.0017,
+          "All": 100,
+          "SENNonStatemented": 10.703,
+          "Year11": 16.4733,
+          "Year10": 16.585,
+          "SENStatement": 5.9192,
+          "Male": 48.9917,
+          "Year14": 9.1766
+        },
+        "2017/18": {
+          "SENNonStatemented": 15.8482,
+          "All": 100,
+          "Year9": 15.9903,
+          "FSME": 27.8544,
+          "Female": 50.3314,
+          "Year11": 15.7197,
+          "Year8": 15.7806,
+          "Year10": 16.1864,
+          "SENStatement": 5.4045,
+          "Year14": 9.5441,
+          "Male": 49.6686,
+          "Year13": 11.0863,
+          "Year12": 15.6926
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year13": 1569,
+          "Year12": 2512,
+          "FSME": 3856,
+          "Female": 8221,
+          "Year9": 2650,
+          "Year8": 2579,
+          "All": 16117,
+          "SENNonStatemented": 1725,
+          "Year11": 2655,
+          "Year10": 2673,
+          "SENStatement": 954,
+          "Male": 7896,
+          "Year14": 1479
+        },
+        "2017/18": {
+          "SENNonStatemented": 2343,
+          "All": 14784,
+          "Year9": 2364,
+          "FSME": 4118,
+          "Female": 7441,
+          "Year11": 2324,
+          "Year8": 2333,
+          "Year10": 2393,
+          "SENStatement": 799,
+          "Year14": 1411,
+          "Male": 7343,
+          "Year13": 1639,
+          "Year12": 2320
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "SENNonStatemented": 5.4622,
+          "Year14": 6.3025,
+          "Year9": 6.5126,
+          "Female": 24.5798,
+          "Year3": 8.4034,
+          "FSME": 44.958,
+          "SENStatement": 94.5378,
+          "Year5": 6.3025,
+          "Year6": 5.6723,
+          "Year1": 5.6723,
+          "Year4": 3.3613,
+          "Year7": 8.8235,
+          "Reception": 0,
+          "Year11": 9.0336,
+          "All": 100,
+          "Male": 75.4202,
+          "Year2": 6.7227,
+          "Year13": 4.8319,
+          "Year8": 10.5042,
+          "Nursery": 2.3109,
+          "Year12": 6.5126,
+          "Year10": 8.1933,
+          "Year15": 0.8403
+        },
+        "2017/18": {
+          "All": 100,
+          "Year6": 6.383,
+          "Female": 30.5851,
+          "Year7": 6.117,
+          "Year8": 5.3191,
+          "SENStatement": 90.1596,
+          "Year10": 5.8511,
+          "Year11": 6.383,
+          "Reception": 3.1915,
+          "SENNonStatemented": 9.8404,
+          "FSME": 42.8191,
+          "Year14": 7.1809,
+          "Year5": 8.2447,
+          "Year15": 1.5957,
+          "Nursery": 3.4574,
+          "Year3": 8.2447,
+          "Year2": 9.0426,
+          "Year1": 6.6489,
+          "Year9": 5.8511,
+          "Year12": 4.5213,
+          "Year4": 6.117,
+          "Year13": 5.8511,
+          "Male": 69.4149
+        }
+      },
+      "value": {
+        "2022/23": {
+          "SENNonStatemented": 26,
+          "Year14": 30,
+          "Year9": 31,
+          "Female": 117,
+          "Year3": 40,
+          "FSME": 214,
+          "SENStatement": 450,
+          "Year5": 30,
+          "Year6": 27,
+          "Year1": 27,
+          "Year4": 16,
+          "Year7": 42,
+          "Reception": 0,
+          "Year11": 43,
+          "All": 476,
+          "Male": 359,
+          "Year2": 32,
+          "Year13": 23,
+          "Year8": 50,
+          "Nursery": 11,
+          "Year12": 31,
+          "Year10": 39,
+          "Year15": 4
+        },
+        "2017/18": {
+          "All": 376,
+          "Year6": 24,
+          "Female": 115,
+          "Year7": 23,
+          "Year8": 20,
+          "SENStatement": 339,
+          "Year10": 22,
+          "Year11": 24,
+          "Reception": 12,
+          "SENNonStatemented": 37,
+          "FSME": 161,
+          "Year14": 27,
+          "Year5": 31,
+          "Year15": 6,
+          "Nursery": 13,
+          "Year3": 31,
+          "Year2": 34,
+          "Year1": 25,
+          "Year9": 22,
+          "Year12": 17,
+          "Year4": 23,
+          "Year13": 22,
+          "Male": 261
+        }
+      }
+    },
+    "DETN": {
+      "perc": {
+        "2022/23": {
+          "teach29under": 12.9589,
+          "teach30to59": 84.299,
+          "Maleteach": 23.6621,
+          "Femaleteach": 76.3379,
+          "PTteach": 17.5144,
+          "FTteach": 82.4856,
+          "Allteach": 100,
+          "teach60over": 2.7421
+        },
+        "2017/18": {
+          "Femaleteach": 76.3909,
+          "PTteach": 14.5138,
+          "teach30to59": 87.5665,
+          "teach29under": 10.0629,
+          "Maleteach": 23.6091,
+          "teach60over": 2.3706,
+          "Allteach": 100,
+          "FTteach": 85.4862
+        }
+      },
+      "value": {
+        "2022/23": {
+          "teach29under": 293,
+          "teach30to59": 1906,
+          "Maleteach": 535,
+          "Femaleteach": 1726,
+          "PTteach": 396,
+          "FTteach": 1865,
+          "Allteach": 2261,
+          "teach60over": 62
+        },
+        "2017/18": {
+          "Femaleteach": 1579,
+          "PTteach": 300,
+          "teach30to59": 1810,
+          "teach29under": 208,
+          "Maleteach": 488,
+          "teach60over": 49,
+          "Allteach": 2067,
+          "FTteach": 1767
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 1.0846,
+          "Dental_Registrations_ageGDSDR3_5": 3.5125,
+          "Dental_Registrations_ageGDSDR18plus": 74.2914,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.9187,
+          "Dental_Registrations_ageGDSDR3_5": 5.0056,
+          "Dental_Registrations_ageGDSDR18plus": 71.4647,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 1510,
+          "Dental_Registrations_ageGDSDR3_5": 4890,
+          "Dental_Registrations_ageGDSDR18plus": 103427,
+          "Dental_Registrations_ageAll": 139218
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 2311,
+          "Dental_Registrations_ageGDSDR3_5": 6029,
+          "Dental_Registrations_ageGDSDR18plus": 86075,
+          "Dental_Registrations_ageAll": 120444
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTX": 45.7883,
+          "GDSDTC": 1.1114,
+          "GDSDTF": 43.5469,
+          "GDSDTE": 9.5533
+        },
+        "2017/18": {
+          "GDSDTX": 41.0385,
+          "GDSDTC": 2.2362,
+          "GDSDTF": 47.8396,
+          "GDSDTE": 8.8857
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTX": 71683,
+          "GDSDTC": 1740,
+          "GDSDTF": 68174,
+          "GDSDTE": 14956
+        },
+        "2017/18": {
+          "GDSDTX": 70912,
+          "GDSDTC": 3864,
+          "GDSDTF": 82664,
+          "GDSDTE": 15354
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "IS": 1.7478,
+          "PC": 6.8089,
+          "JSA": 0.6112,
+          "PIP": 16.6524,
+          "CA": 8.235,
+          "UC": 12.8136,
+          "RP": 29.5411,
+          "AA": 5.4257,
+          "DLA": 7.6238,
+          "ESA": 10.5404
+        },
+        "2017": {
+          "PC": 8.947,
+          "AA": 5.85,
+          "ESA": 13.4549,
+          "DLA": 23.6981,
+          "UC": 0,
+          "JSA": 2.7759,
+          "IS": 4.1867,
+          "PIP": 0.8029,
+          "RP": 31.3833,
+          "CA": 8.9011
+        }
+      },
+      "value": {
+        "2022": {
+          "IS": 1630,
+          "PC": 6350,
+          "JSA": 570,
+          "PIP": 15530,
+          "CA": 7680,
+          "UC": 11950,
+          "RP": 27550,
+          "AA": 5060,
+          "DLA": 7110,
+          "ESA": 9830
+        },
+        "2017": {
+          "PC": 7800,
+          "AA": 5100,
+          "ESA": 11730,
+          "DLA": 20660,
+          "UC": 0,
+          "JSA": 2420,
+          "IS": 3650,
+          "PIP": 700,
+          "RP": 27360,
+          "CA": 7760
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 9985
+        },
+        "2017/18": {
+          "FEENROLn": 15575
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 6445
+        },
+        "2017/18": {
+          "HEENROLn": 6325
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 82.7,
+          "LEbirth_gender2": 78.9
+        },
+        "2015-17": {
+          "LEbirth_gender1": 82.6,
+          "LEbirth_gender2": 78.9
+        }
+      }
+    }
+  },
+  "hectares": 162828,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "bad",
+        "perc": 5.1501
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "fair",
+        "perc": 12.7986
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "good",
+        "perc": 27.5278
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "very_bad",
+        "perc": 1.7943
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "very_good",
+        "perc": 52.7291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "five_people",
+        "perc": 12.7856
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "four_people",
+        "perc": 15.0226
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "one_person",
+        "perc": 27.3009
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "three_people",
+        "perc": 16.5943
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "two_people",
+        "perc": 28.2966
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "apprenticeship",
+        "perc": 8.1031
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_1_qualifications",
+        "perc": 5.2636
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_2_qualifications",
+        "perc": 13.3477
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_3_qualifications",
+        "perc": 16.278
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.7863
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "no_qualifications",
+        "perc": 23.1262
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_qualifications",
+        "perc": 2.0951
+      }
+    ],
+    "cob": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "england",
+        "perc": 3.7463
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "northern_ireland",
+        "perc": 86.6571
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_cob",
+        "perc": 5.2951
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "republic_of_ireland",
+        "perc": 3.5431
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "scotland",
+        "perc": 0.6311
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "wales",
+        "perc": 0.1274
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "english",
+        "perc": 96.1002
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_languages",
+        "perc": 3.8998
+      }
+    ],
+    "age": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a0to14",
+        "perc": 20.774
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a15to39",
+        "perc": 30.0905
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a40to64",
+        "perc": 32.478
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a65plus",
+        "perc": 16.6575
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a1to19_hours",
+        "perc": 5.5151
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a20to49_hours",
+        "perc": 3.0672
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a50plus_hours",
+        "perc": 3.9683
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "no_care",
+        "perc": 87.4495
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "catholic",
+        "perc": 72.1135
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "none",
+        "perc": 5.205
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_religions",
+        "perc": 0.7288
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 21.9526
+      }
+    ],
+    "sex": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "females",
+        "perc": 50.5349
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "males",
+        "perc": 49.4651
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 13.6344
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 48.8934
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 6.3274
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 13.9945
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 13.2532
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 51.1066
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 14.1216
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 12.3478
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 26.2099
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 13.5021
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 13.0891
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 4.9931
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 14.0686
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0.2489
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 13.8557
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0.221
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 13.3084
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 4.7203
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 13.7084
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 4.2046
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 49.4185
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 13.3926
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 13.882
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 16.3553
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 13.7399
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 13.1716
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 50.5815
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 28.9638
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 9.7351
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 15.586
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 23.925
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 51.0083
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 16.4423
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 16.0017
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 10.703
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 16.4733
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 16.585
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 5.9192
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 48.9917
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 9.1766
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 15.8482
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 15.9903
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 27.8544
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 50.3314
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 15.7197
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 15.7806
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 16.1864
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 5.4045
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 9.5441
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 49.6686
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 11.0863
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 15.6926
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 5.4622
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 6.3025
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 6.5126
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 24.5798
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 8.4034
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 44.958
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 94.5378
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 6.3025
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 5.6723
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 5.6723
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 3.3613
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 8.8235
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 9.0336
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 75.4202
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 6.7227
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 4.8319
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 10.5042
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 2.3109
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 6.5126
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 8.1933
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year15",
+          "perc": 0.8403
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 6.383
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 30.5851
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 6.117
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 5.3191
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 90.1596
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 6.383
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 3.1915
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 9.8404
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 42.8191
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 7.1809
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 8.2447
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year15",
+          "perc": 1.5957
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 3.4574
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 8.2447
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 9.0426
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 6.6489
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 4.5213
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 6.117
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 69.4149
+        }
+      ]
+    },
+    "DETN": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach29under",
+          "perc": 12.9589
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach30to59",
+          "perc": 84.299
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Maleteach",
+          "perc": 23.6621
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Femaleteach",
+          "perc": 76.3379
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "PTteach",
+          "perc": 17.5144
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FTteach",
+          "perc": 82.4856
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach60over",
+          "perc": 2.7421
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Femaleteach",
+          "perc": 76.3909
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "PTteach",
+          "perc": 14.5138
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach30to59",
+          "perc": 87.5665
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach29under",
+          "perc": 10.0629
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Maleteach",
+          "perc": 23.6091
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach60over",
+          "perc": 2.3706
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FTteach",
+          "perc": 85.4862
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.0846
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.5125
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.2914
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.9187
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 5.0056
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 71.4647
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTX",
+          "perc": 45.7883
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTC",
+          "perc": 1.1114
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTF",
+          "perc": 43.5469
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTE",
+          "perc": 9.5533
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTX",
+          "perc": 41.0385
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTC",
+          "perc": 2.2362
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTF",
+          "perc": 47.8396
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTE",
+          "perc": 8.8857
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "Newry Mourne and Down",
+          "category": "IS",
+          "perc": 1.7478
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PC",
+          "perc": 6.8089
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "JSA",
+          "perc": 0.6112
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PIP",
+          "perc": 16.6524
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "CA",
+          "perc": 8.235
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "UC",
+          "perc": 12.8136
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "RP",
+          "perc": 29.5411
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "AA",
+          "perc": 5.4257
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "DLA",
+          "perc": 7.6238
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "ESA",
+          "perc": 10.5404
+        }
+      ],
+      "2017": [
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PC",
+          "perc": 8.947
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "AA",
+          "perc": 5.85
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "ESA",
+          "perc": 13.4549
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "DLA",
+          "perc": 23.6981
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "JSA",
+          "perc": 2.7759
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "IS",
+          "perc": 4.1867
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PIP",
+          "perc": 0.8029
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "RP",
+          "perc": 31.3833
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "CA",
+          "perc": 8.9011
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2011,
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2011,
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2011,
+        "category": "bad",
+        "perc": 4.0395
+      },
+      {
+        "group": 2011,
+        "category": "fair",
+        "perc": 13.8924
+      },
+      {
+        "group": 2011,
+        "category": "good",
+        "perc": 30.6623
+      },
+      {
+        "group": 2011,
+        "category": "very_bad",
+        "perc": 1.0843
+      },
+      {
+        "group": 2011,
+        "category": "very_good",
+        "perc": 50.3215
+      },
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.1501
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 12.7986
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.5278
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.7943
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 52.7291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2011,
+        "category": "five_people",
+        "perc": 14.5505
+      },
+      {
+        "group": 2011,
+        "category": "four_people",
+        "perc": 15.6376
+      },
+      {
+        "group": 2011,
+        "category": "one_person",
+        "perc": 25.0863
+      },
+      {
+        "group": 2011,
+        "category": "three_people",
+        "perc": 16.9376
+      },
+      {
+        "group": 2011,
+        "category": "two_people",
+        "perc": 27.788
+      },
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 12.7856
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 15.0226
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 27.3009
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.5943
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 28.2966
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2011,
+        "category": "apprenticeship",
+        "perc": 5.1572
+      },
+      {
+        "group": 2011,
+        "category": "level_1_qualifications",
+        "perc": 11.1177
+      },
+      {
+        "group": 2011,
+        "category": "level_2_qualifications",
+        "perc": 15.3207
+      },
+      {
+        "group": 2011,
+        "category": "level_3_qualifications",
+        "perc": 12.365
+      },
+      {
+        "group": 2011,
+        "category": "level_4_qualifications_and_above",
+        "perc": 23.1248
+      },
+      {
+        "group": 2011,
+        "category": "no_qualifications",
+        "perc": 28.1877
+      },
+      {
+        "group": 2011,
+        "category": "other_qualifications",
+        "perc": 4.7269
+      },
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 8.1031
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.2636
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.3477
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.278
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.7863
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 23.1262
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.0951
+      }
+    ],
+    "cob": [
+      {
+        "group": 2011,
+        "category": "england",
+        "perc": 3.7934
+      },
+      {
+        "group": 2011,
+        "category": "northern_ireland",
+        "perc": 88.0635
+      },
+      {
+        "group": 2011,
+        "category": "other_cob",
+        "perc": 4.2243
+      },
+      {
+        "group": 2011,
+        "category": "republic_of_ireland",
+        "perc": 3.1883
+      },
+      {
+        "group": 2011,
+        "category": "scotland",
+        "perc": 0.6022
+      },
+      {
+        "group": 2011,
+        "category": "wales",
+        "perc": 0.1283
+      },
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.7463
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 86.6571
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 5.2951
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 3.5431
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.6311
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1274
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2011,
+        "category": "english",
+        "perc": 96.9692
+      },
+      {
+        "group": 2011,
+        "category": "other_languages",
+        "perc": 3.0308
+      },
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 96.1002
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 3.8998
+      }
+    ],
+    "age": [
+      {
+        "group": 2011,
+        "category": "a0to14",
+        "perc": 21.2665
+      },
+      {
+        "group": 2011,
+        "category": "a15to39",
+        "perc": 34.0389
+      },
+      {
+        "group": 2011,
+        "category": "a40to64",
+        "perc": 31.3164
+      },
+      {
+        "group": 2011,
+        "category": "a65plus",
+        "perc": 13.3782
+      },
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 20.774
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 30.0905
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.478
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 16.6575
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2011,
+        "category": "a1to19_hours",
+        "perc": 7.0234
+      },
+      {
+        "group": 2011,
+        "category": "a20to49_hours",
+        "perc": 2.195
+      },
+      {
+        "group": 2011,
+        "category": "a50plus_hours",
+        "perc": 3.5111
+      },
+      {
+        "group": 2011,
+        "category": "no_care",
+        "perc": 87.2705
+      },
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.5151
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.0672
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.9683
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.4495
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2011,
+        "category": "catholic",
+        "perc": 72.3237
+      },
+      {
+        "group": 2011,
+        "category": "none",
+        "perc": 3.2664
+      },
+      {
+        "group": 2011,
+        "category": "other_religions",
+        "perc": 0.5025
+      },
+      {
+        "group": 2011,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.9074
+      },
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 72.1135
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 5.205
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.7288
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 21.9526
+      }
+    ],
+    "sex": [
+      {
+        "group": 2011,
+        "category": "females",
+        "perc": 50.3979
+      },
+      {
+        "group": 2011,
+        "category": "males",
+        "perc": 49.6021
+      },
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.5349
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.4651
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.6344
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.8934
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 6.3274
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 13.9945
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 13.2532
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.1066
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 14.1216
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 12.3478
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 26.2099
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.5021
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 13.0891
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 4.9931
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 14.0686
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0.2489
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 13.8557
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0.221
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 13.3084
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 4.7203
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 13.7084
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 4.2046
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 49.4185
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 13.3926
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 13.882
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 16.3553
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 13.7399
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 13.1716
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 50.5815
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 28.9638
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 9.7351
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 15.586
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 23.925
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 51.0083
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 16.4423
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 16.0017
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 10.703
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.4733
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 16.585
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.9192
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 48.9917
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 9.1766
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 15.8482
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 15.9903
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 27.8544
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 50.3314
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 15.7197
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 15.7806
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.1864
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 5.4045
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 9.5441
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 49.6686
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 11.0863
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 15.6926
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 5.4622
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 6.3025
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 6.5126
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 24.5798
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 8.4034
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 44.958
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 94.5378
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 6.3025
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 5.6723
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 5.6723
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 3.3613
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 8.8235
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 9.0336
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 75.4202
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 6.7227
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 4.8319
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 10.5042
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 2.3109
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 6.5126
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 8.1933
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 0.8403
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 6.383
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 30.5851
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 6.117
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 5.3191
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 90.1596
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 5.8511
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 6.383
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 3.1915
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 9.8404
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 42.8191
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 7.1809
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 8.2447
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 1.5957
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 3.4574
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 8.2447
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 9.0426
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 6.6489
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 5.8511
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 4.5213
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 6.117
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 5.8511
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 69.4149
+      }
+    ],
+    "DETN": [
+      {
+        "group": "2022/23",
+        "category": "teach29under",
+        "perc": 12.9589
+      },
+      {
+        "group": "2022/23",
+        "category": "teach30to59",
+        "perc": 84.299
+      },
+      {
+        "group": "2022/23",
+        "category": "Maleteach",
+        "perc": 23.6621
+      },
+      {
+        "group": "2022/23",
+        "category": "Femaleteach",
+        "perc": 76.3379
+      },
+      {
+        "group": "2022/23",
+        "category": "PTteach",
+        "perc": 17.5144
+      },
+      {
+        "group": "2022/23",
+        "category": "FTteach",
+        "perc": 82.4856
+      },
+      {
+        "group": "2022/23",
+        "category": "Allteach",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "teach60over",
+        "perc": 2.7421
+      },
+      {
+        "group": "2017/18",
+        "category": "Femaleteach",
+        "perc": 76.3909
+      },
+      {
+        "group": "2017/18",
+        "category": "PTteach",
+        "perc": 14.5138
+      },
+      {
+        "group": "2017/18",
+        "category": "teach30to59",
+        "perc": 87.5665
+      },
+      {
+        "group": "2017/18",
+        "category": "teach29under",
+        "perc": 10.0629
+      },
+      {
+        "group": "2017/18",
+        "category": "Maleteach",
+        "perc": 23.6091
+      },
+      {
+        "group": "2017/18",
+        "category": "teach60over",
+        "perc": 2.3706
+      },
+      {
+        "group": "2017/18",
+        "category": "Allteach",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FTteach",
+        "perc": 85.4862
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.0846
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.5125
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 74.2914
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.9187
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 5.0056
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 71.4647
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 45.7883
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.1114
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 43.5469
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 9.5533
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 41.0385
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 2.2362
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 47.8396
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 8.8857
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.7478
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 6.8089
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.6112
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 16.6524
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 8.235
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 12.8136
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 29.5411
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 5.4257
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.6238
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 10.5404
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 8.947
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.85
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 13.4549
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 23.6981
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.7759
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 4.1867
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.8029
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 31.3833
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 8.9011
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "bad",
+        "perc": 5.1501
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "fair",
+        "perc": 12.7986
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "good",
+        "perc": 27.5278
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "very_bad",
+        "perc": 1.7943
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "very_good",
+        "perc": 52.7291
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "five_people",
+        "perc": 12.7856
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "four_people",
+        "perc": 15.0226
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "one_person",
+        "perc": 27.3009
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "three_people",
+        "perc": 16.5943
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "two_people",
+        "perc": 28.2966
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "apprenticeship",
+        "perc": 8.1031
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_1_qualifications",
+        "perc": 5.2636
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_2_qualifications",
+        "perc": 13.3477
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_3_qualifications",
+        "perc": 16.278
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.7863
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "no_qualifications",
+        "perc": 23.1262
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_qualifications",
+        "perc": 2.0951
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "england",
+        "perc": 3.7463
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "northern_ireland",
+        "perc": 86.6571
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_cob",
+        "perc": 5.2951
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "republic_of_ireland",
+        "perc": 3.5431
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "scotland",
+        "perc": 0.6311
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "wales",
+        "perc": 0.1274
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "english",
+        "perc": 96.1002
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_languages",
+        "perc": 3.8998
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a0to14",
+        "perc": 20.774
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a15to39",
+        "perc": 30.0905
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a40to64",
+        "perc": 32.478
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a65plus",
+        "perc": 16.6575
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a1to19_hours",
+        "perc": 5.5151
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a20to49_hours",
+        "perc": 3.0672
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "a50plus_hours",
+        "perc": 3.9683
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "no_care",
+        "perc": 87.4495
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "catholic",
+        "perc": 72.1135
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "none",
+        "perc": 5.205
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "other_religions",
+        "perc": 0.7288
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 21.9526
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "females",
+        "perc": 50.5349
+      },
+      {
+        "group": "Newry, Mourne and Down",
+        "category": "males",
+        "perc": 49.4651
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 13.6344
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 48.8934
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 6.3274
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 13.9945
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 13.2532
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 51.1066
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 14.1216
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 12.3478
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 26.2099
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 13.5021
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 13.0891
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 4.9931
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 14.0686
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0.2489
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 13.8557
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0.221
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 13.3084
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 4.7203
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 13.7084
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 4.2046
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 49.4185
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 13.3926
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 13.882
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 16.3553
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 13.7399
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 13.1716
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 50.5815
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 28.9638
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 9.7351
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 15.586
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 23.925
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 51.0083
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 16.4423
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 16.0017
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 10.703
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 16.4733
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 16.585
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 5.9192
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 48.9917
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 9.1766
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 15.8482
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 15.9903
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 27.8544
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 50.3314
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 15.7197
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 15.7806
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 16.1864
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 5.4045
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 9.5441
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 49.6686
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 11.0863
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 15.6926
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 5.4622
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 6.3025
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 6.5126
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 24.5798
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 8.4034
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 44.958
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 94.5378
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 6.3025
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 5.6723
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 5.6723
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 3.3613
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 8.8235
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 9.0336
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 75.4202
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 6.7227
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 4.8319
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 10.5042
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 2.3109
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 6.5126
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 8.1933
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year15",
+          "perc": 0.8403
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year6",
+          "perc": 6.383
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Female",
+          "perc": 30.5851
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year7",
+          "perc": 6.117
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year8",
+          "perc": 5.3191
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENStatement",
+          "perc": 90.1596
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year10",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year11",
+          "perc": 6.383
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Reception",
+          "perc": 3.1915
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "SENNonStatemented",
+          "perc": 9.8404
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FSME",
+          "perc": 42.8191
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year14",
+          "perc": 7.1809
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year5",
+          "perc": 8.2447
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year15",
+          "perc": 1.5957
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Nursery",
+          "perc": 3.4574
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year3",
+          "perc": 8.2447
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year2",
+          "perc": 9.0426
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year1",
+          "perc": 6.6489
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year9",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year12",
+          "perc": 4.5213
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year4",
+          "perc": 6.117
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Year13",
+          "perc": 5.8511
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Male",
+          "perc": 69.4149
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        }
+      ]
+    },
+    "DETN": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach29under",
+          "perc": 12.9589
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach30to59",
+          "perc": 84.299
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Maleteach",
+          "perc": 23.6621
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Femaleteach",
+          "perc": 76.3379
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "PTteach",
+          "perc": 17.5144
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FTteach",
+          "perc": 82.4856
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach60over",
+          "perc": 2.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach29under",
+          "perc": 12.7101
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach30to59",
+          "perc": 84.8991
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Femaleteach",
+          "perc": 77.0359
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach60over",
+          "perc": 2.3907
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FTteach",
+          "perc": 80.1597
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Maleteach",
+          "perc": 22.9641
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PTteach",
+          "perc": 19.8403
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Femaleteach",
+          "perc": 76.3909
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "PTteach",
+          "perc": 14.5138
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach30to59",
+          "perc": 87.5665
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach29under",
+          "perc": 10.0629
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Maleteach",
+          "perc": 23.6091
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "teach60over",
+          "perc": 2.3706
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FTteach",
+          "perc": 85.4862
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Maleteach",
+          "perc": 22.9828
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PTteach",
+          "perc": 18.1255
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach29under",
+          "perc": 11.0636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach60over",
+          "perc": 2.3104
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Allteach",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FTteach",
+          "perc": 81.8745
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "teach30to59",
+          "perc": 86.6261
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Femaleteach",
+          "perc": 77.0172
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.0846
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.5125
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.2914
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.9187
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 5.0056
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 71.4647
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTX",
+          "perc": 45.7883
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTC",
+          "perc": 1.1114
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTF",
+          "perc": 43.5469
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTE",
+          "perc": 9.5533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTX",
+          "perc": 41.0385
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTC",
+          "perc": 2.2362
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTF",
+          "perc": 47.8396
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "GDSDTE",
+          "perc": 8.8857
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "Newry Mourne and Down",
+          "category": "IS",
+          "perc": 1.7478
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PC",
+          "perc": 6.8089
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "JSA",
+          "perc": 0.6112
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PIP",
+          "perc": 16.6524
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "CA",
+          "perc": 8.235
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "UC",
+          "perc": 12.8136
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "RP",
+          "perc": 29.5411
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "AA",
+          "perc": 5.4257
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "DLA",
+          "perc": 7.6238
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "ESA",
+          "perc": 10.5404
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        }
+      ],
+      "2017": [
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PC",
+          "perc": 8.947
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "AA",
+          "perc": 5.85
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "ESA",
+          "perc": 13.4549
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "DLA",
+          "perc": 23.6981
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "JSA",
+          "perc": 2.7759
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "IS",
+          "perc": 4.1867
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "PIP",
+          "perc": 0.8029
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "RP",
+          "perc": 31.3833
+        },
+        {
+          "group": "Newry Mourne and Down",
+          "category": "CA",
+          "perc": 8.9011
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Newry, Mourne and Down",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPLGD",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPLGD",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
+      "last_updated": "2023-05-31"
+    },
+    "DETN": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "Teachers in Northern Ireland",
+      "dataset_url": "https://data.nisra.gov.uk/table/DETNLGD",
+      "last_updated": "2023-07-26"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRLGD",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTLGD",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLLGD",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLLGD",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LELGD",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

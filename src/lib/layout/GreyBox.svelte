@@ -12,7 +12,7 @@ export let style = null;
 export let place;
 export let content;
 export let chart_data = null;
-export let zKey = null;
+export let zKey = "ni";
 export let label = null;
 export let topic_prev_available = null;
 export let topic_boolean = null;
@@ -28,7 +28,7 @@ if (topic_prev_available == "false") {
 
 </script>
 
-<div class = "div-grey-box s-Vk7w7Sfe-0Fk" style = {style}>
+<div class = "div-grey-box" style = {style}>
 
     {#if (i_button)}
         <IButton id = {id} place = {place}/>

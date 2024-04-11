@@ -39,7 +39,7 @@ export async function load({ params, fetch }) {
     let search_data = res.sort((a, b) => a.name.localeCompare(b.name));
     let ni = await loadArea("N92000002", fetch);
     let place = await loadArea(code, fetch);
-    // console.log(search_data, place, ni)
+
     return {
         search_data, place, ni
     };

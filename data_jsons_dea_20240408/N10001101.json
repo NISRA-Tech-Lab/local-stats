@@ -1,0 +1,4615 @@
+{
+  "code": "N10001101",
+  "name": "Ards Peninsula",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000011",
+      "name": "Ards and North Down",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.4328, 54.3243],
+    [-5.6779, 54.633]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 24964
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 25
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 10311
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 6.75,
+          "fair": 16.0598,
+          "good": 29.8522,
+          "very_bad": 2.1472,
+          "very_good": 45.1909
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 8.128,
+          "four_people": 12.9583,
+          "one_person": 28.4287,
+          "three_people": 15.4413,
+          "two_people": 35.0436
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 8.9248,
+          "level_1_qualifications": 7.2793,
+          "level_2_qualifications": 15.6393,
+          "level_3_qualifications": 16.5332,
+          "level_4_qualifications_and_above": 26.6811,
+          "no_qualifications": 22.6092,
+          "other_qualifications": 2.3331
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 5.7002,
+          "northern_ireland": 89.5289,
+          "other_cob": 2.3834,
+          "republic_of_ireland": 0.9454,
+          "scotland": 1.1977,
+          "wales": 0.2444
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 99.0855,
+          "other_languages": 0.9145
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 17.1847,
+          "a15to39": 26.5542,
+          "a40to64": 34.8462,
+          "a65plus": 21.4148
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.4374,
+          "a20to49_hours": 3.4058,
+          "a50plus_hours": 4.8186,
+          "no_care": 85.3383
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 23.614,
+          "none": 13.1389,
+          "other_religions": 0.8132,
+          "protestant_and_other_christian_including_christian_related": 62.4339
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.4687,
+          "males": 49.5313
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "Reception": 0.3273,
+          "Year3": 14.9135,
+          "FSME": 20.6171,
+          "SENStatement": 7.2464,
+          "Male": 50.4909,
+          "Nursery": 5.5633,
+          "Year2": 11.9215,
+          "Female": 49.5091,
+          "Year6": 13.324,
+          "Year7": 14.446,
+          "Year1": 11.641,
+          "Year4": 13.698,
+          "All": 100,
+          "SENNonStatemented": 13.2772,
+          "Year5": 14.1655
+        },
+        "2017/18": {
+          "Year3": 13.6029,
+          "SENNonStatemented": 20.4963,
+          "Year4": 14.0625,
+          "SENStatement": 3.5846,
+          "Year2": 12.8217,
+          "Year7": 13.2812,
+          "FSME": 23.989,
+          "Year5": 13.0974,
+          "Male": 51.4706,
+          "Year6": 15.579,
+          "All": 100,
+          "Reception": 0.4136,
+          "Year1": 11.6728,
+          "Female": 48.5294,
+          "Nursery": 5.4688
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Reception": 7,
+          "Year3": 319,
+          "FSME": 441,
+          "SENStatement": 155,
+          "Male": 1080,
+          "Nursery": 119,
+          "Year2": 255,
+          "Female": 1059,
+          "Year6": 285,
+          "Year7": 309,
+          "Year1": 249,
+          "Year4": 293,
+          "All": 2139,
+          "SENNonStatemented": 284,
+          "Year5": 303
+        },
+        "2017/18": {
+          "Year3": 296,
+          "SENNonStatemented": 446,
+          "Year4": 306,
+          "SENStatement": 78,
+          "Year2": 279,
+          "Year7": 289,
+          "FSME": 522,
+          "Year5": 285,
+          "Male": 1120,
+          "Year6": 339,
+          "All": 2176,
+          "Reception": 9,
+          "Year1": 254,
+          "Female": 1056,
+          "Nursery": 119
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year12": 15.0741,
+          "Year10": 15.7895,
+          "Year13": 11.2417,
+          "SENNonStatemented": 8.6357,
+          "FSME": 22.5345,
+          "Year8": 15.6873,
+          "Year11": 17.6801,
+          "SENStatement": 5.723,
+          "Female": 49.8212,
+          "Year14": 7.8692,
+          "Male": 50.1788,
+          "All": 100,
+          "Year9": 16.6582
+        },
+        "2017/18": {
+          "Year10": 16.9222,
+          "SENStatement": 3.9182,
+          "Year13": 8.5179,
+          "Year12": 16.0704,
+          "Year11": 16.184,
+          "Male": 50.0852,
+          "SENNonStatemented": 16.7518,
+          "Year8": 17.2629,
+          "Year9": 16.8654,
+          "Year14": 8.1772,
+          "FSME": 21.2947,
+          "All": 100,
+          "Female": 49.9148
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year12": 295,
+          "Year10": 309,
+          "Year13": 220,
+          "SENNonStatemented": 169,
+          "FSME": 441,
+          "Year8": 307,
+          "Year11": 346,
+          "SENStatement": 112,
+          "Female": 975,
+          "Year14": 154,
+          "Male": 982,
+          "All": 1957,
+          "Year9": 326
+        },
+        "2017/18": {
+          "Year10": 298,
+          "SENStatement": 69,
+          "Year13": 150,
+          "Year12": 283,
+          "Year11": 285,
+          "Male": 882,
+          "SENNonStatemented": 295,
+          "Year8": 304,
+          "Year9": 297,
+          "Year14": 144,
+          "FSME": 375,
+          "All": 1761,
+          "Female": 879
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "Year6": 5.6075,
+          "FSME": 38.3178,
+          "Year14": 0.9346,
+          "Year13": 5.6075,
+          "Year3": 6.5421,
+          "Year5": 6.5421,
+          "Nursery": 2.8037,
+          "Year15": 2.8037,
+          "Year10": 6.5421,
+          "Year11": 5.6075,
+          "Year1": 4.6729,
+          "SENNonStatemented": 7.4766,
+          "Year2": 4.6729,
+          "Year9": 11.215,
+          "Year12": 10.2804,
+          "SENStatement": 92.5234,
+          "Reception": 0,
+          "Year8": 9.3458,
+          "Male": 69.1589,
+          "Year4": 6.5421,
+          "Female": 30.8411,
+          "Year7": 10.2804,
+          "All": 100
+        },
+        "2017/18": {
+          "Year1": 7.4468,
+          "Reception": 4.2553,
+          "Year6": 5.3191,
+          "SENNonStatemented": 13.8298,
+          "Female": 22.3404,
+          "Year2": 9.5745,
+          "Male": 77.6596,
+          "SENStatement": 86.1702,
+          "Year9": 5.3191,
+          "FSME": 31.9149,
+          "Year12": 4.2553,
+          "Year15": 3.1915,
+          "Year13": 3.1915,
+          "Year10": 7.4468,
+          "Year3": 5.3191,
+          "Nursery": 0,
+          "Year4": 13.8298,
+          "Year5": 7.4468,
+          "Year7": 11.7021,
+          "Year8": 8.5106,
+          "Year11": 1.0638,
+          "All": 100,
+          "Year14": 2.1277
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year6": 6,
+          "FSME": 41,
+          "Year14": 1,
+          "Year13": 6,
+          "Year3": 7,
+          "Year5": 7,
+          "Nursery": 3,
+          "Year15": 3,
+          "Year10": 7,
+          "Year11": 6,
+          "Year1": 5,
+          "SENNonStatemented": 8,
+          "Year2": 5,
+          "Year9": 12,
+          "Year12": 11,
+          "SENStatement": 99,
+          "Reception": 0,
+          "Year8": 10,
+          "Male": 74,
+          "Year4": 7,
+          "Female": 33,
+          "Year7": 11,
+          "All": 107
+        },
+        "2017/18": {
+          "Year1": 7,
+          "Reception": 4,
+          "Year6": 5,
+          "SENNonStatemented": 13,
+          "Female": 21,
+          "Year2": 9,
+          "Male": 73,
+          "SENStatement": 81,
+          "Year9": 5,
+          "FSME": 30,
+          "Year12": 4,
+          "Year15": 3,
+          "Year13": 3,
+          "Year10": 7,
+          "Year3": 5,
+          "Nursery": 0,
+          "Year4": 13,
+          "Year5": 7,
+          "Year7": 11,
+          "Year8": 8,
+          "Year11": 1,
+          "All": 94,
+          "Year14": 2
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 0.7949,
+          "Dental_Registrations_ageGDSDR3_5": 2.7852,
+          "Dental_Registrations_ageGDSDR18plus": 76.3792,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.6855,
+          "Dental_Registrations_ageGDSDR3_5": 3.9791,
+          "Dental_Registrations_ageGDSDR18plus": 75.352,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 133,
+          "Dental_Registrations_ageGDSDR3_5": 466,
+          "Dental_Registrations_ageGDSDR18plus": 12779,
+          "Dental_Registrations_ageAll": 16731
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 255,
+          "Dental_Registrations_ageGDSDR3_5": 602,
+          "Dental_Registrations_ageGDSDR18plus": 11400,
+          "Dental_Registrations_ageAll": 15129
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTE": 11.5014,
+          "GDSDTF": 43.2322,
+          "GDSDTC": 1.6439,
+          "GDSDTX": 43.6225
+        },
+        "2017/18": {
+          "GDSDTF": 49.1753,
+          "GDSDTE": 9.5957,
+          "GDSDTX": 39.1053,
+          "GDSDTC": 2.1237
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTE": 1945,
+          "GDSDTF": 7311,
+          "GDSDTC": 278,
+          "GDSDTX": 7377
+        },
+        "2017/18": {
+          "GDSDTF": 11300,
+          "GDSDTE": 2205,
+          "GDSDTX": 8986,
+          "GDSDTC": 488
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "DLA": 7.6164,
+          "PIP": 15.8674,
+          "UC": 10.5783,
+          "IS": 1.0578,
+          "ESA": 9.9436,
+          "AA": 5.8533,
+          "JSA": 0.5642,
+          "RP": 34.2736,
+          "CA": 8.3216,
+          "PC": 5.9238
+        },
+        "2017": {
+          "CA": 8.3589,
+          "ESA": 11.7331,
+          "IS": 2.7607,
+          "UC": 0,
+          "RP": 36.8865,
+          "DLA": 22.6994,
+          "JSA": 2.9141,
+          "PC": 7.8988,
+          "PIP": 0.7669,
+          "AA": 5.9816
+        }
+      },
+      "value": {
+        "2022": {
+          "DLA": 1080,
+          "PIP": 2250,
+          "UC": 1500,
+          "IS": 150,
+          "ESA": 1410,
+          "AA": 830,
+          "JSA": 80,
+          "RP": 4860,
+          "CA": 1180,
+          "PC": 840
+        },
+        "2017": {
+          "CA": 1090,
+          "ESA": 1530,
+          "IS": 360,
+          "UC": 0,
+          "RP": 4810,
+          "DLA": 2960,
+          "JSA": 380,
+          "PC": 1030,
+          "PIP": 100,
+          "AA": 780
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 1375
+        },
+        "2017/18": {
+          "FEENROLn": 1835
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 665
+        },
+        "2017/18": {
+          "HEENROLn": 615
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 84,
+          "LEbirth_gender2": 80.1
+        },
+        "2015-17": {
+          "LEbirth_gender1": 84.2,
+          "LEbirth_gender2": 81.7
+        }
+      }
+    }
+  },
+  "hectares": 21043,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Ards Peninsula",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Ards Peninsula",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Ards Peninsula",
+        "category": "bad",
+        "perc": 6.75
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "fair",
+        "perc": 16.0598
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "good",
+        "perc": 29.8522
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "very_bad",
+        "perc": 2.1472
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "very_good",
+        "perc": 45.1909
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Ards Peninsula",
+        "category": "five_people",
+        "perc": 8.128
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "four_people",
+        "perc": 12.9583
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "one_person",
+        "perc": 28.4287
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "three_people",
+        "perc": 15.4413
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "two_people",
+        "perc": 35.0436
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Ards Peninsula",
+        "category": "apprenticeship",
+        "perc": 8.9248
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_1_qualifications",
+        "perc": 7.2793
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_2_qualifications",
+        "perc": 15.6393
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_3_qualifications",
+        "perc": 16.5332
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.6811
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "no_qualifications",
+        "perc": 22.6092
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_qualifications",
+        "perc": 2.3331
+      }
+    ],
+    "cob": [
+      {
+        "group": "Ards Peninsula",
+        "category": "england",
+        "perc": 5.7002
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "northern_ireland",
+        "perc": 89.5289
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_cob",
+        "perc": 2.3834
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "republic_of_ireland",
+        "perc": 0.9454
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "scotland",
+        "perc": 1.1977
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "wales",
+        "perc": 0.2444
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Ards Peninsula",
+        "category": "english",
+        "perc": 99.0855
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_languages",
+        "perc": 0.9145
+      }
+    ],
+    "age": [
+      {
+        "group": "Ards Peninsula",
+        "category": "a0to14",
+        "perc": 17.1847
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a15to39",
+        "perc": 26.5542
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a40to64",
+        "perc": 34.8462
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a65plus",
+        "perc": 21.4148
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Ards Peninsula",
+        "category": "a1to19_hours",
+        "perc": 6.4374
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a20to49_hours",
+        "perc": 3.4058
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a50plus_hours",
+        "perc": 4.8186
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "no_care",
+        "perc": 85.3383
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Ards Peninsula",
+        "category": "catholic",
+        "perc": 23.614
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "none",
+        "perc": 13.1389
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_religions",
+        "perc": 0.8132
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 62.4339
+      }
+    ],
+    "sex": [
+      {
+        "group": "Ards Peninsula",
+        "category": "females",
+        "perc": 50.4687
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "males",
+        "perc": 49.5313
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0.3273
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 14.9135
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 20.6171
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 7.2464
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.4909
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 5.5633
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 11.9215
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.5091
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 13.324
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 14.446
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 11.641
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 13.698
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 13.2772
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 14.1655
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 13.6029
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 20.4963
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 14.0625
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 3.5846
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 12.8217
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 13.2812
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 23.989
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 13.0974
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 51.4706
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 15.579
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0.4136
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 11.6728
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 48.5294
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 5.4688
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 15.0741
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 15.7895
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 11.2417
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 8.6357
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 22.5345
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 15.6873
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 17.6801
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 5.723
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.8212
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 7.8692
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.1788
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 16.6582
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 16.9222
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 3.9182
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 8.5179
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 16.0704
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 16.184
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.0852
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 16.7518
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 17.2629
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 16.8654
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 8.1772
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 21.2947
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.9148
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 38.3178
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 0.9346
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 2.8037
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year15",
+          "perc": 2.8037
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 4.6729
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 7.4766
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 4.6729
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 11.215
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 10.2804
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 92.5234
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 9.3458
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 69.1589
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 30.8411
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 10.2804
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 4.2553
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 13.8298
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 22.3404
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 9.5745
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 77.6596
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 86.1702
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 31.9149
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 4.2553
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year15",
+          "perc": 3.1915
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 3.1915
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 13.8298
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 11.7021
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 8.5106
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 1.0638
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 2.1277
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.7949
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.7852
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.3792
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.6855
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.9791
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.352
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTE",
+          "perc": 11.5014
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTF",
+          "perc": 43.2322
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTC",
+          "perc": 1.6439
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTX",
+          "perc": 43.6225
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTF",
+          "perc": 49.1753
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTE",
+          "perc": 9.5957
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTX",
+          "perc": 39.1053
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTC",
+          "perc": 2.1237
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "DLA",
+          "perc": 7.6164
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PIP",
+          "perc": 15.8674
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "UC",
+          "perc": 10.5783
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "IS",
+          "perc": 1.0578
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "ESA",
+          "perc": 9.9436
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "AA",
+          "perc": 5.8533
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "JSA",
+          "perc": 0.5642
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "RP",
+          "perc": 34.2736
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "CA",
+          "perc": 8.3216
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PC",
+          "perc": 5.9238
+        }
+      ],
+      "2017": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "CA",
+          "perc": 8.3589
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "ESA",
+          "perc": 11.7331
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "IS",
+          "perc": 2.7607
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "RP",
+          "perc": 36.8865
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "DLA",
+          "perc": 22.6994
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "JSA",
+          "perc": 2.9141
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PC",
+          "perc": 7.8988
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PIP",
+          "perc": 0.7669
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "AA",
+          "perc": 5.9816
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 6.75
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 16.0598
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.8522
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.1472
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 45.1909
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 8.128
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 12.9583
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 28.4287
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 15.4413
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 35.0436
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 8.9248
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 7.2793
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 15.6393
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.5332
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.6811
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 22.6092
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.3331
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 5.7002
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 89.5289
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 2.3834
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.9454
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.1977
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2444
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 99.0855
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 0.9145
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 17.1847
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 26.5542
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.8462
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 21.4148
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.4374
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.4058
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.8186
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 85.3383
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 23.614
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 13.1389
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.8132
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 62.4339
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.4687
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.5313
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0.3273
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 14.9135
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 20.6171
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 7.2464
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.4909
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 5.5633
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 11.9215
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.5091
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.324
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 14.446
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 11.641
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.698
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 13.2772
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 14.1655
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 13.6029
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 20.4963
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 14.0625
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 3.5846
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 12.8217
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 13.2812
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 23.989
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 13.0974
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 51.4706
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 15.579
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0.4136
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 11.6728
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 48.5294
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 5.4688
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 15.0741
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 15.7895
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 11.2417
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 8.6357
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 22.5345
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 15.6873
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 17.6801
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.723
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.8212
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 7.8692
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.1788
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 16.6582
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.9222
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 3.9182
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 8.5179
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 16.0704
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 16.184
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 50.0852
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 16.7518
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 17.2629
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 16.8654
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 8.1772
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 21.2947
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 49.9148
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 5.6075
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 38.3178
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 0.9346
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 5.6075
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 6.5421
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 6.5421
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 2.8037
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 2.8037
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 6.5421
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 5.6075
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 4.6729
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 7.4766
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 4.6729
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 11.215
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 10.2804
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 92.5234
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 9.3458
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 69.1589
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 6.5421
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 30.8411
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 10.2804
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 7.4468
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 4.2553
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 5.3191
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 13.8298
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 22.3404
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 9.5745
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 77.6596
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 86.1702
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 5.3191
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 31.9149
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 4.2553
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 3.1915
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 3.1915
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 7.4468
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 5.3191
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 13.8298
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 7.4468
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 11.7021
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 8.5106
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 1.0638
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 2.1277
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 0.7949
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 2.7852
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 76.3792
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.6855
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.9791
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 75.352
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 11.5014
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 43.2322
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.6439
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 43.6225
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 49.1753
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 9.5957
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 39.1053
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 2.1237
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.6164
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 15.8674
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 10.5783
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.0578
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 9.9436
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 5.8533
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.5642
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 34.2736
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 8.3216
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.9238
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 8.3589
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 11.7331
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 2.7607
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 36.8865
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 22.6994
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.9141
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 7.8988
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.7669
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.9816
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Ards Peninsula",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Ards Peninsula",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Ards Peninsula",
+        "category": "bad",
+        "perc": 6.75
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "fair",
+        "perc": 16.0598
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "good",
+        "perc": 29.8522
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "very_bad",
+        "perc": 2.1472
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "very_good",
+        "perc": 45.1909
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Ards Peninsula",
+        "category": "five_people",
+        "perc": 8.128
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "four_people",
+        "perc": 12.9583
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "one_person",
+        "perc": 28.4287
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "three_people",
+        "perc": 15.4413
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "two_people",
+        "perc": 35.0436
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Ards Peninsula",
+        "category": "apprenticeship",
+        "perc": 8.9248
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_1_qualifications",
+        "perc": 7.2793
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_2_qualifications",
+        "perc": 15.6393
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_3_qualifications",
+        "perc": 16.5332
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.6811
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "no_qualifications",
+        "perc": 22.6092
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_qualifications",
+        "perc": 2.3331
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Ards Peninsula",
+        "category": "england",
+        "perc": 5.7002
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "northern_ireland",
+        "perc": 89.5289
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_cob",
+        "perc": 2.3834
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "republic_of_ireland",
+        "perc": 0.9454
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "scotland",
+        "perc": 1.1977
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "wales",
+        "perc": 0.2444
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Ards Peninsula",
+        "category": "english",
+        "perc": 99.0855
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_languages",
+        "perc": 0.9145
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Ards Peninsula",
+        "category": "a0to14",
+        "perc": 17.1847
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a15to39",
+        "perc": 26.5542
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a40to64",
+        "perc": 34.8462
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a65plus",
+        "perc": 21.4148
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Ards Peninsula",
+        "category": "a1to19_hours",
+        "perc": 6.4374
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a20to49_hours",
+        "perc": 3.4058
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "a50plus_hours",
+        "perc": 4.8186
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "no_care",
+        "perc": 85.3383
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Ards Peninsula",
+        "category": "catholic",
+        "perc": 23.614
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "none",
+        "perc": 13.1389
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "other_religions",
+        "perc": 0.8132
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 62.4339
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Ards Peninsula",
+        "category": "females",
+        "perc": 50.4687
+      },
+      {
+        "group": "Ards Peninsula",
+        "category": "males",
+        "perc": 49.5313
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0.3273
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 14.9135
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 20.6171
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 7.2464
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.4909
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 5.5633
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 11.9215
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.5091
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 13.324
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 14.446
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 11.641
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 13.698
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 13.2772
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 14.1655
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 13.6029
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 20.4963
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 14.0625
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 3.5846
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 12.8217
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 13.2812
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 23.989
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 13.0974
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 51.4706
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 15.579
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0.4136
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 11.6728
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 48.5294
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 5.4688
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 15.0741
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 15.7895
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 11.2417
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 8.6357
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 22.5345
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 15.6873
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 17.6801
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 5.723
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.8212
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 7.8692
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.1788
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 16.6582
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 16.9222
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 3.9182
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 8.5179
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 16.0704
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 16.184
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 50.0852
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 16.7518
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 17.2629
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 16.8654
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 8.1772
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 21.2947
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 49.9148
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 38.3178
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 0.9346
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 2.8037
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year15",
+          "perc": 2.8037
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 5.6075
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 4.6729
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 7.4766
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 4.6729
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 11.215
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 10.2804
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 92.5234
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 9.3458
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 69.1589
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 6.5421
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 30.8411
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 10.2804
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "Year1",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Reception",
+          "perc": 4.2553
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year6",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENNonStatemented",
+          "perc": 13.8298
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Female",
+          "perc": 22.3404
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year2",
+          "perc": 9.5745
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Male",
+          "perc": 77.6596
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "SENStatement",
+          "perc": 86.1702
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year9",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "FSME",
+          "perc": 31.9149
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year12",
+          "perc": 4.2553
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year15",
+          "perc": 3.1915
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year13",
+          "perc": 3.1915
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year10",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year3",
+          "perc": 5.3191
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year4",
+          "perc": 13.8298
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year5",
+          "perc": 7.4468
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year7",
+          "perc": 11.7021
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year8",
+          "perc": 8.5106
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year11",
+          "perc": 1.0638
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "Year14",
+          "perc": 2.1277
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.7949
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.7852
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.3792
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.6855
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.9791
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.352
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTE",
+          "perc": 11.5014
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTF",
+          "perc": 43.2322
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTC",
+          "perc": 1.6439
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTX",
+          "perc": 43.6225
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTF",
+          "perc": 49.1753
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTE",
+          "perc": 9.5957
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTX",
+          "perc": 39.1053
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "GDSDTC",
+          "perc": 2.1237
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "DLA",
+          "perc": 7.6164
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PIP",
+          "perc": 15.8674
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "UC",
+          "perc": 10.5783
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "IS",
+          "perc": 1.0578
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "ESA",
+          "perc": 9.9436
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "AA",
+          "perc": 5.8533
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "JSA",
+          "perc": 0.5642
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "RP",
+          "perc": 34.2736
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "CA",
+          "perc": 8.3216
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PC",
+          "perc": 5.9238
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "ARDS PENINSULA",
+          "category": "CA",
+          "perc": 8.3589
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "ESA",
+          "perc": 11.7331
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "IS",
+          "perc": 2.7607
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "RP",
+          "perc": 36.8865
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "DLA",
+          "perc": 22.6994
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "JSA",
+          "perc": 2.9141
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PC",
+          "perc": 7.8988
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "PIP",
+          "perc": 0.7669
+        },
+        {
+          "group": "ARDS PENINSULA",
+          "category": "AA",
+          "perc": 5.9816
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Ards Peninsula",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Ards Peninsula",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

@@ -1,0 +1,4615 @@
+{
+  "code": "N10001102",
+  "name": "Bangor Central",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000011",
+      "name": "Ards and North Down",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.6198, 54.6148],
+    [-5.6802, 54.671]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 26637
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 21
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 11951
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 5.5524,
+          "fair": 14.5962,
+          "good": 31.2047,
+          "very_bad": 1.7157,
+          "very_good": 46.931
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 5.2715,
+          "four_people": 12.1412,
+          "one_person": 35.4447,
+          "three_people": 14.2666,
+          "two_people": 32.8759
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 5.7647,
+          "level_1_qualifications": 6.4423,
+          "level_2_qualifications": 14.3467,
+          "level_3_qualifications": 16.5653,
+          "level_4_qualifications_and_above": 36.8113,
+          "no_qualifications": 17.5864,
+          "other_qualifications": 2.4832
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 6.6632,
+          "northern_ireland": 84.2412,
+          "other_cob": 5.9049,
+          "republic_of_ireland": 1.3289,
+          "scotland": 1.6254,
+          "wales": 0.2365
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.192,
+          "other_languages": 2.808
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 18.0426,
+          "a15to39": 29.1512,
+          "a40to64": 32.8228,
+          "a65plus": 19.9835
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.4631,
+          "a20to49_hours": 2.7518,
+          "a50plus_hours": 3.9175,
+          "no_care": 86.8676
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 11.9383,
+          "none": 21.3725,
+          "other_religions": 1.4829,
+          "protestant_and_other_christian_including_christian_related": 65.2063
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 51.1281,
+          "males": 48.8719
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "FSME": 25.0449,
+          "Year7": 15.4399,
+          "Year3": 14.2729,
+          "Nursery": 4.5332,
+          "SENStatement": 4.9372,
+          "Year2": 12.3878,
+          "Reception": 0,
+          "SENNonStatemented": 13.9587,
+          "All": 100,
+          "Male": 51.167,
+          "Year4": 13.1059,
+          "Female": 48.833,
+          "Year5": 14.0036,
+          "Year1": 12.6571,
+          "Year6": 13.5996
+        },
+        "2017/18": {
+          "Reception": 0.0404,
+          "SENStatement": 2.6241,
+          "Year7": 13.0803,
+          "Male": 50.0606,
+          "Year6": 13.1611,
+          "Year3": 13.7667,
+          "FSME": 27.4122,
+          "Nursery": 4.5216,
+          "Year5": 13.2822,
+          "Year2": 14.6145,
+          "All": 100,
+          "Year1": 13.2822,
+          "Year4": 14.2511,
+          "SENNonStatemented": 19.5398,
+          "Female": 49.9394
+        }
+      },
+      "value": {
+        "2022/23": {
+          "FSME": 558,
+          "Year7": 344,
+          "Year3": 318,
+          "Nursery": 101,
+          "SENStatement": 110,
+          "Year2": 276,
+          "Reception": 0,
+          "SENNonStatemented": 311,
+          "All": 2228,
+          "Male": 1140,
+          "Year4": 292,
+          "Female": 1088,
+          "Year5": 312,
+          "Year1": 282,
+          "Year6": 303
+        },
+        "2017/18": {
+          "Reception": 1,
+          "SENStatement": 65,
+          "Year7": 324,
+          "Male": 1240,
+          "Year6": 326,
+          "Year3": 341,
+          "FSME": 679,
+          "Nursery": 112,
+          "Year5": 329,
+          "Year2": 362,
+          "All": 2477,
+          "Year1": 329,
+          "Year4": 353,
+          "SENNonStatemented": 484,
+          "Female": 1237
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year10": 16.4747,
+          "Year8": 16.024,
+          "SENNonStatemented": 6.5598,
+          "Year12": 15.4231,
+          "Year14": 8.6129,
+          "Year9": 17.1758,
+          "Male": 50.3255,
+          "FSME": 24.3866,
+          "Year13": 9.7146,
+          "Female": 49.6745,
+          "Year11": 16.5749,
+          "All": 100,
+          "SENStatement": 4.657
+        },
+        "2017/18": {
+          "SENStatement": 3.2646,
+          "Year8": 16.2658,
+          "Male": 49.6564,
+          "Year10": 15.9794,
+          "Year14": 9.9084,
+          "SENNonStatemented": 12.7721,
+          "Year12": 15.0057,
+          "Year11": 15.2348,
+          "Female": 50.3436,
+          "FSME": 26.6323,
+          "Year13": 11.6838,
+          "Year9": 15.9221,
+          "All": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year10": 329,
+          "Year8": 320,
+          "SENNonStatemented": 131,
+          "Year12": 308,
+          "Year14": 172,
+          "Year9": 343,
+          "Male": 1005,
+          "FSME": 487,
+          "Year13": 194,
+          "Female": 992,
+          "Year11": 331,
+          "All": 1997,
+          "SENStatement": 93
+        },
+        "2017/18": {
+          "SENStatement": 57,
+          "Year8": 284,
+          "Male": 867,
+          "Year10": 279,
+          "Year14": 173,
+          "SENNonStatemented": 223,
+          "Year12": 262,
+          "Year11": 266,
+          "Female": 879,
+          "FSME": 465,
+          "Year13": 204,
+          "Year9": 278,
+          "All": 1746
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "Year6": 9.6154,
+          "All": 100,
+          "Year3": 5.7692,
+          "Year11": 6.7308,
+          "Year15": 4.8077,
+          "Year14": 2.8846,
+          "Nursery": 0.9615,
+          "Reception": 0,
+          "Year12": 5.7692,
+          "Year13": 6.7308,
+          "Year1": 4.8077,
+          "Year7": 6.7308,
+          "Year8": 11.5385,
+          "Year5": 7.6923,
+          "Year9": 11.5385,
+          "FSME": 48.0769,
+          "SENStatement": 88.4615,
+          "Year10": 4.8077,
+          "Female": 28.8462,
+          "Male": 71.1538,
+          "SENNonStatemented": 11.5385,
+          "Year2": 4.8077,
+          "Year4": 4.8077
+        },
+        "2017/18": {
+          "Year10": 10.101,
+          "Male": 68.6869,
+          "Year2": 8.0808,
+          "FSME": 47.4747,
+          "Reception": 0,
+          "SENStatement": 91.9192,
+          "Female": 31.3131,
+          "Year9": 9.0909,
+          "All": 100,
+          "Nursery": 0,
+          "SENNonStatemented": 8.0808,
+          "Year5": 6.0606,
+          "Year3": 10.101,
+          "Year14": 4.0404,
+          "Year12": 3.0303,
+          "Year11": 7.0707,
+          "Year1": 4.0404,
+          "Year7": 5.0505,
+          "Year8": 11.1111,
+          "Year6": 6.0606,
+          "Year15": 2.0202,
+          "Year13": 4.0404,
+          "Year4": 10.101
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year6": 10,
+          "All": 104,
+          "Year3": 6,
+          "Year11": 7,
+          "Year15": 5,
+          "Year14": 3,
+          "Nursery": 1,
+          "Reception": 0,
+          "Year12": 6,
+          "Year13": 7,
+          "Year1": 5,
+          "Year7": 7,
+          "Year8": 12,
+          "Year5": 8,
+          "Year9": 12,
+          "FSME": 50,
+          "SENStatement": 92,
+          "Year10": 5,
+          "Female": 30,
+          "Male": 74,
+          "SENNonStatemented": 12,
+          "Year2": 5,
+          "Year4": 5
+        },
+        "2017/18": {
+          "Year10": 10,
+          "Male": 68,
+          "Year2": 8,
+          "FSME": 47,
+          "Reception": 0,
+          "SENStatement": 91,
+          "Female": 31,
+          "Year9": 9,
+          "All": 99,
+          "Nursery": 0,
+          "SENNonStatemented": 8,
+          "Year5": 6,
+          "Year3": 10,
+          "Year14": 4,
+          "Year12": 3,
+          "Year11": 7,
+          "Year1": 4,
+          "Year7": 5,
+          "Year8": 11,
+          "Year6": 6,
+          "Year15": 2,
+          "Year13": 4,
+          "Year4": 10
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 0.9073,
+          "Dental_Registrations_ageGDSDR3_5": 3.1984,
+          "Dental_Registrations_ageGDSDR18plus": 75.8024,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.9335,
+          "Dental_Registrations_ageGDSDR3_5": 4.6689,
+          "Dental_Registrations_ageGDSDR18plus": 73.2857,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 160,
+          "Dental_Registrations_ageGDSDR3_5": 564,
+          "Dental_Registrations_ageGDSDR18plus": 13367,
+          "Dental_Registrations_ageAll": 17634
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 311,
+          "Dental_Registrations_ageGDSDR3_5": 751,
+          "Dental_Registrations_ageGDSDR18plus": 11788,
+          "Dental_Registrations_ageAll": 16085
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTC": 1.1202,
+          "GDSDTE": 11.0128,
+          "GDSDTX": 48.7677,
+          "GDSDTF": 39.0992
+        },
+        "2017/18": {
+          "GDSDTE": 8.7171,
+          "GDSDTC": 1.5893,
+          "GDSDTF": 47.1612,
+          "GDSDTX": 42.5325
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTC": 195,
+          "GDSDTE": 1917,
+          "GDSDTX": 8489,
+          "GDSDTF": 6806
+        },
+        "2017/18": {
+          "GDSDTE": 2194,
+          "GDSDTC": 400,
+          "GDSDTF": 11870,
+          "GDSDTX": 10705
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "UC": 13.8306,
+          "PC": 4.924,
+          "RP": 35.916,
+          "DLA": 6.155,
+          "AA": 6.3722,
+          "IS": 1.0862,
+          "PIP": 14.8443,
+          "CA": 6.155,
+          "JSA": 0.8689,
+          "ESA": 9.8479
+        },
+        "2017": {
+          "IS": 3.0403,
+          "DLA": 18.8168,
+          "PIP": 0.6574,
+          "ESA": 12.2432,
+          "UC": 0,
+          "AA": 7.3131,
+          "CA": 5.7518,
+          "RP": 41.0846,
+          "PC": 7.1487,
+          "JSA": 3.9441
+        }
+      },
+      "value": {
+        "2022": {
+          "UC": 1910,
+          "PC": 680,
+          "RP": 4960,
+          "DLA": 850,
+          "AA": 880,
+          "IS": 150,
+          "PIP": 2050,
+          "CA": 850,
+          "JSA": 120,
+          "ESA": 1360
+        },
+        "2017": {
+          "IS": 370,
+          "DLA": 2290,
+          "PIP": 80,
+          "ESA": 1490,
+          "UC": 0,
+          "AA": 890,
+          "CA": 700,
+          "RP": 5000,
+          "PC": 870,
+          "JSA": 480
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 1445
+        },
+        "2017/18": {
+          "FEENROLn": 1930
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 865
+        },
+        "2017/18": {
+          "HEENROLn": 815
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 82.2,
+          "LEbirth_gender2": 79.2
+        },
+        "2015-17": {
+          "LEbirth_gender1": 84.5,
+          "LEbirth_gender2": 79.4
+        }
+      }
+    }
+  },
+  "hectares": 1417,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Bangor Central",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Bangor Central",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Bangor Central",
+        "category": "bad",
+        "perc": 5.5524
+      },
+      {
+        "group": "Bangor Central",
+        "category": "fair",
+        "perc": 14.5962
+      },
+      {
+        "group": "Bangor Central",
+        "category": "good",
+        "perc": 31.2047
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_bad",
+        "perc": 1.7157
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_good",
+        "perc": 46.931
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Bangor Central",
+        "category": "five_people",
+        "perc": 5.2715
+      },
+      {
+        "group": "Bangor Central",
+        "category": "four_people",
+        "perc": 12.1412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "one_person",
+        "perc": 35.4447
+      },
+      {
+        "group": "Bangor Central",
+        "category": "three_people",
+        "perc": 14.2666
+      },
+      {
+        "group": "Bangor Central",
+        "category": "two_people",
+        "perc": 32.8759
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Bangor Central",
+        "category": "apprenticeship",
+        "perc": 5.7647
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_1_qualifications",
+        "perc": 6.4423
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_2_qualifications",
+        "perc": 14.3467
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_3_qualifications",
+        "perc": 16.5653
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.8113
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_qualifications",
+        "perc": 17.5864
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_qualifications",
+        "perc": 2.4832
+      }
+    ],
+    "cob": [
+      {
+        "group": "Bangor Central",
+        "category": "england",
+        "perc": 6.6632
+      },
+      {
+        "group": "Bangor Central",
+        "category": "northern_ireland",
+        "perc": 84.2412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_cob",
+        "perc": 5.9049
+      },
+      {
+        "group": "Bangor Central",
+        "category": "republic_of_ireland",
+        "perc": 1.3289
+      },
+      {
+        "group": "Bangor Central",
+        "category": "scotland",
+        "perc": 1.6254
+      },
+      {
+        "group": "Bangor Central",
+        "category": "wales",
+        "perc": 0.2365
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Bangor Central",
+        "category": "english",
+        "perc": 97.192
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_languages",
+        "perc": 2.808
+      }
+    ],
+    "age": [
+      {
+        "group": "Bangor Central",
+        "category": "a0to14",
+        "perc": 18.0426
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a15to39",
+        "perc": 29.1512
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a40to64",
+        "perc": 32.8228
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a65plus",
+        "perc": 19.9835
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Bangor Central",
+        "category": "a1to19_hours",
+        "perc": 6.4631
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a20to49_hours",
+        "perc": 2.7518
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a50plus_hours",
+        "perc": 3.9175
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_care",
+        "perc": 86.8676
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Bangor Central",
+        "category": "catholic",
+        "perc": 11.9383
+      },
+      {
+        "group": "Bangor Central",
+        "category": "none",
+        "perc": 21.3725
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_religions",
+        "perc": 1.4829
+      },
+      {
+        "group": "Bangor Central",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 65.2063
+      }
+    ],
+    "sex": [
+      {
+        "group": "Bangor Central",
+        "category": "females",
+        "perc": 51.1281
+      },
+      {
+        "group": "Bangor Central",
+        "category": "males",
+        "perc": 48.8719
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 25.0449
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 15.4399
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 14.2729
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 4.5332
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 4.9372
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 12.3878
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 13.9587
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 51.167
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 13.1059
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 48.833
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 14.0036
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 12.6571
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 13.5996
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 2.6241
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 13.0803
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 50.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 13.1611
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 13.7667
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 27.4122
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 4.5216
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 13.2822
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 14.6145
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 13.2822
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 14.2511
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 19.5398
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 49.9394
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 16.4747
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 16.024
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 6.5598
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 15.4231
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 8.6129
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 17.1758
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 50.3255
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 24.3866
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 9.7146
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 49.6745
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 16.5749
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 4.657
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 3.2646
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 16.2658
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 49.6564
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 15.9794
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 9.9084
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 12.7721
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 15.0057
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 15.2348
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 50.3436
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 26.6323
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 11.6838
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 15.9221
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 9.6154
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 5.7692
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year15",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 2.8846
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 0.9615
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 5.7692
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 7.6923
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 48.0769
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 88.4615
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 28.8462
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 71.1538
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 4.8077
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 10.101
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 68.6869
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 8.0808
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 47.4747
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 91.9192
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 31.3131
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 9.0909
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 8.0808
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 6.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 10.101
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 3.0303
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 7.0707
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 5.0505
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 11.1111
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 6.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year15",
+          "perc": 2.0202
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 10.101
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.9073
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.1984
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.8024
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.9335
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6689
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.2857
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTC",
+          "perc": 1.1202
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTE",
+          "perc": 11.0128
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTX",
+          "perc": 48.7677
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTF",
+          "perc": 39.0992
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTE",
+          "perc": 8.7171
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTC",
+          "perc": 1.5893
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTF",
+          "perc": 47.1612
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTX",
+          "perc": 42.5325
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "UC",
+          "perc": 13.8306
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PC",
+          "perc": 4.924
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "RP",
+          "perc": 35.916
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "DLA",
+          "perc": 6.155
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "AA",
+          "perc": 6.3722
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "IS",
+          "perc": 1.0862
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PIP",
+          "perc": 14.8443
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "CA",
+          "perc": 6.155
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "JSA",
+          "perc": 0.8689
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "ESA",
+          "perc": 9.8479
+        }
+      ],
+      "2017": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "IS",
+          "perc": 3.0403
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "DLA",
+          "perc": 18.8168
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PIP",
+          "perc": 0.6574
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "ESA",
+          "perc": 12.2432
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "AA",
+          "perc": 7.3131
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "CA",
+          "perc": 5.7518
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "RP",
+          "perc": 41.0846
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PC",
+          "perc": 7.1487
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "JSA",
+          "perc": 3.9441
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Bangor Central",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Bangor Central",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.5524
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 14.5962
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 31.2047
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.7157
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 46.931
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 5.2715
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 12.1412
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 35.4447
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 14.2666
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 32.8759
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 5.7647
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.4423
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.3467
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.5653
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.8113
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 17.5864
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.4832
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 6.6632
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 84.2412
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 5.9049
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.3289
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.6254
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2365
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.192
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.808
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 18.0426
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 29.1512
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.8228
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 19.9835
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.4631
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.7518
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.9175
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 86.8676
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 11.9383
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 21.3725
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.4829
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 65.2063
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 51.1281
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 48.8719
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 25.0449
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 15.4399
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 14.2729
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 4.5332
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.9372
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 12.3878
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 13.9587
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.167
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.1059
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.833
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 14.0036
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 12.6571
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.5996
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0.0404
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.6241
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 13.0803
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 50.0606
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 13.1611
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 13.7667
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 27.4122
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 4.5216
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 13.2822
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 14.6145
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 13.2822
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 14.2511
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 19.5398
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 49.9394
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 16.4747
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 16.024
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 6.5598
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 15.4231
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 8.6129
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 17.1758
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.3255
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 24.3866
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 9.7146
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.6745
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.5749
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.657
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 3.2646
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 16.2658
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 49.6564
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 15.9794
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 9.9084
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 12.7721
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 15.0057
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 15.2348
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 50.3436
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 26.6323
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 11.6838
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 15.9221
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 9.6154
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 5.7692
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 6.7308
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 4.8077
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 2.8846
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 0.9615
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 5.7692
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 6.7308
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 4.8077
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 6.7308
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 11.5385
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 7.6923
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 11.5385
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 48.0769
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 88.4615
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 4.8077
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 28.8462
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 71.1538
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 11.5385
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 4.8077
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 4.8077
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 10.101
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 68.6869
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 8.0808
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 47.4747
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 91.9192
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 31.3131
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 9.0909
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 8.0808
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 6.0606
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 10.101
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 4.0404
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 3.0303
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 7.0707
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 4.0404
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 5.0505
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 11.1111
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 6.0606
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 2.0202
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 4.0404
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 10.101
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 0.9073
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.1984
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 75.8024
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.9335
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 4.6689
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 73.2857
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.1202
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 11.0128
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 48.7677
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 39.0992
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 8.7171
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.5893
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 47.1612
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 42.5325
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 13.8306
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 4.924
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 35.916
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 6.155
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 6.3722
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.0862
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 14.8443
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.155
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.8689
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 9.8479
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 3.0403
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 18.8168
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.6574
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 12.2432
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 7.3131
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 5.7518
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 41.0846
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 7.1487
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 3.9441
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Bangor Central",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Bangor Central",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Bangor Central",
+        "category": "bad",
+        "perc": 5.5524
+      },
+      {
+        "group": "Bangor Central",
+        "category": "fair",
+        "perc": 14.5962
+      },
+      {
+        "group": "Bangor Central",
+        "category": "good",
+        "perc": 31.2047
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_bad",
+        "perc": 1.7157
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_good",
+        "perc": 46.931
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Bangor Central",
+        "category": "five_people",
+        "perc": 5.2715
+      },
+      {
+        "group": "Bangor Central",
+        "category": "four_people",
+        "perc": 12.1412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "one_person",
+        "perc": 35.4447
+      },
+      {
+        "group": "Bangor Central",
+        "category": "three_people",
+        "perc": 14.2666
+      },
+      {
+        "group": "Bangor Central",
+        "category": "two_people",
+        "perc": 32.8759
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Bangor Central",
+        "category": "apprenticeship",
+        "perc": 5.7647
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_1_qualifications",
+        "perc": 6.4423
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_2_qualifications",
+        "perc": 14.3467
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_3_qualifications",
+        "perc": 16.5653
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.8113
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_qualifications",
+        "perc": 17.5864
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_qualifications",
+        "perc": 2.4832
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Bangor Central",
+        "category": "england",
+        "perc": 6.6632
+      },
+      {
+        "group": "Bangor Central",
+        "category": "northern_ireland",
+        "perc": 84.2412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_cob",
+        "perc": 5.9049
+      },
+      {
+        "group": "Bangor Central",
+        "category": "republic_of_ireland",
+        "perc": 1.3289
+      },
+      {
+        "group": "Bangor Central",
+        "category": "scotland",
+        "perc": 1.6254
+      },
+      {
+        "group": "Bangor Central",
+        "category": "wales",
+        "perc": 0.2365
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Bangor Central",
+        "category": "english",
+        "perc": 97.192
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_languages",
+        "perc": 2.808
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Bangor Central",
+        "category": "a0to14",
+        "perc": 18.0426
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a15to39",
+        "perc": 29.1512
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a40to64",
+        "perc": 32.8228
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a65plus",
+        "perc": 19.9835
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Bangor Central",
+        "category": "a1to19_hours",
+        "perc": 6.4631
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a20to49_hours",
+        "perc": 2.7518
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a50plus_hours",
+        "perc": 3.9175
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_care",
+        "perc": 86.8676
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Bangor Central",
+        "category": "catholic",
+        "perc": 11.9383
+      },
+      {
+        "group": "Bangor Central",
+        "category": "none",
+        "perc": 21.3725
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_religions",
+        "perc": 1.4829
+      },
+      {
+        "group": "Bangor Central",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 65.2063
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Bangor Central",
+        "category": "females",
+        "perc": 51.1281
+      },
+      {
+        "group": "Bangor Central",
+        "category": "males",
+        "perc": 48.8719
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 25.0449
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 15.4399
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 14.2729
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 4.5332
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 4.9372
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 12.3878
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 13.9587
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 51.167
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 13.1059
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 48.833
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 14.0036
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 12.6571
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 13.5996
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 2.6241
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 13.0803
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 50.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 13.1611
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 13.7667
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 27.4122
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 4.5216
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 13.2822
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 14.6145
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 13.2822
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 14.2511
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 19.5398
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 49.9394
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 16.4747
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 16.024
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 6.5598
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 15.4231
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 8.6129
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 17.1758
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 50.3255
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 24.3866
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 9.7146
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 49.6745
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 16.5749
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 4.657
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 3.2646
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 16.2658
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 49.6564
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 15.9794
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 9.9084
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 12.7721
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 15.0057
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 15.2348
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 50.3436
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 26.6323
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 11.6838
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 15.9221
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 9.6154
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 5.7692
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year15",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 2.8846
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 0.9615
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 5.7692
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 6.7308
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 7.6923
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 48.0769
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 88.4615
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 28.8462
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 71.1538
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 11.5385
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 4.8077
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 4.8077
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "Year10",
+          "perc": 10.101
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Male",
+          "perc": 68.6869
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year2",
+          "perc": 8.0808
+        },
+        {
+          "group": "Bangor Central",
+          "category": "FSME",
+          "perc": 47.4747
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENStatement",
+          "perc": 91.9192
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Female",
+          "perc": 31.3131
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year9",
+          "perc": 9.0909
+        },
+        {
+          "group": "Bangor Central",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Bangor Central",
+          "category": "SENNonStatemented",
+          "perc": 8.0808
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year5",
+          "perc": 6.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year3",
+          "perc": 10.101
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year14",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year12",
+          "perc": 3.0303
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year11",
+          "perc": 7.0707
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year1",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year7",
+          "perc": 5.0505
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year8",
+          "perc": 11.1111
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year6",
+          "perc": 6.0606
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year15",
+          "perc": 2.0202
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year13",
+          "perc": 4.0404
+        },
+        {
+          "group": "Bangor Central",
+          "category": "Year4",
+          "perc": 10.101
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.9073
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.1984
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.8024
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.9335
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6689
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.2857
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTC",
+          "perc": 1.1202
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTE",
+          "perc": 11.0128
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTX",
+          "perc": 48.7677
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTF",
+          "perc": 39.0992
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTE",
+          "perc": 8.7171
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTC",
+          "perc": 1.5893
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTF",
+          "perc": 47.1612
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "GDSDTX",
+          "perc": 42.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "UC",
+          "perc": 13.8306
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PC",
+          "perc": 4.924
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "RP",
+          "perc": 35.916
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "DLA",
+          "perc": 6.155
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "AA",
+          "perc": 6.3722
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "IS",
+          "perc": 1.0862
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PIP",
+          "perc": 14.8443
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "CA",
+          "perc": 6.155
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "JSA",
+          "perc": 0.8689
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "ESA",
+          "perc": 9.8479
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "IS",
+          "perc": 3.0403
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "DLA",
+          "perc": 18.8168
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PIP",
+          "perc": 0.6574
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "ESA",
+          "perc": 12.2432
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "AA",
+          "perc": 7.3131
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "CA",
+          "perc": 5.7518
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "RP",
+          "perc": 41.0846
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "PC",
+          "perc": 7.1487
+        },
+        {
+          "group": "BANGOR CENTRAL",
+          "category": "JSA",
+          "perc": 3.9441
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Bangor Central",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Bangor Central",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Bangor Central",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Bangor Central",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

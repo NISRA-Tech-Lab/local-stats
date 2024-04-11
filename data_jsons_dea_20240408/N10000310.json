@@ -1,0 +1,4615 @@
+{
+  "code": "N10000310",
+  "name": "Titanic",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000003",
+      "name": "Belfast",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.8535, 54.5849],
+    [-5.9205, 54.6385]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 36122
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 3
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 17735
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 8.1555,
+          "fair": 15.5856,
+          "good": 29.7954,
+          "very_bad": 2.7379,
+          "very_good": 43.7256
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 4.2912,
+          "four_people": 8.4527,
+          "one_person": 43.0698,
+          "three_people": 13.4769,
+          "two_people": 30.7094
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 5.7814,
+          "level_1_qualifications": 6.2413,
+          "level_2_qualifications": 12.4621,
+          "level_3_qualifications": 13.4501,
+          "level_4_qualifications_and_above": 32.7019,
+          "no_qualifications": 26.9887,
+          "other_qualifications": 2.3745
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.1415,
+          "northern_ireland": 77.8777,
+          "other_cob": 15.4947,
+          "republic_of_ireland": 1.2818,
+          "scotland": 1.0575,
+          "wales": 0.1467
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 88.8232,
+          "other_languages": 11.1768
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 17.7703,
+          "a15to39": 39.9147,
+          "a40to64": 30.134,
+          "a65plus": 12.1809
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.4951,
+          "a20to49_hours": 2.928,
+          "a50plus_hours": 3.6055,
+          "no_care": 88.9714
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 21.9119,
+          "none": 19.1739,
+          "other_religions": 4.172,
+          "protestant_and_other_christian_including_christian_related": 54.7423
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.9689,
+          "males": 49.0311
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "Year3": 13.1903,
+          "Year5": 12.7485,
+          "Nursery": 7.384,
+          "Year2": 13.0956,
+          "Male": 50.2367,
+          "Year7": 13.4112,
+          "Female": 49.7633,
+          "Year1": 13.2218,
+          "FSME": 51.4673,
+          "Reception": 0,
+          "SENStatement": 4.3862,
+          "SENNonStatemented": 22.089,
+          "Year6": 13.7267,
+          "Year4": 13.2218,
+          "All": 100
+        },
+        "2017/18": {
+          "Year7": 11.1111,
+          "Year3": 14.5466,
+          "Year5": 12.5658,
+          "SENStatement": 2.507,
+          "All": 100,
+          "Nursery": 7.7685,
+          "Year2": 13.9276,
+          "Reception": 0,
+          "Year4": 12.9681,
+          "Year6": 12.6896,
+          "Year1": 14.4228,
+          "SENNonStatemented": 22.1603,
+          "Male": 50.8821,
+          "Female": 49.1179,
+          "FSME": 52.5224
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year3": 418,
+          "Year5": 404,
+          "Nursery": 234,
+          "Year2": 415,
+          "Male": 1592,
+          "Year7": 425,
+          "Female": 1577,
+          "Year1": 419,
+          "FSME": 1631,
+          "Reception": 0,
+          "SENStatement": 139,
+          "SENNonStatemented": 700,
+          "Year6": 435,
+          "Year4": 419,
+          "All": 3169
+        },
+        "2017/18": {
+          "Year7": 359,
+          "Year3": 470,
+          "Year5": 406,
+          "SENStatement": 81,
+          "All": 3231,
+          "Nursery": 251,
+          "Year2": 450,
+          "Reception": 0,
+          "Year4": 419,
+          "Year6": 410,
+          "Year1": 466,
+          "SENNonStatemented": 716,
+          "Male": 1644,
+          "Female": 1587,
+          "FSME": 1697
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year10": 16.6146,
+          "Male": 50.9156,
+          "Year12": 15.9,
+          "Year8": 19.0264,
+          "Year14": 6.6101,
+          "Year9": 16.5699,
+          "FSME": 47.5212,
+          "SENNonStatemented": 16.7932,
+          "Year11": 16.9272,
+          "Year13": 8.3519,
+          "SENStatement": 6.4761,
+          "All": 100,
+          "Female": 49.0844
+        },
+        "2017/18": {
+          "Female": 51.4857,
+          "Male": 48.5143,
+          "Year10": 16.1885,
+          "Year9": 17.3156,
+          "FSME": 51.6393,
+          "Year13": 9.6824,
+          "Year11": 16.1373,
+          "Year12": 16.2398,
+          "SENStatement": 5.5328,
+          "All": 100,
+          "SENNonStatemented": 23.6168,
+          "Year8": 17.0082,
+          "Year14": 7.4283
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year10": 372,
+          "Male": 1140,
+          "Year12": 356,
+          "Year8": 426,
+          "Year14": 148,
+          "Year9": 371,
+          "FSME": 1064,
+          "SENNonStatemented": 376,
+          "Year11": 379,
+          "Year13": 187,
+          "SENStatement": 145,
+          "All": 2239,
+          "Female": 1099
+        },
+        "2017/18": {
+          "Female": 1005,
+          "Male": 947,
+          "Year10": 316,
+          "Year9": 338,
+          "FSME": 1008,
+          "Year13": 189,
+          "Year11": 315,
+          "Year12": 317,
+          "SENStatement": 108,
+          "All": 1952,
+          "SENNonStatemented": 461,
+          "Year8": 332,
+          "Year14": 145
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "SENStatement": 94.6341,
+          "Year7": 9.2683,
+          "Year8": 8.2927,
+          "Year3": 2.9268,
+          "Year13": 3.4146,
+          "Year4": 7.3171,
+          "Year6": 6.3415,
+          "Reception": 0,
+          "Year14": 4.3902,
+          "Year1": 7.8049,
+          "Nursery": 4.878,
+          "Year2": 8.2927,
+          "Male": 72.1951,
+          "All": 100,
+          "FSME": 62.9268,
+          "Year11": 5.3659,
+          "Year10": 5.8537,
+          "Year15": 2.9268,
+          "Year12": 6.8293,
+          "Year9": 8.7805,
+          "Year5": 7.3171,
+          "Female": 27.8049,
+          "SENNonStatemented": 5.3659
+        },
+        "2017/18": {
+          "Year9": 6.5089,
+          "Female": 30.7692,
+          "SENStatement": 91.1243,
+          "Year6": 4.7337,
+          "Year11": 7.1006,
+          "Year7": 9.4675,
+          "Reception": 4.7337,
+          "Year15": 2.9586,
+          "Male": 69.2308,
+          "Nursery": 0,
+          "Year5": 6.5089,
+          "Year13": 2.9586,
+          "Year2": 7.6923,
+          "SENNonStatemented": 8.8757,
+          "Year8": 7.1006,
+          "Year14": 0.5917,
+          "Year4": 5.9172,
+          "FSME": 55.0296,
+          "Year10": 10.0592,
+          "Year3": 9.4675,
+          "Year1": 7.6923,
+          "Year12": 6.5089,
+          "All": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "SENStatement": 194,
+          "Year7": 19,
+          "Year8": 17,
+          "Year3": 6,
+          "Year13": 7,
+          "Year4": 15,
+          "Year6": 13,
+          "Reception": 0,
+          "Year14": 9,
+          "Year1": 16,
+          "Nursery": 10,
+          "Year2": 17,
+          "Male": 148,
+          "All": 205,
+          "FSME": 129,
+          "Year11": 11,
+          "Year10": 12,
+          "Year15": 6,
+          "Year12": 14,
+          "Year9": 18,
+          "Year5": 15,
+          "Female": 57,
+          "SENNonStatemented": 11
+        },
+        "2017/18": {
+          "Year9": 11,
+          "Female": 52,
+          "SENStatement": 154,
+          "Year6": 8,
+          "Year11": 12,
+          "Year7": 16,
+          "Reception": 8,
+          "Year15": 5,
+          "Male": 117,
+          "Nursery": 0,
+          "Year5": 11,
+          "Year13": 5,
+          "Year2": 13,
+          "SENNonStatemented": 15,
+          "Year8": 12,
+          "Year14": 1,
+          "Year4": 10,
+          "FSME": 93,
+          "Year10": 17,
+          "Year3": 16,
+          "Year1": 13,
+          "Year12": 11,
+          "All": 169
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 1.1314,
+          "Dental_Registrations_ageGDSDR3_5": 3.3899,
+          "Dental_Registrations_ageGDSDR18plus": 77.1234,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 2.1373,
+          "Dental_Registrations_ageGDSDR3_5": 4.8333,
+          "Dental_Registrations_ageGDSDR18plus": 75.4144,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 268,
+          "Dental_Registrations_ageGDSDR3_5": 803,
+          "Dental_Registrations_ageGDSDR18plus": 18269,
+          "Dental_Registrations_ageAll": 23688
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 459,
+          "Dental_Registrations_ageGDSDR3_5": 1038,
+          "Dental_Registrations_ageGDSDR18plus": 16196,
+          "Dental_Registrations_ageAll": 21476
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTF": 42.7401,
+          "GDSDTE": 11.3721,
+          "GDSDTX": 44.825,
+          "GDSDTC": 1.0627
+        },
+        "2017/18": {
+          "GDSDTE": 9.726,
+          "GDSDTF": 50.9333,
+          "GDSDTC": 1.7653,
+          "GDSDTX": 37.5754
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTF": 12628,
+          "GDSDTE": 3360,
+          "GDSDTX": 13244,
+          "GDSDTC": 314
+        },
+        "2017/18": {
+          "GDSDTE": 3741,
+          "GDSDTF": 19591,
+          "GDSDTC": 679,
+          "GDSDTX": 14453
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "UC": 20.629,
+          "RP": 18.5939,
+          "JSA": 0.9713,
+          "ESA": 14.0611,
+          "CA": 7.308,
+          "PIP": 19.519,
+          "DLA": 6.9843,
+          "AA": 3.5153,
+          "IS": 2.2202,
+          "PC": 6.198
+        },
+        "2017": {
+          "PIP": 0.965,
+          "UC": 0,
+          "RP": 23.0066,
+          "CA": 7.872,
+          "DLA": 25.0381,
+          "ESA": 18.385,
+          "JSA": 5.3327,
+          "IS": 5.8913,
+          "PC": 9.1417,
+          "AA": 4.3677
+        }
+      },
+      "value": {
+        "2022": {
+          "UC": 4460,
+          "RP": 4020,
+          "JSA": 210,
+          "ESA": 3040,
+          "CA": 1580,
+          "PIP": 4220,
+          "DLA": 1510,
+          "AA": 760,
+          "IS": 480,
+          "PC": 1340
+        },
+        "2017": {
+          "PIP": 190,
+          "UC": 0,
+          "RP": 4530,
+          "CA": 1550,
+          "DLA": 4930,
+          "ESA": 3620,
+          "JSA": 1050,
+          "IS": 1160,
+          "PC": 1800,
+          "AA": 860
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 1565
+        },
+        "2017/18": {
+          "FEENROLn": 2035
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 950
+        },
+        "2017/18": {
+          "HEENROLn": 825
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 79.6,
+          "LEbirth_gender2": 73.8
+        },
+        "2015-17": {
+          "LEbirth_gender1": 78.9,
+          "LEbirth_gender2": 74.9
+        }
+      }
+    }
+  },
+  "hectares": 1346,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Titanic",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Titanic",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Titanic",
+        "category": "bad",
+        "perc": 8.1555
+      },
+      {
+        "group": "Titanic",
+        "category": "fair",
+        "perc": 15.5856
+      },
+      {
+        "group": "Titanic",
+        "category": "good",
+        "perc": 29.7954
+      },
+      {
+        "group": "Titanic",
+        "category": "very_bad",
+        "perc": 2.7379
+      },
+      {
+        "group": "Titanic",
+        "category": "very_good",
+        "perc": 43.7256
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Titanic",
+        "category": "five_people",
+        "perc": 4.2912
+      },
+      {
+        "group": "Titanic",
+        "category": "four_people",
+        "perc": 8.4527
+      },
+      {
+        "group": "Titanic",
+        "category": "one_person",
+        "perc": 43.0698
+      },
+      {
+        "group": "Titanic",
+        "category": "three_people",
+        "perc": 13.4769
+      },
+      {
+        "group": "Titanic",
+        "category": "two_people",
+        "perc": 30.7094
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Titanic",
+        "category": "apprenticeship",
+        "perc": 5.7814
+      },
+      {
+        "group": "Titanic",
+        "category": "level_1_qualifications",
+        "perc": 6.2413
+      },
+      {
+        "group": "Titanic",
+        "category": "level_2_qualifications",
+        "perc": 12.4621
+      },
+      {
+        "group": "Titanic",
+        "category": "level_3_qualifications",
+        "perc": 13.4501
+      },
+      {
+        "group": "Titanic",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.7019
+      },
+      {
+        "group": "Titanic",
+        "category": "no_qualifications",
+        "perc": 26.9887
+      },
+      {
+        "group": "Titanic",
+        "category": "other_qualifications",
+        "perc": 2.3745
+      }
+    ],
+    "cob": [
+      {
+        "group": "Titanic",
+        "category": "england",
+        "perc": 4.1415
+      },
+      {
+        "group": "Titanic",
+        "category": "northern_ireland",
+        "perc": 77.8777
+      },
+      {
+        "group": "Titanic",
+        "category": "other_cob",
+        "perc": 15.4947
+      },
+      {
+        "group": "Titanic",
+        "category": "republic_of_ireland",
+        "perc": 1.2818
+      },
+      {
+        "group": "Titanic",
+        "category": "scotland",
+        "perc": 1.0575
+      },
+      {
+        "group": "Titanic",
+        "category": "wales",
+        "perc": 0.1467
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Titanic",
+        "category": "english",
+        "perc": 88.8232
+      },
+      {
+        "group": "Titanic",
+        "category": "other_languages",
+        "perc": 11.1768
+      }
+    ],
+    "age": [
+      {
+        "group": "Titanic",
+        "category": "a0to14",
+        "perc": 17.7703
+      },
+      {
+        "group": "Titanic",
+        "category": "a15to39",
+        "perc": 39.9147
+      },
+      {
+        "group": "Titanic",
+        "category": "a40to64",
+        "perc": 30.134
+      },
+      {
+        "group": "Titanic",
+        "category": "a65plus",
+        "perc": 12.1809
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Titanic",
+        "category": "a1to19_hours",
+        "perc": 4.4951
+      },
+      {
+        "group": "Titanic",
+        "category": "a20to49_hours",
+        "perc": 2.928
+      },
+      {
+        "group": "Titanic",
+        "category": "a50plus_hours",
+        "perc": 3.6055
+      },
+      {
+        "group": "Titanic",
+        "category": "no_care",
+        "perc": 88.9714
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Titanic",
+        "category": "catholic",
+        "perc": 21.9119
+      },
+      {
+        "group": "Titanic",
+        "category": "none",
+        "perc": 19.1739
+      },
+      {
+        "group": "Titanic",
+        "category": "other_religions",
+        "perc": 4.172
+      },
+      {
+        "group": "Titanic",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 54.7423
+      }
+    ],
+    "sex": [
+      {
+        "group": "Titanic",
+        "category": "females",
+        "perc": 50.9689
+      },
+      {
+        "group": "Titanic",
+        "category": "males",
+        "perc": 49.0311
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 13.1903
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 12.7485
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 7.384
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 13.0956
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.2367
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 13.4112
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.7633
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 13.2218
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 51.4673
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 4.3862
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 22.089
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 13.7267
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 13.2218
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 11.1111
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 14.5466
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 12.5658
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 2.507
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 7.7685
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 13.9276
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 12.9681
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 12.6896
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 14.4228
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 22.1603
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.8821
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.1179
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 52.5224
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 16.6146
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.9156
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 15.9
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 19.0264
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 6.6101
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 16.5699
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 47.5212
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 16.7932
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 16.9272
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 8.3519
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 6.4761
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.0844
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 51.4857
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 48.5143
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 16.1885
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 17.3156
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 51.6393
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 9.6824
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 16.1373
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 16.2398
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 5.5328
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 23.6168
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 17.0082
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 7.4283
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 94.6341
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 9.2683
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 8.2927
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 2.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 3.4146
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 7.3171
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 6.3415
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 4.3902
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 7.8049
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 4.878
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 8.2927
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 72.1951
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 62.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 5.3659
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 5.8537
+        },
+        {
+          "group": "Titanic",
+          "category": "Year15",
+          "perc": 2.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 6.8293
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 8.7805
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 7.3171
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 27.8049
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 5.3659
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 30.7692
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 91.1243
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 4.7337
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 7.1006
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 9.4675
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 4.7337
+        },
+        {
+          "group": "Titanic",
+          "category": "Year15",
+          "perc": 2.9586
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 69.2308
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 2.9586
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 7.6923
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 8.8757
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 7.1006
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 0.5917
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 5.9172
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 55.0296
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 10.0592
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 9.4675
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 7.6923
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.1314
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.3899
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 77.1234
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 2.1373
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.8333
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.4144
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "TITANIC",
+          "category": "GDSDTF",
+          "perc": 42.7401
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTE",
+          "perc": 11.3721
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTX",
+          "perc": 44.825
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTC",
+          "perc": 1.0627
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "TITANIC",
+          "category": "GDSDTE",
+          "perc": 9.726
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTF",
+          "perc": 50.9333
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTC",
+          "perc": 1.7653
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTX",
+          "perc": 37.5754
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "TITANIC",
+          "category": "UC",
+          "perc": 20.629
+        },
+        {
+          "group": "TITANIC",
+          "category": "RP",
+          "perc": 18.5939
+        },
+        {
+          "group": "TITANIC",
+          "category": "JSA",
+          "perc": 0.9713
+        },
+        {
+          "group": "TITANIC",
+          "category": "ESA",
+          "perc": 14.0611
+        },
+        {
+          "group": "TITANIC",
+          "category": "CA",
+          "perc": 7.308
+        },
+        {
+          "group": "TITANIC",
+          "category": "PIP",
+          "perc": 19.519
+        },
+        {
+          "group": "TITANIC",
+          "category": "DLA",
+          "perc": 6.9843
+        },
+        {
+          "group": "TITANIC",
+          "category": "AA",
+          "perc": 3.5153
+        },
+        {
+          "group": "TITANIC",
+          "category": "IS",
+          "perc": 2.2202
+        },
+        {
+          "group": "TITANIC",
+          "category": "PC",
+          "perc": 6.198
+        }
+      ],
+      "2017": [
+        {
+          "group": "TITANIC",
+          "category": "PIP",
+          "perc": 0.965
+        },
+        {
+          "group": "TITANIC",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "TITANIC",
+          "category": "RP",
+          "perc": 23.0066
+        },
+        {
+          "group": "TITANIC",
+          "category": "CA",
+          "perc": 7.872
+        },
+        {
+          "group": "TITANIC",
+          "category": "DLA",
+          "perc": 25.0381
+        },
+        {
+          "group": "TITANIC",
+          "category": "ESA",
+          "perc": 18.385
+        },
+        {
+          "group": "TITANIC",
+          "category": "JSA",
+          "perc": 5.3327
+        },
+        {
+          "group": "TITANIC",
+          "category": "IS",
+          "perc": 5.8913
+        },
+        {
+          "group": "TITANIC",
+          "category": "PC",
+          "perc": 9.1417
+        },
+        {
+          "group": "TITANIC",
+          "category": "AA",
+          "perc": 4.3677
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Titanic",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Titanic",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 8.1555
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 15.5856
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.7954
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.7379
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 43.7256
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 4.2912
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 8.4527
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 43.0698
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 13.4769
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.7094
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 5.7814
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.2413
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 12.4621
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 13.4501
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.7019
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 26.9887
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.3745
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.1415
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 77.8777
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 15.4947
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.2818
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0575
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1467
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 88.8232
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 11.1768
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 17.7703
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 39.9147
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 30.134
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 12.1809
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.4951
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.928
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.6055
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 88.9714
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 21.9119
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 19.1739
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 4.172
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 54.7423
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.9689
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.0311
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 13.1903
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 12.7485
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 7.384
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 13.0956
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.2367
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 13.4112
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.7633
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 13.2218
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 51.4673
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.3862
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 22.089
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 13.7267
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 13.2218
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 11.1111
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 14.5466
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 12.5658
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.507
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 7.7685
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 13.9276
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 12.9681
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 12.6896
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 14.4228
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 22.1603
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 50.8821
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 49.1179
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 52.5224
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 16.6146
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 50.9156
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 15.9
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 19.0264
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 6.6101
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 16.5699
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 47.5212
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 16.7932
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.9272
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 8.3519
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 6.4761
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 49.0844
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 51.4857
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 48.5143
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.1885
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 17.3156
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 51.6393
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 9.6824
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 16.1373
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 16.2398
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 5.5328
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 23.6168
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 17.0082
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 7.4283
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 94.6341
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 9.2683
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 8.2927
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 2.9268
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 3.4146
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 7.3171
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 6.3415
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 4.3902
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 7.8049
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 4.878
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 8.2927
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 72.1951
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 62.9268
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 5.3659
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 5.8537
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 2.9268
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 6.8293
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 8.7805
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 7.3171
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 27.8049
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 5.3659
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 6.5089
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 30.7692
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 91.1243
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 4.7337
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 7.1006
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 9.4675
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 4.7337
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 2.9586
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 69.2308
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 6.5089
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 2.9586
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 7.6923
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 8.8757
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 7.1006
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 0.5917
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 5.9172
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 55.0296
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 10.0592
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 9.4675
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 7.6923
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 6.5089
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.1314
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.3899
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 77.1234
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 2.1373
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 4.8333
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 75.4144
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 42.7401
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 11.3721
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 44.825
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.0627
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 9.726
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 50.9333
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.7653
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 37.5754
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 20.629
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 18.5939
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.9713
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 14.0611
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 7.308
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 19.519
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 6.9843
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 3.5153
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 2.2202
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 6.198
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.965
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 23.0066
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 7.872
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 25.0381
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 18.385
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 5.3327
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 5.8913
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 9.1417
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 4.3677
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Titanic",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Titanic",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Titanic",
+        "category": "bad",
+        "perc": 8.1555
+      },
+      {
+        "group": "Titanic",
+        "category": "fair",
+        "perc": 15.5856
+      },
+      {
+        "group": "Titanic",
+        "category": "good",
+        "perc": 29.7954
+      },
+      {
+        "group": "Titanic",
+        "category": "very_bad",
+        "perc": 2.7379
+      },
+      {
+        "group": "Titanic",
+        "category": "very_good",
+        "perc": 43.7256
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Titanic",
+        "category": "five_people",
+        "perc": 4.2912
+      },
+      {
+        "group": "Titanic",
+        "category": "four_people",
+        "perc": 8.4527
+      },
+      {
+        "group": "Titanic",
+        "category": "one_person",
+        "perc": 43.0698
+      },
+      {
+        "group": "Titanic",
+        "category": "three_people",
+        "perc": 13.4769
+      },
+      {
+        "group": "Titanic",
+        "category": "two_people",
+        "perc": 30.7094
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Titanic",
+        "category": "apprenticeship",
+        "perc": 5.7814
+      },
+      {
+        "group": "Titanic",
+        "category": "level_1_qualifications",
+        "perc": 6.2413
+      },
+      {
+        "group": "Titanic",
+        "category": "level_2_qualifications",
+        "perc": 12.4621
+      },
+      {
+        "group": "Titanic",
+        "category": "level_3_qualifications",
+        "perc": 13.4501
+      },
+      {
+        "group": "Titanic",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.7019
+      },
+      {
+        "group": "Titanic",
+        "category": "no_qualifications",
+        "perc": 26.9887
+      },
+      {
+        "group": "Titanic",
+        "category": "other_qualifications",
+        "perc": 2.3745
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Titanic",
+        "category": "england",
+        "perc": 4.1415
+      },
+      {
+        "group": "Titanic",
+        "category": "northern_ireland",
+        "perc": 77.8777
+      },
+      {
+        "group": "Titanic",
+        "category": "other_cob",
+        "perc": 15.4947
+      },
+      {
+        "group": "Titanic",
+        "category": "republic_of_ireland",
+        "perc": 1.2818
+      },
+      {
+        "group": "Titanic",
+        "category": "scotland",
+        "perc": 1.0575
+      },
+      {
+        "group": "Titanic",
+        "category": "wales",
+        "perc": 0.1467
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Titanic",
+        "category": "english",
+        "perc": 88.8232
+      },
+      {
+        "group": "Titanic",
+        "category": "other_languages",
+        "perc": 11.1768
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Titanic",
+        "category": "a0to14",
+        "perc": 17.7703
+      },
+      {
+        "group": "Titanic",
+        "category": "a15to39",
+        "perc": 39.9147
+      },
+      {
+        "group": "Titanic",
+        "category": "a40to64",
+        "perc": 30.134
+      },
+      {
+        "group": "Titanic",
+        "category": "a65plus",
+        "perc": 12.1809
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Titanic",
+        "category": "a1to19_hours",
+        "perc": 4.4951
+      },
+      {
+        "group": "Titanic",
+        "category": "a20to49_hours",
+        "perc": 2.928
+      },
+      {
+        "group": "Titanic",
+        "category": "a50plus_hours",
+        "perc": 3.6055
+      },
+      {
+        "group": "Titanic",
+        "category": "no_care",
+        "perc": 88.9714
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Titanic",
+        "category": "catholic",
+        "perc": 21.9119
+      },
+      {
+        "group": "Titanic",
+        "category": "none",
+        "perc": 19.1739
+      },
+      {
+        "group": "Titanic",
+        "category": "other_religions",
+        "perc": 4.172
+      },
+      {
+        "group": "Titanic",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 54.7423
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Titanic",
+        "category": "females",
+        "perc": 50.9689
+      },
+      {
+        "group": "Titanic",
+        "category": "males",
+        "perc": 49.0311
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 13.1903
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 12.7485
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 7.384
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 13.0956
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.2367
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 13.4112
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.7633
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 13.2218
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 51.4673
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 4.3862
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 22.089
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 13.7267
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 13.2218
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 11.1111
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 14.5466
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 12.5658
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 2.507
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 7.7685
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 13.9276
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 12.9681
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 12.6896
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 14.4228
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 22.1603
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.8821
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.1179
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 52.5224
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 16.6146
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 50.9156
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 15.9
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 19.0264
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 6.6101
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 16.5699
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 47.5212
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 16.7932
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 16.9272
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 8.3519
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 6.4761
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 49.0844
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 51.4857
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 48.5143
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 16.1885
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 17.3156
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 51.6393
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 9.6824
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 16.1373
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 16.2398
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 5.5328
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 23.6168
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 17.0082
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 7.4283
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 94.6341
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 9.2683
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 8.2927
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 2.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 3.4146
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 7.3171
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 6.3415
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 4.3902
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 7.8049
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 4.878
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 8.2927
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 72.1951
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 62.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 5.3659
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 5.8537
+        },
+        {
+          "group": "Titanic",
+          "category": "Year15",
+          "perc": 2.9268
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 6.8293
+        },
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 8.7805
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 7.3171
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 27.8049
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 5.3659
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "Year9",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "Female",
+          "perc": 30.7692
+        },
+        {
+          "group": "Titanic",
+          "category": "SENStatement",
+          "perc": 91.1243
+        },
+        {
+          "group": "Titanic",
+          "category": "Year6",
+          "perc": 4.7337
+        },
+        {
+          "group": "Titanic",
+          "category": "Year11",
+          "perc": 7.1006
+        },
+        {
+          "group": "Titanic",
+          "category": "Year7",
+          "perc": 9.4675
+        },
+        {
+          "group": "Titanic",
+          "category": "Reception",
+          "perc": 4.7337
+        },
+        {
+          "group": "Titanic",
+          "category": "Year15",
+          "perc": 2.9586
+        },
+        {
+          "group": "Titanic",
+          "category": "Male",
+          "perc": 69.2308
+        },
+        {
+          "group": "Titanic",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Titanic",
+          "category": "Year5",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "Year13",
+          "perc": 2.9586
+        },
+        {
+          "group": "Titanic",
+          "category": "Year2",
+          "perc": 7.6923
+        },
+        {
+          "group": "Titanic",
+          "category": "SENNonStatemented",
+          "perc": 8.8757
+        },
+        {
+          "group": "Titanic",
+          "category": "Year8",
+          "perc": 7.1006
+        },
+        {
+          "group": "Titanic",
+          "category": "Year14",
+          "perc": 0.5917
+        },
+        {
+          "group": "Titanic",
+          "category": "Year4",
+          "perc": 5.9172
+        },
+        {
+          "group": "Titanic",
+          "category": "FSME",
+          "perc": 55.0296
+        },
+        {
+          "group": "Titanic",
+          "category": "Year10",
+          "perc": 10.0592
+        },
+        {
+          "group": "Titanic",
+          "category": "Year3",
+          "perc": 9.4675
+        },
+        {
+          "group": "Titanic",
+          "category": "Year1",
+          "perc": 7.6923
+        },
+        {
+          "group": "Titanic",
+          "category": "Year12",
+          "perc": 6.5089
+        },
+        {
+          "group": "Titanic",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.1314
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.3899
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 77.1234
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 2.1373
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.8333
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.4144
+        },
+        {
+          "group": "TITANIC",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "TITANIC",
+          "category": "GDSDTF",
+          "perc": 42.7401
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTE",
+          "perc": 11.3721
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTX",
+          "perc": 44.825
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTC",
+          "perc": 1.0627
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "TITANIC",
+          "category": "GDSDTE",
+          "perc": 9.726
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTF",
+          "perc": 50.9333
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTC",
+          "perc": 1.7653
+        },
+        {
+          "group": "TITANIC",
+          "category": "GDSDTX",
+          "perc": 37.5754
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "TITANIC",
+          "category": "UC",
+          "perc": 20.629
+        },
+        {
+          "group": "TITANIC",
+          "category": "RP",
+          "perc": 18.5939
+        },
+        {
+          "group": "TITANIC",
+          "category": "JSA",
+          "perc": 0.9713
+        },
+        {
+          "group": "TITANIC",
+          "category": "ESA",
+          "perc": 14.0611
+        },
+        {
+          "group": "TITANIC",
+          "category": "CA",
+          "perc": 7.308
+        },
+        {
+          "group": "TITANIC",
+          "category": "PIP",
+          "perc": 19.519
+        },
+        {
+          "group": "TITANIC",
+          "category": "DLA",
+          "perc": 6.9843
+        },
+        {
+          "group": "TITANIC",
+          "category": "AA",
+          "perc": 3.5153
+        },
+        {
+          "group": "TITANIC",
+          "category": "IS",
+          "perc": 2.2202
+        },
+        {
+          "group": "TITANIC",
+          "category": "PC",
+          "perc": 6.198
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "TITANIC",
+          "category": "PIP",
+          "perc": 0.965
+        },
+        {
+          "group": "TITANIC",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "TITANIC",
+          "category": "RP",
+          "perc": 23.0066
+        },
+        {
+          "group": "TITANIC",
+          "category": "CA",
+          "perc": 7.872
+        },
+        {
+          "group": "TITANIC",
+          "category": "DLA",
+          "perc": 25.0381
+        },
+        {
+          "group": "TITANIC",
+          "category": "ESA",
+          "perc": 18.385
+        },
+        {
+          "group": "TITANIC",
+          "category": "JSA",
+          "perc": 5.3327
+        },
+        {
+          "group": "TITANIC",
+          "category": "IS",
+          "perc": 5.8913
+        },
+        {
+          "group": "TITANIC",
+          "category": "PC",
+          "perc": 9.1417
+        },
+        {
+          "group": "TITANIC",
+          "category": "AA",
+          "perc": 4.3677
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Titanic",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Titanic",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Titanic",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Titanic",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

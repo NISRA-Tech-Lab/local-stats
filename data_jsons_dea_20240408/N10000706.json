@@ -1,0 +1,4609 @@
+{
+  "code": "N10000706",
+  "name": "Lisburn North",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000007",
+      "name": "Lisburn and Castlereagh",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.9937, 54.5058],
+    [-6.0634, 54.5569]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 23449
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 38
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 10075
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 5.5695,
+          "fair": 13.8428,
+          "good": 29.481,
+          "very_bad": 1.9958,
+          "very_good": 49.1108
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 6.0447,
+          "four_people": 12.4963,
+          "one_person": 35.3548,
+          "three_people": 15.2754,
+          "two_people": 30.8288
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.1402,
+          "level_1_qualifications": 6.7468,
+          "level_2_qualifications": 13.4409,
+          "level_3_qualifications": 15.5352,
+          "level_4_qualifications_and_above": 35.6649,
+          "no_qualifications": 19.9662,
+          "other_qualifications": 2.5057
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 6.576,
+          "northern_ireland": 83.3895,
+          "other_cob": 7.2029,
+          "republic_of_ireland": 1.4713,
+          "scotland": 1.1514,
+          "wales": 0.209
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 95.8963,
+          "other_languages": 4.1037
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 18.1124,
+          "a15to39": 31.444,
+          "a40to64": 31.1711,
+          "a65plus": 19.2724
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.0103,
+          "a20to49_hours": 2.6511,
+          "a50plus_hours": 3.618,
+          "no_care": 87.7207
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 31.0477,
+          "none": 14.4429,
+          "other_religions": 2.3368,
+          "protestant_and_other_christian_including_christian_related": 52.1726
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.6759,
+          "males": 49.3241
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "Reception": 0,
+          "Year7": 13.0542,
+          "FSME": 23.9901,
+          "Male": 49.3103,
+          "Year5": 13.7438,
+          "Year3": 13.4483,
+          "SENStatement": 5.2217,
+          "Female": 50.6897,
+          "Nursery": 4.9754,
+          "All": 100,
+          "Year1": 12.8571,
+          "Year6": 14.7783,
+          "Year4": 14.2857,
+          "SENNonStatemented": 9.7537,
+          "Year2": 12.8571
+        },
+        "2017/18": {
+          "Male": 51.4194,
+          "Year7": 12.105,
+          "All": 100,
+          "SENStatement": 3.8029,
+          "SENNonStatemented": 19.068,
+          "Year5": 12.6406,
+          "FSME": 20.9427,
+          "Year3": 14.676,
+          "Reception": 0,
+          "Year1": 14.7295,
+          "Year6": 13.9261,
+          "Female": 48.5806,
+          "Year4": 13.7654,
+          "Year2": 13.0155,
+          "Nursery": 5.1419
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Reception": 0,
+          "Year7": 265,
+          "FSME": 487,
+          "Male": 1001,
+          "Year5": 279,
+          "Year3": 273,
+          "SENStatement": 106,
+          "Female": 1029,
+          "Nursery": 101,
+          "All": 2030,
+          "Year1": 261,
+          "Year6": 300,
+          "Year4": 290,
+          "SENNonStatemented": 198,
+          "Year2": 261
+        },
+        "2017/18": {
+          "Male": 960,
+          "Year7": 226,
+          "All": 1867,
+          "SENStatement": 71,
+          "SENNonStatemented": 356,
+          "Year5": 236,
+          "FSME": 391,
+          "Year3": 274,
+          "Reception": 0,
+          "Year1": 275,
+          "Year6": 260,
+          "Female": 907,
+          "Year4": 257,
+          "Year2": 243,
+          "Nursery": 96
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year12": 14.7094,
+          "FSME": 21.7918,
+          "Year13": 10.7748,
+          "Year9": 17.1308,
+          "Female": 48.3051,
+          "Year11": 16.5254,
+          "Year10": 15.3148,
+          "Year8": 16.8281,
+          "Male": 51.6949,
+          "All": 100,
+          "Year14": 8.7167,
+          "SENStatement": 5.1453,
+          "SENNonStatemented": 8.8378
+        },
+        "2017/18": {
+          "Year12": 16.1572,
+          "SENStatement": 3.9301,
+          "FSME": 19.0684,
+          "Year13": 11.2809,
+          "Year10": 16.6667,
+          "Year14": 10.8443,
+          "Year11": 13.5371,
+          "SENNonStatemented": 16.5211,
+          "Year8": 16.1572,
+          "Male": 48.6172,
+          "Year9": 15.3566,
+          "All": 100,
+          "Female": 51.3828
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year12": 243,
+          "FSME": 360,
+          "Year13": 178,
+          "Year9": 283,
+          "Female": 798,
+          "Year11": 273,
+          "Year10": 253,
+          "Year8": 278,
+          "Male": 854,
+          "All": 1652,
+          "Year14": 144,
+          "SENStatement": 85,
+          "SENNonStatemented": 146
+        },
+        "2017/18": {
+          "Year12": 222,
+          "SENStatement": 54,
+          "FSME": 262,
+          "Year13": 155,
+          "Year10": 229,
+          "Year14": 149,
+          "Year11": 186,
+          "SENNonStatemented": 227,
+          "Year8": 222,
+          "Male": 668,
+          "Year9": 211,
+          "All": 1374,
+          "Female": 706
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "Year11": 8.4906,
+          "Year6": 1.8868,
+          "Year3": 3.7736,
+          "Year7": 5.6604,
+          "FSME": 50,
+          "Year2": 9.434,
+          "Year12": 12.2642,
+          "Year4": 2.8302,
+          "Year13": 8.4906,
+          "Female": 31.1321,
+          "Year15": 0.9434,
+          "Male": 68.8679,
+          "SENNonStatemented": null,
+          "Year8": 5.6604,
+          "Year9": 7.5472,
+          "Year1": 6.6038,
+          "SENStatement": 99.0566,
+          "Year14": 5.6604,
+          "Year5": 7.5472,
+          "All": 100,
+          "Year10": 9.434,
+          "Reception": 0,
+          "Nursery": 3.7736
+        },
+        "2017/18": {
+          "Year5": 7.1429,
+          "Year3": 4.7619,
+          "FSME": 48.8095,
+          "Year4": 5.9524,
+          "Year10": 8.3333,
+          "Reception": 2.381,
+          "SENStatement": 98.8095,
+          "Year14": 0,
+          "Year12": 10.7143,
+          "SENNonStatemented": null,
+          "Year1": 0,
+          "Female": 23.8095,
+          "All": 100,
+          "Year11": 3.5714,
+          "Nursery": 0,
+          "Year9": 14.2857,
+          "Year13": 2.381,
+          "Year7": 8.3333,
+          "Male": 76.1905,
+          "Year15": 3.5714,
+          "Year8": 11.9048,
+          "Year6": 9.5238,
+          "Year2": 7.1429
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year11": 9,
+          "Year6": 2,
+          "Year3": 4,
+          "Year7": 6,
+          "FSME": 53,
+          "Year2": 10,
+          "Year12": 13,
+          "Year4": 3,
+          "Year13": 9,
+          "Female": 33,
+          "Year15": 1,
+          "Male": 73,
+          "SENNonStatemented": null,
+          "Year8": 6,
+          "Year9": 8,
+          "Year1": 7,
+          "SENStatement": 105,
+          "Year14": 6,
+          "Year5": 8,
+          "All": 106,
+          "Year10": 10,
+          "Reception": 0,
+          "Nursery": 4
+        },
+        "2017/18": {
+          "Year5": 6,
+          "Year3": 4,
+          "FSME": 41,
+          "Year4": 5,
+          "Year10": 7,
+          "Reception": 2,
+          "SENStatement": 83,
+          "Year14": 0,
+          "Year12": 9,
+          "SENNonStatemented": null,
+          "Year1": 0,
+          "Female": 20,
+          "All": 84,
+          "Year11": 3,
+          "Nursery": 0,
+          "Year9": 12,
+          "Year13": 2,
+          "Year7": 7,
+          "Male": 64,
+          "Year15": 3,
+          "Year8": 10,
+          "Year6": 8,
+          "Year2": 6
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 1.099,
+          "Dental_Registrations_ageGDSDR3_5": 3.3832,
+          "Dental_Registrations_ageGDSDR18plus": 75.6091,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.8973,
+          "Dental_Registrations_ageGDSDR3_5": 4.6489,
+          "Dental_Registrations_ageGDSDR18plus": 74.4576,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 166,
+          "Dental_Registrations_ageGDSDR3_5": 511,
+          "Dental_Registrations_ageGDSDR18plus": 11420,
+          "Dental_Registrations_ageAll": 15104
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 251,
+          "Dental_Registrations_ageGDSDR3_5": 615,
+          "Dental_Registrations_ageGDSDR18plus": 9850,
+          "Dental_Registrations_ageAll": 13229
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTF": 42.912,
+          "GDSDTX": 47.3853,
+          "GDSDTE": 8.6775,
+          "GDSDTC": 1.0253
+        },
+        "2017/18": {
+          "GDSDTX": 41.615,
+          "GDSDTF": 48.4957,
+          "GDSDTC": 1.9282,
+          "GDSDTE": 7.9611
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTF": 7492,
+          "GDSDTX": 8273,
+          "GDSDTE": 1515,
+          "GDSDTC": 179
+        },
+        "2017/18": {
+          "GDSDTX": 8050,
+          "GDSDTF": 9381,
+          "GDSDTC": 373,
+          "GDSDTE": 1540
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "DLA": 7.2871,
+          "JSA": 0.7902,
+          "UC": 12.9939,
+          "PIP": 14.3986,
+          "PC": 5.4434,
+          "ESA": 9.7454,
+          "AA": 6.4091,
+          "IS": 1.2291,
+          "RP": 35.6453,
+          "CA": 6.0579
+        },
+        "2017": {
+          "ESA": 11.1848,
+          "UC": 0,
+          "IS": 2.654,
+          "AA": 7.6777,
+          "CA": 6.1611,
+          "DLA": 19.4313,
+          "JSA": 2.9384,
+          "PIP": 0.7583,
+          "RP": 41.4218,
+          "PC": 7.7725
+        }
+      },
+      "value": {
+        "2022": {
+          "DLA": 830,
+          "JSA": 90,
+          "UC": 1480,
+          "PIP": 1640,
+          "PC": 620,
+          "ESA": 1110,
+          "AA": 730,
+          "IS": 140,
+          "RP": 4060,
+          "CA": 690
+        },
+        "2017": {
+          "ESA": 1180,
+          "UC": 0,
+          "IS": 280,
+          "AA": 810,
+          "CA": 650,
+          "DLA": 2050,
+          "JSA": 310,
+          "PIP": 80,
+          "RP": 4370,
+          "PC": 820
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 960
+        },
+        "2017/18": {
+          "FEENROLn": 1430
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 775
+        },
+        "2017/18": {
+          "HEENROLn": 705
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 81.7,
+          "LEbirth_gender2": 78.6
+        },
+        "2015-17": {
+          "LEbirth_gender1": 81.9,
+          "LEbirth_gender2": 77.1
+        }
+      }
+    }
+  },
+  "hectares": 1381,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Lisburn North",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Lisburn North",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Lisburn North",
+        "category": "bad",
+        "perc": 5.5695
+      },
+      {
+        "group": "Lisburn North",
+        "category": "fair",
+        "perc": 13.8428
+      },
+      {
+        "group": "Lisburn North",
+        "category": "good",
+        "perc": 29.481
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_bad",
+        "perc": 1.9958
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_good",
+        "perc": 49.1108
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Lisburn North",
+        "category": "five_people",
+        "perc": 6.0447
+      },
+      {
+        "group": "Lisburn North",
+        "category": "four_people",
+        "perc": 12.4963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "one_person",
+        "perc": 35.3548
+      },
+      {
+        "group": "Lisburn North",
+        "category": "three_people",
+        "perc": 15.2754
+      },
+      {
+        "group": "Lisburn North",
+        "category": "two_people",
+        "perc": 30.8288
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Lisburn North",
+        "category": "apprenticeship",
+        "perc": 6.1402
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_1_qualifications",
+        "perc": 6.7468
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_2_qualifications",
+        "perc": 13.4409
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_3_qualifications",
+        "perc": 15.5352
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_4_qualifications_and_above",
+        "perc": 35.6649
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_qualifications",
+        "perc": 19.9662
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_qualifications",
+        "perc": 2.5057
+      }
+    ],
+    "cob": [
+      {
+        "group": "Lisburn North",
+        "category": "england",
+        "perc": 6.576
+      },
+      {
+        "group": "Lisburn North",
+        "category": "northern_ireland",
+        "perc": 83.3895
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_cob",
+        "perc": 7.2029
+      },
+      {
+        "group": "Lisburn North",
+        "category": "republic_of_ireland",
+        "perc": 1.4713
+      },
+      {
+        "group": "Lisburn North",
+        "category": "scotland",
+        "perc": 1.1514
+      },
+      {
+        "group": "Lisburn North",
+        "category": "wales",
+        "perc": 0.209
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Lisburn North",
+        "category": "english",
+        "perc": 95.8963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_languages",
+        "perc": 4.1037
+      }
+    ],
+    "age": [
+      {
+        "group": "Lisburn North",
+        "category": "a0to14",
+        "perc": 18.1124
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a15to39",
+        "perc": 31.444
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a40to64",
+        "perc": 31.1711
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a65plus",
+        "perc": 19.2724
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Lisburn North",
+        "category": "a1to19_hours",
+        "perc": 6.0103
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a20to49_hours",
+        "perc": 2.6511
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a50plus_hours",
+        "perc": 3.618
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_care",
+        "perc": 87.7207
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Lisburn North",
+        "category": "catholic",
+        "perc": 31.0477
+      },
+      {
+        "group": "Lisburn North",
+        "category": "none",
+        "perc": 14.4429
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_religions",
+        "perc": 2.3368
+      },
+      {
+        "group": "Lisburn North",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.1726
+      }
+    ],
+    "sex": [
+      {
+        "group": "Lisburn North",
+        "category": "females",
+        "perc": 50.6759
+      },
+      {
+        "group": "Lisburn North",
+        "category": "males",
+        "perc": 49.3241
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 13.0542
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 23.9901
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 49.3103
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 13.7438
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 13.4483
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 5.2217
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 50.6897
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 4.9754
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 12.8571
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 14.7783
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 14.2857
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 9.7537
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 12.8571
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 51.4194
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 12.105
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 3.8029
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 19.068
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 12.6406
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 20.9427
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 14.676
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 14.7295
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 13.9261
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 48.5806
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 13.7654
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 13.0155
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 5.1419
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 14.7094
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 21.7918
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 10.7748
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 17.1308
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 48.3051
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 16.5254
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 15.3148
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 16.8281
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 51.6949
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 8.7167
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 5.1453
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 8.8378
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 16.1572
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 3.9301
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 19.0684
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 11.2809
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 16.6667
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 10.8443
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 13.5371
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 16.5211
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 16.1572
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 48.6172
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 15.3566
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 51.3828
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 8.4906
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 1.8868
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 3.7736
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 50
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 9.434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 12.2642
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 2.8302
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 8.4906
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 31.1321
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year15",
+          "perc": 0.9434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 68.8679
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 7.5472
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 6.6038
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 99.0566
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 7.5472
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 9.434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 3.7736
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 7.1429
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 4.7619
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 48.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 5.9524
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 8.3333
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 2.381
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 98.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 10.7143
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 23.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 3.5714
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 14.2857
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 2.381
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 8.3333
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 76.1905
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year15",
+          "perc": 3.5714
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 11.9048
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 9.5238
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 7.1429
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.099
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.3832
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.6091
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.8973
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6489
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.4576
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTF",
+          "perc": 42.912
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTX",
+          "perc": 47.3853
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTE",
+          "perc": 8.6775
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTC",
+          "perc": 1.0253
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTX",
+          "perc": 41.615
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTF",
+          "perc": 48.4957
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTC",
+          "perc": 1.9282
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTE",
+          "perc": 7.9611
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "DLA",
+          "perc": 7.2871
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "JSA",
+          "perc": 0.7902
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "UC",
+          "perc": 12.9939
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PIP",
+          "perc": 14.3986
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PC",
+          "perc": 5.4434
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "ESA",
+          "perc": 9.7454
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "AA",
+          "perc": 6.4091
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "IS",
+          "perc": 1.2291
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "RP",
+          "perc": 35.6453
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "CA",
+          "perc": 6.0579
+        }
+      ],
+      "2017": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "ESA",
+          "perc": 11.1848
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "IS",
+          "perc": 2.654
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "AA",
+          "perc": 7.6777
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "CA",
+          "perc": 6.1611
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "DLA",
+          "perc": 19.4313
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "JSA",
+          "perc": 2.9384
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PIP",
+          "perc": 0.7583
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "RP",
+          "perc": 41.4218
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PC",
+          "perc": 7.7725
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Lisburn North",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Lisburn North",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.5695
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.8428
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.481
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.9958
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 49.1108
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 6.0447
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 12.4963
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 35.3548
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 15.2754
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.8288
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.1402
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.7468
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.4409
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.5352
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 35.6649
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 19.9662
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.5057
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 6.576
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 83.3895
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 7.2029
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.4713
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.1514
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.209
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 95.8963
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 4.1037
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 18.1124
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 31.444
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 31.1711
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 19.2724
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.0103
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.6511
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.618
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.7207
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 31.0477
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 14.4429
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 2.3368
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.1726
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.6759
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.3241
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 13.0542
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 23.9901
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 49.3103
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 13.7438
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 13.4483
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.2217
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 50.6897
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 4.9754
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 12.8571
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 14.7783
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 14.2857
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 9.7537
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 12.8571
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 51.4194
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 12.105
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 3.8029
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 19.068
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 12.6406
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 20.9427
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 14.676
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 14.7295
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 13.9261
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 48.5806
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 13.7654
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 13.0155
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 5.1419
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 14.7094
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 21.7918
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 10.7748
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 17.1308
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 48.3051
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.5254
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 15.3148
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 16.8281
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 51.6949
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 8.7167
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 5.1453
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 8.8378
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 16.1572
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 3.9301
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 19.0684
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 11.2809
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.6667
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 10.8443
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 13.5371
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 16.5211
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 16.1572
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 48.6172
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 15.3566
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 51.3828
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 8.4906
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 1.8868
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 3.7736
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 5.6604
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 50
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 9.434
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 12.2642
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 2.8302
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 8.4906
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 31.1321
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 0.9434
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 68.8679
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented"
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 5.6604
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 7.5472
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 6.6038
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 99.0566
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 5.6604
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 7.5472
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 9.434
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 3.7736
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 7.1429
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 4.7619
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 48.8095
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 5.9524
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 8.3333
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 2.381
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 98.8095
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 10.7143
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented"
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 23.8095
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 3.5714
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 14.2857
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 2.381
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 8.3333
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 76.1905
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 3.5714
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 11.9048
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 7.1429
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.099
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.3832
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 75.6091
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.8973
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 4.6489
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 74.4576
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 42.912
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 47.3853
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 8.6775
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.0253
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 41.615
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 48.4957
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.9282
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 7.9611
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.2871
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.7902
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 12.9939
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 14.3986
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.4434
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 9.7454
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 6.4091
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.2291
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 35.6453
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.0579
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 11.1848
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 2.654
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 7.6777
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 6.1611
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 19.4313
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.9384
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.7583
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 41.4218
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 7.7725
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Lisburn North",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Lisburn North",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Lisburn North",
+        "category": "bad",
+        "perc": 5.5695
+      },
+      {
+        "group": "Lisburn North",
+        "category": "fair",
+        "perc": 13.8428
+      },
+      {
+        "group": "Lisburn North",
+        "category": "good",
+        "perc": 29.481
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_bad",
+        "perc": 1.9958
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_good",
+        "perc": 49.1108
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Lisburn North",
+        "category": "five_people",
+        "perc": 6.0447
+      },
+      {
+        "group": "Lisburn North",
+        "category": "four_people",
+        "perc": 12.4963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "one_person",
+        "perc": 35.3548
+      },
+      {
+        "group": "Lisburn North",
+        "category": "three_people",
+        "perc": 15.2754
+      },
+      {
+        "group": "Lisburn North",
+        "category": "two_people",
+        "perc": 30.8288
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Lisburn North",
+        "category": "apprenticeship",
+        "perc": 6.1402
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_1_qualifications",
+        "perc": 6.7468
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_2_qualifications",
+        "perc": 13.4409
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_3_qualifications",
+        "perc": 15.5352
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_4_qualifications_and_above",
+        "perc": 35.6649
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_qualifications",
+        "perc": 19.9662
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_qualifications",
+        "perc": 2.5057
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Lisburn North",
+        "category": "england",
+        "perc": 6.576
+      },
+      {
+        "group": "Lisburn North",
+        "category": "northern_ireland",
+        "perc": 83.3895
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_cob",
+        "perc": 7.2029
+      },
+      {
+        "group": "Lisburn North",
+        "category": "republic_of_ireland",
+        "perc": 1.4713
+      },
+      {
+        "group": "Lisburn North",
+        "category": "scotland",
+        "perc": 1.1514
+      },
+      {
+        "group": "Lisburn North",
+        "category": "wales",
+        "perc": 0.209
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Lisburn North",
+        "category": "english",
+        "perc": 95.8963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_languages",
+        "perc": 4.1037
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Lisburn North",
+        "category": "a0to14",
+        "perc": 18.1124
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a15to39",
+        "perc": 31.444
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a40to64",
+        "perc": 31.1711
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a65plus",
+        "perc": 19.2724
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Lisburn North",
+        "category": "a1to19_hours",
+        "perc": 6.0103
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a20to49_hours",
+        "perc": 2.6511
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a50plus_hours",
+        "perc": 3.618
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_care",
+        "perc": 87.7207
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Lisburn North",
+        "category": "catholic",
+        "perc": 31.0477
+      },
+      {
+        "group": "Lisburn North",
+        "category": "none",
+        "perc": 14.4429
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_religions",
+        "perc": 2.3368
+      },
+      {
+        "group": "Lisburn North",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.1726
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Lisburn North",
+        "category": "females",
+        "perc": 50.6759
+      },
+      {
+        "group": "Lisburn North",
+        "category": "males",
+        "perc": 49.3241
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 13.0542
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 23.9901
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 49.3103
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 13.7438
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 13.4483
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 5.2217
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 50.6897
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 4.9754
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 12.8571
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 14.7783
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 14.2857
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 9.7537
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 12.8571
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 51.4194
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 12.105
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 3.8029
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 19.068
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 12.6406
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 20.9427
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 14.676
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 14.7295
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 13.9261
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 48.5806
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 13.7654
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 13.0155
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 5.1419
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 14.7094
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 21.7918
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 10.7748
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 17.1308
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 48.3051
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 16.5254
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 15.3148
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 16.8281
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 51.6949
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 8.7167
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 5.1453
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 8.8378
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 16.1572
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 3.9301
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 19.0684
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 11.2809
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 16.6667
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 10.8443
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 13.5371
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented",
+          "perc": 16.5211
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 16.1572
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 48.6172
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 15.3566
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 51.3828
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 8.4906
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 1.8868
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 3.7736
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 50
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 9.434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 12.2642
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 2.8302
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 8.4906
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 31.1321
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year15",
+          "perc": 0.9434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 68.8679
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 7.5472
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 6.6038
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 99.0566
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 5.6604
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 7.5472
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 9.434
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 3.7736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "Year5",
+          "perc": 7.1429
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year3",
+          "perc": 4.7619
+        },
+        {
+          "group": "Lisburn North",
+          "category": "FSME",
+          "perc": 48.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year4",
+          "perc": 5.9524
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year10",
+          "perc": 8.3333
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Reception",
+          "perc": 2.381
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENStatement",
+          "perc": 98.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year14",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year12",
+          "perc": 10.7143
+        },
+        {
+          "group": "Lisburn North",
+          "category": "SENNonStatemented"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year1",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Female",
+          "perc": 23.8095
+        },
+        {
+          "group": "Lisburn North",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year11",
+          "perc": 3.5714
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year9",
+          "perc": 14.2857
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year13",
+          "perc": 2.381
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year7",
+          "perc": 8.3333
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Male",
+          "perc": 76.1905
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year15",
+          "perc": 3.5714
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year8",
+          "perc": 11.9048
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year6",
+          "perc": 9.5238
+        },
+        {
+          "group": "Lisburn North",
+          "category": "Year2",
+          "perc": 7.1429
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.099
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.3832
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.6091
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.8973
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6489
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 74.4576
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTF",
+          "perc": 42.912
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTX",
+          "perc": 47.3853
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTE",
+          "perc": 8.6775
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTC",
+          "perc": 1.0253
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTX",
+          "perc": 41.615
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTF",
+          "perc": 48.4957
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTC",
+          "perc": 1.9282
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "GDSDTE",
+          "perc": 7.9611
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "DLA",
+          "perc": 7.2871
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "JSA",
+          "perc": 0.7902
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "UC",
+          "perc": 12.9939
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PIP",
+          "perc": 14.3986
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PC",
+          "perc": 5.4434
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "ESA",
+          "perc": 9.7454
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "AA",
+          "perc": 6.4091
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "IS",
+          "perc": 1.2291
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "RP",
+          "perc": 35.6453
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "CA",
+          "perc": 6.0579
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "LISBURN NORTH",
+          "category": "ESA",
+          "perc": 11.1848
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "IS",
+          "perc": 2.654
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "AA",
+          "perc": 7.6777
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "CA",
+          "perc": 6.1611
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "DLA",
+          "perc": 19.4313
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "JSA",
+          "perc": 2.9384
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PIP",
+          "perc": 0.7583
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "RP",
+          "perc": 41.4218
+        },
+        {
+          "group": "LISBURN NORTH",
+          "category": "PC",
+          "perc": 7.7725
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Lisburn North",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Lisburn North",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Lisburn North",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Lisburn North",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}
