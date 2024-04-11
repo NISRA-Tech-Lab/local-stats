@@ -934,6 +934,7 @@
 		place = {data.place}
 		sub_heading = "Work and welfare"
 		description = "xxxx"
+		chart_compare_type = {chart_compare_type}
 		boxes = {{
 
 				
@@ -975,6 +976,7 @@
 		place = {data.place}
 		sub_heading = "Schools, colleges and universities"
 		description = ""
+		chart_compare_type = {chart_compare_type}
 		boxes = {{
 
 			box_1: {
@@ -1016,6 +1018,7 @@
 		place = {data.place}
 		sub_heading = "Crime and court activity"
 		description = "xxxx"
+		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
 		}}
@@ -1030,6 +1033,7 @@
 		place = {data.place}
 		sub_heading = "Travel and transport .... "
 		description = "xxxx"
+		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
 		}}
