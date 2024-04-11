@@ -12,7 +12,7 @@ export let style = null;
 export let place;
 export let content;
 export let chart_data = null;
-export let zKey = null;
+export let zKey = "ni";
 export let label = null;
 export let topic_prev_available = null;
 export let topic_boolean = null;
