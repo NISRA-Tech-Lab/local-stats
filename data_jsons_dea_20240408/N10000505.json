@@ -1,0 +1,4615 @@
+{
+  "code": "N10000505",
+  "name": "Sperrin",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000005",
+      "name": "Derry City and Strabane",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-6.9022, 54.7065],
+    [-7.4839, 54.9279]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 24720
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 27
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 9684
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 6.343,
+          "fair": 14.6076,
+          "good": 26.6667,
+          "very_bad": 2.4353,
+          "very_good": 49.9474
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 10.9562,
+          "four_people": 13.6824,
+          "one_person": 29.2235,
+          "three_people": 17.6064,
+          "two_people": 28.5316
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.1736,
+          "level_1_qualifications": 6.0866,
+          "level_2_qualifications": 13.0019,
+          "level_3_qualifications": 15.1655,
+          "level_4_qualifications_and_above": 26.0396,
+          "no_qualifications": 31.7631,
+          "other_qualifications": 1.7697
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 3.038,
+          "northern_ireland": 88.9684,
+          "other_cob": 1.877,
+          "republic_of_ireland": 5.0405,
+          "scotland": 1.0113,
+          "wales": 0.0647
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 98.5631,
+          "other_languages": 1.4369
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 19.5388,
+          "a15to39": 29.7573,
+          "a40to64": 33.3091,
+          "a65plus": 17.3948
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.0039,
+          "a20to49_hours": 3.3949,
+          "a50plus_hours": 4.2447,
+          "no_care": 87.3566
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 72.7427,
+          "none": 2.6335,
+          "other_religions": 0.534,
+          "protestant_and_other_christian_including_christian_related": 24.0898
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.6634,
+          "males": 49.3366
+        }
+      }
+    },
+    "DESCP": {
+      "perc": {
+        "2022/23": {
+          "Year7": 14.544,
+          "Year6": 12.0129,
+          "Year5": 12.1736,
+          "Year1": 13.2583,
+          "Male": 48.4934,
+          "Reception": 0.0402,
+          "Year3": 14.102,
+          "Year2": 12.736,
+          "Year4": 12.6557,
+          "Female": 51.5066,
+          "Nursery": 8.4773,
+          "FSME": 34.3511,
+          "All": 100,
+          "SENNonStatemented": 16.9144,
+          "SENStatement": 4.4194
+        },
+        "2017/18": {
+          "SENStatement": 2.9504,
+          "Year7": 12.7065,
+          "Male": 49.8033,
+          "All": 100,
+          "Nursery": 7.9465,
+          "Year5": 13.454,
+          "FSME": 37.7262,
+          "Year4": 14.4768,
+          "Year3": 12.8245,
+          "Year2": 14.3981,
+          "Reception": 0,
+          "Year6": 12.7065,
+          "Year1": 11.487,
+          "Female": 50.1967,
+          "SENNonStatemented": 19.6302
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year7": 362,
+          "Year6": 299,
+          "Year5": 303,
+          "Year1": 330,
+          "Male": 1207,
+          "Reception": 1,
+          "Year3": 351,
+          "Year2": 317,
+          "Year4": 315,
+          "Female": 1282,
+          "Nursery": 211,
+          "FSME": 855,
+          "All": 2489,
+          "SENNonStatemented": 421,
+          "SENStatement": 110
+        },
+        "2017/18": {
+          "SENStatement": 75,
+          "Year7": 323,
+          "Male": 1266,
+          "All": 2542,
+          "Nursery": 202,
+          "Year5": 342,
+          "FSME": 959,
+          "Year4": 368,
+          "Year3": 326,
+          "Year2": 366,
+          "Reception": 0,
+          "Year6": 323,
+          "Year1": 292,
+          "Female": 1276,
+          "SENNonStatemented": 499
+        }
+      }
+    },
+    "DESCPP": {
+      "perc": {
+        "2022/23": {
+          "Year12": 15.6977,
+          "FSME": 31.1531,
+          "Male": 48.595,
+          "SENNonStatemented": 7.1705,
+          "Year11": 16.1822,
+          "Year8": 16.2791,
+          "Year13": 9.5446,
+          "Year10": 16.7636,
+          "All": 100,
+          "Year14": 7.9457,
+          "Female": 51.405,
+          "SENStatement": 6.2016,
+          "Year9": 17.5872
+        },
+        "2017/18": {
+          "Year8": 16.1713,
+          "Female": 51.5869,
+          "Male": 48.4131,
+          "Year10": 16.3728,
+          "Year9": 14.8615,
+          "Year13": 10.932,
+          "Year14": 8.8665,
+          "Year11": 17.2292,
+          "Year12": 15.5668,
+          "SENStatement": 5.1385,
+          "FSME": 35.4156,
+          "SENNonStatemented": 16.9773,
+          "All": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Year12": 324,
+          "FSME": 643,
+          "Male": 1003,
+          "SENNonStatemented": 148,
+          "Year11": 334,
+          "Year8": 336,
+          "Year13": 197,
+          "Year10": 346,
+          "All": 2064,
+          "Year14": 164,
+          "Female": 1061,
+          "SENStatement": 128,
+          "Year9": 363
+        },
+        "2017/18": {
+          "Year8": 321,
+          "Female": 1024,
+          "Male": 961,
+          "Year10": 325,
+          "Year9": 295,
+          "Year13": 217,
+          "Year14": 176,
+          "Year11": 342,
+          "Year12": 309,
+          "SENStatement": 102,
+          "FSME": 703,
+          "SENNonStatemented": 337,
+          "All": 1985
+        }
+      }
+    },
+    "DESCS": {
+      "perc": {
+        "2022/23": {
+          "SENStatement": 100,
+          "Year6": 8.6957,
+          "Reception": 0,
+          "Year4": 8.6957,
+          "Year8": 8.6957,
+          "Year1": 7.6087,
+          "Year2": 3.2609,
+          "Year3": 9.7826,
+          "All": 100,
+          "Year12": 7.6087,
+          "Nursery": 9.7826,
+          "Year10": 4.3478,
+          "Year7": 3.2609,
+          "SENNonStatemented": 0,
+          "Year11": 2.1739,
+          "FSME": 88.0435,
+          "Year13": 9.7826,
+          "Year14": 4.3478,
+          "Year5": 6.5217,
+          "Male": 81.5217,
+          "Female": 18.4783,
+          "Year15": 1.087,
+          "Year9": 4.3478
+        },
+        "2017/18": {
+          "Year9": 4.2254,
+          "Female": 26.7606,
+          "Year15": 11.2676,
+          "Year13": 1.4085,
+          "Male": 73.2394,
+          "SENStatement": 100,
+          "Year4": 5.6338,
+          "Year7": 7.0423,
+          "SENNonStatemented": 0,
+          "Reception": 2.8169,
+          "Year5": 5.6338,
+          "Year11": 4.2254,
+          "FSME": 91.5493,
+          "Nursery": 0,
+          "Year6": 1.4085,
+          "Year14": 8.4507,
+          "Year1": 12.6761,
+          "Year2": 1.4085,
+          "Year8": 12.6761,
+          "Year12": 9.8592,
+          "Year3": 8.4507,
+          "All": 100,
+          "Year10": 2.8169
+        }
+      },
+      "value": {
+        "2022/23": {
+          "SENStatement": 92,
+          "Year6": 8,
+          "Reception": 0,
+          "Year4": 8,
+          "Year8": 8,
+          "Year1": 7,
+          "Year2": 3,
+          "Year3": 9,
+          "All": 92,
+          "Year12": 7,
+          "Nursery": 9,
+          "Year10": 4,
+          "Year7": 3,
+          "SENNonStatemented": 0,
+          "Year11": 2,
+          "FSME": 81,
+          "Year13": 9,
+          "Year14": 4,
+          "Year5": 6,
+          "Male": 75,
+          "Female": 17,
+          "Year15": 1,
+          "Year9": 4
+        },
+        "2017/18": {
+          "Year9": 3,
+          "Female": 19,
+          "Year15": 8,
+          "Year13": 1,
+          "Male": 52,
+          "SENStatement": 71,
+          "Year4": 4,
+          "Year7": 5,
+          "SENNonStatemented": 0,
+          "Reception": 2,
+          "Year5": 4,
+          "Year11": 3,
+          "FSME": 65,
+          "Nursery": 0,
+          "Year6": 1,
+          "Year14": 6,
+          "Year1": 9,
+          "Year2": 1,
+          "Year8": 9,
+          "Year12": 7,
+          "Year3": 6,
+          "All": 71,
+          "Year10": 2
+        }
+      }
+    },
+    "FPSGDSDR": {
+      "perc": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 0.821,
+          "Dental_Registrations_ageGDSDR3_5": 2.8484,
+          "Dental_Registrations_ageGDSDR18plus": 76.3195,
+          "Dental_Registrations_ageAll": 100
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 1.4185,
+          "Dental_Registrations_ageGDSDR3_5": 3.9563,
+          "Dental_Registrations_ageGDSDR18plus": 73.1325,
+          "Dental_Registrations_ageAll": 100
+        }
+      },
+      "value": {
+        "2022/23": {
+          "Dental_Registrations_ageGDSDR0_2": 147,
+          "Dental_Registrations_ageGDSDR3_5": 510,
+          "Dental_Registrations_ageGDSDR18plus": 13665,
+          "Dental_Registrations_ageAll": 17905
+        },
+        "2017/18": {
+          "Dental_Registrations_ageGDSDR0_2": 218,
+          "Dental_Registrations_ageGDSDR3_5": 608,
+          "Dental_Registrations_ageGDSDR18plus": 11239,
+          "Dental_Registrations_ageAll": 15368
+        }
+      }
+    },
+    "FPSGDSDT": {
+      "perc": {
+        "2022/23": {
+          "GDSDTX": 42.764,
+          "GDSDTF": 45.032,
+          "GDSDTC": 1.0048,
+          "GDSDTE": 11.1992
+        },
+        "2017/18": {
+          "GDSDTF": 51.0931,
+          "GDSDTC": 1.4272,
+          "GDSDTE": 10.5904,
+          "GDSDTX": 36.8892
+        }
+      },
+      "value": {
+        "2022/23": {
+          "GDSDTX": 7278,
+          "GDSDTF": 7664,
+          "GDSDTC": 171,
+          "GDSDTE": 1906
+        },
+        "2017/18": {
+          "GDSDTF": 11241,
+          "GDSDTC": 314,
+          "GDSDTE": 2330,
+          "GDSDTX": 8116
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "DLA": 7.7524,
+          "IS": 2.0847,
+          "ESA": 11.0749,
+          "PIP": 17.9805,
+          "UC": 12.5081,
+          "RP": 25.2117,
+          "AA": 4.7557,
+          "JSA": 1.6287,
+          "PC": 8.0782,
+          "CA": 8.9251
+        },
+        "2017": {
+          "IS": 4.5706,
+          "RP": 26.8698,
+          "AA": 5.0554,
+          "UC": 0,
+          "ESA": 13.9197,
+          "JSA": 5.1247,
+          "PIP": 0.831,
+          "CA": 9.4875,
+          "DLA": 23.892,
+          "PC": 10.2493
+        }
+      },
+      "value": {
+        "2022": {
+          "DLA": 1190,
+          "IS": 320,
+          "ESA": 1700,
+          "PIP": 2760,
+          "UC": 1920,
+          "RP": 3870,
+          "AA": 730,
+          "JSA": 250,
+          "PC": 1240,
+          "CA": 1370
+        },
+        "2017": {
+          "IS": 660,
+          "RP": 3880,
+          "AA": 730,
+          "UC": 0,
+          "ESA": 2010,
+          "JSA": 740,
+          "PIP": 120,
+          "CA": 1370,
+          "DLA": 3450,
+          "PC": 1480
+        }
+      }
+    },
+    "FEENROL": {
+      "perc": {
+        "2020/21": {
+          "FEENROLn": 100
+        },
+        "2017/18": {
+          "FEENROLn": 100
+        }
+      },
+      "value": {
+        "2020/21": {
+          "FEENROLn": 1270
+        },
+        "2017/18": {
+          "FEENROLn": 1820
+        }
+      }
+    },
+    "HEENROL": {
+      "perc": {
+        "2020/21": {
+          "HEENROLn": null
+        },
+        "2017/18": {
+          "HEENROLn": null
+        }
+      },
+      "value": {
+        "2020/21": {
+          "HEENROLn": 865
+        },
+        "2017/18": {
+          "HEENROLn": 890
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 81.6,
+          "LEbirth_gender2": 79.4
+        },
+        "2015-17": {
+          "LEbirth_gender1": 82.6,
+          "LEbirth_gender2": 79.7
+        }
+      }
+    }
+  },
+  "hectares": 56988,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Sperrin",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Sperrin",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Sperrin",
+        "category": "bad",
+        "perc": 6.343
+      },
+      {
+        "group": "Sperrin",
+        "category": "fair",
+        "perc": 14.6076
+      },
+      {
+        "group": "Sperrin",
+        "category": "good",
+        "perc": 26.6667
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_bad",
+        "perc": 2.4353
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_good",
+        "perc": 49.9474
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Sperrin",
+        "category": "five_people",
+        "perc": 10.9562
+      },
+      {
+        "group": "Sperrin",
+        "category": "four_people",
+        "perc": 13.6824
+      },
+      {
+        "group": "Sperrin",
+        "category": "one_person",
+        "perc": 29.2235
+      },
+      {
+        "group": "Sperrin",
+        "category": "three_people",
+        "perc": 17.6064
+      },
+      {
+        "group": "Sperrin",
+        "category": "two_people",
+        "perc": 28.5316
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Sperrin",
+        "category": "apprenticeship",
+        "perc": 6.1736
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_1_qualifications",
+        "perc": 6.0866
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_2_qualifications",
+        "perc": 13.0019
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_3_qualifications",
+        "perc": 15.1655
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.0396
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_qualifications",
+        "perc": 31.7631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_qualifications",
+        "perc": 1.7697
+      }
+    ],
+    "cob": [
+      {
+        "group": "Sperrin",
+        "category": "england",
+        "perc": 3.038
+      },
+      {
+        "group": "Sperrin",
+        "category": "northern_ireland",
+        "perc": 88.9684
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_cob",
+        "perc": 1.877
+      },
+      {
+        "group": "Sperrin",
+        "category": "republic_of_ireland",
+        "perc": 5.0405
+      },
+      {
+        "group": "Sperrin",
+        "category": "scotland",
+        "perc": 1.0113
+      },
+      {
+        "group": "Sperrin",
+        "category": "wales",
+        "perc": 0.0647
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Sperrin",
+        "category": "english",
+        "perc": 98.5631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_languages",
+        "perc": 1.4369
+      }
+    ],
+    "age": [
+      {
+        "group": "Sperrin",
+        "category": "a0to14",
+        "perc": 19.5388
+      },
+      {
+        "group": "Sperrin",
+        "category": "a15to39",
+        "perc": 29.7573
+      },
+      {
+        "group": "Sperrin",
+        "category": "a40to64",
+        "perc": 33.3091
+      },
+      {
+        "group": "Sperrin",
+        "category": "a65plus",
+        "perc": 17.3948
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Sperrin",
+        "category": "a1to19_hours",
+        "perc": 5.0039
+      },
+      {
+        "group": "Sperrin",
+        "category": "a20to49_hours",
+        "perc": 3.3949
+      },
+      {
+        "group": "Sperrin",
+        "category": "a50plus_hours",
+        "perc": 4.2447
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_care",
+        "perc": 87.3566
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Sperrin",
+        "category": "catholic",
+        "perc": 72.7427
+      },
+      {
+        "group": "Sperrin",
+        "category": "none",
+        "perc": 2.6335
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_religions",
+        "perc": 0.534
+      },
+      {
+        "group": "Sperrin",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.0898
+      }
+    ],
+    "sex": [
+      {
+        "group": "Sperrin",
+        "category": "females",
+        "perc": 50.6634
+      },
+      {
+        "group": "Sperrin",
+        "category": "males",
+        "perc": 49.3366
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 14.544
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 12.0129
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 12.1736
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 13.2583
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.4934
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0.0402
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 14.102
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 12.736
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 12.6557
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.5066
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 8.4773
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 34.3511
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 16.9144
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 4.4194
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 2.9504
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 12.7065
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 49.8033
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 7.9465
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 13.454
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 37.7262
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 14.4768
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 12.8245
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 14.3981
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 12.7065
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 11.487
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 50.1967
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 19.6302
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 15.6977
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 31.1531
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.595
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 7.1705
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 16.1822
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 16.2791
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 9.5446
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 16.7636
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 7.9457
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.405
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 6.2016
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 17.5872
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 16.1713
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.5869
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.4131
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 16.3728
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 14.8615
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 10.932
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 8.8665
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 17.2292
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 15.5668
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 5.1385
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 35.4156
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 16.9773
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 7.6087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 3.2609
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 7.6087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 4.3478
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 3.2609
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 2.1739
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 88.0435
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 4.3478
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 6.5217
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 81.5217
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 18.4783
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year15",
+          "perc": 1.087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 4.3478
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 4.2254
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 26.7606
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year15",
+          "perc": 11.2676
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 73.2394
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 5.6338
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 7.0423
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 2.8169
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 5.6338
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 4.2254
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 91.5493
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 8.4507
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 12.6761
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 12.6761
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 9.8592
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 8.4507
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 2.8169
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.821
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.8484
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.3195
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.4185
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.9563
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.1325
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTX",
+          "perc": 42.764
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTF",
+          "perc": 45.032
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTC",
+          "perc": 1.0048
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTE",
+          "perc": 11.1992
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTF",
+          "perc": 51.0931
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTC",
+          "perc": 1.4272
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTE",
+          "perc": 10.5904
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTX",
+          "perc": 36.8892
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "SPERRIN",
+          "category": "DLA",
+          "perc": 7.7524
+        },
+        {
+          "group": "SPERRIN",
+          "category": "IS",
+          "perc": 2.0847
+        },
+        {
+          "group": "SPERRIN",
+          "category": "ESA",
+          "perc": 11.0749
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PIP",
+          "perc": 17.9805
+        },
+        {
+          "group": "SPERRIN",
+          "category": "UC",
+          "perc": 12.5081
+        },
+        {
+          "group": "SPERRIN",
+          "category": "RP",
+          "perc": 25.2117
+        },
+        {
+          "group": "SPERRIN",
+          "category": "AA",
+          "perc": 4.7557
+        },
+        {
+          "group": "SPERRIN",
+          "category": "JSA",
+          "perc": 1.6287
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PC",
+          "perc": 8.0782
+        },
+        {
+          "group": "SPERRIN",
+          "category": "CA",
+          "perc": 8.9251
+        }
+      ],
+      "2017": [
+        {
+          "group": "SPERRIN",
+          "category": "IS",
+          "perc": 4.5706
+        },
+        {
+          "group": "SPERRIN",
+          "category": "RP",
+          "perc": 26.8698
+        },
+        {
+          "group": "SPERRIN",
+          "category": "AA",
+          "perc": 5.0554
+        },
+        {
+          "group": "SPERRIN",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "SPERRIN",
+          "category": "ESA",
+          "perc": 13.9197
+        },
+        {
+          "group": "SPERRIN",
+          "category": "JSA",
+          "perc": 5.1247
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PIP",
+          "perc": 0.831
+        },
+        {
+          "group": "SPERRIN",
+          "category": "CA",
+          "perc": 9.4875
+        },
+        {
+          "group": "SPERRIN",
+          "category": "DLA",
+          "perc": 23.892
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PC",
+          "perc": 10.2493
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Sperrin",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Sperrin",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 6.343
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 14.6076
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 26.6667
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.4353
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 49.9474
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 10.9562
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 13.6824
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 29.2235
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 17.6064
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 28.5316
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.1736
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.0866
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.0019
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.1655
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.0396
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 31.7631
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.7697
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.038
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 88.9684
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 1.877
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 5.0405
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0113
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.0647
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 98.5631
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 1.4369
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 19.5388
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 29.7573
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 33.3091
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 17.3948
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.0039
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.3949
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.2447
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.3566
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 72.7427
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 2.6335
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.534
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.0898
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.6634
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.3366
+      }
+    ],
+    "DESCP": [
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 14.544
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 12.0129
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 12.1736
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 13.2583
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 48.4934
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0.0402
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 14.102
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 12.736
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 12.6557
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 51.5066
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 8.4773
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 34.3511
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 16.9144
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 4.4194
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 2.9504
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 12.7065
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 49.8033
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 7.9465
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 13.454
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 37.7262
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 14.4768
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 12.8245
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 14.3981
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 12.7065
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 11.487
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 50.1967
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 19.6302
+      }
+    ],
+    "DESCPP": [
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 15.6977
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 31.1531
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 48.595
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 7.1705
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 16.1822
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 16.2791
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 9.5446
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 16.7636
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 7.9457
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 51.405
+      },
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 6.2016
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 17.5872
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 16.1713
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 51.5869
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 48.4131
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 16.3728
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 14.8615
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 10.932
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 8.8665
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 17.2292
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 15.5668
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 5.1385
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 35.4156
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 16.9773
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      }
+    ],
+    "DESCS": [
+      {
+        "group": "2022/23",
+        "category": "SENStatement",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year6",
+        "perc": 8.6957
+      },
+      {
+        "group": "2022/23",
+        "category": "Reception",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year4",
+        "perc": 8.6957
+      },
+      {
+        "group": "2022/23",
+        "category": "Year8",
+        "perc": 8.6957
+      },
+      {
+        "group": "2022/23",
+        "category": "Year1",
+        "perc": 7.6087
+      },
+      {
+        "group": "2022/23",
+        "category": "Year2",
+        "perc": 3.2609
+      },
+      {
+        "group": "2022/23",
+        "category": "Year3",
+        "perc": 9.7826
+      },
+      {
+        "group": "2022/23",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2022/23",
+        "category": "Year12",
+        "perc": 7.6087
+      },
+      {
+        "group": "2022/23",
+        "category": "Nursery",
+        "perc": 9.7826
+      },
+      {
+        "group": "2022/23",
+        "category": "Year10",
+        "perc": 4.3478
+      },
+      {
+        "group": "2022/23",
+        "category": "Year7",
+        "perc": 3.2609
+      },
+      {
+        "group": "2022/23",
+        "category": "SENNonStatemented",
+        "perc": 0
+      },
+      {
+        "group": "2022/23",
+        "category": "Year11",
+        "perc": 2.1739
+      },
+      {
+        "group": "2022/23",
+        "category": "FSME",
+        "perc": 88.0435
+      },
+      {
+        "group": "2022/23",
+        "category": "Year13",
+        "perc": 9.7826
+      },
+      {
+        "group": "2022/23",
+        "category": "Year14",
+        "perc": 4.3478
+      },
+      {
+        "group": "2022/23",
+        "category": "Year5",
+        "perc": 6.5217
+      },
+      {
+        "group": "2022/23",
+        "category": "Male",
+        "perc": 81.5217
+      },
+      {
+        "group": "2022/23",
+        "category": "Female",
+        "perc": 18.4783
+      },
+      {
+        "group": "2022/23",
+        "category": "Year15",
+        "perc": 1.087
+      },
+      {
+        "group": "2022/23",
+        "category": "Year9",
+        "perc": 4.3478
+      },
+      {
+        "group": "2017/18",
+        "category": "Year9",
+        "perc": 4.2254
+      },
+      {
+        "group": "2017/18",
+        "category": "Female",
+        "perc": 26.7606
+      },
+      {
+        "group": "2017/18",
+        "category": "Year15",
+        "perc": 11.2676
+      },
+      {
+        "group": "2017/18",
+        "category": "Year13",
+        "perc": 1.4085
+      },
+      {
+        "group": "2017/18",
+        "category": "Male",
+        "perc": 73.2394
+      },
+      {
+        "group": "2017/18",
+        "category": "SENStatement",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year4",
+        "perc": 5.6338
+      },
+      {
+        "group": "2017/18",
+        "category": "Year7",
+        "perc": 7.0423
+      },
+      {
+        "group": "2017/18",
+        "category": "SENNonStatemented",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Reception",
+        "perc": 2.8169
+      },
+      {
+        "group": "2017/18",
+        "category": "Year5",
+        "perc": 5.6338
+      },
+      {
+        "group": "2017/18",
+        "category": "Year11",
+        "perc": 4.2254
+      },
+      {
+        "group": "2017/18",
+        "category": "FSME",
+        "perc": 91.5493
+      },
+      {
+        "group": "2017/18",
+        "category": "Nursery",
+        "perc": 0
+      },
+      {
+        "group": "2017/18",
+        "category": "Year6",
+        "perc": 1.4085
+      },
+      {
+        "group": "2017/18",
+        "category": "Year14",
+        "perc": 8.4507
+      },
+      {
+        "group": "2017/18",
+        "category": "Year1",
+        "perc": 12.6761
+      },
+      {
+        "group": "2017/18",
+        "category": "Year2",
+        "perc": 1.4085
+      },
+      {
+        "group": "2017/18",
+        "category": "Year8",
+        "perc": 12.6761
+      },
+      {
+        "group": "2017/18",
+        "category": "Year12",
+        "perc": 9.8592
+      },
+      {
+        "group": "2017/18",
+        "category": "Year3",
+        "perc": 8.4507
+      },
+      {
+        "group": "2017/18",
+        "category": "All",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Year10",
+        "perc": 2.8169
+      }
+    ],
+    "FPSGDSDR": [
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 0.821
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 2.8484
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 76.3195
+      },
+      {
+        "group": "2022/23",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR0_2",
+        "perc": 1.4185
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR3_5",
+        "perc": 3.9563
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageGDSDR18plus",
+        "perc": 73.1325
+      },
+      {
+        "group": "2017/18",
+        "category": "Dental_Registrations_ageAll",
+        "perc": 100
+      }
+    ],
+    "FPSGDSDT": [
+      {
+        "group": "2022/23",
+        "category": "GDSDTX",
+        "perc": 42.764
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTF",
+        "perc": 45.032
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTC",
+        "perc": 1.0048
+      },
+      {
+        "group": "2022/23",
+        "category": "GDSDTE",
+        "perc": 11.1992
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTF",
+        "perc": 51.0931
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTC",
+        "perc": 1.4272
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTE",
+        "perc": 10.5904
+      },
+      {
+        "group": "2017/18",
+        "category": "GDSDTX",
+        "perc": 36.8892
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.7524
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 2.0847
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 11.0749
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 17.9805
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 12.5081
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 25.2117
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 4.7557
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 1.6287
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 8.0782
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 8.9251
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 4.5706
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 26.8698
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.0554
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 13.9197
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 5.1247
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.831
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 9.4875
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 23.892
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 10.2493
+      }
+    ],
+    "FEENROL": [
+      {
+        "group": "2020/21",
+        "category": "FEENROLn",
+        "perc": 100
+      },
+      {
+        "group": "2017/18",
+        "category": "FEENROLn",
+        "perc": 100
+      }
+    ],
+    "HEENROL": [
+      {
+        "group": "2020/21",
+        "category": "HEENROLn"
+      },
+      {
+        "group": "2017/18",
+        "category": "HEENROLn"
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Sperrin",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Sperrin",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Sperrin",
+        "category": "bad",
+        "perc": 6.343
+      },
+      {
+        "group": "Sperrin",
+        "category": "fair",
+        "perc": 14.6076
+      },
+      {
+        "group": "Sperrin",
+        "category": "good",
+        "perc": 26.6667
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_bad",
+        "perc": 2.4353
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_good",
+        "perc": 49.9474
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Sperrin",
+        "category": "five_people",
+        "perc": 10.9562
+      },
+      {
+        "group": "Sperrin",
+        "category": "four_people",
+        "perc": 13.6824
+      },
+      {
+        "group": "Sperrin",
+        "category": "one_person",
+        "perc": 29.2235
+      },
+      {
+        "group": "Sperrin",
+        "category": "three_people",
+        "perc": 17.6064
+      },
+      {
+        "group": "Sperrin",
+        "category": "two_people",
+        "perc": 28.5316
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Sperrin",
+        "category": "apprenticeship",
+        "perc": 6.1736
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_1_qualifications",
+        "perc": 6.0866
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_2_qualifications",
+        "perc": 13.0019
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_3_qualifications",
+        "perc": 15.1655
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.0396
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_qualifications",
+        "perc": 31.7631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_qualifications",
+        "perc": 1.7697
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Sperrin",
+        "category": "england",
+        "perc": 3.038
+      },
+      {
+        "group": "Sperrin",
+        "category": "northern_ireland",
+        "perc": 88.9684
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_cob",
+        "perc": 1.877
+      },
+      {
+        "group": "Sperrin",
+        "category": "republic_of_ireland",
+        "perc": 5.0405
+      },
+      {
+        "group": "Sperrin",
+        "category": "scotland",
+        "perc": 1.0113
+      },
+      {
+        "group": "Sperrin",
+        "category": "wales",
+        "perc": 0.0647
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Sperrin",
+        "category": "english",
+        "perc": 98.5631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_languages",
+        "perc": 1.4369
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Sperrin",
+        "category": "a0to14",
+        "perc": 19.5388
+      },
+      {
+        "group": "Sperrin",
+        "category": "a15to39",
+        "perc": 29.7573
+      },
+      {
+        "group": "Sperrin",
+        "category": "a40to64",
+        "perc": 33.3091
+      },
+      {
+        "group": "Sperrin",
+        "category": "a65plus",
+        "perc": 17.3948
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Sperrin",
+        "category": "a1to19_hours",
+        "perc": 5.0039
+      },
+      {
+        "group": "Sperrin",
+        "category": "a20to49_hours",
+        "perc": 3.3949
+      },
+      {
+        "group": "Sperrin",
+        "category": "a50plus_hours",
+        "perc": 4.2447
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_care",
+        "perc": 87.3566
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Sperrin",
+        "category": "catholic",
+        "perc": 72.7427
+      },
+      {
+        "group": "Sperrin",
+        "category": "none",
+        "perc": 2.6335
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_religions",
+        "perc": 0.534
+      },
+      {
+        "group": "Sperrin",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.0898
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Sperrin",
+        "category": "females",
+        "perc": 50.6634
+      },
+      {
+        "group": "Sperrin",
+        "category": "males",
+        "perc": 49.3366
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "DESCP": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 14.544
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 12.0129
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 12.1736
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 13.2583
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.4934
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0.0402
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 14.102
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 12.736
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 12.6557
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.5066
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 8.4773
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 34.3511
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 16.9144
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 4.4194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.1741
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 14.1709
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.7816
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.6468
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 13.5016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.0977
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.8173
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.8485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 12.7019
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.2612
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.3563
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.5314
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.1515
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 2.9504
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 12.7065
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 49.8033
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 7.9465
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 13.454
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 37.7262
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 14.4768
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 12.8245
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 14.3981
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 12.7065
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 11.487
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 50.1967
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 19.6302
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 49.2279
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0.1014
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 30.2726
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 13.3636
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 13.0191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 13.7049
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 5.191
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 50.7721
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 13.7425
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 3.2542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 18.4827
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 13.6874
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 13.6542
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 13.5359
+        }
+      ]
+    },
+    "DESCPP": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 15.6977
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 31.1531
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.595
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 7.1705
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 16.1822
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 16.2791
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 9.5446
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 16.7636
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 7.9457
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.405
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 6.2016
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 17.5872
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 8.8885
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 9.8644
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.2819
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 5.5485
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 16.5613
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 16.4044
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.2579
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.4913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.7421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 10.3835
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.5082
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 25.4653
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 16.1713
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 51.5869
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 48.4131
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 16.3728
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 14.8615
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 10.932
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 8.8665
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 17.2292
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 15.5668
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 5.1385
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 35.4156
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 16.9773
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 15.7238
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 4.5203
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 15.9244
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 16.1158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 49.6474
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 28.3304
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 16.2347
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 17.5595
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 50.3526
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 15.7259
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 9.3557
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 10.9196
+        }
+      ]
+    },
+    "DESCS": {
+      "2022/23": [
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 8.6957
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 7.6087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 3.2609
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 7.6087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 4.3478
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 3.2609
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 2.1739
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 88.0435
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 9.7826
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 4.3478
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 6.5217
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 81.5217
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 18.4783
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year15",
+          "perc": 1.087
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 4.3478
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 6.9986
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 4.1414
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 6.1183
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.2439
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.3795
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.9769
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 2.8139
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.7532
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.0447
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 7.3016
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.6205
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 6.5368
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 7.316
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.9206
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 7.5325
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 97.1861
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 7.2294
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.2915
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "Year9",
+          "perc": 4.2254
+        },
+        {
+          "group": "Sperrin",
+          "category": "Female",
+          "perc": 26.7606
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year15",
+          "perc": 11.2676
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year13",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Male",
+          "perc": 73.2394
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENStatement",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year4",
+          "perc": 5.6338
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year7",
+          "perc": 7.0423
+        },
+        {
+          "group": "Sperrin",
+          "category": "SENNonStatemented",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Reception",
+          "perc": 2.8169
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year5",
+          "perc": 5.6338
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year11",
+          "perc": 4.2254
+        },
+        {
+          "group": "Sperrin",
+          "category": "FSME",
+          "perc": 91.5493
+        },
+        {
+          "group": "Sperrin",
+          "category": "Nursery",
+          "perc": 0
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year6",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year14",
+          "perc": 8.4507
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year1",
+          "perc": 12.6761
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year2",
+          "perc": 1.4085
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year8",
+          "perc": 12.6761
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year12",
+          "perc": 9.8592
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year3",
+          "perc": 8.4507
+        },
+        {
+          "group": "Sperrin",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Sperrin",
+          "category": "Year10",
+          "perc": 2.8169
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENStatement",
+          "perc": 93.9146
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FSME",
+          "perc": 51.4211
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Female",
+          "perc": 29.4682
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year7",
+          "perc": 6.6609
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year1",
+          "perc": 6.4516
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year11",
+          "perc": 6.5039
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Nursery",
+          "perc": 1.116
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "SENNonStatemented",
+          "perc": 6.0854
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year13",
+          "perc": 4.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year15",
+          "perc": 3.4176
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Male",
+          "perc": 70.5318
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year6",
+          "perc": 6.748
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year12",
+          "perc": 6.3993
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year4",
+          "perc": 6.9922
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year14",
+          "perc": 4.15
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year3",
+          "perc": 7.1142
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Reception",
+          "perc": 3.9058
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year10",
+          "perc": 6.8003
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year2",
+          "perc": 7.585
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year9",
+          "perc": 7.306
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "All",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year5",
+          "perc": 7.1665
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Year8",
+          "perc": 6.7306
+        }
+      ]
+    },
+    "FPSGDSDR": {
+      "2022/23": [
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.821
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 2.8484
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 76.3195
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 0.952
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.2935
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 75.2676
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.4185
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 3.9563
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 73.1325
+        },
+        {
+          "group": "SPERRIN",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR0_2",
+          "perc": 1.7533
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR3_5",
+          "perc": 4.6906
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageGDSDR18plus",
+          "perc": 72.8494
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "Dental_Registrations_ageAll",
+          "perc": 100
+        }
+      ]
+    },
+    "FPSGDSDT": {
+      "2022/23": [
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTX",
+          "perc": 42.764
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTF",
+          "perc": 45.032
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTC",
+          "perc": 1.0048
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTE",
+          "perc": 11.1992
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 43.7965
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 9.3109
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.1704
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 45.7222
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTF",
+          "perc": 51.0931
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTC",
+          "perc": 1.4272
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTE",
+          "perc": 10.5904
+        },
+        {
+          "group": "SPERRIN",
+          "category": "GDSDTX",
+          "perc": 36.8892
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTE",
+          "perc": 8.5675
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTF",
+          "perc": 49.3948
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTC",
+          "perc": 1.9344
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "GDSDTX",
+          "perc": 40.1033
+        }
+      ]
+    },
+    "BS": {
+      "2022": [
+        {
+          "group": "SPERRIN",
+          "category": "DLA",
+          "perc": 7.7524
+        },
+        {
+          "group": "SPERRIN",
+          "category": "IS",
+          "perc": 2.0847
+        },
+        {
+          "group": "SPERRIN",
+          "category": "ESA",
+          "perc": 11.0749
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PIP",
+          "perc": 17.9805
+        },
+        {
+          "group": "SPERRIN",
+          "category": "UC",
+          "perc": 12.5081
+        },
+        {
+          "group": "SPERRIN",
+          "category": "RP",
+          "perc": 25.2117
+        },
+        {
+          "group": "SPERRIN",
+          "category": "AA",
+          "perc": 4.7557
+        },
+        {
+          "group": "SPERRIN",
+          "category": "JSA",
+          "perc": 1.6287
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PC",
+          "perc": 8.0782
+        },
+        {
+          "group": "SPERRIN",
+          "category": "CA",
+          "perc": 8.9251
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "SPERRIN",
+          "category": "IS",
+          "perc": 4.5706
+        },
+        {
+          "group": "SPERRIN",
+          "category": "RP",
+          "perc": 26.8698
+        },
+        {
+          "group": "SPERRIN",
+          "category": "AA",
+          "perc": 5.0554
+        },
+        {
+          "group": "SPERRIN",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "SPERRIN",
+          "category": "ESA",
+          "perc": 13.9197
+        },
+        {
+          "group": "SPERRIN",
+          "category": "JSA",
+          "perc": 5.1247
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PIP",
+          "perc": 0.831
+        },
+        {
+          "group": "SPERRIN",
+          "category": "CA",
+          "perc": 9.4875
+        },
+        {
+          "group": "SPERRIN",
+          "category": "DLA",
+          "perc": 23.892
+        },
+        {
+          "group": "SPERRIN",
+          "category": "PC",
+          "perc": 10.2493
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "FEENROL": {
+      "2020/21": [
+        {
+          "group": "Sperrin",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "FEENROLn",
+          "perc": 100
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "FEENROLn",
+          "perc": 100
+        }
+      ]
+    },
+    "HEENROL": {
+      "2020/21": [
+        {
+          "group": "Sperrin",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ],
+      "2017/18": [
+        {
+          "group": "Sperrin",
+          "category": "HEENROLn"
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "HEENROLn"
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Sperrin",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "DESCP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCPP": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Post Primary",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+      "last_updated": "2023-05-31"
+    },
+    "DESCS": {
+      "email": "statistics@education-ni.gov.uk",
+      "title": "School Census - Special Schools",
+      "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+      "last_updated": "2023-05-31"
+    },
+    "FPSGDSDR": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Registrations",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+      "last_updated": "2023-06-26"
+    },
+    "FPSGDSDT": {
+      "email": "info.bso@hscni.net",
+      "title": "General Dental Services Dental Treatments",
+      "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDTDEA",
+      "last_updated": "2023-06-26"
+    },
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "FEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Regulated enrolments at Further Education Colleges",
+      "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+      "last_updated": "2023-06-20"
+    },
+    "HEENROL": {
+      "email": "dfemail@economy-ni.gov.uk",
+      "title": "Enrolments at Higher Education Institutions",
+      "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+      "last_updated": "2023-06-21"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2023-05-23"
+    }
+  }
+}

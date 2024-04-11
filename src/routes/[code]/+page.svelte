@@ -347,7 +347,7 @@
 
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 
-					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
+					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ --
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 					<!-- Code credit: https://css-tricks.com/on-the-web-share-api/ -->
 					<script>
@@ -436,6 +436,7 @@
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
+
 
 			<!-- <div class="div-grey-box" style="line-height: 1.3;">
 				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
@@ -575,7 +576,7 @@
 			</div> -->
 
 			<GreyBox
-				id = "households"
+				id = "popden"
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
@@ -809,8 +810,229 @@
 
 		<div class="accordion" id="accordionPanelsStayOpenExample">
 			<!-- ZERO ACCORDION -->
-
+			<!-- New additions (all original in tact) -->
+			
 			<Accordion
+			id = "people"
+			img = "nisra-taxonomy-icon-census.png"
+			heading = "People and Households"
+			place = {data.place}
+			sub_heading = ""
+			description = ""
+			boxes = {{
+					box_1: {
+						id: "popchange",
+						content: "<span >"  + " population growth/shrink to be added</span>"},
+					box_2: {
+						id: "age",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["age"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"
+					},
+					box_3: {
+						id: "sex",
+						content: "<span >"  + " sex split to be added</span>"
+					},
+					box_4: {
+						id: "hhsize",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["hh_size"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"},
+					box_5: {
+						id: "religion",
+						content: "GroupChart",
+						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"
+					},
+					box_6: {
+						id: "language",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"
+					}
+			}}
+			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
+					which includes an <a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, 
+					<a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-Factsheets.pdf'>Fact Sheets</a>, 
+					a <a href='https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> 
+					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
+					bespoke tables can be created using the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has 
+					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics.
+					"
+		/>
+
+		<Accordion
+		id = "health"
+		img = "nisra-taxonomy-icon-health.png"
+		heading = "Health and Social Care"
+		place = {data.place}
+		sub_heading = "Health"
+		description = "xxxx"
+		boxes = {{
+				box_1: {
+						id: "generalhealth",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"},
+				box_2: {
+						id: "wellbeing",
+						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>"},
+				box_3: {
+						id: "lifeexpectancy",
+						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},
+				box_4: {
+						id: "carers",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["provision_care"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"},
+				box_5: {
+						id: "hospitalactivity",
+						content: "<span >"  + " hospital activity to be added</span>"},
+				box_6: {
+						id: "primarycare",
+						content: "<span >"  + " primary care to be added</span>"},
+		}}
+		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
+			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
+				Business Services Organisation</a>, including statistics on <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/health-inequalities-statistics'>Health inequalities</a>, 
+				Primary care (including <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/1776-2/'>Medical</a>, 
+				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-dental-services-statistics/'>Dental</a>, 
+				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-pharmaceutical-services-and-prescribing-statistics/'>
+				Pharmaceutical</a> and <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
+				Ophthalmic</a>), <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/family-health-services-statistics'>
+				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
+				Mental health, learning disability and autism</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research-social-services/social-care-statistics'>
+				Social care</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/workforce-statistics'>Workforce</a>, and <u>COVID-19</u>.
+				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
+				Making Life Better</a>.
+				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
+				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
+	/>
+	
+	<Accordion
+		id = "work"
+		img = "nisra-taxonomy-icon-labour-market.png"
+		heading = "Work and Welfare"
+		place = {data.place}
+		sub_heading = "Work and welfare"
+		description = "xxxx"
+		boxes = {{
+
+				
+				box_1: {
+						id: "employmentrates",
+						content: "<span >"  + " employment to be added</span>"},
+				
+				box_2: {
+						id: "employed",
+						content: "<span >"  + " numbers employed to be added</span>"},
+				
+				box_3: {
+						id: "wages",
+						content: "<p><span class='text-big' style='font-size: 1.8em'>£26,531</span> annual median salary</p>"},
+
+				box_4: {
+						id: "benefits",
+						content: "<span >"  + " benefits claimants to be added</span>"},
+				
+		}}
+		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
+			 contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
+				Annual Survey of Hours and Earnings</a> providesdata on hourly, weekly and annual earnings. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/quarterly-employment-survey'>
+					Quarterly Employment Survey</a> provides short-term employee jobs estimates for NI. Further information is available for the 
+					unemployed <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/claimant-count'>Claimant Count</a>, 
+					claimant numbers for <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/disability-benefits'>Disability Benefits</a>, 
+					and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/work-related-benefits'>Work Related Benefits</a>. 
+					Statistics on <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/redundancies'>Redundancies</a> 
+					and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/job-vacancies'>Job Vacancies</a> are also available. 
+					A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
+					The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
+					explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+	/>
+
+		<Accordion
+		id = "education"
+		img = "nisra-taxonomy-icon-child-education-skills.png"
+		heading = "Education"
+		place = {data.place}
+		sub_heading = "Schools, colleges and universities"
+		description = ""
+		boxes = {{
+
+			box_1: {
+						id: "enrollments",
+						content: "<p>Primary school <span class='text-big' style='font-size: 1.2em'>500 </span></p>"+
+						"<p>Secondary school <span class='text-big' style='font-size: 1.2em'>320 </span></p>" +
+						"<p>Further education colleges <span class='text-big' style='font-size: 1.2em'>45 </span></p>" +
+						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>"},
+				
+			box_2: {
+						id: "fsme",
+						content: "<p>Primary school <span class='text-big' style='font-size: 1.8em'>33.2%</span></p>"+
+						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>"},
+			
+			box_3: {
+						id: "teachers",
+						content: "<span >"  + " teachers to be added</span>"},
+		
+			box_4: {
+						id: "qualifications",
+						content: "StackedBarChart",
+						chart_data: data.place && makeData_year(["highest_level_of_qualifications"], ["2011"], ["2021"]),
+						zkey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: "true"},
+
+			box_5: {
+						id: "attainment",
+						content: "<span >"  + " attainment to be added</span>"},		}}
+		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+	/>
+
+
+
+	<Accordion
+		id = "crime"
+		img = "nisra-taxonomy-icon-crime-justice.png"
+		heading = "Crime and Justice"
+		place = {data.place}
+		sub_heading = "Crime and court activity"
+		description = "xxxx"
+		boxes = {{
+				
+		}}
+		more = ""
+	/>
+
+
+	<Accordion
+		id = "travel"
+		img = "nisra-taxonomy-icon-travel-transport.png"
+		heading = "Travel and Transport"
+		place = {data.place}
+		sub_heading = "Travel and transport .... "
+		description = "xxxx"
+		boxes = {{
+				
+		}}
+		more = ""
+	/>
+
+
+	<!-- original from BQ branch -->
+			<!-- <Accordion
 				id = "Area"
 				img = "map.png"
 				heading = "Area Information"
@@ -838,10 +1060,10 @@
 					}
 				}}
 				more = ""
-			/>
+			/> -->
 			
 			<!-- ACCORDION census -->
-			<Accordion
+			<!-- <Accordion
 				id = "census"
 				img = "nisra-taxonomy-icon-census.png"
 				heading = "Census 2021"
@@ -907,7 +1129,7 @@
 						Population characteristics are from the census data which can be explored further in the <a href = 'https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
 						bespoke tables can be created using the <a href = 'https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has <a href = 'https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a>
 						providing commentary on a range of census population characteristics."
-			/>
+			/> -->
 			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingcensus">
 					<button
@@ -1075,7 +1297,7 @@
 			</div> -->
 		
 			<!-- ACCORDION ONE -->
-			<Accordion
+			<!-- <Accordion
 				id = "population"
 				img = "nisra-taxonomy-icon-population.png"
 				heading = "Demography"
@@ -1087,7 +1309,7 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
 			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -1188,7 +1410,7 @@
 			</div> -->
 
 			<!-- ACCORDION TWO -->
-			<Accordion
+			<!-- <Accordion
 				id = "deprivation"
 				img = "nisra-taxonomy-icon-deprivation.png"
 				heading = "Deprivation"
@@ -1200,10 +1422,10 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
 			<!-- ACCORDION THREE -->
-			<Accordion
+			<!-- <Accordion
 				id = "health"
 				img = "nisra-taxonomy-icon-health.png"
 				heading = "Health and Social Care"
@@ -1214,7 +1436,7 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingThree">
 					<button
@@ -1405,7 +1627,7 @@
 			</div> -->
 
 			<!-- ACCORDION FOUR -->
-			<Accordion
+			<!-- <Accordion
 				id = "labour-market"
 				img = "nisra-taxonomy-icon-labour-market.png"
 				heading = "Labour Market and Social Welfare"
@@ -1417,7 +1639,7 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 			<!-- <div class="accordion-item">
 				<h2 class="accordion-header" id="panelsStayOpen-headingFour">
 					<button
@@ -1541,7 +1763,7 @@
 			</div> -->
 
 			<!-- ACCORDION five -->
-			<Accordion
+			<!-- <Accordion
 				id = "economy"
 				img = "nisra-taxonomy-icon-economy.png"
 				heading = "Economy"
@@ -1553,10 +1775,10 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
 			<!-- ACCORDION six -->
-			<Accordion
+			<!-- <Accordion
 				id = "crime-justice"
 				img = "nisra-taxonomy-icon-crime-justice.png"
 				heading = "Crime and Justice"
@@ -1570,10 +1792,10 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
 			<!-- ACCORDION Seven -->
-			<Accordion
+			<!-- <Accordion
 				id = "travel-transport"
 				img = "nisra-taxonomy-icon-travel-transport.png"
 				heading = "Travel and Transport"
@@ -1585,10 +1807,10 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
 			<!-- ACCORDION Eight -->
-			<Accordion
+			<!-- <Accordion
 				id = "housing-stats"
 				img = "nisra-taxonomy-icon-housing-stats.png"
 				heading = "Housing, Community and Regeneration"
@@ -1600,9 +1822,9 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 
-			<!-- ACCORDION Nine -->
+			<!-- ACCORDION Nine
 			<Accordion
 				id = "people-places"
 				img = "nisra-taxonomy-icon-people-places.png"
@@ -1615,10 +1837,10 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 			
 			<!-- ACCORDION ten -->
-			<Accordion
+			<!-- <Accordion
 				id = "agriculture"
 				img = "nisra-taxonomy-icon-agriculture.png"
 				heading = "Agriculture and Environment"
@@ -1630,7 +1852,7 @@
 					
 				}}
 				more = ""
-			/>
+			/> -->
 			
 		</div>
 	{/if}
