@@ -819,6 +819,7 @@
 			place = {data.place}
 			sub_heading = ""
 			description = ""
+			chart_compare_type = {chart_compare_type}
 			boxes = {{
 					box_1: {
 						id: "popchange",
@@ -827,7 +828,7 @@
 						id: "age",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["age"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"
 					},
@@ -839,14 +840,18 @@
 						id: "hhsize",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["hh_size"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
 						content: "GroupChart",
-						chart_data: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-						zkey: chart_compare_type,
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
+							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
+						},
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"
 					},
@@ -854,7 +859,7 @@
 						id: "language",
 						content: "StackedBarChart",
 						chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
-						zkey: chart_compare_type,
+						zKey: chart_compare_type,
 						label: chartLabel,
 						topic_prev_available: "true"
 					}
@@ -876,6 +881,7 @@
 		place = {data.place}
 		sub_heading = "Health"
 		description = "xxxx"
+		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				box_1: {
 						id: "generalhealth",
