@@ -21,7 +21,8 @@ export const app_inputs = {
 	//search_data: 'https://datavis.nisra.gov.uk/census/aex-hj77sh/places_dz.csv',
 //	search_data: '/data_jsons_dea_20240408/places_dz_extra.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
-	app_json_data: '/data_jsons_dea_20240408/',
+	// app_json_data: '/data_jsons_dea_20240408/',
+	app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/data_jsons_dea_20240408/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 

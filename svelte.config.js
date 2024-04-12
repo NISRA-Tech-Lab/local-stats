@@ -14,7 +14,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		prerender: {
-				entries: []
+				entries: ["*"]
 		},
 		paths: {
 				assets: production ? 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer' : '',
