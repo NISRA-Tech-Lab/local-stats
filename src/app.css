@@ -394,5 +394,27 @@ small {
 
 .i-button:after {
 	content: " 🛈"
-	
+}
+
+.increase {
+	color: darkgreen;
+	background-color: lightgrey;
+}
+
+.increase::before {
+	content: "▲";
+	color: darkgreen;
+}
+
+.decrease {
+	color: darkred;
+	background-color: lightgrey;
+}
+.decrease::before {
+	content: "▼";
+	color: darkred;
+}
+.nochange {
+	font-size: 0.85em;
+	color: grey;
 }
