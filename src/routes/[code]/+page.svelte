@@ -500,7 +500,12 @@
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span></Em> since 2011 Census'
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census'
+					},
+					lgd: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all * 100).toFixed(1) + '%</span> of Northern Ireland population<br>' +
+							data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest population of 11 Local Government Districts"
 					}
 				}}
 			/>
@@ -587,7 +592,11 @@
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span></Em> since 2011 Census'
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census'
+					},
+					lgd: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households * 100).toFixed(1) + '%</span> of Northern Ireland households'
 					}
 				}}
 			/>
