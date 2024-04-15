@@ -467,10 +467,12 @@
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. " + popChange(data.place.data.population.value.change.all),
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " Local Government District. " + popChange(data.place.data.population.value.change.all),
-					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " District Electoral Area."
-				}}
+					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. ",
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " 
+					// dea from main not working					,
+					dea: "The population of " + data.place.name + " DEA was " + data.place.data.population.value["2021"].all.toLocaleString(),
+					sdz: "The population of " + data.place.name + " SDZ  was " + data.place.data.population.value["2021"].all.toLocaleString(),
+					dz: "The population of " + data.place.name + " DEA  was " + data.place.data.population.value["2021"].all.toLocaleString()}}
 				chart_compare_type = {chart_compare_type}
 			/>
 
@@ -491,7 +493,14 @@
 					dea: {
 						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
-					}
+					},
+		
+					sdz: {
+						prev:" nothing further",
+						ni:" nothing further"},
+					dz: {
+						prev:" no comparisons",
+						ni:" nothing further"}
 				}}
 			/>
 
@@ -511,7 +520,11 @@
 					dea: {
 						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
-					}
+					},
+					sdz: {
+						prev:" nothing further", ni:" nothing further"},
+					dz: {
+						prev:" no comparisons", ni: "no ni comparisons"}
 				}}
 			/>
 
@@ -665,13 +678,15 @@
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: "<span >"  + " population growth/shrink to be added</span>"},
+						content: "<span >"  + " population growth/shrink to be added</span> "},
 					box_2: {
 						id: "age",
 						content: {
-							ni:"GroupChart",
-							lgd: "Chart not available",
-							dea: "GroupChart"
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
@@ -686,7 +701,13 @@
 					},
 					box_4: {
 						id: "hhsize",
-						content: "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
@@ -695,7 +716,13 @@
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
-						content: "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
@@ -705,7 +732,13 @@
 					},
 					box_6: {
 						id: "language",
-						content: "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
@@ -735,7 +768,7 @@
 		boxes = {{
 				box_1: {
 						id: "generalhealth",
-						content: "StackedBarChart",
+						content: "StackedBarChart",						
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
 						zKey: chart_compare_type,
 						label: chartLabel,
@@ -748,7 +781,13 @@
 						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},
 				box_4: {
 						id: "carers",
-						content: "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
@@ -850,7 +889,13 @@
 		
 			box_4: {
 						id: "qualifications",
-						content: "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "Not available",
+							dz: "Not available"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
@@ -892,7 +937,7 @@
 				
 		}}
 		more = ""
-	/>
+	/> 
 
 		</div>
 	{/if}

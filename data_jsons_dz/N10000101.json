@@ -1,0 +1,1748 @@
+{
+  "code": "N10000101",
+  "name": "Airport",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000001",
+      "name": "Antrim and Newtownabbey",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N21000059",
+      "name": "Airport_A",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000060",
+      "name": "Airport_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000061",
+      "name": "Airport_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000062",
+      "name": "Airport_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000063",
+      "name": "Airport_E",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000064",
+      "name": "Airport_F",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000065",
+      "name": "Airport_G",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000066",
+      "name": "Airport_H",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000067",
+      "name": "Airport_J",
+      "type": "sdz"
+    }
+  ],
+  "bounds": [
+    [-5.9688, 54.5682],
+    [-6.426, 54.7272]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 22029
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 41
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 7964
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 3.9766,
+          "fair": 10.4907,
+          "good": 28.1538,
+          "very_bad": 1.1893,
+          "very_good": 56.1896
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 10.6102,
+          "four_people": 18.6213,
+          "one_person": 23.104,
+          "three_people": 17.0392,
+          "two_people": 30.6253
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 5.85,
+          "level_1_qualifications": 5.6992,
+          "level_2_qualifications": 14.7611,
+          "level_3_qualifications": 18.634,
+          "level_4_qualifications_and_above": 36.584,
+          "no_qualifications": 16.3265,
+          "other_qualifications": 2.1452
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 5.9368,
+          "northern_ireland": 87.3638,
+          "other_cob": 4.2529,
+          "republic_of_ireland": 1.1892,
+          "scotland": 1.0621,
+          "wales": 0.1952
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.2102,
+          "other_languages": 2.7898
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 20.473,
+          "a15to39": 32.9248,
+          "a40to64": 32.6706,
+          "a65plus": 13.9316
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.5844,
+          "a20to49_hours": 2.6996,
+          "a50plus_hours": 3.5897,
+          "no_care": 87.1263
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 46.3029,
+          "none": 10.6214,
+          "other_religions": 1.1484,
+          "protestant_and_other_christian_including_christian_related": 41.9273
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.0989,
+          "males": 50.9011
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2022": {
+          "UC": 10.5528,
+          "IS": 1.005,
+          "CA": 7.2864,
+          "PC": 4.0201,
+          "JSA": 0.6281,
+          "AA": 5.2764,
+          "PIP": 17.4623,
+          "ESA": 10.4271,
+          "RP": 35.4271,
+          "DLA": 7.9146
+        },
+        "2017": {
+          "IS": 2.7457,
+          "JSA": 2.4566,
+          "RP": 39.5954,
+          "ESA": 12.1387,
+          "DLA": 23.1214,
+          "PIP": 0.8671,
+          "UC": 0,
+          "CA": 7.5145,
+          "AA": 5.7803,
+          "PC": 5.7803
+        }
+      },
+      "value": {
+        "2022": {
+          "UC": 840,
+          "IS": 80,
+          "CA": 580,
+          "PC": 320,
+          "JSA": 50,
+          "AA": 420,
+          "PIP": 1390,
+          "ESA": 830,
+          "RP": 2820,
+          "DLA": 630
+        },
+        "2017": {
+          "IS": 190,
+          "JSA": 170,
+          "RP": 2740,
+          "ESA": 840,
+          "DLA": 1600,
+          "PIP": 60,
+          "UC": 0,
+          "CA": 520,
+          "AA": 400,
+          "PC": 400
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 83.9,
+          "LEbirth_gender2": 81.1
+        },
+        "2015-17": {
+          "LEbirth_gender1": 83,
+          "LEbirth_gender2": 80.7
+        }
+      }
+    }
+  },
+  "hectares": 20576,
+  "dea_location_description": "all of CRUMLIN, and part of ANTRIM and METROPOLITAN NEWTOWNABBEY settlements",
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Airport",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Airport",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Airport",
+        "category": "bad",
+        "perc": 3.9766
+      },
+      {
+        "group": "Airport",
+        "category": "fair",
+        "perc": 10.4907
+      },
+      {
+        "group": "Airport",
+        "category": "good",
+        "perc": 28.1538
+      },
+      {
+        "group": "Airport",
+        "category": "very_bad",
+        "perc": 1.1893
+      },
+      {
+        "group": "Airport",
+        "category": "very_good",
+        "perc": 56.1896
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Airport",
+        "category": "five_people",
+        "perc": 10.6102
+      },
+      {
+        "group": "Airport",
+        "category": "four_people",
+        "perc": 18.6213
+      },
+      {
+        "group": "Airport",
+        "category": "one_person",
+        "perc": 23.104
+      },
+      {
+        "group": "Airport",
+        "category": "three_people",
+        "perc": 17.0392
+      },
+      {
+        "group": "Airport",
+        "category": "two_people",
+        "perc": 30.6253
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Airport",
+        "category": "apprenticeship",
+        "perc": 5.85
+      },
+      {
+        "group": "Airport",
+        "category": "level_1_qualifications",
+        "perc": 5.6992
+      },
+      {
+        "group": "Airport",
+        "category": "level_2_qualifications",
+        "perc": 14.7611
+      },
+      {
+        "group": "Airport",
+        "category": "level_3_qualifications",
+        "perc": 18.634
+      },
+      {
+        "group": "Airport",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.584
+      },
+      {
+        "group": "Airport",
+        "category": "no_qualifications",
+        "perc": 16.3265
+      },
+      {
+        "group": "Airport",
+        "category": "other_qualifications",
+        "perc": 2.1452
+      }
+    ],
+    "cob": [
+      {
+        "group": "Airport",
+        "category": "england",
+        "perc": 5.9368
+      },
+      {
+        "group": "Airport",
+        "category": "northern_ireland",
+        "perc": 87.3638
+      },
+      {
+        "group": "Airport",
+        "category": "other_cob",
+        "perc": 4.2529
+      },
+      {
+        "group": "Airport",
+        "category": "republic_of_ireland",
+        "perc": 1.1892
+      },
+      {
+        "group": "Airport",
+        "category": "scotland",
+        "perc": 1.0621
+      },
+      {
+        "group": "Airport",
+        "category": "wales",
+        "perc": 0.1952
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Airport",
+        "category": "english",
+        "perc": 97.2102
+      },
+      {
+        "group": "Airport",
+        "category": "other_languages",
+        "perc": 2.7898
+      }
+    ],
+    "age": [
+      {
+        "group": "Airport",
+        "category": "a0to14",
+        "perc": 20.473
+      },
+      {
+        "group": "Airport",
+        "category": "a15to39",
+        "perc": 32.9248
+      },
+      {
+        "group": "Airport",
+        "category": "a40to64",
+        "perc": 32.6706
+      },
+      {
+        "group": "Airport",
+        "category": "a65plus",
+        "perc": 13.9316
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Airport",
+        "category": "a1to19_hours",
+        "perc": 6.5844
+      },
+      {
+        "group": "Airport",
+        "category": "a20to49_hours",
+        "perc": 2.6996
+      },
+      {
+        "group": "Airport",
+        "category": "a50plus_hours",
+        "perc": 3.5897
+      },
+      {
+        "group": "Airport",
+        "category": "no_care",
+        "perc": 87.1263
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Airport",
+        "category": "catholic",
+        "perc": 46.3029
+      },
+      {
+        "group": "Airport",
+        "category": "none",
+        "perc": 10.6214
+      },
+      {
+        "group": "Airport",
+        "category": "other_religions",
+        "perc": 1.1484
+      },
+      {
+        "group": "Airport",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.9273
+      }
+    ],
+    "sex": [
+      {
+        "group": "Airport",
+        "category": "females",
+        "perc": 49.0989
+      },
+      {
+        "group": "Airport",
+        "category": "males",
+        "perc": 50.9011
+      }
+    ],
+    "BS": {
+      "2022": [
+        {
+          "group": "AIRPORT",
+          "category": "UC",
+          "perc": 10.5528
+        },
+        {
+          "group": "AIRPORT",
+          "category": "IS",
+          "perc": 1.005
+        },
+        {
+          "group": "AIRPORT",
+          "category": "CA",
+          "perc": 7.2864
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PC",
+          "perc": 4.0201
+        },
+        {
+          "group": "AIRPORT",
+          "category": "JSA",
+          "perc": 0.6281
+        },
+        {
+          "group": "AIRPORT",
+          "category": "AA",
+          "perc": 5.2764
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PIP",
+          "perc": 17.4623
+        },
+        {
+          "group": "AIRPORT",
+          "category": "ESA",
+          "perc": 10.4271
+        },
+        {
+          "group": "AIRPORT",
+          "category": "RP",
+          "perc": 35.4271
+        },
+        {
+          "group": "AIRPORT",
+          "category": "DLA",
+          "perc": 7.9146
+        }
+      ],
+      "2017": [
+        {
+          "group": "AIRPORT",
+          "category": "IS",
+          "perc": 2.7457
+        },
+        {
+          "group": "AIRPORT",
+          "category": "JSA",
+          "perc": 2.4566
+        },
+        {
+          "group": "AIRPORT",
+          "category": "RP",
+          "perc": 39.5954
+        },
+        {
+          "group": "AIRPORT",
+          "category": "ESA",
+          "perc": 12.1387
+        },
+        {
+          "group": "AIRPORT",
+          "category": "DLA",
+          "perc": 23.1214
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PIP",
+          "perc": 0.8671
+        },
+        {
+          "group": "AIRPORT",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "AIRPORT",
+          "category": "CA",
+          "perc": 7.5145
+        },
+        {
+          "group": "AIRPORT",
+          "category": "AA",
+          "perc": 5.7803
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PC",
+          "perc": 5.7803
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 3.9766
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 10.4907
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 28.1538
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.1893
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 56.1896
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 10.6102
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 18.6213
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 23.104
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 17.0392
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.6253
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 5.85
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.6992
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.7611
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 18.634
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.584
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 16.3265
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.1452
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 5.9368
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 87.3638
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 4.2529
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.1892
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0621
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1952
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.2102
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.7898
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 20.473
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 32.9248
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.6706
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 13.9316
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.5844
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.6996
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.5897
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.1263
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 46.3029
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 10.6214
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.1484
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.9273
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.0989
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.9011
+      }
+    ],
+    "BS": [
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 10.5528
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.005
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 7.2864
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 4.0201
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.6281
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 5.2764
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 17.4623
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 10.4271
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 35.4271
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.9146
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 2.7457
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.4566
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 39.5954
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 12.1387
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 23.1214
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.8671
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 7.5145
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.7803
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 5.7803
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Airport",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Airport",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Airport",
+        "category": "bad",
+        "perc": 3.9766
+      },
+      {
+        "group": "Airport",
+        "category": "fair",
+        "perc": 10.4907
+      },
+      {
+        "group": "Airport",
+        "category": "good",
+        "perc": 28.1538
+      },
+      {
+        "group": "Airport",
+        "category": "very_bad",
+        "perc": 1.1893
+      },
+      {
+        "group": "Airport",
+        "category": "very_good",
+        "perc": 56.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Airport",
+        "category": "five_people",
+        "perc": 10.6102
+      },
+      {
+        "group": "Airport",
+        "category": "four_people",
+        "perc": 18.6213
+      },
+      {
+        "group": "Airport",
+        "category": "one_person",
+        "perc": 23.104
+      },
+      {
+        "group": "Airport",
+        "category": "three_people",
+        "perc": 17.0392
+      },
+      {
+        "group": "Airport",
+        "category": "two_people",
+        "perc": 30.6253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Airport",
+        "category": "apprenticeship",
+        "perc": 5.85
+      },
+      {
+        "group": "Airport",
+        "category": "level_1_qualifications",
+        "perc": 5.6992
+      },
+      {
+        "group": "Airport",
+        "category": "level_2_qualifications",
+        "perc": 14.7611
+      },
+      {
+        "group": "Airport",
+        "category": "level_3_qualifications",
+        "perc": 18.634
+      },
+      {
+        "group": "Airport",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.584
+      },
+      {
+        "group": "Airport",
+        "category": "no_qualifications",
+        "perc": 16.3265
+      },
+      {
+        "group": "Airport",
+        "category": "other_qualifications",
+        "perc": 2.1452
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Airport",
+        "category": "england",
+        "perc": 5.9368
+      },
+      {
+        "group": "Airport",
+        "category": "northern_ireland",
+        "perc": 87.3638
+      },
+      {
+        "group": "Airport",
+        "category": "other_cob",
+        "perc": 4.2529
+      },
+      {
+        "group": "Airport",
+        "category": "republic_of_ireland",
+        "perc": 1.1892
+      },
+      {
+        "group": "Airport",
+        "category": "scotland",
+        "perc": 1.0621
+      },
+      {
+        "group": "Airport",
+        "category": "wales",
+        "perc": 0.1952
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Airport",
+        "category": "english",
+        "perc": 97.2102
+      },
+      {
+        "group": "Airport",
+        "category": "other_languages",
+        "perc": 2.7898
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Airport",
+        "category": "a0to14",
+        "perc": 20.473
+      },
+      {
+        "group": "Airport",
+        "category": "a15to39",
+        "perc": 32.9248
+      },
+      {
+        "group": "Airport",
+        "category": "a40to64",
+        "perc": 32.6706
+      },
+      {
+        "group": "Airport",
+        "category": "a65plus",
+        "perc": 13.9316
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Airport",
+        "category": "a1to19_hours",
+        "perc": 6.5844
+      },
+      {
+        "group": "Airport",
+        "category": "a20to49_hours",
+        "perc": 2.6996
+      },
+      {
+        "group": "Airport",
+        "category": "a50plus_hours",
+        "perc": 3.5897
+      },
+      {
+        "group": "Airport",
+        "category": "no_care",
+        "perc": 87.1263
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Airport",
+        "category": "catholic",
+        "perc": 46.3029
+      },
+      {
+        "group": "Airport",
+        "category": "none",
+        "perc": 10.6214
+      },
+      {
+        "group": "Airport",
+        "category": "other_religions",
+        "perc": 1.1484
+      },
+      {
+        "group": "Airport",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.9273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Airport",
+        "category": "females",
+        "perc": 49.0989
+      },
+      {
+        "group": "Airport",
+        "category": "males",
+        "perc": 50.9011
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2022": [
+        {
+          "group": "AIRPORT",
+          "category": "UC",
+          "perc": 10.5528
+        },
+        {
+          "group": "AIRPORT",
+          "category": "IS",
+          "perc": 1.005
+        },
+        {
+          "group": "AIRPORT",
+          "category": "CA",
+          "perc": 7.2864
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PC",
+          "perc": 4.0201
+        },
+        {
+          "group": "AIRPORT",
+          "category": "JSA",
+          "perc": 0.6281
+        },
+        {
+          "group": "AIRPORT",
+          "category": "AA",
+          "perc": 5.2764
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PIP",
+          "perc": 17.4623
+        },
+        {
+          "group": "AIRPORT",
+          "category": "ESA",
+          "perc": 10.4271
+        },
+        {
+          "group": "AIRPORT",
+          "category": "RP",
+          "perc": 35.4271
+        },
+        {
+          "group": "AIRPORT",
+          "category": "DLA",
+          "perc": 7.9146
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "AIRPORT",
+          "category": "IS",
+          "perc": 2.7457
+        },
+        {
+          "group": "AIRPORT",
+          "category": "JSA",
+          "perc": 2.4566
+        },
+        {
+          "group": "AIRPORT",
+          "category": "RP",
+          "perc": 39.5954
+        },
+        {
+          "group": "AIRPORT",
+          "category": "ESA",
+          "perc": 12.1387
+        },
+        {
+          "group": "AIRPORT",
+          "category": "DLA",
+          "perc": 23.1214
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PIP",
+          "perc": 0.8671
+        },
+        {
+          "group": "AIRPORT",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "AIRPORT",
+          "category": "CA",
+          "perc": 7.5145
+        },
+        {
+          "group": "AIRPORT",
+          "category": "AA",
+          "perc": 5.7803
+        },
+        {
+          "group": "AIRPORT",
+          "category": "PC",
+          "perc": 5.7803
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Airport",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "psu@communities-ni.gov.uk",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "LE": {
+      "email": "healthinequalities@health-ni.gov.uk",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2024-04-11"
+    }
+  }
+}

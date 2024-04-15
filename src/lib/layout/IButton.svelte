@@ -142,15 +142,15 @@ let i_button_info = {
 			info: "A household is either one person living alone or a group of people living at the same address " +
 				  "who share cooking facilities and share a living room, sitting room or dining area. " +
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
-		},
+		}//,
 
 
-		dentalreg: {
-			title: "Number of dental registrations",
-			info: "<a href='mailto:" + place.meta_data.FPSGDSDR.email + "'>Email for more information</a> " + 
-				  "Last updated: " + place.meta_data.FPSGDSDR.last_updated + " Access data at: " +
-				  "<a href='" + place.meta_data.FPSGDSDR.dataset_url + "'>" + place.meta_data.FPSGDSDR.title + "</a>"
-		}
+		// dentalreg: {
+		// 	title: "Number of dental registrations",
+		// 	info: "<a href='mailto:" + place.meta_data.FPSGDSDR.email + "'>Email for more information</a> " + 
+		// 		  "Last updated: " + place.meta_data.FPSGDSDR.last_updated + " Access data at: " +
+		// 		  "<a href='" + place.meta_data.FPSGDSDR.dataset_url + "'>" + place.meta_data.FPSGDSDR.title + "</a>"
+		// }
 
 }
 
