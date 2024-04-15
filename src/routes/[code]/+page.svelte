@@ -431,67 +431,13 @@
 				style = "line-height: 1.3;"
 				content = {{
 					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest ",
-					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest Local Government District.",
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, , which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest District Electoral Area."
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
 
-
-			<!-- <div class="div-grey-box" style="line-height: 1.3;">
-				<h3 style="margin: 0 0 10px 0; line-height: 1.78;">
-					Overview - box with words
-				</h3>
-
-				{#if data.place.type == "ni" || data.place.type == "ctry"}
-					The population of {data.place.name} was {data.place.data.population.value[
-						"2021"
-					].all.toLocaleString()} at the time of the 2021 Census.
-				{:else}
-					The population of {data.place.name} was {data.place.data.population.value[
-						"2021"
-					].all.toLocaleString()} at the time of the 2021 Census, which
-					made it the
-					{#if data.place.data.population.value_rank["2021"].all == 1}
-						largest {geog_types[data.place.type].name}.
-					{:else if data.place.data.population.value_rank["2021"].all == data.place.count}
-						smallest {geog_types[data.place.type].name}.
-					{:else if data.place.data.population.value_rank["2021"].all <= (data.place.count + 1) / 2 && data.place.data.population.value_rank["2021"].all != 1}
-						{data.place.data.population.value_rank[
-							"2021"
-						].all.toLocaleString()}{suffixer(
-							data.place.data.population.value_rank["2021"].all,
-						)} largest {geog_types[data.place.type].name}.
-					{:else}
-						{(
-							data.place.count +
-							1 -
-							data.place.data.population.value_rank["2021"].all
-						).toLocaleString()}{suffixer(
-							data.place.count +
-								1 -
-								data.place.data.population.value_rank["2021"].all,
-						)} smallest {geog_types[data.place.type].name}.
-					{/if}
-				{/if}
-				{#if data.place.type != "dea"}
-					{#if data.place.data.population.value.change.all == 0}
-						No change in population since the 2011 Census.
-					{:else if data.place.data.population.value.change.all > 0}
-						An increase of {changeStr(
-							data.place.data.population.value.change.all,
-							"%",
-							1,
-						)} since the 2011 Census.
-					{:else}
-						A decrease of {changeStr(
-							data.place.data.population.value.change.all,
-							"%",
-							1,
-						)} since the 2011 Census.
-					{/if}
-				{/if}
-			</div> -->
+			<!-- BQ: Need to add increase/decrease in population since 2011 census for ni and lgd -->
 
 			<GreyBox
 				id = "pop"
@@ -514,6 +460,8 @@
 				}}
 			/>
 
+			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
+
 			<GreyBox
 				id = "popden"
 				place = {data.place}
@@ -533,6 +481,8 @@
 					}
 				}}
 			/>
+
+			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
 
 		</div>
 		<!-- a19e9e -->
