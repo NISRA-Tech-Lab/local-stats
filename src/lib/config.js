@@ -94,7 +94,7 @@ export const topics = {
 /* 		{ category: 'wales', label: 'Wales' },
 		{ category: 'republic_of_ireland', label: 'Republic of Ireland' },
  */		{ category: 'other_cob', label: 'Other country of birth' }
-	]//,
+	],//,
 	
 	// FPSGDSDT: [
 	// 	{ category: 'GDSDTF', label: 'Fillings' },
@@ -104,12 +104,12 @@ export const topics = {
 
 	// ],
 
-	// BS: [
+	BS: [
 
-	// 	{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
-	// 	{ category: ['PC','RP'], label: 'Pension Age benefits' },
-	// 	{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
-	// ],
+		{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
+		{ category: ['PC','RP'], label: 'Pension Age benefits' },
+		{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
+	]
 
 	// FPSGDSDR: [
 

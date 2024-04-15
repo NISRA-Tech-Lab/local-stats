@@ -76,8 +76,11 @@ let i_button_info = {
 
 
 			benefits: {
-			title: "Number of people on work-related benefits",
-			info: "words to be added"},
+			title: "Personal Independent Payment (PIP) benefits",
+			//info: "some info here"},
+			info: "<p style='margin: 0px'><a href='mailto:" + place.meta_data.BS.email + "'>Email for more information</a> </p>" + 
+		 		  "<p style='margin: 0px'>Last updated: " + place.meta_data.BS.last_updated + " </p>" +
+				  "<p style='margin: 0px'>Access data at: <a href='" + place.meta_data.BS.dataset_url + "'>" + place.meta_data.BS.title + "</a></p>"},
 
 
 

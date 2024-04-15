@@ -463,16 +463,17 @@
 			<GreyBox
 				id = "overview"
 				i_button = {false}
-				heading = "Overview - box with words"
+				heading = "Overview"
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. ",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. " ,
-					// dea from main not working					,
-					dea: "The population of " + data.place.name + " DEA was " + data.place.data.population.value["2021"].all.toLocaleString(),
-					sdz: "The population of " + data.place.name + " SDZ  was " + data.place.data.population.value["2021"].all.toLocaleString(),
-					dz: "The population of " + data.place.name + " DEA  was " + data.place.data.population.value["2021"].all.toLocaleString()}}
+							ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".",
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " and covers " + data.place.dea_location_description + ".",
+							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
+							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl							
+							}}
+				
 				chart_compare_type = {chart_compare_type}
 			/>
 
@@ -686,7 +687,7 @@
 							lgd: "GroupChart",
 							dea: "GroupChart",
 							sdz: "GroupChart",
-							dz: "Not available"
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
@@ -706,7 +707,7 @@
 							lgd: "GroupChart",
 							dea: "GroupChart",
 							sdz: "GroupChart",
-							dz: "Not available"
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
@@ -721,7 +722,7 @@
 							lgd: "GroupChart",
 							dea: "GroupChart",
 							sdz: "GroupChart",
-							dz: "Not available"
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
@@ -737,7 +738,7 @@
 							lgd: "GroupChart",
 							dea: "GroupChart",
 							sdz: "GroupChart",
-							dz: "Not available"
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
@@ -850,8 +851,20 @@
 
 				box_4: {
 						id: "benefits",
-						content: "<span >"  + " benefits claimants to be added</span>"},
-				
+						//content: "PIP stats"
+						//content : '<span class="text-big" style="font-size: 2.8em;">' + data.place.data.BS.value['2022'].PIP.toLocaleString() + '</span>' }
+						content: 
+						//'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
+						
+											
+						{ni: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
+									lgd: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
+									dea:'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants  compared to NI average of '+ (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
+									sdz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
+									dz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString()}
+					}
+					
+							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
 			 contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
