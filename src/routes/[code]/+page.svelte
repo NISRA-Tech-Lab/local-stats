@@ -426,12 +426,14 @@
 				style = "line-height: 1.3;"
 				content = {{
 					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest Local Government District.",
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest District Electoral Area."
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
 
+
+			<!-- BQ: Need to add increase/decrease in population since 2011 census for ni and lgd -->
 
 
 			<GreyBox
@@ -439,17 +441,50 @@
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
+				compare_content = {{
+					ni: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census'
+					},
+					lgd: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all * 100).toFixed(1) + '%</span> of Northern Ireland population<br>' +
+							data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest population of 11 Local Government Districts"
+					},
+					dea: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all * 100).toFixed(1) + '%</span> of Northern Ireland population'
+					}
+				}}
 			/>
 
-		
+
+			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
+
 
 			<GreyBox
 				id = "popden"
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
+				compare_content = {{
+					ni: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census'
+					},
+					lgd: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households * 100).toFixed(1) + '%</span> of Northern Ireland households'
+					},
+					dea: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households * 100).toFixed(1) + '%</span> of Northern Ireland households'
+					}
+				}}
 			/>
-			
+
+
+			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
+
+
 		</div>
 		<!-- a19e9e -->
 		<div class="grid mt" bind:clientWidth={w}>
@@ -871,24 +906,7 @@
 		color: white;
 		background-color: #00205b;
 	}
-	.increase {
-		color: darkgreen;
-	}
-	.increase::before {
-		content: "▲";
-		color: darkgreen;
-	}
-	.decrease {
-		color: darkred;
-	}
-	.decrease::before {
-		content: "▼";
-		color: darkred;
-	}
-	.nochange {
-		font-size: 0.85em;
-		color: grey;
-	}
+
 	.line {
 		background-color: #cedc20;
 		width: 25px;
