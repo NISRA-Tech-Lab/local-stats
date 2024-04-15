@@ -19,6 +19,7 @@ export let topic_boolean = null;
 export let i_button = true;
 export let heading = null;
 export let chart_compare_type;
+export let compare_content = null;
 
 if (topic_prev_available == "false") {
     topic_boolean = false
@@ -92,6 +93,11 @@ if (topic_prev_available == "false") {
         {@html content}
     {/if}
 
+    {#if (compare_content != null & chart_compare_type != null)}
+        <br>
+        <span class = "text-small">{@html compare_content[place.type][chart_compare_type]}</span>
+    {/if}
+
 
 </div>
 
@@ -103,4 +109,5 @@ if (topic_prev_available == "false") {
 		background-color: #f5f5f6;
 		padding: 16px 16px;
 	}
+
 </style>

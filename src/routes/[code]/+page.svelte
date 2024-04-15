@@ -498,6 +498,11 @@
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
+				compare_content = {{
+					ni: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span></Em> since 2011 Census'
+					}
+				}}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -580,6 +585,11 @@
 				place = {data.place}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
+				compare_content = {{
+					ni: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span></Em> since 2011 Census'
+					}
+				}}
 			/>
 
 			<!-- <div class="div-grey-box">
@@ -1919,24 +1929,7 @@
 		color: white;
 		background-color: #00205b;
 	}
-	.increase {
-		color: darkgreen;
-	}
-	.increase::before {
-		content: "▲";
-		color: darkgreen;
-	}
-	.decrease {
-		color: darkred;
-	}
-	.decrease::before {
-		content: "▼";
-		color: darkred;
-	}
-	.nochange {
-		font-size: 0.85em;
-		color: grey;
-	}
+
 	.line {
 		background-color: #cedc20;
 		width: 25px;
