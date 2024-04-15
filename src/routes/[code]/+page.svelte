@@ -277,14 +277,18 @@
 
 	function popChange (expr) {
 
-		let pct = expr.toFixed(1);
+		if (data.place.type != "dea") {
 
-		if (pct > 0) {
-			return "An increase of " + pct + "%" + " since the 2011 Census.";
-		} else if (pct < 0) {
-			return "A decrease of " + pct + "%" + " since the 2011 Census.";
-		} else {
-			return "No change since the 2011 Census.";
+			let pct = expr.toFixed(1);
+
+			if (pct > 0) {
+				return "An increase of " + pct + "%" + " since the 2011 Census.";
+			} else if (pct < 0) {
+				return "A decrease of " + pct + "%" + " since the 2011 Census.";
+			} else {
+				return "No change since the 2011 Census.";
+			}
+
 		}
 
 	}
@@ -469,7 +473,7 @@
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
-			
+
 			<GreyBox
 				id = "pop"
 				place = {data.place}
