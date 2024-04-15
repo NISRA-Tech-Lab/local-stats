@@ -160,7 +160,7 @@
             "visibility",
             visibility,
           );
-          if (data.place.parents[0]) {
+          if (data.place.type != "ni") {
             map.setLayoutProperty(
               key + "-self",
               "visibility",
@@ -171,7 +171,7 @@
         });
 
         // Set new paint properties
-        if (data.place.parents[0]) {
+        if (data.place.type != "ni") {
           fillProps.forEach((prop) =>
             map.setPaintProperty(
               type + "-fill",
@@ -237,7 +237,7 @@
     }
 
     $: w && onResize();
-    $: chartLabel = comp_2011 ? "Same area 2011" : data.place && data.place.parents[0] ? "NI 2021" : null;
+    $: chartLabel = comp_2011 ? "Same area 2011" : data.place && data.place.type != "ni" ? "NI 2021" : null;
 
     $: chart_compare_type = comp_none
       ? null
