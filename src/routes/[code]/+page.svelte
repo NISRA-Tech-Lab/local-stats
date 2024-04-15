@@ -678,7 +678,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
 						},
-						label: chartLabel,
 						topic_prev_available: "true"
 					},
 					box_3: {
@@ -693,7 +692,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
 						},
-						label: chartLabel,
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
@@ -703,7 +701,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 						},
-						label: chartLabel,
 						topic_prev_available: "true"
 					},
 					box_6: {
@@ -714,7 +711,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
 						},
-						label: chartLabel,
 						topic_prev_available: "true"
 					}
 			}}
@@ -860,7 +856,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 						},
-						label: chartLabel,
 						topic_prev_available: "true"},
 
 			box_5: {

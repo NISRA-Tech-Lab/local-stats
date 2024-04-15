@@ -49,13 +49,13 @@ if (topic_prev_available == "false") {
         {/if}
     {:else if (content == "GroupChart" | (content.hasOwnProperty(place.type) & content[place.type] == "GroupChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
-            <GroupChart data = {chart_data.none} zKey = "group" label = {label}/>
+            <GroupChart data = {chart_data.none} zKey = "group"/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
-            <GroupChart data = {chart_data.prev} zKey = "group" label = {label}/>
+            <GroupChart data = {chart_data.prev} zKey = "group"/>
         {:else if (chart_data.hasOwnProperty("ni") & chart_compare_type == "ni")}
-            <GroupChart data = {chart_data.ni} zKey = "group" label = {label}/>
+            <GroupChart data = {chart_data.ni} zKey = "group"/>
         {:else}
-            <GroupChart data = {chart_data} zKey = "group" label = {label}/>
+            <GroupChart data = {chart_data} zKey = "group"/>
         {/if}
     {:else if (content == "ProfileChart" | (content.hasOwnProperty(place.type) & content[place.type] == "ProfileChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
