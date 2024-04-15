@@ -431,7 +431,7 @@
 				style = "line-height: 1.3;"
 				content = {{
 					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest ",
 					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census."
 				}}
 				chart_compare_type = {chart_compare_type}
@@ -506,84 +506,13 @@
 						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all * 100).toFixed(1) + '%</span> of Northern Ireland population<br>' +
 							data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest population of 11 Local Government Districts"
+					},
+					dea: {
+						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all * 100).toFixed(1) + '%</span> of Northern Ireland population'
 					}
 				}}
 			/>
-
-			<!-- <div class="div-grey-box">
-				<IButton id = "pop" place = {data.place}/>
-				<span class="text-big" style="font-size: 2.8em;"
-					>{data.place.data.population.value[
-						"2021"
-					].all.toLocaleString()}</span
-				><br />
-				{#if data.place.type != "ni"}
-					{#if (data.place.type != "ctry") & comp_ni & !comp_2011}
-						<span class="text-small"
-							><Em
-								>{data.place.data.population.value["2021"].all /
-									data.ni.data.population.value["2021"].all >=
-								0.001
-									? (
-											(data.place.data.population.value["2021"]
-												.all /
-												data.ni.data.population.value["2021"]
-													.all) *
-											100
-										).toFixed(1)
-									: "<0.1"}%</Em
-							> of Northern Ireland population</span
-						>
-						<div class="text-small">
-							{#if data.place.type == "lgd"}
-								{#if data.place.data.population.value_rank["2021"].all == 1}
-									The largest
-								{:else if data.place.data.population.value_rank["2021"].all == data.place.count}
-									The smallest
-								{:else if data.place.data.population.value_rank["2021"].all <= (data.place.count + 1) / 2 && data.place.data.population.value_rank["2021"].all != 1}
-									{data.place.data.population.value_rank[
-										"2021"
-									].all.toLocaleString()}{suffixer(
-										data.place.data.population.value_rank["2021"]
-											.all,
-									)} largest
-								{:else}
-									{(
-										data.place.count +
-										1 -
-										data.place.data.population.value_rank["2021"]
-											.all
-									).toLocaleString()}{suffixer(
-										data.place.count +
-											1 -
-											data.place.data.population.value_rank[
-												"2021"
-											].all,
-									)} smallest
-								{/if}
-								population of {data.place.count.toLocaleString()}
-								{geog_types[data.place.type].pl}
-							{/if}
-						</div>
-					{/if}
-				{/if}
-				{#if data.place.type !="dea" && comp_2011}
-					<span class="text-small"
-						><Em
-							><span
-								class={changeClass(
-									data.place.data.population.value.change.all,
-								)}
-								>{changeStr(
-									data.place.data.population.value.change.all,
-									"%",
-									1,
-								)}</span
-							></Em
-						> since 2011 Census</span
-					>
-				{/if}
-			</div> -->
 
 			<GreyBox
 				id = "popden"
@@ -597,55 +526,14 @@
 					lgd: {
 						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households * 100).toFixed(1) + '%</span> of Northern Ireland households'
+					},
+					dea: {
+						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
+						ni: '<span class = "em" style = "background-color: lightgrey">' + (data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households * 100).toFixed(1) + '%</span> of Northern Ireland households'
 					}
 				}}
 			/>
 
-			<!-- <div class="div-grey-box">
-				<IButton id = "households" place = {data.place}/>
-				<span class="text-big" style="font-size: 2.8em;"
-					>{data.place.data.households.value[
-						"2021"
-					].all_households.toLocaleString()}</span
-				><br />
-				{#if (data.place.type != "ni") & comp_ni}
-					<span class="text-small"
-						><Em
-							>{data.place.data.households.value["2021"]
-								.all_households /
-								data.ni.data.households.value["2021"]
-									.all_households >=
-							0.001
-								? (
-										(data.place.data.households.value["2021"]
-											.all_households /
-											data.ni.data.households.value["2021"]
-												.all_households) *
-										100
-									).toFixed(1)
-								: "<0.1"}%</Em
-						> of Northern Ireland households</span
-					>
-				{/if}
-				{#if data.place.type != "dea" && comp_2011}
-					<span class="text-small"
-						><Em
-							><span
-								class={changeClass(
-									data.place.data.households.value.change
-										.all_households,
-								)}
-								>{changeStr(
-									data.place.data.households.value.change
-										.all_households,
-									"%",
-									1,
-								)}</span
-							></Em
-						> since 2011 Census</span
-					>
-				{/if}
-			</div> -->
 		</div>
 		<!-- a19e9e -->
 		<div class="grid mt" bind:clientWidth={w}>
