@@ -469,7 +469,7 @@
 				content = {{
 					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. " + popChange(data.place.data.population.value.change.all),
 					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " Local Government District. " + popChange(data.place.data.population.value.change.all),
-					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " largest District Electoral Area."
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " District Electoral Area."
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
