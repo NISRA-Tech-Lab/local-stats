@@ -489,7 +489,6 @@
 							'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts"
 					},
 					dea: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
 					}
 				}}
@@ -509,7 +508,6 @@
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
 					},
 					dea: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
 					}
 				}}

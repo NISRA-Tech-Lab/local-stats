@@ -94,8 +94,10 @@ if (topic_prev_available == "false") {
     {/if}
 
     {#if (compare_content != null & chart_compare_type != null)}
-        <br>
-        <span class = "text-small">{@html compare_content[place.type][chart_compare_type]}</span>
+        {#if compare_content[place.type].hasOwnProperty(chart_compare_type)}
+            <br>
+            <span class = "text-small">{@html compare_content[place.type][chart_compare_type]}</span>
+        {/if}
     {/if}
 
 
