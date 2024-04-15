@@ -13,11 +13,14 @@ const config = {
 			assets: 'build',
 			fallback: '404.html'
 		}),
-		prerender: {
-				entries: []
-		},
+		// need switched on to allow prerender
+		// prerender: {
+		// 		entries: ["*"]
+		// },
 		paths: {
 				assets: production ? 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer' : '',
+				// to allow a prerender app to be built, the below two arguments need to be swapped
+				// base: production ? '' : '/nisra-geog-explorer'
 				base: production ? '/nisra-geog-explorer' : ''
 		}
 	}
