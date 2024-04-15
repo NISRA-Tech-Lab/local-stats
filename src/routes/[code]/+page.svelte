@@ -468,7 +468,7 @@
 				style = "line-height: 1.3;"
 				content = {{
 					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. ",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " 
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. " ,
 					// dea from main not working					,
 					dea: "The population of " + data.place.name + " DEA was " + data.place.data.population.value["2021"].all.toLocaleString(),
 					sdz: "The population of " + data.place.name + " SDZ  was " + data.place.data.population.value["2021"].all.toLocaleString(),
@@ -685,7 +685,7 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
+							sdz: "GroupChart",
 							dz: "Not available"
 						},
 						chart_data: {
@@ -705,7 +705,7 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
+							sdz: "GroupChart",
 							dz: "Not available"
 						},
 						chart_data: {
@@ -720,7 +720,7 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
+							sdz: "GroupChart",
 							dz: "Not available"
 						},
 						chart_data: {
@@ -736,7 +736,7 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
+							sdz: "GroupChart",
 							dz: "Not available"
 						},
 						chart_data: {
@@ -768,7 +768,13 @@
 		boxes = {{
 				box_1: {
 						id: "generalhealth",
-						content: "StackedBarChart",						
+						content: {
+							ni: "StackedBarChart",
+							lgd: "StackedBarChart",
+							dea: "StackedBarChart",
+							sdz: "not available - needs missing 2011",
+							dz: "not available - needs missing 2011"
+						},				
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
 						zKey: chart_compare_type,
 						label: chartLabel,
@@ -785,8 +791,8 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
-							dz: "Not available"
+							sdz: "GroupChart",
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
@@ -893,8 +899,8 @@
 							ni: "GroupChart",
 							lgd: "GroupChart",
 							dea: "GroupChart",
-							sdz: "Not available",
-							dz: "Not available"
+							sdz: "GroupChart",
+							dz: "GroupChart"
 						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
