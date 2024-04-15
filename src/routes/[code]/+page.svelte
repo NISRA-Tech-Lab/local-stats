@@ -612,7 +612,7 @@
 			</div>
 			
 			<div>
-				{#if data.place.parents[0]}
+				{#if data.place.type != "ni"}
 					<span class="text-bold">Parents of {data.place.name} </span>
 					<span class="text-small">
 						{#each [...data.place.parents].reverse() as parent, i}
