@@ -263,6 +263,32 @@
 
 	}
 
+	function returnRank (expr) {
+
+		if (expr == 1) {
+			return "largest";
+		} else if (expr == data.place.count) {
+			return "smallest";
+		} else {
+			return expr + suffixer(expr) + " largest";
+		}
+
+	}
+
+	function popChange (expr) {
+
+		let pct = expr.toFixed(1);
+
+		if (pct > 0) {
+			return "An increase of " + pct + "%" + " since the 2011 Census.";
+		} else if (pct < 0) {
+			return "A decrease of " + pct + "%" + " since the 2011 Census.";
+		} else {
+			return "No change since the 2011 Census.";
+		}
+
+	}
+
 </script>
 
 <svelte:head>
@@ -437,17 +463,13 @@
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest Local Government District.",
-					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest District Electoral Area."
+					ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census. " + popChange(data.place.data.population.value.change.all),
+					lgd: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " Local Government District. " + popChange(data.place.data.population.value.change.all),
+					dea: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census, which made it the " + returnRank(data.place.data.population.value_rank["2021"].all) + " largest District Electoral Area."
 				}}
 				chart_compare_type = {chart_compare_type}
 			/>
-
-
-			<!-- BQ: Need to add increase/decrease in population since 2011 census for ni and lgd -->
-
-
+			
 			<GreyBox
 				id = "pop"
 				place = {data.place}
@@ -460,7 +482,7 @@
 					lgd: {
 						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-							data.place.data.population.value_rank["2021"].all + suffixer(data.place.data.population.value_rank["2021"].all) + " largest population of 11 Local Government Districts"
+							'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts"
 					},
 					dea: {
 						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
@@ -468,10 +490,6 @@
 					}
 				}}
 			/>
-
-
-			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
-
 
 			<GreyBox
 				id = "popden"
@@ -484,7 +502,7 @@
 					},
 					lgd: {
 						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"]) + '</span> of Northern Ireland households'
+						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
 					},
 					dea: {
 						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
@@ -492,10 +510,6 @@
 					}
 				}}
 			/>
-
-
-			<!-- BQ: need to add "<0.1%" for small values and "largest" and "smallest" outputs for ranked items -->
-
 
 		</div>
 		<!-- a19e9e -->
