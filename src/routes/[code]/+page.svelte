@@ -668,13 +668,16 @@
 						content: "<span >"  + " population growth/shrink to be added</span>"},
 					box_2: {
 						id: "age",
-						content: "GroupChart",
+						content: {
+							ni:"GroupChart",
+							lgd: "Chart not available",
+							dea: "GroupChart"
+						},
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"
 					},
@@ -690,7 +693,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"},
 					box_5: {
@@ -701,7 +703,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"
 					},
@@ -713,7 +714,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"
 					}
@@ -758,7 +758,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"},
 				box_5: {
@@ -861,7 +860,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 						},
-						zKey: "group",
 						label: chartLabel,
 						topic_prev_available: "true"},
 

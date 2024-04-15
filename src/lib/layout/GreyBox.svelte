@@ -37,7 +37,7 @@ if (topic_prev_available == "false") {
         <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{heading}</h3>
     {/if}
     <br/>
-    {#if (content == "StackedBarChart")}
+    {#if (content == "StackedBarChart" | (content.hasOwnProperty(place.type) & content[place.type] == "StackedBarChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
             <StackedBarChart data = {chart_data.none} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
@@ -47,17 +47,17 @@ if (topic_prev_available == "false") {
         {:else}
             <StackedBarChart data = {chart_data} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
         {/if}
-    {:else if (content == "GroupChart")}
+    {:else if (content == "GroupChart" | (content.hasOwnProperty(place.type) & content[place.type] == "GroupChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
-            <GroupChart data = {chart_data.none} zKey = {zKey} label = {label}/>
+            <GroupChart data = {chart_data.none} zKey = "group" label = {label}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
-            <GroupChart data = {chart_data.prev} zKey = {zKey} label = {label}/>
+            <GroupChart data = {chart_data.prev} zKey = "group" label = {label}/>
         {:else if (chart_data.hasOwnProperty("ni") & chart_compare_type == "ni")}
-            <GroupChart data = {chart_data.ni} zKey = {zKey} label = {label}/>
+            <GroupChart data = {chart_data.ni} zKey = "group" label = {label}/>
         {:else}
-            <GroupChart data = {chart_data} zKey = {zKey} label = {label}/>
+            <GroupChart data = {chart_data} zKey = "group" label = {label}/>
         {/if}
-    {:else if (content == "ProfileChart")}
+    {:else if (content == "ProfileChart" | (content.hasOwnProperty(place.type) & content[place.type] == "ProfileChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
             <ProfileChart data = {chart_data.none} zKey = {zKey} label = {label}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
@@ -67,7 +67,7 @@ if (topic_prev_available == "false") {
         {:else}
             <ProfileChart data = {chart_data} zKey = {zKey} label = {label}/>
         {/if}
-    {:else if (content == "BarChart")}
+    {:else if (content == "BarChart" | (content.hasOwnProperty(place.type) & content[place.type] == "BarChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
             <BarChart data = {chart_data.none} zKey = {zKey} label = {label}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
@@ -77,7 +77,7 @@ if (topic_prev_available == "false") {
         {:else}
             <BarChart data = {chart_data} zKey = {zKey} label = {label}/>
         {/if}
-    {:else if (content == "ColChart")}
+    {:else if (content == "ColChart"  | (content.hasOwnProperty(place.type) & content[place.type] == "ColChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
             <ColChart data = {chart_data.none} zKey = {zKey}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
