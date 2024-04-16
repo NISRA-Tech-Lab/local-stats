@@ -1,0 +1,1859 @@
+{
+  "code": "N21000514",
+  "name": "Downshire_West_D",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10000704",
+      "name": "Downshire West",
+      "type": "dea"
+    },
+    {
+      "code": "N09000007",
+      "name": "Lisburn and Castlereagh",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20002263",
+      "name": "Downshire_West_D1",
+      "type": "dz"
+    },
+    {
+      "code": "N20002265",
+      "name": "Downshire_West_D2",
+      "type": "dz"
+    },
+    {
+      "code": "N20002267",
+      "name": "Downshire_West_D3",
+      "type": "dz"
+    },
+    {
+      "code": "N20002270",
+      "name": "Downshire_West_D4",
+      "type": "dz"
+    },
+    {
+      "code": "N20002271",
+      "name": "Downshire_West_D5",
+      "type": "dz"
+    },
+    {
+      "code": "N20002272",
+      "name": "Downshire_West_D6",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-6.2132, 54.4745],
+    [-6.2348, 54.4845]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 2232
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 407
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 1065
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.0771,
+          "fair": 10.6631,
+          "good": 29.7939,
+          "very_bad": 1.4337,
+          "very_good": 54.0323
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 3.3803,
+          "four_people": 11.7371,
+          "one_person": 37.8404,
+          "three_people": 12.6761,
+          "two_people": 34.3662
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 4.2565,
+          "level_1_qualifications": 4.2012,
+          "level_2_qualifications": 12.272,
+          "level_3_qualifications": 12.4931,
+          "level_4_qualifications_and_above": 48.9221,
+          "no_qualifications": 16.1968,
+          "other_qualifications": 1.6584
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 6.586,
+          "northern_ireland": 82.7509,
+          "other_cob": 6.7204,
+          "republic_of_ireland": 2.1953,
+          "scotland": 1.4785,
+          "wales": 0.2688
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.3189,
+          "other_languages": 2.6811
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 17.9659,
+          "a15to39": 34.1846,
+          "a40to64": 30.6004,
+          "a65plus": 17.2491
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.9535,
+          "a20to49_hours": 2.0813,
+          "a50plus_hours": 2.7106,
+          "no_care": 89.2546
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 22.5358,
+          "none": 13.5305,
+          "other_religions": 2.1057,
+          "protestant_and_other_christian_including_christian_related": 61.828
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 52.4194,
+          "males": 47.5806
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "JSA": 0,
+          "DLA": 7.7778,
+          "IS": 1.1111,
+          "UC": 12.2222,
+          "PC": 5.5556,
+          "RP": 38.8889,
+          "AA": 6.6667,
+          "ESA": 7.7778,
+          "PIP": 14.4444,
+          "CA": 5.5556
+        },
+        "2022": {
+          "JSA": 0,
+          "DLA": 7.8652,
+          "AA": 6.7416,
+          "PIP": 13.4831,
+          "ESA": 7.8652,
+          "CA": 5.618,
+          "IS": 1.1236,
+          "RP": 38.2022,
+          "UC": 13.4831,
+          "PC": 5.618
+        },
+        "2017": {
+          "CA": 6.4103,
+          "RP": 39.7436,
+          "PIP": 0,
+          "DLA": 21.7949,
+          "UC": 0,
+          "ESA": 12.8205,
+          "PC": 7.6923,
+          "JSA": 1.2821,
+          "IS": 2.5641,
+          "AA": 7.6923
+        }
+      },
+      "value": {
+        "2023": {
+          "JSA": 0,
+          "DLA": 70,
+          "IS": 10,
+          "UC": 110,
+          "PC": 50,
+          "RP": 350,
+          "AA": 60,
+          "ESA": 70,
+          "PIP": 130,
+          "CA": 50
+        },
+        "2022": {
+          "JSA": 0,
+          "DLA": 70,
+          "AA": 60,
+          "PIP": 120,
+          "ESA": 70,
+          "CA": 50,
+          "IS": 10,
+          "RP": 340,
+          "UC": 120,
+          "PC": 50
+        },
+        "2017": {
+          "CA": 50,
+          "RP": 310,
+          "PIP": 0,
+          "DLA": 170,
+          "UC": 0,
+          "ESA": 100,
+          "PC": 60,
+          "JSA": 10,
+          "IS": 20,
+          "AA": 60
+        }
+      }
+    }
+  },
+  "hectares": 75,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Downshire_West_D",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downshire_West_D",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downshire_West_D",
+        "category": "bad",
+        "perc": 4.0771
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "fair",
+        "perc": 10.6631
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "good",
+        "perc": 29.7939
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "very_bad",
+        "perc": 1.4337
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "very_good",
+        "perc": 54.0323
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downshire_West_D",
+        "category": "five_people",
+        "perc": 3.3803
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "four_people",
+        "perc": 11.7371
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "one_person",
+        "perc": 37.8404
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "three_people",
+        "perc": 12.6761
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "two_people",
+        "perc": 34.3662
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downshire_West_D",
+        "category": "apprenticeship",
+        "perc": 4.2565
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_1_qualifications",
+        "perc": 4.2012
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_2_qualifications",
+        "perc": 12.272
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_3_qualifications",
+        "perc": 12.4931
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_4_qualifications_and_above",
+        "perc": 48.9221
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "no_qualifications",
+        "perc": 16.1968
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_qualifications",
+        "perc": 1.6584
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downshire_West_D",
+        "category": "england",
+        "perc": 6.586
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "northern_ireland",
+        "perc": 82.7509
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_cob",
+        "perc": 6.7204
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "republic_of_ireland",
+        "perc": 2.1953
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "scotland",
+        "perc": 1.4785
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "wales",
+        "perc": 0.2688
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downshire_West_D",
+        "category": "english",
+        "perc": 97.3189
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_languages",
+        "perc": 2.6811
+      }
+    ],
+    "age": [
+      {
+        "group": "Downshire_West_D",
+        "category": "a0to14",
+        "perc": 17.9659
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a15to39",
+        "perc": 34.1846
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a40to64",
+        "perc": 30.6004
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a65plus",
+        "perc": 17.2491
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downshire_West_D",
+        "category": "a1to19_hours",
+        "perc": 5.9535
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a20to49_hours",
+        "perc": 2.0813
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a50plus_hours",
+        "perc": 2.7106
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "no_care",
+        "perc": 89.2546
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downshire_West_D",
+        "category": "catholic",
+        "perc": 22.5358
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "none",
+        "perc": 13.5305
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_religions",
+        "perc": 2.1057
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 61.828
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downshire_West_D",
+        "category": "females",
+        "perc": 52.4194
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "males",
+        "perc": 47.5806
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 7.7778
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 1.1111
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 5.5556
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 38.8889
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 6.6667
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 7.7778
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 14.4444
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 5.5556
+        }
+      ],
+      "2022": [
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 7.8652
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 6.7416
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 13.4831
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 7.8652
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 5.618
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 1.1236
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 38.2022
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 13.4831
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 5.618
+        }
+      ],
+      "2017": [
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 6.4103
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 39.7436
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 21.7949
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 12.8205
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 7.6923
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 1.2821
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 2.5641
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 7.6923
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.0771
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 10.6631
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.7939
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.4337
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 54.0323
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 3.3803
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 11.7371
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 37.8404
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 12.6761
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 34.3662
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 4.2565
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 4.2012
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 12.272
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 12.4931
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 48.9221
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 16.1968
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.6584
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 6.586
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 82.7509
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 6.7204
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 2.1953
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.4785
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2688
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.3189
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.6811
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 17.9659
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 34.1846
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 30.6004
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 17.2491
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.9535
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.0813
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 2.7106
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 89.2546
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 22.5358
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 13.5305
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 2.1057
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 61.828
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 52.4194
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 47.5806
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 7.7778
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 1.1111
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 12.2222
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 5.5556
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 38.8889
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 6.6667
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 7.7778
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 14.4444
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 5.5556
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.8652
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 6.7416
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 13.4831
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 7.8652
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 5.618
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.1236
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 38.2022
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 13.4831
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.618
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 6.4103
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 39.7436
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 21.7949
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 12.8205
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 7.6923
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 1.2821
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 2.5641
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 7.6923
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Downshire_West_D",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downshire_West_D",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downshire_West_D",
+        "category": "bad",
+        "perc": 4.0771
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "fair",
+        "perc": 10.6631
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "good",
+        "perc": 29.7939
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "very_bad",
+        "perc": 1.4337
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "very_good",
+        "perc": 54.0323
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downshire_West_D",
+        "category": "five_people",
+        "perc": 3.3803
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "four_people",
+        "perc": 11.7371
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "one_person",
+        "perc": 37.8404
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "three_people",
+        "perc": 12.6761
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "two_people",
+        "perc": 34.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downshire_West_D",
+        "category": "apprenticeship",
+        "perc": 4.2565
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_1_qualifications",
+        "perc": 4.2012
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_2_qualifications",
+        "perc": 12.272
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_3_qualifications",
+        "perc": 12.4931
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "level_4_qualifications_and_above",
+        "perc": 48.9221
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "no_qualifications",
+        "perc": 16.1968
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_qualifications",
+        "perc": 1.6584
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downshire_West_D",
+        "category": "england",
+        "perc": 6.586
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "northern_ireland",
+        "perc": 82.7509
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_cob",
+        "perc": 6.7204
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "republic_of_ireland",
+        "perc": 2.1953
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "scotland",
+        "perc": 1.4785
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "wales",
+        "perc": 0.2688
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downshire_West_D",
+        "category": "english",
+        "perc": 97.3189
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_languages",
+        "perc": 2.6811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Downshire_West_D",
+        "category": "a0to14",
+        "perc": 17.9659
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a15to39",
+        "perc": 34.1846
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a40to64",
+        "perc": 30.6004
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a65plus",
+        "perc": 17.2491
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downshire_West_D",
+        "category": "a1to19_hours",
+        "perc": 5.9535
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a20to49_hours",
+        "perc": 2.0813
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "a50plus_hours",
+        "perc": 2.7106
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "no_care",
+        "perc": 89.2546
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downshire_West_D",
+        "category": "catholic",
+        "perc": 22.5358
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "none",
+        "perc": 13.5305
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "other_religions",
+        "perc": 2.1057
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 61.828
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downshire_West_D",
+        "category": "females",
+        "perc": 52.4194
+      },
+      {
+        "group": "Downshire_West_D",
+        "category": "males",
+        "perc": 47.5806
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 7.7778
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 1.1111
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 5.5556
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 38.8889
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 6.6667
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 7.7778
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 14.4444
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 5.5556
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        }
+      ],
+      "2022": [
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 7.8652
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 6.7416
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 13.4831
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 7.8652
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 5.618
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 1.1236
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 38.2022
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 13.4831
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 5.618
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        }
+      ],
+      "2017": [
+        {
+          "group": "Downshire_West_D",
+          "category": "CA",
+          "perc": 6.4103
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "RP",
+          "perc": 39.7436
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "DLA",
+          "perc": 21.7949
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "ESA",
+          "perc": 12.8205
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "PC",
+          "perc": 7.6923
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "JSA",
+          "perc": 1.2821
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "IS",
+          "perc": 2.5641
+        },
+        {
+          "group": "Downshire_West_D",
+          "category": "AA",
+          "perc": 7.6923
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

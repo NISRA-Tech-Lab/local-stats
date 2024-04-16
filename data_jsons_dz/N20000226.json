@@ -1,0 +1,1833 @@
+{
+  "code": "N20000226",
+  "name": "Glengormley_Urban_D3",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000051",
+      "name": "Glengormley_Urban_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000105",
+      "name": "Glengormley Urban",
+      "type": "dea"
+    },
+    {
+      "code": "N09000001",
+      "name": "Antrim and Newtownabbey",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.9529, 54.6792],
+    [-5.9609, 54.683]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 605
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 846
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 256
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 5.124,
+          "fair": 13.2231,
+          "good": 36.3636,
+          "very_bad": 1.157,
+          "very_good": 44.1322
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 2.7132,
+          "four_people": 15.8915,
+          "one_person": 24.8062,
+          "three_people": 18.2171,
+          "two_people": 38.3721
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.2144,
+          "level_1_qualifications": 8.4168,
+          "level_2_qualifications": 18.6373,
+          "level_3_qualifications": 16.8337,
+          "level_4_qualifications_and_above": 26.2525,
+          "no_qualifications": 19.6393,
+          "other_qualifications": 3.006
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.1488,
+          "northern_ireland": 91.5702,
+          "other_cob": 5.124,
+          "republic_of_ireland": 0.1653,
+          "scotland": 0.8264,
+          "wales": 0.1653
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 96.4346,
+          "other_languages": 3.5654
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 16.6667,
+          "a15to39": 29.703,
+          "a40to64": 35.6436,
+          "a65plus": 17.9868
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.2937,
+          "a20to49_hours": 3.1469,
+          "a50plus_hours": 4.1958,
+          "no_care": 86.3636
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 28.0992,
+          "none": 12.2314,
+          "other_religions": 3.3058,
+          "protestant_and_other_christian_including_christian_related": 56.3636
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 51.0744,
+          "males": 48.9256
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "PIP": 12.9032,
+          "CA": 6.4516,
+          "IS": 0,
+          "ESA": 9.6774,
+          "DLA": 9.6774,
+          "PC": 3.2258,
+          "JSA": 0,
+          "AA": 3.2258,
+          "RP": 38.7097,
+          "UC": 16.129
+        },
+        "2022": {
+          "UC": 13.3333,
+          "ESA": 10,
+          "IS": 0,
+          "AA": 3.3333,
+          "RP": 40,
+          "PC": 3.3333,
+          "PIP": 13.3333,
+          "DLA": 10,
+          "CA": 6.6667,
+          "JSA": 0
+        },
+        "2017": {
+          "IS": 3.4483,
+          "AA": 3.4483,
+          "PC": 3.4483,
+          "PIP": 0,
+          "RP": 41.3793,
+          "JSA": 3.4483,
+          "UC": 0,
+          "DLA": 24.1379,
+          "ESA": 13.7931,
+          "CA": 6.8966
+        }
+      },
+      "value": {
+        "2023": {
+          "PIP": 40,
+          "CA": 20,
+          "IS": 0,
+          "ESA": 30,
+          "DLA": 30,
+          "PC": 10,
+          "JSA": 0,
+          "AA": 10,
+          "RP": 120,
+          "UC": 50
+        },
+        "2022": {
+          "UC": 40,
+          "ESA": 30,
+          "IS": 0,
+          "AA": 10,
+          "RP": 120,
+          "PC": 10,
+          "PIP": 40,
+          "DLA": 30,
+          "CA": 20,
+          "JSA": 0
+        },
+        "2017": {
+          "IS": 10,
+          "AA": 10,
+          "PC": 10,
+          "PIP": 0,
+          "RP": 120,
+          "JSA": 10,
+          "UC": 0,
+          "DLA": 70,
+          "ESA": 40,
+          "CA": 20
+        }
+      }
+    }
+  },
+  "hectares": 9,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "bad",
+        "perc": 5.124
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "fair",
+        "perc": 13.2231
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "good",
+        "perc": 36.3636
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "very_bad",
+        "perc": 1.157
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "very_good",
+        "perc": 44.1322
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "five_people",
+        "perc": 2.7132
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "four_people",
+        "perc": 15.8915
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "one_person",
+        "perc": 24.8062
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "three_people",
+        "perc": 18.2171
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "two_people",
+        "perc": 38.3721
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "apprenticeship",
+        "perc": 7.2144
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_1_qualifications",
+        "perc": 8.4168
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_2_qualifications",
+        "perc": 18.6373
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_3_qualifications",
+        "perc": 16.8337
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.2525
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "no_qualifications",
+        "perc": 19.6393
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_qualifications",
+        "perc": 3.006
+      }
+    ],
+    "cob": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "england",
+        "perc": 2.1488
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "northern_ireland",
+        "perc": 91.5702
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_cob",
+        "perc": 5.124
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "republic_of_ireland",
+        "perc": 0.1653
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "scotland",
+        "perc": 0.8264
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "wales",
+        "perc": 0.1653
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "english",
+        "perc": 96.4346
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_languages",
+        "perc": 3.5654
+      }
+    ],
+    "age": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a0to14",
+        "perc": 16.6667
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a15to39",
+        "perc": 29.703
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a40to64",
+        "perc": 35.6436
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a65plus",
+        "perc": 17.9868
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a1to19_hours",
+        "perc": 6.2937
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a20to49_hours",
+        "perc": 3.1469
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a50plus_hours",
+        "perc": 4.1958
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "no_care",
+        "perc": 86.3636
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "catholic",
+        "perc": 28.0992
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "none",
+        "perc": 12.2314
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_religions",
+        "perc": 3.3058
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 56.3636
+      }
+    ],
+    "sex": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "females",
+        "perc": 51.0744
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "males",
+        "perc": 48.9256
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 12.9032
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.4516
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 9.6774
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 9.6774
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.2258
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.2258
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 38.7097
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 16.129
+        }
+      ],
+      "2022": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 13.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 10
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 40
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 13.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 10
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.6667
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 0
+        }
+      ],
+      "2017": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 41.3793
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 24.1379
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 13.7931
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.8966
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.124
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.2231
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 36.3636
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.157
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 44.1322
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 2.7132
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 15.8915
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 24.8062
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 18.2171
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 38.3721
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.2144
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 8.4168
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 18.6373
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.8337
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.2525
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 19.6393
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 3.006
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.1488
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 91.5702
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 5.124
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.1653
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.8264
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1653
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 96.4346
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 3.5654
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 16.6667
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 29.703
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 35.6436
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 17.9868
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.2937
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.1469
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.1958
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 86.3636
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 28.0992
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 12.2314
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 3.3058
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 56.3636
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 51.0744
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 48.9256
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 12.9032
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 6.4516
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 9.6774
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 9.6774
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 3.2258
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 3.2258
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 38.7097
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 16.129
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 13.3333
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 10
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 3.3333
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 40
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 3.3333
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 13.3333
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 10
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.6667
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 3.4483
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 3.4483
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 3.4483
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 41.3793
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 3.4483
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 24.1379
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 13.7931
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 6.8966
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "bad",
+        "perc": 5.124
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "fair",
+        "perc": 13.2231
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "good",
+        "perc": 36.3636
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "very_bad",
+        "perc": 1.157
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "very_good",
+        "perc": 44.1322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "five_people",
+        "perc": 2.7132
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "four_people",
+        "perc": 15.8915
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "one_person",
+        "perc": 24.8062
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "three_people",
+        "perc": 18.2171
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "two_people",
+        "perc": 38.3721
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "apprenticeship",
+        "perc": 7.2144
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_1_qualifications",
+        "perc": 8.4168
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_2_qualifications",
+        "perc": 18.6373
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_3_qualifications",
+        "perc": 16.8337
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.2525
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "no_qualifications",
+        "perc": 19.6393
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_qualifications",
+        "perc": 3.006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "england",
+        "perc": 2.1488
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "northern_ireland",
+        "perc": 91.5702
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_cob",
+        "perc": 5.124
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "republic_of_ireland",
+        "perc": 0.1653
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "scotland",
+        "perc": 0.8264
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "wales",
+        "perc": 0.1653
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "english",
+        "perc": 96.4346
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_languages",
+        "perc": 3.5654
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a0to14",
+        "perc": 16.6667
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a15to39",
+        "perc": 29.703
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a40to64",
+        "perc": 35.6436
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a65plus",
+        "perc": 17.9868
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a1to19_hours",
+        "perc": 6.2937
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a20to49_hours",
+        "perc": 3.1469
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "a50plus_hours",
+        "perc": 4.1958
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "no_care",
+        "perc": 86.3636
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "catholic",
+        "perc": 28.0992
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "none",
+        "perc": 12.2314
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "other_religions",
+        "perc": 3.3058
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 56.3636
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "females",
+        "perc": 51.0744
+      },
+      {
+        "group": "Glengormley_Urban_D3",
+        "category": "males",
+        "perc": 48.9256
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 12.9032
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.4516
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 9.6774
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 9.6774
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.2258
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.2258
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 38.7097
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 16.129
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        }
+      ],
+      "2022": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 13.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 10
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 40
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 13.3333
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 10
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.6667
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "IS",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "AA",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PC",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "RP",
+          "perc": 41.3793
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "JSA",
+          "perc": 3.4483
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "DLA",
+          "perc": 24.1379
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "ESA",
+          "perc": 13.7931
+        },
+        {
+          "group": "Glengormley_Urban_D3",
+          "category": "CA",
+          "perc": 6.8966
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

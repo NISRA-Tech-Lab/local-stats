@@ -1,0 +1,1833 @@
+{
+  "code": "N20000511",
+  "name": "Lurgan_F6",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000112",
+      "name": "Lurgan_F",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000206",
+      "name": "Lurgan",
+      "type": "dea"
+    },
+    {
+      "code": "N09000002",
+      "name": "Armagh City, Banbridge and Craigavon",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-6.3421, 54.4622],
+    [-6.3495, 54.466]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 535
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 1445
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 217
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 12.3134,
+          "fair": 17.3507,
+          "good": 27.0522,
+          "very_bad": 4.6642,
+          "very_good": 38.6194
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 10.5505,
+          "four_people": 11.9266,
+          "one_person": 31.6514,
+          "three_people": 16.9725,
+          "two_people": 28.8991
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.0465,
+          "level_1_qualifications": 7.6744,
+          "level_2_qualifications": 13.0233,
+          "level_3_qualifications": 14.8837,
+          "level_4_qualifications_and_above": 16.5116,
+          "no_qualifications": 40,
+          "other_qualifications": 1.8605
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 0.9346,
+          "northern_ireland": 94.3925,
+          "other_cob": 3.5514,
+          "republic_of_ireland": 0.7477,
+          "scotland": 0.3738,
+          "wales": 0
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 96.139,
+          "other_languages": 3.861
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 17.9439,
+          "a15to39": 28.4112,
+          "a40to64": 34.9533,
+          "a65plus": 18.6916
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.6602,
+          "a20to49_hours": 3.6893,
+          "a50plus_hours": 7.9612,
+          "no_care": 83.6893
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 94.9533,
+          "none": 2.4299,
+          "other_religions": 0.1869,
+          "protestant_and_other_christian_including_christian_related": 2.4299
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.3458,
+          "males": 50.6542
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "UC": 13.0435,
+          "CA": 10.8696,
+          "AA": 4.3478,
+          "PIP": 19.5652,
+          "ESA": 13.0435,
+          "PC": 8.6957,
+          "IS": 2.1739,
+          "DLA": 6.5217,
+          "JSA": 0,
+          "RP": 21.7391
+        },
+        "2022": {
+          "UC": 10.6383,
+          "RP": 21.2766,
+          "AA": 4.2553,
+          "PC": 10.6383,
+          "PIP": 19.1489,
+          "DLA": 6.383,
+          "JSA": 2.1277,
+          "ESA": 12.766,
+          "CA": 10.6383,
+          "IS": 2.1277
+        },
+        "2017": {
+          "PC": 13.9535,
+          "JSA": 2.3256,
+          "DLA": 27.907,
+          "CA": 11.6279,
+          "UC": 0,
+          "IS": 4.6512,
+          "RP": 23.2558,
+          "PIP": 0,
+          "AA": 2.3256,
+          "ESA": 13.9535
+        }
+      },
+      "value": {
+        "2023": {
+          "UC": 60,
+          "CA": 50,
+          "AA": 20,
+          "PIP": 90,
+          "ESA": 60,
+          "PC": 40,
+          "IS": 10,
+          "DLA": 30,
+          "JSA": 0,
+          "RP": 100
+        },
+        "2022": {
+          "UC": 50,
+          "RP": 100,
+          "AA": 20,
+          "PC": 50,
+          "PIP": 90,
+          "DLA": 30,
+          "JSA": 10,
+          "ESA": 60,
+          "CA": 50,
+          "IS": 10
+        },
+        "2017": {
+          "PC": 60,
+          "JSA": 10,
+          "DLA": 120,
+          "CA": 50,
+          "UC": 0,
+          "IS": 20,
+          "RP": 100,
+          "PIP": 0,
+          "AA": 10,
+          "ESA": 60
+        }
+      }
+    }
+  },
+  "hectares": 10,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Lurgan_F6",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Lurgan_F6",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Lurgan_F6",
+        "category": "bad",
+        "perc": 12.3134
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "fair",
+        "perc": 17.3507
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "good",
+        "perc": 27.0522
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "very_bad",
+        "perc": 4.6642
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "very_good",
+        "perc": 38.6194
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Lurgan_F6",
+        "category": "five_people",
+        "perc": 10.5505
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "four_people",
+        "perc": 11.9266
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "one_person",
+        "perc": 31.6514
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "three_people",
+        "perc": 16.9725
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "two_people",
+        "perc": 28.8991
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Lurgan_F6",
+        "category": "apprenticeship",
+        "perc": 6.0465
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_1_qualifications",
+        "perc": 7.6744
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_2_qualifications",
+        "perc": 13.0233
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_3_qualifications",
+        "perc": 14.8837
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_4_qualifications_and_above",
+        "perc": 16.5116
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "no_qualifications",
+        "perc": 40
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_qualifications",
+        "perc": 1.8605
+      }
+    ],
+    "cob": [
+      {
+        "group": "Lurgan_F6",
+        "category": "england",
+        "perc": 0.9346
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "northern_ireland",
+        "perc": 94.3925
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_cob",
+        "perc": 3.5514
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "republic_of_ireland",
+        "perc": 0.7477
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "scotland",
+        "perc": 0.3738
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Lurgan_F6",
+        "category": "english",
+        "perc": 96.139
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_languages",
+        "perc": 3.861
+      }
+    ],
+    "age": [
+      {
+        "group": "Lurgan_F6",
+        "category": "a0to14",
+        "perc": 17.9439
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a15to39",
+        "perc": 28.4112
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a40to64",
+        "perc": 34.9533
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a65plus",
+        "perc": 18.6916
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Lurgan_F6",
+        "category": "a1to19_hours",
+        "perc": 4.6602
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a20to49_hours",
+        "perc": 3.6893
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a50plus_hours",
+        "perc": 7.9612
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "no_care",
+        "perc": 83.6893
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Lurgan_F6",
+        "category": "catholic",
+        "perc": 94.9533
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "none",
+        "perc": 2.4299
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_religions",
+        "perc": 0.1869
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 2.4299
+      }
+    ],
+    "sex": [
+      {
+        "group": "Lurgan_F6",
+        "category": "females",
+        "perc": 49.3458
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "males",
+        "perc": 50.6542
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 13.0435
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 10.8696
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 4.3478
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 19.5652
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 13.0435
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 8.6957
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 2.1739
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 6.5217
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 21.7391
+        }
+      ],
+      "2022": [
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 21.2766
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 4.2553
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 19.1489
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 6.383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 2.1277
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 12.766
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 2.1277
+        }
+      ],
+      "2017": [
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 13.9535
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 2.3256
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 27.907
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 11.6279
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 4.6512
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 23.2558
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 2.3256
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 13.9535
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 12.3134
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 17.3507
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.0522
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 4.6642
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 38.6194
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 10.5505
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 11.9266
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 31.6514
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.9725
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 28.8991
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.0465
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 7.6744
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.0233
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 14.8837
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 16.5116
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 40
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.8605
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 0.9346
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 94.3925
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.5514
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.7477
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.3738
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 96.139
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 3.861
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 17.9439
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 28.4112
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.9533
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 18.6916
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.6602
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.6893
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 7.9612
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 83.6893
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 94.9533
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 2.4299
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.1869
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 2.4299
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.3458
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.6542
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 13.0435
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 10.8696
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 4.3478
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 19.5652
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 13.0435
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 8.6957
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 2.1739
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 6.5217
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 21.7391
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 10.6383
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 21.2766
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 4.2553
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 10.6383
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 19.1489
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 6.383
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 2.1277
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 12.766
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 10.6383
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 2.1277
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 13.9535
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.3256
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 27.907
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 11.6279
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 4.6512
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 23.2558
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 2.3256
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 13.9535
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Lurgan_F6",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Lurgan_F6",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Lurgan_F6",
+        "category": "bad",
+        "perc": 12.3134
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "fair",
+        "perc": 17.3507
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "good",
+        "perc": 27.0522
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "very_bad",
+        "perc": 4.6642
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "very_good",
+        "perc": 38.6194
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Lurgan_F6",
+        "category": "five_people",
+        "perc": 10.5505
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "four_people",
+        "perc": 11.9266
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "one_person",
+        "perc": 31.6514
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "three_people",
+        "perc": 16.9725
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "two_people",
+        "perc": 28.8991
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Lurgan_F6",
+        "category": "apprenticeship",
+        "perc": 6.0465
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_1_qualifications",
+        "perc": 7.6744
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_2_qualifications",
+        "perc": 13.0233
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_3_qualifications",
+        "perc": 14.8837
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "level_4_qualifications_and_above",
+        "perc": 16.5116
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "no_qualifications",
+        "perc": 40
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_qualifications",
+        "perc": 1.8605
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Lurgan_F6",
+        "category": "england",
+        "perc": 0.9346
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "northern_ireland",
+        "perc": 94.3925
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_cob",
+        "perc": 3.5514
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "republic_of_ireland",
+        "perc": 0.7477
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "scotland",
+        "perc": 0.3738
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "wales",
+        "perc": 0
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Lurgan_F6",
+        "category": "english",
+        "perc": 96.139
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_languages",
+        "perc": 3.861
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Lurgan_F6",
+        "category": "a0to14",
+        "perc": 17.9439
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a15to39",
+        "perc": 28.4112
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a40to64",
+        "perc": 34.9533
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a65plus",
+        "perc": 18.6916
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Lurgan_F6",
+        "category": "a1to19_hours",
+        "perc": 4.6602
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a20to49_hours",
+        "perc": 3.6893
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "a50plus_hours",
+        "perc": 7.9612
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "no_care",
+        "perc": 83.6893
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Lurgan_F6",
+        "category": "catholic",
+        "perc": 94.9533
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "none",
+        "perc": 2.4299
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "other_religions",
+        "perc": 0.1869
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 2.4299
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Lurgan_F6",
+        "category": "females",
+        "perc": 49.3458
+      },
+      {
+        "group": "Lurgan_F6",
+        "category": "males",
+        "perc": 50.6542
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 13.0435
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 10.8696
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 4.3478
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 19.5652
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 13.0435
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 8.6957
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 2.1739
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 6.5217
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 21.7391
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        }
+      ],
+      "2022": [
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 21.2766
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 4.2553
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 19.1489
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 6.383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 2.1277
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 12.766
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 10.6383
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 2.1277
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "Lurgan_F6",
+          "category": "PC",
+          "perc": 13.9535
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "JSA",
+          "perc": 2.3256
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "DLA",
+          "perc": 27.907
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "CA",
+          "perc": 11.6279
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "IS",
+          "perc": 4.6512
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "RP",
+          "perc": 23.2558
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "AA",
+          "perc": 2.3256
+        },
+        {
+          "group": "Lurgan_F6",
+          "category": "ESA",
+          "perc": 13.9535
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

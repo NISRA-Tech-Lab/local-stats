@@ -1,0 +1,1833 @@
+{
+  "code": "N20001132",
+  "name": "Botanic_L3",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000261",
+      "name": "Botanic_L",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000303",
+      "name": "Botanic",
+      "type": "dea"
+    },
+    {
+      "code": "N09000003",
+      "name": "Belfast",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.9369, 54.582],
+    [-5.9453, 54.585]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 507
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 1726
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 248
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 5.1282,
+          "fair": 14.0039,
+          "good": 34.5168,
+          "very_bad": 2.5641,
+          "very_good": 43.787
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 4.4177,
+          "four_people": 8.0321,
+          "one_person": 54.2169,
+          "three_people": 12.4498,
+          "two_people": 20.8835
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 2.6639,
+          "level_1_qualifications": 4.0984,
+          "level_2_qualifications": 7.9918,
+          "level_3_qualifications": 31.9672,
+          "level_4_qualifications_and_above": 36.0656,
+          "no_qualifications": 14.7541,
+          "other_qualifications": 2.459
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 8.0868,
+          "northern_ireland": 59.5661,
+          "other_cob": 27.6134,
+          "republic_of_ireland": 4.142,
+          "scotland": 0.3945,
+          "wales": 0.1972
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 82.2355,
+          "other_languages": 17.7645
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 3.7402,
+          "a15to39": 71.6535,
+          "a40to64": 16.3386,
+          "a65plus": 8.2677
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 3.4,
+          "a20to49_hours": 1.6,
+          "a50plus_hours": 1,
+          "no_care": 94
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 43.5644,
+          "none": 23.1683,
+          "other_religions": 9.703,
+          "protestant_and_other_christian_including_christian_related": 23.5644
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 45.9566,
+          "males": 54.0434
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "PIP": 23.8095,
+          "AA": 4.7619,
+          "UC": 23.8095,
+          "DLA": 4.7619,
+          "CA": 0,
+          "IS": 0,
+          "JSA": 0,
+          "ESA": 19.0476,
+          "PC": 9.5238,
+          "RP": 14.2857
+        },
+        "2022": {
+          "UC": 18.1818,
+          "ESA": 22.7273,
+          "DLA": 4.5455,
+          "PIP": 27.2727,
+          "RP": 13.6364,
+          "CA": 0,
+          "IS": 0,
+          "PC": 9.0909,
+          "JSA": 0,
+          "AA": 4.5455
+        },
+        "2017": {
+          "PIP": 4.7619,
+          "UC": 0,
+          "PC": 9.5238,
+          "JSA": 4.7619,
+          "ESA": 28.5714,
+          "CA": 0,
+          "IS": 0,
+          "RP": 19.0476,
+          "DLA": 28.5714,
+          "AA": 4.7619
+        }
+      },
+      "value": {
+        "2023": {
+          "PIP": 50,
+          "AA": 10,
+          "UC": 50,
+          "DLA": 10,
+          "CA": 0,
+          "IS": 0,
+          "JSA": 0,
+          "ESA": 40,
+          "PC": 20,
+          "RP": 30
+        },
+        "2022": {
+          "UC": 40,
+          "ESA": 50,
+          "DLA": 10,
+          "PIP": 60,
+          "RP": 30,
+          "CA": 0,
+          "IS": 0,
+          "PC": 20,
+          "JSA": 0,
+          "AA": 10
+        },
+        "2017": {
+          "PIP": 10,
+          "UC": 0,
+          "PC": 20,
+          "JSA": 10,
+          "ESA": 60,
+          "CA": 0,
+          "IS": 0,
+          "RP": 40,
+          "DLA": 60,
+          "AA": 10
+        }
+      }
+    }
+  },
+  "hectares": 7,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Botanic_L3",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Botanic_L3",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Botanic_L3",
+        "category": "bad",
+        "perc": 5.1282
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "fair",
+        "perc": 14.0039
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "good",
+        "perc": 34.5168
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "very_bad",
+        "perc": 2.5641
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "very_good",
+        "perc": 43.787
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Botanic_L3",
+        "category": "five_people",
+        "perc": 4.4177
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "four_people",
+        "perc": 8.0321
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "one_person",
+        "perc": 54.2169
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "three_people",
+        "perc": 12.4498
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "two_people",
+        "perc": 20.8835
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Botanic_L3",
+        "category": "apprenticeship",
+        "perc": 2.6639
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_1_qualifications",
+        "perc": 4.0984
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_2_qualifications",
+        "perc": 7.9918
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_3_qualifications",
+        "perc": 31.9672
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.0656
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "no_qualifications",
+        "perc": 14.7541
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_qualifications",
+        "perc": 2.459
+      }
+    ],
+    "cob": [
+      {
+        "group": "Botanic_L3",
+        "category": "england",
+        "perc": 8.0868
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "northern_ireland",
+        "perc": 59.5661
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_cob",
+        "perc": 27.6134
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "republic_of_ireland",
+        "perc": 4.142
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "scotland",
+        "perc": 0.3945
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "wales",
+        "perc": 0.1972
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Botanic_L3",
+        "category": "english",
+        "perc": 82.2355
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_languages",
+        "perc": 17.7645
+      }
+    ],
+    "age": [
+      {
+        "group": "Botanic_L3",
+        "category": "a0to14",
+        "perc": 3.7402
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a15to39",
+        "perc": 71.6535
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a40to64",
+        "perc": 16.3386
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a65plus",
+        "perc": 8.2677
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Botanic_L3",
+        "category": "a1to19_hours",
+        "perc": 3.4
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a20to49_hours",
+        "perc": 1.6
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a50plus_hours",
+        "perc": 1
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "no_care",
+        "perc": 94
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Botanic_L3",
+        "category": "catholic",
+        "perc": 43.5644
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "none",
+        "perc": 23.1683
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_religions",
+        "perc": 9.703
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.5644
+      }
+    ],
+    "sex": [
+      {
+        "group": "Botanic_L3",
+        "category": "females",
+        "perc": 45.9566
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "males",
+        "perc": 54.0434
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 23.8095
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 23.8095
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 19.0476
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.5238
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 14.2857
+        }
+      ],
+      "2022": [
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 18.1818
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 22.7273
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 4.5455
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 27.2727
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 13.6364
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.0909
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.5455
+        }
+      ],
+      "2017": [
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.5238
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 28.5714
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 19.0476
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 28.5714
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.7619
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.1282
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 14.0039
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 34.5168
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.5641
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 43.787
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 4.4177
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 8.0321
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 54.2169
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 12.4498
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 20.8835
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 2.6639
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 4.0984
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 7.9918
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 31.9672
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.0656
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 14.7541
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.459
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 8.0868
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 59.5661
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 27.6134
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 4.142
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.3945
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1972
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 82.2355
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 17.7645
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 3.7402
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 71.6535
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 16.3386
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 8.2677
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 3.4
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 1.6
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 1
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 94
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 43.5644
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 23.1683
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 9.703
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.5644
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 45.9566
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 54.0434
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 23.8095
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 4.7619
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 23.8095
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 4.7619
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 19.0476
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 9.5238
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 14.2857
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 18.1818
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 22.7273
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 4.5455
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 27.2727
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 13.6364
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 9.0909
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 4.5455
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 4.7619
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 9.5238
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 4.7619
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 28.5714
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 19.0476
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 28.5714
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 4.7619
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Botanic_L3",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Botanic_L3",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Botanic_L3",
+        "category": "bad",
+        "perc": 5.1282
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "fair",
+        "perc": 14.0039
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "good",
+        "perc": 34.5168
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "very_bad",
+        "perc": 2.5641
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "very_good",
+        "perc": 43.787
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Botanic_L3",
+        "category": "five_people",
+        "perc": 4.4177
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "four_people",
+        "perc": 8.0321
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "one_person",
+        "perc": 54.2169
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "three_people",
+        "perc": 12.4498
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "two_people",
+        "perc": 20.8835
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Botanic_L3",
+        "category": "apprenticeship",
+        "perc": 2.6639
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_1_qualifications",
+        "perc": 4.0984
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_2_qualifications",
+        "perc": 7.9918
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_3_qualifications",
+        "perc": 31.9672
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.0656
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "no_qualifications",
+        "perc": 14.7541
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_qualifications",
+        "perc": 2.459
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Botanic_L3",
+        "category": "england",
+        "perc": 8.0868
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "northern_ireland",
+        "perc": 59.5661
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_cob",
+        "perc": 27.6134
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "republic_of_ireland",
+        "perc": 4.142
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "scotland",
+        "perc": 0.3945
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "wales",
+        "perc": 0.1972
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Botanic_L3",
+        "category": "english",
+        "perc": 82.2355
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_languages",
+        "perc": 17.7645
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Botanic_L3",
+        "category": "a0to14",
+        "perc": 3.7402
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a15to39",
+        "perc": 71.6535
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a40to64",
+        "perc": 16.3386
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a65plus",
+        "perc": 8.2677
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Botanic_L3",
+        "category": "a1to19_hours",
+        "perc": 3.4
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a20to49_hours",
+        "perc": 1.6
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "a50plus_hours",
+        "perc": 1
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "no_care",
+        "perc": 94
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Botanic_L3",
+        "category": "catholic",
+        "perc": 43.5644
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "none",
+        "perc": 23.1683
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "other_religions",
+        "perc": 9.703
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.5644
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Botanic_L3",
+        "category": "females",
+        "perc": 45.9566
+      },
+      {
+        "group": "Botanic_L3",
+        "category": "males",
+        "perc": 54.0434
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 23.8095
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 23.8095
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 19.0476
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.5238
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 14.2857
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        }
+      ],
+      "2022": [
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 18.1818
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 22.7273
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 4.5455
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 27.2727
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 13.6364
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.0909
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.5455
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "Botanic_L3",
+          "category": "PIP",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "PC",
+          "perc": 9.5238
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "JSA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "ESA",
+          "perc": 28.5714
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "CA",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "RP",
+          "perc": 19.0476
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "DLA",
+          "perc": 28.5714
+        },
+        {
+          "group": "Botanic_L3",
+          "category": "AA",
+          "perc": 4.7619
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

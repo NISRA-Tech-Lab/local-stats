@@ -1,0 +1,1971 @@
+{
+  "code": "N10001105",
+  "name": "Comber",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000011",
+      "name": "Ards and North Down",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N21000771",
+      "name": "Comber_A",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000772",
+      "name": "Comber_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000773",
+      "name": "Comber_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000774",
+      "name": "Comber_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000775",
+      "name": "Comber_E",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000776",
+      "name": "Comber_F",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000777",
+      "name": "Comber_G",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000778",
+      "name": "Comber_H",
+      "type": "sdz"
+    }
+  ],
+  "bounds": [
+    [-5.5838, 54.4464],
+    [-5.8331, 54.5754]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 19487
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 54
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 8227
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.5464,
+          "fair": 13.7469,
+          "good": 32.4507,
+          "very_bad": 1.3752,
+          "very_good": 47.8807
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 5.9682,
+          "four_people": 13.3949,
+          "one_person": 27.5191,
+          "three_people": 16.2757,
+          "two_people": 36.8421
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.5335,
+          "level_1_qualifications": 6.5414,
+          "level_2_qualifications": 14.0501,
+          "level_3_qualifications": 15.6684,
+          "level_4_qualifications_and_above": 34.9144,
+          "no_qualifications": 18.9732,
+          "other_qualifications": 2.3189
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 3.74,
+          "northern_ireland": 90.9553,
+          "other_cob": 3.3244,
+          "republic_of_ireland": 0.867,
+          "scotland": 1.0055,
+          "wales": 0.1077
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 98.5064,
+          "other_languages": 1.4936
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 16.1433,
+          "a15to39": 26.6164,
+          "a40to64": 34.611,
+          "a65plus": 22.6293
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 7.6162,
+          "a20to49_hours": 2.5838,
+          "a50plus_hours": 3.8919,
+          "no_care": 85.9081
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 7.3983,
+          "none": 13.8064,
+          "other_religions": 0.9645,
+          "protestant_and_other_christian_including_christian_related": 77.8308
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.9647,
+          "males": 49.0353
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "UC": 10.9426,
+          "DLA": 5.4171,
+          "IS": 0.5417,
+          "ESA": 6.8256,
+          "JSA": 0.4334,
+          "PIP": 13.0011,
+          "RP": 43.7703,
+          "AA": 7.584,
+          "PC": 4.9837,
+          "CA": 6.5005
+        },
+        "2022": {
+          "DLA": 5.7778,
+          "CA": 6.4444,
+          "UC": 9.6667,
+          "IS": 0.7778,
+          "ESA": 7.2222,
+          "AA": 7.3333,
+          "PC": 5.2222,
+          "RP": 45,
+          "PIP": 12,
+          "JSA": 0.5556
+        },
+        "2017": {
+          "UC": 0,
+          "ESA": 8.508,
+          "PIP": 0.6165,
+          "RP": 49.5684,
+          "AA": 7.5216,
+          "JSA": 2.3428,
+          "CA": 6.1652,
+          "IS": 1.9729,
+          "DLA": 16.1529,
+          "PC": 7.1517
+        }
+      },
+      "value": {
+        "2023": {
+          "UC": 1010,
+          "DLA": 500,
+          "IS": 50,
+          "ESA": 630,
+          "JSA": 40,
+          "PIP": 1200,
+          "RP": 4040,
+          "AA": 700,
+          "PC": 460,
+          "CA": 600
+        },
+        "2022": {
+          "DLA": 520,
+          "CA": 580,
+          "UC": 870,
+          "IS": 70,
+          "ESA": 650,
+          "AA": 660,
+          "PC": 470,
+          "RP": 4050,
+          "PIP": 1080,
+          "JSA": 50
+        },
+        "2017": {
+          "UC": 0,
+          "ESA": 690,
+          "PIP": 50,
+          "RP": 4020,
+          "AA": 610,
+          "JSA": 190,
+          "CA": 500,
+          "IS": 160,
+          "DLA": 1310,
+          "PC": 580
+        }
+      }
+    },
+    "LE": {
+      "perc": {
+        "2019-21": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        },
+        "2015-17": {
+          "LEbirth_gender1": null,
+          "LEbirth_gender2": null
+        }
+      },
+      "value": {
+        "2019-21": {
+          "LEbirth_gender1": 84.7,
+          "LEbirth_gender2": 80.3
+        },
+        "2015-17": {
+          "LEbirth_gender1": 82.6,
+          "LEbirth_gender2": 81.4
+        }
+      }
+    }
+  },
+  "hectares": 11070,
+  "dea_location_description": "all of COMBER settlement",
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Comber",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Comber",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Comber",
+        "category": "bad",
+        "perc": 4.5464
+      },
+      {
+        "group": "Comber",
+        "category": "fair",
+        "perc": 13.7469
+      },
+      {
+        "group": "Comber",
+        "category": "good",
+        "perc": 32.4507
+      },
+      {
+        "group": "Comber",
+        "category": "very_bad",
+        "perc": 1.3752
+      },
+      {
+        "group": "Comber",
+        "category": "very_good",
+        "perc": 47.8807
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Comber",
+        "category": "five_people",
+        "perc": 5.9682
+      },
+      {
+        "group": "Comber",
+        "category": "four_people",
+        "perc": 13.3949
+      },
+      {
+        "group": "Comber",
+        "category": "one_person",
+        "perc": 27.5191
+      },
+      {
+        "group": "Comber",
+        "category": "three_people",
+        "perc": 16.2757
+      },
+      {
+        "group": "Comber",
+        "category": "two_people",
+        "perc": 36.8421
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Comber",
+        "category": "apprenticeship",
+        "perc": 7.5335
+      },
+      {
+        "group": "Comber",
+        "category": "level_1_qualifications",
+        "perc": 6.5414
+      },
+      {
+        "group": "Comber",
+        "category": "level_2_qualifications",
+        "perc": 14.0501
+      },
+      {
+        "group": "Comber",
+        "category": "level_3_qualifications",
+        "perc": 15.6684
+      },
+      {
+        "group": "Comber",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.9144
+      },
+      {
+        "group": "Comber",
+        "category": "no_qualifications",
+        "perc": 18.9732
+      },
+      {
+        "group": "Comber",
+        "category": "other_qualifications",
+        "perc": 2.3189
+      }
+    ],
+    "cob": [
+      {
+        "group": "Comber",
+        "category": "england",
+        "perc": 3.74
+      },
+      {
+        "group": "Comber",
+        "category": "northern_ireland",
+        "perc": 90.9553
+      },
+      {
+        "group": "Comber",
+        "category": "other_cob",
+        "perc": 3.3244
+      },
+      {
+        "group": "Comber",
+        "category": "republic_of_ireland",
+        "perc": 0.867
+      },
+      {
+        "group": "Comber",
+        "category": "scotland",
+        "perc": 1.0055
+      },
+      {
+        "group": "Comber",
+        "category": "wales",
+        "perc": 0.1077
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Comber",
+        "category": "english",
+        "perc": 98.5064
+      },
+      {
+        "group": "Comber",
+        "category": "other_languages",
+        "perc": 1.4936
+      }
+    ],
+    "age": [
+      {
+        "group": "Comber",
+        "category": "a0to14",
+        "perc": 16.1433
+      },
+      {
+        "group": "Comber",
+        "category": "a15to39",
+        "perc": 26.6164
+      },
+      {
+        "group": "Comber",
+        "category": "a40to64",
+        "perc": 34.611
+      },
+      {
+        "group": "Comber",
+        "category": "a65plus",
+        "perc": 22.6293
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Comber",
+        "category": "a1to19_hours",
+        "perc": 7.6162
+      },
+      {
+        "group": "Comber",
+        "category": "a20to49_hours",
+        "perc": 2.5838
+      },
+      {
+        "group": "Comber",
+        "category": "a50plus_hours",
+        "perc": 3.8919
+      },
+      {
+        "group": "Comber",
+        "category": "no_care",
+        "perc": 85.9081
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Comber",
+        "category": "catholic",
+        "perc": 7.3983
+      },
+      {
+        "group": "Comber",
+        "category": "none",
+        "perc": 13.8064
+      },
+      {
+        "group": "Comber",
+        "category": "other_religions",
+        "perc": 0.9645
+      },
+      {
+        "group": "Comber",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 77.8308
+      }
+    ],
+    "sex": [
+      {
+        "group": "Comber",
+        "category": "females",
+        "perc": 50.9647
+      },
+      {
+        "group": "Comber",
+        "category": "males",
+        "perc": 49.0353
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 10.9426
+        },
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 5.4171
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 0.5417
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 6.8256
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 0.4334
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 13.0011
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 43.7703
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.584
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 4.9837
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.5005
+        }
+      ],
+      "2022": [
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 5.7778
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.4444
+        },
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 9.6667
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 0.7778
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 7.2222
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.3333
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 5.2222
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 45
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 12
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 0.5556
+        }
+      ],
+      "2017": [
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 8.508
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 0.6165
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 49.5684
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.5216
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 2.3428
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.1652
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 1.9729
+        },
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 16.1529
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 7.1517
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.5464
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.7469
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 32.4507
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.3752
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 47.8807
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 5.9682
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 13.3949
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 27.5191
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.2757
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 36.8421
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.5335
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.5414
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.0501
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.6684
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.9144
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 18.9732
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.3189
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.74
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 90.9553
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.3244
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.867
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.0055
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1077
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 98.5064
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 1.4936
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 16.1433
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 26.6164
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.611
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 22.6293
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 7.6162
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.5838
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.8919
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 85.9081
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 7.3983
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 13.8064
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.9645
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 77.8308
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.9647
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.0353
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 10.9426
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 5.4171
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 0.5417
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 6.8256
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0.4334
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 13.0011
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 43.7703
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 7.584
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 4.9837
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 6.5005
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 5.7778
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.4444
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 9.6667
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0.7778
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 7.2222
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 7.3333
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 5.2222
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 45
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 12
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0.5556
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 8.508
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0.6165
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 49.5684
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 7.5216
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 2.3428
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 6.1652
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 1.9729
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 16.1529
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 7.1517
+      }
+    ],
+    "LE": [
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2019-21",
+        "category": "LEbirth_gender2"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender1"
+      },
+      {
+        "group": "2015-17",
+        "category": "LEbirth_gender2"
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Comber",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Comber",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Comber",
+        "category": "bad",
+        "perc": 4.5464
+      },
+      {
+        "group": "Comber",
+        "category": "fair",
+        "perc": 13.7469
+      },
+      {
+        "group": "Comber",
+        "category": "good",
+        "perc": 32.4507
+      },
+      {
+        "group": "Comber",
+        "category": "very_bad",
+        "perc": 1.3752
+      },
+      {
+        "group": "Comber",
+        "category": "very_good",
+        "perc": 47.8807
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Comber",
+        "category": "five_people",
+        "perc": 5.9682
+      },
+      {
+        "group": "Comber",
+        "category": "four_people",
+        "perc": 13.3949
+      },
+      {
+        "group": "Comber",
+        "category": "one_person",
+        "perc": 27.5191
+      },
+      {
+        "group": "Comber",
+        "category": "three_people",
+        "perc": 16.2757
+      },
+      {
+        "group": "Comber",
+        "category": "two_people",
+        "perc": 36.8421
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Comber",
+        "category": "apprenticeship",
+        "perc": 7.5335
+      },
+      {
+        "group": "Comber",
+        "category": "level_1_qualifications",
+        "perc": 6.5414
+      },
+      {
+        "group": "Comber",
+        "category": "level_2_qualifications",
+        "perc": 14.0501
+      },
+      {
+        "group": "Comber",
+        "category": "level_3_qualifications",
+        "perc": 15.6684
+      },
+      {
+        "group": "Comber",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.9144
+      },
+      {
+        "group": "Comber",
+        "category": "no_qualifications",
+        "perc": 18.9732
+      },
+      {
+        "group": "Comber",
+        "category": "other_qualifications",
+        "perc": 2.3189
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Comber",
+        "category": "england",
+        "perc": 3.74
+      },
+      {
+        "group": "Comber",
+        "category": "northern_ireland",
+        "perc": 90.9553
+      },
+      {
+        "group": "Comber",
+        "category": "other_cob",
+        "perc": 3.3244
+      },
+      {
+        "group": "Comber",
+        "category": "republic_of_ireland",
+        "perc": 0.867
+      },
+      {
+        "group": "Comber",
+        "category": "scotland",
+        "perc": 1.0055
+      },
+      {
+        "group": "Comber",
+        "category": "wales",
+        "perc": 0.1077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Comber",
+        "category": "english",
+        "perc": 98.5064
+      },
+      {
+        "group": "Comber",
+        "category": "other_languages",
+        "perc": 1.4936
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Comber",
+        "category": "a0to14",
+        "perc": 16.1433
+      },
+      {
+        "group": "Comber",
+        "category": "a15to39",
+        "perc": 26.6164
+      },
+      {
+        "group": "Comber",
+        "category": "a40to64",
+        "perc": 34.611
+      },
+      {
+        "group": "Comber",
+        "category": "a65plus",
+        "perc": 22.6293
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Comber",
+        "category": "a1to19_hours",
+        "perc": 7.6162
+      },
+      {
+        "group": "Comber",
+        "category": "a20to49_hours",
+        "perc": 2.5838
+      },
+      {
+        "group": "Comber",
+        "category": "a50plus_hours",
+        "perc": 3.8919
+      },
+      {
+        "group": "Comber",
+        "category": "no_care",
+        "perc": 85.9081
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Comber",
+        "category": "catholic",
+        "perc": 7.3983
+      },
+      {
+        "group": "Comber",
+        "category": "none",
+        "perc": 13.8064
+      },
+      {
+        "group": "Comber",
+        "category": "other_religions",
+        "perc": 0.9645
+      },
+      {
+        "group": "Comber",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 77.8308
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Comber",
+        "category": "females",
+        "perc": 50.9647
+      },
+      {
+        "group": "Comber",
+        "category": "males",
+        "perc": 49.0353
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 10.9426
+        },
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 5.4171
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 0.5417
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 6.8256
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 0.4334
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 13.0011
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 43.7703
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.584
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 4.9837
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.5005
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.3478
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.0161
+        }
+      ],
+      "2022": [
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 5.7778
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.4444
+        },
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 9.6667
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 0.7778
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 7.2222
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.3333
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 5.2222
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 45
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 12
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 0.5556
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "COMBER",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "COMBER",
+          "category": "ESA",
+          "perc": 8.508
+        },
+        {
+          "group": "COMBER",
+          "category": "PIP",
+          "perc": 0.6165
+        },
+        {
+          "group": "COMBER",
+          "category": "RP",
+          "perc": 49.5684
+        },
+        {
+          "group": "COMBER",
+          "category": "AA",
+          "perc": 7.5216
+        },
+        {
+          "group": "COMBER",
+          "category": "JSA",
+          "perc": 2.3428
+        },
+        {
+          "group": "COMBER",
+          "category": "CA",
+          "perc": 6.1652
+        },
+        {
+          "group": "COMBER",
+          "category": "IS",
+          "perc": 1.9729
+        },
+        {
+          "group": "COMBER",
+          "category": "DLA",
+          "perc": 16.1529
+        },
+        {
+          "group": "COMBER",
+          "category": "PC",
+          "perc": 7.1517
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "NORTHERN IRELAND",
+          "category": "IS",
+          "perc": 4.0767
+        }
+      ]
+    },
+    "LE": {
+      "2019-21": [
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ],
+      "2015-17": [
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "Comber",
+          "category": "LEbirth_gender2"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender1"
+        },
+        {
+          "group": "NI",
+          "category": "LEbirth_gender2"
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+      "last_updated": "2023-07-06"
+    },
+    "LE": {
+      "email": "",
+      "title": "Life expectancy at birth",
+      "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+      "last_updated": "2024-04-11"
+    }
+  }
+}
