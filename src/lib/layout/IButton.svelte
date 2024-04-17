@@ -77,12 +77,20 @@ let i_button_info = {
 
 			benefits: {
 			title: "Personal Independent Payment (PIP) benefits",
-			//info: "some info here"},
-			info: "<p style='margin: 0px'><a href='mailto:" + place.meta_data.BS.email + "'>Email for more information</a> </p>" + 
-		 		  "<p style='margin: 0px'>Last updated: " + place.meta_data.BS.last_updated + " </p>" +
-				  "<p style='margin: 0px'>Access data at: <a href='" + place.meta_data.BS.dataset_url + "'>" + place.meta_data.BS.title + "</a></p>"},
+			info: "some info here"},
+
+			pensionagebenefits: {
+			title: "Pension Age benefits",
+			info: "some info here"},
 
 
+			workingagebenefits: {
+			title: "Working Age benefits",
+			info: "some info here"},
+
+			disabilitybenefits: {
+			title: "Disability & Carer’s benefits",
+			info: "some info here"},
 
 			enrollments: {
 			title: "Number of enrolled in schools and colleges",

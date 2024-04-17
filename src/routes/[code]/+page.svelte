@@ -848,20 +848,27 @@
 						content: "<p><span class='text-big' style='font-size: 1.8em'>£26,531</span> annual median salary</p>"},
 
 				box_4: {
-						id: "benefits",
-						//content: "PIP stats"
-						//content : '<span class="text-big" style="font-size: 2.8em;">' + data.place.data.BS.value['2022'].PIP.toLocaleString() + '</span>' }
+						id: "disabilitybenefits",
 						content: 
-						//'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
+						'<span class="text-big">' + (data.place.data.BS.value.PIP+data.place.data.BS.value.DLA+data.place.data.BS.value.CA+data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 						
-											
-						{ni: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
-									lgd: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									dea:'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants  compared to NI average of '+ (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									sdz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									dz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString()}
-					}
-					
+						},
+
+				box_5: {
+				id: "workingagebenefits",
+				content: 
+				'<span class="text-big">' + (data.place.data.BS.value.UC+data.place.data.BS.value.JSA+data.place.data.BS.value.IS+data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
+				
+				}			,
+				
+				box_6: {
+				id: "pensionagebenefits",
+				//content: "PIP stats"
+				//content : '<span class="text-big" style="font-size: 2.8em;">' + data.place.data.BS.value.PIP.toLocaleString() + '</span>' }
+				content: 
+				'<span class="text-big">' + (data.place.data.BS.value.RP+data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
+				
+				}		
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>

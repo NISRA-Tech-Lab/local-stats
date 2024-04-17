@@ -1,0 +1,1340 @@
+{
+  "code": "N10000104",
+  "name": "Dunsilly",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000001",
+      "name": "Antrim and Newtownabbey",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N21000001",
+      "name": "Dunsilly_A",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000002",
+      "name": "Dunsilly_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000003",
+      "name": "Dunsilly_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000004",
+      "name": "Dunsilly_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000005",
+      "name": "Dunsilly_E",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000006",
+      "name": "Dunsilly_F",
+      "type": "sdz"
+    }
+  ],
+  "bounds": [
+    [-6.0098, 54.6488],
+    [-6.4959, 54.8119]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 17997
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 63
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 6561
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 3.956,
+          "fair": 12.0513,
+          "good": 28.342,
+          "very_bad": 1.4168,
+          "very_good": 54.2338
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 12.3,
+          "four_people": 16.781,
+          "one_person": 23.091,
+          "three_people": 17.5583,
+          "two_people": 30.2698
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.9711,
+          "level_1_qualifications": 5.0004,
+          "level_2_qualifications": 14.3268,
+          "level_3_qualifications": 16.0545,
+          "level_4_qualifications_and_above": 34.4476,
+          "no_qualifications": 19.9803,
+          "other_qualifications": 2.2193
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 3.3002,
+          "northern_ireland": 89.9883,
+          "other_cob": 4.7336,
+          "republic_of_ireland": 1.0223,
+          "scotland": 0.8,
+          "wales": 0.1556
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 96.9115,
+          "other_languages": 3.0885
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 19.4932,
+          "a15to39": 29.4788,
+          "a40to64": 34.2132,
+          "a65plus": 16.8148
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 6.2238,
+          "a20to49_hours": 2.7347,
+          "a50plus_hours": 3.3064,
+          "no_care": 87.735
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 49.0166,
+          "none": 7.1119,
+          "other_religions": 0.8056,
+          "protestant_and_other_christian_including_christian_related": 43.0659
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.1222,
+          "males": 49.8778
+        }
+      }
+    },
+    "LE": {
+      "value": {
+        "Females": 82.7,
+        "Males": 79.6
+      }
+    },
+    "DEN": {
+      "value": {
+        "GDSDSDentists": 9.02,
+        "GDSDSSurgeries": 3
+      }
+    },
+    "DEN_REG": {
+      "value": {
+        "Dental_Registrations": 12250
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 50,
+        "JSA": 20,
+        "RP": 2770,
+        "PC": 400,
+        "AA": 450,
+        "CA": 500,
+        "DLA": 510,
+        "ESA": 740,
+        "UC": 880,
+        "PIP": 1290
+      }
+    },
+    "Destination": {
+      "value": {
+        "destHEpct": 52.9,
+        "destFEpct": 25.8,
+        "destEmploypct": 11.7,
+        "destTrainpct": 5.4
+      }
+    },
+    "Admiss": {
+      "value": 2305
+    },
+    "Primary": {
+      "value": 1728
+    },
+    "PostPrimary": {
+      "value": 1665
+    },
+    "Attainment": {
+      "value": 81.7
+    },
+    "FE": {
+      "value": 600
+    },
+    "HE": {
+      "value": 745
+    }
+  },
+  "hectares": 23137,
+  "dea_location_description": "all of RANDALSTOWN and part of ANTRIM settlements",
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Dunsilly",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Dunsilly",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Dunsilly",
+        "category": "bad",
+        "perc": 3.956
+      },
+      {
+        "group": "Dunsilly",
+        "category": "fair",
+        "perc": 12.0513
+      },
+      {
+        "group": "Dunsilly",
+        "category": "good",
+        "perc": 28.342
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_bad",
+        "perc": 1.4168
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_good",
+        "perc": 54.2338
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Dunsilly",
+        "category": "five_people",
+        "perc": 12.3
+      },
+      {
+        "group": "Dunsilly",
+        "category": "four_people",
+        "perc": 16.781
+      },
+      {
+        "group": "Dunsilly",
+        "category": "one_person",
+        "perc": 23.091
+      },
+      {
+        "group": "Dunsilly",
+        "category": "three_people",
+        "perc": 17.5583
+      },
+      {
+        "group": "Dunsilly",
+        "category": "two_people",
+        "perc": 30.2698
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Dunsilly",
+        "category": "apprenticeship",
+        "perc": 7.9711
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_1_qualifications",
+        "perc": 5.0004
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_2_qualifications",
+        "perc": 14.3268
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_3_qualifications",
+        "perc": 16.0545
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4476
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_qualifications",
+        "perc": 19.9803
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_qualifications",
+        "perc": 2.2193
+      }
+    ],
+    "cob": [
+      {
+        "group": "Dunsilly",
+        "category": "england",
+        "perc": 3.3002
+      },
+      {
+        "group": "Dunsilly",
+        "category": "northern_ireland",
+        "perc": 89.9883
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_cob",
+        "perc": 4.7336
+      },
+      {
+        "group": "Dunsilly",
+        "category": "republic_of_ireland",
+        "perc": 1.0223
+      },
+      {
+        "group": "Dunsilly",
+        "category": "scotland",
+        "perc": 0.8
+      },
+      {
+        "group": "Dunsilly",
+        "category": "wales",
+        "perc": 0.1556
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Dunsilly",
+        "category": "english",
+        "perc": 96.9115
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_languages",
+        "perc": 3.0885
+      }
+    ],
+    "age": [
+      {
+        "group": "Dunsilly",
+        "category": "a0to14",
+        "perc": 19.4932
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a15to39",
+        "perc": 29.4788
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a40to64",
+        "perc": 34.2132
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a65plus",
+        "perc": 16.8148
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Dunsilly",
+        "category": "a1to19_hours",
+        "perc": 6.2238
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a20to49_hours",
+        "perc": 2.7347
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a50plus_hours",
+        "perc": 3.3064
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_care",
+        "perc": 87.735
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Dunsilly",
+        "category": "catholic",
+        "perc": 49.0166
+      },
+      {
+        "group": "Dunsilly",
+        "category": "none",
+        "perc": 7.1119
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_religions",
+        "perc": 0.8056
+      },
+      {
+        "group": "Dunsilly",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.0659
+      }
+    ],
+    "sex": [
+      {
+        "group": "Dunsilly",
+        "category": "females",
+        "perc": 50.1222
+      },
+      {
+        "group": "Dunsilly",
+        "category": "males",
+        "perc": 49.8778
+      }
+    ]
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 3.956
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 12.0513
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 28.342
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.4168
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 54.2338
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 12.3
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 16.781
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 23.091
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 17.5583
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.2698
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.9711
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.0004
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.3268
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.0545
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4476
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 19.9803
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.2193
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.3002
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 89.9883
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 4.7336
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.0223
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.8
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1556
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 96.9115
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 3.0885
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 19.4932
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 29.4788
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.2132
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 16.8148
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.2238
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.7347
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.3064
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.735
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 49.0166
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 7.1119
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.8056
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.0659
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.1222
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.8778
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Dunsilly",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Dunsilly",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Dunsilly",
+        "category": "bad",
+        "perc": 3.956
+      },
+      {
+        "group": "Dunsilly",
+        "category": "fair",
+        "perc": 12.0513
+      },
+      {
+        "group": "Dunsilly",
+        "category": "good",
+        "perc": 28.342
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_bad",
+        "perc": 1.4168
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_good",
+        "perc": 54.2338
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Dunsilly",
+        "category": "five_people",
+        "perc": 12.3
+      },
+      {
+        "group": "Dunsilly",
+        "category": "four_people",
+        "perc": 16.781
+      },
+      {
+        "group": "Dunsilly",
+        "category": "one_person",
+        "perc": 23.091
+      },
+      {
+        "group": "Dunsilly",
+        "category": "three_people",
+        "perc": 17.5583
+      },
+      {
+        "group": "Dunsilly",
+        "category": "two_people",
+        "perc": 30.2698
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Dunsilly",
+        "category": "apprenticeship",
+        "perc": 7.9711
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_1_qualifications",
+        "perc": 5.0004
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_2_qualifications",
+        "perc": 14.3268
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_3_qualifications",
+        "perc": 16.0545
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4476
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_qualifications",
+        "perc": 19.9803
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_qualifications",
+        "perc": 2.2193
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Dunsilly",
+        "category": "england",
+        "perc": 3.3002
+      },
+      {
+        "group": "Dunsilly",
+        "category": "northern_ireland",
+        "perc": 89.9883
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_cob",
+        "perc": 4.7336
+      },
+      {
+        "group": "Dunsilly",
+        "category": "republic_of_ireland",
+        "perc": 1.0223
+      },
+      {
+        "group": "Dunsilly",
+        "category": "scotland",
+        "perc": 0.8
+      },
+      {
+        "group": "Dunsilly",
+        "category": "wales",
+        "perc": 0.1556
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Dunsilly",
+        "category": "english",
+        "perc": 96.9115
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_languages",
+        "perc": 3.0885
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Dunsilly",
+        "category": "a0to14",
+        "perc": 19.4932
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a15to39",
+        "perc": 29.4788
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a40to64",
+        "perc": 34.2132
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a65plus",
+        "perc": 16.8148
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Dunsilly",
+        "category": "a1to19_hours",
+        "perc": 6.2238
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a20to49_hours",
+        "perc": 2.7347
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a50plus_hours",
+        "perc": 3.3064
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_care",
+        "perc": 87.735
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Dunsilly",
+        "category": "catholic",
+        "perc": 49.0166
+      },
+      {
+        "group": "Dunsilly",
+        "category": "none",
+        "perc": 7.1119
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_religions",
+        "perc": 0.8056
+      },
+      {
+        "group": "Dunsilly",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.0659
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Dunsilly",
+        "category": "females",
+        "perc": 50.1222
+      },
+      {
+        "group": "Dunsilly",
+        "category": "males",
+        "perc": 49.8778
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "BroadAge": [
+      {
+        "table_code": "MYE01T010",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "LE": [
+      {
+        "table_code": "LEDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+        "last_updated": "2024-04-11",
+        "email": "healthinequalities@health-ni.gov.uk",
+        "title": "Life expectancy at birth"
+      }
+    ],
+    "Admiss": [
+      {
+        "table_code": "ADMITDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
+        "last_updated": "2024-04-11",
+        "email": "statistics@health-ni.gov.uk",
+        "title": "Primary Reason for Admissions to HSC Hospitals"
+      }
+    ],
+    "DEN": [
+      {
+        "table_code": "FPSGDSDSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dentists and Surgeries"
+      }
+    ],
+    "DEN_REG": [
+      {
+        "table_code": "FPSGDSDRDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dental Registrations"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ],
+    "Primary": [
+      {
+        "table_code": "DESCPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Primary"
+      }
+    ],
+    "PostPrimary": [
+      {
+        "table_code": "DESCPPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Post Primary"
+      }
+    ],
+    "Attainment": [
+      {
+        "table_code": "DESLSADEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Attainment"
+      }
+    ],
+    "FE": [
+      {
+        "table_code": "FEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+        "last_updated": "2023-06-20",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Regulated enrolments at Further Education Colleges"
+      }
+    ],
+    "HE": [
+      {
+        "table_code": "HEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+        "last_updated": "2023-06-21",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Enrolments at Higher Education Institutions"
+      }
+    ],
+    "Destination": [
+      {
+        "table_code": "DESLSDDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Destination"
+      }
+    ]
+  }
+}
