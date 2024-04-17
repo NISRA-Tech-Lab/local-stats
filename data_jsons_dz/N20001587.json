@@ -1,0 +1,1833 @@
+{
+  "code": "N20001587",
+  "name": "Coleraine_K2",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000367",
+      "name": "Coleraine_K",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000405",
+      "name": "Coleraine",
+      "type": "dea"
+    },
+    {
+      "code": "N09000004",
+      "name": "Causeway Coast and Glens",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-6.6398, 55.1145],
+    [-6.6509, 55.1211]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 709
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 324
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 266
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 1.8336,
+          "fair": 8.7447,
+          "good": 29.7602,
+          "very_bad": 0.4231,
+          "very_good": 59.2384
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 7.8652,
+          "four_people": 20.9738,
+          "one_person": 20.9738,
+          "three_people": 19.4757,
+          "two_people": 30.7116
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 5.1587,
+          "level_1_qualifications": 5.754,
+          "level_2_qualifications": 16.2698,
+          "level_3_qualifications": 17.6587,
+          "level_4_qualifications_and_above": 39.2857,
+          "no_qualifications": 14.4841,
+          "other_qualifications": 1.3889
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.0845,
+          "northern_ireland": 84.6479,
+          "other_cob": 8.8732,
+          "republic_of_ireland": 0.5634,
+          "scotland": 1.5493,
+          "wales": 0.2817
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 93.9971,
+          "other_languages": 6.0029
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 27.3625,
+          "a15to39": 38.646,
+          "a40to64": 29.6192,
+          "a65plus": 4.3724
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.414,
+          "a20to49_hours": 1.9787,
+          "a50plus_hours": 1.6743,
+          "no_care": 91.933
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 22.567,
+          "none": 14.6685,
+          "other_religions": 2.1157,
+          "protestant_and_other_christian_including_christian_related": 60.6488
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 53.3145,
+          "males": 46.6855
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "AA": 0,
+          "IS": 0,
+          "DLA": 6.25,
+          "PIP": 25,
+          "UC": 31.25,
+          "CA": 6.25,
+          "RP": 18.75,
+          "JSA": 0,
+          "ESA": 12.5,
+          "PC": 0
+        },
+        "2022": {
+          "PIP": 18.75,
+          "UC": 25,
+          "DLA": 6.25,
+          "IS": 0,
+          "RP": 18.75,
+          "CA": 6.25,
+          "JSA": 0,
+          "PC": 6.25,
+          "AA": 0,
+          "ESA": 18.75
+        },
+        "2017": {
+          "UC": 0,
+          "DLA": 25,
+          "ESA": 16.6667,
+          "PIP": 0,
+          "PC": 8.3333,
+          "JSA": 0,
+          "CA": 16.6667,
+          "AA": 0,
+          "RP": 16.6667,
+          "IS": 16.6667
+        }
+      },
+      "value": {
+        "2023": {
+          "AA": 0,
+          "IS": 0,
+          "DLA": 10,
+          "PIP": 40,
+          "UC": 50,
+          "CA": 10,
+          "RP": 30,
+          "JSA": 0,
+          "ESA": 20,
+          "PC": 0
+        },
+        "2022": {
+          "PIP": 30,
+          "UC": 40,
+          "DLA": 10,
+          "IS": 0,
+          "RP": 30,
+          "CA": 10,
+          "JSA": 0,
+          "PC": 10,
+          "AA": 0,
+          "ESA": 30
+        },
+        "2017": {
+          "UC": 0,
+          "DLA": 30,
+          "ESA": 20,
+          "PIP": 0,
+          "PC": 10,
+          "JSA": 0,
+          "CA": 20,
+          "AA": 0,
+          "RP": 20,
+          "IS": 20
+        }
+      }
+    }
+  },
+  "hectares": 32,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Coleraine_K2",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Coleraine_K2",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Coleraine_K2",
+        "category": "bad",
+        "perc": 1.8336
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "fair",
+        "perc": 8.7447
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "good",
+        "perc": 29.7602
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "very_bad",
+        "perc": 0.4231
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "very_good",
+        "perc": 59.2384
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Coleraine_K2",
+        "category": "five_people",
+        "perc": 7.8652
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "four_people",
+        "perc": 20.9738
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "one_person",
+        "perc": 20.9738
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "three_people",
+        "perc": 19.4757
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "two_people",
+        "perc": 30.7116
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Coleraine_K2",
+        "category": "apprenticeship",
+        "perc": 5.1587
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_1_qualifications",
+        "perc": 5.754
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_2_qualifications",
+        "perc": 16.2698
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_3_qualifications",
+        "perc": 17.6587
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_4_qualifications_and_above",
+        "perc": 39.2857
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "no_qualifications",
+        "perc": 14.4841
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_qualifications",
+        "perc": 1.3889
+      }
+    ],
+    "cob": [
+      {
+        "group": "Coleraine_K2",
+        "category": "england",
+        "perc": 4.0845
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "northern_ireland",
+        "perc": 84.6479
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_cob",
+        "perc": 8.8732
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "republic_of_ireland",
+        "perc": 0.5634
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "scotland",
+        "perc": 1.5493
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "wales",
+        "perc": 0.2817
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Coleraine_K2",
+        "category": "english",
+        "perc": 93.9971
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_languages",
+        "perc": 6.0029
+      }
+    ],
+    "age": [
+      {
+        "group": "Coleraine_K2",
+        "category": "a0to14",
+        "perc": 27.3625
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a15to39",
+        "perc": 38.646
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a40to64",
+        "perc": 29.6192
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a65plus",
+        "perc": 4.3724
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Coleraine_K2",
+        "category": "a1to19_hours",
+        "perc": 4.414
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a20to49_hours",
+        "perc": 1.9787
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a50plus_hours",
+        "perc": 1.6743
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "no_care",
+        "perc": 91.933
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Coleraine_K2",
+        "category": "catholic",
+        "perc": 22.567
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "none",
+        "perc": 14.6685
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_religions",
+        "perc": 2.1157
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 60.6488
+      }
+    ],
+    "sex": [
+      {
+        "group": "Coleraine_K2",
+        "category": "females",
+        "perc": 53.3145
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "males",
+        "perc": 46.6855
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 31.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 12.5
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 0
+        }
+      ],
+      "2022": [
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 18.75
+        }
+      ],
+      "2017": [
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 8.3333
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 16.6667
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 1.8336
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 8.7447
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.7602
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.4231
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 59.2384
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 7.8652
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 20.9738
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 20.9738
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 19.4757
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 30.7116
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 5.1587
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.754
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 16.2698
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 17.6587
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 39.2857
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 14.4841
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.3889
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.0845
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 84.6479
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 8.8732
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 0.5634
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.5493
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2817
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 93.9971
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 6.0029
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 27.3625
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 38.646
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 29.6192
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 4.3724
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.414
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 1.9787
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 1.6743
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 91.933
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 22.567
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 14.6685
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 2.1157
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 60.6488
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 53.3145
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 46.6855
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 6.25
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 25
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 31.25
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 6.25
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 18.75
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 12.5
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 18.75
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 25
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 6.25
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 18.75
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 6.25
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 6.25
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 18.75
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 25
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 16.6667
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 8.3333
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 16.6667
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 16.6667
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 16.6667
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Coleraine_K2",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Coleraine_K2",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Coleraine_K2",
+        "category": "bad",
+        "perc": 1.8336
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "fair",
+        "perc": 8.7447
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "good",
+        "perc": 29.7602
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "very_bad",
+        "perc": 0.4231
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "very_good",
+        "perc": 59.2384
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Coleraine_K2",
+        "category": "five_people",
+        "perc": 7.8652
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "four_people",
+        "perc": 20.9738
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "one_person",
+        "perc": 20.9738
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "three_people",
+        "perc": 19.4757
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "two_people",
+        "perc": 30.7116
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Coleraine_K2",
+        "category": "apprenticeship",
+        "perc": 5.1587
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_1_qualifications",
+        "perc": 5.754
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_2_qualifications",
+        "perc": 16.2698
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_3_qualifications",
+        "perc": 17.6587
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "level_4_qualifications_and_above",
+        "perc": 39.2857
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "no_qualifications",
+        "perc": 14.4841
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_qualifications",
+        "perc": 1.3889
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Coleraine_K2",
+        "category": "england",
+        "perc": 4.0845
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "northern_ireland",
+        "perc": 84.6479
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_cob",
+        "perc": 8.8732
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "republic_of_ireland",
+        "perc": 0.5634
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "scotland",
+        "perc": 1.5493
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "wales",
+        "perc": 0.2817
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Coleraine_K2",
+        "category": "english",
+        "perc": 93.9971
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_languages",
+        "perc": 6.0029
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Coleraine_K2",
+        "category": "a0to14",
+        "perc": 27.3625
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a15to39",
+        "perc": 38.646
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a40to64",
+        "perc": 29.6192
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a65plus",
+        "perc": 4.3724
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Coleraine_K2",
+        "category": "a1to19_hours",
+        "perc": 4.414
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a20to49_hours",
+        "perc": 1.9787
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "a50plus_hours",
+        "perc": 1.6743
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "no_care",
+        "perc": 91.933
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Coleraine_K2",
+        "category": "catholic",
+        "perc": 22.567
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "none",
+        "perc": 14.6685
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "other_religions",
+        "perc": 2.1157
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 60.6488
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Coleraine_K2",
+        "category": "females",
+        "perc": 53.3145
+      },
+      {
+        "group": "Coleraine_K2",
+        "category": "males",
+        "perc": 46.6855
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 31.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 12.5
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        }
+      ],
+      "2022": [
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 18.75
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 6.25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 18.75
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "Coleraine_K2",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "DLA",
+          "perc": 25
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "ESA",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "PC",
+          "perc": 8.3333
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "CA",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "RP",
+          "perc": 16.6667
+        },
+        {
+          "group": "Coleraine_K2",
+          "category": "IS",
+          "perc": 16.6667
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

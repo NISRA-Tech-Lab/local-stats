@@ -1,0 +1,1849 @@
+{
+  "code": "N21000766",
+  "name": "Downpatrick_F",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10001002",
+      "name": "Downpatrick",
+      "type": "dea"
+    },
+    {
+      "code": "N09000010",
+      "name": "Newry, Mourne and Down",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20003412",
+      "name": "Downpatrick_F1",
+      "type": "dz"
+    },
+    {
+      "code": "N20003415",
+      "name": "Downpatrick_F2",
+      "type": "dz"
+    },
+    {
+      "code": "N20003418",
+      "name": "Downpatrick_F3",
+      "type": "dz"
+    },
+    {
+      "code": "N20003421",
+      "name": "Downpatrick_F4",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-5.7123, 54.3119],
+    [-5.7329, 54.3292]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 1976
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 551
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 684
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.8101,
+          "fair": 11.5949,
+          "good": 27.8481,
+          "very_bad": 1.7215,
+          "very_good": 54.0253
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 11.8421,
+          "four_people": 21.6374,
+          "one_person": 18.2749,
+          "three_people": 22.076,
+          "two_people": 26.1696
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 9.2369,
+          "level_1_qualifications": 5.8902,
+          "level_2_qualifications": 17.2021,
+          "level_3_qualifications": 19.5448,
+          "level_4_qualifications_and_above": 27.7778,
+          "no_qualifications": 18.407,
+          "other_qualifications": 1.9411
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.4304,
+          "northern_ireland": 92.557,
+          "other_cob": 3.0886,
+          "republic_of_ireland": 1.4684,
+          "scotland": 0.3544,
+          "wales": 0.1013
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.2266,
+          "other_languages": 2.7734
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 23.2287,
+          "a15to39": 31.4777,
+          "a40to64": 32.6417,
+          "a65plus": 12.6518
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.9516,
+          "a20to49_hours": 3.4446,
+          "a50plus_hours": 4.5748,
+          "no_care": 87.0291
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 91.8522,
+          "none": 2.2267,
+          "other_religions": 1.417,
+          "protestant_and_other_christian_including_christian_related": 4.504
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 51.9494,
+          "males": 48.0506
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "RP": 25.5556,
+          "IS": 1.1111,
+          "ESA": 11.1111,
+          "PC": 4.4444,
+          "DLA": 12.2222,
+          "UC": 12.2222,
+          "CA": 8.8889,
+          "PIP": 21.1111,
+          "JSA": 0,
+          "AA": 3.3333
+        },
+        "2022": {
+          "DLA": 12.9412,
+          "PC": 4.7059,
+          "JSA": 1.1765,
+          "RP": 27.0588,
+          "ESA": 10.5882,
+          "CA": 8.2353,
+          "PIP": 18.8235,
+          "IS": 1.1765,
+          "AA": 3.5294,
+          "UC": 11.7647
+        },
+        "2017": {
+          "PIP": 0,
+          "AA": 1.2987,
+          "CA": 9.0909,
+          "PC": 5.1948,
+          "RP": 27.2727,
+          "ESA": 14.2857,
+          "JSA": 3.8961,
+          "DLA": 33.7662,
+          "IS": 5.1948,
+          "UC": 0
+        }
+      },
+      "value": {
+        "2023": {
+          "RP": 230,
+          "IS": 10,
+          "ESA": 100,
+          "PC": 40,
+          "DLA": 110,
+          "UC": 110,
+          "CA": 80,
+          "PIP": 190,
+          "JSA": 0,
+          "AA": 30
+        },
+        "2022": {
+          "DLA": 110,
+          "PC": 40,
+          "JSA": 10,
+          "RP": 230,
+          "ESA": 90,
+          "CA": 70,
+          "PIP": 160,
+          "IS": 10,
+          "AA": 30,
+          "UC": 100
+        },
+        "2017": {
+          "PIP": 0,
+          "AA": 10,
+          "CA": 70,
+          "PC": 40,
+          "RP": 210,
+          "ESA": 110,
+          "JSA": 30,
+          "DLA": 260,
+          "IS": 40,
+          "UC": 0
+        }
+      }
+    }
+  },
+  "hectares": 132,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Downpatrick_F",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downpatrick_F",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downpatrick_F",
+        "category": "bad",
+        "perc": 4.8101
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "fair",
+        "perc": 11.5949
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "good",
+        "perc": 27.8481
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "very_bad",
+        "perc": 1.7215
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "very_good",
+        "perc": 54.0253
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downpatrick_F",
+        "category": "five_people",
+        "perc": 11.8421
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "four_people",
+        "perc": 21.6374
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "one_person",
+        "perc": 18.2749
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "three_people",
+        "perc": 22.076
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "two_people",
+        "perc": 26.1696
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downpatrick_F",
+        "category": "apprenticeship",
+        "perc": 9.2369
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_1_qualifications",
+        "perc": 5.8902
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_2_qualifications",
+        "perc": 17.2021
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_3_qualifications",
+        "perc": 19.5448
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.7778
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "no_qualifications",
+        "perc": 18.407
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_qualifications",
+        "perc": 1.9411
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downpatrick_F",
+        "category": "england",
+        "perc": 2.4304
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "northern_ireland",
+        "perc": 92.557
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_cob",
+        "perc": 3.0886
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "republic_of_ireland",
+        "perc": 1.4684
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "scotland",
+        "perc": 0.3544
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "wales",
+        "perc": 0.1013
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downpatrick_F",
+        "category": "english",
+        "perc": 97.2266
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_languages",
+        "perc": 2.7734
+      }
+    ],
+    "age": [
+      {
+        "group": "Downpatrick_F",
+        "category": "a0to14",
+        "perc": 23.2287
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a15to39",
+        "perc": 31.4777
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a40to64",
+        "perc": 32.6417
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a65plus",
+        "perc": 12.6518
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downpatrick_F",
+        "category": "a1to19_hours",
+        "perc": 4.9516
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a20to49_hours",
+        "perc": 3.4446
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a50plus_hours",
+        "perc": 4.5748
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "no_care",
+        "perc": 87.0291
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downpatrick_F",
+        "category": "catholic",
+        "perc": 91.8522
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "none",
+        "perc": 2.2267
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_religions",
+        "perc": 1.417
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 4.504
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downpatrick_F",
+        "category": "females",
+        "perc": 51.9494
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "males",
+        "perc": 48.0506
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 25.5556
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 1.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 11.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 4.4444
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 8.8889
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 21.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 3.3333
+        }
+      ],
+      "2022": [
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 12.9412
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 4.7059
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 1.1765
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 27.0588
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 10.5882
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 8.2353
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 18.8235
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 1.1765
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 3.5294
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 11.7647
+        }
+      ],
+      "2017": [
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 1.2987
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 9.0909
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 5.1948
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 27.2727
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 14.2857
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 3.8961
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 33.7662
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 5.1948
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 0
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.8101
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 11.5949
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.8481
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.7215
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 54.0253
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 11.8421
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 21.6374
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 18.2749
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 22.076
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 26.1696
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 9.2369
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.8902
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 17.2021
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 19.5448
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.7778
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 18.407
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.9411
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.4304
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 92.557
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.0886
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.4684
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.3544
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1013
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.2266
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.7734
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 23.2287
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 31.4777
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.6417
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 12.6518
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.9516
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.4446
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.5748
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.0291
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 91.8522
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 2.2267
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.417
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 4.504
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 51.9494
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 48.0506
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 25.5556
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 1.1111
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 11.1111
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 4.4444
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 12.2222
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 12.2222
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 8.8889
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 21.1111
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 3.3333
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 12.9412
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 4.7059
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 1.1765
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 27.0588
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 10.5882
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 8.2353
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 18.8235
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 1.1765
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 3.5294
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 11.7647
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 1.2987
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 9.0909
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 5.1948
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 27.2727
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 14.2857
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 3.8961
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 33.7662
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 5.1948
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Downpatrick_F",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downpatrick_F",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downpatrick_F",
+        "category": "bad",
+        "perc": 4.8101
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "fair",
+        "perc": 11.5949
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "good",
+        "perc": 27.8481
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "very_bad",
+        "perc": 1.7215
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "very_good",
+        "perc": 54.0253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downpatrick_F",
+        "category": "five_people",
+        "perc": 11.8421
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "four_people",
+        "perc": 21.6374
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "one_person",
+        "perc": 18.2749
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "three_people",
+        "perc": 22.076
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "two_people",
+        "perc": 26.1696
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downpatrick_F",
+        "category": "apprenticeship",
+        "perc": 9.2369
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_1_qualifications",
+        "perc": 5.8902
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_2_qualifications",
+        "perc": 17.2021
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_3_qualifications",
+        "perc": 19.5448
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.7778
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "no_qualifications",
+        "perc": 18.407
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_qualifications",
+        "perc": 1.9411
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downpatrick_F",
+        "category": "england",
+        "perc": 2.4304
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "northern_ireland",
+        "perc": 92.557
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_cob",
+        "perc": 3.0886
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "republic_of_ireland",
+        "perc": 1.4684
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "scotland",
+        "perc": 0.3544
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "wales",
+        "perc": 0.1013
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downpatrick_F",
+        "category": "english",
+        "perc": 97.2266
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_languages",
+        "perc": 2.7734
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Downpatrick_F",
+        "category": "a0to14",
+        "perc": 23.2287
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a15to39",
+        "perc": 31.4777
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a40to64",
+        "perc": 32.6417
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a65plus",
+        "perc": 12.6518
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downpatrick_F",
+        "category": "a1to19_hours",
+        "perc": 4.9516
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a20to49_hours",
+        "perc": 3.4446
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "a50plus_hours",
+        "perc": 4.5748
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "no_care",
+        "perc": 87.0291
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downpatrick_F",
+        "category": "catholic",
+        "perc": 91.8522
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "none",
+        "perc": 2.2267
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "other_religions",
+        "perc": 1.417
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 4.504
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downpatrick_F",
+        "category": "females",
+        "perc": 51.9494
+      },
+      {
+        "group": "Downpatrick_F",
+        "category": "males",
+        "perc": 48.0506
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 25.5556
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 1.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 11.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 4.4444
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 12.2222
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 8.8889
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 21.1111
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 3.3333
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        }
+      ],
+      "2022": [
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 12.9412
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 4.7059
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 1.1765
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 27.0588
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 10.5882
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 8.2353
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 18.8235
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 1.1765
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 3.5294
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 11.7647
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        }
+      ],
+      "2017": [
+        {
+          "group": "Downpatrick_F",
+          "category": "PIP",
+          "perc": 0
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "AA",
+          "perc": 1.2987
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "CA",
+          "perc": 9.0909
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "PC",
+          "perc": 5.1948
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "RP",
+          "perc": 27.2727
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "ESA",
+          "perc": 14.2857
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "JSA",
+          "perc": 3.8961
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "DLA",
+          "perc": 33.7662
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "IS",
+          "perc": 5.1948
+        },
+        {
+          "group": "Downpatrick_F",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

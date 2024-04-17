@@ -23,7 +23,7 @@ export async function load({ fetch }) {
         d.typenm = geog_types[d.type].name;
         //		  d.typestr = lookup[d.parent] ? `${lookup[d.parent]} includes ${types[d.type].name} within ${lookup[d.parent]}` : '';
         d.typestr = lookup[d.parent]  && d.parent == d.code
-        ? `${geog_types[d.type].name} is within  ${lookup[d.parent]}
+        ? `View:  ${lookup[d.parent]}
         ${geog_types[d.parent_type].name}  `
             : lookup[d.parent]  && d.parent != d.code
             ? `${geog_types[d.type].name} `

@@ -21,8 +21,9 @@ export const app_inputs = {
 	//search_data: 'https://datavis.nisra.gov.uk/census/aex-hj77sh/places_dz.csv',
 //	search_data: '/data_jsons_dea_20240408/places_dz_extra.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
-	// app_json_data: '/data_jsons_dea_20240408/',
-	app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/data_jsons_dea_20240408/",
+//	 app_json_data: '/data_jsons_dea_20240408/',
+	 app_json_data: '/data_jsons_dz/',
+	//app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/data_jsons_dea_20240408/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
@@ -93,42 +94,42 @@ export const topics = {
 /* 		{ category: 'wales', label: 'Wales' },
 		{ category: 'republic_of_ireland', label: 'Republic of Ireland' },
  */		{ category: 'other_cob', label: 'Other country of birth' }
-	],
+	],//,
 	
-	FPSGDSDT: [
-		{ category: 'GDSDTF', label: 'Fillings' },
-		{ category: 'GDSDTX', label: 'X-rays' },
-		{ category: 'GDSDTC', label: 'Crowns' },
-		{ category: 'GDSDTE', label: 'Extractions' }
+	// FPSGDSDT: [
+	// 	{ category: 'GDSDTF', label: 'Fillings' },
+	// 	{ category: 'GDSDTX', label: 'X-rays' },
+	// 	{ category: 'GDSDTC', label: 'Crowns' },
+	// 	{ category: 'GDSDTE', label: 'Extractions' }
 
-	],
+	// ],
 
 	BS: [
 
 		{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
 		{ category: ['PC','RP'], label: 'Pension Age benefits' },
 		{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
-	],
-
-	FPSGDSDR: [
-
-		{ category: 'Dental_Registrations_ageGDSDR0_2', label: 'Age 0 to 2' },
-		{ category: 'Dental_Registrations_ageGDSDR3_5', label: 'Age 3 to 5' },
-		{ category: 'Dental_Registrations_ageGDSDR18plus', label: 'Adults' }		
-	],
-
-
-	DESCP: [
-		{ category: 'Reception', label: 'Rec'},
-		{ category: 'Nursery', label: 'Nurs'},
-		{ category: 'Year1', label: '1' },		
-		{ category: 'Year2', label: '2' },		
-		{ category: 'Year3', label: '3' },		
-		{ category: 'Year4', label: '4' },		
-		{ category: 'Year5', label: '5' },		
-		{ category: 'Year6', label: '6' },		
-		{ category: 'Year7', label: '7' }		
 	]
+
+	// FPSGDSDR: [
+
+	// 	{ category: 'Dental_Registrations_ageGDSDR0_2', label: 'Age 0 to 2' },
+	// 	{ category: 'Dental_Registrations_ageGDSDR3_5', label: 'Age 3 to 5' },
+	// 	{ category: 'Dental_Registrations_ageGDSDR18plus', label: 'Adults' }		
+	// ],
+
+
+	// DESCP: [
+	// 	{ category: 'Reception', label: 'Rec'},
+	// 	{ category: 'Nursery', label: 'Nurs'},
+	// 	{ category: 'Year1', label: '1' },		
+	// 	{ category: 'Year2', label: '2' },		
+	// 	{ category: 'Year3', label: '3' },		
+	// 	{ category: 'Year4', label: '4' },		
+	// 	{ category: 'Year5', label: '5' },		
+	// 	{ category: 'Year6', label: '6' },		
+	// 	{ category: 'Year7', label: '7' }		
+	// ]
 
 };
 

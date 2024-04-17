@@ -1,0 +1,1833 @@
+{
+  "code": "N20001311",
+  "name": "Black_Mountain_C2",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000303",
+      "name": "Black_Mountain_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000302",
+      "name": "Black Mountain",
+      "type": "dea"
+    },
+    {
+      "code": "N09000003",
+      "name": "Belfast",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.9561, 54.5899],
+    [-5.9644, 54.5954]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 395
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 2889
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 181
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 7.0886,
+          "fair": 15.1899,
+          "good": 29.3671,
+          "very_bad": 2.0253,
+          "very_good": 46.3291
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 5.5249,
+          "four_people": 11.0497,
+          "one_person": 44.7514,
+          "three_people": 17.1271,
+          "two_people": 21.547
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.0703,
+          "level_1_qualifications": 5.1118,
+          "level_2_qualifications": 16.2939,
+          "level_3_qualifications": 13.4185,
+          "level_4_qualifications_and_above": 26.1981,
+          "no_qualifications": 30.6709,
+          "other_qualifications": 2.2364
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 1.5113,
+          "northern_ireland": 84.131,
+          "other_cob": 10.3275,
+          "republic_of_ireland": 3.7783,
+          "scotland": 0.2519,
+          "wales": 0
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 89.0625,
+          "other_languages": 10.9375
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 19.9495,
+          "a15to39": 35.6061,
+          "a40to64": 33.0808,
+          "a65plus": 11.3636
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.0214,
+          "a20to49_hours": 2.681,
+          "a50plus_hours": 2.681,
+          "no_care": 90.6166
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 83.0808,
+          "none": 7.0707,
+          "other_religions": 4.2929,
+          "protestant_and_other_christian_including_christian_related": 5.5556
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.3797,
+          "males": 49.6203
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "CA": 8,
+          "AA": 0,
+          "DLA": 4,
+          "RP": 12,
+          "UC": 28,
+          "IS": 0,
+          "ESA": 16,
+          "PC": 4,
+          "PIP": 28,
+          "JSA": 0
+        },
+        "2022": {
+          "UC": 21.7391,
+          "PIP": 30.4348,
+          "RP": 13.0435,
+          "JSA": 0,
+          "ESA": 21.7391,
+          "AA": 0,
+          "DLA": 4.3478,
+          "IS": 0,
+          "PC": 4.3478,
+          "CA": 4.3478
+        },
+        "2017": {
+          "DLA": 32.1429,
+          "CA": 7.1429,
+          "IS": 7.1429,
+          "AA": 3.5714,
+          "RP": 10.7143,
+          "PIP": 3.5714,
+          "ESA": 25,
+          "PC": 3.5714,
+          "JSA": 7.1429,
+          "UC": 0
+        }
+      },
+      "value": {
+        "2023": {
+          "CA": 20,
+          "AA": 0,
+          "DLA": 10,
+          "RP": 30,
+          "UC": 70,
+          "IS": 0,
+          "ESA": 40,
+          "PC": 10,
+          "PIP": 70,
+          "JSA": 0
+        },
+        "2022": {
+          "UC": 50,
+          "PIP": 70,
+          "RP": 30,
+          "JSA": 0,
+          "ESA": 50,
+          "AA": 0,
+          "DLA": 10,
+          "IS": 0,
+          "PC": 10,
+          "CA": 10
+        },
+        "2017": {
+          "DLA": 90,
+          "CA": 20,
+          "IS": 20,
+          "AA": 10,
+          "RP": 30,
+          "PIP": 10,
+          "ESA": 70,
+          "PC": 10,
+          "JSA": 20,
+          "UC": 0
+        }
+      }
+    }
+  },
+  "hectares": 13,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "bad",
+        "perc": 7.0886
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "fair",
+        "perc": 15.1899
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "good",
+        "perc": 29.3671
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "very_bad",
+        "perc": 2.0253
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "very_good",
+        "perc": 46.3291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "five_people",
+        "perc": 5.5249
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "four_people",
+        "perc": 11.0497
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "one_person",
+        "perc": 44.7514
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "three_people",
+        "perc": 17.1271
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "two_people",
+        "perc": 21.547
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "apprenticeship",
+        "perc": 6.0703
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_1_qualifications",
+        "perc": 5.1118
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_2_qualifications",
+        "perc": 16.2939
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_3_qualifications",
+        "perc": 13.4185
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.1981
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "no_qualifications",
+        "perc": 30.6709
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_qualifications",
+        "perc": 2.2364
+      }
+    ],
+    "cob": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "england",
+        "perc": 1.5113
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "northern_ireland",
+        "perc": 84.131
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_cob",
+        "perc": 10.3275
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "republic_of_ireland",
+        "perc": 3.7783
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "scotland",
+        "perc": 0.2519
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "english",
+        "perc": 89.0625
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_languages",
+        "perc": 10.9375
+      }
+    ],
+    "age": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a0to14",
+        "perc": 19.9495
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a15to39",
+        "perc": 35.6061
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a40to64",
+        "perc": 33.0808
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a65plus",
+        "perc": 11.3636
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a1to19_hours",
+        "perc": 4.0214
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a20to49_hours",
+        "perc": 2.681
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a50plus_hours",
+        "perc": 2.681
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "no_care",
+        "perc": 90.6166
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "catholic",
+        "perc": 83.0808
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "none",
+        "perc": 7.0707
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_religions",
+        "perc": 4.2929
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 5.5556
+      }
+    ],
+    "sex": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "females",
+        "perc": 50.3797
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "males",
+        "perc": 49.6203
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 8
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 4
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 12
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 28
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 16
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 4
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 28
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 0
+        }
+      ],
+      "2022": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 21.7391
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 30.4348
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 13.0435
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 21.7391
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 4.3478
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 4.3478
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 4.3478
+        }
+      ],
+      "2017": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 32.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 10.7143
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 25
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 0
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 7.0886
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 15.1899
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.3671
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.0253
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 46.3291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 5.5249
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 11.0497
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 44.7514
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 17.1271
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 21.547
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.0703
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.1118
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 16.2939
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 13.4185
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.1981
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 30.6709
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.2364
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 1.5113
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 84.131
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 10.3275
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 3.7783
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.2519
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 89.0625
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 10.9375
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 19.9495
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 35.6061
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 33.0808
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 11.3636
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.0214
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.681
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 2.681
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 90.6166
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 83.0808
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 7.0707
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 4.2929
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 5.5556
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.3797
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.6203
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 8
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 4
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 12
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 28
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 16
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 4
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 28
+      },
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 21.7391
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 30.4348
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 13.0435
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 21.7391
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 4.3478
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 0
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 4.3478
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 4.3478
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 32.1429
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 7.1429
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 7.1429
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 3.5714
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 10.7143
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 3.5714
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 25
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 3.5714
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 7.1429
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "bad",
+        "perc": 7.0886
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "fair",
+        "perc": 15.1899
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "good",
+        "perc": 29.3671
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "very_bad",
+        "perc": 2.0253
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "very_good",
+        "perc": 46.3291
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "five_people",
+        "perc": 5.5249
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "four_people",
+        "perc": 11.0497
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "one_person",
+        "perc": 44.7514
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "three_people",
+        "perc": 17.1271
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "two_people",
+        "perc": 21.547
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "apprenticeship",
+        "perc": 6.0703
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_1_qualifications",
+        "perc": 5.1118
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_2_qualifications",
+        "perc": 16.2939
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_3_qualifications",
+        "perc": 13.4185
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.1981
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "no_qualifications",
+        "perc": 30.6709
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_qualifications",
+        "perc": 2.2364
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "england",
+        "perc": 1.5113
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "northern_ireland",
+        "perc": 84.131
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_cob",
+        "perc": 10.3275
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "republic_of_ireland",
+        "perc": 3.7783
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "scotland",
+        "perc": 0.2519
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "wales",
+        "perc": 0
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "english",
+        "perc": 89.0625
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_languages",
+        "perc": 10.9375
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a0to14",
+        "perc": 19.9495
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a15to39",
+        "perc": 35.6061
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a40to64",
+        "perc": 33.0808
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a65plus",
+        "perc": 11.3636
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a1to19_hours",
+        "perc": 4.0214
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a20to49_hours",
+        "perc": 2.681
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "a50plus_hours",
+        "perc": 2.681
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "no_care",
+        "perc": 90.6166
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "catholic",
+        "perc": 83.0808
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "none",
+        "perc": 7.0707
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "other_religions",
+        "perc": 4.2929
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 5.5556
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Black_Mountain_C2",
+        "category": "females",
+        "perc": 50.3797
+      },
+      {
+        "group": "Black_Mountain_C2",
+        "category": "males",
+        "perc": 49.6203
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 8
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 4
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 12
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 28
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 16
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 4
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 28
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        }
+      ],
+      "2022": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 21.7391
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 30.4348
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 13.0435
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 21.7391
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 4.3478
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 0
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 4.3478
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 4.3478
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        }
+      ],
+      "2017": [
+        {
+          "group": "Black_Mountain_C2",
+          "category": "DLA",
+          "perc": 32.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "CA",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "IS",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "AA",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "RP",
+          "perc": 10.7143
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PIP",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "ESA",
+          "perc": 25
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "PC",
+          "perc": 3.5714
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "JSA",
+          "perc": 7.1429
+        },
+        {
+          "group": "Black_Mountain_C2",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}

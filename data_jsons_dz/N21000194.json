@@ -1,0 +1,1844 @@
+{
+  "code": "N21000194",
+  "name": "Castle_S",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10000304",
+      "name": "Castle",
+      "type": "dea"
+    },
+    {
+      "code": "N09000003",
+      "name": "Belfast",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20000841",
+      "name": "Castle_S1",
+      "type": "dz"
+    },
+    {
+      "code": "N20000843",
+      "name": "Castle_S2",
+      "type": "dz"
+    },
+    {
+      "code": "N20000845",
+      "name": "Castle_S3",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-5.9267, 54.6169],
+    [-5.9384, 54.6234]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 1580
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 728
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 664
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 6.5781,
+          "fair": 14.611,
+          "good": 27.3877,
+          "very_bad": 3.2258,
+          "very_good": 48.1973
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 7.8431,
+          "four_people": 14.4796,
+          "one_person": 34.54,
+          "three_people": 17.3454,
+          "two_people": 25.7919
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 4.4591,
+          "level_1_qualifications": 5.6978,
+          "level_2_qualifications": 16.5153,
+          "level_3_qualifications": 16.5979,
+          "level_4_qualifications_and_above": 28.7366,
+          "no_qualifications": 26.0116,
+          "other_qualifications": 1.9818
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 3.3587,
+          "northern_ireland": 77.5665,
+          "other_cob": 15.7795,
+          "republic_of_ireland": 2.4715,
+          "scotland": 0.6971,
+          "wales": 0.1267
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 87.8033,
+          "other_languages": 12.1967
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 21.8354,
+          "a15to39": 36.2658,
+          "a40to64": 30.8228,
+          "a65plus": 11.0759
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.1491,
+          "a20to49_hours": 3.8618,
+          "a50plus_hours": 3.3198,
+          "no_care": 87.6694
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 50.8228,
+          "none": 12.4051,
+          "other_religions": 4.6203,
+          "protestant_and_other_christian_including_christian_related": 32.1519
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.4304,
+          "males": 50.5696
+        }
+      }
+    },
+    "BS": {
+      "perc": {
+        "2023": {
+          "JSA": 1.0309,
+          "RP": 15.4639,
+          "ESA": 12.3711,
+          "CA": 9.2784,
+          "IS": 3.0928,
+          "AA": 5.1546,
+          "PC": 6.1856,
+          "DLA": 7.2165,
+          "PIP": 20.6186,
+          "UC": 19.5876
+        },
+        "2022": {
+          "RP": 16.3043,
+          "ESA": 14.1304,
+          "CA": 9.7826,
+          "JSA": 1.087,
+          "PC": 6.5217,
+          "PIP": 18.4783,
+          "DLA": 7.6087,
+          "AA": 5.4348,
+          "IS": 3.2609,
+          "UC": 17.3913
+        },
+        "2017": {
+          "PC": 8.3333,
+          "CA": 9.7222,
+          "UC": 0,
+          "IS": 8.3333,
+          "PIP": 1.3889,
+          "DLA": 23.6111,
+          "AA": 5.5556,
+          "JSA": 5.5556,
+          "ESA": 18.0556,
+          "RP": 19.4444
+        }
+      },
+      "value": {
+        "2023": {
+          "JSA": 10,
+          "RP": 150,
+          "ESA": 120,
+          "CA": 90,
+          "IS": 30,
+          "AA": 50,
+          "PC": 60,
+          "DLA": 70,
+          "PIP": 200,
+          "UC": 190
+        },
+        "2022": {
+          "RP": 150,
+          "ESA": 130,
+          "CA": 90,
+          "JSA": 10,
+          "PC": 60,
+          "PIP": 170,
+          "DLA": 70,
+          "AA": 50,
+          "IS": 30,
+          "UC": 160
+        },
+        "2017": {
+          "PC": 60,
+          "CA": 70,
+          "UC": 0,
+          "IS": 60,
+          "PIP": 10,
+          "DLA": 170,
+          "AA": 40,
+          "JSA": 40,
+          "ESA": 130,
+          "RP": 140
+        }
+      }
+    }
+  },
+  "hectares": 25,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Castle_S",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Castle_S",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Castle_S",
+        "category": "bad",
+        "perc": 6.5781
+      },
+      {
+        "group": "Castle_S",
+        "category": "fair",
+        "perc": 14.611
+      },
+      {
+        "group": "Castle_S",
+        "category": "good",
+        "perc": 27.3877
+      },
+      {
+        "group": "Castle_S",
+        "category": "very_bad",
+        "perc": 3.2258
+      },
+      {
+        "group": "Castle_S",
+        "category": "very_good",
+        "perc": 48.1973
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Castle_S",
+        "category": "five_people",
+        "perc": 7.8431
+      },
+      {
+        "group": "Castle_S",
+        "category": "four_people",
+        "perc": 14.4796
+      },
+      {
+        "group": "Castle_S",
+        "category": "one_person",
+        "perc": 34.54
+      },
+      {
+        "group": "Castle_S",
+        "category": "three_people",
+        "perc": 17.3454
+      },
+      {
+        "group": "Castle_S",
+        "category": "two_people",
+        "perc": 25.7919
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Castle_S",
+        "category": "apprenticeship",
+        "perc": 4.4591
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_1_qualifications",
+        "perc": 5.6978
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_2_qualifications",
+        "perc": 16.5153
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_3_qualifications",
+        "perc": 16.5979
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_4_qualifications_and_above",
+        "perc": 28.7366
+      },
+      {
+        "group": "Castle_S",
+        "category": "no_qualifications",
+        "perc": 26.0116
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_qualifications",
+        "perc": 1.9818
+      }
+    ],
+    "cob": [
+      {
+        "group": "Castle_S",
+        "category": "england",
+        "perc": 3.3587
+      },
+      {
+        "group": "Castle_S",
+        "category": "northern_ireland",
+        "perc": 77.5665
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_cob",
+        "perc": 15.7795
+      },
+      {
+        "group": "Castle_S",
+        "category": "republic_of_ireland",
+        "perc": 2.4715
+      },
+      {
+        "group": "Castle_S",
+        "category": "scotland",
+        "perc": 0.6971
+      },
+      {
+        "group": "Castle_S",
+        "category": "wales",
+        "perc": 0.1267
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Castle_S",
+        "category": "english",
+        "perc": 87.8033
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_languages",
+        "perc": 12.1967
+      }
+    ],
+    "age": [
+      {
+        "group": "Castle_S",
+        "category": "a0to14",
+        "perc": 21.8354
+      },
+      {
+        "group": "Castle_S",
+        "category": "a15to39",
+        "perc": 36.2658
+      },
+      {
+        "group": "Castle_S",
+        "category": "a40to64",
+        "perc": 30.8228
+      },
+      {
+        "group": "Castle_S",
+        "category": "a65plus",
+        "perc": 11.0759
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Castle_S",
+        "category": "a1to19_hours",
+        "perc": 5.1491
+      },
+      {
+        "group": "Castle_S",
+        "category": "a20to49_hours",
+        "perc": 3.8618
+      },
+      {
+        "group": "Castle_S",
+        "category": "a50plus_hours",
+        "perc": 3.3198
+      },
+      {
+        "group": "Castle_S",
+        "category": "no_care",
+        "perc": 87.6694
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Castle_S",
+        "category": "catholic",
+        "perc": 50.8228
+      },
+      {
+        "group": "Castle_S",
+        "category": "none",
+        "perc": 12.4051
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_religions",
+        "perc": 4.6203
+      },
+      {
+        "group": "Castle_S",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 32.1519
+      }
+    ],
+    "sex": [
+      {
+        "group": "Castle_S",
+        "category": "females",
+        "perc": 49.4304
+      },
+      {
+        "group": "Castle_S",
+        "category": "males",
+        "perc": 50.5696
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 1.0309
+        },
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 15.4639
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 12.3711
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.2784
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 3.0928
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.1546
+        },
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 6.1856
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 7.2165
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 20.6186
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 19.5876
+        }
+      ],
+      "2022": [
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 16.3043
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 14.1304
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.7826
+        },
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 1.087
+        },
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 6.5217
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 18.4783
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 7.6087
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.4348
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 3.2609
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 17.3913
+        }
+      ],
+      "2017": [
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 8.3333
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.7222
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 8.3333
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 1.3889
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 23.6111
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.5556
+        },
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 5.5556
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 18.0556
+        },
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 19.4444
+        }
+      ]
+    }
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 6.5781
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 14.611
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.3877
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 3.2258
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 48.1973
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 7.8431
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 14.4796
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 34.54
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 17.3454
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 25.7919
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 4.4591
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.6978
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 16.5153
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.5979
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 28.7366
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 26.0116
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.9818
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 3.3587
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 77.5665
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 15.7795
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 2.4715
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.6971
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1267
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 87.8033
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 12.1967
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 21.8354
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 36.2658
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 30.8228
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 11.0759
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.1491
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.8618
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.3198
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.6694
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 50.8228
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 12.4051
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 4.6203
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 32.1519
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.4304
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.5696
+      }
+    ],
+    "BS": [
+      {
+        "group": "2023",
+        "category": "JSA",
+        "perc": 1.0309
+      },
+      {
+        "group": "2023",
+        "category": "RP",
+        "perc": 15.4639
+      },
+      {
+        "group": "2023",
+        "category": "ESA",
+        "perc": 12.3711
+      },
+      {
+        "group": "2023",
+        "category": "CA",
+        "perc": 9.2784
+      },
+      {
+        "group": "2023",
+        "category": "IS",
+        "perc": 3.0928
+      },
+      {
+        "group": "2023",
+        "category": "AA",
+        "perc": 5.1546
+      },
+      {
+        "group": "2023",
+        "category": "PC",
+        "perc": 6.1856
+      },
+      {
+        "group": "2023",
+        "category": "DLA",
+        "perc": 7.2165
+      },
+      {
+        "group": "2023",
+        "category": "PIP",
+        "perc": 20.6186
+      },
+      {
+        "group": "2023",
+        "category": "UC",
+        "perc": 19.5876
+      },
+      {
+        "group": "2022",
+        "category": "RP",
+        "perc": 16.3043
+      },
+      {
+        "group": "2022",
+        "category": "ESA",
+        "perc": 14.1304
+      },
+      {
+        "group": "2022",
+        "category": "CA",
+        "perc": 9.7826
+      },
+      {
+        "group": "2022",
+        "category": "JSA",
+        "perc": 1.087
+      },
+      {
+        "group": "2022",
+        "category": "PC",
+        "perc": 6.5217
+      },
+      {
+        "group": "2022",
+        "category": "PIP",
+        "perc": 18.4783
+      },
+      {
+        "group": "2022",
+        "category": "DLA",
+        "perc": 7.6087
+      },
+      {
+        "group": "2022",
+        "category": "AA",
+        "perc": 5.4348
+      },
+      {
+        "group": "2022",
+        "category": "IS",
+        "perc": 3.2609
+      },
+      {
+        "group": "2022",
+        "category": "UC",
+        "perc": 17.3913
+      },
+      {
+        "group": "2017",
+        "category": "PC",
+        "perc": 8.3333
+      },
+      {
+        "group": "2017",
+        "category": "CA",
+        "perc": 9.7222
+      },
+      {
+        "group": "2017",
+        "category": "UC",
+        "perc": 0
+      },
+      {
+        "group": "2017",
+        "category": "IS",
+        "perc": 8.3333
+      },
+      {
+        "group": "2017",
+        "category": "PIP",
+        "perc": 1.3889
+      },
+      {
+        "group": "2017",
+        "category": "DLA",
+        "perc": 23.6111
+      },
+      {
+        "group": "2017",
+        "category": "AA",
+        "perc": 5.5556
+      },
+      {
+        "group": "2017",
+        "category": "JSA",
+        "perc": 5.5556
+      },
+      {
+        "group": "2017",
+        "category": "ESA",
+        "perc": 18.0556
+      },
+      {
+        "group": "2017",
+        "category": "RP",
+        "perc": 19.4444
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Castle_S",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Castle_S",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Castle_S",
+        "category": "bad",
+        "perc": 6.5781
+      },
+      {
+        "group": "Castle_S",
+        "category": "fair",
+        "perc": 14.611
+      },
+      {
+        "group": "Castle_S",
+        "category": "good",
+        "perc": 27.3877
+      },
+      {
+        "group": "Castle_S",
+        "category": "very_bad",
+        "perc": 3.2258
+      },
+      {
+        "group": "Castle_S",
+        "category": "very_good",
+        "perc": 48.1973
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Castle_S",
+        "category": "five_people",
+        "perc": 7.8431
+      },
+      {
+        "group": "Castle_S",
+        "category": "four_people",
+        "perc": 14.4796
+      },
+      {
+        "group": "Castle_S",
+        "category": "one_person",
+        "perc": 34.54
+      },
+      {
+        "group": "Castle_S",
+        "category": "three_people",
+        "perc": 17.3454
+      },
+      {
+        "group": "Castle_S",
+        "category": "two_people",
+        "perc": 25.7919
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Castle_S",
+        "category": "apprenticeship",
+        "perc": 4.4591
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_1_qualifications",
+        "perc": 5.6978
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_2_qualifications",
+        "perc": 16.5153
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_3_qualifications",
+        "perc": 16.5979
+      },
+      {
+        "group": "Castle_S",
+        "category": "level_4_qualifications_and_above",
+        "perc": 28.7366
+      },
+      {
+        "group": "Castle_S",
+        "category": "no_qualifications",
+        "perc": 26.0116
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_qualifications",
+        "perc": 1.9818
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Castle_S",
+        "category": "england",
+        "perc": 3.3587
+      },
+      {
+        "group": "Castle_S",
+        "category": "northern_ireland",
+        "perc": 77.5665
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_cob",
+        "perc": 15.7795
+      },
+      {
+        "group": "Castle_S",
+        "category": "republic_of_ireland",
+        "perc": 2.4715
+      },
+      {
+        "group": "Castle_S",
+        "category": "scotland",
+        "perc": 0.6971
+      },
+      {
+        "group": "Castle_S",
+        "category": "wales",
+        "perc": 0.1267
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Castle_S",
+        "category": "english",
+        "perc": 87.8033
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_languages",
+        "perc": 12.1967
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Castle_S",
+        "category": "a0to14",
+        "perc": 21.8354
+      },
+      {
+        "group": "Castle_S",
+        "category": "a15to39",
+        "perc": 36.2658
+      },
+      {
+        "group": "Castle_S",
+        "category": "a40to64",
+        "perc": 30.8228
+      },
+      {
+        "group": "Castle_S",
+        "category": "a65plus",
+        "perc": 11.0759
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Castle_S",
+        "category": "a1to19_hours",
+        "perc": 5.1491
+      },
+      {
+        "group": "Castle_S",
+        "category": "a20to49_hours",
+        "perc": 3.8618
+      },
+      {
+        "group": "Castle_S",
+        "category": "a50plus_hours",
+        "perc": 3.3198
+      },
+      {
+        "group": "Castle_S",
+        "category": "no_care",
+        "perc": 87.6694
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Castle_S",
+        "category": "catholic",
+        "perc": 50.8228
+      },
+      {
+        "group": "Castle_S",
+        "category": "none",
+        "perc": 12.4051
+      },
+      {
+        "group": "Castle_S",
+        "category": "other_religions",
+        "perc": 4.6203
+      },
+      {
+        "group": "Castle_S",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 32.1519
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Castle_S",
+        "category": "females",
+        "perc": 49.4304
+      },
+      {
+        "group": "Castle_S",
+        "category": "males",
+        "perc": 50.5696
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BS": {
+      "2023": [
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 1.0309
+        },
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 15.4639
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 12.3711
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.2784
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 3.0928
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.1546
+        },
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 6.1856
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 7.2165
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 20.6186
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 19.5876
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.0487
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 14.3332
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 17.9194
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.3024
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.3478
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.5376
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.0161
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 5.8381
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.3145
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.3421
+        }
+      ],
+      "2022": [
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 16.3043
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 14.1304
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.7826
+        },
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 1.087
+        },
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 6.5217
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 18.4783
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 7.6087
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.4348
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 3.2609
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 17.3913
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 7.3012
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 30.5158
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 1.6362
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 13.1867
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.2699
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 16.8093
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 0.7792
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.4878
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 10.879
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 6.1349
+        }
+      ],
+      "2017": [
+        {
+          "group": "Castle_S",
+          "category": "PC",
+          "perc": 8.3333
+        },
+        {
+          "group": "Castle_S",
+          "category": "CA",
+          "perc": 9.7222
+        },
+        {
+          "group": "Castle_S",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Castle_S",
+          "category": "IS",
+          "perc": 8.3333
+        },
+        {
+          "group": "Castle_S",
+          "category": "PIP",
+          "perc": 1.3889
+        },
+        {
+          "group": "Castle_S",
+          "category": "DLA",
+          "perc": 23.6111
+        },
+        {
+          "group": "Castle_S",
+          "category": "AA",
+          "perc": 5.5556
+        },
+        {
+          "group": "Castle_S",
+          "category": "JSA",
+          "perc": 5.5556
+        },
+        {
+          "group": "Castle_S",
+          "category": "ESA",
+          "perc": 18.0556
+        },
+        {
+          "group": "Castle_S",
+          "category": "RP",
+          "perc": 19.4444
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "DLA",
+          "perc": 22.7152
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "RP",
+          "perc": 33.1043
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "CA",
+          "perc": 7.8752
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PIP",
+          "perc": 0.8736
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "ESA",
+          "perc": 13.6602
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "IS",
+          "perc": 4.0767
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "JSA",
+          "perc": 3.4436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "UC",
+          "perc": 0
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "AA",
+          "perc": 5.9436
+        },
+        {
+          "group": "Northern Ireland",
+          "category": "PC",
+          "perc": 8.3076
+        }
+      ]
+    }
+  },
+  "meta_data": {
+    "BS": {
+      "email": "",
+      "title": "Benefit Statistics",
+      "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+      "last_updated": "2023-07-06"
+    }
+  }
+}
