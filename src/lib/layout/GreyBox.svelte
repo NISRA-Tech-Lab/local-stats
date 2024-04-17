@@ -20,6 +20,8 @@ export let i_button = true;
 export let heading = null;
 export let chart_compare_type;
 export let compare_content = null;
+export let show = ["ni", "lgd", "dea", "sdz", "dz"];
+
 
 if (topic_prev_available == "false") {
     topic_boolean = false
@@ -27,9 +29,19 @@ if (topic_prev_available == "false") {
     topic_boolean = true
 }
 
+function showBox(x, y) {
+
+    if (y.indexOf(x) > -1) {
+        return "block"
+    } else {
+        return "none"
+    }
+
+}
+
 </script>
 
-<div class = "div-grey-box" style = {style}>
+<div class = "div-grey-box" style = {style + "; display: " + showBox(place.type, show)}>
 
     {#if (i_button)}
         <IButton id = {id} place = {place}/>
