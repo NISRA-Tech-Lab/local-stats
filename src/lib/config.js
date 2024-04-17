@@ -109,7 +109,17 @@ export const topics = {
 		{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
 		{ category: ['PC','RP'], label: 'Pension Age benefits' },
 		{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
+	],
+
+	BRES: [
+
+		{ category: 'Contruction', label: 'Disability and carers benefits' },
+		{ category: 'Manufacturing', label: 'Pension Age benefits' },
+		{ category: 'Services', label: 'Working Age benefits' }	,
+		{ category: 'Other', label: 'Working Age benefits' }	
+			
 	]
+
 
 	// FPSGDSDR: [
 

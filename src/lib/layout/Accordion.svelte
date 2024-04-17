@@ -48,7 +48,7 @@ let w, cols;
     >
 
         <div class="accordion-body">
-            {sub_heading} - {place.name} -
+            {@html sub_heading} - {place.name} -
             <span class="accordion-button-title-sub"
                 >{description}</span>
 

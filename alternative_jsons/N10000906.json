@@ -1,0 +1,1363 @@
+{
+  "code": "N10000906",
+  "name": "Moyola",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000009",
+      "name": "Mid Ulster",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N21000643",
+      "name": "Moyola_A",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000644",
+      "name": "Moyola_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000645",
+      "name": "Moyola_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000646",
+      "name": "Moyola_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000647",
+      "name": "Moyola_E",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000648",
+      "name": "Moyola_F",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000649",
+      "name": "Moyola_G",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000650",
+      "name": "Moyola_H",
+      "type": "sdz"
+    }
+  ],
+  "bounds": [
+    [-6.4572, 54.7137],
+    [-6.9734, 54.8618]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 18586
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 58
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 6506
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.2879,
+          "fair": 12.2828,
+          "good": 26.8467,
+          "very_bad": 1.4795,
+          "very_good": 55.103
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 16.8101,
+          "four_people": 16.4567,
+          "one_person": 24.5237,
+          "three_people": 15.7959,
+          "two_people": 26.4136
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 8.3604,
+          "level_1_qualifications": 5.0754,
+          "level_2_qualifications": 13.2596,
+          "level_3_qualifications": 16.051,
+          "level_4_qualifications_and_above": 30.7416,
+          "no_qualifications": 24.7145,
+          "other_qualifications": 1.7975
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.2705,
+          "northern_ireland": 93.0862,
+          "other_cob": 2.9538,
+          "republic_of_ireland": 1.1406,
+          "scotland": 0.5058,
+          "wales": 0.043
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.4438,
+          "other_languages": 2.5562
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 22.276,
+          "a15to39": 30.6376,
+          "a40to64": 31.6223,
+          "a65plus": 15.4641
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.1289,
+          "a20to49_hours": 3.0001,
+          "a50plus_hours": 3.3981,
+          "no_care": 88.4729
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 67.1258,
+          "none": 2.9269,
+          "other_religions": 0.5004,
+          "protestant_and_other_christian_including_christian_related": 29.4469
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.8978,
+          "males": 50.1022
+        }
+      }
+    },
+    "LE": {
+      "value": {
+        "Females": 82,
+        "Males": 79
+      }
+    },
+    "DEN": {
+      "value": {
+        "GDSDSDentists": 5.96,
+        "GDSDSSurgeries": 1
+      }
+    },
+    "DEN_REG": {
+      "value": {
+        "Dental_Registrations": 13506
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 70,
+        "JSA": 20,
+        "RP": 2570,
+        "PC": 630,
+        "AA": 590,
+        "CA": 730,
+        "DLA": 720,
+        "ESA": 750,
+        "UC": 960,
+        "PIP": 1440
+      }
+    },
+    "Destination": {
+      "value": {
+        "destHEpct": 55,
+        "destFEpct": 12.7,
+        "destEmploypct": null,
+        "destTrainpct": 21.5
+      }
+    },
+    "Admiss": {
+      "value": 2112
+    },
+    "Primary": {
+      "value": 1913
+    },
+    "PostPrimary": {
+      "value": 1811
+    },
+    "Attainment": {
+      "value": 84.9
+    },
+    "FE": {
+      "value": 740
+    },
+    "HE": {
+      "value": 720
+    },
+    "MYETotal": {
+      "value": 18640
+    }
+  },
+  "hectares": 23689,
+  "dea_location_description": "part of MAGHERAFELT settlement",
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Moyola",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Moyola",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Moyola",
+        "category": "bad",
+        "perc": 4.2879
+      },
+      {
+        "group": "Moyola",
+        "category": "fair",
+        "perc": 12.2828
+      },
+      {
+        "group": "Moyola",
+        "category": "good",
+        "perc": 26.8467
+      },
+      {
+        "group": "Moyola",
+        "category": "very_bad",
+        "perc": 1.4795
+      },
+      {
+        "group": "Moyola",
+        "category": "very_good",
+        "perc": 55.103
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Moyola",
+        "category": "five_people",
+        "perc": 16.8101
+      },
+      {
+        "group": "Moyola",
+        "category": "four_people",
+        "perc": 16.4567
+      },
+      {
+        "group": "Moyola",
+        "category": "one_person",
+        "perc": 24.5237
+      },
+      {
+        "group": "Moyola",
+        "category": "three_people",
+        "perc": 15.7959
+      },
+      {
+        "group": "Moyola",
+        "category": "two_people",
+        "perc": 26.4136
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Moyola",
+        "category": "apprenticeship",
+        "perc": 8.3604
+      },
+      {
+        "group": "Moyola",
+        "category": "level_1_qualifications",
+        "perc": 5.0754
+      },
+      {
+        "group": "Moyola",
+        "category": "level_2_qualifications",
+        "perc": 13.2596
+      },
+      {
+        "group": "Moyola",
+        "category": "level_3_qualifications",
+        "perc": 16.051
+      },
+      {
+        "group": "Moyola",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.7416
+      },
+      {
+        "group": "Moyola",
+        "category": "no_qualifications",
+        "perc": 24.7145
+      },
+      {
+        "group": "Moyola",
+        "category": "other_qualifications",
+        "perc": 1.7975
+      }
+    ],
+    "cob": [
+      {
+        "group": "Moyola",
+        "category": "england",
+        "perc": 2.2705
+      },
+      {
+        "group": "Moyola",
+        "category": "northern_ireland",
+        "perc": 93.0862
+      },
+      {
+        "group": "Moyola",
+        "category": "other_cob",
+        "perc": 2.9538
+      },
+      {
+        "group": "Moyola",
+        "category": "republic_of_ireland",
+        "perc": 1.1406
+      },
+      {
+        "group": "Moyola",
+        "category": "scotland",
+        "perc": 0.5058
+      },
+      {
+        "group": "Moyola",
+        "category": "wales",
+        "perc": 0.043
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Moyola",
+        "category": "english",
+        "perc": 97.4438
+      },
+      {
+        "group": "Moyola",
+        "category": "other_languages",
+        "perc": 2.5562
+      }
+    ],
+    "age": [
+      {
+        "group": "Moyola",
+        "category": "a0to14",
+        "perc": 22.276
+      },
+      {
+        "group": "Moyola",
+        "category": "a15to39",
+        "perc": 30.6376
+      },
+      {
+        "group": "Moyola",
+        "category": "a40to64",
+        "perc": 31.6223
+      },
+      {
+        "group": "Moyola",
+        "category": "a65plus",
+        "perc": 15.4641
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Moyola",
+        "category": "a1to19_hours",
+        "perc": 5.1289
+      },
+      {
+        "group": "Moyola",
+        "category": "a20to49_hours",
+        "perc": 3.0001
+      },
+      {
+        "group": "Moyola",
+        "category": "a50plus_hours",
+        "perc": 3.3981
+      },
+      {
+        "group": "Moyola",
+        "category": "no_care",
+        "perc": 88.4729
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Moyola",
+        "category": "catholic",
+        "perc": 67.1258
+      },
+      {
+        "group": "Moyola",
+        "category": "none",
+        "perc": 2.9269
+      },
+      {
+        "group": "Moyola",
+        "category": "other_religions",
+        "perc": 0.5004
+      },
+      {
+        "group": "Moyola",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 29.4469
+      }
+    ],
+    "sex": [
+      {
+        "group": "Moyola",
+        "category": "females",
+        "perc": 49.8978
+      },
+      {
+        "group": "Moyola",
+        "category": "males",
+        "perc": 50.1022
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.2879
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 12.2828
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 26.8467
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.4795
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 55.103
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 16.8101
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 16.4567
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 24.5237
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 15.7959
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 26.4136
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 8.3604
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.0754
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.2596
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.051
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.7416
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 24.7145
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.7975
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.2705
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 93.0862
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 2.9538
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.1406
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.5058
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.043
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.4438
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.5562
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 22.276
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 30.6376
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 31.6223
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 15.4641
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.1289
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.0001
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.3981
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 88.4729
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 67.1258
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 2.9269
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.5004
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 29.4469
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.8978
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.1022
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Moyola",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Moyola",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Moyola",
+        "category": "bad",
+        "perc": 4.2879
+      },
+      {
+        "group": "Moyola",
+        "category": "fair",
+        "perc": 12.2828
+      },
+      {
+        "group": "Moyola",
+        "category": "good",
+        "perc": 26.8467
+      },
+      {
+        "group": "Moyola",
+        "category": "very_bad",
+        "perc": 1.4795
+      },
+      {
+        "group": "Moyola",
+        "category": "very_good",
+        "perc": 55.103
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Moyola",
+        "category": "five_people",
+        "perc": 16.8101
+      },
+      {
+        "group": "Moyola",
+        "category": "four_people",
+        "perc": 16.4567
+      },
+      {
+        "group": "Moyola",
+        "category": "one_person",
+        "perc": 24.5237
+      },
+      {
+        "group": "Moyola",
+        "category": "three_people",
+        "perc": 15.7959
+      },
+      {
+        "group": "Moyola",
+        "category": "two_people",
+        "perc": 26.4136
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Moyola",
+        "category": "apprenticeship",
+        "perc": 8.3604
+      },
+      {
+        "group": "Moyola",
+        "category": "level_1_qualifications",
+        "perc": 5.0754
+      },
+      {
+        "group": "Moyola",
+        "category": "level_2_qualifications",
+        "perc": 13.2596
+      },
+      {
+        "group": "Moyola",
+        "category": "level_3_qualifications",
+        "perc": 16.051
+      },
+      {
+        "group": "Moyola",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.7416
+      },
+      {
+        "group": "Moyola",
+        "category": "no_qualifications",
+        "perc": 24.7145
+      },
+      {
+        "group": "Moyola",
+        "category": "other_qualifications",
+        "perc": 1.7975
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Moyola",
+        "category": "england",
+        "perc": 2.2705
+      },
+      {
+        "group": "Moyola",
+        "category": "northern_ireland",
+        "perc": 93.0862
+      },
+      {
+        "group": "Moyola",
+        "category": "other_cob",
+        "perc": 2.9538
+      },
+      {
+        "group": "Moyola",
+        "category": "republic_of_ireland",
+        "perc": 1.1406
+      },
+      {
+        "group": "Moyola",
+        "category": "scotland",
+        "perc": 0.5058
+      },
+      {
+        "group": "Moyola",
+        "category": "wales",
+        "perc": 0.043
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Moyola",
+        "category": "english",
+        "perc": 97.4438
+      },
+      {
+        "group": "Moyola",
+        "category": "other_languages",
+        "perc": 2.5562
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Moyola",
+        "category": "a0to14",
+        "perc": 22.276
+      },
+      {
+        "group": "Moyola",
+        "category": "a15to39",
+        "perc": 30.6376
+      },
+      {
+        "group": "Moyola",
+        "category": "a40to64",
+        "perc": 31.6223
+      },
+      {
+        "group": "Moyola",
+        "category": "a65plus",
+        "perc": 15.4641
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Moyola",
+        "category": "a1to19_hours",
+        "perc": 5.1289
+      },
+      {
+        "group": "Moyola",
+        "category": "a20to49_hours",
+        "perc": 3.0001
+      },
+      {
+        "group": "Moyola",
+        "category": "a50plus_hours",
+        "perc": 3.3981
+      },
+      {
+        "group": "Moyola",
+        "category": "no_care",
+        "perc": 88.4729
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Moyola",
+        "category": "catholic",
+        "perc": 67.1258
+      },
+      {
+        "group": "Moyola",
+        "category": "none",
+        "perc": 2.9269
+      },
+      {
+        "group": "Moyola",
+        "category": "other_religions",
+        "perc": 0.5004
+      },
+      {
+        "group": "Moyola",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 29.4469
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Moyola",
+        "category": "females",
+        "perc": 49.8978
+      },
+      {
+        "group": "Moyola",
+        "category": "males",
+        "perc": 50.1022
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T010",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T010",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "LE": [
+      {
+        "table_code": "LEDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+        "last_updated": "2024-04-11",
+        "email": "healthinequalities@health-ni.gov.uk",
+        "title": "Life expectancy at birth"
+      }
+    ],
+    "Admiss": [
+      {
+        "table_code": "ADMITDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
+        "last_updated": "2024-04-11",
+        "email": "statistics@health-ni.gov.uk",
+        "title": "Primary Reason for Admissions to HSC Hospitals"
+      }
+    ],
+    "DEN": [
+      {
+        "table_code": "FPSGDSDSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dentists and Surgeries"
+      }
+    ],
+    "DEN_REG": [
+      {
+        "table_code": "FPSGDSDRDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dental Registrations"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ],
+    "Primary": [
+      {
+        "table_code": "DESCPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Primary"
+      }
+    ],
+    "PostPrimary": [
+      {
+        "table_code": "DESCPPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Post Primary"
+      }
+    ],
+    "Attainment": [
+      {
+        "table_code": "DESLSADEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Attainment"
+      }
+    ],
+    "FE": [
+      {
+        "table_code": "FEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+        "last_updated": "2023-06-20",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Regulated enrolments at Further Education Colleges"
+      }
+    ],
+    "HE": [
+      {
+        "table_code": "HEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+        "last_updated": "2023-06-21",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Enrolments at Higher Education Institutions"
+      }
+    ],
+    "Destination": [
+      {
+        "table_code": "DESLSDDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Destination"
+      }
+    ]
+  }
+}

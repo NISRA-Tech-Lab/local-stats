@@ -1,0 +1,1214 @@
+{
+  "code": "N21000680",
+  "name": "Dungannon_E",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10000904",
+      "name": "Dungannon",
+      "type": "dea"
+    },
+    {
+      "code": "N09000009",
+      "name": "Mid Ulster",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20003039",
+      "name": "Dungannon_E1",
+      "type": "dz"
+    },
+    {
+      "code": "N20003040",
+      "name": "Dungannon_E2",
+      "type": "dz"
+    },
+    {
+      "code": "N20003045",
+      "name": "Dungannon_E3",
+      "type": "dz"
+    },
+    {
+      "code": "N20003046",
+      "name": "Dungannon_E4",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-6.7369, 54.4964],
+    [-6.759, 54.5071]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 2677
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 207
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 912
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 3.4405,
+          "fair": 10.2468,
+          "good": 35.4525,
+          "very_bad": 0.8975,
+          "very_good": 49.9626
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 14.8026,
+          "four_people": 19.5175,
+          "one_person": 21.9298,
+          "three_people": 19.1886,
+          "two_people": 24.5614
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.2924,
+          "level_1_qualifications": 6.0019,
+          "level_2_qualifications": 11.181,
+          "level_3_qualifications": 11.8103,
+          "level_4_qualifications_and_above": 22.3136,
+          "no_qualifications": 37.2217,
+          "other_qualifications": 5.1791
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.3916,
+          "northern_ireland": 54.858,
+          "other_cob": 41.1809,
+          "republic_of_ireland": 1.1958,
+          "scotland": 0.299,
+          "wales": 0.0747
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 62.3155,
+          "other_languages": 37.6845
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 21.4419,
+          "a15to39": 35.5996,
+          "a40to64": 31.6773,
+          "a65plus": 11.2813
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 3.462,
+          "a20to49_hours": 2.8651,
+          "a50plus_hours": 2.0692,
+          "no_care": 91.6037
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 53.2312,
+          "none": 7.5831,
+          "other_religions": 1.3074,
+          "protestant_and_other_christian_including_christian_related": 37.8782
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.0848,
+          "males": 50.9152
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 10,
+        "JSA": 0,
+        "RP": 240,
+        "PC": 50,
+        "AA": 50,
+        "CA": 50,
+        "DLA": 60,
+        "ESA": 60,
+        "UC": 180,
+        "PIP": 140
+      }
+    },
+    "MYETotal": {
+      "value": 2679
+    }
+  },
+  "hectares": 91,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Dungannon_E",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Dungannon_E",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Dungannon_E",
+        "category": "bad",
+        "perc": 3.4405
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "fair",
+        "perc": 10.2468
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "good",
+        "perc": 35.4525
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "very_bad",
+        "perc": 0.8975
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "very_good",
+        "perc": 49.9626
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Dungannon_E",
+        "category": "five_people",
+        "perc": 14.8026
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "four_people",
+        "perc": 19.5175
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "one_person",
+        "perc": 21.9298
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "three_people",
+        "perc": 19.1886
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "two_people",
+        "perc": 24.5614
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Dungannon_E",
+        "category": "apprenticeship",
+        "perc": 6.2924
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_1_qualifications",
+        "perc": 6.0019
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_2_qualifications",
+        "perc": 11.181
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_3_qualifications",
+        "perc": 11.8103
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_4_qualifications_and_above",
+        "perc": 22.3136
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "no_qualifications",
+        "perc": 37.2217
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_qualifications",
+        "perc": 5.1791
+      }
+    ],
+    "cob": [
+      {
+        "group": "Dungannon_E",
+        "category": "england",
+        "perc": 2.3916
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "northern_ireland",
+        "perc": 54.858
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_cob",
+        "perc": 41.1809
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "republic_of_ireland",
+        "perc": 1.1958
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "scotland",
+        "perc": 0.299
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "wales",
+        "perc": 0.0747
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Dungannon_E",
+        "category": "english",
+        "perc": 62.3155
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_languages",
+        "perc": 37.6845
+      }
+    ],
+    "age": [
+      {
+        "group": "Dungannon_E",
+        "category": "a0to14",
+        "perc": 21.4419
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a15to39",
+        "perc": 35.5996
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a40to64",
+        "perc": 31.6773
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a65plus",
+        "perc": 11.2813
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Dungannon_E",
+        "category": "a1to19_hours",
+        "perc": 3.462
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a20to49_hours",
+        "perc": 2.8651
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a50plus_hours",
+        "perc": 2.0692
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "no_care",
+        "perc": 91.6037
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Dungannon_E",
+        "category": "catholic",
+        "perc": 53.2312
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "none",
+        "perc": 7.5831
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_religions",
+        "perc": 1.3074
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 37.8782
+      }
+    ],
+    "sex": [
+      {
+        "group": "Dungannon_E",
+        "category": "females",
+        "perc": 49.0848
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "males",
+        "perc": 50.9152
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 3.4405
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 10.2468
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 35.4525
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.8975
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 49.9626
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 14.8026
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 19.5175
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 21.9298
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 19.1886
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 24.5614
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.2924
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.0019
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 11.181
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 11.8103
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 22.3136
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 37.2217
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 5.1791
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.3916
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 54.858
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 41.1809
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.1958
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.299
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.0747
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 62.3155
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 37.6845
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 21.4419
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 35.5996
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 31.6773
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 11.2813
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 3.462
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.8651
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 2.0692
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 91.6037
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 53.2312
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 7.5831
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.3074
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 37.8782
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.0848
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.9152
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Dungannon_E",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Dungannon_E",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Dungannon_E",
+        "category": "bad",
+        "perc": 3.4405
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "fair",
+        "perc": 10.2468
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "good",
+        "perc": 35.4525
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "very_bad",
+        "perc": 0.8975
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "very_good",
+        "perc": 49.9626
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Dungannon_E",
+        "category": "five_people",
+        "perc": 14.8026
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "four_people",
+        "perc": 19.5175
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "one_person",
+        "perc": 21.9298
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "three_people",
+        "perc": 19.1886
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "two_people",
+        "perc": 24.5614
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Dungannon_E",
+        "category": "apprenticeship",
+        "perc": 6.2924
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_1_qualifications",
+        "perc": 6.0019
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_2_qualifications",
+        "perc": 11.181
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_3_qualifications",
+        "perc": 11.8103
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "level_4_qualifications_and_above",
+        "perc": 22.3136
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "no_qualifications",
+        "perc": 37.2217
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_qualifications",
+        "perc": 5.1791
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Dungannon_E",
+        "category": "england",
+        "perc": 2.3916
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "northern_ireland",
+        "perc": 54.858
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_cob",
+        "perc": 41.1809
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "republic_of_ireland",
+        "perc": 1.1958
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "scotland",
+        "perc": 0.299
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "wales",
+        "perc": 0.0747
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Dungannon_E",
+        "category": "english",
+        "perc": 62.3155
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_languages",
+        "perc": 37.6845
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Dungannon_E",
+        "category": "a0to14",
+        "perc": 21.4419
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a15to39",
+        "perc": 35.5996
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a40to64",
+        "perc": 31.6773
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a65plus",
+        "perc": 11.2813
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Dungannon_E",
+        "category": "a1to19_hours",
+        "perc": 3.462
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a20to49_hours",
+        "perc": 2.8651
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "a50plus_hours",
+        "perc": 2.0692
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "no_care",
+        "perc": 91.6037
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Dungannon_E",
+        "category": "catholic",
+        "perc": 53.2312
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "none",
+        "perc": 7.5831
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "other_religions",
+        "perc": 1.3074
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 37.8782
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Dungannon_E",
+        "category": "females",
+        "perc": 49.0848
+      },
+      {
+        "group": "Dungannon_E",
+        "category": "males",
+        "perc": 50.9152
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

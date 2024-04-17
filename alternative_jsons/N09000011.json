@@ -1,0 +1,1712 @@
+{
+  "code": "N09000011",
+  "name": "Ards and North Down",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "lgd",
+  "count": 11,
+  "parents": [
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N10001101",
+      "name": "Ards Peninsula",
+      "type": "dea"
+    },
+    {
+      "code": "N10001102",
+      "name": "Bangor Central",
+      "type": "dea"
+    },
+    {
+      "code": "N10001103",
+      "name": "Bangor East and Donaghadee",
+      "type": "dea"
+    },
+    {
+      "code": "N10001104",
+      "name": "Bangor West",
+      "type": "dea"
+    },
+    {
+      "code": "N10001105",
+      "name": "Comber",
+      "type": "dea"
+    },
+    {
+      "code": "N10001106",
+      "name": "Holywood and Clandeboye",
+      "type": "dea"
+    },
+    {
+      "code": "N10001107",
+      "name": "Newtownards",
+      "type": "dea"
+    }
+  ],
+  "bounds": [
+    [-5.4328, 54.2243],
+    [-5.9585, 54.7801]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 156672
+        },
+        "change": {
+          "all": 4.4596
+        },
+        "2021": {
+          "all": 163659
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 4
+        },
+        "2021": {
+          "all": 4
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 64605
+        },
+        "change": {
+          "all_households": 9.0395
+        },
+        "2021": {
+          "all_households": 70445
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 3.7346,
+          "fair": 14.6925,
+          "good": 34.2397,
+          "very_bad": 0.9804,
+          "very_good": 46.3529
+        },
+        "2021": {
+          "bad": 5.506,
+          "fair": 14.6652,
+          "good": 31.3047,
+          "very_bad": 1.7708,
+          "very_good": 46.7533
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 6.9375,
+          "four_people": 14.1475,
+          "one_person": 28.2393,
+          "three_people": 16.2913,
+          "two_people": 34.3843
+        },
+        "2021": {
+          "five_people": 5.8713,
+          "four_people": 12.9039,
+          "one_person": 30.8756,
+          "three_people": 15.2618,
+          "two_people": 35.0874
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 5.0187,
+          "level_1_qualifications": 12.1257,
+          "level_2_qualifications": 16.2243,
+          "level_3_qualifications": 12.659,
+          "level_4_qualifications_and_above": 26.7872,
+          "no_qualifications": 23.37,
+          "other_qualifications": 3.815
+        },
+        "2021": {
+          "apprenticeship": 6.7371,
+          "level_1_qualifications": 6.6833,
+          "level_2_qualifications": 14.7324,
+          "level_3_qualifications": 16.043,
+          "level_4_qualifications_and_above": 34.1458,
+          "no_qualifications": 19.1686,
+          "other_qualifications": 2.4897
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 5.3864,
+          "northern_ireland": 88.4064,
+          "other_cob": 3.409,
+          "republic_of_ireland": 1.258,
+          "scotland": 1.3034,
+          "wales": 0.2368
+        },
+        "2021": {
+          "england": 5.7308,
+          "northern_ireland": 86.8354,
+          "other_cob": 4.5369,
+          "republic_of_ireland": 1.2465,
+          "scotland": 1.4145,
+          "wales": 0.2359
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 98.4952,
+          "other_languages": 1.5048
+        },
+        "2021": {
+          "english": 97.9309,
+          "other_languages": 2.0691
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 17.7619,
+          "a15to39": 29.8694,
+          "a40to64": 34.6935,
+          "a65plus": 17.6751
+        },
+        "2021": {
+          "a0to14": 16.9639,
+          "a15to39": 27.011,
+          "a40to64": 33.8906,
+          "a65plus": 22.1344
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 8.8533,
+          "a20to49_hours": 1.9996,
+          "a50plus_hours": 3.332,
+          "no_care": 85.815
+        },
+        "2021": {
+          "a1to19_hours": 6.7718,
+          "a20to49_hours": 2.8403,
+          "a50plus_hours": 4.0632,
+          "no_care": 86.3246
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 13.1166,
+          "none": 10.7256,
+          "other_religions": 1.1036,
+          "protestant_and_other_christian_including_christian_related": 75.0543
+        },
+        "2021": {
+          "catholic": 13.6028,
+          "none": 17.0991,
+          "other_religions": 1.3669,
+          "protestant_and_other_christian_including_christian_related": 67.9313
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 51.5421,
+          "males": 48.4579
+        },
+        "2021": {
+          "females": 51.2972,
+          "males": 48.7028
+        }
+      }
+    },
+    "LE": {
+      "value": {
+        "Females": 82.9,
+        "Males": 80
+      }
+    },
+    "DEN": {
+      "value": {
+        "GDSDSDentists": 97.74,
+        "GDSDSSurgeries": 29
+      }
+    },
+    "DEN_REG": {
+      "value": {
+        "Dental_Registrations": 110784
+      }
+    },
+    "GP": {
+      "value": {
+        "PRACS": 24,
+        "GPS": 122,
+        "REGPAT": 165887,
+        "PRACLIST": 6912
+      }
+    },
+    "LMS": {
+      "value": {
+        "EMPN": 77000,
+        "EMPR": 72.8,
+        "UNEMPR": 2.6,
+        "INACTR": 25.2
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 670,
+        "JSA": 420,
+        "RP": 33050,
+        "PC": 4090,
+        "AA": 5870,
+        "CA": 5460,
+        "DLA": 5210,
+        "ESA": 7190,
+        "UC": 10600,
+        "PIP": 12950
+      }
+    },
+    "Destination": {
+      "value": {
+        "destHEpct": 43.2,
+        "destFEpct": 32.4,
+        "destEmploypct": 14.7,
+        "destTrainpct": 5.1
+      }
+    },
+    "PopChange": {
+      "value": {
+        "2001": 149559,
+        "2002": 150198,
+        "2003": 150424,
+        "2004": 150912,
+        "2005": 152233,
+        "2006": 153488,
+        "2007": 154406,
+        "2008": 155014,
+        "2009": 156058,
+        "2010": 156518,
+        "2011": 156943,
+        "2012": 157794,
+        "2013": 157956,
+        "2014": 158376,
+        "2015": 159362,
+        "2016": 160299,
+        "2017": 160931,
+        "2018": 161816,
+        "2019": 162807,
+        "2020": 163206,
+        "2021": 163827,
+        "2022": 164223
+      }
+    },
+    "Happy": {
+      "value": 7.7
+    },
+    "ASHE": {
+      "value": 22585
+    },
+    "Primary": {
+      "value": 13348
+    },
+    "PostPrimary": {
+      "value": 12092
+    },
+    "ClassSize": {
+      "value": 17.8
+    },
+    "Attainment": {
+      "value": 82
+    },
+    "FE": {
+      "value": 8130
+    },
+    "HE": {
+      "value": 5430
+    },
+    "MYETotal": {
+      "value": 164223
+    },
+    "Median": {
+      "value": 45.2
+    }
+  },
+  "hectares": 45835,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Ards and North Down",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Ards and North Down",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Ards and North Down",
+        "category": "bad",
+        "perc": 5.506
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "fair",
+        "perc": 14.6652
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "good",
+        "perc": 31.3047
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "very_bad",
+        "perc": 1.7708
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "very_good",
+        "perc": 46.7533
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Ards and North Down",
+        "category": "five_people",
+        "perc": 5.8713
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "four_people",
+        "perc": 12.9039
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "one_person",
+        "perc": 30.8756
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "three_people",
+        "perc": 15.2618
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "two_people",
+        "perc": 35.0874
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Ards and North Down",
+        "category": "apprenticeship",
+        "perc": 6.7371
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_1_qualifications",
+        "perc": 6.6833
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_2_qualifications",
+        "perc": 14.7324
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_3_qualifications",
+        "perc": 16.043
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.1458
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "no_qualifications",
+        "perc": 19.1686
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_qualifications",
+        "perc": 2.4897
+      }
+    ],
+    "cob": [
+      {
+        "group": "Ards and North Down",
+        "category": "england",
+        "perc": 5.7308
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "northern_ireland",
+        "perc": 86.8354
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_cob",
+        "perc": 4.5369
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "republic_of_ireland",
+        "perc": 1.2465
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "scotland",
+        "perc": 1.4145
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "wales",
+        "perc": 0.2359
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Ards and North Down",
+        "category": "english",
+        "perc": 97.9309
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_languages",
+        "perc": 2.0691
+      }
+    ],
+    "age": [
+      {
+        "group": "Ards and North Down",
+        "category": "a0to14",
+        "perc": 16.9639
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a15to39",
+        "perc": 27.011
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a40to64",
+        "perc": 33.8906
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a65plus",
+        "perc": 22.1344
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Ards and North Down",
+        "category": "a1to19_hours",
+        "perc": 6.7718
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a20to49_hours",
+        "perc": 2.8403
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a50plus_hours",
+        "perc": 4.0632
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "no_care",
+        "perc": 86.3246
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Ards and North Down",
+        "category": "catholic",
+        "perc": 13.6028
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "none",
+        "perc": 17.0991
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_religions",
+        "perc": 1.3669
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 67.9313
+      }
+    ],
+    "sex": [
+      {
+        "group": "Ards and North Down",
+        "category": "females",
+        "perc": 51.2972
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "males",
+        "perc": 48.7028
+      }
+    ],
+    "BRES": [
+      {
+        "geography": "Ards and North Down",
+        "category": "Construction",
+        "perc": 3.0982
+      },
+      {
+        "geography": "Ards and North Down",
+        "category": "Manufacturing",
+        "perc": 7.2931
+      },
+      {
+        "geography": "Ards and North Down",
+        "category": "Services",
+        "perc": 88.3058
+      },
+      {
+        "geography": "Ards and North Down",
+        "category": "Other",
+        "perc": 1.3029
+      }
+    ]
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2011,
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2011,
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2011,
+        "category": "bad",
+        "perc": 3.7346
+      },
+      {
+        "group": 2011,
+        "category": "fair",
+        "perc": 14.6925
+      },
+      {
+        "group": 2011,
+        "category": "good",
+        "perc": 34.2397
+      },
+      {
+        "group": 2011,
+        "category": "very_bad",
+        "perc": 0.9804
+      },
+      {
+        "group": 2011,
+        "category": "very_good",
+        "perc": 46.3529
+      },
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.506
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 14.6652
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 31.3047
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.7708
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 46.7533
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2011,
+        "category": "five_people",
+        "perc": 6.9375
+      },
+      {
+        "group": 2011,
+        "category": "four_people",
+        "perc": 14.1475
+      },
+      {
+        "group": 2011,
+        "category": "one_person",
+        "perc": 28.2393
+      },
+      {
+        "group": 2011,
+        "category": "three_people",
+        "perc": 16.2913
+      },
+      {
+        "group": 2011,
+        "category": "two_people",
+        "perc": 34.3843
+      },
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 5.8713
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 12.9039
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 30.8756
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 15.2618
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 35.0874
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2011,
+        "category": "apprenticeship",
+        "perc": 5.0187
+      },
+      {
+        "group": 2011,
+        "category": "level_1_qualifications",
+        "perc": 12.1257
+      },
+      {
+        "group": 2011,
+        "category": "level_2_qualifications",
+        "perc": 16.2243
+      },
+      {
+        "group": 2011,
+        "category": "level_3_qualifications",
+        "perc": 12.659
+      },
+      {
+        "group": 2011,
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.7872
+      },
+      {
+        "group": 2011,
+        "category": "no_qualifications",
+        "perc": 23.37
+      },
+      {
+        "group": 2011,
+        "category": "other_qualifications",
+        "perc": 3.815
+      },
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.7371
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 6.6833
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.7324
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 16.043
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.1458
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 19.1686
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.4897
+      }
+    ],
+    "cob": [
+      {
+        "group": 2011,
+        "category": "england",
+        "perc": 5.3864
+      },
+      {
+        "group": 2011,
+        "category": "northern_ireland",
+        "perc": 88.4064
+      },
+      {
+        "group": 2011,
+        "category": "other_cob",
+        "perc": 3.409
+      },
+      {
+        "group": 2011,
+        "category": "republic_of_ireland",
+        "perc": 1.258
+      },
+      {
+        "group": 2011,
+        "category": "scotland",
+        "perc": 1.3034
+      },
+      {
+        "group": 2011,
+        "category": "wales",
+        "perc": 0.2368
+      },
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 5.7308
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 86.8354
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 4.5369
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.2465
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.4145
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2359
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2011,
+        "category": "english",
+        "perc": 98.4952
+      },
+      {
+        "group": 2011,
+        "category": "other_languages",
+        "perc": 1.5048
+      },
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.9309
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.0691
+      }
+    ],
+    "age": [
+      {
+        "group": 2011,
+        "category": "a0to14",
+        "perc": 17.7619
+      },
+      {
+        "group": 2011,
+        "category": "a15to39",
+        "perc": 29.8694
+      },
+      {
+        "group": 2011,
+        "category": "a40to64",
+        "perc": 34.6935
+      },
+      {
+        "group": 2011,
+        "category": "a65plus",
+        "perc": 17.6751
+      },
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 16.9639
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 27.011
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 33.8906
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 22.1344
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2011,
+        "category": "a1to19_hours",
+        "perc": 8.8533
+      },
+      {
+        "group": 2011,
+        "category": "a20to49_hours",
+        "perc": 1.9996
+      },
+      {
+        "group": 2011,
+        "category": "a50plus_hours",
+        "perc": 3.332
+      },
+      {
+        "group": 2011,
+        "category": "no_care",
+        "perc": 85.815
+      },
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 6.7718
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.8403
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.0632
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 86.3246
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2011,
+        "category": "catholic",
+        "perc": 13.1166
+      },
+      {
+        "group": 2011,
+        "category": "none",
+        "perc": 10.7256
+      },
+      {
+        "group": 2011,
+        "category": "other_religions",
+        "perc": 1.1036
+      },
+      {
+        "group": 2011,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 75.0543
+      },
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 13.6028
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 17.0991
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.3669
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 67.9313
+      }
+    ],
+    "sex": [
+      {
+        "group": 2011,
+        "category": "females",
+        "perc": 51.5421
+      },
+      {
+        "group": 2011,
+        "category": "males",
+        "perc": 48.4579
+      },
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 51.2972
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 48.7028
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Ards and North Down",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Ards and North Down",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Ards and North Down",
+        "category": "bad",
+        "perc": 5.506
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "fair",
+        "perc": 14.6652
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "good",
+        "perc": 31.3047
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "very_bad",
+        "perc": 1.7708
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "very_good",
+        "perc": 46.7533
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Ards and North Down",
+        "category": "five_people",
+        "perc": 5.8713
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "four_people",
+        "perc": 12.9039
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "one_person",
+        "perc": 30.8756
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "three_people",
+        "perc": 15.2618
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "two_people",
+        "perc": 35.0874
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Ards and North Down",
+        "category": "apprenticeship",
+        "perc": 6.7371
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_1_qualifications",
+        "perc": 6.6833
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_2_qualifications",
+        "perc": 14.7324
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_3_qualifications",
+        "perc": 16.043
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.1458
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "no_qualifications",
+        "perc": 19.1686
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_qualifications",
+        "perc": 2.4897
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Ards and North Down",
+        "category": "england",
+        "perc": 5.7308
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "northern_ireland",
+        "perc": 86.8354
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_cob",
+        "perc": 4.5369
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "republic_of_ireland",
+        "perc": 1.2465
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "scotland",
+        "perc": 1.4145
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "wales",
+        "perc": 0.2359
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Ards and North Down",
+        "category": "english",
+        "perc": 97.9309
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_languages",
+        "perc": 2.0691
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Ards and North Down",
+        "category": "a0to14",
+        "perc": 16.9639
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a15to39",
+        "perc": 27.011
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a40to64",
+        "perc": 33.8906
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a65plus",
+        "perc": 22.1344
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Ards and North Down",
+        "category": "a1to19_hours",
+        "perc": 6.7718
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a20to49_hours",
+        "perc": 2.8403
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "a50plus_hours",
+        "perc": 4.0632
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "no_care",
+        "perc": 86.3246
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Ards and North Down",
+        "category": "catholic",
+        "perc": 13.6028
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "none",
+        "perc": 17.0991
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "other_religions",
+        "perc": 1.3669
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 67.9313
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Ards and North Down",
+        "category": "females",
+        "perc": 51.2972
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "males",
+        "perc": 48.7028
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Ards and North Down",
+        "category": "Construction",
+        "perc": 3.0982
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "Manufacturing",
+        "perc": 7.2931
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "Services",
+        "perc": 88.3058
+      },
+      {
+        "group": "Ards and North Down",
+        "category": "Other",
+        "perc": 1.3029
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T06",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Population totals"
+      }
+    ],
+    "Median": [
+      {
+        "table_code": "MA01T02",
+        "dataset_url": "https://data.nisra.gov.uk/table/MA01T02",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Median age"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T04",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T04",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "PopChange": [
+      {
+        "table_code": "MYE01T06",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Population totals"
+      }
+    ],
+    "LE": [
+      {
+        "table_code": "LELGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/LELGD",
+        "last_updated": "2024-04-11",
+        "email": "healthinequalities@health-ni.gov.uk",
+        "title": "Life expectancy at birth"
+      }
+    ],
+    "Happy": [
+      {
+        "table_code": "WBPERSWLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/WBPERSWLGD",
+        "last_updated": "2023-12-14",
+        "email": "pfganalytics@executiveoffice-ni.gov.uk",
+        "title": "Personal Wellbeing"
+      }
+    ],
+    "GP": [
+      {
+        "table_code": "GPPRACPATLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/GPPRACPATLGD",
+        "last_updated": "2023-06-23",
+        "email": "info.bso@hscni.net",
+        "title": "GPs Practices and Registered Patients"
+      }
+    ],
+    "DEN": [
+      {
+        "table_code": "FPSGDSDSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSLGD",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dentists and Surgeries"
+      }
+    ],
+    "DEN_REG": [
+      {
+        "table_code": "FPSGDSDRLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRLGD",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dental Registrations"
+      }
+    ],
+    "LMS": [
+      {
+        "table_code": "LMSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/LMSLGD",
+        "last_updated": "2024-03-28",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Labour Market Status"
+      }
+    ],
+    "ASHE": [
+      {
+        "table_code": "GAPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/GAPLGD",
+        "last_updated": "2023-11-01",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Gross Annual Pay"
+      }
+    ],
+    "BRES": [
+      {
+        "table_code": "BRESHEADLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BRESHEADLGD",
+        "last_updated": "2024-03-19",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Employee Jobs"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ],
+    "Primary": [
+      {
+        "table_code": "DESCPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Primary"
+      }
+    ],
+    "PostPrimary": [
+      {
+        "table_code": "DESCPPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Post Primary"
+      }
+    ],
+    "ClassSize": [
+      {
+        "table_code": "DETNPTRLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DETNPTRLGD",
+        "last_updated": "2023-06-29",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "Pupil Teacher Ratios in Northern Ireland"
+      }
+    ],
+    "Attainment": [
+      {
+        "table_code": "DESLSALGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSALGD",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Attainment"
+      }
+    ],
+    "FE": [
+      {
+        "table_code": "FEENROLLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLLGD",
+        "last_updated": "2023-06-20",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Regulated enrolments at Further Education Colleges"
+      }
+    ],
+    "HE": [
+      {
+        "table_code": "HEENROLLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLLGD",
+        "last_updated": "2023-06-21",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Enrolments at Higher Education Institutions"
+      }
+    ],
+    "Destination": [
+      {
+        "table_code": "DESLSDLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDLGD",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Destination"
+      }
+    ]
+  }
+}

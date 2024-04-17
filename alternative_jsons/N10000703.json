@@ -1,0 +1,1358 @@
+{
+  "code": "N10000703",
+  "name": "Downshire East",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dea",
+  "count": 80,
+  "parents": [
+    {
+      "code": "N09000007",
+      "name": "Lisburn and Castlereagh",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N21000546",
+      "name": "Downshire_East_A",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000547",
+      "name": "Downshire_East_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000548",
+      "name": "Downshire_East_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000549",
+      "name": "Downshire_East_D",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000550",
+      "name": "Downshire_East_E",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000551",
+      "name": "Downshire_East_F",
+      "type": "sdz"
+    },
+    {
+      "code": "N21000552",
+      "name": "Downshire_East_G",
+      "type": "sdz"
+    }
+  ],
+  "bounds": [
+    [-5.8716, 54.3705],
+    [-6.0793, 54.5437]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 16746
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 75
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 6492
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 3.7981,
+          "fair": 11.705,
+          "good": 27.8471,
+          "very_bad": 0.9854,
+          "very_good": 55.6644
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 9.8921,
+          "four_people": 16.5331,
+          "one_person": 23.8213,
+          "three_people": 15.1926,
+          "two_people": 34.5609
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.1514,
+          "level_1_qualifications": 5.1074,
+          "level_2_qualifications": 12.7385,
+          "level_3_qualifications": 14.1055,
+          "level_4_qualifications_and_above": 44.0814,
+          "no_qualifications": 15.7128,
+          "other_qualifications": 2.103
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.0965,
+          "northern_ireland": 89.1735,
+          "other_cob": 3.8278,
+          "republic_of_ireland": 1.672,
+          "scotland": 0.9973,
+          "wales": 0.2329
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 98.2234,
+          "other_languages": 1.7766
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 19.336,
+          "a15to39": 25.9465,
+          "a40to64": 34.6949,
+          "a65plus": 20.0227
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 7.4827,
+          "a20to49_hours": 2.4647,
+          "a50plus_hours": 3.4277,
+          "no_care": 86.6248
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 15.1908,
+          "none": 11.1542,
+          "other_religions": 1.2062,
+          "protestant_and_other_christian_including_christian_related": 72.4488
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.5195,
+          "males": 49.4805
+        }
+      }
+    },
+    "LE": {
+      "value": {
+        "Females": 85.7,
+        "Males": 82.7
+      }
+    },
+    "DEN": {
+      "value": {
+        "GDSDSDentists": 2.23,
+        "GDSDSSurgeries": 1
+      }
+    },
+    "DEN_REG": {
+      "value": {
+        "Dental_Registrations": 11908
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 50,
+        "JSA": 40,
+        "RP": 3080,
+        "PC": 280,
+        "AA": 440,
+        "CA": 410,
+        "DLA": 420,
+        "ESA": 460,
+        "UC": 620,
+        "PIP": 810
+      }
+    },
+    "Destination": {
+      "value": {
+        "destHEpct": 61.1,
+        "destFEpct": 15.4,
+        "destEmploypct": 11.8,
+        "destTrainpct": 9.5
+      }
+    },
+    "Admiss": {
+      "value": 2091
+    },
+    "Primary": {
+      "value": 1585
+    },
+    "PostPrimary": {
+      "value": 1407
+    },
+    "Attainment": {
+      "value": 90
+    },
+    "FE": {
+      "value": 655
+    },
+    "HE": {
+      "value": 735
+    },
+    "MYETotal": {
+      "value": 16720
+    }
+  },
+  "hectares": 15085,
+  "dea_location_description": "part of CARRYDUFF, LISBURN CITY and METROPOLITAN CASTLEREAGH settlements",
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Downshire East",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downshire East",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downshire East",
+        "category": "bad",
+        "perc": 3.7981
+      },
+      {
+        "group": "Downshire East",
+        "category": "fair",
+        "perc": 11.705
+      },
+      {
+        "group": "Downshire East",
+        "category": "good",
+        "perc": 27.8471
+      },
+      {
+        "group": "Downshire East",
+        "category": "very_bad",
+        "perc": 0.9854
+      },
+      {
+        "group": "Downshire East",
+        "category": "very_good",
+        "perc": 55.6644
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downshire East",
+        "category": "five_people",
+        "perc": 9.8921
+      },
+      {
+        "group": "Downshire East",
+        "category": "four_people",
+        "perc": 16.5331
+      },
+      {
+        "group": "Downshire East",
+        "category": "one_person",
+        "perc": 23.8213
+      },
+      {
+        "group": "Downshire East",
+        "category": "three_people",
+        "perc": 15.1926
+      },
+      {
+        "group": "Downshire East",
+        "category": "two_people",
+        "perc": 34.5609
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downshire East",
+        "category": "apprenticeship",
+        "perc": 6.1514
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_1_qualifications",
+        "perc": 5.1074
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_2_qualifications",
+        "perc": 12.7385
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_3_qualifications",
+        "perc": 14.1055
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_4_qualifications_and_above",
+        "perc": 44.0814
+      },
+      {
+        "group": "Downshire East",
+        "category": "no_qualifications",
+        "perc": 15.7128
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_qualifications",
+        "perc": 2.103
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downshire East",
+        "category": "england",
+        "perc": 4.0965
+      },
+      {
+        "group": "Downshire East",
+        "category": "northern_ireland",
+        "perc": 89.1735
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_cob",
+        "perc": 3.8278
+      },
+      {
+        "group": "Downshire East",
+        "category": "republic_of_ireland",
+        "perc": 1.672
+      },
+      {
+        "group": "Downshire East",
+        "category": "scotland",
+        "perc": 0.9973
+      },
+      {
+        "group": "Downshire East",
+        "category": "wales",
+        "perc": 0.2329
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downshire East",
+        "category": "english",
+        "perc": 98.2234
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_languages",
+        "perc": 1.7766
+      }
+    ],
+    "age": [
+      {
+        "group": "Downshire East",
+        "category": "a0to14",
+        "perc": 19.336
+      },
+      {
+        "group": "Downshire East",
+        "category": "a15to39",
+        "perc": 25.9465
+      },
+      {
+        "group": "Downshire East",
+        "category": "a40to64",
+        "perc": 34.6949
+      },
+      {
+        "group": "Downshire East",
+        "category": "a65plus",
+        "perc": 20.0227
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downshire East",
+        "category": "a1to19_hours",
+        "perc": 7.4827
+      },
+      {
+        "group": "Downshire East",
+        "category": "a20to49_hours",
+        "perc": 2.4647
+      },
+      {
+        "group": "Downshire East",
+        "category": "a50plus_hours",
+        "perc": 3.4277
+      },
+      {
+        "group": "Downshire East",
+        "category": "no_care",
+        "perc": 86.6248
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downshire East",
+        "category": "catholic",
+        "perc": 15.1908
+      },
+      {
+        "group": "Downshire East",
+        "category": "none",
+        "perc": 11.1542
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_religions",
+        "perc": 1.2062
+      },
+      {
+        "group": "Downshire East",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.4488
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downshire East",
+        "category": "females",
+        "perc": 50.5195
+      },
+      {
+        "group": "Downshire East",
+        "category": "males",
+        "perc": 49.4805
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 3.7981
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 11.705
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.8471
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.9854
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 55.6644
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 9.8921
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 16.5331
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 23.8213
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 15.1926
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 34.5609
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.1514
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.1074
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 12.7385
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 14.1055
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 44.0814
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 15.7128
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.103
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.0965
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 89.1735
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.8278
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.672
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.9973
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2329
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 98.2234
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 1.7766
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 19.336
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 25.9465
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 34.6949
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 20.0227
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 7.4827
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.4647
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.4277
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 86.6248
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 15.1908
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 11.1542
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.2062
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.4488
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.5195
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.4805
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Downshire East",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Downshire East",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Downshire East",
+        "category": "bad",
+        "perc": 3.7981
+      },
+      {
+        "group": "Downshire East",
+        "category": "fair",
+        "perc": 11.705
+      },
+      {
+        "group": "Downshire East",
+        "category": "good",
+        "perc": 27.8471
+      },
+      {
+        "group": "Downshire East",
+        "category": "very_bad",
+        "perc": 0.9854
+      },
+      {
+        "group": "Downshire East",
+        "category": "very_good",
+        "perc": 55.6644
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Downshire East",
+        "category": "five_people",
+        "perc": 9.8921
+      },
+      {
+        "group": "Downshire East",
+        "category": "four_people",
+        "perc": 16.5331
+      },
+      {
+        "group": "Downshire East",
+        "category": "one_person",
+        "perc": 23.8213
+      },
+      {
+        "group": "Downshire East",
+        "category": "three_people",
+        "perc": 15.1926
+      },
+      {
+        "group": "Downshire East",
+        "category": "two_people",
+        "perc": 34.5609
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Downshire East",
+        "category": "apprenticeship",
+        "perc": 6.1514
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_1_qualifications",
+        "perc": 5.1074
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_2_qualifications",
+        "perc": 12.7385
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_3_qualifications",
+        "perc": 14.1055
+      },
+      {
+        "group": "Downshire East",
+        "category": "level_4_qualifications_and_above",
+        "perc": 44.0814
+      },
+      {
+        "group": "Downshire East",
+        "category": "no_qualifications",
+        "perc": 15.7128
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_qualifications",
+        "perc": 2.103
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Downshire East",
+        "category": "england",
+        "perc": 4.0965
+      },
+      {
+        "group": "Downshire East",
+        "category": "northern_ireland",
+        "perc": 89.1735
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_cob",
+        "perc": 3.8278
+      },
+      {
+        "group": "Downshire East",
+        "category": "republic_of_ireland",
+        "perc": 1.672
+      },
+      {
+        "group": "Downshire East",
+        "category": "scotland",
+        "perc": 0.9973
+      },
+      {
+        "group": "Downshire East",
+        "category": "wales",
+        "perc": 0.2329
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Downshire East",
+        "category": "english",
+        "perc": 98.2234
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_languages",
+        "perc": 1.7766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Downshire East",
+        "category": "a0to14",
+        "perc": 19.336
+      },
+      {
+        "group": "Downshire East",
+        "category": "a15to39",
+        "perc": 25.9465
+      },
+      {
+        "group": "Downshire East",
+        "category": "a40to64",
+        "perc": 34.6949
+      },
+      {
+        "group": "Downshire East",
+        "category": "a65plus",
+        "perc": 20.0227
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Downshire East",
+        "category": "a1to19_hours",
+        "perc": 7.4827
+      },
+      {
+        "group": "Downshire East",
+        "category": "a20to49_hours",
+        "perc": 2.4647
+      },
+      {
+        "group": "Downshire East",
+        "category": "a50plus_hours",
+        "perc": 3.4277
+      },
+      {
+        "group": "Downshire East",
+        "category": "no_care",
+        "perc": 86.6248
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Downshire East",
+        "category": "catholic",
+        "perc": 15.1908
+      },
+      {
+        "group": "Downshire East",
+        "category": "none",
+        "perc": 11.1542
+      },
+      {
+        "group": "Downshire East",
+        "category": "other_religions",
+        "perc": 1.2062
+      },
+      {
+        "group": "Downshire East",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.4488
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Downshire East",
+        "category": "females",
+        "perc": 50.5195
+      },
+      {
+        "group": "Downshire East",
+        "category": "males",
+        "perc": 49.4805
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T010",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T010",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "LE": [
+      {
+        "table_code": "LEDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+        "last_updated": "2024-04-11",
+        "email": "healthinequalities@health-ni.gov.uk",
+        "title": "Life expectancy at birth"
+      }
+    ],
+    "Admiss": [
+      {
+        "table_code": "ADMITDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
+        "last_updated": "2024-04-11",
+        "email": "statistics@health-ni.gov.uk",
+        "title": "Primary Reason for Admissions to HSC Hospitals"
+      }
+    ],
+    "DEN": [
+      {
+        "table_code": "FPSGDSDSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dentists and Surgeries"
+      }
+    ],
+    "DEN_REG": [
+      {
+        "table_code": "FPSGDSDRDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dental Registrations"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ],
+    "Primary": [
+      {
+        "table_code": "DESCPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Primary"
+      }
+    ],
+    "PostPrimary": [
+      {
+        "table_code": "DESCPPDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Post Primary"
+      }
+    ],
+    "Attainment": [
+      {
+        "table_code": "DESLSADEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Attainment"
+      }
+    ],
+    "FE": [
+      {
+        "table_code": "FEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
+        "last_updated": "2023-06-20",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Regulated enrolments at Further Education Colleges"
+      }
+    ],
+    "HE": [
+      {
+        "table_code": "HEENROLDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
+        "last_updated": "2023-06-21",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Enrolments at Higher Education Institutions"
+      }
+    ],
+    "Destination": [
+      {
+        "table_code": "DESLSDDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Destination"
+      }
+    ]
+  }
+}
