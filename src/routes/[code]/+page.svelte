@@ -777,13 +777,17 @@
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
 						zKey: chart_compare_type,
 						label: chartLabel,
-						topic_prev_available: "true"},
+						topic_prev_available: "true"
+					},
 				box_2: {
 						id: "wellbeing",
-						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>"},
+						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>",
+						show: ["ni", "lgd"]
+					},
 				box_3: {
 						id: "lifeexpectancy",
-						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"},
+						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"
+					},
 				box_4: {
 						id: "carers",
 						content: {
@@ -799,13 +803,16 @@
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
 						},
 						label: chartLabel,
-						topic_prev_available: "true"},
+						topic_prev_available: "true"
+					},
 				box_5: {
 						id: "hospitalactivity",
-						content: "<span >"  + " hospital activity to be added</span>"},
+						content: "<span >"  + " hospital activity to be added</span>"
+					},
 				box_6: {
 						id: "primarycare",
-						content: "<span >"  + " primary care to be added</span>"},
+						content: "<span >"  + " primary care to be added</span>"
+					},
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
 			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
