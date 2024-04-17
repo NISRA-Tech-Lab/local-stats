@@ -56,17 +56,41 @@ let w, cols;
 
                 {#each {length: box_list.length} as _, i}
 
-                    <GreyBox
-                        id = {boxes[box_list[i]].id}
-                        style = {boxes[box_list[i]].style}
-                        place = {place}
-                        content = {boxes[box_list[i]].content}
-                        chart_data = {boxes[box_list[i]].chart_data}
-                        zKey = {boxes[box_list[i]].zKey}
-                        label = {boxes[box_list[i]].label}
-                        topic_prev_available = {boxes[box_list[i]].topic_prev_available}
-                        chart_compare_type = {chart_compare_type}
-                    />
+                    {#if (boxes[box_list[i]].hasOwnProperty("show"))}
+
+                        {#if (boxes[box_list[i]].show.includes(place.type))}
+
+                        <GreyBox
+                            id = {boxes[box_list[i]].id}
+                            style = {boxes[box_list[i]].style}
+                            place = {place}
+                            content = {boxes[box_list[i]].content}
+                            chart_data = {boxes[box_list[i]].chart_data}
+                            zKey = {boxes[box_list[i]].zKey}
+                            label = {boxes[box_list[i]].label}
+                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
+                            chart_compare_type = {chart_compare_type}
+                        />
+
+                        {/if}
+
+                    {/if}
+
+                    {#if (!boxes[box_list[i]].hasOwnProperty("show"))}
+
+                        <GreyBox
+                            id = {boxes[box_list[i]].id}
+                            style = {boxes[box_list[i]].style}
+                            place = {place}
+                            content = {boxes[box_list[i]].content}
+                            chart_data = {boxes[box_list[i]].chart_data}
+                            zKey = {boxes[box_list[i]].zKey}
+                            label = {boxes[box_list[i]].label}
+                            topic_prev_available = {boxes[box_list[i]].topic_prev_available}
+                            chart_compare_type = {chart_compare_type}
+                        />
+
+                    {/if}
 
                 {/each}
 

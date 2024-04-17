@@ -8,7 +8,7 @@ import BarChart from "$lib/chart/BarChart.svelte";
 import ColChart from "$lib/chart/ColChart.svelte";
 
 export let id;
-export let style = null;
+export let style = "";
 export let place;
 export let content;
 export let chart_data = null;
