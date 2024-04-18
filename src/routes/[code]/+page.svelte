@@ -316,11 +316,11 @@
 		<div class="grid mtl">
 			<div>
 				<span class="text-small">
-					<a href="{base}/" sveltekit:noscroll>Home</a
+					<a href="{base}/" data-sveltekit-noscroll>Home</a
 					>{@html " &gt; "}
 					{#if data.place.type != "ni"}
 						{#each [...data.place.parents].reverse() as parent, i}
-							<a href="{base}/{parent.code}/" sveltekit:noscroll
+							<a href="{base}/{parent.code}/" data-sveltekit-noscroll
 								>{parent.name}</a
 							>{@html " &gt; "}
 						{/each}
@@ -634,7 +634,7 @@
 									: 0}px"
 								>{@html i > 0 ? "↳ " : ""}<a
 									href="{base}/{parent.code}"
-									sveltekit:noscroll>{parent.name}</a
+									data-sveltekit-noscroll>{parent.name}</a
 								></span
 							>
 						{/each}
@@ -650,7 +650,7 @@
 					><br />
 					<span class="text-small">
 						{#each data.place.children as child, i}
-							<a href="{base}/{child.code}" sveltekit:noscroll
+							<a href="{base}/{child.code}" data-sveltekit-noscroll
 								>{child.name}</a
 							>{i < data.place.children.length - 1 ? ", " : ""}
 						{/each}
