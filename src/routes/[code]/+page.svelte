@@ -219,11 +219,11 @@
     }
 
     function mapSelect(ev) {
-      goto(`${base}/${ev.detail.code}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.code}/`, { noscroll: true });
     }
 
     function menuSelect(ev) {
-      goto(`${base}/${ev.detail.value}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.value}/`, { noscroll: true });
     }
 
     function onResize() {
