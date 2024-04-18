@@ -781,8 +781,7 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>",
-						show: ["ni", "lgd"]
+						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>"
 					},
 				box_3: {
 						id: "lifeexpectancy",
@@ -807,7 +806,8 @@
 					},
 				box_5: {
 						id: "hospitalactivity",
-						content: "<span >"  + " hospital activity to be added</span>"
+						content: "<span >"  + " hospital activity to be added</span>",
+						show: ["ni", "dea"]
 					},
 				box_6: {
 						id: "primarycare",
