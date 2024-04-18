@@ -292,6 +292,24 @@
 
 	}
 
+	function check (value) {
+
+		let props = value.split(".");
+
+		let rtn_value = data.place.data;
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+			}
+
+		}
+
+		return rtn_value;
+
+	}
+
 </script>
 
 <svelte:head>
@@ -731,7 +749,7 @@
 					"
 		/>
 
-		<!-- <Accordion
+		<Accordion
 		id = "health"
 		img = "nisra-taxonomy-icon-health.png"
 		heading = "Health and Social Care"
@@ -756,17 +774,17 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						content:	 "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>",
+						content:	 "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>" +
 						
 						// need content if (ni needs coded, LGD is )
-						//"<p><span class='text-big' style='font-size: 2.8em'>"++(data.place.data.Happy.value).toLocaleString() + "</span> / 10 </p>"
+						"<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>",
 						show: ["ni", "lgd"]
 					},
 				box_3: {
 						id: "lifeexpectancy",
 						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>" + 
-							(data.place.data.LE.value.Males).toLocaleString() +
-							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(data.place.data.LE.value.Females).toLocaleString()+ "</span> years</p>",
+							(check("LE.value.Males")).toLocaleString() +
+							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
 						show: ["ni", "lgd"]
 					},
 				box_4: {
@@ -785,33 +803,39 @@
 						content:  
 						// needs checked - sticks
 						"<p><span class='text-big' style='font-size: 1.8em'>" + 
-							(data.place.data.Admiss.value).toLocaleString() + 
+							(check("Admiss.value")).toLocaleString() + 
 							"</span> hospital admissions.  The most frequent reason was xxx</p>",
 						 show: ["ni", "dea"]
 					},
 				box_6: {
 						id: "primarycare",
-						content: 
-						// need an if statement here for NI & lgd only
-						// "<p><span class='text-big' style='font-size: 1.2em'>" + 
-						// 	(data.place.data.GP.value.PRACS).toLocaleString() +
-						// 	"</span> practices</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
-						// 	(data.place.data.GP.value.GPS).toLocaleString() +
-						// 	"</span> GPs</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
-						// 	(data.place.data.GP.value.PRACLIST).toLocaleString() +
-						// 	"</span> patients per practice</p>" 
-						
-						"<p><span class='text-big' style='font-size: 1.2em'>" + 
-							(data.place.data.DEN.value.GDSDSSurgeries).toLocaleString() +
-							"</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
-							(data.place.data.DEN.value.GDSDSDentists).toLocaleString() +
-							"</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
-							(data.place.data.DEN_REG.value.Dental_Registrations).toLocaleString() +
-							"</span> patients registered in total</p>" 
-							
-							,
-						show: ["ni", "lgd", "dea"]
+						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("GP.value.PRACS")).toLocaleString() +
+								"</span> practices</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								(check("GP.value.GPS")).toLocaleString() +
+								"</span> GPs</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								(check("GP.value.PRACLIST")).toLocaleString() +
+								"</span> patients per practice</p>" +
+								"<p><span class='text-big' style='font-size: 1.2em'>" + 
+								(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+								"</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("DEN.value.GDSDSDentists")).toLocaleString() +
+								"</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
+								"</span> patients registered in total</p>",
+						show: ["ni", "lgd"]
 					},
+					box_7: {
+						id: "primarycare",
+						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+								 "</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN.value.GDSDSDentists")).toLocaleString() +
+								 "</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
+								 "</span> patients registered in total</p>",
+						show: ["dea"]
+					}
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
 			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
@@ -828,9 +852,9 @@
 				Making Life Better</a>.
 				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
 				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
-	/> -->
+	/>
 	
-	<!-- <Accordion
+	<Accordion
 		id = "work"
 		img = "nisra-taxonomy-icon-labour-market.png"
 		heading = "Work and Welfare"
@@ -839,59 +863,51 @@
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
-
 				
 				box_1: {
 						id: "employmentrates",
-						content: 
-						 "<p><span class='text-big' style='font-size: 1.8em'>"  + (data.place.data.LMS.value.EMPR).toLocaleString() +"</span> employment rate</p>"+
-						 "<p><span class='text-big' style='font-size: 1.8em'>"  + (data.place.data.LMS.value.UNEMPR).toLocaleString() +"</span> unemployment rate</p>"+
-						 "<p><span class='text-big' style='font-size: 1.8em'>"  + (data.place.data.LMS.value.INACTR).toLocaleString() +"</span> inactivity rate</p>"
-						,
-						
-						show: ["ni", "lgd"]},
+						content: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
+								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
+								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
+						show: ["ni", "lgd"]
+					},
 				
 				box_2: {
 						id: "employed",
 						content: 
-						"<p><span class='text-big' style='font-size: 1.8em'>"  + (data.place.data.LMS.value.EMPN).toLocaleString() +"</span> employed</p>"
-						,
-						show: ["ni", "lgd"]},
+						"<p><span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() + "</span> employed</p>",
+						show: ["ni", "lgd"]
+					},
 
-			
 				box_3: {
 						id: "wages",
-						content: '<p><span class="text-big" style="font-size: 1.8em">' + (data.place.data.ASHE.value).toLocaleString()+ '</span> annual median salary</p>',
-						show: ["ni", "lgd"]},
-
-	
+						content: '<p><span class="text-big" style="font-size: 1.8em">' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
+						show: ["ni", "lgd"]
+					},
 						
 				box_4: {
-				id: "disabilitybenefits",
-				content: 
-				'<span class="text-big">' + 
-					(data.place.data.BS.value.PIP+data.place.data.BS.value.DLA+data.place.data.BS.value.CA+data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
+					id: "disabilitybenefits",
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
 				},
 
 				box_5: {
 					id: "workingagebenefits",
-					content: 
-					'<span class="text-big">' + 
-						(data.place.data.BS.value.UC+data.place.data.BS.value.JSA+data.place.data.BS.value.IS+data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
-				}			,
+				},
 				
 				box_6: {
 					id: "pensionagebenefits",
-					content: 
-					'<span class="text-big">' + 
-						(data.place.data.BS.value.RP+data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
-									}		
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
+				}		
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
-			 contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
+			contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
 				Annual Survey of Hours and Earnings</a> providesdata on hourly, weekly and annual earnings. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/quarterly-employment-survey'>
 					Quarterly Employment Survey</a> provides short-term employee jobs estimates for NI. Further information is available for the 
 					unemployed <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/claimant-count'>Claimant Count</a>, 
@@ -902,7 +918,7 @@
 					A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
 					The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
 					explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
-	/> -->
+	/>
 
 		<!-- <Accordion
 		id = "education"
