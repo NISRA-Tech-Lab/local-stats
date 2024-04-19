@@ -687,8 +687,8 @@
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
 			heading = "People and Households"
-			place = {data.place}
-			sub_heading =   {"there is more health data available for <a href = '/" + data.place.parents[0].code + "/'>" + data.place.parents[0].name + "</a>"}
+			place = {data.place} 
+			sub_heading =   {"There is more People and Households data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -754,7 +754,7 @@
 		img = "nisra-taxonomy-icon-health.png"
 		heading = "Health and Social Care"
 		place = {data.place}
-		sub_heading = "Health"
+		sub_heading =   {"There is more Health and Social Care data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -811,12 +811,11 @@
 						id: "primarycare",
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("GP.value.PRACS")).toLocaleString() +
-								"</span> practices</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
-								(check("GP.value.GPS")).toLocaleString() +
-								"</span> GPs</p>" + "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								"</span> practices, <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("GP.value.GPS")).toLocaleString() + 
+								"</span> GPs, and <span class='text-big' style='font-size: 1.2em'>" + 
 								(check("GP.value.PRACLIST")).toLocaleString() +
-								"</span> patients per practice</p>" +
-								"<p><span class='text-big' style='font-size: 1.2em'>" + 
+								"</span> patients per practice<span class='text-big' style='font-size: 1.2em'></p><p>" + 
 								(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								"</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
 								(check("DEN.value.GDSDSDentists")).toLocaleString() +
@@ -859,7 +858,7 @@
 		img = "nisra-taxonomy-icon-labour-market.png"
 		heading = "Work and Welfare"
 		place = {data.place}
-		sub_heading = "Work and welfare"
+		sub_heading =   {"There is more Work and Welfare data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -925,7 +924,7 @@
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education"
 		place = {data.place}
-		sub_heading = "Schools, colleges and universities"
+		sub_heading =   {"There is more Schools, colleges and universities data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -950,7 +949,7 @@
 						id: "teachers",
 						content: 		
 										"<p><span class='text-big' style='font-size: 1.8em'>"  + 
-											(check("ClassSize.value")).toLocaleString() +"</span> puils per teacher</p>"
+											(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
 ,
 					
 					show: ["ni", "lgd"]},

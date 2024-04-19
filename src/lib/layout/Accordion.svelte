@@ -48,7 +48,8 @@ let w, cols;
     >
 
         <div class="accordion-body">
-            {@html sub_heading} - {place.name} -
+            <!-- change order -->
+            {place.name} - {@html sub_heading}
             <span class="accordion-button-title-sub"
                 >{description}</span>
 
