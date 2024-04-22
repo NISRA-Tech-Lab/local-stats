@@ -349,9 +349,9 @@
 				</span><br />
 				<span class="text-big title">{data.place.name}</span>
 				<div class="text-bold" style="font-size: 0.85em;">
-					Click for:
+			
 
-					{#if data.place.type == "ni"}
+					<!-- {#if data.place.type == "ni"}
 						<button
 							class="btn"
 							class:btn-active={!comp_2011}
@@ -369,9 +369,9 @@
 							on:click={() => (comp_ni = false)}
 							>No comparison</button
 						>
-					{/if}
+					{/if} -->
 					{#if data.place.type != "ni"}
-						<button
+					Click for: <button
 							class="btn"
 							class:btn-active={comp_ni & !comp_none & !comp_2011}
 							on:click={() => (comp_ni = true)}
@@ -380,15 +380,15 @@
 						>
 					{/if}
 
-						<button
+						<!-- <button
 							class="btn"
 							class:btn-active={comp_2011 & !comp_none & !comp_ni}
 							on:click={() => (comp_2011 = true)}
 							on:click={() => (comp_none = false)}
 							on:click={() => (comp_ni = false)}
 							>Same area - previous</button
-						>
-				</div>
+						> -->
+				</div> 
 			</div>
 
 			<div>
@@ -486,7 +486,7 @@
 				content = {{
 							ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
-							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " and covers " + data.place.dea_location_description + ".",
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl							
 							}}
@@ -774,10 +774,10 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						content:	 "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>" +
-						
-						// need content if (ni needs coded, LGD is )
-						"<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>",
+						content: {
+							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>",
+							lgd: "<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>"
+						},	
 						show: ["ni", "lgd"]
 					},
 				box_3: {
