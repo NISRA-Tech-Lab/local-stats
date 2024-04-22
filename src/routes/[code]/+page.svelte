@@ -802,6 +802,7 @@
 				box_4: {
 						id: "carers",
 						content: "GroupChart",
+						year: Object.keys(data.place.data.general_health.perc).slice(-1),
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
@@ -812,6 +813,7 @@
 					},
 				box_5: {
 						id: "hospitalactivity",
+						year: pullYear("Admiss"),
 						content:  
 						// needs checked - sticks
 						"<p><span class='text-big' style='font-size: 1.8em'>" + 
@@ -819,8 +821,9 @@
 							"</span> hospital admissions.  The most frequent reason was xxx</p>",
 						 show: ["ni", "dea"]
 					},
-				box_6: {
+				box_6a: {
 						id: "primarycare",
+						year: pullYear("GP"),
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("GP.value.PRACS")).toLocaleString() +
 								"</span> practices, <span class='text-big' style='font-size: 1.2em'>" + 
@@ -836,8 +839,9 @@
 								"</span> patients registered in total</p>",
 						show: ["ni", "lgd"]
 					},
-					box_7: {
+					box_6b: {
 						id: "primarycare",
+						year: pullYear("DEN"),
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								 "</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
