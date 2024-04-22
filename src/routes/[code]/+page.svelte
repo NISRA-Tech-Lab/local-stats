@@ -310,6 +310,16 @@
 
 	}
 
+	function pullYear (value) {
+
+		if (data.place.meta_data.hasOwnProperty(value)) {
+			return data.place.meta_data[value][0].last_updated.slice(0, data.place.meta_data[value][0].last_updated.indexOf("-"));
+		} else {
+			return null;
+		}
+
+	}
+
 </script>
 
 <svelte:head>
@@ -775,6 +785,7 @@
 					},
 				box_2: {
 						id: "wellbeing",
+						year: pullYear("Happy"),
 						content: {
 							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>",
 							lgd: "<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>"
