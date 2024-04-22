@@ -1,0 +1,1189 @@
+{
+  "code": "N20001882",
+  "name": "Waterside_G4",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000429",
+      "name": "Waterside_G",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000507",
+      "name": "Waterside",
+      "type": "dea"
+    },
+    {
+      "code": "N09000005",
+      "name": "Derry City and Strabane",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-7.3021, 54.9884],
+    [-7.3101, 54.9923]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 416
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 2700
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 155
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 5.5288,
+          "fair": 11.7788,
+          "good": 24.5192,
+          "very_bad": 0.2404,
+          "very_good": 57.9327
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 6.4516,
+          "four_people": 29.0323,
+          "one_person": 28.3871,
+          "three_people": 13.5484,
+          "two_people": 22.5806
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 4.2105,
+          "level_1_qualifications": 5.9649,
+          "level_2_qualifications": 15.7895,
+          "level_3_qualifications": 15.4386,
+          "level_4_qualifications_and_above": 36.1404,
+          "no_qualifications": 22.4561,
+          "other_qualifications": 0
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.4155,
+          "northern_ireland": 78.5024,
+          "other_cob": 15.7005,
+          "republic_of_ireland": 2.8986,
+          "scotland": 0.4831,
+          "wales": 0
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 86.514,
+          "other_languages": 13.486
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 29.0865,
+          "a15to39": 34.1346,
+          "a40to64": 32.6923,
+          "a65plus": 4.0865
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 2.6455,
+          "a20to49_hours": 1.8519,
+          "a50plus_hours": 1.8519,
+          "no_care": 93.6508
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 64.6635,
+          "none": 6.0096,
+          "other_religions": 2.4038,
+          "protestant_and_other_christian_including_christian_related": 26.9231
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 52.6442,
+          "males": 47.3558
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 0,
+        "JSA": 0,
+        "RP": 20,
+        "PC": 10,
+        "AA": 10,
+        "CA": 10,
+        "DLA": 20,
+        "ESA": 30,
+        "UC": 50,
+        "PIP": 50
+      }
+    },
+    "MYETotal": {
+      "value": 411
+    }
+  },
+  "hectares": 12,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Waterside_G4",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Waterside_G4",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Waterside_G4",
+        "category": "bad",
+        "perc": 5.5288
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "fair",
+        "perc": 11.7788
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "good",
+        "perc": 24.5192
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "very_bad",
+        "perc": 0.2404
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "very_good",
+        "perc": 57.9327
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Waterside_G4",
+        "category": "five_people",
+        "perc": 6.4516
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "four_people",
+        "perc": 29.0323
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "one_person",
+        "perc": 28.3871
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "three_people",
+        "perc": 13.5484
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "two_people",
+        "perc": 22.5806
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Waterside_G4",
+        "category": "apprenticeship",
+        "perc": 4.2105
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_1_qualifications",
+        "perc": 5.9649
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_2_qualifications",
+        "perc": 15.7895
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_3_qualifications",
+        "perc": 15.4386
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.1404
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "no_qualifications",
+        "perc": 22.4561
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_qualifications",
+        "perc": 0
+      }
+    ],
+    "cob": [
+      {
+        "group": "Waterside_G4",
+        "category": "england",
+        "perc": 2.4155
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "northern_ireland",
+        "perc": 78.5024
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_cob",
+        "perc": 15.7005
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "republic_of_ireland",
+        "perc": 2.8986
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "scotland",
+        "perc": 0.4831
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Waterside_G4",
+        "category": "english",
+        "perc": 86.514
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_languages",
+        "perc": 13.486
+      }
+    ],
+    "age": [
+      {
+        "group": "Waterside_G4",
+        "category": "a0to14",
+        "perc": 29.0865
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a15to39",
+        "perc": 34.1346
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a40to64",
+        "perc": 32.6923
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a65plus",
+        "perc": 4.0865
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Waterside_G4",
+        "category": "a1to19_hours",
+        "perc": 2.6455
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a20to49_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a50plus_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "no_care",
+        "perc": 93.6508
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Waterside_G4",
+        "category": "catholic",
+        "perc": 64.6635
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "none",
+        "perc": 6.0096
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_religions",
+        "perc": 2.4038
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 26.9231
+      }
+    ],
+    "sex": [
+      {
+        "group": "Waterside_G4",
+        "category": "females",
+        "perc": 52.6442
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "males",
+        "perc": 47.3558
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 5.5288
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 11.7788
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 24.5192
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.2404
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 57.9327
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 6.4516
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 29.0323
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 28.3871
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 13.5484
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 22.5806
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 4.2105
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.9649
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 15.7895
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.4386
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.1404
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 22.4561
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 0
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.4155
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 78.5024
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 15.7005
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 2.8986
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.4831
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 86.514
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 13.486
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 29.0865
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 34.1346
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.6923
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 4.0865
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 2.6455
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 93.6508
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 64.6635
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 6.0096
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 2.4038
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 26.9231
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 52.6442
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 47.3558
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Waterside_G4",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Waterside_G4",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Waterside_G4",
+        "category": "bad",
+        "perc": 5.5288
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "fair",
+        "perc": 11.7788
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "good",
+        "perc": 24.5192
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "very_bad",
+        "perc": 0.2404
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "very_good",
+        "perc": 57.9327
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Waterside_G4",
+        "category": "five_people",
+        "perc": 6.4516
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "four_people",
+        "perc": 29.0323
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "one_person",
+        "perc": 28.3871
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "three_people",
+        "perc": 13.5484
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "two_people",
+        "perc": 22.5806
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Waterside_G4",
+        "category": "apprenticeship",
+        "perc": 4.2105
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_1_qualifications",
+        "perc": 5.9649
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_2_qualifications",
+        "perc": 15.7895
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_3_qualifications",
+        "perc": 15.4386
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.1404
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "no_qualifications",
+        "perc": 22.4561
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_qualifications",
+        "perc": 0
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Waterside_G4",
+        "category": "england",
+        "perc": 2.4155
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "northern_ireland",
+        "perc": 78.5024
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_cob",
+        "perc": 15.7005
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "republic_of_ireland",
+        "perc": 2.8986
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "scotland",
+        "perc": 0.4831
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "wales",
+        "perc": 0
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Waterside_G4",
+        "category": "english",
+        "perc": 86.514
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_languages",
+        "perc": 13.486
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Waterside_G4",
+        "category": "a0to14",
+        "perc": 29.0865
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a15to39",
+        "perc": 34.1346
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a40to64",
+        "perc": 32.6923
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a65plus",
+        "perc": 4.0865
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Waterside_G4",
+        "category": "a1to19_hours",
+        "perc": 2.6455
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a20to49_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "a50plus_hours",
+        "perc": 1.8519
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "no_care",
+        "perc": 93.6508
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Waterside_G4",
+        "category": "catholic",
+        "perc": 64.6635
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "none",
+        "perc": 6.0096
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "other_religions",
+        "perc": 2.4038
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 26.9231
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Waterside_G4",
+        "category": "females",
+        "perc": 52.6442
+      },
+      {
+        "group": "Waterside_G4",
+        "category": "males",
+        "perc": 47.3558
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T011",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T011",
+        "last_updated": "2024-04-05",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

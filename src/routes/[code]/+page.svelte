@@ -95,7 +95,6 @@
 
     
 
-
     function makeDataGroupSort(g_data, key) {
       const categ = topics[key];
       let newdata = [];
@@ -293,6 +292,24 @@
 
 	}
 
+	function check (value) {
+
+		let props = value.split(".");
+
+		let rtn_value = data.place.data;
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+			}
+
+		}
+
+		return rtn_value;
+
+	}
+
 </script>
 
 <svelte:head>
@@ -468,7 +485,7 @@
 				style = "line-height: 1.3;"
 				content = {{
 							ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".",
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl							
@@ -664,14 +681,14 @@
 			</div>
 		</div>
 
-		<div class="accordion" id="accordionPanelsStayOpenExample">
+		 <div class="accordion" id="accordionPanelsStayOpenExample">
 			
 			<Accordion
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
 			heading = "People and Households"
-			place = {data.place}
-			sub_heading = ""
+			place = {data.place} 
+			sub_heading =   {"There is more People and Households data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -680,13 +697,7 @@
 						content: "<span >"  + " population growth/shrink to be added</span> "},
 					box_2: {
 						id: "age",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
@@ -700,13 +711,7 @@
 					},
 					box_4: {
 						id: "hhsize",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content: "GroupChart"		,
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
@@ -715,13 +720,7 @@
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
@@ -731,13 +730,7 @@
 					},
 					box_6: {
 						id: "language",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
@@ -761,7 +754,7 @@
 		img = "nisra-taxonomy-icon-health.png"
 		heading = "Health and Social Care"
 		place = {data.place}
-		sub_heading = "Health"
+		sub_heading =   {"There is more Health and Social Care data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -781,22 +774,22 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						content: "<p><span class='text-big' style='font-size: 2.8em'>7.5</span>"  + " / 10 </p>",
+						content:	 "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>" +
+						
+						// need content if (ni needs coded, LGD is )
+						"<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>",
 						show: ["ni", "lgd"]
 					},
 				box_3: {
 						id: "lifeexpectancy",
-						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>78.6 years</span></p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>82.7 years</span></p>"
+						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>" + 
+							(check("LE.value.Males")).toLocaleString() +
+							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
+						show: ["ni", "lgd"]
 					},
 				box_4: {
 						id: "carers",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
@@ -807,12 +800,41 @@
 					},
 				box_5: {
 						id: "hospitalactivity",
-						content: "<span >"  + " hospital activity to be added</span>"
+						content:  
+						// needs checked - sticks
+						"<p><span class='text-big' style='font-size: 1.8em'>" + 
+							(check("Admiss.value")).toLocaleString() + 
+							"</span> hospital admissions.  The most frequent reason was xxx</p>",
+						 show: ["ni", "dea"]
 					},
 				box_6: {
 						id: "primarycare",
-						content: "<span >"  + " primary care to be added</span>"
+						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("GP.value.PRACS")).toLocaleString() +
+								"</span> practices, <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("GP.value.GPS")).toLocaleString() + 
+								"</span> GPs, and <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("GP.value.PRACLIST")).toLocaleString() +
+								"</span> patients per practice<span class='text-big' style='font-size: 1.2em'></p><p>" + 
+								(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+								"</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("DEN.value.GDSDSDentists")).toLocaleString() +
+								"</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
+								(check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
+								"</span> patients registered in total</p>",
+						show: ["ni", "lgd"]
 					},
+					box_7: {
+						id: "primarycare",
+						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+								 "</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN.value.GDSDSDentists")).toLocaleString() +
+								 "</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
+								 (check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
+								 "</span> patients registered in total</p>",
+						show: ["dea"]
+					}
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
 			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
@@ -836,43 +858,55 @@
 		img = "nisra-taxonomy-icon-labour-market.png"
 		heading = "Work and Welfare"
 		place = {data.place}
-		sub_heading = "Work and welfare"
+		sub_heading =   {"There is more Work and Welfare data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
-
 				
 				box_1: {
 						id: "employmentrates",
-						content: "<span >"  + " employment to be added</span>"},
+						content: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
+								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
+								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
+						show: ["ni", "lgd"]
+					},
 				
 				box_2: {
 						id: "employed",
-						content: "<span >"  + " numbers employed to be added</span>"},
-				
+						content: 
+						"<p><span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() + "</span> employed</p>",
+						show: ["ni", "lgd"]
+					},
+
 				box_3: {
 						id: "wages",
-						content: "<p><span class='text-big' style='font-size: 1.8em'>£26,531</span> annual median salary</p>"},
-
-				box_4: {
-						id: "benefits",
-						//content: "PIP stats"
-						//content : '<span class="text-big" style="font-size: 2.8em;">' + data.place.data.BS.value['2022'].PIP.toLocaleString() + '</span>' }
-						content: 
-						//'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
+						content: '<p><span class="text-big" style="font-size: 1.8em">' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
+						show: ["ni", "lgd"]
+					},
 						
-											
-						{ni: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants',
-									lgd: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									dea:'<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants  compared to NI average of '+ (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									sdz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString(),
-									dz: '<span class="text-big">' + data.place.data.BS.value["2022"].PIP.toLocaleString() + '</span> claimants compared to NI average of ' + (data.ni.data.BS.value["2022"].PIP/data.place.count).toLocaleString()}
-					}
+				box_4: {
+					id: "disabilitybenefits",
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
+				
+				},
+
+				box_5: {
+					id: "workingagebenefits",
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
+				},
+				
+				box_6: {
+					id: "pensionagebenefits",
+					content: '<span class="text-big">' +
+						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
+				}		
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
-			 contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
+			contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
 				Annual Survey of Hours and Earnings</a> providesdata on hourly, weekly and annual earnings. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/quarterly-employment-survey'>
 					Quarterly Employment Survey</a> provides short-term employee jobs estimates for NI. Further information is available for the 
 					unemployed <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/claimant-count'>Claimant Count</a>, 
@@ -890,7 +924,7 @@
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education"
 		place = {data.place}
-		sub_heading = "Schools, colleges and universities"
+		sub_heading =   {"There is more Schools, colleges and universities data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -900,26 +934,29 @@
 						content: "<p>Primary school <span class='text-big' style='font-size: 1.2em'>500 </span></p>"+
 						"<p>Secondary school <span class='text-big' style='font-size: 1.2em'>320 </span></p>" +
 						"<p>Further education colleges <span class='text-big' style='font-size: 1.2em'>45 </span></p>" +
-						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>"},
+						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>",
+					
+						show: ["ni", "lgd", "dea"]},
 				
 			box_2: {
 						id: "fsme",
 						content: "<p>Primary school <span class='text-big' style='font-size: 1.8em'>33.2%</span></p>"+
-						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>"},
+						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>",
+					
+					show: ["ni", "lgd", "dea"]},
 			
 			box_3: {
 						id: "teachers",
-						content: "<span >"  + " teachers to be added</span>"},
+						content: 		
+										"<p><span class='text-big' style='font-size: 1.8em'>"  + 
+											(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
+,
+					
+					show: ["ni", "lgd"]},
 		
 			box_4: {
 						id: "qualifications",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "GroupChart",
-							dz: "GroupChart"
-						},
+						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
@@ -929,7 +966,11 @@
 
 			box_5: {
 						id: "attainment",
-						content: "<span >"  + " attainment to be added</span>"},		}}
+						content: "<span >"  + " attainment to be added</span>"
+						,
+					
+					show: ["ni", "lgd"]},
+							}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 	/>
 

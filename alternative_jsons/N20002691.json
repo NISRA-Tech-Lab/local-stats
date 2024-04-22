@@ -1,0 +1,1189 @@
+{
+  "code": "N20002691",
+  "name": "Coast_Road_C1",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000603",
+      "name": "Coast_Road_C",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000805",
+      "name": "Coast Road",
+      "type": "dea"
+    },
+    {
+      "code": "N09000008",
+      "name": "Mid and East Antrim",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.8604, 54.8943],
+    [-5.9932, 54.9708]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 644
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 617
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 239
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.6584,
+          "fair": 12.2671,
+          "good": 30.7453,
+          "very_bad": 0.3106,
+          "very_good": 52.0186
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 13.8075,
+          "four_people": 14.6444,
+          "one_person": 23.8494,
+          "three_people": 12.1339,
+          "two_people": 35.5649
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.6493,
+          "level_1_qualifications": 7.2761,
+          "level_2_qualifications": 13.2463,
+          "level_3_qualifications": 19.0299,
+          "level_4_qualifications_and_above": 33.0224,
+          "no_qualifications": 18.097,
+          "other_qualifications": 1.6791
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.6512,
+          "northern_ireland": 89.7674,
+          "other_cob": 2.9457,
+          "republic_of_ireland": 1.0853,
+          "scotland": 1.2403,
+          "wales": 0.3101
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 99.3631,
+          "other_languages": 0.6369
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 14.9068,
+          "a15to39": 25.1553,
+          "a40to64": 36.646,
+          "a65plus": 23.2919
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 8.0906,
+          "a20to49_hours": 2.7508,
+          "a50plus_hours": 2.7508,
+          "no_care": 86.4078
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 45.9627,
+          "none": 7.764,
+          "other_religions": 1.2422,
+          "protestant_and_other_christian_including_christian_related": 45.0311
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 49.8447,
+          "males": 50.1553
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 0,
+        "JSA": 0,
+        "RP": 120,
+        "PC": 10,
+        "AA": 20,
+        "CA": 20,
+        "DLA": 10,
+        "ESA": 20,
+        "UC": 20,
+        "PIP": 30
+      }
+    },
+    "MYETotal": {
+      "value": 638
+    }
+  },
+  "hectares": 3521,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "bad",
+        "perc": 4.6584
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "fair",
+        "perc": 12.2671
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "good",
+        "perc": 30.7453
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "very_bad",
+        "perc": 0.3106
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "very_good",
+        "perc": 52.0186
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "five_people",
+        "perc": 13.8075
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "four_people",
+        "perc": 14.6444
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "one_person",
+        "perc": 23.8494
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "three_people",
+        "perc": 12.1339
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "two_people",
+        "perc": 35.5649
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "apprenticeship",
+        "perc": 7.6493
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_1_qualifications",
+        "perc": 7.2761
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_2_qualifications",
+        "perc": 13.2463
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_3_qualifications",
+        "perc": 19.0299
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.0224
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "no_qualifications",
+        "perc": 18.097
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_qualifications",
+        "perc": 1.6791
+      }
+    ],
+    "cob": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "england",
+        "perc": 4.6512
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "northern_ireland",
+        "perc": 89.7674
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_cob",
+        "perc": 2.9457
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "republic_of_ireland",
+        "perc": 1.0853
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "scotland",
+        "perc": 1.2403
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "wales",
+        "perc": 0.3101
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "english",
+        "perc": 99.3631
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_languages",
+        "perc": 0.6369
+      }
+    ],
+    "age": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "a0to14",
+        "perc": 14.9068
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a15to39",
+        "perc": 25.1553
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a40to64",
+        "perc": 36.646
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a65plus",
+        "perc": 23.2919
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "a1to19_hours",
+        "perc": 8.0906
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a20to49_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a50plus_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "no_care",
+        "perc": 86.4078
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "catholic",
+        "perc": 45.9627
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "none",
+        "perc": 7.764
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_religions",
+        "perc": 1.2422
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 45.0311
+      }
+    ],
+    "sex": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "females",
+        "perc": 49.8447
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "males",
+        "perc": 50.1553
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.6584
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 12.2671
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 30.7453
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.3106
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 52.0186
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 13.8075
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 14.6444
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 23.8494
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 12.1339
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 35.5649
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.6493
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 7.2761
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.2463
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 19.0299
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.0224
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 18.097
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 1.6791
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.6512
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 89.7674
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 2.9457
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.0853
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.2403
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.3101
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 99.3631
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 0.6369
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 14.9068
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 25.1553
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 36.646
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 23.2919
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 8.0906
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 86.4078
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 45.9627
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 7.764
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.2422
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 45.0311
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 49.8447
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 50.1553
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "bad",
+        "perc": 4.6584
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "fair",
+        "perc": 12.2671
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "good",
+        "perc": 30.7453
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "very_bad",
+        "perc": 0.3106
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "very_good",
+        "perc": 52.0186
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "five_people",
+        "perc": 13.8075
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "four_people",
+        "perc": 14.6444
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "one_person",
+        "perc": 23.8494
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "three_people",
+        "perc": 12.1339
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "two_people",
+        "perc": 35.5649
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "apprenticeship",
+        "perc": 7.6493
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_1_qualifications",
+        "perc": 7.2761
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_2_qualifications",
+        "perc": 13.2463
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_3_qualifications",
+        "perc": 19.0299
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.0224
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "no_qualifications",
+        "perc": 18.097
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_qualifications",
+        "perc": 1.6791
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "england",
+        "perc": 4.6512
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "northern_ireland",
+        "perc": 89.7674
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_cob",
+        "perc": 2.9457
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "republic_of_ireland",
+        "perc": 1.0853
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "scotland",
+        "perc": 1.2403
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "wales",
+        "perc": 0.3101
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "english",
+        "perc": 99.3631
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_languages",
+        "perc": 0.6369
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "a0to14",
+        "perc": 14.9068
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a15to39",
+        "perc": 25.1553
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a40to64",
+        "perc": 36.646
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a65plus",
+        "perc": 23.2919
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "a1to19_hours",
+        "perc": 8.0906
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a20to49_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "a50plus_hours",
+        "perc": 2.7508
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "no_care",
+        "perc": 86.4078
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "catholic",
+        "perc": 45.9627
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "none",
+        "perc": 7.764
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "other_religions",
+        "perc": 1.2422
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 45.0311
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Coast_Road_C1",
+        "category": "females",
+        "perc": 49.8447
+      },
+      {
+        "group": "Coast_Road_C1",
+        "category": "males",
+        "perc": 50.1553
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T011",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T011",
+        "last_updated": "2024-04-05",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1219 @@
+{
+  "code": "N21000345",
+  "name": "Limavady_C",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10000406",
+      "name": "Limavady",
+      "type": "dea"
+    },
+    {
+      "code": "N09000004",
+      "name": "Causeway Coast and Glens",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20001487",
+      "name": "Limavady_C1",
+      "type": "dz"
+    },
+    {
+      "code": "N20001489",
+      "name": "Limavady_C2",
+      "type": "dz"
+    },
+    {
+      "code": "N20001494",
+      "name": "Limavady_C3",
+      "type": "dz"
+    },
+    {
+      "code": "N20001499",
+      "name": "Limavady_C4",
+      "type": "dz"
+    },
+    {
+      "code": "N20001502",
+      "name": "Limavady_C5",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-6.9274, 55.0407],
+    [-6.9457, 55.0571]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 2268
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 391
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 1034
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 6.6138,
+          "fair": 18.5185,
+          "good": 29.806,
+          "very_bad": 2.3369,
+          "very_good": 42.7249
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 5.1257,
+          "four_people": 9.6712,
+          "one_person": 33.559,
+          "three_people": 16.5377,
+          "two_people": 35.1064
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 6.3264,
+          "level_1_qualifications": 7.0707,
+          "level_2_qualifications": 13.1845,
+          "level_3_qualifications": 15.6831,
+          "level_4_qualifications_and_above": 27.2727,
+          "no_qualifications": 28.2297,
+          "other_qualifications": 2.2329
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 4.7661,
+          "northern_ireland": 89.0556,
+          "other_cob": 2.8244,
+          "republic_of_ireland": 1.677,
+          "scotland": 1.368,
+          "wales": 0.3089
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 98.6005,
+          "other_languages": 1.3995
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 15.6526,
+          "a15to39": 24.4709,
+          "a40to64": 32.2751,
+          "a65plus": 27.6014
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 4.8646,
+          "a20to49_hours": 3.1207,
+          "a50plus_hours": 4.8646,
+          "no_care": 87.1501
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 34.8765,
+          "none": 6.0847,
+          "other_religions": 0.5291,
+          "protestant_and_other_christian_including_christian_related": 58.5097
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 52.381,
+          "males": 47.619
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 30,
+        "JSA": 10,
+        "RP": 570,
+        "PC": 90,
+        "AA": 120,
+        "CA": 130,
+        "DLA": 90,
+        "ESA": 160,
+        "UC": 230,
+        "PIP": 290
+      }
+    },
+    "MYETotal": {
+      "value": 2250
+    }
+  },
+  "hectares": 101,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Limavady_C",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Limavady_C",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Limavady_C",
+        "category": "bad",
+        "perc": 6.6138
+      },
+      {
+        "group": "Limavady_C",
+        "category": "fair",
+        "perc": 18.5185
+      },
+      {
+        "group": "Limavady_C",
+        "category": "good",
+        "perc": 29.806
+      },
+      {
+        "group": "Limavady_C",
+        "category": "very_bad",
+        "perc": 2.3369
+      },
+      {
+        "group": "Limavady_C",
+        "category": "very_good",
+        "perc": 42.7249
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Limavady_C",
+        "category": "five_people",
+        "perc": 5.1257
+      },
+      {
+        "group": "Limavady_C",
+        "category": "four_people",
+        "perc": 9.6712
+      },
+      {
+        "group": "Limavady_C",
+        "category": "one_person",
+        "perc": 33.559
+      },
+      {
+        "group": "Limavady_C",
+        "category": "three_people",
+        "perc": 16.5377
+      },
+      {
+        "group": "Limavady_C",
+        "category": "two_people",
+        "perc": 35.1064
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Limavady_C",
+        "category": "apprenticeship",
+        "perc": 6.3264
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_1_qualifications",
+        "perc": 7.0707
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_2_qualifications",
+        "perc": 13.1845
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_3_qualifications",
+        "perc": 15.6831
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.2727
+      },
+      {
+        "group": "Limavady_C",
+        "category": "no_qualifications",
+        "perc": 28.2297
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_qualifications",
+        "perc": 2.2329
+      }
+    ],
+    "cob": [
+      {
+        "group": "Limavady_C",
+        "category": "england",
+        "perc": 4.7661
+      },
+      {
+        "group": "Limavady_C",
+        "category": "northern_ireland",
+        "perc": 89.0556
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_cob",
+        "perc": 2.8244
+      },
+      {
+        "group": "Limavady_C",
+        "category": "republic_of_ireland",
+        "perc": 1.677
+      },
+      {
+        "group": "Limavady_C",
+        "category": "scotland",
+        "perc": 1.368
+      },
+      {
+        "group": "Limavady_C",
+        "category": "wales",
+        "perc": 0.3089
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Limavady_C",
+        "category": "english",
+        "perc": 98.6005
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_languages",
+        "perc": 1.3995
+      }
+    ],
+    "age": [
+      {
+        "group": "Limavady_C",
+        "category": "a0to14",
+        "perc": 15.6526
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a15to39",
+        "perc": 24.4709
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a40to64",
+        "perc": 32.2751
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a65plus",
+        "perc": 27.6014
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Limavady_C",
+        "category": "a1to19_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a20to49_hours",
+        "perc": 3.1207
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a50plus_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": "Limavady_C",
+        "category": "no_care",
+        "perc": 87.1501
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Limavady_C",
+        "category": "catholic",
+        "perc": 34.8765
+      },
+      {
+        "group": "Limavady_C",
+        "category": "none",
+        "perc": 6.0847
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_religions",
+        "perc": 0.5291
+      },
+      {
+        "group": "Limavady_C",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 58.5097
+      }
+    ],
+    "sex": [
+      {
+        "group": "Limavady_C",
+        "category": "females",
+        "perc": 52.381
+      },
+      {
+        "group": "Limavady_C",
+        "category": "males",
+        "perc": 47.619
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 6.6138
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 18.5185
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 29.806
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 2.3369
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 42.7249
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 5.1257
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 9.6712
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 33.559
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.5377
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 35.1064
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 6.3264
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 7.0707
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.1845
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.6831
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.2727
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 28.2297
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.2329
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 4.7661
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 89.0556
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 2.8244
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.677
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.368
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.3089
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 98.6005
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 1.3995
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 15.6526
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 24.4709
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 32.2751
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 27.6014
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 3.1207
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 87.1501
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 34.8765
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 6.0847
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 0.5291
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 58.5097
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 52.381
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 47.619
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Limavady_C",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Limavady_C",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Limavady_C",
+        "category": "bad",
+        "perc": 6.6138
+      },
+      {
+        "group": "Limavady_C",
+        "category": "fair",
+        "perc": 18.5185
+      },
+      {
+        "group": "Limavady_C",
+        "category": "good",
+        "perc": 29.806
+      },
+      {
+        "group": "Limavady_C",
+        "category": "very_bad",
+        "perc": 2.3369
+      },
+      {
+        "group": "Limavady_C",
+        "category": "very_good",
+        "perc": 42.7249
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Limavady_C",
+        "category": "five_people",
+        "perc": 5.1257
+      },
+      {
+        "group": "Limavady_C",
+        "category": "four_people",
+        "perc": 9.6712
+      },
+      {
+        "group": "Limavady_C",
+        "category": "one_person",
+        "perc": 33.559
+      },
+      {
+        "group": "Limavady_C",
+        "category": "three_people",
+        "perc": 16.5377
+      },
+      {
+        "group": "Limavady_C",
+        "category": "two_people",
+        "perc": 35.1064
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Limavady_C",
+        "category": "apprenticeship",
+        "perc": 6.3264
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_1_qualifications",
+        "perc": 7.0707
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_2_qualifications",
+        "perc": 13.1845
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_3_qualifications",
+        "perc": 15.6831
+      },
+      {
+        "group": "Limavady_C",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.2727
+      },
+      {
+        "group": "Limavady_C",
+        "category": "no_qualifications",
+        "perc": 28.2297
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_qualifications",
+        "perc": 2.2329
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Limavady_C",
+        "category": "england",
+        "perc": 4.7661
+      },
+      {
+        "group": "Limavady_C",
+        "category": "northern_ireland",
+        "perc": 89.0556
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_cob",
+        "perc": 2.8244
+      },
+      {
+        "group": "Limavady_C",
+        "category": "republic_of_ireland",
+        "perc": 1.677
+      },
+      {
+        "group": "Limavady_C",
+        "category": "scotland",
+        "perc": 1.368
+      },
+      {
+        "group": "Limavady_C",
+        "category": "wales",
+        "perc": 0.3089
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Limavady_C",
+        "category": "english",
+        "perc": 98.6005
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_languages",
+        "perc": 1.3995
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Limavady_C",
+        "category": "a0to14",
+        "perc": 15.6526
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a15to39",
+        "perc": 24.4709
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a40to64",
+        "perc": 32.2751
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a65plus",
+        "perc": 27.6014
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Limavady_C",
+        "category": "a1to19_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a20to49_hours",
+        "perc": 3.1207
+      },
+      {
+        "group": "Limavady_C",
+        "category": "a50plus_hours",
+        "perc": 4.8646
+      },
+      {
+        "group": "Limavady_C",
+        "category": "no_care",
+        "perc": 87.1501
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Limavady_C",
+        "category": "catholic",
+        "perc": 34.8765
+      },
+      {
+        "group": "Limavady_C",
+        "category": "none",
+        "perc": 6.0847
+      },
+      {
+        "group": "Limavady_C",
+        "category": "other_religions",
+        "perc": 0.5291
+      },
+      {
+        "group": "Limavady_C",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 58.5097
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Limavady_C",
+        "category": "females",
+        "perc": 52.381
+      },
+      {
+        "group": "Limavady_C",
+        "category": "males",
+        "perc": 47.619
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

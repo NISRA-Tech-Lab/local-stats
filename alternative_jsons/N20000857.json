@@ -1,0 +1,1189 @@
+{
+  "code": "N20000857",
+  "name": "Titanic_B1",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "dz",
+  "count": 3780,
+  "parents": [
+    {
+      "code": "N21000198",
+      "name": "Titanic_B",
+      "type": "sdz"
+    },
+    {
+      "code": "N10000310",
+      "name": "Titanic",
+      "type": "dea"
+    },
+    {
+      "code": "N09000003",
+      "name": "Belfast",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [],
+  "bounds": [
+    [-5.887, 54.6013],
+    [-5.9199, 54.6272]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 568
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 1136
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 316
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 0.8818,
+          "fair": 5.9965,
+          "good": 31.3933,
+          "very_bad": 0.5291,
+          "very_good": 61.1993
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 0.9464,
+          "four_people": 4.1009,
+          "one_person": 44.164,
+          "three_people": 13.5647,
+          "two_people": 37.224
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 1.1834,
+          "level_1_qualifications": 0.789,
+          "level_2_qualifications": 2.9586,
+          "level_3_qualifications": 9.8619,
+          "level_4_qualifications_and_above": 78.8955,
+          "no_qualifications": 4.142,
+          "other_qualifications": 2.1696
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 9.4737,
+          "northern_ireland": 41.7544,
+          "other_cob": 41.9298,
+          "republic_of_ireland": 4.0351,
+          "scotland": 2.6316,
+          "wales": 0.1754
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 76.7695,
+          "other_languages": 23.2305
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 10.5634,
+          "a15to39": 65.8451,
+          "a40to64": 21.3028,
+          "a65plus": 2.2887
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.7836,
+          "a20to49_hours": 1.306,
+          "a50plus_hours": 0.3731,
+          "no_care": 92.5373
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 32.0423,
+          "none": 21.3028,
+          "other_religions": 23.5915,
+          "protestant_and_other_christian_including_christian_related": 23.0634
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 41.1972,
+          "males": 58.8028
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 0,
+        "JSA": 0,
+        "RP": 10,
+        "PC": 0,
+        "AA": 0,
+        "CA": 0,
+        "DLA": 0,
+        "ESA": 0,
+        "UC": 10,
+        "PIP": 10
+      }
+    },
+    "MYETotal": {
+      "value": 577
+    }
+  },
+  "hectares": 286,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Titanic_B1",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Titanic_B1",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Titanic_B1",
+        "category": "bad",
+        "perc": 0.8818
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "fair",
+        "perc": 5.9965
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "good",
+        "perc": 31.3933
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "very_bad",
+        "perc": 0.5291
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "very_good",
+        "perc": 61.1993
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Titanic_B1",
+        "category": "five_people",
+        "perc": 0.9464
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "four_people",
+        "perc": 4.1009
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "one_person",
+        "perc": 44.164
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "three_people",
+        "perc": 13.5647
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "two_people",
+        "perc": 37.224
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Titanic_B1",
+        "category": "apprenticeship",
+        "perc": 1.1834
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_1_qualifications",
+        "perc": 0.789
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_2_qualifications",
+        "perc": 2.9586
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_3_qualifications",
+        "perc": 9.8619
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_4_qualifications_and_above",
+        "perc": 78.8955
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "no_qualifications",
+        "perc": 4.142
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_qualifications",
+        "perc": 2.1696
+      }
+    ],
+    "cob": [
+      {
+        "group": "Titanic_B1",
+        "category": "england",
+        "perc": 9.4737
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "northern_ireland",
+        "perc": 41.7544
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_cob",
+        "perc": 41.9298
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "republic_of_ireland",
+        "perc": 4.0351
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "scotland",
+        "perc": 2.6316
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "wales",
+        "perc": 0.1754
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Titanic_B1",
+        "category": "english",
+        "perc": 76.7695
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_languages",
+        "perc": 23.2305
+      }
+    ],
+    "age": [
+      {
+        "group": "Titanic_B1",
+        "category": "a0to14",
+        "perc": 10.5634
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a15to39",
+        "perc": 65.8451
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a40to64",
+        "perc": 21.3028
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a65plus",
+        "perc": 2.2887
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Titanic_B1",
+        "category": "a1to19_hours",
+        "perc": 5.7836
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a20to49_hours",
+        "perc": 1.306
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a50plus_hours",
+        "perc": 0.3731
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "no_care",
+        "perc": 92.5373
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Titanic_B1",
+        "category": "catholic",
+        "perc": 32.0423
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "none",
+        "perc": 21.3028
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_religions",
+        "perc": 23.5915
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.0634
+      }
+    ],
+    "sex": [
+      {
+        "group": "Titanic_B1",
+        "category": "females",
+        "perc": 41.1972
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "males",
+        "perc": 58.8028
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 0.8818
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 5.9965
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 31.3933
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 0.5291
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 61.1993
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 0.9464
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 4.1009
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 44.164
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 13.5647
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 37.224
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 1.1834
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 0.789
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 2.9586
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 9.8619
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 78.8955
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 4.142
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.1696
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 9.4737
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 41.7544
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 41.9298
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 4.0351
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 2.6316
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1754
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 76.7695
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 23.2305
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 10.5634
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 65.8451
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 21.3028
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 2.2887
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.7836
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 1.306
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 0.3731
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 92.5373
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 32.0423
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 21.3028
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 23.5915
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.0634
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 41.1972
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 58.8028
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Titanic_B1",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Titanic_B1",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Titanic_B1",
+        "category": "bad",
+        "perc": 0.8818
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "fair",
+        "perc": 5.9965
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "good",
+        "perc": 31.3933
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "very_bad",
+        "perc": 0.5291
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "very_good",
+        "perc": 61.1993
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Titanic_B1",
+        "category": "five_people",
+        "perc": 0.9464
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "four_people",
+        "perc": 4.1009
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "one_person",
+        "perc": 44.164
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "three_people",
+        "perc": 13.5647
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "two_people",
+        "perc": 37.224
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Titanic_B1",
+        "category": "apprenticeship",
+        "perc": 1.1834
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_1_qualifications",
+        "perc": 0.789
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_2_qualifications",
+        "perc": 2.9586
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_3_qualifications",
+        "perc": 9.8619
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "level_4_qualifications_and_above",
+        "perc": 78.8955
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "no_qualifications",
+        "perc": 4.142
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_qualifications",
+        "perc": 2.1696
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Titanic_B1",
+        "category": "england",
+        "perc": 9.4737
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "northern_ireland",
+        "perc": 41.7544
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_cob",
+        "perc": 41.9298
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "republic_of_ireland",
+        "perc": 4.0351
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "scotland",
+        "perc": 2.6316
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "wales",
+        "perc": 0.1754
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Titanic_B1",
+        "category": "english",
+        "perc": 76.7695
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_languages",
+        "perc": 23.2305
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Titanic_B1",
+        "category": "a0to14",
+        "perc": 10.5634
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a15to39",
+        "perc": 65.8451
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a40to64",
+        "perc": 21.3028
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a65plus",
+        "perc": 2.2887
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Titanic_B1",
+        "category": "a1to19_hours",
+        "perc": 5.7836
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a20to49_hours",
+        "perc": 1.306
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "a50plus_hours",
+        "perc": 0.3731
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "no_care",
+        "perc": 92.5373
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Titanic_B1",
+        "category": "catholic",
+        "perc": 32.0423
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "none",
+        "perc": 21.3028
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "other_religions",
+        "perc": 23.5915
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.0634
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Titanic_B1",
+        "category": "females",
+        "perc": 41.1972
+      },
+      {
+        "group": "Titanic_B1",
+        "category": "males",
+        "perc": 58.8028
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T011",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T011",
+        "last_updated": "2024-04-05",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

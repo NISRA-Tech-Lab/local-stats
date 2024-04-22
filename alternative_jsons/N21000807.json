@@ -1,0 +1,1209 @@
+{
+  "code": "N21000807",
+  "name": "Bangor_West_B",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10001104",
+      "name": "Bangor West",
+      "type": "dea"
+    },
+    {
+      "code": "N09000011",
+      "name": "Ards and North Down",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20003585",
+      "name": "Bangor_West_B1",
+      "type": "dz"
+    },
+    {
+      "code": "N20003587",
+      "name": "Bangor_West_B2",
+      "type": "dz"
+    },
+    {
+      "code": "N20003588",
+      "name": "Bangor_West_B3",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-5.6969, 54.6551],
+    [-5.7095, 54.6608]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 1235
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 833
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 586
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.6154,
+          "fair": 16.0324,
+          "good": 35.3036,
+          "very_bad": 1.6194,
+          "very_good": 42.4291
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 3.2423,
+          "four_people": 9.5563,
+          "one_person": 33.1058,
+          "three_people": 14.1638,
+          "two_people": 39.9317
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.0093,
+          "level_1_qualifications": 5.3271,
+          "level_2_qualifications": 14.0187,
+          "level_3_qualifications": 15.7009,
+          "level_4_qualifications_and_above": 37.5701,
+          "no_qualifications": 15.6075,
+          "other_qualifications": 4.7664
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 5.9109,
+          "northern_ireland": 86.4777,
+          "other_cob": 4.6154,
+          "republic_of_ireland": 1.5385,
+          "scotland": 1.2146,
+          "wales": 0.2429
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 98.2616,
+          "other_languages": 1.7384
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 12.6316,
+          "a15to39": 22.3482,
+          "a40to64": 28.8259,
+          "a65plus": 36.1943
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 8.3333,
+          "a20to49_hours": 2.862,
+          "a50plus_hours": 4.0404,
+          "no_care": 84.7643
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 14.7249,
+          "none": 13.5922,
+          "other_religions": 1.0518,
+          "protestant_and_other_christian_including_christian_related": 70.6311
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 53.0364,
+          "males": 46.9636
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 0,
+        "JSA": 10,
+        "RP": 420,
+        "PC": 30,
+        "AA": 80,
+        "CA": 40,
+        "DLA": 30,
+        "ESA": 40,
+        "UC": 40,
+        "PIP": 60
+      }
+    },
+    "MYETotal": {
+      "value": 1237
+    }
+  },
+  "hectares": 35,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Bangor_West_B",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Bangor_West_B",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Bangor_West_B",
+        "category": "bad",
+        "perc": 4.6154
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "fair",
+        "perc": 16.0324
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "good",
+        "perc": 35.3036
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "very_bad",
+        "perc": 1.6194
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "very_good",
+        "perc": 42.4291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Bangor_West_B",
+        "category": "five_people",
+        "perc": 3.2423
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "four_people",
+        "perc": 9.5563
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "one_person",
+        "perc": 33.1058
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "three_people",
+        "perc": 14.1638
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "two_people",
+        "perc": 39.9317
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Bangor_West_B",
+        "category": "apprenticeship",
+        "perc": 7.0093
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_1_qualifications",
+        "perc": 5.3271
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_2_qualifications",
+        "perc": 14.0187
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_3_qualifications",
+        "perc": 15.7009
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_4_qualifications_and_above",
+        "perc": 37.5701
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "no_qualifications",
+        "perc": 15.6075
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_qualifications",
+        "perc": 4.7664
+      }
+    ],
+    "cob": [
+      {
+        "group": "Bangor_West_B",
+        "category": "england",
+        "perc": 5.9109
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "northern_ireland",
+        "perc": 86.4777
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_cob",
+        "perc": 4.6154
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "republic_of_ireland",
+        "perc": 1.5385
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "scotland",
+        "perc": 1.2146
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "wales",
+        "perc": 0.2429
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Bangor_West_B",
+        "category": "english",
+        "perc": 98.2616
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_languages",
+        "perc": 1.7384
+      }
+    ],
+    "age": [
+      {
+        "group": "Bangor_West_B",
+        "category": "a0to14",
+        "perc": 12.6316
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a15to39",
+        "perc": 22.3482
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a40to64",
+        "perc": 28.8259
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a65plus",
+        "perc": 36.1943
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Bangor_West_B",
+        "category": "a1to19_hours",
+        "perc": 8.3333
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a20to49_hours",
+        "perc": 2.862
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a50plus_hours",
+        "perc": 4.0404
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "no_care",
+        "perc": 84.7643
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Bangor_West_B",
+        "category": "catholic",
+        "perc": 14.7249
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "none",
+        "perc": 13.5922
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_religions",
+        "perc": 1.0518
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 70.6311
+      }
+    ],
+    "sex": [
+      {
+        "group": "Bangor_West_B",
+        "category": "females",
+        "perc": 53.0364
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "males",
+        "perc": 46.9636
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.6154
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 16.0324
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 35.3036
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.6194
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 42.4291
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 3.2423
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 9.5563
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 33.1058
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 14.1638
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 39.9317
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.0093
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.3271
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 14.0187
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 15.7009
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 37.5701
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 15.6075
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 4.7664
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 5.9109
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 86.4777
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 4.6154
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 1.5385
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 1.2146
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.2429
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 98.2616
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 1.7384
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 12.6316
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 22.3482
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 28.8259
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 36.1943
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 8.3333
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.862
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 4.0404
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 84.7643
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 14.7249
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 13.5922
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.0518
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 70.6311
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 53.0364
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 46.9636
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Bangor_West_B",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Bangor_West_B",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Bangor_West_B",
+        "category": "bad",
+        "perc": 4.6154
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "fair",
+        "perc": 16.0324
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "good",
+        "perc": 35.3036
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "very_bad",
+        "perc": 1.6194
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "very_good",
+        "perc": 42.4291
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Bangor_West_B",
+        "category": "five_people",
+        "perc": 3.2423
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "four_people",
+        "perc": 9.5563
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "one_person",
+        "perc": 33.1058
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "three_people",
+        "perc": 14.1638
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "two_people",
+        "perc": 39.9317
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Bangor_West_B",
+        "category": "apprenticeship",
+        "perc": 7.0093
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_1_qualifications",
+        "perc": 5.3271
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_2_qualifications",
+        "perc": 14.0187
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_3_qualifications",
+        "perc": 15.7009
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "level_4_qualifications_and_above",
+        "perc": 37.5701
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "no_qualifications",
+        "perc": 15.6075
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_qualifications",
+        "perc": 4.7664
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Bangor_West_B",
+        "category": "england",
+        "perc": 5.9109
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "northern_ireland",
+        "perc": 86.4777
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_cob",
+        "perc": 4.6154
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "republic_of_ireland",
+        "perc": 1.5385
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "scotland",
+        "perc": 1.2146
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "wales",
+        "perc": 0.2429
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Bangor_West_B",
+        "category": "english",
+        "perc": 98.2616
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_languages",
+        "perc": 1.7384
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Bangor_West_B",
+        "category": "a0to14",
+        "perc": 12.6316
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a15to39",
+        "perc": 22.3482
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a40to64",
+        "perc": 28.8259
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a65plus",
+        "perc": 36.1943
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Bangor_West_B",
+        "category": "a1to19_hours",
+        "perc": 8.3333
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a20to49_hours",
+        "perc": 2.862
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "a50plus_hours",
+        "perc": 4.0404
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "no_care",
+        "perc": 84.7643
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Bangor_West_B",
+        "category": "catholic",
+        "perc": 14.7249
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "none",
+        "perc": 13.5922
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "other_religions",
+        "perc": 1.0518
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 70.6311
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Bangor_West_B",
+        "category": "females",
+        "perc": 53.0364
+      },
+      {
+        "group": "Bangor_West_B",
+        "category": "males",
+        "perc": 46.9636
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1214 @@
+{
+  "code": "N21000154",
+  "name": "Cusher_E",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "sdz",
+  "count": 850,
+  "parents": [
+    {
+      "code": "N10000204",
+      "name": "Cusher",
+      "type": "dea"
+    },
+    {
+      "code": "N09000002",
+      "name": "Armagh City, Banbridge and Craigavon",
+      "type": "lgd"
+    },
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N20000665",
+      "name": "Cusher_E2",
+      "type": "dz"
+    },
+    {
+      "code": "N20000674",
+      "name": "Cusher_E3",
+      "type": "dz"
+    },
+    {
+      "code": "N20000681",
+      "name": "Cusher_E4",
+      "type": "dz"
+    },
+    {
+      "code": "N20000688",
+      "name": "Cusher_E5",
+      "type": "dz"
+    }
+  ],
+  "bounds": [
+    [-6.4781, 54.3108],
+    [-6.6349, 54.403]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 0
+        },
+        "change": {
+          "all": "Inf"
+        },
+        "2021": {
+          "all": 2975
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 0
+        },
+        "2021": {
+          "all": 93
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 0
+        },
+        "change": {
+          "all_households": "Inf"
+        },
+        "2021": {
+          "all_households": 1047
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 100,
+          "fair": 100,
+          "good": 100,
+          "very_bad": 100,
+          "very_good": 100
+        },
+        "2021": {
+          "bad": 4.573,
+          "fair": 13.4499,
+          "good": 27.7404,
+          "very_bad": 1.8157,
+          "very_good": 52.421
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 100,
+          "four_people": 100,
+          "one_person": 100,
+          "three_people": 100,
+          "two_people": 100
+        },
+        "2021": {
+          "five_people": 13.5496,
+          "four_people": 14.7901,
+          "one_person": 22.042,
+          "three_people": 16.6985,
+          "two_people": 32.9198
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 100,
+          "level_1_qualifications": 100,
+          "level_2_qualifications": 100,
+          "level_3_qualifications": 100,
+          "level_4_qualifications_and_above": 100,
+          "no_qualifications": 100,
+          "other_qualifications": 100
+        },
+        "2021": {
+          "apprenticeship": 7.1311,
+          "level_1_qualifications": 5.3279,
+          "level_2_qualifications": 13.9754,
+          "level_3_qualifications": 13.8115,
+          "level_4_qualifications_and_above": 34.7541,
+          "no_qualifications": 22.6639,
+          "other_qualifications": 2.3361
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 2.8571,
+          "northern_ireland": 90.5546,
+          "other_cob": 3.9328,
+          "republic_of_ireland": 2.1176,
+          "scotland": 0.437,
+          "wales": 0.1008
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 100,
+          "other_languages": 100
+        },
+        "2021": {
+          "english": 97.6897,
+          "other_languages": 2.3103
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 100,
+          "a15to39": 100,
+          "a40to64": 100,
+          "a65plus": 100
+        },
+        "2021": {
+          "a0to14": 16.9469,
+          "a15to39": 24.8487,
+          "a40to64": 33.692,
+          "a65plus": 24.5124
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 100,
+          "a20to49_hours": 100,
+          "a50plus_hours": 100,
+          "no_care": 100
+        },
+        "2021": {
+          "a1to19_hours": 5.3263,
+          "a20to49_hours": 2.2928,
+          "a50plus_hours": 3.7037,
+          "no_care": 88.6772
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 100,
+          "none": 100,
+          "other_religions": 100,
+          "protestant_and_other_christian_including_christian_related": 100
+        },
+        "2021": {
+          "catholic": 13.5798,
+          "none": 5.0084,
+          "other_religions": 1.042,
+          "protestant_and_other_christian_including_christian_related": 80.3697
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 100,
+          "males": 100
+        },
+        "2021": {
+          "females": 50.0504,
+          "males": 49.9496
+        }
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 0,
+        "JSA": 0,
+        "RP": 590,
+        "PC": 60,
+        "AA": 80,
+        "CA": 70,
+        "DLA": 80,
+        "ESA": 110,
+        "UC": 80,
+        "PIP": 170
+      }
+    },
+    "MYETotal": {
+      "value": 2972
+    }
+  },
+  "hectares": 5249,
+  "grouped_data_nocompare": {
+    "population": [
+      {
+        "group": "Cusher_E",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Cusher_E",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Cusher_E",
+        "category": "bad",
+        "perc": 4.573
+      },
+      {
+        "group": "Cusher_E",
+        "category": "fair",
+        "perc": 13.4499
+      },
+      {
+        "group": "Cusher_E",
+        "category": "good",
+        "perc": 27.7404
+      },
+      {
+        "group": "Cusher_E",
+        "category": "very_bad",
+        "perc": 1.8157
+      },
+      {
+        "group": "Cusher_E",
+        "category": "very_good",
+        "perc": 52.421
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Cusher_E",
+        "category": "five_people",
+        "perc": 13.5496
+      },
+      {
+        "group": "Cusher_E",
+        "category": "four_people",
+        "perc": 14.7901
+      },
+      {
+        "group": "Cusher_E",
+        "category": "one_person",
+        "perc": 22.042
+      },
+      {
+        "group": "Cusher_E",
+        "category": "three_people",
+        "perc": 16.6985
+      },
+      {
+        "group": "Cusher_E",
+        "category": "two_people",
+        "perc": 32.9198
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Cusher_E",
+        "category": "apprenticeship",
+        "perc": 7.1311
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_1_qualifications",
+        "perc": 5.3279
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_2_qualifications",
+        "perc": 13.9754
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_3_qualifications",
+        "perc": 13.8115
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.7541
+      },
+      {
+        "group": "Cusher_E",
+        "category": "no_qualifications",
+        "perc": 22.6639
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_qualifications",
+        "perc": 2.3361
+      }
+    ],
+    "cob": [
+      {
+        "group": "Cusher_E",
+        "category": "england",
+        "perc": 2.8571
+      },
+      {
+        "group": "Cusher_E",
+        "category": "northern_ireland",
+        "perc": 90.5546
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_cob",
+        "perc": 3.9328
+      },
+      {
+        "group": "Cusher_E",
+        "category": "republic_of_ireland",
+        "perc": 2.1176
+      },
+      {
+        "group": "Cusher_E",
+        "category": "scotland",
+        "perc": 0.437
+      },
+      {
+        "group": "Cusher_E",
+        "category": "wales",
+        "perc": 0.1008
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Cusher_E",
+        "category": "english",
+        "perc": 97.6897
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_languages",
+        "perc": 2.3103
+      }
+    ],
+    "age": [
+      {
+        "group": "Cusher_E",
+        "category": "a0to14",
+        "perc": 16.9469
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a15to39",
+        "perc": 24.8487
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a40to64",
+        "perc": 33.692
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a65plus",
+        "perc": 24.5124
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Cusher_E",
+        "category": "a1to19_hours",
+        "perc": 5.3263
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a20to49_hours",
+        "perc": 2.2928
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a50plus_hours",
+        "perc": 3.7037
+      },
+      {
+        "group": "Cusher_E",
+        "category": "no_care",
+        "perc": 88.6772
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Cusher_E",
+        "category": "catholic",
+        "perc": 13.5798
+      },
+      {
+        "group": "Cusher_E",
+        "category": "none",
+        "perc": 5.0084
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_religions",
+        "perc": 1.042
+      },
+      {
+        "group": "Cusher_E",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 80.3697
+      }
+    ],
+    "sex": [
+      {
+        "group": "Cusher_E",
+        "category": "females",
+        "perc": 50.0504
+      },
+      {
+        "group": "Cusher_E",
+        "category": "males",
+        "perc": 49.9496
+      }
+    ],
+    "BRES": []
+  },
+  "grouped_data_timecompare": {
+    "population": [
+      {
+        "group": 2021,
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": 2021,
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": 2021,
+        "category": "bad",
+        "perc": 4.573
+      },
+      {
+        "group": 2021,
+        "category": "fair",
+        "perc": 13.4499
+      },
+      {
+        "group": 2021,
+        "category": "good",
+        "perc": 27.7404
+      },
+      {
+        "group": 2021,
+        "category": "very_bad",
+        "perc": 1.8157
+      },
+      {
+        "group": 2021,
+        "category": "very_good",
+        "perc": 52.421
+      }
+    ],
+    "hh_size": [
+      {
+        "group": 2021,
+        "category": "five_people",
+        "perc": 13.5496
+      },
+      {
+        "group": 2021,
+        "category": "four_people",
+        "perc": 14.7901
+      },
+      {
+        "group": 2021,
+        "category": "one_person",
+        "perc": 22.042
+      },
+      {
+        "group": 2021,
+        "category": "three_people",
+        "perc": 16.6985
+      },
+      {
+        "group": 2021,
+        "category": "two_people",
+        "perc": 32.9198
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": 2021,
+        "category": "apprenticeship",
+        "perc": 7.1311
+      },
+      {
+        "group": 2021,
+        "category": "level_1_qualifications",
+        "perc": 5.3279
+      },
+      {
+        "group": 2021,
+        "category": "level_2_qualifications",
+        "perc": 13.9754
+      },
+      {
+        "group": 2021,
+        "category": "level_3_qualifications",
+        "perc": 13.8115
+      },
+      {
+        "group": 2021,
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.7541
+      },
+      {
+        "group": 2021,
+        "category": "no_qualifications",
+        "perc": 22.6639
+      },
+      {
+        "group": 2021,
+        "category": "other_qualifications",
+        "perc": 2.3361
+      }
+    ],
+    "cob": [
+      {
+        "group": 2021,
+        "category": "england",
+        "perc": 2.8571
+      },
+      {
+        "group": 2021,
+        "category": "northern_ireland",
+        "perc": 90.5546
+      },
+      {
+        "group": 2021,
+        "category": "other_cob",
+        "perc": 3.9328
+      },
+      {
+        "group": 2021,
+        "category": "republic_of_ireland",
+        "perc": 2.1176
+      },
+      {
+        "group": 2021,
+        "category": "scotland",
+        "perc": 0.437
+      },
+      {
+        "group": 2021,
+        "category": "wales",
+        "perc": 0.1008
+      }
+    ],
+    "mainlang": [
+      {
+        "group": 2021,
+        "category": "english",
+        "perc": 97.6897
+      },
+      {
+        "group": 2021,
+        "category": "other_languages",
+        "perc": 2.3103
+      }
+    ],
+    "age": [
+      {
+        "group": 2021,
+        "category": "a0to14",
+        "perc": 16.9469
+      },
+      {
+        "group": 2021,
+        "category": "a15to39",
+        "perc": 24.8487
+      },
+      {
+        "group": 2021,
+        "category": "a40to64",
+        "perc": 33.692
+      },
+      {
+        "group": 2021,
+        "category": "a65plus",
+        "perc": 24.5124
+      }
+    ],
+    "provision_care": [
+      {
+        "group": 2021,
+        "category": "a1to19_hours",
+        "perc": 5.3263
+      },
+      {
+        "group": 2021,
+        "category": "a20to49_hours",
+        "perc": 2.2928
+      },
+      {
+        "group": 2021,
+        "category": "a50plus_hours",
+        "perc": 3.7037
+      },
+      {
+        "group": 2021,
+        "category": "no_care",
+        "perc": 88.6772
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": 2021,
+        "category": "catholic",
+        "perc": 13.5798
+      },
+      {
+        "group": 2021,
+        "category": "none",
+        "perc": 5.0084
+      },
+      {
+        "group": 2021,
+        "category": "other_religions",
+        "perc": 1.042
+      },
+      {
+        "group": 2021,
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 80.3697
+      }
+    ],
+    "sex": [
+      {
+        "group": 2021,
+        "category": "females",
+        "perc": 50.0504
+      },
+      {
+        "group": 2021,
+        "category": "males",
+        "perc": 49.9496
+      }
+    ]
+  },
+  "grouped_data_areacompare": {
+    "population": [
+      {
+        "group": "Cusher_E",
+        "category": "all",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all",
+        "perc": 100
+      }
+    ],
+    "households": [
+      {
+        "group": "Cusher_E",
+        "category": "all_households",
+        "perc": 100
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "all_households",
+        "perc": 100
+      }
+    ],
+    "general_health": [
+      {
+        "group": "Cusher_E",
+        "category": "bad",
+        "perc": 4.573
+      },
+      {
+        "group": "Cusher_E",
+        "category": "fair",
+        "perc": 13.4499
+      },
+      {
+        "group": "Cusher_E",
+        "category": "good",
+        "perc": 27.7404
+      },
+      {
+        "group": "Cusher_E",
+        "category": "very_bad",
+        "perc": 1.8157
+      },
+      {
+        "group": "Cusher_E",
+        "category": "very_good",
+        "perc": 52.421
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "bad",
+        "perc": 5.7253
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "fair",
+        "perc": 13.6606
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "good",
+        "perc": 28.6906
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_bad",
+        "perc": 1.9477
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "very_good",
+        "perc": 49.9757
+      }
+    ],
+    "hh_size": [
+      {
+        "group": "Cusher_E",
+        "category": "five_people",
+        "perc": 13.5496
+      },
+      {
+        "group": "Cusher_E",
+        "category": "four_people",
+        "perc": 14.7901
+      },
+      {
+        "group": "Cusher_E",
+        "category": "one_person",
+        "perc": 22.042
+      },
+      {
+        "group": "Cusher_E",
+        "category": "three_people",
+        "perc": 16.6985
+      },
+      {
+        "group": "Cusher_E",
+        "category": "two_people",
+        "perc": 32.9198
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "five_people",
+        "perc": 8.9534
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "four_people",
+        "perc": 13.7536
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "one_person",
+        "perc": 30.5213
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "three_people",
+        "perc": 16.3433
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "two_people",
+        "perc": 30.4284
+      }
+    ],
+    "highest_level_of_qualifications": [
+      {
+        "group": "Cusher_E",
+        "category": "apprenticeship",
+        "perc": 7.1311
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_1_qualifications",
+        "perc": 5.3279
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_2_qualifications",
+        "perc": 13.9754
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_3_qualifications",
+        "perc": 13.8115
+      },
+      {
+        "group": "Cusher_E",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.7541
+      },
+      {
+        "group": "Cusher_E",
+        "category": "no_qualifications",
+        "perc": 22.6639
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_qualifications",
+        "perc": 2.3361
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "apprenticeship",
+        "perc": 6.3622
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_1_qualifications",
+        "perc": 5.9006
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_2_qualifications",
+        "perc": 13.6104
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_3_qualifications",
+        "perc": 15.9766
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.1066
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_qualifications",
+        "perc": 23.8077
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_qualifications",
+        "perc": 2.2358
+      }
+    ],
+    "cob": [
+      {
+        "group": "Cusher_E",
+        "category": "england",
+        "perc": 2.8571
+      },
+      {
+        "group": "Cusher_E",
+        "category": "northern_ireland",
+        "perc": 90.5546
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_cob",
+        "perc": 3.9328
+      },
+      {
+        "group": "Cusher_E",
+        "category": "republic_of_ireland",
+        "perc": 2.1176
+      },
+      {
+        "group": "Cusher_E",
+        "category": "scotland",
+        "perc": 0.437
+      },
+      {
+        "group": "Cusher_E",
+        "category": "wales",
+        "perc": 0.1008
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "england",
+        "perc": 3.8325
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "northern_ireland",
+        "perc": 86.5016
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_cob",
+        "perc": 6.5303
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "republic_of_ireland",
+        "perc": 2.1205
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "scotland",
+        "perc": 0.8681
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "wales",
+        "perc": 0.1469
+      }
+    ],
+    "mainlang": [
+      {
+        "group": "Cusher_E",
+        "category": "english",
+        "perc": 97.6897
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_languages",
+        "perc": 2.3103
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "english",
+        "perc": 95.3662
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_languages",
+        "perc": 4.6338
+      }
+    ],
+    "age": [
+      {
+        "group": "Cusher_E",
+        "category": "a0to14",
+        "perc": 16.9469
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a15to39",
+        "perc": 24.8487
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a40to64",
+        "perc": 33.692
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a65plus",
+        "perc": 24.5124
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a0to14",
+        "perc": 19.1896
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a15to39",
+        "perc": 31.23
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a40to64",
+        "perc": 32.4261
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a65plus",
+        "perc": 17.1543
+      }
+    ],
+    "provision_care": [
+      {
+        "group": "Cusher_E",
+        "category": "a1to19_hours",
+        "perc": 5.3263
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a20to49_hours",
+        "perc": 2.2928
+      },
+      {
+        "group": "Cusher_E",
+        "category": "a50plus_hours",
+        "perc": 3.7037
+      },
+      {
+        "group": "Cusher_E",
+        "category": "no_care",
+        "perc": 88.6772
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a1to19_hours",
+        "perc": 5.6322
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a20to49_hours",
+        "perc": 2.9479
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "a50plus_hours",
+        "perc": 3.8389
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "no_care",
+        "perc": 87.581
+      }
+    ],
+    "religion_or_religion_brought_up_in": [
+      {
+        "group": "Cusher_E",
+        "category": "catholic",
+        "perc": 13.5798
+      },
+      {
+        "group": "Cusher_E",
+        "category": "none",
+        "perc": 5.0084
+      },
+      {
+        "group": "Cusher_E",
+        "category": "other_religions",
+        "perc": 1.042
+      },
+      {
+        "group": "Cusher_E",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 80.3697
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "catholic",
+        "perc": 45.7002
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "none",
+        "perc": 9.3192
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "other_religions",
+        "perc": 1.4982
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.4824
+      }
+    ],
+    "sex": [
+      {
+        "group": "Cusher_E",
+        "category": "females",
+        "perc": 50.0504
+      },
+      {
+        "group": "Cusher_E",
+        "category": "males",
+        "perc": 49.9496
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "females",
+        "perc": 50.8121
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "males",
+        "perc": 49.1879
+      }
+    ],
+    "BRES": [
+      {
+        "group": "Northern Ireland",
+        "category": "Construction",
+        "perc": 4.7811
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Manufacturing",
+        "perc": 11.0797
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Services",
+        "perc": 82.5273
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Other",
+        "perc": 1.6119
+      }
+    ]
+  },
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T012",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSSDZ",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics"
+      }
+    ]
+  }
+}
