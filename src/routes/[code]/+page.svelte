@@ -320,6 +320,18 @@
 
 	}
 
+	function pullCensusYear (value) {
+
+		if (data.place.data.hasOwnProperty(value)) {
+			return Object.keys(data.place.data[value].perc).slice(-1);
+		} else {
+			return null;
+		}
+
+	}
+
+	
+
 </script>
 
 <svelte:head>
@@ -507,6 +519,7 @@
 			<GreyBox
 				id = "pop"
 				place = {data.place}
+				year = {pullCensusYear("population")}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -707,7 +720,7 @@
 						content: "<span >"  + " population growth/shrink to be added</span> "},
 					box_2: {
 						id: "age",
-						year: Object.keys(data.place.data.age.perc).slice(-1),
+						year: pullCensusYear("age"),
 						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
@@ -722,7 +735,7 @@
 					},
 					box_4: {
 						id: "hhsize",
-						year: Object.keys(data.place.data.hh_size.perc).slice(-1),
+						year: pullCensusYear("hh_size"),
 						content: "GroupChart"		,
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
@@ -732,7 +745,7 @@
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
-						year: Object.keys(data.place.data.religion_or_religion_brought_up_in.perc).slice(-1),
+						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
@@ -743,7 +756,7 @@
 					},
 					box_6: {
 						id: "language",
-						year: Object.keys(data.place.data.mainlang.perc).slice(-1),
+						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
@@ -774,7 +787,7 @@
 		boxes = {{
 				box_1: {
 						id: "generalhealth",
-						year: Object.keys(data.place.data.general_health.perc).slice(-1),
+						year: pullCensusYear("general_health"),
 						content: {
 							ni: "StackedBarChart",
 							lgd: "StackedBarChart",
@@ -806,7 +819,7 @@
 				box_4: {
 						id: "carers",
 						content: "GroupChart",
-						year: Object.keys(data.place.data.general_health.perc).slice(-1),
+						year: pullCensusYear("provision_care"),
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
