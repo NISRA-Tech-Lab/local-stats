@@ -986,9 +986,9 @@
 			
 			box_3: {
 						id: "teachers",
-						content: 		
-										"<p><span class='text-big' style='font-size: 1.8em'>"  + 
-											(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
+						year: pullYear("ClassSize"),
+						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
+							(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
 ,
 					
 					show: ["ni", "lgd"]},
@@ -996,6 +996,7 @@
 			box_4: {
 						id: "qualifications",
 						content:  "GroupChart",
+						year: pullCensusYear("highest_level_of_qualifications"),
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
