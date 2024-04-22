@@ -707,6 +707,7 @@
 						content: "<span >"  + " population growth/shrink to be added</span> "},
 					box_2: {
 						id: "age",
+						year: Object.keys(data.place.data.age.perc).slice(-1),
 						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
@@ -721,6 +722,7 @@
 					},
 					box_4: {
 						id: "hhsize",
+						year: Object.keys(data.place.data.hh_size.perc).slice(-1),
 						content: "GroupChart"		,
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
@@ -730,6 +732,7 @@
 						topic_prev_available: "true"},
 					box_5: {
 						id: "religion",
+						year: Object.keys(data.place.data.religion_or_religion_brought_up_in.perc).slice(-1),
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
@@ -740,6 +743,7 @@
 					},
 					box_6: {
 						id: "language",
+						year: Object.keys(data.place.data.mainlang.perc).slice(-1),
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
