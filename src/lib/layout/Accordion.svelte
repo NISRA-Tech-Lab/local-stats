@@ -65,6 +65,7 @@ let w, cols;
                             id = {boxes[box_list[i]].id}
                             style = {boxes[box_list[i]].style}
                             place = {place}
+                            year = {boxes[box_list[i]].year}
                             content = {boxes[box_list[i]].content}
                             chart_data = {boxes[box_list[i]].chart_data}
                             zKey = {boxes[box_list[i]].zKey}
@@ -83,6 +84,7 @@ let w, cols;
                             id = {boxes[box_list[i]].id}
                             style = {boxes[box_list[i]].style}
                             place = {place}
+                            year = {boxes[box_list[i]].year}
                             content = {boxes[box_list[i]].content}
                             chart_data = {boxes[box_list[i]].chart_data}
                             zKey = {boxes[box_list[i]].zKey}

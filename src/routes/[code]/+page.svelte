@@ -760,6 +760,7 @@
 		boxes = {{
 				box_1: {
 						id: "generalhealth",
+						year: Object.keys(data.place.data.general_health.perc).slice(-1),
 						content: {
 							ni: "StackedBarChart",
 							lgd: "StackedBarChart",
