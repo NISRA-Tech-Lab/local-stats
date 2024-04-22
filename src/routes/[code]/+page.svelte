@@ -435,16 +435,16 @@
 						<button
 							class="btn"
 							style="width: 33%"
-							title="Click to print this page to pdf or printer"
-							onclick="window.print();return false;"
-							>Print / PDF
+							alt="Return to the landing page"
+							onclick="window.location.href='/about';"
+							>About
 						</button>
 						<button
 							class="btn"
 							style="width: 33%"
-							alt="Return to the landing page"
-							onclick="window.location.href='{base}';"
-							>Menu
+							title="Click to print this page to pdf or printer"
+							onclick="window.print();return false;"
+							>Print / PDF
 						</button>
 						<button
 							class="btn"
