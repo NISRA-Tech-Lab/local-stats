@@ -898,6 +898,7 @@
 				
 				box_1: {
 						id: "employmentrates",
+						year: pullYear("LMS"),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
@@ -906,6 +907,7 @@
 				
 				box_2: {
 						id: "employed",
+						year: pullYear("LMS"),
 						content: 
 						"<p><span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() + "</span> employed</p>",
 						show: ["ni", "lgd"]
@@ -913,12 +915,14 @@
 
 				box_3: {
 						id: "wages",
+						year: pullYear("ASHE"),
 						content: '<p><span class="text-big" style="font-size: 1.8em">' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
 						show: ["ni", "lgd"]
 					},
 						
 				box_4: {
 					id: "disabilitybenefits",
+					year: pullYear("BS"),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
@@ -926,6 +930,7 @@
 
 				box_5: {
 					id: "workingagebenefits",
+					year: pullYear("BS"),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
@@ -933,6 +938,7 @@
 				
 				box_6: {
 					id: "pensionagebenefits",
+					year: pullYear("BS"),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
 				}		
