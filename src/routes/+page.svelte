@@ -36,22 +36,22 @@
    -->
 
 
-		<div class="row">
+		<div class="grid">
 
-    <div class="column left">
+    <div>
 
       <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;   " >Explore key statistics for any area in Northern Ireland</span>
 
       
-      <h3> </h3><br>
+     <h4></h4>
       <Select
-    search_data = {data.search_data}
-    group="typestr"
-    search={true}
-    on:select={menuSelect}
-    />
+        search_data = {data.search_data}
+        group="typestr"
+        search={true}
+        on:select={menuSelect}
+      />
     
-    <!-- <h3>Select an Area</h3><br>
+      <!-- <h3>Select an Area</h3><br>
       <ul>
         <li><a href="{base}/N92000002"><strong>Northern Ireland</strong></a></li>
         <ul>
@@ -71,7 +71,7 @@
     </div> 
 
   
-
+<div>
 Click on the map to view Northern Ireland as a whole
 
 <a href="{base}/N92000002/">
@@ -79,6 +79,7 @@ Click on the map to view Northern Ireland as a whole
     <img style="width:400px;" src="{assets}/img/NI-map.png" alt="Northern Ireland Statistics and Research Agency">
   </picture>
 </a>
+</div>
 
   </div>
 
@@ -118,5 +119,14 @@ Click on the map to view Northern Ireland as a whole
 		display: table;
 		clear: both;
 		
+	}
+
+  .grid {
+		display: grid;
+		width: 100%;
+		grid-gap: 30px;
+		grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+		justify-content: stretch;
+		page-break-inside: avoid;
 	}
 </style>
