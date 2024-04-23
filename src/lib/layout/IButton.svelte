@@ -196,6 +196,11 @@ let i_button_info = {
 		 		  "<a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"
 		},
 
+		
+		empty: {
+			title: "",
+			info: ""
+					},
 			destination: {
 				title: "Next steps for school leavers",
 				info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  +
