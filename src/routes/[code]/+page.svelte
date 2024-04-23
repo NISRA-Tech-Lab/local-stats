@@ -843,10 +843,10 @@
 						id: "wellbeing",
 						year: pullYear("Happy", data.place),
 						content: {
-							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 happiness</p>"+
-							"<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
-							lgd: "<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 happiness</p>"	+
-							"<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
+							ni: "<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 happiness</p>"+
+							"<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
+							lgd: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 happiness</p>"	+
+							"<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
 
 						},	
 						show: ["ni", "lgd"]
@@ -964,7 +964,7 @@
 				box_4: {
 					id: "disabilitybenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big">' +
+					content: '<span class="text-big" style="font-size: 1.8em">' +
 						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
 				},
@@ -972,7 +972,7 @@
 				box_5: {
 					id: "workingagebenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big">' +
+					content: '<span class="text-big" style="font-size: 1.8em">' +
 						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
 				},
@@ -980,7 +980,7 @@
 				box_6: {
 					id: "pensionagebenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big">' +
+					content: '<span class="text-big" style="font-size: 1.8em">' +
 						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
 				}		
 							
