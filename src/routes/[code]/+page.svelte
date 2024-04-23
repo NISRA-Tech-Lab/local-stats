@@ -335,10 +335,7 @@
 	function popDen (place) {
 
 		let pop = place.data.population.value[Object.keys(place.data.population.value).filter(function (x) {if (x == "change") {return false} else {return true}}).splice(-1)].all;
-
-		let hectares = place.hectares;
-
-		let pop_den = pop / hectares;
+		let pop_den = pop / place.hectares;
 
 		if (pop_den < 0.1) {
 			pop_den = "< 0.1"
@@ -350,7 +347,15 @@
 
 	}
 
-	
+	function moreData (subject, place) {
+
+		if (place.type != "ni") {
+			return "There is more " + subject + " data available for <a href = '/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
+		} else {
+			return "";
+		}
+
+	}
 
 </script>
 
@@ -733,7 +738,7 @@
 			img = "nisra-taxonomy-icon-census.png"
 			heading = "People and Households"
 			place = {data.place} 
-			sub_heading =   {"There is more People and Households data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+			sub_heading =   {moreData("People and Households", data.place)}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -802,7 +807,7 @@
 		img = "nisra-taxonomy-icon-health.png"
 		heading = "Health and Social Care"
 		place = {data.place}
-		sub_heading =   {"There is more Health and Social Care data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+		sub_heading =   {moreData("Health and Social Care", data.place)}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -912,7 +917,7 @@
 		img = "nisra-taxonomy-icon-labour-market.png"
 		heading = "Work and Welfare"
 		place = {data.place}
-		sub_heading =   {"There is more Work and Welfare data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+		sub_heading = {moreData("Work and Welfare", data.place)}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -984,7 +989,7 @@
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education"
 		place = {data.place}
-		sub_heading =   {"There is more Schools, colleges and universities data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+		sub_heading =   {moreData("Schools, colleges and universities", data.place)}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1041,7 +1046,7 @@
 		img = "nisra-taxonomy-icon-crime-justice.png"
 		heading = "Crime and Justice"
 		place = {data.place}
-		sub_heading = "Crime and court activity"
+		sub_heading = {moreData("Crime and Court Activity", data.place)}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1056,7 +1061,7 @@
 		img = "nisra-taxonomy-icon-travel-transport.png"
 		heading = "Travel and Transport"
 		place = {data.place}
-		sub_heading = "Travel and transport .... "
+		sub_heading = {moreData("Travel and transport", data.place)}
 		description = "xxxx"
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
