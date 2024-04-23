@@ -624,7 +624,43 @@
         "perc": 51.6239
       }
     ],
-    "BRES": []
+    "BRES": [],
+    "Primary": [
+      {
+        "geography": "Botanic",
+        "category": "FSME",
+        "perc": 29.1139
+      }
+    ],
+    "PostPrimary": [
+      {
+        "geography": "Botanic",
+        "category": "FSME",
+        "perc": 27.7663
+      }
+    ],
+    "BroadAge": [
+      {
+        "geography": "Botanic",
+        "category": "Age 0-15",
+        "perc": 11.5927
+      },
+      {
+        "geography": "Botanic",
+        "category": "Age 16-39",
+        "perc": 59.2742
+      },
+      {
+        "geography": "Botanic",
+        "category": "Age 40-64",
+        "perc": 20.6048
+      },
+      {
+        "geography": "Botanic",
+        "category": "Age 65+",
+        "perc": 8.5282
+      }
+    ]
   },
   "grouped_data_timecompare": {
     "population": [
@@ -1309,6 +1345,122 @@
         "category": "Other",
         "perc": 1.6119
       }
+    ],
+    "Primary": [
+      {
+        "group": "Botanic",
+        "category": "FSME",
+        "perc": 29.1139
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      }
+    ],
+    "PostPrimary": [
+      {
+        "group": "Botanic",
+        "category": "FSME",
+        "perc": 27.7663
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      }
+    ],
+    "BroadAge": [
+      {
+        "group": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3814
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.9075
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.425
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.2862
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3835
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.6176
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.4411
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.5578
+      },
+      {
+        "group": "Botanic",
+        "category": "Age 0-15",
+        "perc": 11.5927
+      },
+      {
+        "group": "Botanic",
+        "category": "Age 16-39",
+        "perc": 59.2742
+      },
+      {
+        "group": "Botanic",
+        "category": "Age 40-64",
+        "perc": 20.6048
+      },
+      {
+        "group": "Botanic",
+        "category": "Age 65+",
+        "perc": 8.5282
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3814
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.9075
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.425
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.2862
+      }
     ]
   },
   "meta_data": {
@@ -1318,7 +1470,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
         "last_updated": "2024-04-11",
         "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
+        "title": "Mid-year population estimates",
+        "year": "2021"
       }
     ],
     "BroadAge": [
@@ -1327,7 +1480,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
         "last_updated": "2024-04-11",
         "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
+        "title": "Mid-year population estimates",
+        "year": "2021"
       }
     ],
     "LE": [
@@ -1336,7 +1490,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
         "last_updated": "2024-04-11",
         "email": "healthinequalities@health-ni.gov.uk",
-        "title": "Life expectancy at birth"
+        "title": "Life expectancy at birth",
+        "year": "2020-22"
       }
     ],
     "Admiss": [
@@ -1345,7 +1500,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
         "last_updated": "2024-04-11",
         "email": "statistics@health-ni.gov.uk",
-        "title": "Primary Reason for Admissions to HSC Hospitals"
+        "title": "Primary Reason for Admissions to HSC Hospitals",
+        "year": "2022"
       }
     ],
     "DEN": [
@@ -1354,7 +1510,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
         "last_updated": "2023-06-26",
         "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dentists and Surgeries"
+        "title": "General Dental Services Dentists and Surgeries",
+        "year": "2022/23"
       }
     ],
     "DEN_REG": [
@@ -1363,7 +1520,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
         "last_updated": "2023-06-26",
         "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dental Registrations"
+        "title": "General Dental Services Dental Registrations",
+        "year": "2022/23"
       }
     ],
     "BS": [
@@ -1372,7 +1530,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
         "last_updated": "2023-07-06",
         "email": "psu@communities-ni.gov.uk",
-        "title": "Benefit Statistics"
+        "title": "Benefit Statistics",
+        "year": "2023"
       }
     ],
     "Primary": [
@@ -1381,7 +1540,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Primary"
+        "title": "School Census - Primary",
+        "year": "2022/23"
       }
     ],
     "PostPrimary": [
@@ -1390,7 +1550,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Post Primary"
+        "title": "School Census - Post Primary",
+        "year": "2022/23"
       }
     ],
     "Attainment": [
@@ -1399,7 +1560,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
         "last_updated": "2023-11-22",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Attainment"
+        "title": "School Leavers Survey - Attainment",
+        "year": "2021/22"
       }
     ],
     "FE": [
@@ -1408,7 +1570,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
         "last_updated": "2023-06-20",
         "email": "dfemail@economy-ni.gov.uk",
-        "title": "Regulated enrolments at Further Education Colleges"
+        "title": "Regulated enrolments at Further Education Colleges",
+        "year": "2020/21"
       }
     ],
     "HE": [
@@ -1417,7 +1580,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
         "last_updated": "2023-06-21",
         "email": "dfemail@economy-ni.gov.uk",
-        "title": "Enrolments at Higher Education Institutions"
+        "title": "Enrolments at Higher Education Institutions",
+        "year": "2021/22"
       }
     ],
     "Destination": [
@@ -1426,7 +1590,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
         "last_updated": "2023-11-22",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Destination"
+        "title": "School Leavers Survey - Destination",
+        "year": "2021/22"
       }
     ]
   }

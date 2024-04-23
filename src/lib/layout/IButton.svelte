@@ -39,14 +39,20 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Happiness",
-			info: "Average Happiness score out of 10 for people aged 16+</p>" + 
-				"<p>source:</p>" +
-				"<p>Last Updated:</p>" +
-				"<p>Further Information:</p>"},
+			info: "Average Happiness score out of 10 for people aged 16+</p>" 
+				// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.Happy[0].email + "'>Email for more information</a> </p>"  +
+		 		//   "<p class = 'pibutton'>Last updated: " + place.meta_data.Happy[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 		//   "<a href='" + place.meta_data.Happy[0].dataset_url + "'>" + place.meta_data.Happy[0].title + "</a></p>"
+				
+				},
 
 		lifeexpectancy: {
 			title: "Life Expectancy at birth",
-			info: "words to be added" 
+			info:  "to be fixed"
+			
+			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LE[0].email + "'>Email for more information</a> </p>"  +
+		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LE[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 	// 	  "<a href='" + place.meta_data.LE[0].dataset_url + "'>" + place.meta_data.LE[0].title + "</a></p>"
 			},
 
 		
@@ -58,44 +64,72 @@ let i_button_info = {
 			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		hospitalactivity: {
-			title: "Activity in hospitals / waiting lists",
-			info: "words to be added"},
+			title: "Admissions to hospital",
+			info: "to be fixed"
+				// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.Admiss[0].email + "'>Email for more information</a> </p>"  +
+		 		//   "<p class = 'pibutton'>Last updated: " + place.meta_data.Admiss[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 		//   "<a href='" + place.meta_data.Admiss[0].dataset_url + "'>" + place.meta_data.Admiss[0].title + "</a></p>"
+				
+				},
 
 		primarycare: {
 			title: "Primary care providers",
-			info: "words to be added"},
+			info: "<p class = 'pibutton'>Access data at: " 
+				
+				// +
+		 		//   "<a href='" + place.meta_data.GP[0].dataset_url + "'>" + place.meta_data.GP[0].title + "</a>, <a href='" +place.meta_data.DEN[0].dataset_url + "'>" + place.meta_data.DEN[0].title+" and <a href='" +place.meta_data.DEN_REG[0].dataset_url + "'>" + place.meta_data.DEN_REG[0].title+"></p>"
+				},
 
 			employmentrates: {
 			title: "Employment rates",
-			info: "words to be added"},
+			info:  "to be fixed"
+			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LMS[0].email + "'>Email for more information</a> </p>"  +
+		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LMS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 	// 	  "<a href='" + place.meta_data.LMS[0].dataset_url + "'>" + place.meta_data.LMS[0].title + "</a></p>"
+			// 	
+		},
 
 
 			employed: {
 			title: "Number of people employed",
-			info: "words to be added"},
+			info: "to be fixed"
+			
+			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LMS[0].email + "'>Email for more information</a> </p>"  +
+		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LMS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 	// 	  "<a href='" + place.meta_data.LMS[0].dataset_url + "'>" + place.meta_data.LMS[0].title + "</a></p>"
+		},
 
 
 			wages: {
 			title: "Average wages",
-			info: "words to be added"},
+			info:  "to be fixed"
+			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.ASHE[0].email + "'>Email for more information</a> </p>"  +
+		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.ASHE[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 	// 	  "<a href='" + place.meta_data.ASHE[0].dataset_url + "'>" + place.meta_data.ASHE[0].title + "</a></p>"
+		},
 
-
-			benefits: {
-			title: "Personal Independent Payment (PIP) benefits",
-			info: "some info here"},
 
 			pensionagebenefits: {
 			title: "Pension Age benefits",
-			info: "some info here"},
+			info: "Benefits included are: SP and PC" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"
+
+				},
 
 
 			workingagebenefits: {
 			title: "Working Age benefits",
-			info: "some info here"},
+			info:  "Benefits included are: UC, JSA, IS and ESA" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"},
 
 			disabilitybenefits: {
 			title: "Disability & Carer’s benefits",
-			info: "some info here"},
+			info:   "Benefits included are: PIP, CA, AA and DLA" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"
+					},
 
 			enrollments: {
 			title: "Number of enrolled in schools and colleges",
@@ -104,24 +138,37 @@ let i_button_info = {
 
 			fsme: {
 			title: "Entitlement to Free School Meals",
-			info: "words to be added"},
+			info:  "    "},
 
 
 			teachers: {
-			title: "Teachers",
-			info: "words to be added"},
+			title: "Class Sizes",
+			info:  "to be fixed"
+			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.ClassSize[0].email + "'>Email for more information</a> </p>"  +
+		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.ClassSize[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
+		 	// 	  "<a href='" + place.meta_data.ClassSize[0].dataset_url + "'>" + place.meta_data.ClassSize[0].title + "</a></p>"
+				},
 
 
 			qualifications: {
 			title: "Highest level of Qualifications",
 			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"words to be added"},
+						"Needs tidied up with proper CSS.   The highest level of qualification categories are as follows:" +
+ 					"No qualifications;" +
+					 "Level 1: 1 to 4 GCSEs, O levels, CSEs (any grades); 1 AS Level; NVQ level 1; or equivalent;" +
+					 "Level 2: 5 or more GCSEs (A*-C or 9-4), O levels (passes) CSEs (grade 1); 1 A level, 2-3 AS Levels; NVQ level 2, BTEC General, City and Guilds Craft; or equivalent;" +
+					 "Apprenticeship;" +
+ 					" Level 3: 2 or more A Levels, 4 or more AS Levels; NVQ Level 3, BTEC National, OND, ONC, City and Guilds Advanced Craft; or equivalent;" +
+ 					" Level 4 and above: Degree (BA, BSc), foundation degree, NVQ Level 4 and above, HND, HNC, professional qualifications (teaching or nursing, for example), or equivalent; and" +
+ 					" Other: Other qualifications, equivalent unknown." +
+ 					"Highest level of qualification is derived from the question asking people aged 16 years and over to indicate all qualifications held. For qualifications gained outside Northern Ireland, respondents were directed to select the nearest equivalent."
+				},
 
 
 			attainment: {
 			title: "Attainment of Qualifications",
 			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"words to be added"},
+					"MORE WORDS"},
 
 
 
