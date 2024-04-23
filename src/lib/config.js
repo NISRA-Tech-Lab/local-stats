@@ -22,8 +22,8 @@ export const app_inputs = {
 //	search_data: '/data_jsons_dea_20240408/places_dz_extra.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
-	 app_json_data: '/alternative_jsons/',
-	// app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
+	// app_json_data: '/alternative_jsons/',
+	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
