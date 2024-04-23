@@ -3,6 +3,30 @@
 export let id;
 export let place;
 
+function checkMeta (value) {
+
+	let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+	let props = value_dotted.split(".");
+
+	let rtn_value = place.meta_data;
+
+	for (let i = 0; i < props.length; i ++) {
+
+		if (rtn_value.hasOwnProperty(props[i])) {
+			rtn_value = rtn_value[props[i]]
+			if (props[i] == "last_updated") {
+				let numbers = rtn_value.split("-");
+				rtn_value =  numbers[2] + "/" + numbers[1] + "/" + numbers[0];
+			}
+		}
+
+	}
+
+	return rtn_value;
+
+}
+
+
 let i_button_info = {
 
 	location: {
@@ -34,25 +58,22 @@ let i_button_info = {
 		generalhealth: {
 			title: "General Health",
 			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"General health is a self-assessment of a person’s general state of health. It is not " +
+			"General health is a self-assessment of a person's general state of health. It is not " +
 					"based over any specified period of time. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		wellbeing: {
 			title: "Happiness",
-			info: "Average Happiness score out of 10 for people aged 16+</p>" 
-				// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.Happy[0].email + "'>Email for more information</a> </p>"  +
-		 		//   "<p class = 'pibutton'>Last updated: " + place.meta_data.Happy[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 		//   "<a href='" + place.meta_data.Happy[0].dataset_url + "'>" + place.meta_data.Happy[0].title + "</a></p>"
-				
+			info: "Average Happiness score out of 10 for people aged 16+</p>" +
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Happy[0].email") + "'>Email for more information</a> </p>" +  
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Happy[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("Happy[0].dataset_url") + "'>" + checkMeta("Happy[0].title") + "</a></p>"
 				},
 
 		lifeexpectancy: {
 			title: "Life Expectancy at birth",
-			info:  "to be fixed"
-			
-			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LE[0].email + "'>Email for more information</a> </p>"  +
-		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LE[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 	// 	  "<a href='" + place.meta_data.LE[0].dataset_url + "'>" + place.meta_data.LE[0].title + "</a></p>"
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LE[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LE[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"
 			},
 
 		
@@ -65,70 +86,63 @@ let i_button_info = {
 
 		hospitalactivity: {
 			title: "Admissions to hospital",
-			info: "to be fixed"
-				// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.Admiss[0].email + "'>Email for more information</a> </p>"  +
-		 		//   "<p class = 'pibutton'>Last updated: " + place.meta_data.Admiss[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 		//   "<a href='" + place.meta_data.Admiss[0].dataset_url + "'>" + place.meta_data.Admiss[0].title + "</a></p>"
-				
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Admiss[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Admiss[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("Admiss[0].dataset_url") + "'>" + checkMeta("Admiss[0].title") + "</a></p>"
 				},
 
 		primarycare: {
 			title: "Primary care providers",
-			info: "<p class = 'pibutton'>Access data at: " 
-				
-				// +
-		 		//   "<a href='" + place.meta_data.GP[0].dataset_url + "'>" + place.meta_data.GP[0].title + "</a>, <a href='" +place.meta_data.DEN[0].dataset_url + "'>" + place.meta_data.DEN[0].title+" and <a href='" +place.meta_data.DEN_REG[0].dataset_url + "'>" + place.meta_data.DEN_REG[0].title+"></p>"
+			info: "<p class = 'pibutton'>Access data at: " +
+				  "<a href='" + checkMeta("GP[0].dataset_url") + "'>" + checkMeta("GP[0].title") + "</a>, " +
+				  "<a href='" + checkMeta("DEN[0].dataset_url") + "'>" + checkMeta("DEN[0].title") + "</a> and " +
+				  "<a href='" + checkMeta("DEN_REG[0].dataset_url") + "'>" + checkMeta("DEN_REG[0].title") + "</a></p>"
 				},
 
 			employmentrates: {
 			title: "Employment rates",
-			info:  "to be fixed"
-			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LMS[0].email + "'>Email for more information</a> </p>"  +
-		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LMS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 	// 	  "<a href='" + place.meta_data.LMS[0].dataset_url + "'>" + place.meta_data.LMS[0].title + "</a></p>"
-			// 	
-		},
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"
+				},
 
 
 			employed: {
 			title: "Number of people employed",
-			info: "to be fixed"
-			
-			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.LMS[0].email + "'>Email for more information</a> </p>"  +
-		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.LMS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 	// 	  "<a href='" + place.meta_data.LMS[0].dataset_url + "'>" + place.meta_data.LMS[0].title + "</a></p>"
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"
 		},
 
 
 			wages: {
 			title: "Average wages",
-			info:  "to be fixed"
-			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.ASHE[0].email + "'>Email for more information</a> </p>"  +
-		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.ASHE[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 	// 	  "<a href='" + place.meta_data.ASHE[0].dataset_url + "'>" + place.meta_data.ASHE[0].title + "</a></p>"
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>"
 		},
 
 
 			pensionagebenefits: {
 			title: "Pension Age benefits",
-			info: "Benefits included are: SP and PC" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"
+			info: "Benefits included are: SP and PC" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"
 
 				},
 
 
 			workingagebenefits: {
 			title: "Working Age benefits",
-			info:  "Benefits included are: UC, JSA, IS and ESA" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"},
+			info:  "Benefits included are: UC, JSA, IS and ESA" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"},
 
 			disabilitybenefits: {
 			title: "Disability & Carer’s benefits",
-			info:   "Benefits included are: PIP, CA, AA and DLA" + "<p class = 'pibutton'><a href='mailto:" + place.meta_data.BS[0].email + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + place.meta_data.BS[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + place.meta_data.BS[0].dataset_url + "'>" + place.meta_data.BS[0].title + "</a></p>"
+			info:   "Benefits included are: PIP, CA, AA and DLA" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"
 					},
 
 			enrollments: {
@@ -143,10 +157,9 @@ let i_button_info = {
 
 			teachers: {
 			title: "Class Sizes",
-			info:  "to be fixed"
-			// "<p class = 'pibutton'><a href='mailto:" + place.meta_data.ClassSize[0].email + "'>Email for more information</a> </p>"  +
-		 	// 	  "<p class = 'pibutton'>Last updated: " + place.meta_data.ClassSize[0].last_updated + "</p> <p class = 'pibutton'>Access data at: " +
-		 	// 	  "<a href='" + place.meta_data.ClassSize[0].dataset_url + "'>" + place.meta_data.ClassSize[0].title + "</a></p>"
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ClassSize[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ClassSize[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("ClassSize[0].dataset_url") + "'>" + checkMeta("ClassSize[0].title") + "</a></p>"
 				},
 
 
@@ -179,7 +192,7 @@ let i_button_info = {
 		age: {
 			title: "Broad age bands",
 			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"A grouping of ages where a person’s age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+			"A grouping of ages where a person's age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 			
 		sex: {
 			title: "Sex",
@@ -217,9 +230,9 @@ let i_button_info = {
 
 		// dentalreg: {
 		// 	title: "Number of dental registrations",
-		// 	info: "<a href='mailto:" + place.meta_data.FPSGDSDR.email + "'>Email for more information</a> " + 
-		// 		  "Last updated: " + place.meta_data.FPSGDSDR.last_updated + " Access data at: " +
-		// 		  "<a href='" + place.meta_data.FPSGDSDR.dataset_url + "'>" + place.meta_data.FPSGDSDR.title + "</a>"
+		// 	info: "<a href='mailto:" + checkMeta("FPSGDSDR.email") + "'>Email for more information</a> " + 
+		// 		  "Last updated: " + checkMeta("FPSGDSDR.last_updated") + " Access data at: " +
+		// 		  "<a href='" + checkMeta("FPSGDSDR.dataset_url") + "'>" + checkMeta("FPSGDSDR.title") + "</a>"
 		// }
 
 }
