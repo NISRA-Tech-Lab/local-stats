@@ -22,15 +22,15 @@ export const app_inputs = {
 //	search_data: '/data_jsons_dea_20240408/places_dz_extra.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
-//	 app_json_data: '/alternative_jsons/',
-	app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
+	// app_json_data: '/alternative_jsons/',
+	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
 export const geog_types = {
 	dz: {name: 'Data Zone', pl: 'Data Zones'},
 	sdz: {name: 'Super Data Zone', pl: 'Super Data Zones'},
-	ward: { name: 'Electoral Ward', pl: 'Ward' },
+//	ward: { name: 'Electoral Ward', pl: 'Ward' },
 
 	dea: {name: 'District Electoral Area', pl: 'District Electoral Areas'},
 	town: {name: 'settlement', pl: 'settlements'},
@@ -181,15 +181,16 @@ export const mapSources = {
 //		url: '/data/map_tiles/sa/{z}/{x}/{y}.pbf',
  		minzoom: 6,
 		maxzoom: 12, 
-	},
-	ward: {
-		id: 'ward',
-		promoteId: 'ward_Code',
-		type: 'vector',
-		url: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/map_tiles/main/ward2014/{z}/{x}/{y}.pbf',
-		minzoom: 6,
-		maxzoom: 12
-	} 
+	}
+	// ,
+	// ward: {
+	// 	id: 'ward',
+	// 	promoteId: 'ward_Code',
+	// 	type: 'vector',
+	// 	url: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/map_tiles/main/ward2014/{z}/{x}/{y}.pbf',
+	// 	minzoom: 6,
+	// 	maxzoom: 12
+	//} 
 };
 
 export const mapLayers = {
@@ -216,14 +217,15 @@ export const mapLayers = {
 		code: 'dz_code',
 		name: 'dz_name', 
 		
-	}, 
+	}
+	// , 
 
-	ward: {
-		source: 'ward',
-		sourceLayer: 'WARD2014_clipped',
-		code: 'ward_code',
-		name: 'ward_name'
-	} 
+	// ward: {
+	// 	source: 'ward',
+	// 	sourceLayer: 'WARD2014_clipped',
+	// 	code: 'ward_code',
+	// 	name: 'ward_name'
+	// } 
 
 };
 

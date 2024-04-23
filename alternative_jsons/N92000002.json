@@ -635,6 +635,92 @@
         "category": "Other",
         "perc": 1.6119
       }
+    ],
+    "Primary": [
+      {
+        "geography": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      }
+    ],
+    "PostPrimary": [
+      {
+        "geography": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      }
+    ],
+    "BroadAge": [
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3814
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.9075
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.425
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.2862
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3835
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.6176
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.4411
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.5578
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 0-15",
+        "perc": 20.3814
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 16-39",
+        "perc": 29.9075
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 40-64",
+        "perc": 32.425
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "Age 65+",
+        "perc": 17.2862
+      }
     ]
   },
   "grouped_data_timecompare": {
@@ -1083,7 +1169,10 @@
     "provision_care": [],
     "religion_or_religion_brought_up_in": [],
     "sex": [],
-    "BRES": []
+    "BRES": [],
+    "Primary": [],
+    "PostPrimary": [],
+    "BroadAge": []
   },
   "meta_data": {
     "MYETotal": [
@@ -1092,28 +1181,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
-        "title": "Population totals"
-      },
-      {
-        "table_code": "MYE01T011",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T011",
-        "last_updated": "2024-04-05",
-        "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
-      },
-      {
-        "table_code": "MYE01T012",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
-        "last_updated": "2024-04-11",
-        "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
-      },
-      {
-        "table_code": "MYE01T010",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
-        "last_updated": "2024-04-11",
-        "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
+        "title": "Population totals",
+        "year": "2022"
       }
     ],
     "Median": [
@@ -1122,7 +1191,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MA01T02",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
-        "title": "Median age"
+        "title": "Median age",
+        "year": "2022"
       }
     ],
     "BroadAge": [
@@ -1131,21 +1201,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
         "last_updated": "2024-04-11",
         "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
-      },
-      {
-        "table_code": "MYE01T04",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T04",
-        "last_updated": "2024-04-11",
-        "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
-      },
-      {
-        "table_code": "MYE01T010",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
-        "last_updated": "2024-04-11",
-        "email": "census@nisra.gov.uk",
-        "title": "Mid-year population estimates"
+        "title": "Mid-year population estimates",
+        "year": "2021"
       }
     ],
     "PopChange": [
@@ -1154,7 +1211,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
-        "title": "Population totals"
+        "title": "Population totals",
+        "year": "2022"
       }
     ],
     "LE": [
@@ -1163,14 +1221,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
         "last_updated": "2024-04-11",
         "email": "healthinequalities@health-ni.gov.uk",
-        "title": "Life expectancy at birth"
-      },
-      {
-        "table_code": "LELGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/LELGD",
-        "last_updated": "2024-04-11",
-        "email": "healthinequalities@health-ni.gov.uk",
-        "title": "Life expectancy at birth"
+        "title": "Life expectancy at birth",
+        "year": "2020-22"
       }
     ],
     "Happy": [
@@ -1179,7 +1231,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/WBPERSWLGD",
         "last_updated": "2023-12-14",
         "email": "pfganalytics@executiveoffice-ni.gov.uk",
-        "title": "Personal Wellbeing"
+        "title": "Personal Wellbeing",
+        "year": "2022/23"
       }
     ],
     "Admiss": [
@@ -1188,7 +1241,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
         "last_updated": "2024-04-11",
         "email": "statistics@health-ni.gov.uk",
-        "title": "Primary Reason for Admissions to HSC Hospitals"
+        "title": "Primary Reason for Admissions to HSC Hospitals",
+        "year": "2022"
       }
     ],
     "GP": [
@@ -1197,7 +1251,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/GPPRACPATLGD",
         "last_updated": "2023-06-23",
         "email": "info.bso@hscni.net",
-        "title": "GPs Practices and Registered Patients"
+        "title": "GPs Practices and Registered Patients",
+        "year": "2023"
       }
     ],
     "DEN": [
@@ -1206,14 +1261,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
         "last_updated": "2023-06-26",
         "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dentists and Surgeries"
-      },
-      {
-        "table_code": "FPSGDSDSLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSLGD",
-        "last_updated": "2023-06-26",
-        "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dentists and Surgeries"
+        "title": "General Dental Services Dentists and Surgeries",
+        "year": "2022/23"
       }
     ],
     "DEN_REG": [
@@ -1222,14 +1271,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRLGD",
         "last_updated": "2023-06-26",
         "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dental Registrations"
-      },
-      {
-        "table_code": "FPSGDSDRDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
-        "last_updated": "2023-06-26",
-        "email": "info.bso@hscni.net",
-        "title": "General Dental Services Dental Registrations"
+        "title": "General Dental Services Dental Registrations",
+        "year": "2022/23"
       }
     ],
     "LMS": [
@@ -1238,7 +1281,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/LMSLGD",
         "last_updated": "2024-03-28",
         "email": "economicstats@nisra.gov.uk",
-        "title": "Labour Market Status"
+        "title": "Labour Market Status",
+        "year": "2022"
       }
     ],
     "ASHE": [
@@ -1247,7 +1291,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/GAPLGD",
         "last_updated": "2023-11-01",
         "email": "economicstats@nisra.gov.uk",
-        "title": "Gross Annual Pay"
+        "title": "Gross Annual Pay",
+        "year": "2023"
       }
     ],
     "BRES": [
@@ -1256,7 +1301,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/BRESHEADLGD",
         "last_updated": "2024-03-19",
         "email": "economicstats@nisra.gov.uk",
-        "title": "Employee Jobs"
+        "title": "Employee Jobs",
+        "year": "2022"
       }
     ],
     "BS": [
@@ -1265,28 +1311,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
         "last_updated": "2023-07-06",
         "email": "psu@communities-ni.gov.uk",
-        "title": "Benefit Statistics"
-      },
-      {
-        "table_code": "BSLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
-        "last_updated": "2023-07-06",
-        "email": "psu@communities-ni.gov.uk",
-        "title": "Benefit Statistics"
-      },
-      {
-        "table_code": "BSSDZ",
-        "dataset_url": "https://data.nisra.gov.uk/table/BSSDZ",
-        "last_updated": "2023-07-06",
-        "email": "psu@communities-ni.gov.uk",
-        "title": "Benefit Statistics"
-      },
-      {
-        "table_code": "BSDZ",
-        "dataset_url": "https://data.nisra.gov.uk/table/BSDZ",
-        "last_updated": "2023-07-06",
-        "email": "psu@communities-ni.gov.uk",
-        "title": "Benefit Statistics"
+        "title": "Benefit Statistics",
+        "year": "2023"
       }
     ],
     "Primary": [
@@ -1295,14 +1321,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Primary"
-      },
-      {
-        "table_code": "DESCPLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCPLGD",
-        "last_updated": "2023-05-31",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Primary"
+        "title": "School Census - Primary",
+        "year": "2022/23"
       }
     ],
     "PostPrimary": [
@@ -1311,14 +1331,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Post Primary"
-      },
-      {
-        "table_code": "DESCPPLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPLGD",
-        "last_updated": "2023-05-31",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Post Primary"
+        "title": "School Census - Post Primary",
+        "year": "2022/23"
       }
     ],
     "ClassSize": [
@@ -1327,7 +1341,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DETNPTRLGD",
         "last_updated": "2023-06-29",
         "email": "statistics@education-ni.gov.uk",
-        "title": "Pupil Teacher Ratios in Northern Ireland"
+        "title": "Pupil Teacher Ratios in Northern Ireland",
+        "year": "2022/23"
       }
     ],
     "Attainment": [
@@ -1336,14 +1351,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSALGD",
         "last_updated": "2023-11-22",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Attainment"
-      },
-      {
-        "table_code": "DESLSADEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
-        "last_updated": "2023-11-22",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Attainment"
+        "title": "School Leavers Survey - Attainment",
+        "year": "2021/22"
       }
     ],
     "FE": [
@@ -1352,14 +1361,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/FEENROLLGD",
         "last_updated": "2023-06-20",
         "email": "dfemail@economy-ni.gov.uk",
-        "title": "Regulated enrolments at Further Education Colleges"
-      },
-      {
-        "table_code": "FEENROLDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLDEA",
-        "last_updated": "2023-06-20",
-        "email": "dfemail@economy-ni.gov.uk",
-        "title": "Regulated enrolments at Further Education Colleges"
+        "title": "Regulated enrolments at Further Education Colleges",
+        "year": "2020/21"
       }
     ],
     "HE": [
@@ -1368,14 +1371,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/HEENROLLGD",
         "last_updated": "2023-06-21",
         "email": "dfemail@economy-ni.gov.uk",
-        "title": "Enrolments at Higher Education Institutions"
-      },
-      {
-        "table_code": "HEENROLDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLDEA",
-        "last_updated": "2023-06-21",
-        "email": "dfemail@economy-ni.gov.uk",
-        "title": "Enrolments at Higher Education Institutions"
+        "title": "Enrolments at Higher Education Institutions",
+        "year": "2021/22"
       }
     ],
     "Destination": [
@@ -1384,14 +1381,8 @@
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
         "last_updated": "2023-11-22",
         "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Destination"
-      },
-      {
-        "table_code": "DESLSDLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDLGD",
-        "last_updated": "2023-11-22",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Leavers Survey - Destination"
+        "title": "School Leavers Survey - Destination",
+        "year": "2021/22"
       }
     ]
   }
