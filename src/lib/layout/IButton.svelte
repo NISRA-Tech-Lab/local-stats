@@ -49,7 +49,7 @@ let i_button_info = {
 		pop: {
 			title: "Population",
 			info: "Population is based on the number of usual residents. " +
-			"<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			"<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"A usual resident is anyone who, on 21 March 2021 is in the UK, and staying in the UK for a period of 3 months or more; " +
 			 	  "or has a permanent UK address and is outside the UK and is staying outside the UK for less than 12 months. " +
 			      "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
@@ -57,13 +57,14 @@ let i_button_info = {
 
 		generalhealth: {
 			title: "General Health",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"General health is a self-assessment of a person's general state of health. It is not " +
 					"based over any specified period of time. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		wellbeing: {
-			title: "Happiness",
+			title: "Personal Wellbeing",
 			info: "Average Happiness score out of 10 for people aged 16+</p>" +
+			"Average Life satisfaction score out of 10 for people aged 16+</p>" +
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Happy[0].email") + "'>Email for more information</a> </p>" +  
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Happy[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("Happy[0].dataset_url") + "'>" + checkMeta("Happy[0].title") + "</a></p>"
@@ -78,14 +79,14 @@ let i_button_info = {
 
 		
 		carers: {
-			title: "Provision of unpaid care",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			title: "Unpaid care giving",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"Unpaid care covers looking after giving help or support to anyone because they have long-term physical or "+
 			"mental health conditions or illnesses, or problems related to old age. It does not include any activities as part of paid employment. All unpaid care statistics are restricted to persons aged 5 and over. "+
 			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		hospitalactivity: {
-			title: "Admissions to hospital",
+			title: "Annual admissions to hospital",
 			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Admiss[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Admiss[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("Admiss[0].dataset_url") + "'>" + checkMeta("Admiss[0].title") + "</a></p>"
@@ -100,10 +101,11 @@ let i_button_info = {
 				},
 
 			employmentrates: {
-			title: "Employment rates",
+			title: "Work status of adults",
 			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"
+		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>" + 
+				  "<p>Inactive includes students, early retirees, or people looking after a home, who are long-term sick or disabled. </p>"
 				},
 
 
@@ -116,10 +118,11 @@ let i_button_info = {
 
 
 			wages: {
-			title: "Average wages",
+			title: "Average annual wage",
 			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>"
+		 		  "<a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
+				  "<p>Median is the ..... </p>"
 		},
 
 
@@ -139,14 +142,14 @@ let i_button_info = {
 		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"},
 
 			disabilitybenefits: {
-			title: "Disability & Carer’s benefits",
+			title: "Disability and Carer’s benefits",
 			info:   "Benefits included are: PIP, CA, AA and DLA" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"
 					},
 
 			enrollments: {
-			title: "Number of enrolled in schools and colleges",
+			title: "People in education",
 			info: "<p class = 'pibutton'>Access data at: " +
 				  "<a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a>, " +
 				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a>,  " +
@@ -155,7 +158,7 @@ let i_button_info = {
 
 
 			fsme: {
-			title: "Entitlement to Free School Meals",
+			title: "Pupils entitled to Free School Meals",
 			info:  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
@@ -164,7 +167,7 @@ let i_button_info = {
 
 
 			teachers: {
-			title: "Class Sizes",
+			title: "School class size",
 			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ClassSize[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ClassSize[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("ClassSize[0].dataset_url") + "'>" + checkMeta("ClassSize[0].title") + "</a></p>"
@@ -172,8 +175,8 @@ let i_button_info = {
 
 
 			qualifications: {
-			title: "Highest level of Qualifications",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			title: "Highest level of qualifications in the population",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 						"Needs tidied up with proper CSS.   The highest level of qualification categories are as follows:" +
  					"No qualifications;" +
 					 "Level 1: 1 to 4 GCSEs, O levels, CSEs (any grades); 1 AS Level; NVQ level 1; or equivalent;" +
@@ -187,14 +190,14 @@ let i_button_info = {
 
 
 			attainment: {
-			title: "Attainment of Qualifications",
+			title: "GCSEs for school leavers",
 			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  +
 		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Attainment[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 		 		  "<a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"
 		},
 
 			destination: {
-				title: "Destination of school leavers",
+				title: "Next steps for school leavers",
 				info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  +
 					"<p class = 'pibutton'>Last updated: " + checkMeta("Destination[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
 					"<a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"
@@ -206,8 +209,8 @@ let i_button_info = {
 			info: "words to be added"},
 
 		age: {
-			title: "Broad age bands",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			title: "Age",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"A grouping of ages where a person's age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 			
 		sex: {
@@ -216,19 +219,19 @@ let i_button_info = {
 			
 		hhsize: {
 			title: "Household size",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"The number of usual residents in the household.      <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 			
 		religion: {
-			title: "Religion, Religion brought up",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			title: "Religion, Religion brought up in",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"The religious group the person belongs to or for people with no current religion their religious group of upbringing." +
 				"People with no current religion and no religion of upbringing are labelled 'None'." + 
 				"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 			
 		language: {
 			title: "Main language",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"Person's main language as declared in the Census." + 
 					"Statistics for all language questions are restricted" + 
 					"to persons aged 3 and over. <a" + 
@@ -237,7 +240,7 @@ let i_button_info = {
 			
 			households: {
 			title: "Households - box with numbers",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"A household is either one person living alone or a group of people living at the same address " +
 				  "who share cooking facilities and share a living room, sitting room or dining area. " +
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"

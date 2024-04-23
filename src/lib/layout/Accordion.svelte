@@ -49,7 +49,7 @@ let w, cols;
 
         <div class="accordion-body">
             <!-- change order -->
-            {place.name} - {@html sub_heading}
+            {place.name} {place.type.toLocaleUpperCase()} - {@html sub_heading}
             <span class="accordion-button-title-sub"
                 >{description}</span>
 
