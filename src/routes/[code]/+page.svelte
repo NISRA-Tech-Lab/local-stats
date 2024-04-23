@@ -332,6 +332,24 @@
 
 	}
 
+	function popDen (place) {
+
+		let pop = place.data.population.value[Object.keys(place.data.population.value).filter(function (x) {if (x == "change") {return false} else {return true}}).splice(-1)].all;
+
+		let hectares = place.hectares;
+
+		let pop_den = pop / hectares;
+
+		if (pop_den < 0.1) {
+			pop_den = "< 0.1"
+		} else {
+			pop_den = pop_den.toFixed(1);
+		}
+
+		return pop_den;
+
+	}
+
 	
 
 </script>
@@ -550,8 +568,8 @@
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				year = {pullCensusYear("households")}
-				content = {'<span class="text-big" style="font-size: 2.8em;"> to be added</span>'}
+				year = {pullCensusYear("population")}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</span> people per hectare'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
