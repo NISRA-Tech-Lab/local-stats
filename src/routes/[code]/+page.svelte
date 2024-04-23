@@ -42,6 +42,8 @@
     let w, cols;
     let map = null;
     let comp_2011 = false;
+	let comp_ni = true;
+	
 
     let active = {
       selected: null,
@@ -247,8 +249,8 @@
           : null;
 
     $: data.place && update(data.place);
-    $: comp_ni = false;
-    $: comp_none = true;
+    $: comp_ni = true;
+    $: comp_none = false;
 
 	function returnPct (expr) {
 
@@ -370,7 +372,8 @@
 					{/if}
 				</span><br />
 				<span class="text-big title">{data.place.name}</span>
-				<div class="text-bold" style="font-size: 0.85em;">
+				
+				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
 			
 
 					<!-- {#if data.place.type == "ni"}
@@ -392,7 +395,7 @@
 							>No comparison</button
 						>
 					{/if} -->
-					{#if data.place.type != "ni"}
+					<!-- {#if data.place.type != "ni"}
 					Click for: <button
 							class="btn"
 							class:btn-active={comp_ni & !comp_none & !comp_2011}
@@ -400,7 +403,7 @@
 							on:click={() => (comp_none = false)}
 							on:click={() => (comp_2011 = false)}>NI compare</button
 						>
-					{/if}
+					{/if} -->
 
 						<!-- <button
 							class="btn"
@@ -410,7 +413,7 @@
 							on:click={() => (comp_ni = false)}
 							>Same area - previous</button
 						> -->
-				</div> 
+				<!-- </div>  -->
 			</div>
 
 			<div>
@@ -548,7 +551,7 @@
 				id = "popden"
 				place = {data.place}
 				year = {pullCensusYear("households")}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+				content = {'<span class="text-big" style="font-size: 2.8em;"> to be added</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
@@ -599,7 +602,7 @@
 					options={{ fitBoundsOptions: { padding: 20 } }}
 					style={mapStyle}
 				>
-					{#each ["dz", "sdz", "ward", "dea", "lgd"] as key}
+					{#each ["dz", "sdz", "dea", "lgd"] as key}
 						<MapSource {...mapSources[key]}>
 							<MapLayer
 								{...mapLayers[key]}
@@ -917,7 +920,7 @@
 				box_3: {
 						id: "wages",
 						year: pullYear("ASHE"),
-						content: '<p><span class="text-big" style="font-size: 1.8em">' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
+						content: '<p><span class="text-big" style="font-size: 1.8em">£' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
 						show: ["ni", "lgd"]
 					},
 						
