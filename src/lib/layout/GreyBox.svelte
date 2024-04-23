@@ -35,7 +35,7 @@ if (topic_prev_available == "false") {
     {#if (i_button)}
         <IButton id = {id} place = {place}/>
     {:else}
-        <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{heading}</h3>
+        <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{@html heading}</h3>
     {/if}
     {#if (year != null)}
         <div class = "text-small">{year}</div>

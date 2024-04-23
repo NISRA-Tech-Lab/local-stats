@@ -537,11 +537,11 @@
 			<GreyBox
 				id = "overview" 
 				i_button = {false}
-				heading = "About XXXXX" 
+				heading = "About {data.place.name}" 
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
+							ni: "The population of " + data.place.name + " was " + data.place.data.MYETotal.value.toLocaleString() ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
@@ -853,7 +853,7 @@
 					},
 				box_3: {
 						id: "lifeexpectancy",
-						year: pullYear("LE"),
+						year: pullYear("LE", data.place),
 						content: "<p>Male <span class='text-big' style='font-size: 1.8em'>" + 
 							(check("LE.value.Males")).toLocaleString() +
 							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
@@ -883,7 +883,7 @@
 					},
 				box_6a: {
 						id: "primarycare",
-						year: pullYear("GP")   ,
+						year: pullYear("GP", data.place)   ,
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("GP.value.PRACS")).toLocaleString() +
 								"</span> GP practices with an average of <span class='text-big' style='font-size: 1.2em'>" + 
@@ -937,7 +937,7 @@
 				
 				box_1: {
 						id: "employmentrates",
-						year: pullYear("LMS"),
+						year: pullYear("LMS", data.place),
 						content: "To be changed to a chart<p>Employed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
 								 "<p>Unemployed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
 								 "<p>Inactive <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
@@ -956,7 +956,7 @@
 
 				box_3: {
 						id: "wages",
-						year: pullYear("ASHE"),
+						year: pullYear("ASHE", data.place),
 						content: '<p><span class="text-big" style="font-size: 1.8em">£' + (check("ASHE.value")).toLocaleString() + '</span> median salary</p>',
 						show: ["ni", "lgd"]
 					},
@@ -1022,7 +1022,7 @@
 							+ "</span></p>" +
 						"<p style='margin:0'>Higher education <span class='text-big' style='font-size: 1.2em'>"+(check("HE.value")).toLocaleString() +" </span></p>",
 					
-						year: pullYear("Primary") ,
+						year: pullYear("Primary", data.place) ,
 						show: ["ni", "lgd", "dea"]},
 				
 			box_2: {
