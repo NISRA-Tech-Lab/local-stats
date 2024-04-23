@@ -317,8 +317,6 @@
 
 		}
 
-		console.log(rtn_value)
-
 		return rtn_value;
 
 	}
