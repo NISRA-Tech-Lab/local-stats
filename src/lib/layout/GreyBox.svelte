@@ -20,6 +20,7 @@ export let i_button = true;
 export let heading = null;
 export let chart_compare_type;
 export let compare_content = null;
+export let year = null
 
 if (topic_prev_available == "false") {
     topic_boolean = false
@@ -34,9 +35,11 @@ if (topic_prev_available == "false") {
     {#if (i_button)}
         <IButton id = {id} place = {place}/>
     {:else}
-        <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{heading}</h3>
+        <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{@html heading}</h3>
     {/if}
-    <br/>
+    {#if (year != null)}
+        <div class = "text-small">{year}</div>
+    {/if}
     {#if (content == "StackedBarChart" | (content.hasOwnProperty(place.type) & content[place.type] == "StackedBarChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
             <StackedBarChart data = {chart_data.none} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
