@@ -296,26 +296,37 @@
 
 	function check (value) {
 
-		let props = value.split(".");
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
 
 		let rtn_value = data.place.data;
+
+		if (props[0] == "grouped_data_nocompare") {
+			rtn_value = data.place;
+		}		
 
 		for (let i = 0; i < props.length; i ++) {
 
 			if (rtn_value.hasOwnProperty(props[i])) {
 				rtn_value = rtn_value[props[i]]
+
+				if (props[i] == "perc") {
+					rtn_value = rtn_value.toFixed(0) + "%";
+				}
 			}
 
 		}
+
+		console.log(rtn_value)
 
 		return rtn_value;
 
 	}
 
-	function pullYear (value) {
+	function pullYear (value, place) {
 		
-		if (data.place.meta_data.hasOwnProperty(value)) {
-			return data.place.meta_data[value][0].year;
+		if (place.meta_data.hasOwnProperty(value)) {
+			return place.meta_data[value][0].year;
 		} else {
 			return null;
 		}
@@ -545,7 +556,7 @@
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				year = {pullYear("MYETotal")}
+				year = {pullYear("MYETotal", data.place)}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -832,7 +843,7 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						year: pullYear("Happy"),
+						year: pullYear("Happy", data.place),
 						content: {
 							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 happiness</p>"+
 							"<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
@@ -864,7 +875,7 @@
 					},
 				box_5: {
 						id: "hospitalactivity",
-						year: pullYear("Admiss"),
+						year: pullYear("Admiss", data.place),
 						content:  
 						// needs checked - sticks
 						"<p><span class='text-big' style='font-size: 1.8em'>" + 
@@ -889,7 +900,7 @@
 					},
 					box_6b: {
 						id: "primarycare",
-						year: pullYear("DEN"),
+						year: pullYear("DEN", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 									+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								 "</span> dental surgeries" +
@@ -937,7 +948,7 @@
 				
 				box_2: {
 						id: "employed",
-						year: pullYear("LMS"),
+						year: pullYear("LMS", data.place),
 						content: 
 						"<p>" + "<span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() +
 							 "</span> employed out of "+ 
@@ -954,7 +965,7 @@
 						
 				box_4: {
 					id: "disabilitybenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
@@ -962,7 +973,7 @@
 
 				box_5: {
 					id: "workingagebenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
@@ -970,7 +981,7 @@
 				
 				box_6: {
 					id: "pensionagebenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
 				}		
@@ -1018,22 +1029,24 @@
 				
 			box_2: {
 						id: "fsme",
-			//			content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> "+ data.place.grouped_data_nocompare.Primary[0].perc.toLocaleString() +"% </span></p>"+
-			//			"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>"+ data.place.grouped_data_nocompare.PostPrimary[0].perc.toLocaleString() +"% </span></p>",
-						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> x% </span></p>"+
-						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>x% </span></p>",
+						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span></p>"+
+						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span></p>",
+						// content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> x% </span></p>"+
+						// "<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>x% </span></p>",
 					
-						year: pullYear("Primary"),
-						show: ["ni", "lgd", "dea"]},
+						year: pullYear("Primary", data.place),
+						show: ["ni", "lgd", "dea"]
+					},
 			
 			box_3: {
 						id: "teachers",
-						year: pullYear("ClassSize"),
+						year: pullYear("ClassSize", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
 							(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
 ,
 					
-					show: ["ni", "lgd"]},
+					show: ["ni", "lgd"]
+				},
 		
 			box_4: {
 						id: "qualifications",
@@ -1044,25 +1057,27 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 						},
-						topic_prev_available: "true"},
+						topic_prev_available: "true"
+					},
 
 			box_5: {
 						id: "attainment",
-						year: pullYear("Attainment"),
+						year: pullYear("Attainment", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
 							(check("Attainment.value")).toLocaleString() +"</span>% of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>"
 						,
 					
-					show: ["ni", "lgd"]},
+					show: ["ni", "lgd"]
+				},
 							
 
 			box_6: {
 				id: "destination",
-				year: pullYear("Destination"),
+				year: pullYear("Destination", data.place),
 				content: "Chart to be added",
 			
-			show: ["ni", "lgd", "dea"]
-		}
+				show: ["ni", "lgd", "dea"]
+			}
 			}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 		
