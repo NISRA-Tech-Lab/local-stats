@@ -312,10 +312,10 @@
 
 	}
 
-	function pullYear (value) {
+	function pullYear (value, place) {
 		
-		if (data.place.meta_data.hasOwnProperty(value)) {
-			return data.place.meta_data[value][0].year;
+		if (place.meta_data.hasOwnProperty(value)) {
+			return place.meta_data[value][0].year;
 		} else {
 			return null;
 		}
@@ -545,7 +545,7 @@
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				year = {pullYear("MYETotal")}
+				year = {pullYear("MYETotal", data.place)}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -828,7 +828,7 @@
 					},
 				box_2: {
 						id: "wellbeing",
-						year: pullYear("Happy"),
+						year: pullYear("Happy", data.place),
 						content: {
 							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>",
 							lgd: "<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>"
@@ -856,7 +856,7 @@
 					},
 				box_5: {
 						id: "hospitalactivity",
-						year: pullYear("Admiss"),
+						year: pullYear("Admiss", data.place),
 						content:  
 						// needs checked - sticks
 						"<p><span class='text-big' style='font-size: 1.8em'>" + 
@@ -866,7 +866,7 @@
 					},
 				box_6a: {
 						id: "primarycare",
-						year: pullYear("GP"),
+						year: pullYear("GP", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("GP.value.PRACS")).toLocaleString() +
 								"</span> practices, <span class='text-big' style='font-size: 1.2em'>" + 
@@ -884,7 +884,7 @@
 					},
 					box_6b: {
 						id: "primarycare",
-						year: pullYear("DEN"),
+						year: pullYear("DEN", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
 								 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								 "</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
@@ -924,7 +924,7 @@
 				
 				box_1: {
 						id: "employmentrates",
-						year: pullYear("LMS"),
+						year: pullYear("LMS", data.place),
 						content: "To be changed to a chart<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
@@ -933,7 +933,7 @@
 				
 				box_2: {
 						id: "employed",
-						year: pullYear("LMS"),
+						year: pullYear("LMS", data.place),
 						content: 
 						"<p><span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() + "</span> employed</p>",
 						show: ["ni", "lgd"]
@@ -941,14 +941,14 @@
 
 				box_3: {
 						id: "wages",
-						year: pullYear("ASHE"),
+						year: pullYear("ASHE", data.place),
 						content: '<p><span class="text-big" style="font-size: 1.8em">£' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
 						show: ["ni", "lgd"]
 					},
 						
 				box_4: {
 					id: "disabilitybenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
@@ -956,7 +956,7 @@
 
 				box_5: {
 					id: "workingagebenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
@@ -964,7 +964,7 @@
 				
 				box_6: {
 					id: "pensionagebenefits",
-					year: pullYear("BS"),
+					year: pullYear("BS", data.place),
 					content: '<span class="text-big">' +
 						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
 				}		
@@ -1007,7 +1007,7 @@
 							+ "</span></p>" +
 						"<p style='margin:0'>University <span class='text-big' style='font-size: 1.2em'>"+(check("HE.value")).toLocaleString() +" </span></p>",
 					
-						year: pullYear("Primary") + ", "+ pullYear("FE") +", "+ pullYear("HE"),
+						year: pullYear("Primary", data.place) + ", "+ pullYear("FE", data.place) +", "+ pullYear("HE", data.place),
 						show: ["ni", "lgd", "dea"]},
 				
 			box_2: {
@@ -1017,12 +1017,12 @@
 						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> x% </span></p>"+
 						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>x% </span></p>",
 					
-						year: pullYear("Primary"),
+						year: pullYear("Primary", data.place),
 						show: ["ni", "lgd", "dea"]},
 			
 			box_3: {
 						id: "teachers",
-						year: pullYear("ClassSize"),
+						year: pullYear("ClassSize", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
 							(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
 ,
@@ -1042,7 +1042,7 @@
 
 			box_5: {
 						id: "attainment",
-						year: pullYear("Attainment"),
+						year: pullYear("Attainment", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
 							(check("Attainment.value")).toLocaleString() +"</span>% of pupils</p><p> leaving school with 5 or more GCSE's A-C (inclduing Maths and English)</p>"
 						,
@@ -1052,7 +1052,7 @@
 
 			box_6: {
 				id: "destination",
-				year: pullYear("Destination"),
+				year: pullYear("Destination", data.place),
 				content: "Chart to be added",
 			
 			show: ["ni", "lgd", "dea"]
