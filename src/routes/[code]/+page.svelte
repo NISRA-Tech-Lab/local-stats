@@ -547,6 +547,7 @@
 			<GreyBox
 				id = "popden"
 				place = {data.place}
+				year = {pullCensusYear("households")}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
