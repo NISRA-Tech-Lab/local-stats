@@ -147,12 +147,20 @@ let i_button_info = {
 
 			enrollments: {
 			title: "Number of enrolled in schools and colleges",
-			info: "words to be added"},
+			info: "<p class = 'pibutton'>Access data at: " +
+				  "<a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a>, " +
+				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a>,  " +
+				  "<a href='" + checkMeta("FE[0].dataset_url") + "'>" + checkMeta("FE[0].title") + "</a> and " +
+				  "<a href='" + checkMeta("HE[0].dataset_url") + "'>" + checkMeta("HE[0].title") + "</a></p>"},
 
 
 			fsme: {
 			title: "Entitlement to Free School Meals",
-			info:  "    "},
+			info:  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
+				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" 
+				  },
 
 
 			teachers: {
@@ -180,9 +188,17 @@ let i_button_info = {
 
 			attainment: {
 			title: "Attainment of Qualifications",
-			info: "<p>Sourced from Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-					"MORE WORDS"},
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Attainment[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"
+		},
 
+			destination: {
+				title: "Destination of school leavers",
+				info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  +
+					"<p class = 'pibutton'>Last updated: " + checkMeta("Destination[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+					"<a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"
+			},
 
 
 			popchange: {

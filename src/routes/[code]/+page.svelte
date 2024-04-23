@@ -545,8 +545,8 @@
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				year = {pullCensusYear("population")}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+				year = {pullYear("MYETotal")}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
@@ -925,7 +925,7 @@
 				box_1: {
 						id: "employmentrates",
 						year: pullYear("LMS"),
-						content: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
+						content: "To be changed to a chart<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
 								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
 						show: ["ni", "lgd"]
@@ -996,19 +996,29 @@
 
 			box_1: {
 						id: "enrollments",
-						content: "<p>Primary school <span class='text-big' style='font-size: 1.2em'>500 </span></p>"+
-						"<p>Secondary school <span class='text-big' style='font-size: 1.2em'>320 </span></p>" +
-						"<p>Further education colleges <span class='text-big' style='font-size: 1.2em'>45 </span></p>" +
-						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>",
+						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.2em'>" + 
+							(check("Primary.value")).toLocaleString() 
+							+ "</span></p>"+
+						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.2em'>" + 
+							(check("PostPrimary.value")).toLocaleString() 
+							+ " </span></p>" +
+						"<p style='margin:0'>Further education colleges <span class='text-big' style='font-size: 1.2em'>"+ 
+							(check("FE.value")).toLocaleString() 
+							+ "</span></p>" +
+						"<p style='margin:0'>University <span class='text-big' style='font-size: 1.2em'>"+(check("HE.value")).toLocaleString() +" </span></p>",
 					
+						year: pullYear("Primary") + ", "+ pullYear("FE") +", "+ pullYear("HE"),
 						show: ["ni", "lgd", "dea"]},
 				
 			box_2: {
 						id: "fsme",
-						content: "<p>Primary school <span class='text-big' style='font-size: 1.8em'>33.2%</span></p>"+
-						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>",
+			//			content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> "+ data.place.grouped_data_nocompare.Primary[0].perc.toLocaleString() +"% </span></p>"+
+			//			"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>"+ data.place.grouped_data_nocompare.PostPrimary[0].perc.toLocaleString() +"% </span></p>",
+						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> x% </span></p>"+
+						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>x% </span></p>",
 					
-					show: ["ni", "lgd", "dea"]},
+						year: pullYear("Primary"),
+						show: ["ni", "lgd", "dea"]},
 			
 			box_3: {
 						id: "teachers",
@@ -1032,13 +1042,25 @@
 
 			box_5: {
 						id: "attainment",
-						content: "<span >"  + " attainment to be added</span>"
+						year: pullYear("Attainment"),
+						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
+							(check("Attainment.value")).toLocaleString() +"</span>% of pupils</p><p> leaving school with 5 or more GCSE's A-C (inclduing Maths and English)</p>"
 						,
 					
 					show: ["ni", "lgd"]},
-							}}
+							
+
+			box_6: {
+				id: "destination",
+				year: pullYear("Destination"),
+				content: "Chart to be added",
+			
+			show: ["ni", "lgd", "dea"]
+		}
+			}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
-	/>
+		
+		/>
 
 
 	<Accordion
