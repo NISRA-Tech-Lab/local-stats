@@ -313,9 +313,9 @@
 	}
 
 	function pullYear (value) {
-
+		
 		if (data.place.meta_data.hasOwnProperty(value)) {
-			return data.place.meta_data[value][0].last_updated.slice(0, data.place.meta_data[value][0].last_updated.indexOf("-"));
+			return data.place.meta_data[value][0].year;
 		} else {
 			return null;
 		}
@@ -776,8 +776,7 @@
 					a <a href='https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> 
 					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
 					bespoke tables can be created using the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has 
-					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics.
-					"
+					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics."
 		/>
 
 		<Accordion
