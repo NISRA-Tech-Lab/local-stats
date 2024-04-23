@@ -3,7 +3,7 @@
 	  import { getContext } from 'svelte';
 	  export let theme = getContext('theme');
 	  export let filled = true;
-	  export let center = false;
+	//   export let center = false;
 </script>
   
 		<!-- <nav  style="border-bottom-color: {theme['muted']}; {filled ? 'background-color: ' +  theme['background'] + ';' : ''}">
@@ -24,39 +24,42 @@
 		</div>
 	</nav> -->
   
-
-		  
-		<header style="color: #ffffff; background-color: #00205b;">
+	<nav  style="color: #ffffff; background-color: #00205b;">
+		<!-- <header style="color: #ffffff; background-color: #00205b;"> -->
 			<div class="col-wide" data-analytics="header">
-				<div class="row">
-					<a href="https://www.nisra.gov.uk/">
-						<picture>
-							{#if theme.name == 'dark'}
-							<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
-							{:else if filled == true}
-							<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
-							{:else}
-							<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
-							{/if}
-						</picture>
-					</a>
-					<span style="font-size: 1.5em; font-weight: bold;color: #ffffff;   padding-left: 100px" >Northern Ireland Area Explorer</span>
-		
+				<div class="grid mtb">
+					<div>
+						<a href="https://www.nisra.gov.uk/">
+							<picture>
+								{#if theme.name == 'dark'}
+								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+								{:else if filled == true}
+								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+								{:else}
+								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+								{/if}
+							</picture>
+						</a>
+					</div>
+					<div>
+						<span style="font-size: 1.5em; font-weight: bold;color: #ffffff;   padding-left: 100px" >Northern Ireland Area Explorer</span>
+					</div>
 				</div>
 		
-				
 			</div>
-		</header>
+		<!-- </header> -->
+	</nav>
+
 
 
   <style>
 
-header {
+/* header {
 		padding-bottom: 5px;
 		height: 120px;
 		 
 	}
-	
+	 */
 
 	  picture {
 		  position: relative;
@@ -69,6 +72,20 @@ header {
 	  a img:hover {
 		  cursor: pointer;
 	  }
+
+	  .grid {
+		display: grid;
+		width: 100%;
+		grid-gap: 30px;
+		grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+		justify-content: stretch;
+		page-break-inside: avoid;
+	}
+
+	.mtb {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
 
 	  
   </style>
