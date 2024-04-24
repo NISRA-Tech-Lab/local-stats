@@ -124,6 +124,13 @@ let i_button_info = {
 		 		  "<a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
 				  "<p>Median is the ..... </p>"
 		},
+		bres: {
+			title: "Type of work",
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("BRES[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BRES[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
+		 		  "<a href='" + checkMeta("BRES[0].dataset_url") + "'>" + checkMeta("BRES[0].title") + "</a></p>"  
+				 
+		},
 
 
 			pensionagebenefits: {

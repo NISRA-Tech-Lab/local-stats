@@ -561,7 +561,7 @@
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "The population of " + data.place.name + " was " + data.place.data.MYETotal.value.toLocaleString() ,
+							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
@@ -575,7 +575,7 @@
 				id = "pop"
 				place = {data.place}
 				year = {pullYear("MYETotal", data.place)}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + (Math.round(data.place.data.MYETotal.value / 1000) * 1000).toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: {
@@ -729,7 +729,7 @@
 			
 			<div>
 				{#if data.place.type != "ni"}
-					<span class="text-bold">Select an area  larger than {data.place.name} </span>
+					<span class="text-bold">Select a larger area containing {data.place.name} </span>
 					<span class="text-small">
 						{#each [...data.place.parents].reverse() as parent, i}
 							<span
@@ -970,9 +970,9 @@
 				box_1: {
 						id: "employmentrates",
 						year: pullYear("LMS", data.place),
-						content: "To be changed to a chart<p>Employed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p>Unemployed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p>Inactive <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
+						content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
+								 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
+								 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
 						show: ["ni", "lgd"]
 					},
 				
@@ -986,12 +986,27 @@
 						show: ["ni", "lgd"]
 					},
 
+					box_3b: {
+					id: "bres",
+					year: pullYear("BRES", data.place),
+					content: "To be changed to a chart<p style='margin:0'>"+
+						"Construction <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[0].perc").toLocaleString() + "</span> </p>" +
+							 "<p style='margin:0'>Manufacturing <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[1].perc").toLocaleString() + "</span> </p>" +
+							 "<p style='margin:0'>Services <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[2].perc").toLocaleString() + "</span></p>" +
+							 "<p style='margin:0'>Other <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[3].perc").toLocaleString() + "</span></p>",
+					show: ["ni", "lgd"]
+				}	,	
+				
 				box_3: {
 						id: "wages",
 						year: pullYear("ASHE", data.place),
 						content: '<p><span class="text-big" style="font-size: 1.8em">£' + (check("ASHE.value")).toLocaleString() + '</span> median salary</p>',
 						show: ["ni", "lgd"]
 					},
+					
+				
+				
+					
 						
 				box_4: {
 					id: "disabilitybenefits",
