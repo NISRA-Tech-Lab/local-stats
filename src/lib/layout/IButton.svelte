@@ -129,33 +129,37 @@ let i_button_info = {
 		},
 		bres: {
 			title: "Type of work",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("BRES[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BRES[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("BRES[0].dataset_url") + "'>" + checkMeta("BRES[0].title") + "</a></p>"  
+			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BRES[0].dataset_url") + "'>" + checkMeta("BRES[0].title") + "</a></p>"  +
+			"<p class = 'pibutton'>Last updated: " + checkMeta("BRES[0].last_updated") + "</p>" +
+			"<p class = 'pibutton'><a href='mailto:" + checkMeta("BRES[0].email") + "'>Email for more information</a> </p>"  
+		 		 
 				 
 		},
 
 
 			pensionagebenefits: {
 			title: "Pension Age benefits",
-			info: "Benefits included are: SP and PC" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"
-
+			info: "Benefits included are: SP and PC" + 
+			"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+			"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
+			"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  				
 				},
 
 
 			workingagebenefits: {
 			title: "Working Age benefits",
-			info:  "Benefits included are: UC, JSA, IS and ESA" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"},
-
+			info:  "Benefits included are: UC, JSA, IS and ESA" + 
+					"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
+			}
+						,
 			disabilitybenefits: {
 			title: "Disability and Carer’s benefits",
-			info:   "Benefits included are: PIP, CA, AA and DLA" + "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"
+			info:   "Benefits included are: PIP, CA, AA and DLA" + 
+				  "<p class = 'pibutton'>Access data at:  <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
 					},
 
 			enrollments: {
@@ -169,18 +173,19 @@ let i_button_info = {
 
 			fsme: {
 			title: "Pupils entitled to Free School Meals",
-			info:  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
-				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" 
+			info:  		  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
+				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" +
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> "+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>" 
+		
 				  },
 
 
 			teachers: {
 			title: "School class size",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ClassSize[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ClassSize[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("ClassSize[0].dataset_url") + "'>" + checkMeta("ClassSize[0].title") + "</a></p>"
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("ClassSize[0].dataset_url") + "'>" + checkMeta("ClassSize[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("ClassSize[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ClassSize[0].email") + "'>Email for more information</a> </p>"  
 				},
 
 
@@ -201,9 +206,10 @@ let i_button_info = {
 
 			attainment: {
 			title: "GCSEs for school leavers",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Attainment[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"
+			info: 
+				  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Attainment[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  
 		},
 
 		

@@ -419,7 +419,7 @@
 						{/each}
 
 					{/if}
-				</span><br />
+				</span>
 				<span class="text-big title">{data.place.name}</span>
 				
 				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
@@ -559,7 +559,7 @@
 				style = "line-height: 1.3;"
 				content = {{
 							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
-							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of" + data.place.lgd_location_description,
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description,
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are are a new statistical output geography that have been created to support the release of local-level statistics.",
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are are a new statistical output geography that have been created to support the release of local-level statistics."							
@@ -863,13 +863,11 @@
 				box_2: {
 						id: "wellbeing",
 						year: pullYear("Happy", data.place),
-						content: {
-							ni: "<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 happiness</p>"+
-							"<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
-							lgd: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 happiness</p>"	+
-							"<p><span class='text-big' style='font-size: 1.8em'>7.5"+ "</span> / 10 life satisfaction</p>",
+						content: 
+							 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 happiness</p>"	+
+							"<p><span class='text-big' style='font-size: 1.8em'>"+ (check("Satisfy.value")).toLocaleString() + "</span> / 10 life satisfaction</p>"
 
-						},	
+						,	
 						show: ["ni", "lgd"]
 					},
 				box_3: {
@@ -899,7 +897,7 @@
 						// needs checked - sticks
 						"<p><span class='text-big' style='font-size: 1.8em'>" + 
 							(check("Admiss.value")).toLocaleString() + 
-							"</span> hospital patients</p><p>  The most frequent reason was for Diseases of the respiratory system</p>",
+							"</span> hospital patients</p><p>  The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
 						 show: ["ni", "dea"]
 					},
 				box_6a: {
