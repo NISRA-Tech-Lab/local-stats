@@ -65,16 +65,17 @@ let i_button_info = {
 			title: "Personal Wellbeing",
 			info: "Average Happiness score out of 10 for people aged 16+</p>" +
 			"Average Life satisfaction score out of 10 for people aged 16+</p>" +
-				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Happy[0].email") + "'>Email for more information</a> </p>" +  
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Happy[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("Happy[0].dataset_url") + "'>" + checkMeta("Happy[0].title") + "</a></p>"
+				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Happy[0].dataset_url") + "'>" + checkMeta("Happy[0].title") + "</a></p>"+
+				"<p class = 'pibutton'>Last updated: " + checkMeta("Happy[0].last_updated") + "</p> "+
+				"<p class = 'pibutton'><a href='mailto:" + checkMeta("Happy[0].email") + "'>Email for more information</a> </p>"   
 				},
 
 		lifeexpectancy: {
 			title: "Life Expectancy at birth",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LE[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LE[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"
+			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("LE[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("LE[0].email") + "'>Email for more information</a> </p>"  
+		 		  
 			},
 
 		
@@ -87,9 +88,10 @@ let i_button_info = {
 
 		hospitalactivity: {
 			title: "Annual admissions to hospital",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Admiss[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("Admiss[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("Admiss[0].dataset_url") + "'>" + checkMeta("Admiss[0].title") + "</a></p>"
+			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Admiss[0].dataset_url") + "'>" + checkMeta("Admiss[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("Admiss[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("Admiss[0].email") + "'>Email for more information</a> </p>"  
+		 		  
 				},
 
 		primarycare: {
@@ -102,26 +104,27 @@ let i_button_info = {
 
 			employmentrates: {
 			title: "Work status of adults",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>" + 
-				  "<p>Inactive includes students, early retirees, or people looking after a home, who are long-term sick or disabled. </p>"
+			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>" + 
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> "+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
+		 		  "<p>Inactive includes students, early retirees, or people looking after a home, who are long-term sick or disabled. </p>"
 				},
 
 
 			employed: {
 			title: "Number of people employed",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  
+		 		 
 		},
 
 
 			wages: {
 			title: "Average annual wage",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-		 		  "<a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
 				  "<p>Median is the ..... </p>"
 		},
 		bres: {

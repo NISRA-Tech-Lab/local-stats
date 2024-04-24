@@ -418,9 +418,6 @@
 							>{@html " &gt; "}
 						{/each}
 
-						{data.place.name}
-					{:else}
-						{data.place.name}
 					{/if}
 				</span><br />
 				<span class="text-big title">{data.place.name}</span>
@@ -562,10 +559,10 @@
 				style = "line-height: 1.3;"
 				content = {{
 							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
-							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of" + data.place.lgd_location_description,
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
-							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
-							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl							
+							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are are a new statistical output geography that have been created to support the release of local-level statistics.",
+							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are are a new statistical output geography that have been created to support the release of local-level statistics."							
 							}}
 				
 				chart_compare_type = {chart_compare_type}
@@ -1119,7 +1116,14 @@
 			box_6: {
 				id: "destination",
 				year: pullYear("Destination", data.place),
-				content: "Chart to be added",
+				content: "To be changed to a chart"+
+						"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "</span> </p>" +
+						"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "</span> </p>" +
+						"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "</span> </p>" +
+						"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "</span> </p>" +
+						"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "</span> </p>" 
+						
+						,
 			
 				show: ["ni", "lgd", "dea"]
 			}
