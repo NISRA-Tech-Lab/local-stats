@@ -566,6 +566,7 @@
         "perc": 50.6669
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Dungannon",
         "category": "Age 65+",
         "perc": 13.5125
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Dungannon",
+        "category": "destHEpct",
+        "perc": 36
+      },
+      {
+        "geography": "Dungannon",
+        "category": "destFEpct",
+        "perc": 37.5
+      },
+      {
+        "geography": "Dungannon",
+        "category": "destEmploypct",
+        "perc": 9.3
+      },
+      {
+        "geography": "Dungannon",
+        "category": "destTrainpct",
+        "perc": 11.7
+      },
+      {
+        "geography": "Dungannon",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Dungannon",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Dungannon",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Dungannon",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Dungannon",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Dungannon",
-        "category": "bad",
-        "perc": 4.2122
-      },
-      {
-        "group": "Dungannon",
-        "category": "fair",
-        "perc": 10.8697
-      },
-      {
-        "group": "Dungannon",
-        "category": "good",
-        "perc": 30.7293
-      },
-      {
-        "group": "Dungannon",
-        "category": "very_bad",
-        "perc": 1.4509
-      },
-      {
-        "group": "Dungannon",
-        "category": "very_good",
-        "perc": 52.7379
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Dungannon",
+        "category": "bad",
+        "perc": 4.2122
+      },
+      {
+        "group": "Dungannon",
+        "category": "fair",
+        "perc": 10.8697
+      },
+      {
+        "group": "Dungannon",
+        "category": "good",
+        "perc": 30.7293
+      },
+      {
+        "group": "Dungannon",
+        "category": "very_bad",
+        "perc": 1.4509
+      },
+      {
+        "group": "Dungannon",
+        "category": "very_good",
+        "perc": 52.7379
       }
     ],
     "hh_size": [
-      {
-        "group": "Dungannon",
-        "category": "five_people",
-        "perc": 13.1127
-      },
-      {
-        "group": "Dungannon",
-        "category": "four_people",
-        "perc": 16.6578
-      },
-      {
-        "group": "Dungannon",
-        "category": "one_person",
-        "perc": 26.2467
-      },
-      {
-        "group": "Dungannon",
-        "category": "three_people",
-        "perc": 18.1313
-      },
-      {
-        "group": "Dungannon",
-        "category": "two_people",
-        "perc": 25.8516
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Dungannon",
+        "category": "five_people",
+        "perc": 13.1127
+      },
+      {
+        "group": "Dungannon",
+        "category": "four_people",
+        "perc": 16.6578
+      },
+      {
+        "group": "Dungannon",
+        "category": "one_person",
+        "perc": 26.2467
+      },
+      {
+        "group": "Dungannon",
+        "category": "three_people",
+        "perc": 18.1313
+      },
+      {
+        "group": "Dungannon",
+        "category": "two_people",
+        "perc": 25.8516
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Dungannon",
-        "category": "apprenticeship",
-        "perc": 6.2529
-      },
-      {
-        "group": "Dungannon",
-        "category": "level_1_qualifications",
-        "perc": 5.1811
-      },
-      {
-        "group": "Dungannon",
-        "category": "level_2_qualifications",
-        "perc": 11.7946
-      },
-      {
-        "group": "Dungannon",
-        "category": "level_3_qualifications",
-        "perc": 13.1102
-      },
-      {
-        "group": "Dungannon",
-        "category": "level_4_qualifications_and_above",
-        "perc": 27.4242
-      },
-      {
-        "group": "Dungannon",
-        "category": "no_qualifications",
-        "perc": 32.4224
-      },
-      {
-        "group": "Dungannon",
-        "category": "other_qualifications",
-        "perc": 3.8147
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Dungannon",
+        "category": "apprenticeship",
+        "perc": 6.2529
+      },
+      {
+        "group": "Dungannon",
+        "category": "level_1_qualifications",
+        "perc": 5.1811
+      },
+      {
+        "group": "Dungannon",
+        "category": "level_2_qualifications",
+        "perc": 11.7946
+      },
+      {
+        "group": "Dungannon",
+        "category": "level_3_qualifications",
+        "perc": 13.1102
+      },
+      {
+        "group": "Dungannon",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.4242
+      },
+      {
+        "group": "Dungannon",
+        "category": "no_qualifications",
+        "perc": 32.4224
+      },
+      {
+        "group": "Dungannon",
+        "category": "other_qualifications",
+        "perc": 3.8147
       }
     ],
     "cob": [
-      {
-        "group": "Dungannon",
-        "category": "england",
-        "perc": 2.3908
-      },
-      {
-        "group": "Dungannon",
-        "category": "northern_ireland",
-        "perc": 69.3331
-      },
-      {
-        "group": "Dungannon",
-        "category": "other_cob",
-        "perc": 26.209
-      },
-      {
-        "group": "Dungannon",
-        "category": "republic_of_ireland",
-        "perc": 1.6069
-      },
-      {
-        "group": "Dungannon",
-        "category": "scotland",
-        "perc": 0.4017
-      },
-      {
-        "group": "Dungannon",
-        "category": "wales",
-        "perc": 0.0585
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Dungannon",
+        "category": "england",
+        "perc": 2.3908
+      },
+      {
+        "group": "Dungannon",
+        "category": "northern_ireland",
+        "perc": 69.3331
+      },
+      {
+        "group": "Dungannon",
+        "category": "other_cob",
+        "perc": 26.209
+      },
+      {
+        "group": "Dungannon",
+        "category": "republic_of_ireland",
+        "perc": 1.6069
+      },
+      {
+        "group": "Dungannon",
+        "category": "scotland",
+        "perc": 0.4017
+      },
+      {
+        "group": "Dungannon",
+        "category": "wales",
+        "perc": 0.0585
       }
     ],
     "mainlang": [
-      {
-        "group": "Dungannon",
-        "category": "english",
-        "perc": 76.3849
-      },
-      {
-        "group": "Dungannon",
-        "category": "other_languages",
-        "perc": 23.6151
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Dungannon",
+        "category": "english",
+        "perc": 76.3849
+      },
+      {
+        "group": "Dungannon",
+        "category": "other_languages",
+        "perc": 23.6151
       }
     ],
     "age": [
-      {
-        "group": "Dungannon",
-        "category": "a0to14",
-        "perc": 21.8058
-      },
-      {
-        "group": "Dungannon",
-        "category": "a15to39",
-        "perc": 34.7582
-      },
-      {
-        "group": "Dungannon",
-        "category": "a40to64",
-        "perc": 30.0117
-      },
-      {
-        "group": "Dungannon",
-        "category": "a65plus",
-        "perc": 13.4243
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Dungannon",
+        "category": "a0to14",
+        "perc": 21.8058
+      },
+      {
+        "group": "Dungannon",
+        "category": "a15to39",
+        "perc": 34.7582
+      },
+      {
+        "group": "Dungannon",
+        "category": "a40to64",
+        "perc": 30.0117
+      },
+      {
+        "group": "Dungannon",
+        "category": "a65plus",
+        "perc": 13.4243
       }
     ],
     "provision_care": [
-      {
-        "group": "Dungannon",
-        "category": "a1to19_hours",
-        "perc": 4.1924
-      },
-      {
-        "group": "Dungannon",
-        "category": "a20to49_hours",
-        "perc": 2.8369
-      },
-      {
-        "group": "Dungannon",
-        "category": "a50plus_hours",
-        "perc": 2.7571
-      },
-      {
-        "group": "Dungannon",
-        "category": "no_care",
-        "perc": 90.2136
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Dungannon",
+        "category": "a1to19_hours",
+        "perc": 4.1924
+      },
+      {
+        "group": "Dungannon",
+        "category": "a20to49_hours",
+        "perc": 2.8369
+      },
+      {
+        "group": "Dungannon",
+        "category": "a50plus_hours",
+        "perc": 2.7571
+      },
+      {
+        "group": "Dungannon",
+        "category": "no_care",
+        "perc": 90.2136
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Dungannon",
-        "category": "catholic",
-        "perc": 62.9563
-      },
-      {
-        "group": "Dungannon",
-        "category": "none",
-        "perc": 6.3573
-      },
-      {
-        "group": "Dungannon",
-        "category": "other_religions",
-        "perc": 1.2129
-      },
-      {
-        "group": "Dungannon",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 29.4735
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Dungannon",
+        "category": "catholic",
+        "perc": 62.9563
+      },
+      {
+        "group": "Dungannon",
+        "category": "none",
+        "perc": 6.3573
+      },
+      {
+        "group": "Dungannon",
+        "category": "other_religions",
+        "perc": 1.2129
+      },
+      {
+        "group": "Dungannon",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 29.4735
       }
     ],
     "sex": [
-      {
-        "group": "Dungannon",
-        "category": "females",
-        "perc": 49.3331
-      },
-      {
-        "group": "Dungannon",
-        "category": "males",
-        "perc": 50.6669
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Dungannon",
+        "category": "females",
+        "perc": 49.3331
+      },
+      {
+        "group": "Dungannon",
+        "category": "males",
+        "perc": 50.6669
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Dungannon",
         "category": "FSME",
         "perc": 16.8005
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Dungannon",
         "category": "FSME",
         "perc": 17.0189
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Dungannon",
         "category": "Age 65+",
         "perc": 13.5125
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Dungannon",
+        "category": "destHEpct",
+        "perc": 36
+      },
+      {
+        "group": "Dungannon",
+        "category": "destFEpct",
+        "perc": 37.5
+      },
+      {
+        "group": "Dungannon",
+        "category": "destEmploypct",
+        "perc": 9.3
+      },
+      {
+        "group": "Dungannon",
+        "category": "destTrainpct",
+        "perc": 11.7
+      },
+      {
+        "group": "Dungannon",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },

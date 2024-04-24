@@ -561,6 +561,7 @@
         "perc": 48.322
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Bangor West",
         "category": "Age 65+",
         "perc": 22.9985
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Bangor West",
+        "category": "destHEpct",
+        "perc": 40
+      },
+      {
+        "geography": "Bangor West",
+        "category": "destFEpct",
+        "perc": 34.8
+      },
+      {
+        "geography": "Bangor West",
+        "category": "destEmploypct",
+        "perc": 17.6
+      },
+      {
+        "geography": "Bangor West",
+        "category": "destTrainpct",
+        "perc": 2.9
+      },
+      {
+        "geography": "Bangor West",
+        "category": "destUnempUnkpct",
+        "perc": 4.8
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Bangor West",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bangor West",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Bangor West",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bangor West",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Bangor West",
-        "category": "bad",
-        "perc": 5.6105
-      },
-      {
-        "group": "Bangor West",
-        "category": "fair",
-        "perc": 15.3353
-      },
-      {
-        "group": "Bangor West",
-        "category": "good",
-        "perc": 32.0234
-      },
-      {
-        "group": "Bangor West",
-        "category": "very_bad",
-        "perc": 1.8907
-      },
-      {
-        "group": "Bangor West",
-        "category": "very_good",
-        "perc": 45.1401
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Bangor West",
+        "category": "bad",
+        "perc": 5.6105
+      },
+      {
+        "group": "Bangor West",
+        "category": "fair",
+        "perc": 15.3353
+      },
+      {
+        "group": "Bangor West",
+        "category": "good",
+        "perc": 32.0234
+      },
+      {
+        "group": "Bangor West",
+        "category": "very_bad",
+        "perc": 1.8907
+      },
+      {
+        "group": "Bangor West",
+        "category": "very_good",
+        "perc": 45.1401
       }
     ],
     "hh_size": [
-      {
-        "group": "Bangor West",
-        "category": "five_people",
-        "perc": 4.7521
-      },
-      {
-        "group": "Bangor West",
-        "category": "four_people",
-        "perc": 11.51
-      },
-      {
-        "group": "Bangor West",
-        "category": "one_person",
-        "perc": 34.2678
-      },
-      {
-        "group": "Bangor West",
-        "category": "three_people",
-        "perc": 14.0741
-      },
-      {
-        "group": "Bangor West",
-        "category": "two_people",
-        "perc": 35.396
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Bangor West",
+        "category": "five_people",
+        "perc": 4.7521
+      },
+      {
+        "group": "Bangor West",
+        "category": "four_people",
+        "perc": 11.51
+      },
+      {
+        "group": "Bangor West",
+        "category": "one_person",
+        "perc": 34.2678
+      },
+      {
+        "group": "Bangor West",
+        "category": "three_people",
+        "perc": 14.0741
+      },
+      {
+        "group": "Bangor West",
+        "category": "two_people",
+        "perc": 35.396
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Bangor West",
-        "category": "apprenticeship",
-        "perc": 6.3984
-      },
-      {
-        "group": "Bangor West",
-        "category": "level_1_qualifications",
-        "perc": 7.1379
-      },
-      {
-        "group": "Bangor West",
-        "category": "level_2_qualifications",
-        "perc": 14.7145
-      },
-      {
-        "group": "Bangor West",
-        "category": "level_3_qualifications",
-        "perc": 15.924
-      },
-      {
-        "group": "Bangor West",
-        "category": "level_4_qualifications_and_above",
-        "perc": 33.2832
-      },
-      {
-        "group": "Bangor West",
-        "category": "no_qualifications",
-        "perc": 19.7844
-      },
-      {
-        "group": "Bangor West",
-        "category": "other_qualifications",
-        "perc": 2.7574
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Bangor West",
+        "category": "apprenticeship",
+        "perc": 6.3984
+      },
+      {
+        "group": "Bangor West",
+        "category": "level_1_qualifications",
+        "perc": 7.1379
+      },
+      {
+        "group": "Bangor West",
+        "category": "level_2_qualifications",
+        "perc": 14.7145
+      },
+      {
+        "group": "Bangor West",
+        "category": "level_3_qualifications",
+        "perc": 15.924
+      },
+      {
+        "group": "Bangor West",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.2832
+      },
+      {
+        "group": "Bangor West",
+        "category": "no_qualifications",
+        "perc": 19.7844
+      },
+      {
+        "group": "Bangor West",
+        "category": "other_qualifications",
+        "perc": 2.7574
       }
     ],
     "cob": [
-      {
-        "group": "Bangor West",
-        "category": "england",
-        "perc": 5.8052
-      },
-      {
-        "group": "Bangor West",
-        "category": "northern_ireland",
-        "perc": 84.9772
-      },
-      {
-        "group": "Bangor West",
-        "category": "other_cob",
-        "perc": 5.923
-      },
-      {
-        "group": "Bangor West",
-        "category": "republic_of_ireland",
-        "perc": 1.4244
-      },
-      {
-        "group": "Bangor West",
-        "category": "scotland",
-        "perc": 1.5986
-      },
-      {
-        "group": "Bangor West",
-        "category": "wales",
-        "perc": 0.2716
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Bangor West",
+        "category": "england",
+        "perc": 5.8052
+      },
+      {
+        "group": "Bangor West",
+        "category": "northern_ireland",
+        "perc": 84.9772
+      },
+      {
+        "group": "Bangor West",
+        "category": "other_cob",
+        "perc": 5.923
+      },
+      {
+        "group": "Bangor West",
+        "category": "republic_of_ireland",
+        "perc": 1.4244
+      },
+      {
+        "group": "Bangor West",
+        "category": "scotland",
+        "perc": 1.5986
+      },
+      {
+        "group": "Bangor West",
+        "category": "wales",
+        "perc": 0.2716
       }
     ],
     "mainlang": [
-      {
-        "group": "Bangor West",
-        "category": "english",
-        "perc": 97.0969
-      },
-      {
-        "group": "Bangor West",
-        "category": "other_languages",
-        "perc": 2.9031
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Bangor West",
+        "category": "english",
+        "perc": 97.0969
+      },
+      {
+        "group": "Bangor West",
+        "category": "other_languages",
+        "perc": 2.9031
       }
     ],
     "age": [
-      {
-        "group": "Bangor West",
-        "category": "a0to14",
-        "perc": 17.1133
-      },
-      {
-        "group": "Bangor West",
-        "category": "a15to39",
-        "perc": 28.032
-      },
-      {
-        "group": "Bangor West",
-        "category": "a40to64",
-        "perc": 31.9465
-      },
-      {
-        "group": "Bangor West",
-        "category": "a65plus",
-        "perc": 22.9082
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Bangor West",
+        "category": "a0to14",
+        "perc": 17.1133
+      },
+      {
+        "group": "Bangor West",
+        "category": "a15to39",
+        "perc": 28.032
+      },
+      {
+        "group": "Bangor West",
+        "category": "a40to64",
+        "perc": 31.9465
+      },
+      {
+        "group": "Bangor West",
+        "category": "a65plus",
+        "perc": 22.9082
       }
     ],
     "provision_care": [
-      {
-        "group": "Bangor West",
-        "category": "a1to19_hours",
-        "perc": 6.0608
-      },
-      {
-        "group": "Bangor West",
-        "category": "a20to49_hours",
-        "perc": 2.801
-      },
-      {
-        "group": "Bangor West",
-        "category": "a50plus_hours",
-        "perc": 3.9344
-      },
-      {
-        "group": "Bangor West",
-        "category": "no_care",
-        "perc": 87.2038
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Bangor West",
+        "category": "a1to19_hours",
+        "perc": 6.0608
+      },
+      {
+        "group": "Bangor West",
+        "category": "a20to49_hours",
+        "perc": 2.801
+      },
+      {
+        "group": "Bangor West",
+        "category": "a50plus_hours",
+        "perc": 3.9344
+      },
+      {
+        "group": "Bangor West",
+        "category": "no_care",
+        "perc": 87.2038
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Bangor West",
-        "category": "catholic",
-        "perc": 16.0988
-      },
-      {
-        "group": "Bangor West",
-        "category": "none",
-        "perc": 18.7887
-      },
-      {
-        "group": "Bangor West",
-        "category": "other_religions",
-        "perc": 1.45
-      },
-      {
-        "group": "Bangor West",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 63.6624
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Bangor West",
+        "category": "catholic",
+        "perc": 16.0988
+      },
+      {
+        "group": "Bangor West",
+        "category": "none",
+        "perc": 18.7887
+      },
+      {
+        "group": "Bangor West",
+        "category": "other_religions",
+        "perc": 1.45
+      },
+      {
+        "group": "Bangor West",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 63.6624
       }
     ],
     "sex": [
-      {
-        "group": "Bangor West",
-        "category": "females",
-        "perc": 51.678
-      },
-      {
-        "group": "Bangor West",
-        "category": "males",
-        "perc": 48.322
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Bangor West",
+        "category": "females",
+        "perc": 51.678
+      },
+      {
+        "group": "Bangor West",
+        "category": "males",
+        "perc": 48.322
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Bangor West",
         "category": "FSME",
         "perc": 20.202
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Bangor West",
         "category": "FSME",
         "perc": 19.1185
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Bangor West",
         "category": "Age 65+",
         "perc": 22.9985
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Bangor West",
+        "category": "destHEpct",
+        "perc": 40
+      },
+      {
+        "group": "Bangor West",
+        "category": "destFEpct",
+        "perc": 34.8
+      },
+      {
+        "group": "Bangor West",
+        "category": "destEmploypct",
+        "perc": 17.6
+      },
+      {
+        "group": "Bangor West",
+        "category": "destTrainpct",
+        "perc": 2.9
+      },
+      {
+        "group": "Bangor West",
+        "category": "destUnempUnkpct",
+        "perc": 4.8
       }
     ]
   },

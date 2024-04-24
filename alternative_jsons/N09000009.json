@@ -599,6 +599,28 @@
         "perc": 50.0961
       }
     ],
+    "LMS": [
+      {
+        "geography": "Mid Ulster",
+        "category": "EMPN",
+        "perc": 70000
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "EMPR",
+        "perc": 73.8
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "UNEMPR",
+        "perc": 1.3
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "INACTR",
+        "perc": 25.1
+      }
+    ],
     "BRES": [
       {
         "geography": "Mid Ulster",
@@ -655,6 +677,33 @@
         "geography": "Mid Ulster",
         "category": "Age 65+",
         "perc": 15.3224
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Mid Ulster",
+        "category": "destHEpct",
+        "perc": 44.8
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "destFEpct",
+        "perc": 24.7
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "destEmploypct",
+        "perc": 10.7
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "destTrainpct",
+        "perc": 15.7
+      },
+      {
+        "geography": "Mid Ulster",
+        "category": "destUnempUnkpct",
+        "perc": 4.1
       }
     ]
   },
@@ -1095,54 +1144,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Mid Ulster",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Ulster",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Mid Ulster",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Ulster",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Mid Ulster",
-        "category": "bad",
-        "perc": 4.5371
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "fair",
-        "perc": 12.206
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "good",
-        "perc": 28.0063
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "very_bad",
-        "perc": 1.5842
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "very_good",
-        "perc": 53.6665
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1167,34 +1191,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "bad",
+        "perc": 4.5371
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "fair",
+        "perc": 12.206
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "good",
+        "perc": 28.0063
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "very_bad",
+        "perc": 1.5842
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "very_good",
+        "perc": 53.6665
       }
     ],
     "hh_size": [
-      {
-        "group": "Mid Ulster",
-        "category": "five_people",
-        "perc": 14.8208
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "four_people",
-        "perc": 16.1374
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "one_person",
-        "perc": 25.3014
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "three_people",
-        "perc": 17.1206
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "two_people",
-        "perc": 26.6198
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1219,44 +1243,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "five_people",
+        "perc": 14.8208
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "four_people",
+        "perc": 16.1374
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "one_person",
+        "perc": 25.3014
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "three_people",
+        "perc": 17.1206
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "two_people",
+        "perc": 26.6198
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Mid Ulster",
-        "category": "apprenticeship",
-        "perc": 7.1253
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "level_1_qualifications",
-        "perc": 5.3018
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "level_2_qualifications",
-        "perc": 13.1429
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "level_3_qualifications",
-        "perc": 15.2751
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "level_4_qualifications_and_above",
-        "perc": 29.3207
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "no_qualifications",
-        "perc": 27.4972
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "other_qualifications",
-        "perc": 2.337
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1291,39 +1305,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "apprenticeship",
+        "perc": 7.1253
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "level_1_qualifications",
+        "perc": 5.3018
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "level_2_qualifications",
+        "perc": 13.1429
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "level_3_qualifications",
+        "perc": 15.2751
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.3207
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "no_qualifications",
+        "perc": 27.4972
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "other_qualifications",
+        "perc": 2.337
       }
     ],
     "cob": [
-      {
-        "group": "Mid Ulster",
-        "category": "england",
-        "perc": 2.4586
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "northern_ireland",
-        "perc": 86.1068
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "other_cob",
-        "perc": 9.2149
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "republic_of_ireland",
-        "perc": 1.6794
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "scotland",
-        "perc": 0.4578
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "wales",
-        "perc": 0.0825
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1353,19 +1372,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "england",
+        "perc": 2.4586
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "northern_ireland",
+        "perc": 86.1068
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "other_cob",
+        "perc": 9.2149
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "republic_of_ireland",
+        "perc": 1.6794
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "scotland",
+        "perc": 0.4578
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "wales",
+        "perc": 0.0825
       }
     ],
     "mainlang": [
-      {
-        "group": "Mid Ulster",
-        "category": "english",
-        "perc": 91.8512
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "other_languages",
-        "perc": 8.1488
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1375,29 +1414,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "english",
+        "perc": 91.8512
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "other_languages",
+        "perc": 8.1488
       }
     ],
     "age": [
-      {
-        "group": "Mid Ulster",
-        "category": "a0to14",
-        "perc": 21.7123
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "a15to39",
-        "perc": 32.1712
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "a40to64",
-        "perc": 31.1292
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "a65plus",
-        "perc": 14.9874
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1417,29 +1446,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a0to14",
+        "perc": 21.7123
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a15to39",
+        "perc": 32.1712
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a40to64",
+        "perc": 31.1292
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a65plus",
+        "perc": 14.9874
       }
     ],
     "provision_care": [
-      {
-        "group": "Mid Ulster",
-        "category": "a1to19_hours",
-        "perc": 4.9366
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "a20to49_hours",
-        "perc": 2.93
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "a50plus_hours",
-        "perc": 3.3932
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "no_care",
-        "perc": 88.7402
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1459,29 +1488,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a1to19_hours",
+        "perc": 4.9366
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a20to49_hours",
+        "perc": 2.93
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "a50plus_hours",
+        "perc": 3.3932
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "no_care",
+        "perc": 88.7402
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Mid Ulster",
-        "category": "catholic",
-        "perc": 64.7389
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "none",
-        "perc": 4.3655
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "other_religions",
-        "perc": 0.674
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 30.2216
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1501,19 +1530,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "catholic",
+        "perc": 64.7389
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "none",
+        "perc": 4.3655
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "other_religions",
+        "perc": 0.674
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 30.2216
       }
     ],
     "sex": [
-      {
-        "group": "Mid Ulster",
-        "category": "females",
-        "perc": 49.9039
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "males",
-        "perc": 50.0961
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1523,29 +1562,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "females",
+        "perc": 49.9039
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "males",
+        "perc": 50.0961
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "EMPN",
+        "perc": 70000
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "EMPR",
+        "perc": 73.8
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "UNEMPR",
+        "perc": 1.3
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "INACTR",
+        "perc": 25.1
       }
     ],
     "BRES": [
-      {
-        "group": "Mid Ulster",
-        "category": "Construction",
-        "perc": 9.3349
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Manufacturing",
-        "perc": 28.7242
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Services",
-        "perc": 59.9216
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Other",
-        "perc": 2.0193
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1565,6 +1636,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "Construction",
+        "perc": 9.3349
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "Manufacturing",
+        "perc": 28.7242
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "Services",
+        "perc": 59.9216
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "Other",
+        "perc": 2.0193
       }
     ],
     "Primary": [
@@ -1577,11 +1668,6 @@
         "group": "Mid Ulster",
         "category": "FSME",
         "perc": 16.4831
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1594,11 +1680,6 @@
         "group": "Mid Ulster",
         "category": "FSME",
         "perc": 17.2027
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1623,26 +1704,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Mid Ulster",
-        "category": "Age 0-15",
-        "perc": 23.0151
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Age 16-39",
-        "perc": 30.1905
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Age 40-64",
-        "perc": 31.472
-      },
-      {
-        "group": "Mid Ulster",
-        "category": "Age 65+",
-        "perc": 15.3224
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1663,24 +1724,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Ulster",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 23.0151
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Ulster",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 30.1905
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Ulster",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 31.472
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "Age 65+",
+        "perc": 15.3224
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "destHEpct",
+        "perc": 44.8
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "destFEpct",
+        "perc": 24.7
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "destEmploypct",
+        "perc": 10.7
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "destTrainpct",
+        "perc": 15.7
+      },
+      {
+        "group": "Mid Ulster",
+        "category": "destUnempUnkpct",
+        "perc": 4.1
       }
     ]
   },

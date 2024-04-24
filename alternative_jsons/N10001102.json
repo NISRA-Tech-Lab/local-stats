@@ -586,6 +586,7 @@
         "perc": 48.8719
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -621,6 +622,33 @@
         "geography": "Bangor Central",
         "category": "Age 65+",
         "perc": 20.1883
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Bangor Central",
+        "category": "destHEpct",
+        "perc": 40.2
+      },
+      {
+        "geography": "Bangor Central",
+        "category": "destFEpct",
+        "perc": 37.8
+      },
+      {
+        "geography": "Bangor Central",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "geography": "Bangor Central",
+        "category": "destTrainpct",
+        "perc": 4.1
+      },
+      {
+        "geography": "Bangor Central",
+        "category": "destUnempUnkpct",
+        "perc": 5.2
       }
     ]
   },
@@ -856,54 +884,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Bangor Central",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bangor Central",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Bangor Central",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bangor Central",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Bangor Central",
-        "category": "bad",
-        "perc": 5.5524
-      },
-      {
-        "group": "Bangor Central",
-        "category": "fair",
-        "perc": 14.5962
-      },
-      {
-        "group": "Bangor Central",
-        "category": "good",
-        "perc": 31.2047
-      },
-      {
-        "group": "Bangor Central",
-        "category": "very_bad",
-        "perc": 1.7157
-      },
-      {
-        "group": "Bangor Central",
-        "category": "very_good",
-        "perc": 46.931
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -928,34 +931,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Bangor Central",
+        "category": "bad",
+        "perc": 5.5524
+      },
+      {
+        "group": "Bangor Central",
+        "category": "fair",
+        "perc": 14.5962
+      },
+      {
+        "group": "Bangor Central",
+        "category": "good",
+        "perc": 31.2047
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_bad",
+        "perc": 1.7157
+      },
+      {
+        "group": "Bangor Central",
+        "category": "very_good",
+        "perc": 46.931
       }
     ],
     "hh_size": [
-      {
-        "group": "Bangor Central",
-        "category": "five_people",
-        "perc": 5.2715
-      },
-      {
-        "group": "Bangor Central",
-        "category": "four_people",
-        "perc": 12.1412
-      },
-      {
-        "group": "Bangor Central",
-        "category": "one_person",
-        "perc": 35.4447
-      },
-      {
-        "group": "Bangor Central",
-        "category": "three_people",
-        "perc": 14.2666
-      },
-      {
-        "group": "Bangor Central",
-        "category": "two_people",
-        "perc": 32.8759
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -980,44 +983,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Bangor Central",
+        "category": "five_people",
+        "perc": 5.2715
+      },
+      {
+        "group": "Bangor Central",
+        "category": "four_people",
+        "perc": 12.1412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "one_person",
+        "perc": 35.4447
+      },
+      {
+        "group": "Bangor Central",
+        "category": "three_people",
+        "perc": 14.2666
+      },
+      {
+        "group": "Bangor Central",
+        "category": "two_people",
+        "perc": 32.8759
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Bangor Central",
-        "category": "apprenticeship",
-        "perc": 5.7647
-      },
-      {
-        "group": "Bangor Central",
-        "category": "level_1_qualifications",
-        "perc": 6.4423
-      },
-      {
-        "group": "Bangor Central",
-        "category": "level_2_qualifications",
-        "perc": 14.3467
-      },
-      {
-        "group": "Bangor Central",
-        "category": "level_3_qualifications",
-        "perc": 16.5653
-      },
-      {
-        "group": "Bangor Central",
-        "category": "level_4_qualifications_and_above",
-        "perc": 36.8113
-      },
-      {
-        "group": "Bangor Central",
-        "category": "no_qualifications",
-        "perc": 17.5864
-      },
-      {
-        "group": "Bangor Central",
-        "category": "other_qualifications",
-        "perc": 2.4832
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1052,39 +1045,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Bangor Central",
+        "category": "apprenticeship",
+        "perc": 5.7647
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_1_qualifications",
+        "perc": 6.4423
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_2_qualifications",
+        "perc": 14.3467
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_3_qualifications",
+        "perc": 16.5653
+      },
+      {
+        "group": "Bangor Central",
+        "category": "level_4_qualifications_and_above",
+        "perc": 36.8113
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_qualifications",
+        "perc": 17.5864
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_qualifications",
+        "perc": 2.4832
       }
     ],
     "cob": [
-      {
-        "group": "Bangor Central",
-        "category": "england",
-        "perc": 6.6632
-      },
-      {
-        "group": "Bangor Central",
-        "category": "northern_ireland",
-        "perc": 84.2412
-      },
-      {
-        "group": "Bangor Central",
-        "category": "other_cob",
-        "perc": 5.9049
-      },
-      {
-        "group": "Bangor Central",
-        "category": "republic_of_ireland",
-        "perc": 1.3289
-      },
-      {
-        "group": "Bangor Central",
-        "category": "scotland",
-        "perc": 1.6254
-      },
-      {
-        "group": "Bangor Central",
-        "category": "wales",
-        "perc": 0.2365
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1114,19 +1112,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Bangor Central",
+        "category": "england",
+        "perc": 6.6632
+      },
+      {
+        "group": "Bangor Central",
+        "category": "northern_ireland",
+        "perc": 84.2412
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_cob",
+        "perc": 5.9049
+      },
+      {
+        "group": "Bangor Central",
+        "category": "republic_of_ireland",
+        "perc": 1.3289
+      },
+      {
+        "group": "Bangor Central",
+        "category": "scotland",
+        "perc": 1.6254
+      },
+      {
+        "group": "Bangor Central",
+        "category": "wales",
+        "perc": 0.2365
       }
     ],
     "mainlang": [
-      {
-        "group": "Bangor Central",
-        "category": "english",
-        "perc": 97.192
-      },
-      {
-        "group": "Bangor Central",
-        "category": "other_languages",
-        "perc": 2.808
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1136,29 +1154,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Bangor Central",
+        "category": "english",
+        "perc": 97.192
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_languages",
+        "perc": 2.808
       }
     ],
     "age": [
-      {
-        "group": "Bangor Central",
-        "category": "a0to14",
-        "perc": 18.0426
-      },
-      {
-        "group": "Bangor Central",
-        "category": "a15to39",
-        "perc": 29.1512
-      },
-      {
-        "group": "Bangor Central",
-        "category": "a40to64",
-        "perc": 32.8228
-      },
-      {
-        "group": "Bangor Central",
-        "category": "a65plus",
-        "perc": 19.9835
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1178,29 +1186,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a0to14",
+        "perc": 18.0426
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a15to39",
+        "perc": 29.1512
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a40to64",
+        "perc": 32.8228
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a65plus",
+        "perc": 19.9835
       }
     ],
     "provision_care": [
-      {
-        "group": "Bangor Central",
-        "category": "a1to19_hours",
-        "perc": 6.4631
-      },
-      {
-        "group": "Bangor Central",
-        "category": "a20to49_hours",
-        "perc": 2.7518
-      },
-      {
-        "group": "Bangor Central",
-        "category": "a50plus_hours",
-        "perc": 3.9175
-      },
-      {
-        "group": "Bangor Central",
-        "category": "no_care",
-        "perc": 86.8676
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1220,29 +1228,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a1to19_hours",
+        "perc": 6.4631
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a20to49_hours",
+        "perc": 2.7518
+      },
+      {
+        "group": "Bangor Central",
+        "category": "a50plus_hours",
+        "perc": 3.9175
+      },
+      {
+        "group": "Bangor Central",
+        "category": "no_care",
+        "perc": 86.8676
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Bangor Central",
-        "category": "catholic",
-        "perc": 11.9383
-      },
-      {
-        "group": "Bangor Central",
-        "category": "none",
-        "perc": 21.3725
-      },
-      {
-        "group": "Bangor Central",
-        "category": "other_religions",
-        "perc": 1.4829
-      },
-      {
-        "group": "Bangor Central",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 65.2063
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1262,19 +1270,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Bangor Central",
+        "category": "catholic",
+        "perc": 11.9383
+      },
+      {
+        "group": "Bangor Central",
+        "category": "none",
+        "perc": 21.3725
+      },
+      {
+        "group": "Bangor Central",
+        "category": "other_religions",
+        "perc": 1.4829
+      },
+      {
+        "group": "Bangor Central",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 65.2063
       }
     ],
     "sex": [
-      {
-        "group": "Bangor Central",
-        "category": "females",
-        "perc": 51.1281
-      },
-      {
-        "group": "Bangor Central",
-        "category": "males",
-        "perc": 48.8719
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1284,6 +1302,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Bangor Central",
+        "category": "females",
+        "perc": 51.1281
+      },
+      {
+        "group": "Bangor Central",
+        "category": "males",
+        "perc": 48.8719
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1310,36 +1360,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Bangor Central",
         "category": "FSME",
         "perc": 20.0287
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Bangor Central",
         "category": "FSME",
         "perc": 19.6055
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1402,26 +1442,58 @@
         "group": "Bangor Central",
         "category": "Age 65+",
         "perc": 20.1883
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Bangor Central",
+        "category": "destHEpct",
+        "perc": 40.2
+      },
+      {
+        "group": "Bangor Central",
+        "category": "destFEpct",
+        "perc": 37.8
+      },
+      {
+        "group": "Bangor Central",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "group": "Bangor Central",
+        "category": "destTrainpct",
+        "perc": 4.1
+      },
+      {
+        "group": "Bangor Central",
+        "category": "destUnempUnkpct",
+        "perc": 5.2
       }
     ]
   },

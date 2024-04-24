@@ -571,6 +571,7 @@
         "perc": 48.6852
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Glengormley Urban",
         "category": "Age 65+",
         "perc": 20.2221
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Glengormley Urban",
+        "category": "destHEpct",
+        "perc": 46.2
+      },
+      {
+        "geography": "Glengormley Urban",
+        "category": "destFEpct",
+        "perc": 20.1
+      },
+      {
+        "geography": "Glengormley Urban",
+        "category": "destEmploypct",
+        "perc": 17.7
+      },
+      {
+        "geography": "Glengormley Urban",
+        "category": "destTrainpct",
+        "perc": 12
+      },
+      {
+        "geography": "Glengormley Urban",
+        "category": "destUnempUnkpct",
+        "perc": 4
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Glengormley Urban",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Glengormley Urban",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Glengormley Urban",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Glengormley Urban",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Glengormley Urban",
-        "category": "bad",
-        "perc": 5.5733
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "fair",
-        "perc": 14.5617
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "good",
-        "perc": 30.2093
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "very_bad",
-        "perc": 1.7284
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "very_good",
-        "perc": 47.9274
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "bad",
+        "perc": 5.5733
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "fair",
+        "perc": 14.5617
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "good",
+        "perc": 30.2093
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "very_bad",
+        "perc": 1.7284
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "very_good",
+        "perc": 47.9274
       }
     ],
     "hh_size": [
-      {
-        "group": "Glengormley Urban",
-        "category": "five_people",
-        "perc": 6.4275
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "four_people",
-        "perc": 13.9005
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "one_person",
-        "perc": 29.8041
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "three_people",
-        "perc": 16.9051
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "two_people",
-        "perc": 32.9628
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "five_people",
+        "perc": 6.4275
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "four_people",
+        "perc": 13.9005
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "one_person",
+        "perc": 29.8041
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "three_people",
+        "perc": 16.9051
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "two_people",
+        "perc": 32.9628
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Glengormley Urban",
-        "category": "apprenticeship",
-        "perc": 7.0538
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "level_1_qualifications",
-        "perc": 6.9122
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "level_2_qualifications",
-        "perc": 15.4051
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "level_3_qualifications",
-        "perc": 16.6346
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.4958
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "no_qualifications",
-        "perc": 19.966
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "other_qualifications",
-        "perc": 2.5326
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "apprenticeship",
+        "perc": 7.0538
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "level_1_qualifications",
+        "perc": 6.9122
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "level_2_qualifications",
+        "perc": 15.4051
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "level_3_qualifications",
+        "perc": 16.6346
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.4958
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "no_qualifications",
+        "perc": 19.966
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "other_qualifications",
+        "perc": 2.5326
       }
     ],
     "cob": [
-      {
-        "group": "Glengormley Urban",
-        "category": "england",
-        "perc": 2.9347
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "northern_ireland",
-        "perc": 90.0407
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "other_cob",
-        "perc": 5.2546
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "republic_of_ireland",
-        "perc": 1.0075
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "scotland",
-        "perc": 0.647
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "wales",
-        "perc": 0.1155
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "england",
+        "perc": 2.9347
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "northern_ireland",
+        "perc": 90.0407
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "other_cob",
+        "perc": 5.2546
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "republic_of_ireland",
+        "perc": 1.0075
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "scotland",
+        "perc": 0.647
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "wales",
+        "perc": 0.1155
       }
     ],
     "mainlang": [
-      {
-        "group": "Glengormley Urban",
-        "category": "english",
-        "perc": 96.3697
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "other_languages",
-        "perc": 3.6303
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "english",
+        "perc": 96.3697
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "other_languages",
+        "perc": 3.6303
       }
     ],
     "age": [
-      {
-        "group": "Glengormley Urban",
-        "category": "a0to14",
-        "perc": 17.2836
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "a15to39",
-        "perc": 29.7056
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "a40to64",
-        "perc": 32.9128
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "a65plus",
-        "perc": 20.098
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a0to14",
+        "perc": 17.2836
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a15to39",
+        "perc": 29.7056
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a40to64",
+        "perc": 32.9128
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a65plus",
+        "perc": 20.098
       }
     ],
     "provision_care": [
-      {
-        "group": "Glengormley Urban",
-        "category": "a1to19_hours",
-        "perc": 6.0786
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "a20to49_hours",
-        "perc": 3.0052
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "a50plus_hours",
-        "perc": 4.4443
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "no_care",
-        "perc": 86.4719
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a1to19_hours",
+        "perc": 6.0786
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a20to49_hours",
+        "perc": 3.0052
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "a50plus_hours",
+        "perc": 4.4443
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "no_care",
+        "perc": 86.4719
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Glengormley Urban",
-        "category": "catholic",
-        "perc": 45.8432
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "none",
-        "perc": 10.4857
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "other_religions",
-        "perc": 2.0657
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 41.6054
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "catholic",
+        "perc": 45.8432
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "none",
+        "perc": 10.4857
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "other_religions",
+        "perc": 2.0657
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.6054
       }
     ],
     "sex": [
-      {
-        "group": "Glengormley Urban",
-        "category": "females",
-        "perc": 51.3148
-      },
-      {
-        "group": "Glengormley Urban",
-        "category": "males",
-        "perc": 48.6852
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "females",
+        "perc": 51.3148
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "males",
+        "perc": 48.6852
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Glengormley Urban",
         "category": "FSME",
         "perc": 18.9791
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Glengormley Urban",
         "category": "FSME",
         "perc": 17.2643
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Glengormley Urban",
         "category": "Age 65+",
         "perc": 20.2221
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "destHEpct",
+        "perc": 46.2
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "destFEpct",
+        "perc": 20.1
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "destEmploypct",
+        "perc": 17.7
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "destTrainpct",
+        "perc": 12
+      },
+      {
+        "group": "Glengormley Urban",
+        "category": "destUnempUnkpct",
+        "perc": 4
       }
     ]
   },

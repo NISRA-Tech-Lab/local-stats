@@ -551,6 +551,7 @@
         "perc": 50.0099
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,31 @@
         "geography": "Erne North",
         "category": "Age 65+",
         "perc": 19.2308
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Erne North",
+        "category": "destHEpct",
+        "perc": 39
+      },
+      {
+        "geography": "Erne North",
+        "category": "destFEpct",
+        "perc": 42.1
+      },
+      {
+        "geography": "Erne North",
+        "category": "destEmploypct"
+      },
+      {
+        "geography": "Erne North",
+        "category": "destTrainpct",
+        "perc": 10.4
+      },
+      {
+        "geography": "Erne North",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -821,54 +847,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Erne North",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Erne North",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Erne North",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Erne North",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Erne North",
-        "category": "bad",
-        "perc": 4.7935
-      },
-      {
-        "group": "Erne North",
-        "category": "fair",
-        "perc": 14.7451
-      },
-      {
-        "group": "Erne North",
-        "category": "good",
-        "perc": 28.7675
-      },
-      {
-        "group": "Erne North",
-        "category": "very_bad",
-        "perc": 1.7503
-      },
-      {
-        "group": "Erne North",
-        "category": "very_good",
-        "perc": 49.9436
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +894,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Erne North",
+        "category": "bad",
+        "perc": 4.7935
+      },
+      {
+        "group": "Erne North",
+        "category": "fair",
+        "perc": 14.7451
+      },
+      {
+        "group": "Erne North",
+        "category": "good",
+        "perc": 28.7675
+      },
+      {
+        "group": "Erne North",
+        "category": "very_bad",
+        "perc": 1.7503
+      },
+      {
+        "group": "Erne North",
+        "category": "very_good",
+        "perc": 49.9436
       }
     ],
     "hh_size": [
-      {
-        "group": "Erne North",
-        "category": "five_people",
-        "perc": 10.3138
-      },
-      {
-        "group": "Erne North",
-        "category": "four_people",
-        "perc": 13.4521
-      },
-      {
-        "group": "Erne North",
-        "category": "one_person",
-        "perc": 32.0366
-      },
-      {
-        "group": "Erne North",
-        "category": "three_people",
-        "perc": 15.201
-      },
-      {
-        "group": "Erne North",
-        "category": "two_people",
-        "perc": 28.9964
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +946,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Erne North",
+        "category": "five_people",
+        "perc": 10.3138
+      },
+      {
+        "group": "Erne North",
+        "category": "four_people",
+        "perc": 13.4521
+      },
+      {
+        "group": "Erne North",
+        "category": "one_person",
+        "perc": 32.0366
+      },
+      {
+        "group": "Erne North",
+        "category": "three_people",
+        "perc": 15.201
+      },
+      {
+        "group": "Erne North",
+        "category": "two_people",
+        "perc": 28.9964
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Erne North",
-        "category": "apprenticeship",
-        "perc": 6.4819
-      },
-      {
-        "group": "Erne North",
-        "category": "level_1_qualifications",
-        "perc": 6.0548
-      },
-      {
-        "group": "Erne North",
-        "category": "level_2_qualifications",
-        "perc": 14.2367
-      },
-      {
-        "group": "Erne North",
-        "category": "level_3_qualifications",
-        "perc": 15.0155
-      },
-      {
-        "group": "Erne North",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.3408
-      },
-      {
-        "group": "Erne North",
-        "category": "no_qualifications",
-        "perc": 25.6846
-      },
-      {
-        "group": "Erne North",
-        "category": "other_qualifications",
-        "perc": 2.1857
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1008,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Erne North",
+        "category": "apprenticeship",
+        "perc": 6.4819
+      },
+      {
+        "group": "Erne North",
+        "category": "level_1_qualifications",
+        "perc": 6.0548
+      },
+      {
+        "group": "Erne North",
+        "category": "level_2_qualifications",
+        "perc": 14.2367
+      },
+      {
+        "group": "Erne North",
+        "category": "level_3_qualifications",
+        "perc": 15.0155
+      },
+      {
+        "group": "Erne North",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.3408
+      },
+      {
+        "group": "Erne North",
+        "category": "no_qualifications",
+        "perc": 25.6846
+      },
+      {
+        "group": "Erne North",
+        "category": "other_qualifications",
+        "perc": 2.1857
       }
     ],
     "cob": [
-      {
-        "group": "Erne North",
-        "category": "england",
-        "perc": 5.5305
-      },
-      {
-        "group": "Erne North",
-        "category": "northern_ireland",
-        "perc": 84.5889
-      },
-      {
-        "group": "Erne North",
-        "category": "other_cob",
-        "perc": 3.0504
-      },
-      {
-        "group": "Erne North",
-        "category": "republic_of_ireland",
-        "perc": 5.8156
-      },
-      {
-        "group": "Erne North",
-        "category": "scotland",
-        "perc": 0.8753
-      },
-      {
-        "group": "Erne North",
-        "category": "wales",
-        "perc": 0.1393
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1075,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Erne North",
+        "category": "england",
+        "perc": 5.5305
+      },
+      {
+        "group": "Erne North",
+        "category": "northern_ireland",
+        "perc": 84.5889
+      },
+      {
+        "group": "Erne North",
+        "category": "other_cob",
+        "perc": 3.0504
+      },
+      {
+        "group": "Erne North",
+        "category": "republic_of_ireland",
+        "perc": 5.8156
+      },
+      {
+        "group": "Erne North",
+        "category": "scotland",
+        "perc": 0.8753
+      },
+      {
+        "group": "Erne North",
+        "category": "wales",
+        "perc": 0.1393
       }
     ],
     "mainlang": [
-      {
-        "group": "Erne North",
-        "category": "english",
-        "perc": 98.1105
-      },
-      {
-        "group": "Erne North",
-        "category": "other_languages",
-        "perc": 1.8895
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1117,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Erne North",
+        "category": "english",
+        "perc": 98.1105
+      },
+      {
+        "group": "Erne North",
+        "category": "other_languages",
+        "perc": 1.8895
       }
     ],
     "age": [
-      {
-        "group": "Erne North",
-        "category": "a0to14",
-        "perc": 19.3409
-      },
-      {
-        "group": "Erne North",
-        "category": "a15to39",
-        "perc": 28.3384
-      },
-      {
-        "group": "Erne North",
-        "category": "a40to64",
-        "perc": 33.3576
-      },
-      {
-        "group": "Erne North",
-        "category": "a65plus",
-        "perc": 18.963
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1149,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Erne North",
+        "category": "a0to14",
+        "perc": 19.3409
+      },
+      {
+        "group": "Erne North",
+        "category": "a15to39",
+        "perc": 28.3384
+      },
+      {
+        "group": "Erne North",
+        "category": "a40to64",
+        "perc": 33.3576
+      },
+      {
+        "group": "Erne North",
+        "category": "a65plus",
+        "perc": 18.963
       }
     ],
     "provision_care": [
-      {
-        "group": "Erne North",
-        "category": "a1to19_hours",
-        "perc": 5.5603
-      },
-      {
-        "group": "Erne North",
-        "category": "a20to49_hours",
-        "perc": 2.759
-      },
-      {
-        "group": "Erne North",
-        "category": "a50plus_hours",
-        "perc": 3.8597
-      },
-      {
-        "group": "Erne North",
-        "category": "no_care",
-        "perc": 87.8211
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1191,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Erne North",
+        "category": "a1to19_hours",
+        "perc": 5.5603
+      },
+      {
+        "group": "Erne North",
+        "category": "a20to49_hours",
+        "perc": 2.759
+      },
+      {
+        "group": "Erne North",
+        "category": "a50plus_hours",
+        "perc": 3.8597
+      },
+      {
+        "group": "Erne North",
+        "category": "no_care",
+        "perc": 87.8211
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Erne North",
-        "category": "catholic",
-        "perc": 50.6862
-      },
-      {
-        "group": "Erne North",
-        "category": "none",
-        "perc": 4.3824
-      },
-      {
-        "group": "Erne North",
-        "category": "other_religions",
-        "perc": 0.6829
-      },
-      {
-        "group": "Erne North",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 44.2485
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1233,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Erne North",
+        "category": "catholic",
+        "perc": 50.6862
+      },
+      {
+        "group": "Erne North",
+        "category": "none",
+        "perc": 4.3824
+      },
+      {
+        "group": "Erne North",
+        "category": "other_religions",
+        "perc": 0.6829
+      },
+      {
+        "group": "Erne North",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 44.2485
       }
     ],
     "sex": [
-      {
-        "group": "Erne North",
-        "category": "females",
-        "perc": 49.9901
-      },
-      {
-        "group": "Erne North",
-        "category": "males",
-        "perc": 50.0099
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1265,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Erne North",
+        "category": "females",
+        "perc": 49.9901
+      },
+      {
+        "group": "Erne North",
+        "category": "males",
+        "perc": 50.0099
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1323,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Erne North",
         "category": "FSME",
         "perc": 21.4247
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Erne North",
         "category": "FSME",
         "perc": 19.6384
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1405,56 @@
         "group": "Erne North",
         "category": "Age 65+",
         "perc": 19.2308
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Erne North",
+        "category": "destHEpct",
+        "perc": 39
+      },
+      {
+        "group": "Erne North",
+        "category": "destFEpct",
+        "perc": 42.1
+      },
+      {
+        "group": "Erne North",
+        "category": "destEmploypct"
+      },
+      {
+        "group": "Erne North",
+        "category": "destTrainpct",
+        "perc": 10.4
+      },
+      {
+        "group": "Erne North",
+        "category": "destUnempUnkpct"
       }
     ]
   },

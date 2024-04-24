@@ -561,6 +561,7 @@
         "perc": 49.0122
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Bannside",
         "category": "Age 65+",
         "perc": 18.621
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Bannside",
+        "category": "destHEpct",
+        "perc": 49.4
+      },
+      {
+        "geography": "Bannside",
+        "category": "destFEpct",
+        "perc": 20.9
+      },
+      {
+        "geography": "Bannside",
+        "category": "destEmploypct",
+        "perc": 14.6
+      },
+      {
+        "geography": "Bannside",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "geography": "Bannside",
+        "category": "destUnempUnkpct",
+        "perc": 3.6
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Bannside",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bannside",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Bannside",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Bannside",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Bannside",
-        "category": "bad",
-        "perc": 4.1679
-      },
-      {
-        "group": "Bannside",
-        "category": "fair",
-        "perc": 12.8414
-      },
-      {
-        "group": "Bannside",
-        "category": "good",
-        "perc": 29.7752
-      },
-      {
-        "group": "Bannside",
-        "category": "very_bad",
-        "perc": 1.27
-      },
-      {
-        "group": "Bannside",
-        "category": "very_good",
-        "perc": 51.9454
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Bannside",
+        "category": "bad",
+        "perc": 4.1679
+      },
+      {
+        "group": "Bannside",
+        "category": "fair",
+        "perc": 12.8414
+      },
+      {
+        "group": "Bannside",
+        "category": "good",
+        "perc": 29.7752
+      },
+      {
+        "group": "Bannside",
+        "category": "very_bad",
+        "perc": 1.27
+      },
+      {
+        "group": "Bannside",
+        "category": "very_good",
+        "perc": 51.9454
       }
     ],
     "hh_size": [
-      {
-        "group": "Bannside",
-        "category": "five_people",
-        "perc": 9.7945
-      },
-      {
-        "group": "Bannside",
-        "category": "four_people",
-        "perc": 15.2474
-      },
-      {
-        "group": "Bannside",
-        "category": "one_person",
-        "perc": 25.8044
-      },
-      {
-        "group": "Bannside",
-        "category": "three_people",
-        "perc": 17.5733
-      },
-      {
-        "group": "Bannside",
-        "category": "two_people",
-        "perc": 31.5803
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Bannside",
+        "category": "five_people",
+        "perc": 9.7945
+      },
+      {
+        "group": "Bannside",
+        "category": "four_people",
+        "perc": 15.2474
+      },
+      {
+        "group": "Bannside",
+        "category": "one_person",
+        "perc": 25.8044
+      },
+      {
+        "group": "Bannside",
+        "category": "three_people",
+        "perc": 17.5733
+      },
+      {
+        "group": "Bannside",
+        "category": "two_people",
+        "perc": 31.5803
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Bannside",
-        "category": "apprenticeship",
-        "perc": 7.5609
-      },
-      {
-        "group": "Bannside",
-        "category": "level_1_qualifications",
-        "perc": 5.2655
-      },
-      {
-        "group": "Bannside",
-        "category": "level_2_qualifications",
-        "perc": 13.747
-      },
-      {
-        "group": "Bannside",
-        "category": "level_3_qualifications",
-        "perc": 16.8054
-      },
-      {
-        "group": "Bannside",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.3154
-      },
-      {
-        "group": "Bannside",
-        "category": "no_qualifications",
-        "perc": 23.3195
-      },
-      {
-        "group": "Bannside",
-        "category": "other_qualifications",
-        "perc": 1.9864
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Bannside",
+        "category": "apprenticeship",
+        "perc": 7.5609
+      },
+      {
+        "group": "Bannside",
+        "category": "level_1_qualifications",
+        "perc": 5.2655
+      },
+      {
+        "group": "Bannside",
+        "category": "level_2_qualifications",
+        "perc": 13.747
+      },
+      {
+        "group": "Bannside",
+        "category": "level_3_qualifications",
+        "perc": 16.8054
+      },
+      {
+        "group": "Bannside",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.3154
+      },
+      {
+        "group": "Bannside",
+        "category": "no_qualifications",
+        "perc": 23.3195
+      },
+      {
+        "group": "Bannside",
+        "category": "other_qualifications",
+        "perc": 1.9864
       }
     ],
     "cob": [
-      {
-        "group": "Bannside",
-        "category": "england",
-        "perc": 2.8779
-      },
-      {
-        "group": "Bannside",
-        "category": "northern_ireland",
-        "perc": 92.581
-      },
-      {
-        "group": "Bannside",
-        "category": "other_cob",
-        "perc": 2.7015
-      },
-      {
-        "group": "Bannside",
-        "category": "republic_of_ireland",
-        "perc": 0.6502
-      },
-      {
-        "group": "Bannside",
-        "category": "scotland",
-        "perc": 1.0635
-      },
-      {
-        "group": "Bannside",
-        "category": "wales",
-        "perc": 0.126
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Bannside",
+        "category": "england",
+        "perc": 2.8779
+      },
+      {
+        "group": "Bannside",
+        "category": "northern_ireland",
+        "perc": 92.581
+      },
+      {
+        "group": "Bannside",
+        "category": "other_cob",
+        "perc": 2.7015
+      },
+      {
+        "group": "Bannside",
+        "category": "republic_of_ireland",
+        "perc": 0.6502
+      },
+      {
+        "group": "Bannside",
+        "category": "scotland",
+        "perc": 1.0635
+      },
+      {
+        "group": "Bannside",
+        "category": "wales",
+        "perc": 0.126
       }
     ],
     "mainlang": [
-      {
-        "group": "Bannside",
-        "category": "english",
-        "perc": 98.4466
-      },
-      {
-        "group": "Bannside",
-        "category": "other_languages",
-        "perc": 1.5534
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Bannside",
+        "category": "english",
+        "perc": 98.4466
+      },
+      {
+        "group": "Bannside",
+        "category": "other_languages",
+        "perc": 1.5534
       }
     ],
     "age": [
-      {
-        "group": "Bannside",
-        "category": "a0to14",
-        "perc": 18.738
-      },
-      {
-        "group": "Bannside",
-        "category": "a15to39",
-        "perc": 28.5556
-      },
-      {
-        "group": "Bannside",
-        "category": "a40to64",
-        "perc": 34.2002
-      },
-      {
-        "group": "Bannside",
-        "category": "a65plus",
-        "perc": 18.5062
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Bannside",
+        "category": "a0to14",
+        "perc": 18.738
+      },
+      {
+        "group": "Bannside",
+        "category": "a15to39",
+        "perc": 28.5556
+      },
+      {
+        "group": "Bannside",
+        "category": "a40to64",
+        "perc": 34.2002
+      },
+      {
+        "group": "Bannside",
+        "category": "a65plus",
+        "perc": 18.5062
       }
     ],
     "provision_care": [
-      {
-        "group": "Bannside",
-        "category": "a1to19_hours",
-        "perc": 6.1256
-      },
-      {
-        "group": "Bannside",
-        "category": "a20to49_hours",
-        "perc": 2.6268
-      },
-      {
-        "group": "Bannside",
-        "category": "a50plus_hours",
-        "perc": 3.3704
-      },
-      {
-        "group": "Bannside",
-        "category": "no_care",
-        "perc": 87.8772
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Bannside",
+        "category": "a1to19_hours",
+        "perc": 6.1256
+      },
+      {
+        "group": "Bannside",
+        "category": "a20to49_hours",
+        "perc": 2.6268
+      },
+      {
+        "group": "Bannside",
+        "category": "a50plus_hours",
+        "perc": 3.3704
+      },
+      {
+        "group": "Bannside",
+        "category": "no_care",
+        "perc": 87.8772
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Bannside",
-        "category": "catholic",
-        "perc": 19.8669
-      },
-      {
-        "group": "Bannside",
-        "category": "none",
-        "perc": 7.6051
-      },
-      {
-        "group": "Bannside",
-        "category": "other_religions",
-        "perc": 0.6905
-      },
-      {
-        "group": "Bannside",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 71.8375
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Bannside",
+        "category": "catholic",
+        "perc": 19.8669
+      },
+      {
+        "group": "Bannside",
+        "category": "none",
+        "perc": 7.6051
+      },
+      {
+        "group": "Bannside",
+        "category": "other_religions",
+        "perc": 0.6905
+      },
+      {
+        "group": "Bannside",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 71.8375
       }
     ],
     "sex": [
-      {
-        "group": "Bannside",
-        "category": "females",
-        "perc": 50.9878
-      },
-      {
-        "group": "Bannside",
-        "category": "males",
-        "perc": 49.0122
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Bannside",
+        "category": "females",
+        "perc": 50.9878
+      },
+      {
+        "group": "Bannside",
+        "category": "males",
+        "perc": 49.0122
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Bannside",
         "category": "FSME",
         "perc": 12.9155
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Bannside",
         "category": "FSME",
         "perc": 13.2679
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Bannside",
         "category": "Age 65+",
         "perc": 18.621
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Bannside",
+        "category": "destHEpct",
+        "perc": 49.4
+      },
+      {
+        "group": "Bannside",
+        "category": "destFEpct",
+        "perc": 20.9
+      },
+      {
+        "group": "Bannside",
+        "category": "destEmploypct",
+        "perc": 14.6
+      },
+      {
+        "group": "Bannside",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "group": "Bannside",
+        "category": "destUnempUnkpct",
+        "perc": 3.6
       }
     ]
   },

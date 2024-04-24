@@ -556,6 +556,7 @@
         "perc": 51.2197
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "Killultagh",
         "category": "Age 65+",
         "perc": 12.4773
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Killultagh",
+        "category": "destHEpct",
+        "perc": 56.7
+      },
+      {
+        "geography": "Killultagh",
+        "category": "destFEpct",
+        "perc": 16
+      },
+      {
+        "geography": "Killultagh",
+        "category": "destEmploypct",
+        "perc": 11.7
+      },
+      {
+        "geography": "Killultagh",
+        "category": "destTrainpct",
+        "perc": 12.3
+      },
+      {
+        "geography": "Killultagh",
+        "category": "destUnempUnkpct",
+        "perc": 3.3
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Killultagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Killultagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Killultagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Killultagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Killultagh",
-        "category": "bad",
-        "perc": 3.5524
-      },
-      {
-        "group": "Killultagh",
-        "category": "fair",
-        "perc": 10.5574
-      },
-      {
-        "group": "Killultagh",
-        "category": "good",
-        "perc": 28.2515
-      },
-      {
-        "group": "Killultagh",
-        "category": "very_bad",
-        "perc": 1.0358
-      },
-      {
-        "group": "Killultagh",
-        "category": "very_good",
-        "perc": 56.6029
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Killultagh",
+        "category": "bad",
+        "perc": 3.5524
+      },
+      {
+        "group": "Killultagh",
+        "category": "fair",
+        "perc": 10.5574
+      },
+      {
+        "group": "Killultagh",
+        "category": "good",
+        "perc": 28.2515
+      },
+      {
+        "group": "Killultagh",
+        "category": "very_bad",
+        "perc": 1.0358
+      },
+      {
+        "group": "Killultagh",
+        "category": "very_good",
+        "perc": 56.6029
       }
     ],
     "hh_size": [
-      {
-        "group": "Killultagh",
-        "category": "five_people",
-        "perc": 10.8946
-      },
-      {
-        "group": "Killultagh",
-        "category": "four_people",
-        "perc": 19.9308
-      },
-      {
-        "group": "Killultagh",
-        "category": "one_person",
-        "perc": 20.059
-      },
-      {
-        "group": "Killultagh",
-        "category": "three_people",
-        "perc": 18.2517
-      },
-      {
-        "group": "Killultagh",
-        "category": "two_people",
-        "perc": 30.8639
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Killultagh",
+        "category": "five_people",
+        "perc": 10.8946
+      },
+      {
+        "group": "Killultagh",
+        "category": "four_people",
+        "perc": 19.9308
+      },
+      {
+        "group": "Killultagh",
+        "category": "one_person",
+        "perc": 20.059
+      },
+      {
+        "group": "Killultagh",
+        "category": "three_people",
+        "perc": 18.2517
+      },
+      {
+        "group": "Killultagh",
+        "category": "two_people",
+        "perc": 30.8639
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Killultagh",
-        "category": "apprenticeship",
-        "perc": 6.2383
-      },
-      {
-        "group": "Killultagh",
-        "category": "level_1_qualifications",
-        "perc": 5.717
-      },
-      {
-        "group": "Killultagh",
-        "category": "level_2_qualifications",
-        "perc": 14.2983
-      },
-      {
-        "group": "Killultagh",
-        "category": "level_3_qualifications",
-        "perc": 17.9065
-      },
-      {
-        "group": "Killultagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 39.2631
-      },
-      {
-        "group": "Killultagh",
-        "category": "no_qualifications",
-        "perc": 14.8664
-      },
-      {
-        "group": "Killultagh",
-        "category": "other_qualifications",
-        "perc": 1.7104
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Killultagh",
+        "category": "apprenticeship",
+        "perc": 6.2383
+      },
+      {
+        "group": "Killultagh",
+        "category": "level_1_qualifications",
+        "perc": 5.717
+      },
+      {
+        "group": "Killultagh",
+        "category": "level_2_qualifications",
+        "perc": 14.2983
+      },
+      {
+        "group": "Killultagh",
+        "category": "level_3_qualifications",
+        "perc": 17.9065
+      },
+      {
+        "group": "Killultagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 39.2631
+      },
+      {
+        "group": "Killultagh",
+        "category": "no_qualifications",
+        "perc": 14.8664
+      },
+      {
+        "group": "Killultagh",
+        "category": "other_qualifications",
+        "perc": 1.7104
       }
     ],
     "cob": [
-      {
-        "group": "Killultagh",
-        "category": "england",
-        "perc": 3.7343
-      },
-      {
-        "group": "Killultagh",
-        "category": "northern_ireland",
-        "perc": 90.2053
-      },
-      {
-        "group": "Killultagh",
-        "category": "other_cob",
-        "perc": 3.6389
-      },
-      {
-        "group": "Killultagh",
-        "category": "republic_of_ireland",
-        "perc": 1.5037
-      },
-      {
-        "group": "Killultagh",
-        "category": "scotland",
-        "perc": 0.745
-      },
-      {
-        "group": "Killultagh",
-        "category": "wales",
-        "perc": 0.1726
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Killultagh",
+        "category": "england",
+        "perc": 3.7343
+      },
+      {
+        "group": "Killultagh",
+        "category": "northern_ireland",
+        "perc": 90.2053
+      },
+      {
+        "group": "Killultagh",
+        "category": "other_cob",
+        "perc": 3.6389
+      },
+      {
+        "group": "Killultagh",
+        "category": "republic_of_ireland",
+        "perc": 1.5037
+      },
+      {
+        "group": "Killultagh",
+        "category": "scotland",
+        "perc": 0.745
+      },
+      {
+        "group": "Killultagh",
+        "category": "wales",
+        "perc": 0.1726
       }
     ],
     "mainlang": [
-      {
-        "group": "Killultagh",
-        "category": "english",
-        "perc": 98.0971
-      },
-      {
-        "group": "Killultagh",
-        "category": "other_languages",
-        "perc": 1.9029
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Killultagh",
+        "category": "english",
+        "perc": 98.0971
+      },
+      {
+        "group": "Killultagh",
+        "category": "other_languages",
+        "perc": 1.9029
       }
     ],
     "age": [
-      {
-        "group": "Killultagh",
-        "category": "a0to14",
-        "perc": 21.1421
-      },
-      {
-        "group": "Killultagh",
-        "category": "a15to39",
-        "perc": 32.4081
-      },
-      {
-        "group": "Killultagh",
-        "category": "a40to64",
-        "perc": 34.0481
-      },
-      {
-        "group": "Killultagh",
-        "category": "a65plus",
-        "perc": 12.4018
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Killultagh",
+        "category": "a0to14",
+        "perc": 21.1421
+      },
+      {
+        "group": "Killultagh",
+        "category": "a15to39",
+        "perc": 32.4081
+      },
+      {
+        "group": "Killultagh",
+        "category": "a40to64",
+        "perc": 34.0481
+      },
+      {
+        "group": "Killultagh",
+        "category": "a65plus",
+        "perc": 12.4018
       }
     ],
     "provision_care": [
-      {
-        "group": "Killultagh",
-        "category": "a1to19_hours",
-        "perc": 6.8903
-      },
-      {
-        "group": "Killultagh",
-        "category": "a20to49_hours",
-        "perc": 2.3876
-      },
-      {
-        "group": "Killultagh",
-        "category": "a50plus_hours",
-        "perc": 3.3406
-      },
-      {
-        "group": "Killultagh",
-        "category": "no_care",
-        "perc": 87.3815
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Killultagh",
+        "category": "a1to19_hours",
+        "perc": 6.8903
+      },
+      {
+        "group": "Killultagh",
+        "category": "a20to49_hours",
+        "perc": 2.3876
+      },
+      {
+        "group": "Killultagh",
+        "category": "a50plus_hours",
+        "perc": 3.3406
+      },
+      {
+        "group": "Killultagh",
+        "category": "no_care",
+        "perc": 87.3815
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Killultagh",
-        "category": "catholic",
-        "perc": 37.8367
-      },
-      {
-        "group": "Killultagh",
-        "category": "none",
-        "perc": 9.7942
-      },
-      {
-        "group": "Killultagh",
-        "category": "other_religions",
-        "perc": 0.904
-      },
-      {
-        "group": "Killultagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 51.465
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Killultagh",
+        "category": "catholic",
+        "perc": 37.8367
+      },
+      {
+        "group": "Killultagh",
+        "category": "none",
+        "perc": 9.7942
+      },
+      {
+        "group": "Killultagh",
+        "category": "other_religions",
+        "perc": 0.904
+      },
+      {
+        "group": "Killultagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 51.465
       }
     ],
     "sex": [
-      {
-        "group": "Killultagh",
-        "category": "females",
-        "perc": 48.7803
-      },
-      {
-        "group": "Killultagh",
-        "category": "males",
-        "perc": 51.2197
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Killultagh",
+        "category": "females",
+        "perc": 48.7803
+      },
+      {
+        "group": "Killultagh",
+        "category": "males",
+        "perc": 51.2197
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Killultagh",
         "category": "FSME",
         "perc": 10.0152
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Killultagh",
         "category": "FSME",
         "perc": 9.6536
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "Killultagh",
         "category": "Age 65+",
         "perc": 12.4773
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Killultagh",
+        "category": "destHEpct",
+        "perc": 56.7
+      },
+      {
+        "group": "Killultagh",
+        "category": "destFEpct",
+        "perc": 16
+      },
+      {
+        "group": "Killultagh",
+        "category": "destEmploypct",
+        "perc": 11.7
+      },
+      {
+        "group": "Killultagh",
+        "category": "destTrainpct",
+        "perc": 12.3
+      },
+      {
+        "group": "Killultagh",
+        "category": "destUnempUnkpct",
+        "perc": 3.3
       }
     ]
   },

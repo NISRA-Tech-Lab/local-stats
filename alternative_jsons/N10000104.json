@@ -546,6 +546,7 @@
         "perc": 49.8778
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -581,6 +582,33 @@
         "geography": "Dunsilly",
         "category": "Age 65+",
         "perc": 17.0083
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Dunsilly",
+        "category": "destHEpct",
+        "perc": 52.9
+      },
+      {
+        "geography": "Dunsilly",
+        "category": "destFEpct",
+        "perc": 25.8
+      },
+      {
+        "geography": "Dunsilly",
+        "category": "destEmploypct",
+        "perc": 11.7
+      },
+      {
+        "geography": "Dunsilly",
+        "category": "destTrainpct",
+        "perc": 5.4
+      },
+      {
+        "geography": "Dunsilly",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
       }
     ]
   },
@@ -816,54 +844,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Dunsilly",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Dunsilly",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Dunsilly",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Dunsilly",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Dunsilly",
-        "category": "bad",
-        "perc": 3.956
-      },
-      {
-        "group": "Dunsilly",
-        "category": "fair",
-        "perc": 12.0513
-      },
-      {
-        "group": "Dunsilly",
-        "category": "good",
-        "perc": 28.342
-      },
-      {
-        "group": "Dunsilly",
-        "category": "very_bad",
-        "perc": 1.4168
-      },
-      {
-        "group": "Dunsilly",
-        "category": "very_good",
-        "perc": 54.2338
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -888,34 +891,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Dunsilly",
+        "category": "bad",
+        "perc": 3.956
+      },
+      {
+        "group": "Dunsilly",
+        "category": "fair",
+        "perc": 12.0513
+      },
+      {
+        "group": "Dunsilly",
+        "category": "good",
+        "perc": 28.342
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_bad",
+        "perc": 1.4168
+      },
+      {
+        "group": "Dunsilly",
+        "category": "very_good",
+        "perc": 54.2338
       }
     ],
     "hh_size": [
-      {
-        "group": "Dunsilly",
-        "category": "five_people",
-        "perc": 12.3
-      },
-      {
-        "group": "Dunsilly",
-        "category": "four_people",
-        "perc": 16.781
-      },
-      {
-        "group": "Dunsilly",
-        "category": "one_person",
-        "perc": 23.091
-      },
-      {
-        "group": "Dunsilly",
-        "category": "three_people",
-        "perc": 17.5583
-      },
-      {
-        "group": "Dunsilly",
-        "category": "two_people",
-        "perc": 30.2698
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -940,44 +943,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Dunsilly",
+        "category": "five_people",
+        "perc": 12.3
+      },
+      {
+        "group": "Dunsilly",
+        "category": "four_people",
+        "perc": 16.781
+      },
+      {
+        "group": "Dunsilly",
+        "category": "one_person",
+        "perc": 23.091
+      },
+      {
+        "group": "Dunsilly",
+        "category": "three_people",
+        "perc": 17.5583
+      },
+      {
+        "group": "Dunsilly",
+        "category": "two_people",
+        "perc": 30.2698
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Dunsilly",
-        "category": "apprenticeship",
-        "perc": 7.9711
-      },
-      {
-        "group": "Dunsilly",
-        "category": "level_1_qualifications",
-        "perc": 5.0004
-      },
-      {
-        "group": "Dunsilly",
-        "category": "level_2_qualifications",
-        "perc": 14.3268
-      },
-      {
-        "group": "Dunsilly",
-        "category": "level_3_qualifications",
-        "perc": 16.0545
-      },
-      {
-        "group": "Dunsilly",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.4476
-      },
-      {
-        "group": "Dunsilly",
-        "category": "no_qualifications",
-        "perc": 19.9803
-      },
-      {
-        "group": "Dunsilly",
-        "category": "other_qualifications",
-        "perc": 2.2193
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1012,39 +1005,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Dunsilly",
+        "category": "apprenticeship",
+        "perc": 7.9711
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_1_qualifications",
+        "perc": 5.0004
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_2_qualifications",
+        "perc": 14.3268
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_3_qualifications",
+        "perc": 16.0545
+      },
+      {
+        "group": "Dunsilly",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4476
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_qualifications",
+        "perc": 19.9803
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_qualifications",
+        "perc": 2.2193
       }
     ],
     "cob": [
-      {
-        "group": "Dunsilly",
-        "category": "england",
-        "perc": 3.3002
-      },
-      {
-        "group": "Dunsilly",
-        "category": "northern_ireland",
-        "perc": 89.9883
-      },
-      {
-        "group": "Dunsilly",
-        "category": "other_cob",
-        "perc": 4.7336
-      },
-      {
-        "group": "Dunsilly",
-        "category": "republic_of_ireland",
-        "perc": 1.0223
-      },
-      {
-        "group": "Dunsilly",
-        "category": "scotland",
-        "perc": 0.8
-      },
-      {
-        "group": "Dunsilly",
-        "category": "wales",
-        "perc": 0.1556
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1074,19 +1072,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Dunsilly",
+        "category": "england",
+        "perc": 3.3002
+      },
+      {
+        "group": "Dunsilly",
+        "category": "northern_ireland",
+        "perc": 89.9883
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_cob",
+        "perc": 4.7336
+      },
+      {
+        "group": "Dunsilly",
+        "category": "republic_of_ireland",
+        "perc": 1.0223
+      },
+      {
+        "group": "Dunsilly",
+        "category": "scotland",
+        "perc": 0.8
+      },
+      {
+        "group": "Dunsilly",
+        "category": "wales",
+        "perc": 0.1556
       }
     ],
     "mainlang": [
-      {
-        "group": "Dunsilly",
-        "category": "english",
-        "perc": 96.9115
-      },
-      {
-        "group": "Dunsilly",
-        "category": "other_languages",
-        "perc": 3.0885
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1096,29 +1114,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Dunsilly",
+        "category": "english",
+        "perc": 96.9115
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_languages",
+        "perc": 3.0885
       }
     ],
     "age": [
-      {
-        "group": "Dunsilly",
-        "category": "a0to14",
-        "perc": 19.4932
-      },
-      {
-        "group": "Dunsilly",
-        "category": "a15to39",
-        "perc": 29.4788
-      },
-      {
-        "group": "Dunsilly",
-        "category": "a40to64",
-        "perc": 34.2132
-      },
-      {
-        "group": "Dunsilly",
-        "category": "a65plus",
-        "perc": 16.8148
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1138,29 +1146,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a0to14",
+        "perc": 19.4932
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a15to39",
+        "perc": 29.4788
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a40to64",
+        "perc": 34.2132
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a65plus",
+        "perc": 16.8148
       }
     ],
     "provision_care": [
-      {
-        "group": "Dunsilly",
-        "category": "a1to19_hours",
-        "perc": 6.2238
-      },
-      {
-        "group": "Dunsilly",
-        "category": "a20to49_hours",
-        "perc": 2.7347
-      },
-      {
-        "group": "Dunsilly",
-        "category": "a50plus_hours",
-        "perc": 3.3064
-      },
-      {
-        "group": "Dunsilly",
-        "category": "no_care",
-        "perc": 87.735
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1180,29 +1188,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a1to19_hours",
+        "perc": 6.2238
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a20to49_hours",
+        "perc": 2.7347
+      },
+      {
+        "group": "Dunsilly",
+        "category": "a50plus_hours",
+        "perc": 3.3064
+      },
+      {
+        "group": "Dunsilly",
+        "category": "no_care",
+        "perc": 87.735
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Dunsilly",
-        "category": "catholic",
-        "perc": 49.0166
-      },
-      {
-        "group": "Dunsilly",
-        "category": "none",
-        "perc": 7.1119
-      },
-      {
-        "group": "Dunsilly",
-        "category": "other_religions",
-        "perc": 0.8056
-      },
-      {
-        "group": "Dunsilly",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 43.0659
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1222,19 +1230,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Dunsilly",
+        "category": "catholic",
+        "perc": 49.0166
+      },
+      {
+        "group": "Dunsilly",
+        "category": "none",
+        "perc": 7.1119
+      },
+      {
+        "group": "Dunsilly",
+        "category": "other_religions",
+        "perc": 0.8056
+      },
+      {
+        "group": "Dunsilly",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 43.0659
       }
     ],
     "sex": [
-      {
-        "group": "Dunsilly",
-        "category": "females",
-        "perc": 50.1222
-      },
-      {
-        "group": "Dunsilly",
-        "category": "males",
-        "perc": 49.8778
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1244,6 +1262,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Dunsilly",
+        "category": "females",
+        "perc": 50.1222
+      },
+      {
+        "group": "Dunsilly",
+        "category": "males",
+        "perc": 49.8778
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1270,36 +1320,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Dunsilly",
         "category": "FSME",
         "perc": 11.8817
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Dunsilly",
         "category": "FSME",
         "perc": 11.1526
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1362,26 +1402,58 @@
         "group": "Dunsilly",
         "category": "Age 65+",
         "perc": 17.0083
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Dunsilly",
+        "category": "destHEpct",
+        "perc": 52.9
+      },
+      {
+        "group": "Dunsilly",
+        "category": "destFEpct",
+        "perc": 25.8
+      },
+      {
+        "group": "Dunsilly",
+        "category": "destEmploypct",
+        "perc": 11.7
+      },
+      {
+        "group": "Dunsilly",
+        "category": "destTrainpct",
+        "perc": 5.4
+      },
+      {
+        "group": "Dunsilly",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
       }
     ]
   },

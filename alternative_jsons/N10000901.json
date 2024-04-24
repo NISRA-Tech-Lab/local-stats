@@ -546,6 +546,7 @@
         "perc": 50.0087
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -581,6 +582,33 @@
         "geography": "Carntogher",
         "category": "Age 65+",
         "perc": 16.3647
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Carntogher",
+        "category": "destHEpct",
+        "perc": 53.3
+      },
+      {
+        "geography": "Carntogher",
+        "category": "destFEpct",
+        "perc": 16
+      },
+      {
+        "geography": "Carntogher",
+        "category": "destEmploypct",
+        "perc": 7
+      },
+      {
+        "geography": "Carntogher",
+        "category": "destTrainpct",
+        "perc": 21.7
+      },
+      {
+        "geography": "Carntogher",
+        "category": "destUnempUnkpct",
+        "perc": 2
       }
     ]
   },
@@ -816,54 +844,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Carntogher",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Carntogher",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Carntogher",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Carntogher",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Carntogher",
-        "category": "bad",
-        "perc": 4.0077
-      },
-      {
-        "group": "Carntogher",
-        "category": "fair",
-        "perc": 12.4658
-      },
-      {
-        "group": "Carntogher",
-        "category": "good",
-        "perc": 26.8072
-      },
-      {
-        "group": "Carntogher",
-        "category": "very_bad",
-        "perc": 1.532
-      },
-      {
-        "group": "Carntogher",
-        "category": "very_good",
-        "perc": 55.1873
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -888,34 +891,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Carntogher",
+        "category": "bad",
+        "perc": 4.0077
+      },
+      {
+        "group": "Carntogher",
+        "category": "fair",
+        "perc": 12.4658
+      },
+      {
+        "group": "Carntogher",
+        "category": "good",
+        "perc": 26.8072
+      },
+      {
+        "group": "Carntogher",
+        "category": "very_bad",
+        "perc": 1.532
+      },
+      {
+        "group": "Carntogher",
+        "category": "very_good",
+        "perc": 55.1873
       }
     ],
     "hh_size": [
-      {
-        "group": "Carntogher",
-        "category": "five_people",
-        "perc": 18.4219
-      },
-      {
-        "group": "Carntogher",
-        "category": "four_people",
-        "perc": 15.646
-      },
-      {
-        "group": "Carntogher",
-        "category": "one_person",
-        "perc": 23.6205
-      },
-      {
-        "group": "Carntogher",
-        "category": "three_people",
-        "perc": 15.0908
-      },
-      {
-        "group": "Carntogher",
-        "category": "two_people",
-        "perc": 27.2207
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -940,44 +943,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Carntogher",
+        "category": "five_people",
+        "perc": 18.4219
+      },
+      {
+        "group": "Carntogher",
+        "category": "four_people",
+        "perc": 15.646
+      },
+      {
+        "group": "Carntogher",
+        "category": "one_person",
+        "perc": 23.6205
+      },
+      {
+        "group": "Carntogher",
+        "category": "three_people",
+        "perc": 15.0908
+      },
+      {
+        "group": "Carntogher",
+        "category": "two_people",
+        "perc": 27.2207
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Carntogher",
-        "category": "apprenticeship",
-        "perc": 7.9464
-      },
-      {
-        "group": "Carntogher",
-        "category": "level_1_qualifications",
-        "perc": 5.2291
-      },
-      {
-        "group": "Carntogher",
-        "category": "level_2_qualifications",
-        "perc": 13.1222
-      },
-      {
-        "group": "Carntogher",
-        "category": "level_3_qualifications",
-        "perc": 16.4028
-      },
-      {
-        "group": "Carntogher",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.035
-      },
-      {
-        "group": "Carntogher",
-        "category": "no_qualifications",
-        "perc": 25.7117
-      },
-      {
-        "group": "Carntogher",
-        "category": "other_qualifications",
-        "perc": 1.5527
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1012,39 +1005,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Carntogher",
+        "category": "apprenticeship",
+        "perc": 7.9464
+      },
+      {
+        "group": "Carntogher",
+        "category": "level_1_qualifications",
+        "perc": 5.2291
+      },
+      {
+        "group": "Carntogher",
+        "category": "level_2_qualifications",
+        "perc": 13.1222
+      },
+      {
+        "group": "Carntogher",
+        "category": "level_3_qualifications",
+        "perc": 16.4028
+      },
+      {
+        "group": "Carntogher",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.035
+      },
+      {
+        "group": "Carntogher",
+        "category": "no_qualifications",
+        "perc": 25.7117
+      },
+      {
+        "group": "Carntogher",
+        "category": "other_qualifications",
+        "perc": 1.5527
       }
     ],
     "cob": [
-      {
-        "group": "Carntogher",
-        "category": "england",
-        "perc": 2.2776
-      },
-      {
-        "group": "Carntogher",
-        "category": "northern_ireland",
-        "perc": 93.1613
-      },
-      {
-        "group": "Carntogher",
-        "category": "other_cob",
-        "perc": 2.4873
-      },
-      {
-        "group": "Carntogher",
-        "category": "republic_of_ireland",
-        "perc": 1.5145
-      },
-      {
-        "group": "Carntogher",
-        "category": "scotland",
-        "perc": 0.4951
-      },
-      {
-        "group": "Carntogher",
-        "category": "wales",
-        "perc": 0.0641
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1074,19 +1072,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Carntogher",
+        "category": "england",
+        "perc": 2.2776
+      },
+      {
+        "group": "Carntogher",
+        "category": "northern_ireland",
+        "perc": 93.1613
+      },
+      {
+        "group": "Carntogher",
+        "category": "other_cob",
+        "perc": 2.4873
+      },
+      {
+        "group": "Carntogher",
+        "category": "republic_of_ireland",
+        "perc": 1.5145
+      },
+      {
+        "group": "Carntogher",
+        "category": "scotland",
+        "perc": 0.4951
+      },
+      {
+        "group": "Carntogher",
+        "category": "wales",
+        "perc": 0.0641
       }
     ],
     "mainlang": [
-      {
-        "group": "Carntogher",
-        "category": "english",
-        "perc": 97.2382
-      },
-      {
-        "group": "Carntogher",
-        "category": "other_languages",
-        "perc": 2.7618
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1096,29 +1114,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Carntogher",
+        "category": "english",
+        "perc": 97.2382
+      },
+      {
+        "group": "Carntogher",
+        "category": "other_languages",
+        "perc": 2.7618
       }
     ],
     "age": [
-      {
-        "group": "Carntogher",
-        "category": "a0to14",
-        "perc": 22.1342
-      },
-      {
-        "group": "Carntogher",
-        "category": "a15to39",
-        "perc": 30.5976
-      },
-      {
-        "group": "Carntogher",
-        "category": "a40to64",
-        "perc": 31.052
-      },
-      {
-        "group": "Carntogher",
-        "category": "a65plus",
-        "perc": 16.2162
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1138,29 +1146,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Carntogher",
+        "category": "a0to14",
+        "perc": 22.1342
+      },
+      {
+        "group": "Carntogher",
+        "category": "a15to39",
+        "perc": 30.5976
+      },
+      {
+        "group": "Carntogher",
+        "category": "a40to64",
+        "perc": 31.052
+      },
+      {
+        "group": "Carntogher",
+        "category": "a65plus",
+        "perc": 16.2162
       }
     ],
     "provision_care": [
-      {
-        "group": "Carntogher",
-        "category": "a1to19_hours",
-        "perc": 4.9448
-      },
-      {
-        "group": "Carntogher",
-        "category": "a20to49_hours",
-        "perc": 2.8265
-      },
-      {
-        "group": "Carntogher",
-        "category": "a50plus_hours",
-        "perc": 3.5222
-      },
-      {
-        "group": "Carntogher",
-        "category": "no_care",
-        "perc": 88.7064
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1180,29 +1188,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Carntogher",
+        "category": "a1to19_hours",
+        "perc": 4.9448
+      },
+      {
+        "group": "Carntogher",
+        "category": "a20to49_hours",
+        "perc": 2.8265
+      },
+      {
+        "group": "Carntogher",
+        "category": "a50plus_hours",
+        "perc": 3.5222
+      },
+      {
+        "group": "Carntogher",
+        "category": "no_care",
+        "perc": 88.7064
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Carntogher",
-        "category": "catholic",
-        "perc": 74.5282
-      },
-      {
-        "group": "Carntogher",
-        "category": "none",
-        "perc": 2.6386
-      },
-      {
-        "group": "Carntogher",
-        "category": "other_religions",
-        "perc": 0.2563
-      },
-      {
-        "group": "Carntogher",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 22.5769
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1222,19 +1230,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Carntogher",
+        "category": "catholic",
+        "perc": 74.5282
+      },
+      {
+        "group": "Carntogher",
+        "category": "none",
+        "perc": 2.6386
+      },
+      {
+        "group": "Carntogher",
+        "category": "other_religions",
+        "perc": 0.2563
+      },
+      {
+        "group": "Carntogher",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 22.5769
       }
     ],
     "sex": [
-      {
-        "group": "Carntogher",
-        "category": "females",
-        "perc": 49.9913
-      },
-      {
-        "group": "Carntogher",
-        "category": "males",
-        "perc": 50.0087
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1244,6 +1262,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Carntogher",
+        "category": "females",
+        "perc": 49.9913
+      },
+      {
+        "group": "Carntogher",
+        "category": "males",
+        "perc": 50.0087
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1270,36 +1320,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Carntogher",
         "category": "FSME",
         "perc": 12.2867
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Carntogher",
         "category": "FSME",
         "perc": 14.0446
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1362,26 +1402,58 @@
         "group": "Carntogher",
         "category": "Age 65+",
         "perc": 16.3647
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Carntogher",
+        "category": "destHEpct",
+        "perc": 53.3
+      },
+      {
+        "group": "Carntogher",
+        "category": "destFEpct",
+        "perc": 16
+      },
+      {
+        "group": "Carntogher",
+        "category": "destEmploypct",
+        "perc": 7
+      },
+      {
+        "group": "Carntogher",
+        "category": "destTrainpct",
+        "perc": 21.7
+      },
+      {
+        "group": "Carntogher",
+        "category": "destUnempUnkpct",
+        "perc": 2
       }
     ]
   },

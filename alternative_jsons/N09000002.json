@@ -599,6 +599,28 @@
         "perc": 49.5152
       }
     ],
+    "LMS": [
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "EMPN",
+        "perc": 106000
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "EMPR",
+        "perc": 75.2
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "UNEMPR",
+        "perc": 2.7
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "INACTR",
+        "perc": 22.6
+      }
+    ],
     "BRES": [
       {
         "geography": "Armagh City, Banbridge and Craigavon",
@@ -655,6 +677,33 @@
         "geography": "Armagh City, Banbridge and Craigavon",
         "category": "Age 65+",
         "perc": 16.3589
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "destHEpct",
+        "perc": 39.4
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "destFEpct",
+        "perc": 37.4
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "destEmploypct",
+        "perc": 7.4
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "geography": "Armagh City, Banbridge and Craigavon",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },
@@ -1095,54 +1144,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Armagh City, Banbridge and Craigavon",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh City, Banbridge and Craigavon",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Armagh City, Banbridge and Craigavon",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh City, Banbridge and Craigavon",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "bad",
-        "perc": 5.2489
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "fair",
-        "perc": 12.7479
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "good",
-        "perc": 28.3916
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "very_bad",
-        "perc": 1.6556
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "very_good",
-        "perc": 51.956
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1167,34 +1191,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "bad",
+        "perc": 5.2489
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "fair",
+        "perc": 12.7479
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "good",
+        "perc": 28.3916
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "very_bad",
+        "perc": 1.6556
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "very_good",
+        "perc": 51.956
       }
     ],
     "hh_size": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "five_people",
-        "perc": 10.6652
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "four_people",
-        "perc": 15.2138
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "one_person",
-        "perc": 27.6548
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "three_people",
-        "perc": 16.9412
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "two_people",
-        "perc": 29.525
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1219,44 +1243,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "five_people",
+        "perc": 10.6652
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "four_people",
+        "perc": 15.2138
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "one_person",
+        "perc": 27.6548
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "three_people",
+        "perc": 16.9412
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "two_people",
+        "perc": 29.525
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "apprenticeship",
-        "perc": 6.5042
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "level_1_qualifications",
-        "perc": 5.8458
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "level_2_qualifications",
-        "perc": 14.1233
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "level_3_qualifications",
-        "perc": 15.544
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.3786
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "no_qualifications",
-        "perc": 25.173
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "other_qualifications",
-        "perc": 2.4312
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1291,39 +1305,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "apprenticeship",
+        "perc": 6.5042
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "level_1_qualifications",
+        "perc": 5.8458
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "level_2_qualifications",
+        "perc": 14.1233
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "level_3_qualifications",
+        "perc": 15.544
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.3786
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "no_qualifications",
+        "perc": 25.173
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "other_qualifications",
+        "perc": 2.4312
       }
     ],
     "cob": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "england",
-        "perc": 3.2027
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "northern_ireland",
-        "perc": 85.4877
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "other_cob",
-        "perc": 8.6144
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "republic_of_ireland",
-        "perc": 1.8943
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "scotland",
-        "perc": 0.649
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "wales",
-        "perc": 0.1518
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1353,19 +1372,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "england",
+        "perc": 3.2027
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "northern_ireland",
+        "perc": 85.4877
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "other_cob",
+        "perc": 8.6144
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "republic_of_ireland",
+        "perc": 1.8943
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "scotland",
+        "perc": 0.649
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "wales",
+        "perc": 0.1518
       }
     ],
     "mainlang": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "english",
-        "perc": 93.1674
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "other_languages",
-        "perc": 6.8326
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1375,29 +1414,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "english",
+        "perc": 93.1674
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "other_languages",
+        "perc": 6.8326
       }
     ],
     "age": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a0to14",
-        "perc": 20.7724
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a15to39",
-        "perc": 30.9614
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a40to64",
-        "perc": 32.2639
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a65plus",
-        "perc": 16.0023
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1417,29 +1446,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a0to14",
+        "perc": 20.7724
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a15to39",
+        "perc": 30.9614
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a40to64",
+        "perc": 32.2639
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a65plus",
+        "perc": 16.0023
       }
     ],
     "provision_care": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a1to19_hours",
-        "perc": 5.5634
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a20to49_hours",
-        "perc": 2.9333
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "a50plus_hours",
-        "perc": 3.6038
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "no_care",
-        "perc": 87.8996
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1459,29 +1488,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a1to19_hours",
+        "perc": 5.5634
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a20to49_hours",
+        "perc": 2.9333
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "a50plus_hours",
+        "perc": 3.6038
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "no_care",
+        "perc": 87.8996
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "catholic",
-        "perc": 43.8442
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "none",
-        "perc": 8.2449
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "other_religions",
-        "perc": 1.2334
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 46.6774
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1501,19 +1530,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "catholic",
+        "perc": 43.8442
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "none",
+        "perc": 8.2449
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "other_religions",
+        "perc": 1.2334
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 46.6774
       }
     ],
     "sex": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "females",
-        "perc": 50.4848
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "males",
-        "perc": 49.5152
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1523,29 +1562,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "females",
+        "perc": 50.4848
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "males",
+        "perc": 49.5152
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "EMPN",
+        "perc": 106000
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "EMPR",
+        "perc": 75.2
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "UNEMPR",
+        "perc": 2.7
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "INACTR",
+        "perc": 22.6
       }
     ],
     "BRES": [
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Construction",
-        "perc": 5.8562
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Manufacturing",
-        "perc": 16.6394
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Services",
-        "perc": 76.008
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Other",
-        "perc": 1.4964
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1565,6 +1636,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "Construction",
+        "perc": 5.8562
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "Manufacturing",
+        "perc": 16.6394
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "Services",
+        "perc": 76.008
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "Other",
+        "perc": 1.4964
       }
     ],
     "Primary": [
@@ -1577,11 +1668,6 @@
         "group": "Armagh City, Banbridge and Craigavon",
         "category": "FSME",
         "perc": 18.4931
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1594,11 +1680,6 @@
         "group": "Armagh City, Banbridge and Craigavon",
         "category": "FSME",
         "perc": 16.5852
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1623,26 +1704,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Age 0-15",
-        "perc": 22.0646
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Age 16-39",
-        "perc": 29.2281
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Age 40-64",
-        "perc": 32.3483
-      },
-      {
-        "group": "Armagh City, Banbridge and Craigavon",
-        "category": "Age 65+",
-        "perc": 16.3589
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1663,24 +1724,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh City, Banbridge and Craigavon",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 22.0646
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh City, Banbridge and Craigavon",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 29.2281
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh City, Banbridge and Craigavon",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 32.3483
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "Age 65+",
+        "perc": 16.3589
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "destHEpct",
+        "perc": 39.4
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "destFEpct",
+        "perc": 37.4
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "destEmploypct",
+        "perc": 7.4
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "group": "Armagh City, Banbridge and Craigavon",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },

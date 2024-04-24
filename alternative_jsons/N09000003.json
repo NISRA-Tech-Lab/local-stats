@@ -614,6 +614,28 @@
         "perc": 48.6599
       }
     ],
+    "LMS": [
+      {
+        "geography": "Belfast",
+        "category": "EMPN",
+        "perc": 150000
+      },
+      {
+        "geography": "Belfast",
+        "category": "EMPR",
+        "perc": 65.5
+      },
+      {
+        "geography": "Belfast",
+        "category": "UNEMPR",
+        "perc": 3.3
+      },
+      {
+        "geography": "Belfast",
+        "category": "INACTR",
+        "perc": 32.1
+      }
+    ],
     "BRES": [
       {
         "geography": "Belfast",
@@ -670,6 +692,33 @@
         "geography": "Belfast",
         "category": "Age 65+",
         "perc": 14.9392
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Belfast",
+        "category": "destHEpct",
+        "perc": 41.7
+      },
+      {
+        "geography": "Belfast",
+        "category": "destFEpct",
+        "perc": 20.5
+      },
+      {
+        "geography": "Belfast",
+        "category": "destEmploypct",
+        "perc": 18
+      },
+      {
+        "geography": "Belfast",
+        "category": "destTrainpct",
+        "perc": 14.4
+      },
+      {
+        "geography": "Belfast",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },
@@ -1110,54 +1159,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Belfast",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Belfast",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Belfast",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Belfast",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Belfast",
-        "category": "bad",
-        "perc": 7.319
-      },
-      {
-        "group": "Belfast",
-        "category": "fair",
-        "perc": 14.1716
-      },
-      {
-        "group": "Belfast",
-        "category": "good",
-        "perc": 27.9676
-      },
-      {
-        "group": "Belfast",
-        "category": "very_bad",
-        "perc": 2.6993
-      },
-      {
-        "group": "Belfast",
-        "category": "very_good",
-        "perc": 47.8425
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1182,34 +1206,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Belfast",
+        "category": "bad",
+        "perc": 7.319
+      },
+      {
+        "group": "Belfast",
+        "category": "fair",
+        "perc": 14.1716
+      },
+      {
+        "group": "Belfast",
+        "category": "good",
+        "perc": 27.9676
+      },
+      {
+        "group": "Belfast",
+        "category": "very_bad",
+        "perc": 2.6993
+      },
+      {
+        "group": "Belfast",
+        "category": "very_good",
+        "perc": 47.8425
       }
     ],
     "hh_size": [
-      {
-        "group": "Belfast",
-        "category": "five_people",
-        "perc": 6.7134
-      },
-      {
-        "group": "Belfast",
-        "category": "four_people",
-        "perc": 11.3747
-      },
-      {
-        "group": "Belfast",
-        "category": "one_person",
-        "perc": 36.3399
-      },
-      {
-        "group": "Belfast",
-        "category": "three_people",
-        "perc": 15.7451
-      },
-      {
-        "group": "Belfast",
-        "category": "two_people",
-        "perc": 29.8268
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1234,44 +1258,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Belfast",
+        "category": "five_people",
+        "perc": 6.7134
+      },
+      {
+        "group": "Belfast",
+        "category": "four_people",
+        "perc": 11.3747
+      },
+      {
+        "group": "Belfast",
+        "category": "one_person",
+        "perc": 36.3399
+      },
+      {
+        "group": "Belfast",
+        "category": "three_people",
+        "perc": 15.7451
+      },
+      {
+        "group": "Belfast",
+        "category": "two_people",
+        "perc": 29.8268
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Belfast",
-        "category": "apprenticeship",
-        "perc": 4.9809
-      },
-      {
-        "group": "Belfast",
-        "category": "level_1_qualifications",
-        "perc": 5.6755
-      },
-      {
-        "group": "Belfast",
-        "category": "level_2_qualifications",
-        "perc": 12.3148
-      },
-      {
-        "group": "Belfast",
-        "category": "level_3_qualifications",
-        "perc": 16.5797
-      },
-      {
-        "group": "Belfast",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.4268
-      },
-      {
-        "group": "Belfast",
-        "category": "no_qualifications",
-        "perc": 23.9218
-      },
-      {
-        "group": "Belfast",
-        "category": "other_qualifications",
-        "perc": 2.1006
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1306,39 +1320,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Belfast",
+        "category": "apprenticeship",
+        "perc": 4.9809
+      },
+      {
+        "group": "Belfast",
+        "category": "level_1_qualifications",
+        "perc": 5.6755
+      },
+      {
+        "group": "Belfast",
+        "category": "level_2_qualifications",
+        "perc": 12.3148
+      },
+      {
+        "group": "Belfast",
+        "category": "level_3_qualifications",
+        "perc": 16.5797
+      },
+      {
+        "group": "Belfast",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4268
+      },
+      {
+        "group": "Belfast",
+        "category": "no_qualifications",
+        "perc": 23.9218
+      },
+      {
+        "group": "Belfast",
+        "category": "other_qualifications",
+        "perc": 2.1006
       }
     ],
     "cob": [
-      {
-        "group": "Belfast",
-        "category": "england",
-        "perc": 3.5233
-      },
-      {
-        "group": "Belfast",
-        "category": "northern_ireland",
-        "perc": 83.8496
-      },
-      {
-        "group": "Belfast",
-        "category": "other_cob",
-        "perc": 9.8279
-      },
-      {
-        "group": "Belfast",
-        "category": "republic_of_ireland",
-        "perc": 1.8589
-      },
-      {
-        "group": "Belfast",
-        "category": "scotland",
-        "perc": 0.804
-      },
-      {
-        "group": "Belfast",
-        "category": "wales",
-        "perc": 0.1364
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1368,19 +1387,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Belfast",
+        "category": "england",
+        "perc": 3.5233
+      },
+      {
+        "group": "Belfast",
+        "category": "northern_ireland",
+        "perc": 83.8496
+      },
+      {
+        "group": "Belfast",
+        "category": "other_cob",
+        "perc": 9.8279
+      },
+      {
+        "group": "Belfast",
+        "category": "republic_of_ireland",
+        "perc": 1.8589
+      },
+      {
+        "group": "Belfast",
+        "category": "scotland",
+        "perc": 0.804
+      },
+      {
+        "group": "Belfast",
+        "category": "wales",
+        "perc": 0.1364
       }
     ],
     "mainlang": [
-      {
-        "group": "Belfast",
-        "category": "english",
-        "perc": 93.0009
-      },
-      {
-        "group": "Belfast",
-        "category": "other_languages",
-        "perc": 6.9991
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1390,29 +1429,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Belfast",
+        "category": "english",
+        "perc": 93.0009
+      },
+      {
+        "group": "Belfast",
+        "category": "other_languages",
+        "perc": 6.9991
       }
     ],
     "age": [
-      {
-        "group": "Belfast",
-        "category": "a0to14",
-        "perc": 18.0442
-      },
-      {
-        "group": "Belfast",
-        "category": "a15to39",
-        "perc": 37.1347
-      },
-      {
-        "group": "Belfast",
-        "category": "a40to64",
-        "perc": 30.1009
-      },
-      {
-        "group": "Belfast",
-        "category": "a65plus",
-        "perc": 14.7201
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1432,29 +1461,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Belfast",
+        "category": "a0to14",
+        "perc": 18.0442
+      },
+      {
+        "group": "Belfast",
+        "category": "a15to39",
+        "perc": 37.1347
+      },
+      {
+        "group": "Belfast",
+        "category": "a40to64",
+        "perc": 30.1009
+      },
+      {
+        "group": "Belfast",
+        "category": "a65plus",
+        "perc": 14.7201
       }
     ],
     "provision_care": [
-      {
-        "group": "Belfast",
-        "category": "a1to19_hours",
-        "perc": 5.2621
-      },
-      {
-        "group": "Belfast",
-        "category": "a20to49_hours",
-        "perc": 3.086
-      },
-      {
-        "group": "Belfast",
-        "category": "a50plus_hours",
-        "perc": 3.9837
-      },
-      {
-        "group": "Belfast",
-        "category": "no_care",
-        "perc": 87.6682
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1474,29 +1503,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Belfast",
+        "category": "a1to19_hours",
+        "perc": 5.2621
+      },
+      {
+        "group": "Belfast",
+        "category": "a20to49_hours",
+        "perc": 3.086
+      },
+      {
+        "group": "Belfast",
+        "category": "a50plus_hours",
+        "perc": 3.9837
+      },
+      {
+        "group": "Belfast",
+        "category": "no_care",
+        "perc": 87.6682
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Belfast",
-        "category": "catholic",
-        "perc": 48.7152
-      },
-      {
-        "group": "Belfast",
-        "category": "none",
-        "perc": 11.5842
-      },
-      {
-        "group": "Belfast",
-        "category": "other_religions",
-        "perc": 3.3293
-      },
-      {
-        "group": "Belfast",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 36.3713
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1516,19 +1545,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Belfast",
+        "category": "catholic",
+        "perc": 48.7152
+      },
+      {
+        "group": "Belfast",
+        "category": "none",
+        "perc": 11.5842
+      },
+      {
+        "group": "Belfast",
+        "category": "other_religions",
+        "perc": 3.3293
+      },
+      {
+        "group": "Belfast",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 36.3713
       }
     ],
     "sex": [
-      {
-        "group": "Belfast",
-        "category": "females",
-        "perc": 51.3401
-      },
-      {
-        "group": "Belfast",
-        "category": "males",
-        "perc": 48.6599
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1538,29 +1577,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Belfast",
+        "category": "females",
+        "perc": 51.3401
+      },
+      {
+        "group": "Belfast",
+        "category": "males",
+        "perc": 48.6599
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Belfast",
+        "category": "EMPN",
+        "perc": 150000
+      },
+      {
+        "group": "Belfast",
+        "category": "EMPR",
+        "perc": 65.5
+      },
+      {
+        "group": "Belfast",
+        "category": "UNEMPR",
+        "perc": 3.3
+      },
+      {
+        "group": "Belfast",
+        "category": "INACTR",
+        "perc": 32.1
       }
     ],
     "BRES": [
-      {
-        "group": "Belfast",
-        "category": "Construction",
-        "perc": 1.9829
-      },
-      {
-        "group": "Belfast",
-        "category": "Manufacturing",
-        "perc": 3.8774
-      },
-      {
-        "group": "Belfast",
-        "category": "Services",
-        "perc": 93.0128
-      },
-      {
-        "group": "Belfast",
-        "category": "Other",
-        "perc": 1.127
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1580,6 +1651,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Belfast",
+        "category": "Construction",
+        "perc": 1.9829
+      },
+      {
+        "group": "Belfast",
+        "category": "Manufacturing",
+        "perc": 3.8774
+      },
+      {
+        "group": "Belfast",
+        "category": "Services",
+        "perc": 93.0128
+      },
+      {
+        "group": "Belfast",
+        "category": "Other",
+        "perc": 1.127
       }
     ],
     "Primary": [
@@ -1592,11 +1683,6 @@
         "group": "Belfast",
         "category": "FSME",
         "perc": 31.2377
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1609,11 +1695,6 @@
         "group": "Belfast",
         "category": "FSME",
         "perc": 28.8016
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1638,26 +1719,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Belfast",
-        "category": "Age 0-15",
-        "perc": 19.0776
-      },
-      {
-        "group": "Belfast",
-        "category": "Age 16-39",
-        "perc": 36.1512
-      },
-      {
-        "group": "Belfast",
-        "category": "Age 40-64",
-        "perc": 29.832
-      },
-      {
-        "group": "Belfast",
-        "category": "Age 65+",
-        "perc": 14.9392
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1678,24 +1739,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Belfast",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 19.0776
       },
       {
-        "group": "Northern Ireland",
+        "group": "Belfast",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 36.1512
       },
       {
-        "group": "Northern Ireland",
+        "group": "Belfast",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 29.832
+      },
+      {
+        "group": "Belfast",
+        "category": "Age 65+",
+        "perc": 14.9392
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Belfast",
+        "category": "destHEpct",
+        "perc": 41.7
+      },
+      {
+        "group": "Belfast",
+        "category": "destFEpct",
+        "perc": 20.5
+      },
+      {
+        "group": "Belfast",
+        "category": "destEmploypct",
+        "perc": 18
+      },
+      {
+        "group": "Belfast",
+        "category": "destTrainpct",
+        "perc": 14.4
+      },
+      {
+        "group": "Belfast",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },

@@ -556,6 +556,7 @@
         "perc": 48.6526
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "Omagh",
         "category": "Age 65+",
         "perc": 18.9962
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Omagh",
+        "category": "destHEpct",
+        "perc": 41.6
+      },
+      {
+        "geography": "Omagh",
+        "category": "destFEpct",
+        "perc": 32.6
+      },
+      {
+        "geography": "Omagh",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "geography": "Omagh",
+        "category": "destTrainpct",
+        "perc": 10.7
+      },
+      {
+        "geography": "Omagh",
+        "category": "destUnempUnkpct",
+        "perc": 2.1
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Omagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Omagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Omagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Omagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Omagh",
-        "category": "bad",
-        "perc": 6.8236
-      },
-      {
-        "group": "Omagh",
-        "category": "fair",
-        "perc": 16.7803
-      },
-      {
-        "group": "Omagh",
-        "category": "good",
-        "perc": 29.026
-      },
-      {
-        "group": "Omagh",
-        "category": "very_bad",
-        "perc": 2.2186
-      },
-      {
-        "group": "Omagh",
-        "category": "very_good",
-        "perc": 45.1515
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Omagh",
+        "category": "bad",
+        "perc": 6.8236
+      },
+      {
+        "group": "Omagh",
+        "category": "fair",
+        "perc": 16.7803
+      },
+      {
+        "group": "Omagh",
+        "category": "good",
+        "perc": 29.026
+      },
+      {
+        "group": "Omagh",
+        "category": "very_bad",
+        "perc": 2.2186
+      },
+      {
+        "group": "Omagh",
+        "category": "very_good",
+        "perc": 45.1515
       }
     ],
     "hh_size": [
-      {
-        "group": "Omagh",
-        "category": "five_people",
-        "perc": 7.3769
-      },
-      {
-        "group": "Omagh",
-        "category": "four_people",
-        "perc": 11.6885
-      },
-      {
-        "group": "Omagh",
-        "category": "one_person",
-        "perc": 37.296
-      },
-      {
-        "group": "Omagh",
-        "category": "three_people",
-        "perc": 14.9533
-      },
-      {
-        "group": "Omagh",
-        "category": "two_people",
-        "perc": 28.6854
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Omagh",
+        "category": "five_people",
+        "perc": 7.3769
+      },
+      {
+        "group": "Omagh",
+        "category": "four_people",
+        "perc": 11.6885
+      },
+      {
+        "group": "Omagh",
+        "category": "one_person",
+        "perc": 37.296
+      },
+      {
+        "group": "Omagh",
+        "category": "three_people",
+        "perc": 14.9533
+      },
+      {
+        "group": "Omagh",
+        "category": "two_people",
+        "perc": 28.6854
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Omagh",
-        "category": "apprenticeship",
-        "perc": 6.2899
-      },
-      {
-        "group": "Omagh",
-        "category": "level_1_qualifications",
-        "perc": 5.7713
-      },
-      {
-        "group": "Omagh",
-        "category": "level_2_qualifications",
-        "perc": 13.1117
-      },
-      {
-        "group": "Omagh",
-        "category": "level_3_qualifications",
-        "perc": 14.3617
-      },
-      {
-        "group": "Omagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 29.7141
-      },
-      {
-        "group": "Omagh",
-        "category": "no_qualifications",
-        "perc": 27.859
-      },
-      {
-        "group": "Omagh",
-        "category": "other_qualifications",
-        "perc": 2.8923
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Omagh",
+        "category": "apprenticeship",
+        "perc": 6.2899
+      },
+      {
+        "group": "Omagh",
+        "category": "level_1_qualifications",
+        "perc": 5.7713
+      },
+      {
+        "group": "Omagh",
+        "category": "level_2_qualifications",
+        "perc": 13.1117
+      },
+      {
+        "group": "Omagh",
+        "category": "level_3_qualifications",
+        "perc": 14.3617
+      },
+      {
+        "group": "Omagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.7141
+      },
+      {
+        "group": "Omagh",
+        "category": "no_qualifications",
+        "perc": 27.859
+      },
+      {
+        "group": "Omagh",
+        "category": "other_qualifications",
+        "perc": 2.8923
       }
     ],
     "cob": [
-      {
-        "group": "Omagh",
-        "category": "england",
-        "perc": 3.8045
-      },
-      {
-        "group": "Omagh",
-        "category": "northern_ireland",
-        "perc": 82.5955
-      },
-      {
-        "group": "Omagh",
-        "category": "other_cob",
-        "perc": 10.158
-      },
-      {
-        "group": "Omagh",
-        "category": "republic_of_ireland",
-        "perc": 2.6843
-      },
-      {
-        "group": "Omagh",
-        "category": "scotland",
-        "perc": 0.6007
-      },
-      {
-        "group": "Omagh",
-        "category": "wales",
-        "perc": 0.1569
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Omagh",
+        "category": "england",
+        "perc": 3.8045
+      },
+      {
+        "group": "Omagh",
+        "category": "northern_ireland",
+        "perc": 82.5955
+      },
+      {
+        "group": "Omagh",
+        "category": "other_cob",
+        "perc": 10.158
+      },
+      {
+        "group": "Omagh",
+        "category": "republic_of_ireland",
+        "perc": 2.6843
+      },
+      {
+        "group": "Omagh",
+        "category": "scotland",
+        "perc": 0.6007
+      },
+      {
+        "group": "Omagh",
+        "category": "wales",
+        "perc": 0.1569
       }
     ],
     "mainlang": [
-      {
-        "group": "Omagh",
-        "category": "english",
-        "perc": 91.5799
-      },
-      {
-        "group": "Omagh",
-        "category": "other_languages",
-        "perc": 8.4201
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Omagh",
+        "category": "english",
+        "perc": 91.5799
+      },
+      {
+        "group": "Omagh",
+        "category": "other_languages",
+        "perc": 8.4201
       }
     ],
     "age": [
-      {
-        "group": "Omagh",
-        "category": "a0to14",
-        "perc": 17.3864
-      },
-      {
-        "group": "Omagh",
-        "category": "a15to39",
-        "perc": 30.855
-      },
-      {
-        "group": "Omagh",
-        "category": "a40to64",
-        "perc": 32.987
-      },
-      {
-        "group": "Omagh",
-        "category": "a65plus",
-        "perc": 18.7716
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Omagh",
+        "category": "a0to14",
+        "perc": 17.3864
+      },
+      {
+        "group": "Omagh",
+        "category": "a15to39",
+        "perc": 30.855
+      },
+      {
+        "group": "Omagh",
+        "category": "a40to64",
+        "perc": 32.987
+      },
+      {
+        "group": "Omagh",
+        "category": "a65plus",
+        "perc": 18.7716
       }
     ],
     "provision_care": [
-      {
-        "group": "Omagh",
-        "category": "a1to19_hours",
-        "perc": 4.5306
-      },
-      {
-        "group": "Omagh",
-        "category": "a20to49_hours",
-        "perc": 3.1639
-      },
-      {
-        "group": "Omagh",
-        "category": "a50plus_hours",
-        "perc": 3.698
-      },
-      {
-        "group": "Omagh",
-        "category": "no_care",
-        "perc": 88.6075
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Omagh",
+        "category": "a1to19_hours",
+        "perc": 4.5306
+      },
+      {
+        "group": "Omagh",
+        "category": "a20to49_hours",
+        "perc": 3.1639
+      },
+      {
+        "group": "Omagh",
+        "category": "a50plus_hours",
+        "perc": 3.698
+      },
+      {
+        "group": "Omagh",
+        "category": "no_care",
+        "perc": 88.6075
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Omagh",
-        "category": "catholic",
-        "perc": 69.8214
-      },
-      {
-        "group": "Omagh",
-        "category": "none",
-        "perc": 5.2706
-      },
-      {
-        "group": "Omagh",
-        "category": "other_religions",
-        "perc": 1.1742
-      },
-      {
-        "group": "Omagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 23.7338
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Omagh",
+        "category": "catholic",
+        "perc": 69.8214
+      },
+      {
+        "group": "Omagh",
+        "category": "none",
+        "perc": 5.2706
+      },
+      {
+        "group": "Omagh",
+        "category": "other_religions",
+        "perc": 1.1742
+      },
+      {
+        "group": "Omagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.7338
       }
     ],
     "sex": [
-      {
-        "group": "Omagh",
-        "category": "females",
-        "perc": 51.3474
-      },
-      {
-        "group": "Omagh",
-        "category": "males",
-        "perc": 48.6526
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Omagh",
+        "category": "females",
+        "perc": 51.3474
+      },
+      {
+        "group": "Omagh",
+        "category": "males",
+        "perc": 48.6526
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Omagh",
         "category": "FSME",
         "perc": 24.6807
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Omagh",
         "category": "FSME",
         "perc": 23.6142
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "Omagh",
         "category": "Age 65+",
         "perc": 18.9962
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Omagh",
+        "category": "destHEpct",
+        "perc": 41.6
+      },
+      {
+        "group": "Omagh",
+        "category": "destFEpct",
+        "perc": 32.6
+      },
+      {
+        "group": "Omagh",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Omagh",
+        "category": "destTrainpct",
+        "perc": 10.7
+      },
+      {
+        "group": "Omagh",
+        "category": "destUnempUnkpct",
+        "perc": 2.1
       }
     ]
   },

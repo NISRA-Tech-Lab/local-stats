@@ -556,6 +556,7 @@
         "perc": 49.714
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "Faughan",
         "category": "Age 65+",
         "perc": 16.0436
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Faughan",
+        "category": "destHEpct",
+        "perc": 45.1
+      },
+      {
+        "geography": "Faughan",
+        "category": "destFEpct",
+        "perc": 27.1
+      },
+      {
+        "geography": "Faughan",
+        "category": "destEmploypct",
+        "perc": 14.1
+      },
+      {
+        "geography": "Faughan",
+        "category": "destTrainpct",
+        "perc": 9.4
+      },
+      {
+        "geography": "Faughan",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Faughan",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Faughan",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Faughan",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Faughan",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Faughan",
-        "category": "bad",
-        "perc": 5.3759
-      },
-      {
-        "group": "Faughan",
-        "category": "fair",
-        "perc": 12.8522
-      },
-      {
-        "group": "Faughan",
-        "category": "good",
-        "perc": 27.0199
-      },
-      {
-        "group": "Faughan",
-        "category": "very_bad",
-        "perc": 1.6221
-      },
-      {
-        "group": "Faughan",
-        "category": "very_good",
-        "perc": 53.1299
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Faughan",
+        "category": "bad",
+        "perc": 5.3759
+      },
+      {
+        "group": "Faughan",
+        "category": "fair",
+        "perc": 12.8522
+      },
+      {
+        "group": "Faughan",
+        "category": "good",
+        "perc": 27.0199
+      },
+      {
+        "group": "Faughan",
+        "category": "very_bad",
+        "perc": 1.6221
+      },
+      {
+        "group": "Faughan",
+        "category": "very_good",
+        "perc": 53.1299
       }
     ],
     "hh_size": [
-      {
-        "group": "Faughan",
-        "category": "five_people",
-        "perc": 10.6747
-      },
-      {
-        "group": "Faughan",
-        "category": "four_people",
-        "perc": 15.6562
-      },
-      {
-        "group": "Faughan",
-        "category": "one_person",
-        "perc": 24.935
-      },
-      {
-        "group": "Faughan",
-        "category": "three_people",
-        "perc": 18.4481
-      },
-      {
-        "group": "Faughan",
-        "category": "two_people",
-        "perc": 30.286
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Faughan",
+        "category": "five_people",
+        "perc": 10.6747
+      },
+      {
+        "group": "Faughan",
+        "category": "four_people",
+        "perc": 15.6562
+      },
+      {
+        "group": "Faughan",
+        "category": "one_person",
+        "perc": 24.935
+      },
+      {
+        "group": "Faughan",
+        "category": "three_people",
+        "perc": 18.4481
+      },
+      {
+        "group": "Faughan",
+        "category": "two_people",
+        "perc": 30.286
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Faughan",
-        "category": "apprenticeship",
-        "perc": 5.9054
-      },
-      {
-        "group": "Faughan",
-        "category": "level_1_qualifications",
-        "perc": 5.6333
-      },
-      {
-        "group": "Faughan",
-        "category": "level_2_qualifications",
-        "perc": 13.9009
-      },
-      {
-        "group": "Faughan",
-        "category": "level_3_qualifications",
-        "perc": 15.699
-      },
-      {
-        "group": "Faughan",
-        "category": "level_4_qualifications_and_above",
-        "perc": 32.9308
-      },
-      {
-        "group": "Faughan",
-        "category": "no_qualifications",
-        "perc": 24.3116
-      },
-      {
-        "group": "Faughan",
-        "category": "other_qualifications",
-        "perc": 1.619
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Faughan",
+        "category": "apprenticeship",
+        "perc": 5.9054
+      },
+      {
+        "group": "Faughan",
+        "category": "level_1_qualifications",
+        "perc": 5.6333
+      },
+      {
+        "group": "Faughan",
+        "category": "level_2_qualifications",
+        "perc": 13.9009
+      },
+      {
+        "group": "Faughan",
+        "category": "level_3_qualifications",
+        "perc": 15.699
+      },
+      {
+        "group": "Faughan",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.9308
+      },
+      {
+        "group": "Faughan",
+        "category": "no_qualifications",
+        "perc": 24.3116
+      },
+      {
+        "group": "Faughan",
+        "category": "other_qualifications",
+        "perc": 1.619
       }
     ],
     "cob": [
-      {
-        "group": "Faughan",
-        "category": "england",
-        "perc": 4.0449
-      },
-      {
-        "group": "Faughan",
-        "category": "northern_ireland",
-        "perc": 88.8427
-      },
-      {
-        "group": "Faughan",
-        "category": "other_cob",
-        "perc": 2.5528
-      },
-      {
-        "group": "Faughan",
-        "category": "republic_of_ireland",
-        "perc": 3.2806
-      },
-      {
-        "group": "Faughan",
-        "category": "scotland",
-        "perc": 1.1438
-      },
-      {
-        "group": "Faughan",
-        "category": "wales",
-        "perc": 0.1352
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Faughan",
+        "category": "england",
+        "perc": 4.0449
+      },
+      {
+        "group": "Faughan",
+        "category": "northern_ireland",
+        "perc": 88.8427
+      },
+      {
+        "group": "Faughan",
+        "category": "other_cob",
+        "perc": 2.5528
+      },
+      {
+        "group": "Faughan",
+        "category": "republic_of_ireland",
+        "perc": 3.2806
+      },
+      {
+        "group": "Faughan",
+        "category": "scotland",
+        "perc": 1.1438
+      },
+      {
+        "group": "Faughan",
+        "category": "wales",
+        "perc": 0.1352
       }
     ],
     "mainlang": [
-      {
-        "group": "Faughan",
-        "category": "english",
-        "perc": 98.7189
-      },
-      {
-        "group": "Faughan",
-        "category": "other_languages",
-        "perc": 1.2811
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Faughan",
+        "category": "english",
+        "perc": 98.7189
+      },
+      {
+        "group": "Faughan",
+        "category": "other_languages",
+        "perc": 1.2811
       }
     ],
     "age": [
-      {
-        "group": "Faughan",
-        "category": "a0to14",
-        "perc": 20.3234
-      },
-      {
-        "group": "Faughan",
-        "category": "a15to39",
-        "perc": 29.3075
-      },
-      {
-        "group": "Faughan",
-        "category": "a40to64",
-        "perc": 34.4234
-      },
-      {
-        "group": "Faughan",
-        "category": "a65plus",
-        "perc": 15.9457
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Faughan",
+        "category": "a0to14",
+        "perc": 20.3234
+      },
+      {
+        "group": "Faughan",
+        "category": "a15to39",
+        "perc": 29.3075
+      },
+      {
+        "group": "Faughan",
+        "category": "a40to64",
+        "perc": 34.4234
+      },
+      {
+        "group": "Faughan",
+        "category": "a65plus",
+        "perc": 15.9457
       }
     ],
     "provision_care": [
-      {
-        "group": "Faughan",
-        "category": "a1to19_hours",
-        "perc": 5.8794
-      },
-      {
-        "group": "Faughan",
-        "category": "a20to49_hours",
-        "perc": 3.0418
-      },
-      {
-        "group": "Faughan",
-        "category": "a50plus_hours",
-        "perc": 3.5001
-      },
-      {
-        "group": "Faughan",
-        "category": "no_care",
-        "perc": 87.5787
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Faughan",
+        "category": "a1to19_hours",
+        "perc": 5.8794
+      },
+      {
+        "group": "Faughan",
+        "category": "a20to49_hours",
+        "perc": 3.0418
+      },
+      {
+        "group": "Faughan",
+        "category": "a50plus_hours",
+        "perc": 3.5001
+      },
+      {
+        "group": "Faughan",
+        "category": "no_care",
+        "perc": 87.5787
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Faughan",
-        "category": "catholic",
-        "perc": 56.0362
-      },
-      {
-        "group": "Faughan",
-        "category": "none",
-        "perc": 4.1125
-      },
-      {
-        "group": "Faughan",
-        "category": "other_religions",
-        "perc": 1.0086
-      },
-      {
-        "group": "Faughan",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 38.8427
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Faughan",
+        "category": "catholic",
+        "perc": 56.0362
+      },
+      {
+        "group": "Faughan",
+        "category": "none",
+        "perc": 4.1125
+      },
+      {
+        "group": "Faughan",
+        "category": "other_religions",
+        "perc": 1.0086
+      },
+      {
+        "group": "Faughan",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 38.8427
       }
     ],
     "sex": [
-      {
-        "group": "Faughan",
-        "category": "females",
-        "perc": 50.286
-      },
-      {
-        "group": "Faughan",
-        "category": "males",
-        "perc": 49.714
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Faughan",
+        "category": "females",
+        "perc": 50.286
+      },
+      {
+        "group": "Faughan",
+        "category": "males",
+        "perc": 49.714
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Faughan",
         "category": "FSME",
         "perc": 19.9588
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Faughan",
         "category": "FSME",
         "perc": 17.664
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "Faughan",
         "category": "Age 65+",
         "perc": 16.0436
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Faughan",
+        "category": "destHEpct",
+        "perc": 45.1
+      },
+      {
+        "group": "Faughan",
+        "category": "destFEpct",
+        "perc": 27.1
+      },
+      {
+        "group": "Faughan",
+        "category": "destEmploypct",
+        "perc": 14.1
+      },
+      {
+        "group": "Faughan",
+        "category": "destTrainpct",
+        "perc": 9.4
+      },
+      {
+        "group": "Faughan",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },

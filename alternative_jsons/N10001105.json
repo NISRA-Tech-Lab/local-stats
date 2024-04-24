@@ -556,6 +556,7 @@
         "perc": 49.0353
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,31 @@
         "geography": "Comber",
         "category": "Age 65+",
         "perc": 22.8205
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Comber",
+        "category": "destHEpct",
+        "perc": 47.1
+      },
+      {
+        "geography": "Comber",
+        "category": "destFEpct",
+        "perc": 35.9
+      },
+      {
+        "geography": "Comber",
+        "category": "destEmploypct",
+        "perc": 9.7
+      },
+      {
+        "geography": "Comber",
+        "category": "destTrainpct"
+      },
+      {
+        "geography": "Comber",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -826,54 +852,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Comber",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Comber",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Comber",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Comber",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Comber",
-        "category": "bad",
-        "perc": 4.5464
-      },
-      {
-        "group": "Comber",
-        "category": "fair",
-        "perc": 13.7469
-      },
-      {
-        "group": "Comber",
-        "category": "good",
-        "perc": 32.4507
-      },
-      {
-        "group": "Comber",
-        "category": "very_bad",
-        "perc": 1.3752
-      },
-      {
-        "group": "Comber",
-        "category": "very_good",
-        "perc": 47.8807
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +899,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Comber",
+        "category": "bad",
+        "perc": 4.5464
+      },
+      {
+        "group": "Comber",
+        "category": "fair",
+        "perc": 13.7469
+      },
+      {
+        "group": "Comber",
+        "category": "good",
+        "perc": 32.4507
+      },
+      {
+        "group": "Comber",
+        "category": "very_bad",
+        "perc": 1.3752
+      },
+      {
+        "group": "Comber",
+        "category": "very_good",
+        "perc": 47.8807
       }
     ],
     "hh_size": [
-      {
-        "group": "Comber",
-        "category": "five_people",
-        "perc": 5.9682
-      },
-      {
-        "group": "Comber",
-        "category": "four_people",
-        "perc": 13.3949
-      },
-      {
-        "group": "Comber",
-        "category": "one_person",
-        "perc": 27.5191
-      },
-      {
-        "group": "Comber",
-        "category": "three_people",
-        "perc": 16.2757
-      },
-      {
-        "group": "Comber",
-        "category": "two_people",
-        "perc": 36.8421
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +951,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Comber",
+        "category": "five_people",
+        "perc": 5.9682
+      },
+      {
+        "group": "Comber",
+        "category": "four_people",
+        "perc": 13.3949
+      },
+      {
+        "group": "Comber",
+        "category": "one_person",
+        "perc": 27.5191
+      },
+      {
+        "group": "Comber",
+        "category": "three_people",
+        "perc": 16.2757
+      },
+      {
+        "group": "Comber",
+        "category": "two_people",
+        "perc": 36.8421
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Comber",
-        "category": "apprenticeship",
-        "perc": 7.5335
-      },
-      {
-        "group": "Comber",
-        "category": "level_1_qualifications",
-        "perc": 6.5414
-      },
-      {
-        "group": "Comber",
-        "category": "level_2_qualifications",
-        "perc": 14.0501
-      },
-      {
-        "group": "Comber",
-        "category": "level_3_qualifications",
-        "perc": 15.6684
-      },
-      {
-        "group": "Comber",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.9144
-      },
-      {
-        "group": "Comber",
-        "category": "no_qualifications",
-        "perc": 18.9732
-      },
-      {
-        "group": "Comber",
-        "category": "other_qualifications",
-        "perc": 2.3189
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1013,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Comber",
+        "category": "apprenticeship",
+        "perc": 7.5335
+      },
+      {
+        "group": "Comber",
+        "category": "level_1_qualifications",
+        "perc": 6.5414
+      },
+      {
+        "group": "Comber",
+        "category": "level_2_qualifications",
+        "perc": 14.0501
+      },
+      {
+        "group": "Comber",
+        "category": "level_3_qualifications",
+        "perc": 15.6684
+      },
+      {
+        "group": "Comber",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.9144
+      },
+      {
+        "group": "Comber",
+        "category": "no_qualifications",
+        "perc": 18.9732
+      },
+      {
+        "group": "Comber",
+        "category": "other_qualifications",
+        "perc": 2.3189
       }
     ],
     "cob": [
-      {
-        "group": "Comber",
-        "category": "england",
-        "perc": 3.74
-      },
-      {
-        "group": "Comber",
-        "category": "northern_ireland",
-        "perc": 90.9553
-      },
-      {
-        "group": "Comber",
-        "category": "other_cob",
-        "perc": 3.3244
-      },
-      {
-        "group": "Comber",
-        "category": "republic_of_ireland",
-        "perc": 0.867
-      },
-      {
-        "group": "Comber",
-        "category": "scotland",
-        "perc": 1.0055
-      },
-      {
-        "group": "Comber",
-        "category": "wales",
-        "perc": 0.1077
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1080,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Comber",
+        "category": "england",
+        "perc": 3.74
+      },
+      {
+        "group": "Comber",
+        "category": "northern_ireland",
+        "perc": 90.9553
+      },
+      {
+        "group": "Comber",
+        "category": "other_cob",
+        "perc": 3.3244
+      },
+      {
+        "group": "Comber",
+        "category": "republic_of_ireland",
+        "perc": 0.867
+      },
+      {
+        "group": "Comber",
+        "category": "scotland",
+        "perc": 1.0055
+      },
+      {
+        "group": "Comber",
+        "category": "wales",
+        "perc": 0.1077
       }
     ],
     "mainlang": [
-      {
-        "group": "Comber",
-        "category": "english",
-        "perc": 98.5064
-      },
-      {
-        "group": "Comber",
-        "category": "other_languages",
-        "perc": 1.4936
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1122,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Comber",
+        "category": "english",
+        "perc": 98.5064
+      },
+      {
+        "group": "Comber",
+        "category": "other_languages",
+        "perc": 1.4936
       }
     ],
     "age": [
-      {
-        "group": "Comber",
-        "category": "a0to14",
-        "perc": 16.1433
-      },
-      {
-        "group": "Comber",
-        "category": "a15to39",
-        "perc": 26.6164
-      },
-      {
-        "group": "Comber",
-        "category": "a40to64",
-        "perc": 34.611
-      },
-      {
-        "group": "Comber",
-        "category": "a65plus",
-        "perc": 22.6293
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1154,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Comber",
+        "category": "a0to14",
+        "perc": 16.1433
+      },
+      {
+        "group": "Comber",
+        "category": "a15to39",
+        "perc": 26.6164
+      },
+      {
+        "group": "Comber",
+        "category": "a40to64",
+        "perc": 34.611
+      },
+      {
+        "group": "Comber",
+        "category": "a65plus",
+        "perc": 22.6293
       }
     ],
     "provision_care": [
-      {
-        "group": "Comber",
-        "category": "a1to19_hours",
-        "perc": 7.6162
-      },
-      {
-        "group": "Comber",
-        "category": "a20to49_hours",
-        "perc": 2.5838
-      },
-      {
-        "group": "Comber",
-        "category": "a50plus_hours",
-        "perc": 3.8919
-      },
-      {
-        "group": "Comber",
-        "category": "no_care",
-        "perc": 85.9081
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1196,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Comber",
+        "category": "a1to19_hours",
+        "perc": 7.6162
+      },
+      {
+        "group": "Comber",
+        "category": "a20to49_hours",
+        "perc": 2.5838
+      },
+      {
+        "group": "Comber",
+        "category": "a50plus_hours",
+        "perc": 3.8919
+      },
+      {
+        "group": "Comber",
+        "category": "no_care",
+        "perc": 85.9081
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Comber",
-        "category": "catholic",
-        "perc": 7.3983
-      },
-      {
-        "group": "Comber",
-        "category": "none",
-        "perc": 13.8064
-      },
-      {
-        "group": "Comber",
-        "category": "other_religions",
-        "perc": 0.9645
-      },
-      {
-        "group": "Comber",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 77.8308
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1238,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Comber",
+        "category": "catholic",
+        "perc": 7.3983
+      },
+      {
+        "group": "Comber",
+        "category": "none",
+        "perc": 13.8064
+      },
+      {
+        "group": "Comber",
+        "category": "other_religions",
+        "perc": 0.9645
+      },
+      {
+        "group": "Comber",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 77.8308
       }
     ],
     "sex": [
-      {
-        "group": "Comber",
-        "category": "females",
-        "perc": 50.9647
-      },
-      {
-        "group": "Comber",
-        "category": "males",
-        "perc": 49.0353
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1270,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Comber",
+        "category": "females",
+        "perc": 50.9647
+      },
+      {
+        "group": "Comber",
+        "category": "males",
+        "perc": 49.0353
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1328,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Comber",
         "category": "FSME",
         "perc": 15.0224
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Comber",
         "category": "FSME",
         "perc": 12.4918
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1410,56 @@
         "group": "Comber",
         "category": "Age 65+",
         "perc": 22.8205
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Comber",
+        "category": "destHEpct",
+        "perc": 47.1
+      },
+      {
+        "group": "Comber",
+        "category": "destFEpct",
+        "perc": 35.9
+      },
+      {
+        "group": "Comber",
+        "category": "destEmploypct",
+        "perc": 9.7
+      },
+      {
+        "group": "Comber",
+        "category": "destTrainpct"
+      },
+      {
+        "group": "Comber",
+        "category": "destUnempUnkpct"
       }
     ]
   },

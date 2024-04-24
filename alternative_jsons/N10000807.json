@@ -561,6 +561,7 @@
         "perc": 49.5198
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Larne Lough",
         "category": "Age 65+",
         "perc": 20.9467
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Larne Lough",
+        "category": "destHEpct",
+        "perc": 45.2
+      },
+      {
+        "geography": "Larne Lough",
+        "category": "destFEpct",
+        "perc": 22.6
+      },
+      {
+        "geography": "Larne Lough",
+        "category": "destEmploypct",
+        "perc": 17.7
+      },
+      {
+        "geography": "Larne Lough",
+        "category": "destTrainpct",
+        "perc": 9.1
+      },
+      {
+        "geography": "Larne Lough",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Larne Lough",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Larne Lough",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Larne Lough",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Larne Lough",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Larne Lough",
-        "category": "bad",
-        "perc": 5.2726
-      },
-      {
-        "group": "Larne Lough",
-        "category": "fair",
-        "perc": 14.1695
-      },
-      {
-        "group": "Larne Lough",
-        "category": "good",
-        "perc": 31.221
-      },
-      {
-        "group": "Larne Lough",
-        "category": "very_bad",
-        "perc": 1.763
-      },
-      {
-        "group": "Larne Lough",
-        "category": "very_good",
-        "perc": 47.5738
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Larne Lough",
+        "category": "bad",
+        "perc": 5.2726
+      },
+      {
+        "group": "Larne Lough",
+        "category": "fair",
+        "perc": 14.1695
+      },
+      {
+        "group": "Larne Lough",
+        "category": "good",
+        "perc": 31.221
+      },
+      {
+        "group": "Larne Lough",
+        "category": "very_bad",
+        "perc": 1.763
+      },
+      {
+        "group": "Larne Lough",
+        "category": "very_good",
+        "perc": 47.5738
       }
     ],
     "hh_size": [
-      {
-        "group": "Larne Lough",
-        "category": "five_people",
-        "perc": 5.7863
-      },
-      {
-        "group": "Larne Lough",
-        "category": "four_people",
-        "perc": 12.9653
-      },
-      {
-        "group": "Larne Lough",
-        "category": "one_person",
-        "perc": 31.9828
-      },
-      {
-        "group": "Larne Lough",
-        "category": "three_people",
-        "perc": 15.5989
-      },
-      {
-        "group": "Larne Lough",
-        "category": "two_people",
-        "perc": 33.6668
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Larne Lough",
+        "category": "five_people",
+        "perc": 5.7863
+      },
+      {
+        "group": "Larne Lough",
+        "category": "four_people",
+        "perc": 12.9653
+      },
+      {
+        "group": "Larne Lough",
+        "category": "one_person",
+        "perc": 31.9828
+      },
+      {
+        "group": "Larne Lough",
+        "category": "three_people",
+        "perc": 15.5989
+      },
+      {
+        "group": "Larne Lough",
+        "category": "two_people",
+        "perc": 33.6668
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Larne Lough",
-        "category": "apprenticeship",
-        "perc": 7.2068
-      },
-      {
-        "group": "Larne Lough",
-        "category": "level_1_qualifications",
-        "perc": 6.6035
-      },
-      {
-        "group": "Larne Lough",
-        "category": "level_2_qualifications",
-        "perc": 14.6721
-      },
-      {
-        "group": "Larne Lough",
-        "category": "level_3_qualifications",
-        "perc": 17.8148
-      },
-      {
-        "group": "Larne Lough",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.7112
-      },
-      {
-        "group": "Larne Lough",
-        "category": "no_qualifications",
-        "perc": 19.406
-      },
-      {
-        "group": "Larne Lough",
-        "category": "other_qualifications",
-        "perc": 2.5857
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Larne Lough",
+        "category": "apprenticeship",
+        "perc": 7.2068
+      },
+      {
+        "group": "Larne Lough",
+        "category": "level_1_qualifications",
+        "perc": 6.6035
+      },
+      {
+        "group": "Larne Lough",
+        "category": "level_2_qualifications",
+        "perc": 14.6721
+      },
+      {
+        "group": "Larne Lough",
+        "category": "level_3_qualifications",
+        "perc": 17.8148
+      },
+      {
+        "group": "Larne Lough",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.7112
+      },
+      {
+        "group": "Larne Lough",
+        "category": "no_qualifications",
+        "perc": 19.406
+      },
+      {
+        "group": "Larne Lough",
+        "category": "other_qualifications",
+        "perc": 2.5857
       }
     ],
     "cob": [
-      {
-        "group": "Larne Lough",
-        "category": "england",
-        "perc": 5.1402
-      },
-      {
-        "group": "Larne Lough",
-        "category": "northern_ireland",
-        "perc": 89.152
-      },
-      {
-        "group": "Larne Lough",
-        "category": "other_cob",
-        "perc": 3.1758
-      },
-      {
-        "group": "Larne Lough",
-        "category": "republic_of_ireland",
-        "perc": 0.8512
-      },
-      {
-        "group": "Larne Lough",
-        "category": "scotland",
-        "perc": 1.4951
-      },
-      {
-        "group": "Larne Lough",
-        "category": "wales",
-        "perc": 0.1855
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Larne Lough",
+        "category": "england",
+        "perc": 5.1402
+      },
+      {
+        "group": "Larne Lough",
+        "category": "northern_ireland",
+        "perc": 89.152
+      },
+      {
+        "group": "Larne Lough",
+        "category": "other_cob",
+        "perc": 3.1758
+      },
+      {
+        "group": "Larne Lough",
+        "category": "republic_of_ireland",
+        "perc": 0.8512
+      },
+      {
+        "group": "Larne Lough",
+        "category": "scotland",
+        "perc": 1.4951
+      },
+      {
+        "group": "Larne Lough",
+        "category": "wales",
+        "perc": 0.1855
       }
     ],
     "mainlang": [
-      {
-        "group": "Larne Lough",
-        "category": "english",
-        "perc": 98.6277
-      },
-      {
-        "group": "Larne Lough",
-        "category": "other_languages",
-        "perc": 1.3723
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Larne Lough",
+        "category": "english",
+        "perc": 98.6277
+      },
+      {
+        "group": "Larne Lough",
+        "category": "other_languages",
+        "perc": 1.3723
       }
     ],
     "age": [
-      {
-        "group": "Larne Lough",
-        "category": "a0to14",
-        "perc": 16.5357
-      },
-      {
-        "group": "Larne Lough",
-        "category": "a15to39",
-        "perc": 26.6536
-      },
-      {
-        "group": "Larne Lough",
-        "category": "a40to64",
-        "perc": 35.8382
-      },
-      {
-        "group": "Larne Lough",
-        "category": "a65plus",
-        "perc": 20.9725
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a0to14",
+        "perc": 16.5357
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a15to39",
+        "perc": 26.6536
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a40to64",
+        "perc": 35.8382
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a65plus",
+        "perc": 20.9725
       }
     ],
     "provision_care": [
-      {
-        "group": "Larne Lough",
-        "category": "a1to19_hours",
-        "perc": 6.4142
-      },
-      {
-        "group": "Larne Lough",
-        "category": "a20to49_hours",
-        "perc": 2.8277
-      },
-      {
-        "group": "Larne Lough",
-        "category": "a50plus_hours",
-        "perc": 3.7646
-      },
-      {
-        "group": "Larne Lough",
-        "category": "no_care",
-        "perc": 86.9935
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a1to19_hours",
+        "perc": 6.4142
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a20to49_hours",
+        "perc": 2.8277
+      },
+      {
+        "group": "Larne Lough",
+        "category": "a50plus_hours",
+        "perc": 3.7646
+      },
+      {
+        "group": "Larne Lough",
+        "category": "no_care",
+        "perc": 86.9935
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Larne Lough",
-        "category": "catholic",
-        "perc": 13.5451
-      },
-      {
-        "group": "Larne Lough",
-        "category": "none",
-        "perc": 14.1181
-      },
-      {
-        "group": "Larne Lough",
-        "category": "other_religions",
-        "perc": 1.0314
-      },
-      {
-        "group": "Larne Lough",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 71.3054
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Larne Lough",
+        "category": "catholic",
+        "perc": 13.5451
+      },
+      {
+        "group": "Larne Lough",
+        "category": "none",
+        "perc": 14.1181
+      },
+      {
+        "group": "Larne Lough",
+        "category": "other_religions",
+        "perc": 1.0314
+      },
+      {
+        "group": "Larne Lough",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 71.3054
       }
     ],
     "sex": [
-      {
-        "group": "Larne Lough",
-        "category": "females",
-        "perc": 50.4802
-      },
-      {
-        "group": "Larne Lough",
-        "category": "males",
-        "perc": 49.5198
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Larne Lough",
+        "category": "females",
+        "perc": 50.4802
+      },
+      {
+        "group": "Larne Lough",
+        "category": "males",
+        "perc": 49.5198
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Larne Lough",
         "category": "FSME",
         "perc": 16.1166
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Larne Lough",
         "category": "FSME",
         "perc": 13.3762
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Larne Lough",
         "category": "Age 65+",
         "perc": 20.9467
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Larne Lough",
+        "category": "destHEpct",
+        "perc": 45.2
+      },
+      {
+        "group": "Larne Lough",
+        "category": "destFEpct",
+        "perc": 22.6
+      },
+      {
+        "group": "Larne Lough",
+        "category": "destEmploypct",
+        "perc": 17.7
+      },
+      {
+        "group": "Larne Lough",
+        "category": "destTrainpct",
+        "perc": 9.1
+      },
+      {
+        "group": "Larne Lough",
+        "category": "destUnempUnkpct",
+        "perc": 5.4
       }
     ]
   },

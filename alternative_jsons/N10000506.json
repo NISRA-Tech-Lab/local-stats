@@ -556,6 +556,7 @@
         "perc": 48.8265
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "The Moor",
         "category": "Age 65+",
         "perc": 15.3396
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "The Moor",
+        "category": "destHEpct",
+        "perc": 33.2
+      },
+      {
+        "geography": "The Moor",
+        "category": "destFEpct",
+        "perc": 28
+      },
+      {
+        "geography": "The Moor",
+        "category": "destEmploypct",
+        "perc": 19.2
+      },
+      {
+        "geography": "The Moor",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "geography": "The Moor",
+        "category": "destUnempUnkpct",
+        "perc": 7.5
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "The Moor",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "The Moor",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "The Moor",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "The Moor",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "The Moor",
-        "category": "bad",
-        "perc": 10.0887
-      },
-      {
-        "group": "The Moor",
-        "category": "fair",
-        "perc": 16.2074
-      },
-      {
-        "group": "The Moor",
-        "category": "good",
-        "perc": 25.5079
-      },
-      {
-        "group": "The Moor",
-        "category": "very_bad",
-        "perc": 3.9351
-      },
-      {
-        "group": "The Moor",
-        "category": "very_good",
-        "perc": 44.2609
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "The Moor",
+        "category": "bad",
+        "perc": 10.0887
+      },
+      {
+        "group": "The Moor",
+        "category": "fair",
+        "perc": 16.2074
+      },
+      {
+        "group": "The Moor",
+        "category": "good",
+        "perc": 25.5079
+      },
+      {
+        "group": "The Moor",
+        "category": "very_bad",
+        "perc": 3.9351
+      },
+      {
+        "group": "The Moor",
+        "category": "very_good",
+        "perc": 44.2609
       }
     ],
     "hh_size": [
-      {
-        "group": "The Moor",
-        "category": "five_people",
-        "perc": 7.4885
-      },
-      {
-        "group": "The Moor",
-        "category": "four_people",
-        "perc": 10.282
-      },
-      {
-        "group": "The Moor",
-        "category": "one_person",
-        "perc": 40.2885
-      },
-      {
-        "group": "The Moor",
-        "category": "three_people",
-        "perc": 17.0492
-      },
-      {
-        "group": "The Moor",
-        "category": "two_people",
-        "perc": 24.8918
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "The Moor",
+        "category": "five_people",
+        "perc": 7.4885
+      },
+      {
+        "group": "The Moor",
+        "category": "four_people",
+        "perc": 10.282
+      },
+      {
+        "group": "The Moor",
+        "category": "one_person",
+        "perc": 40.2885
+      },
+      {
+        "group": "The Moor",
+        "category": "three_people",
+        "perc": 17.0492
+      },
+      {
+        "group": "The Moor",
+        "category": "two_people",
+        "perc": 24.8918
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "The Moor",
-        "category": "apprenticeship",
-        "perc": 5.1198
-      },
-      {
-        "group": "The Moor",
-        "category": "level_1_qualifications",
-        "perc": 5.7479
-      },
-      {
-        "group": "The Moor",
-        "category": "level_2_qualifications",
-        "perc": 13.3801
-      },
-      {
-        "group": "The Moor",
-        "category": "level_3_qualifications",
-        "perc": 14.6436
-      },
-      {
-        "group": "The Moor",
-        "category": "level_4_qualifications_and_above",
-        "perc": 24.0651
-      },
-      {
-        "group": "The Moor",
-        "category": "no_qualifications",
-        "perc": 35.4733
-      },
-      {
-        "group": "The Moor",
-        "category": "other_qualifications",
-        "perc": 1.5703
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "The Moor",
+        "category": "apprenticeship",
+        "perc": 5.1198
+      },
+      {
+        "group": "The Moor",
+        "category": "level_1_qualifications",
+        "perc": 5.7479
+      },
+      {
+        "group": "The Moor",
+        "category": "level_2_qualifications",
+        "perc": 13.3801
+      },
+      {
+        "group": "The Moor",
+        "category": "level_3_qualifications",
+        "perc": 14.6436
+      },
+      {
+        "group": "The Moor",
+        "category": "level_4_qualifications_and_above",
+        "perc": 24.0651
+      },
+      {
+        "group": "The Moor",
+        "category": "no_qualifications",
+        "perc": 35.4733
+      },
+      {
+        "group": "The Moor",
+        "category": "other_qualifications",
+        "perc": 1.5703
       }
     ],
     "cob": [
-      {
-        "group": "The Moor",
-        "category": "england",
-        "perc": 2.493
-      },
-      {
-        "group": "The Moor",
-        "category": "northern_ireland",
-        "perc": 91.1665
-      },
-      {
-        "group": "The Moor",
-        "category": "other_cob",
-        "perc": 2.5689
-      },
-      {
-        "group": "The Moor",
-        "category": "republic_of_ireland",
-        "perc": 3.0243
-      },
-      {
-        "group": "The Moor",
-        "category": "scotland",
-        "perc": 0.6889
-      },
-      {
-        "group": "The Moor",
-        "category": "wales",
-        "perc": 0.0584
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "The Moor",
+        "category": "england",
+        "perc": 2.493
+      },
+      {
+        "group": "The Moor",
+        "category": "northern_ireland",
+        "perc": 91.1665
+      },
+      {
+        "group": "The Moor",
+        "category": "other_cob",
+        "perc": 2.5689
+      },
+      {
+        "group": "The Moor",
+        "category": "republic_of_ireland",
+        "perc": 3.0243
+      },
+      {
+        "group": "The Moor",
+        "category": "scotland",
+        "perc": 0.6889
+      },
+      {
+        "group": "The Moor",
+        "category": "wales",
+        "perc": 0.0584
       }
     ],
     "mainlang": [
-      {
-        "group": "The Moor",
-        "category": "english",
-        "perc": 98.2731
-      },
-      {
-        "group": "The Moor",
-        "category": "other_languages",
-        "perc": 1.7269
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "The Moor",
+        "category": "english",
+        "perc": 98.2731
+      },
+      {
+        "group": "The Moor",
+        "category": "other_languages",
+        "perc": 1.7269
       }
     ],
     "age": [
-      {
-        "group": "The Moor",
-        "category": "a0to14",
-        "perc": 18.9047
-      },
-      {
-        "group": "The Moor",
-        "category": "a15to39",
-        "perc": 32.1637
-      },
-      {
-        "group": "The Moor",
-        "category": "a40to64",
-        "perc": 33.7926
-      },
-      {
-        "group": "The Moor",
-        "category": "a65plus",
-        "perc": 15.139
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "The Moor",
+        "category": "a0to14",
+        "perc": 18.9047
+      },
+      {
+        "group": "The Moor",
+        "category": "a15to39",
+        "perc": 32.1637
+      },
+      {
+        "group": "The Moor",
+        "category": "a40to64",
+        "perc": 33.7926
+      },
+      {
+        "group": "The Moor",
+        "category": "a65plus",
+        "perc": 15.139
       }
     ],
     "provision_care": [
-      {
-        "group": "The Moor",
-        "category": "a1to19_hours",
-        "perc": 4.2162
-      },
-      {
-        "group": "The Moor",
-        "category": "a20to49_hours",
-        "perc": 3.7519
-      },
-      {
-        "group": "The Moor",
-        "category": "a50plus_hours",
-        "perc": 5.1882
-      },
-      {
-        "group": "The Moor",
-        "category": "no_care",
-        "perc": 86.8437
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "The Moor",
+        "category": "a1to19_hours",
+        "perc": 4.2162
+      },
+      {
+        "group": "The Moor",
+        "category": "a20to49_hours",
+        "perc": 3.7519
+      },
+      {
+        "group": "The Moor",
+        "category": "a50plus_hours",
+        "perc": 5.1882
+      },
+      {
+        "group": "The Moor",
+        "category": "no_care",
+        "perc": 86.8437
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "The Moor",
-        "category": "catholic",
-        "perc": 91.1145
-      },
-      {
-        "group": "The Moor",
-        "category": "none",
-        "perc": 2.6738
-      },
-      {
-        "group": "The Moor",
-        "category": "other_religions",
-        "perc": 1.0742
-      },
-      {
-        "group": "The Moor",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 5.1375
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "The Moor",
+        "category": "catholic",
+        "perc": 91.1145
+      },
+      {
+        "group": "The Moor",
+        "category": "none",
+        "perc": 2.6738
+      },
+      {
+        "group": "The Moor",
+        "category": "other_religions",
+        "perc": 1.0742
+      },
+      {
+        "group": "The Moor",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 5.1375
       }
     ],
     "sex": [
-      {
-        "group": "The Moor",
-        "category": "females",
-        "perc": 51.1735
-      },
-      {
-        "group": "The Moor",
-        "category": "males",
-        "perc": 48.8265
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "The Moor",
+        "category": "females",
+        "perc": 51.1735
+      },
+      {
+        "group": "The Moor",
+        "category": "males",
+        "perc": 48.8265
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "The Moor",
         "category": "FSME",
         "perc": 36.3011
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "The Moor",
         "category": "FSME",
         "perc": 35.1206
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "The Moor",
         "category": "Age 65+",
         "perc": 15.3396
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "The Moor",
+        "category": "destHEpct",
+        "perc": 33.2
+      },
+      {
+        "group": "The Moor",
+        "category": "destFEpct",
+        "perc": 28
+      },
+      {
+        "group": "The Moor",
+        "category": "destEmploypct",
+        "perc": 19.2
+      },
+      {
+        "group": "The Moor",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "group": "The Moor",
+        "category": "destUnempUnkpct",
+        "perc": 7.5
       }
     ]
   },

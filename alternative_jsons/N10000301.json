@@ -581,6 +581,7 @@
         "perc": 48.6505
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -616,6 +617,33 @@
         "geography": "Balmoral",
         "category": "Age 65+",
         "perc": 21.0462
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Balmoral",
+        "category": "destHEpct",
+        "perc": 63.4
+      },
+      {
+        "geography": "Balmoral",
+        "category": "destFEpct",
+        "perc": 18.5
+      },
+      {
+        "geography": "Balmoral",
+        "category": "destEmploypct",
+        "perc": 10.5
+      },
+      {
+        "geography": "Balmoral",
+        "category": "destTrainpct",
+        "perc": 4.5
+      },
+      {
+        "geography": "Balmoral",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },
@@ -851,54 +879,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Balmoral",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Balmoral",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Balmoral",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Balmoral",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Balmoral",
-        "category": "bad",
-        "perc": 4.9808
-      },
-      {
-        "group": "Balmoral",
-        "category": "fair",
-        "perc": 12.5541
-      },
-      {
-        "group": "Balmoral",
-        "category": "good",
-        "perc": 28.6315
-      },
-      {
-        "group": "Balmoral",
-        "category": "very_bad",
-        "perc": 1.629
-      },
-      {
-        "group": "Balmoral",
-        "category": "very_good",
-        "perc": 52.2046
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -923,34 +926,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Balmoral",
+        "category": "bad",
+        "perc": 4.9808
+      },
+      {
+        "group": "Balmoral",
+        "category": "fair",
+        "perc": 12.5541
+      },
+      {
+        "group": "Balmoral",
+        "category": "good",
+        "perc": 28.6315
+      },
+      {
+        "group": "Balmoral",
+        "category": "very_bad",
+        "perc": 1.629
+      },
+      {
+        "group": "Balmoral",
+        "category": "very_good",
+        "perc": 52.2046
       }
     ],
     "hh_size": [
-      {
-        "group": "Balmoral",
-        "category": "five_people",
-        "perc": 6.9386
-      },
-      {
-        "group": "Balmoral",
-        "category": "four_people",
-        "perc": 12.2832
-      },
-      {
-        "group": "Balmoral",
-        "category": "one_person",
-        "perc": 34.3554
-      },
-      {
-        "group": "Balmoral",
-        "category": "three_people",
-        "perc": 14.6085
-      },
-      {
-        "group": "Balmoral",
-        "category": "two_people",
-        "perc": 31.8143
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -975,44 +978,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Balmoral",
+        "category": "five_people",
+        "perc": 6.9386
+      },
+      {
+        "group": "Balmoral",
+        "category": "four_people",
+        "perc": 12.2832
+      },
+      {
+        "group": "Balmoral",
+        "category": "one_person",
+        "perc": 34.3554
+      },
+      {
+        "group": "Balmoral",
+        "category": "three_people",
+        "perc": 14.6085
+      },
+      {
+        "group": "Balmoral",
+        "category": "two_people",
+        "perc": 31.8143
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Balmoral",
-        "category": "apprenticeship",
-        "perc": 4.2667
-      },
-      {
-        "group": "Balmoral",
-        "category": "level_1_qualifications",
-        "perc": 4.7147
-      },
-      {
-        "group": "Balmoral",
-        "category": "level_2_qualifications",
-        "perc": 10.2907
-      },
-      {
-        "group": "Balmoral",
-        "category": "level_3_qualifications",
-        "perc": 11.8042
-      },
-      {
-        "group": "Balmoral",
-        "category": "level_4_qualifications_and_above",
-        "perc": 50.6572
-      },
-      {
-        "group": "Balmoral",
-        "category": "no_qualifications",
-        "perc": 16.1555
-      },
-      {
-        "group": "Balmoral",
-        "category": "other_qualifications",
-        "perc": 2.1109
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1047,39 +1040,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Balmoral",
+        "category": "apprenticeship",
+        "perc": 4.2667
+      },
+      {
+        "group": "Balmoral",
+        "category": "level_1_qualifications",
+        "perc": 4.7147
+      },
+      {
+        "group": "Balmoral",
+        "category": "level_2_qualifications",
+        "perc": 10.2907
+      },
+      {
+        "group": "Balmoral",
+        "category": "level_3_qualifications",
+        "perc": 11.8042
+      },
+      {
+        "group": "Balmoral",
+        "category": "level_4_qualifications_and_above",
+        "perc": 50.6572
+      },
+      {
+        "group": "Balmoral",
+        "category": "no_qualifications",
+        "perc": 16.1555
+      },
+      {
+        "group": "Balmoral",
+        "category": "other_qualifications",
+        "perc": 2.1109
       }
     ],
     "cob": [
-      {
-        "group": "Balmoral",
-        "category": "england",
-        "perc": 3.8871
-      },
-      {
-        "group": "Balmoral",
-        "category": "northern_ireland",
-        "perc": 83.843
-      },
-      {
-        "group": "Balmoral",
-        "category": "other_cob",
-        "perc": 8.5378
-      },
-      {
-        "group": "Balmoral",
-        "category": "republic_of_ireland",
-        "perc": 2.5683
-      },
-      {
-        "group": "Balmoral",
-        "category": "scotland",
-        "perc": 1.0208
-      },
-      {
-        "group": "Balmoral",
-        "category": "wales",
-        "perc": 0.1429
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1109,19 +1107,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Balmoral",
+        "category": "england",
+        "perc": 3.8871
+      },
+      {
+        "group": "Balmoral",
+        "category": "northern_ireland",
+        "perc": 83.843
+      },
+      {
+        "group": "Balmoral",
+        "category": "other_cob",
+        "perc": 8.5378
+      },
+      {
+        "group": "Balmoral",
+        "category": "republic_of_ireland",
+        "perc": 2.5683
+      },
+      {
+        "group": "Balmoral",
+        "category": "scotland",
+        "perc": 1.0208
+      },
+      {
+        "group": "Balmoral",
+        "category": "wales",
+        "perc": 0.1429
       }
     ],
     "mainlang": [
-      {
-        "group": "Balmoral",
-        "category": "english",
-        "perc": 95.0758
-      },
-      {
-        "group": "Balmoral",
-        "category": "other_languages",
-        "perc": 4.9242
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1131,29 +1149,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Balmoral",
+        "category": "english",
+        "perc": 95.0758
+      },
+      {
+        "group": "Balmoral",
+        "category": "other_languages",
+        "perc": 4.9242
       }
     ],
     "age": [
-      {
-        "group": "Balmoral",
-        "category": "a0to14",
-        "perc": 16.8266
-      },
-      {
-        "group": "Balmoral",
-        "category": "a15to39",
-        "perc": 29.1454
-      },
-      {
-        "group": "Balmoral",
-        "category": "a40to64",
-        "perc": 33.0285
-      },
-      {
-        "group": "Balmoral",
-        "category": "a65plus",
-        "perc": 20.9996
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1173,29 +1181,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Balmoral",
+        "category": "a0to14",
+        "perc": 16.8266
+      },
+      {
+        "group": "Balmoral",
+        "category": "a15to39",
+        "perc": 29.1454
+      },
+      {
+        "group": "Balmoral",
+        "category": "a40to64",
+        "perc": 33.0285
+      },
+      {
+        "group": "Balmoral",
+        "category": "a65plus",
+        "perc": 20.9996
       }
     ],
     "provision_care": [
-      {
-        "group": "Balmoral",
-        "category": "a1to19_hours",
-        "perc": 7.0052
-      },
-      {
-        "group": "Balmoral",
-        "category": "a20to49_hours",
-        "perc": 2.6232
-      },
-      {
-        "group": "Balmoral",
-        "category": "a50plus_hours",
-        "perc": 3.6467
-      },
-      {
-        "group": "Balmoral",
-        "category": "no_care",
-        "perc": 86.7249
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1215,29 +1223,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Balmoral",
+        "category": "a1to19_hours",
+        "perc": 7.0052
+      },
+      {
+        "group": "Balmoral",
+        "category": "a20to49_hours",
+        "perc": 2.6232
+      },
+      {
+        "group": "Balmoral",
+        "category": "a50plus_hours",
+        "perc": 3.6467
+      },
+      {
+        "group": "Balmoral",
+        "category": "no_care",
+        "perc": 86.7249
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Balmoral",
-        "category": "catholic",
-        "perc": 46.2003
-      },
-      {
-        "group": "Balmoral",
-        "category": "none",
-        "perc": 10.2046
-      },
-      {
-        "group": "Balmoral",
-        "category": "other_religions",
-        "perc": 3.2096
-      },
-      {
-        "group": "Balmoral",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 40.3855
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1257,19 +1265,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Balmoral",
+        "category": "catholic",
+        "perc": 46.2003
+      },
+      {
+        "group": "Balmoral",
+        "category": "none",
+        "perc": 10.2046
+      },
+      {
+        "group": "Balmoral",
+        "category": "other_religions",
+        "perc": 3.2096
+      },
+      {
+        "group": "Balmoral",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 40.3855
       }
     ],
     "sex": [
-      {
-        "group": "Balmoral",
-        "category": "females",
-        "perc": 51.3495
-      },
-      {
-        "group": "Balmoral",
-        "category": "males",
-        "perc": 48.6505
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1279,6 +1297,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Balmoral",
+        "category": "females",
+        "perc": 51.3495
+      },
+      {
+        "group": "Balmoral",
+        "category": "males",
+        "perc": 48.6505
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1305,36 +1355,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Balmoral",
         "category": "FSME",
         "perc": 15.7137
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Balmoral",
         "category": "FSME",
         "perc": 12.8895
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1397,26 +1437,58 @@
         "group": "Balmoral",
         "category": "Age 65+",
         "perc": 21.0462
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Balmoral",
+        "category": "destHEpct",
+        "perc": 63.4
+      },
+      {
+        "group": "Balmoral",
+        "category": "destFEpct",
+        "perc": 18.5
+      },
+      {
+        "group": "Balmoral",
+        "category": "destEmploypct",
+        "perc": 10.5
+      },
+      {
+        "group": "Balmoral",
+        "category": "destTrainpct",
+        "perc": 4.5
+      },
+      {
+        "group": "Balmoral",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },

@@ -561,6 +561,7 @@
         "perc": 48.5151
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Coast Road",
         "category": "Age 65+",
         "perc": 21.7571
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Coast Road",
+        "category": "destHEpct",
+        "perc": 32.7
+      },
+      {
+        "geography": "Coast Road",
+        "category": "destFEpct",
+        "perc": 22.1
+      },
+      {
+        "geography": "Coast Road",
+        "category": "destEmploypct",
+        "perc": 21.2
+      },
+      {
+        "geography": "Coast Road",
+        "category": "destTrainpct",
+        "perc": 15.2
+      },
+      {
+        "geography": "Coast Road",
+        "category": "destUnempUnkpct",
+        "perc": 8.8
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Coast Road",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Coast Road",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Coast Road",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Coast Road",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Coast Road",
-        "category": "bad",
-        "perc": 6.7098
-      },
-      {
-        "group": "Coast Road",
-        "category": "fair",
-        "perc": 16.3128
-      },
-      {
-        "group": "Coast Road",
-        "category": "good",
-        "perc": 31.3084
-      },
-      {
-        "group": "Coast Road",
-        "category": "very_bad",
-        "perc": 2.0171
-      },
-      {
-        "group": "Coast Road",
-        "category": "very_good",
-        "perc": 43.6519
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Coast Road",
+        "category": "bad",
+        "perc": 6.7098
+      },
+      {
+        "group": "Coast Road",
+        "category": "fair",
+        "perc": 16.3128
+      },
+      {
+        "group": "Coast Road",
+        "category": "good",
+        "perc": 31.3084
+      },
+      {
+        "group": "Coast Road",
+        "category": "very_bad",
+        "perc": 2.0171
+      },
+      {
+        "group": "Coast Road",
+        "category": "very_good",
+        "perc": 43.6519
       }
     ],
     "hh_size": [
-      {
-        "group": "Coast Road",
-        "category": "five_people",
-        "perc": 5.5606
-      },
-      {
-        "group": "Coast Road",
-        "category": "four_people",
-        "perc": 10.9907
-      },
-      {
-        "group": "Coast Road",
-        "category": "one_person",
-        "perc": 35.8308
-      },
-      {
-        "group": "Coast Road",
-        "category": "three_people",
-        "perc": 15.3635
-      },
-      {
-        "group": "Coast Road",
-        "category": "two_people",
-        "perc": 32.2543
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Coast Road",
+        "category": "five_people",
+        "perc": 5.5606
+      },
+      {
+        "group": "Coast Road",
+        "category": "four_people",
+        "perc": 10.9907
+      },
+      {
+        "group": "Coast Road",
+        "category": "one_person",
+        "perc": 35.8308
+      },
+      {
+        "group": "Coast Road",
+        "category": "three_people",
+        "perc": 15.3635
+      },
+      {
+        "group": "Coast Road",
+        "category": "two_people",
+        "perc": 32.2543
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Coast Road",
-        "category": "apprenticeship",
-        "perc": 7.4484
-      },
-      {
-        "group": "Coast Road",
-        "category": "level_1_qualifications",
-        "perc": 7.4698
-      },
-      {
-        "group": "Coast Road",
-        "category": "level_2_qualifications",
-        "perc": 15.0182
-      },
-      {
-        "group": "Coast Road",
-        "category": "level_3_qualifications",
-        "perc": 16.3108
-      },
-      {
-        "group": "Coast Road",
-        "category": "level_4_qualifications_and_above",
-        "perc": 24.9375
-      },
-      {
-        "group": "Coast Road",
-        "category": "no_qualifications",
-        "perc": 26.3586
-      },
-      {
-        "group": "Coast Road",
-        "category": "other_qualifications",
-        "perc": 2.4566
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Coast Road",
+        "category": "apprenticeship",
+        "perc": 7.4484
+      },
+      {
+        "group": "Coast Road",
+        "category": "level_1_qualifications",
+        "perc": 7.4698
+      },
+      {
+        "group": "Coast Road",
+        "category": "level_2_qualifications",
+        "perc": 15.0182
+      },
+      {
+        "group": "Coast Road",
+        "category": "level_3_qualifications",
+        "perc": 16.3108
+      },
+      {
+        "group": "Coast Road",
+        "category": "level_4_qualifications_and_above",
+        "perc": 24.9375
+      },
+      {
+        "group": "Coast Road",
+        "category": "no_qualifications",
+        "perc": 26.3586
+      },
+      {
+        "group": "Coast Road",
+        "category": "other_qualifications",
+        "perc": 2.4566
       }
     ],
     "cob": [
-      {
-        "group": "Coast Road",
-        "category": "england",
-        "perc": 4.1458
-      },
-      {
-        "group": "Coast Road",
-        "category": "northern_ireland",
-        "perc": 90.6733
-      },
-      {
-        "group": "Coast Road",
-        "category": "other_cob",
-        "perc": 2.7051
-      },
-      {
-        "group": "Coast Road",
-        "category": "republic_of_ireland",
-        "perc": 0.8233
-      },
-      {
-        "group": "Coast Road",
-        "category": "scotland",
-        "perc": 1.476
-      },
-      {
-        "group": "Coast Road",
-        "category": "wales",
-        "perc": 0.1764
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Coast Road",
+        "category": "england",
+        "perc": 4.1458
+      },
+      {
+        "group": "Coast Road",
+        "category": "northern_ireland",
+        "perc": 90.6733
+      },
+      {
+        "group": "Coast Road",
+        "category": "other_cob",
+        "perc": 2.7051
+      },
+      {
+        "group": "Coast Road",
+        "category": "republic_of_ireland",
+        "perc": 0.8233
+      },
+      {
+        "group": "Coast Road",
+        "category": "scotland",
+        "perc": 1.476
+      },
+      {
+        "group": "Coast Road",
+        "category": "wales",
+        "perc": 0.1764
       }
     ],
     "mainlang": [
-      {
-        "group": "Coast Road",
-        "category": "english",
-        "perc": 98.8556
-      },
-      {
-        "group": "Coast Road",
-        "category": "other_languages",
-        "perc": 1.1444
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Coast Road",
+        "category": "english",
+        "perc": 98.8556
+      },
+      {
+        "group": "Coast Road",
+        "category": "other_languages",
+        "perc": 1.1444
       }
     ],
     "age": [
-      {
-        "group": "Coast Road",
-        "category": "a0to14",
-        "perc": 16.3834
-      },
-      {
-        "group": "Coast Road",
-        "category": "a15to39",
-        "perc": 27.4155
-      },
-      {
-        "group": "Coast Road",
-        "category": "a40to64",
-        "perc": 34.5545
-      },
-      {
-        "group": "Coast Road",
-        "category": "a65plus",
-        "perc": 21.6466
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Coast Road",
+        "category": "a0to14",
+        "perc": 16.3834
+      },
+      {
+        "group": "Coast Road",
+        "category": "a15to39",
+        "perc": 27.4155
+      },
+      {
+        "group": "Coast Road",
+        "category": "a40to64",
+        "perc": 34.5545
+      },
+      {
+        "group": "Coast Road",
+        "category": "a65plus",
+        "perc": 21.6466
       }
     ],
     "provision_care": [
-      {
-        "group": "Coast Road",
-        "category": "a1to19_hours",
-        "perc": 5.9122
-      },
-      {
-        "group": "Coast Road",
-        "category": "a20to49_hours",
-        "perc": 3.2282
-      },
-      {
-        "group": "Coast Road",
-        "category": "a50plus_hours",
-        "perc": 4.1744
-      },
-      {
-        "group": "Coast Road",
-        "category": "no_care",
-        "perc": 86.6852
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Coast Road",
+        "category": "a1to19_hours",
+        "perc": 5.9122
+      },
+      {
+        "group": "Coast Road",
+        "category": "a20to49_hours",
+        "perc": 3.2282
+      },
+      {
+        "group": "Coast Road",
+        "category": "a50plus_hours",
+        "perc": 4.1744
+      },
+      {
+        "group": "Coast Road",
+        "category": "no_care",
+        "perc": 86.6852
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Coast Road",
-        "category": "catholic",
-        "perc": 32.8786
-      },
-      {
-        "group": "Coast Road",
-        "category": "none",
-        "perc": 10.8439
-      },
-      {
-        "group": "Coast Road",
-        "category": "other_religions",
-        "perc": 0.7292
-      },
-      {
-        "group": "Coast Road",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 55.5484
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Coast Road",
+        "category": "catholic",
+        "perc": 32.8786
+      },
+      {
+        "group": "Coast Road",
+        "category": "none",
+        "perc": 10.8439
+      },
+      {
+        "group": "Coast Road",
+        "category": "other_religions",
+        "perc": 0.7292
+      },
+      {
+        "group": "Coast Road",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 55.5484
       }
     ],
     "sex": [
-      {
-        "group": "Coast Road",
-        "category": "females",
-        "perc": 51.4849
-      },
-      {
-        "group": "Coast Road",
-        "category": "males",
-        "perc": 48.5151
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Coast Road",
+        "category": "females",
+        "perc": 51.4849
+      },
+      {
+        "group": "Coast Road",
+        "category": "males",
+        "perc": 48.5151
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Coast Road",
         "category": "FSME",
         "perc": 24.7541
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Coast Road",
         "category": "FSME",
         "perc": 23.1949
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Coast Road",
         "category": "Age 65+",
         "perc": 21.7571
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Coast Road",
+        "category": "destHEpct",
+        "perc": 32.7
+      },
+      {
+        "group": "Coast Road",
+        "category": "destFEpct",
+        "perc": 22.1
+      },
+      {
+        "group": "Coast Road",
+        "category": "destEmploypct",
+        "perc": 21.2
+      },
+      {
+        "group": "Coast Road",
+        "category": "destTrainpct",
+        "perc": 15.2
+      },
+      {
+        "group": "Coast Road",
+        "category": "destUnempUnkpct",
+        "perc": 8.8
       }
     ]
   },

@@ -551,6 +551,7 @@
         "perc": 49.4498
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,33 @@
         "geography": "Magherafelt",
         "category": "Age 65+",
         "perc": 14.6922
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Magherafelt",
+        "category": "destHEpct",
+        "perc": 48.4
+      },
+      {
+        "geography": "Magherafelt",
+        "category": "destFEpct",
+        "perc": 23.6
+      },
+      {
+        "geography": "Magherafelt",
+        "category": "destEmploypct",
+        "perc": 11.6
+      },
+      {
+        "geography": "Magherafelt",
+        "category": "destTrainpct",
+        "perc": 11.6
+      },
+      {
+        "geography": "Magherafelt",
+        "category": "destUnempUnkpct",
+        "perc": 4.9
       }
     ]
   },
@@ -821,54 +849,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Magherafelt",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Magherafelt",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Magherafelt",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Magherafelt",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Magherafelt",
-        "category": "bad",
-        "perc": 4.6922
-      },
-      {
-        "group": "Magherafelt",
-        "category": "fair",
-        "perc": 12.1302
-      },
-      {
-        "group": "Magherafelt",
-        "category": "good",
-        "perc": 29.1238
-      },
-      {
-        "group": "Magherafelt",
-        "category": "very_bad",
-        "perc": 1.5364
-      },
-      {
-        "group": "Magherafelt",
-        "category": "very_good",
-        "perc": 52.5174
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +896,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Magherafelt",
+        "category": "bad",
+        "perc": 4.6922
+      },
+      {
+        "group": "Magherafelt",
+        "category": "fair",
+        "perc": 12.1302
+      },
+      {
+        "group": "Magherafelt",
+        "category": "good",
+        "perc": 29.1238
+      },
+      {
+        "group": "Magherafelt",
+        "category": "very_bad",
+        "perc": 1.5364
+      },
+      {
+        "group": "Magherafelt",
+        "category": "very_good",
+        "perc": 52.5174
       }
     ],
     "hh_size": [
-      {
-        "group": "Magherafelt",
-        "category": "five_people",
-        "perc": 12.8533
-      },
-      {
-        "group": "Magherafelt",
-        "category": "four_people",
-        "perc": 16.4815
-      },
-      {
-        "group": "Magherafelt",
-        "category": "one_person",
-        "perc": 25.5941
-      },
-      {
-        "group": "Magherafelt",
-        "category": "three_people",
-        "perc": 17.1284
-      },
-      {
-        "group": "Magherafelt",
-        "category": "two_people",
-        "perc": 27.9426
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +948,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Magherafelt",
+        "category": "five_people",
+        "perc": 12.8533
+      },
+      {
+        "group": "Magherafelt",
+        "category": "four_people",
+        "perc": 16.4815
+      },
+      {
+        "group": "Magherafelt",
+        "category": "one_person",
+        "perc": 25.5941
+      },
+      {
+        "group": "Magherafelt",
+        "category": "three_people",
+        "perc": 17.1284
+      },
+      {
+        "group": "Magherafelt",
+        "category": "two_people",
+        "perc": 27.9426
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Magherafelt",
-        "category": "apprenticeship",
-        "perc": 6.6862
-      },
-      {
-        "group": "Magherafelt",
-        "category": "level_1_qualifications",
-        "perc": 5.5318
-      },
-      {
-        "group": "Magherafelt",
-        "category": "level_2_qualifications",
-        "perc": 13.4792
-      },
-      {
-        "group": "Magherafelt",
-        "category": "level_3_qualifications",
-        "perc": 15.6613
-      },
-      {
-        "group": "Magherafelt",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.7354
-      },
-      {
-        "group": "Magherafelt",
-        "category": "no_qualifications",
-        "perc": 25.9109
-      },
-      {
-        "group": "Magherafelt",
-        "category": "other_qualifications",
-        "perc": 1.9952
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1010,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Magherafelt",
+        "category": "apprenticeship",
+        "perc": 6.6862
+      },
+      {
+        "group": "Magherafelt",
+        "category": "level_1_qualifications",
+        "perc": 5.5318
+      },
+      {
+        "group": "Magherafelt",
+        "category": "level_2_qualifications",
+        "perc": 13.4792
+      },
+      {
+        "group": "Magherafelt",
+        "category": "level_3_qualifications",
+        "perc": 15.6613
+      },
+      {
+        "group": "Magherafelt",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.7354
+      },
+      {
+        "group": "Magherafelt",
+        "category": "no_qualifications",
+        "perc": 25.9109
+      },
+      {
+        "group": "Magherafelt",
+        "category": "other_qualifications",
+        "perc": 1.9952
       }
     ],
     "cob": [
-      {
-        "group": "Magherafelt",
-        "category": "england",
-        "perc": 2.7042
-      },
-      {
-        "group": "Magherafelt",
-        "category": "northern_ireland",
-        "perc": 88.42
-      },
-      {
-        "group": "Magherafelt",
-        "category": "other_cob",
-        "perc": 6.9345
-      },
-      {
-        "group": "Magherafelt",
-        "category": "republic_of_ireland",
-        "perc": 1.2353
-      },
-      {
-        "group": "Magherafelt",
-        "category": "scotland",
-        "perc": 0.5761
-      },
-      {
-        "group": "Magherafelt",
-        "category": "wales",
-        "perc": 0.1298
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1077,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Magherafelt",
+        "category": "england",
+        "perc": 2.7042
+      },
+      {
+        "group": "Magherafelt",
+        "category": "northern_ireland",
+        "perc": 88.42
+      },
+      {
+        "group": "Magherafelt",
+        "category": "other_cob",
+        "perc": 6.9345
+      },
+      {
+        "group": "Magherafelt",
+        "category": "republic_of_ireland",
+        "perc": 1.2353
+      },
+      {
+        "group": "Magherafelt",
+        "category": "scotland",
+        "perc": 0.5761
+      },
+      {
+        "group": "Magherafelt",
+        "category": "wales",
+        "perc": 0.1298
       }
     ],
     "mainlang": [
-      {
-        "group": "Magherafelt",
-        "category": "english",
-        "perc": 94.3095
-      },
-      {
-        "group": "Magherafelt",
-        "category": "other_languages",
-        "perc": 5.6905
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1119,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Magherafelt",
+        "category": "english",
+        "perc": 94.3095
+      },
+      {
+        "group": "Magherafelt",
+        "category": "other_languages",
+        "perc": 5.6905
       }
     ],
     "age": [
-      {
-        "group": "Magherafelt",
-        "category": "a0to14",
-        "perc": 20.9333
-      },
-      {
-        "group": "Magherafelt",
-        "category": "a15to39",
-        "perc": 32.4042
-      },
-      {
-        "group": "Magherafelt",
-        "category": "a40to64",
-        "perc": 32.1291
-      },
-      {
-        "group": "Magherafelt",
-        "category": "a65plus",
-        "perc": 14.5334
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1151,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a0to14",
+        "perc": 20.9333
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a15to39",
+        "perc": 32.4042
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a40to64",
+        "perc": 32.1291
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a65plus",
+        "perc": 14.5334
       }
     ],
     "provision_care": [
-      {
-        "group": "Magherafelt",
-        "category": "a1to19_hours",
-        "perc": 5.1764
-      },
-      {
-        "group": "Magherafelt",
-        "category": "a20to49_hours",
-        "perc": 2.6995
-      },
-      {
-        "group": "Magherafelt",
-        "category": "a50plus_hours",
-        "perc": 3.7293
-      },
-      {
-        "group": "Magherafelt",
-        "category": "no_care",
-        "perc": 88.3947
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1193,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a1to19_hours",
+        "perc": 5.1764
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a20to49_hours",
+        "perc": 2.6995
+      },
+      {
+        "group": "Magherafelt",
+        "category": "a50plus_hours",
+        "perc": 3.7293
+      },
+      {
+        "group": "Magherafelt",
+        "category": "no_care",
+        "perc": 88.3947
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Magherafelt",
-        "category": "catholic",
-        "perc": 55.3976
-      },
-      {
-        "group": "Magherafelt",
-        "category": "none",
-        "perc": 4.9097
-      },
-      {
-        "group": "Magherafelt",
-        "category": "other_religions",
-        "perc": 1.1781
-      },
-      {
-        "group": "Magherafelt",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 38.5146
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1235,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Magherafelt",
+        "category": "catholic",
+        "perc": 55.3976
+      },
+      {
+        "group": "Magherafelt",
+        "category": "none",
+        "perc": 4.9097
+      },
+      {
+        "group": "Magherafelt",
+        "category": "other_religions",
+        "perc": 1.1781
+      },
+      {
+        "group": "Magherafelt",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 38.5146
       }
     ],
     "sex": [
-      {
-        "group": "Magherafelt",
-        "category": "females",
-        "perc": 50.5502
-      },
-      {
-        "group": "Magherafelt",
-        "category": "males",
-        "perc": 49.4498
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1267,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Magherafelt",
+        "category": "females",
+        "perc": 50.5502
+      },
+      {
+        "group": "Magherafelt",
+        "category": "males",
+        "perc": 49.4498
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1325,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Magherafelt",
         "category": "FSME",
         "perc": 16.939
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Magherafelt",
         "category": "FSME",
         "perc": 16.3528
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1407,58 @@
         "group": "Magherafelt",
         "category": "Age 65+",
         "perc": 14.6922
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Magherafelt",
+        "category": "destHEpct",
+        "perc": 48.4
+      },
+      {
+        "group": "Magherafelt",
+        "category": "destFEpct",
+        "perc": 23.6
+      },
+      {
+        "group": "Magherafelt",
+        "category": "destEmploypct",
+        "perc": 11.6
+      },
+      {
+        "group": "Magherafelt",
+        "category": "destTrainpct",
+        "perc": 11.6
+      },
+      {
+        "group": "Magherafelt",
+        "category": "destUnempUnkpct",
+        "perc": 4.9
       }
     ]
   },

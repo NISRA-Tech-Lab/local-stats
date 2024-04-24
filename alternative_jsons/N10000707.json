@@ -566,6 +566,7 @@
         "perc": 48.0285
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Lisburn South",
         "category": "Age 65+",
         "perc": 16.7554
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Lisburn South",
+        "category": "destHEpct",
+        "perc": 35.1
+      },
+      {
+        "geography": "Lisburn South",
+        "category": "destFEpct",
+        "perc": 24.7
+      },
+      {
+        "geography": "Lisburn South",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "geography": "Lisburn South",
+        "category": "destTrainpct",
+        "perc": 21.4
+      },
+      {
+        "geography": "Lisburn South",
+        "category": "destUnempUnkpct",
+        "perc": 6.2
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Lisburn South",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lisburn South",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Lisburn South",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lisburn South",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Lisburn South",
-        "category": "bad",
-        "perc": 6.4512
-      },
-      {
-        "group": "Lisburn South",
-        "category": "fair",
-        "perc": 14.6211
-      },
-      {
-        "group": "Lisburn South",
-        "category": "good",
-        "perc": 30.1715
-      },
-      {
-        "group": "Lisburn South",
-        "category": "very_bad",
-        "perc": 2.0682
-      },
-      {
-        "group": "Lisburn South",
-        "category": "very_good",
-        "perc": 46.688
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Lisburn South",
+        "category": "bad",
+        "perc": 6.4512
+      },
+      {
+        "group": "Lisburn South",
+        "category": "fair",
+        "perc": 14.6211
+      },
+      {
+        "group": "Lisburn South",
+        "category": "good",
+        "perc": 30.1715
+      },
+      {
+        "group": "Lisburn South",
+        "category": "very_bad",
+        "perc": 2.0682
+      },
+      {
+        "group": "Lisburn South",
+        "category": "very_good",
+        "perc": 46.688
       }
     ],
     "hh_size": [
-      {
-        "group": "Lisburn South",
-        "category": "five_people",
-        "perc": 7.2544
-      },
-      {
-        "group": "Lisburn South",
-        "category": "four_people",
-        "perc": 14.0184
-      },
-      {
-        "group": "Lisburn South",
-        "category": "one_person",
-        "perc": 29.6878
-      },
-      {
-        "group": "Lisburn South",
-        "category": "three_people",
-        "perc": 16.9902
-      },
-      {
-        "group": "Lisburn South",
-        "category": "two_people",
-        "perc": 32.0492
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Lisburn South",
+        "category": "five_people",
+        "perc": 7.2544
+      },
+      {
+        "group": "Lisburn South",
+        "category": "four_people",
+        "perc": 14.0184
+      },
+      {
+        "group": "Lisburn South",
+        "category": "one_person",
+        "perc": 29.6878
+      },
+      {
+        "group": "Lisburn South",
+        "category": "three_people",
+        "perc": 16.9902
+      },
+      {
+        "group": "Lisburn South",
+        "category": "two_people",
+        "perc": 32.0492
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Lisburn South",
-        "category": "apprenticeship",
-        "perc": 6.6407
-      },
-      {
-        "group": "Lisburn South",
-        "category": "level_1_qualifications",
-        "perc": 7.557
-      },
-      {
-        "group": "Lisburn South",
-        "category": "level_2_qualifications",
-        "perc": 14.8507
-      },
-      {
-        "group": "Lisburn South",
-        "category": "level_3_qualifications",
-        "perc": 16.0514
-      },
-      {
-        "group": "Lisburn South",
-        "category": "level_4_qualifications_and_above",
-        "perc": 27.6687
-      },
-      {
-        "group": "Lisburn South",
-        "category": "no_qualifications",
-        "perc": 24.5405
-      },
-      {
-        "group": "Lisburn South",
-        "category": "other_qualifications",
-        "perc": 2.691
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Lisburn South",
+        "category": "apprenticeship",
+        "perc": 6.6407
+      },
+      {
+        "group": "Lisburn South",
+        "category": "level_1_qualifications",
+        "perc": 7.557
+      },
+      {
+        "group": "Lisburn South",
+        "category": "level_2_qualifications",
+        "perc": 14.8507
+      },
+      {
+        "group": "Lisburn South",
+        "category": "level_3_qualifications",
+        "perc": 16.0514
+      },
+      {
+        "group": "Lisburn South",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.6687
+      },
+      {
+        "group": "Lisburn South",
+        "category": "no_qualifications",
+        "perc": 24.5405
+      },
+      {
+        "group": "Lisburn South",
+        "category": "other_qualifications",
+        "perc": 2.691
       }
     ],
     "cob": [
-      {
-        "group": "Lisburn South",
-        "category": "england",
-        "perc": 4.4939
-      },
-      {
-        "group": "Lisburn South",
-        "category": "northern_ireland",
-        "perc": 84.1872
-      },
-      {
-        "group": "Lisburn South",
-        "category": "other_cob",
-        "perc": 8.9425
-      },
-      {
-        "group": "Lisburn South",
-        "category": "republic_of_ireland",
-        "perc": 1.0073
-      },
-      {
-        "group": "Lisburn South",
-        "category": "scotland",
-        "perc": 1.1882
-      },
-      {
-        "group": "Lisburn South",
-        "category": "wales",
-        "perc": 0.1809
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Lisburn South",
+        "category": "england",
+        "perc": 4.4939
+      },
+      {
+        "group": "Lisburn South",
+        "category": "northern_ireland",
+        "perc": 84.1872
+      },
+      {
+        "group": "Lisburn South",
+        "category": "other_cob",
+        "perc": 8.9425
+      },
+      {
+        "group": "Lisburn South",
+        "category": "republic_of_ireland",
+        "perc": 1.0073
+      },
+      {
+        "group": "Lisburn South",
+        "category": "scotland",
+        "perc": 1.1882
+      },
+      {
+        "group": "Lisburn South",
+        "category": "wales",
+        "perc": 0.1809
       }
     ],
     "mainlang": [
-      {
-        "group": "Lisburn South",
-        "category": "english",
-        "perc": 93.8115
-      },
-      {
-        "group": "Lisburn South",
-        "category": "other_languages",
-        "perc": 6.1885
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Lisburn South",
+        "category": "english",
+        "perc": 93.8115
+      },
+      {
+        "group": "Lisburn South",
+        "category": "other_languages",
+        "perc": 6.1885
       }
     ],
     "age": [
-      {
-        "group": "Lisburn South",
-        "category": "a0to14",
-        "perc": 20.5707
-      },
-      {
-        "group": "Lisburn South",
-        "category": "a15to39",
-        "perc": 31.8408
-      },
-      {
-        "group": "Lisburn South",
-        "category": "a40to64",
-        "perc": 30.9033
-      },
-      {
-        "group": "Lisburn South",
-        "category": "a65plus",
-        "perc": 16.6852
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a0to14",
+        "perc": 20.5707
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a15to39",
+        "perc": 31.8408
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a40to64",
+        "perc": 30.9033
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a65plus",
+        "perc": 16.6852
       }
     ],
     "provision_care": [
-      {
-        "group": "Lisburn South",
-        "category": "a1to19_hours",
-        "perc": 4.939
-      },
-      {
-        "group": "Lisburn South",
-        "category": "a20to49_hours",
-        "perc": 2.8104
-      },
-      {
-        "group": "Lisburn South",
-        "category": "a50plus_hours",
-        "perc": 4.1348
-      },
-      {
-        "group": "Lisburn South",
-        "category": "no_care",
-        "perc": 88.1157
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a1to19_hours",
+        "perc": 4.939
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a20to49_hours",
+        "perc": 2.8104
+      },
+      {
+        "group": "Lisburn South",
+        "category": "a50plus_hours",
+        "perc": 4.1348
+      },
+      {
+        "group": "Lisburn South",
+        "category": "no_care",
+        "perc": 88.1157
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Lisburn South",
-        "category": "catholic",
-        "perc": 23.6586
-      },
-      {
-        "group": "Lisburn South",
-        "category": "none",
-        "perc": 15.6696
-      },
-      {
-        "group": "Lisburn South",
-        "category": "other_religions",
-        "perc": 1.8626
-      },
-      {
-        "group": "Lisburn South",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 58.8093
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Lisburn South",
+        "category": "catholic",
+        "perc": 23.6586
+      },
+      {
+        "group": "Lisburn South",
+        "category": "none",
+        "perc": 15.6696
+      },
+      {
+        "group": "Lisburn South",
+        "category": "other_religions",
+        "perc": 1.8626
+      },
+      {
+        "group": "Lisburn South",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 58.8093
       }
     ],
     "sex": [
-      {
-        "group": "Lisburn South",
-        "category": "females",
-        "perc": 51.9715
-      },
-      {
-        "group": "Lisburn South",
-        "category": "males",
-        "perc": 48.0285
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Lisburn South",
+        "category": "females",
+        "perc": 51.9715
+      },
+      {
+        "group": "Lisburn South",
+        "category": "males",
+        "perc": 48.0285
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Lisburn South",
         "category": "FSME",
         "perc": 25.9469
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Lisburn South",
         "category": "FSME",
         "perc": 24.2595
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Lisburn South",
         "category": "Age 65+",
         "perc": 16.7554
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Lisburn South",
+        "category": "destHEpct",
+        "perc": 35.1
+      },
+      {
+        "group": "Lisburn South",
+        "category": "destFEpct",
+        "perc": 24.7
+      },
+      {
+        "group": "Lisburn South",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "group": "Lisburn South",
+        "category": "destTrainpct",
+        "perc": 21.4
+      },
+      {
+        "group": "Lisburn South",
+        "category": "destUnempUnkpct",
+        "perc": 6.2
       }
     ]
   },

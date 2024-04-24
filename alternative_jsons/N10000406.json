@@ -551,6 +551,7 @@
         "perc": 50.037
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,33 @@
         "geography": "Limavady",
         "category": "Age 65+",
         "perc": 19.7538
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Limavady",
+        "category": "destHEpct",
+        "perc": 31
+      },
+      {
+        "geography": "Limavady",
+        "category": "destFEpct",
+        "perc": 37.1
+      },
+      {
+        "geography": "Limavady",
+        "category": "destEmploypct",
+        "perc": 16.2
+      },
+      {
+        "geography": "Limavady",
+        "category": "destTrainpct",
+        "perc": 12.2
+      },
+      {
+        "geography": "Limavady",
+        "category": "destUnempUnkpct",
+        "perc": 3.6
       }
     ]
   },
@@ -821,54 +849,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Limavady",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Limavady",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Limavady",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Limavady",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Limavady",
-        "category": "bad",
-        "perc": 7.1842
-      },
-      {
-        "group": "Limavady",
-        "category": "fair",
-        "perc": 16.3463
-      },
-      {
-        "group": "Limavady",
-        "category": "good",
-        "perc": 28.6383
-      },
-      {
-        "group": "Limavady",
-        "category": "very_bad",
-        "perc": 2.3722
-      },
-      {
-        "group": "Limavady",
-        "category": "very_good",
-        "perc": 45.459
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +896,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Limavady",
+        "category": "bad",
+        "perc": 7.1842
+      },
+      {
+        "group": "Limavady",
+        "category": "fair",
+        "perc": 16.3463
+      },
+      {
+        "group": "Limavady",
+        "category": "good",
+        "perc": 28.6383
+      },
+      {
+        "group": "Limavady",
+        "category": "very_bad",
+        "perc": 2.3722
+      },
+      {
+        "group": "Limavady",
+        "category": "very_good",
+        "perc": 45.459
       }
     ],
     "hh_size": [
-      {
-        "group": "Limavady",
-        "category": "five_people",
-        "perc": 7.0191
-      },
-      {
-        "group": "Limavady",
-        "category": "four_people",
-        "perc": 13.1875
-      },
-      {
-        "group": "Limavady",
-        "category": "one_person",
-        "perc": 31.3582
-      },
-      {
-        "group": "Limavady",
-        "category": "three_people",
-        "perc": 17.4567
-      },
-      {
-        "group": "Limavady",
-        "category": "two_people",
-        "perc": 30.9784
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +948,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Limavady",
+        "category": "five_people",
+        "perc": 7.0191
+      },
+      {
+        "group": "Limavady",
+        "category": "four_people",
+        "perc": 13.1875
+      },
+      {
+        "group": "Limavady",
+        "category": "one_person",
+        "perc": 31.3582
+      },
+      {
+        "group": "Limavady",
+        "category": "three_people",
+        "perc": 17.4567
+      },
+      {
+        "group": "Limavady",
+        "category": "two_people",
+        "perc": 30.9784
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Limavady",
-        "category": "apprenticeship",
-        "perc": 6.4399
-      },
-      {
-        "group": "Limavady",
-        "category": "level_1_qualifications",
-        "perc": 6.5538
-      },
-      {
-        "group": "Limavady",
-        "category": "level_2_qualifications",
-        "perc": 13.9809
-      },
-      {
-        "group": "Limavady",
-        "category": "level_3_qualifications",
-        "perc": 15.7123
-      },
-      {
-        "group": "Limavady",
-        "category": "level_4_qualifications_and_above",
-        "perc": 25.3038
-      },
-      {
-        "group": "Limavady",
-        "category": "no_qualifications",
-        "perc": 29.997
-      },
-      {
-        "group": "Limavady",
-        "category": "other_qualifications",
-        "perc": 2.0125
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1010,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Limavady",
+        "category": "apprenticeship",
+        "perc": 6.4399
+      },
+      {
+        "group": "Limavady",
+        "category": "level_1_qualifications",
+        "perc": 6.5538
+      },
+      {
+        "group": "Limavady",
+        "category": "level_2_qualifications",
+        "perc": 13.9809
+      },
+      {
+        "group": "Limavady",
+        "category": "level_3_qualifications",
+        "perc": 15.7123
+      },
+      {
+        "group": "Limavady",
+        "category": "level_4_qualifications_and_above",
+        "perc": 25.3038
+      },
+      {
+        "group": "Limavady",
+        "category": "no_qualifications",
+        "perc": 29.997
+      },
+      {
+        "group": "Limavady",
+        "category": "other_qualifications",
+        "perc": 2.0125
       }
     ],
     "cob": [
-      {
-        "group": "Limavady",
-        "category": "england",
-        "perc": 3.9125
-      },
-      {
-        "group": "Limavady",
-        "category": "northern_ireland",
-        "perc": 91.0413
-      },
-      {
-        "group": "Limavady",
-        "category": "other_cob",
-        "perc": 2.2551
-      },
-      {
-        "group": "Limavady",
-        "category": "republic_of_ireland",
-        "perc": 1.5342
-      },
-      {
-        "group": "Limavady",
-        "category": "scotland",
-        "perc": 1.0844
-      },
-      {
-        "group": "Limavady",
-        "category": "wales",
-        "perc": 0.1725
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1077,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Limavady",
+        "category": "england",
+        "perc": 3.9125
+      },
+      {
+        "group": "Limavady",
+        "category": "northern_ireland",
+        "perc": 91.0413
+      },
+      {
+        "group": "Limavady",
+        "category": "other_cob",
+        "perc": 2.2551
+      },
+      {
+        "group": "Limavady",
+        "category": "republic_of_ireland",
+        "perc": 1.5342
+      },
+      {
+        "group": "Limavady",
+        "category": "scotland",
+        "perc": 1.0844
+      },
+      {
+        "group": "Limavady",
+        "category": "wales",
+        "perc": 0.1725
       }
     ],
     "mainlang": [
-      {
-        "group": "Limavady",
-        "category": "english",
-        "perc": 98.7619
-      },
-      {
-        "group": "Limavady",
-        "category": "other_languages",
-        "perc": 1.2381
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1119,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Limavady",
+        "category": "english",
+        "perc": 98.7619
+      },
+      {
+        "group": "Limavady",
+        "category": "other_languages",
+        "perc": 1.2381
       }
     ],
     "age": [
-      {
-        "group": "Limavady",
-        "category": "a0to14",
-        "perc": 17.6217
-      },
-      {
-        "group": "Limavady",
-        "category": "a15to39",
-        "perc": 29.1004
-      },
-      {
-        "group": "Limavady",
-        "category": "a40to64",
-        "perc": 33.6352
-      },
-      {
-        "group": "Limavady",
-        "category": "a65plus",
-        "perc": 19.6426
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1151,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Limavady",
+        "category": "a0to14",
+        "perc": 17.6217
+      },
+      {
+        "group": "Limavady",
+        "category": "a15to39",
+        "perc": 29.1004
+      },
+      {
+        "group": "Limavady",
+        "category": "a40to64",
+        "perc": 33.6352
+      },
+      {
+        "group": "Limavady",
+        "category": "a65plus",
+        "perc": 19.6426
       }
     ],
     "provision_care": [
-      {
-        "group": "Limavady",
-        "category": "a1to19_hours",
-        "perc": 4.6223
-      },
-      {
-        "group": "Limavady",
-        "category": "a20to49_hours",
-        "perc": 3.075
-      },
-      {
-        "group": "Limavady",
-        "category": "a50plus_hours",
-        "perc": 4.0372
-      },
-      {
-        "group": "Limavady",
-        "category": "no_care",
-        "perc": 88.2655
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1193,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Limavady",
+        "category": "a1to19_hours",
+        "perc": 4.6223
+      },
+      {
+        "group": "Limavady",
+        "category": "a20to49_hours",
+        "perc": 3.075
+      },
+      {
+        "group": "Limavady",
+        "category": "a50plus_hours",
+        "perc": 4.0372
+      },
+      {
+        "group": "Limavady",
+        "category": "no_care",
+        "perc": 88.2655
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Limavady",
-        "category": "catholic",
-        "perc": 47.7203
-      },
-      {
-        "group": "Limavady",
-        "category": "none",
-        "perc": 5.7856
-      },
-      {
-        "group": "Limavady",
-        "category": "other_religions",
-        "perc": 0.4559
-      },
-      {
-        "group": "Limavady",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 46.0382
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1235,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Limavady",
+        "category": "catholic",
+        "perc": 47.7203
+      },
+      {
+        "group": "Limavady",
+        "category": "none",
+        "perc": 5.7856
+      },
+      {
+        "group": "Limavady",
+        "category": "other_religions",
+        "perc": 0.4559
+      },
+      {
+        "group": "Limavady",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 46.0382
       }
     ],
     "sex": [
-      {
-        "group": "Limavady",
-        "category": "females",
-        "perc": 49.963
-      },
-      {
-        "group": "Limavady",
-        "category": "males",
-        "perc": 50.037
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1267,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Limavady",
+        "category": "females",
+        "perc": 49.963
+      },
+      {
+        "group": "Limavady",
+        "category": "males",
+        "perc": 50.037
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1325,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Limavady",
         "category": "FSME",
         "perc": 24.9327
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Limavady",
         "category": "FSME",
         "perc": 22.5062
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1407,58 @@
         "group": "Limavady",
         "category": "Age 65+",
         "perc": 19.7538
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Limavady",
+        "category": "destHEpct",
+        "perc": 31
+      },
+      {
+        "group": "Limavady",
+        "category": "destFEpct",
+        "perc": 37.1
+      },
+      {
+        "group": "Limavady",
+        "category": "destEmploypct",
+        "perc": 16.2
+      },
+      {
+        "group": "Limavady",
+        "category": "destTrainpct",
+        "perc": 12.2
+      },
+      {
+        "group": "Limavady",
+        "category": "destUnempUnkpct",
+        "perc": 3.6
       }
     ]
   },

@@ -561,6 +561,7 @@
         "perc": 48.7899
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Knockagh",
         "category": "Age 65+",
         "perc": 17.851
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Knockagh",
+        "category": "destHEpct",
+        "perc": 48
+      },
+      {
+        "geography": "Knockagh",
+        "category": "destFEpct",
+        "perc": 16.3
+      },
+      {
+        "geography": "Knockagh",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "geography": "Knockagh",
+        "category": "destTrainpct",
+        "perc": 14.9
+      },
+      {
+        "geography": "Knockagh",
+        "category": "destUnempUnkpct",
+        "perc": 6.4
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Knockagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Knockagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Knockagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Knockagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Knockagh",
-        "category": "bad",
-        "perc": 5.8248
-      },
-      {
-        "group": "Knockagh",
-        "category": "fair",
-        "perc": 14.4172
-      },
-      {
-        "group": "Knockagh",
-        "category": "good",
-        "perc": 30.9594
-      },
-      {
-        "group": "Knockagh",
-        "category": "very_bad",
-        "perc": 1.7775
-      },
-      {
-        "group": "Knockagh",
-        "category": "very_good",
-        "perc": 47.021
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Knockagh",
+        "category": "bad",
+        "perc": 5.8248
+      },
+      {
+        "group": "Knockagh",
+        "category": "fair",
+        "perc": 14.4172
+      },
+      {
+        "group": "Knockagh",
+        "category": "good",
+        "perc": 30.9594
+      },
+      {
+        "group": "Knockagh",
+        "category": "very_bad",
+        "perc": 1.7775
+      },
+      {
+        "group": "Knockagh",
+        "category": "very_good",
+        "perc": 47.021
       }
     ],
     "hh_size": [
-      {
-        "group": "Knockagh",
-        "category": "five_people",
-        "perc": 5.459
-      },
-      {
-        "group": "Knockagh",
-        "category": "four_people",
-        "perc": 13.8783
-      },
-      {
-        "group": "Knockagh",
-        "category": "one_person",
-        "perc": 28.748
-      },
-      {
-        "group": "Knockagh",
-        "category": "three_people",
-        "perc": 17.409
-      },
-      {
-        "group": "Knockagh",
-        "category": "two_people",
-        "perc": 34.5057
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Knockagh",
+        "category": "five_people",
+        "perc": 5.459
+      },
+      {
+        "group": "Knockagh",
+        "category": "four_people",
+        "perc": 13.8783
+      },
+      {
+        "group": "Knockagh",
+        "category": "one_person",
+        "perc": 28.748
+      },
+      {
+        "group": "Knockagh",
+        "category": "three_people",
+        "perc": 17.409
+      },
+      {
+        "group": "Knockagh",
+        "category": "two_people",
+        "perc": 34.5057
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Knockagh",
-        "category": "apprenticeship",
-        "perc": 6.6134
-      },
-      {
-        "group": "Knockagh",
-        "category": "level_1_qualifications",
-        "perc": 7.1863
-      },
-      {
-        "group": "Knockagh",
-        "category": "level_2_qualifications",
-        "perc": 15.278
-      },
-      {
-        "group": "Knockagh",
-        "category": "level_3_qualifications",
-        "perc": 16.7633
-      },
-      {
-        "group": "Knockagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.2491
-      },
-      {
-        "group": "Knockagh",
-        "category": "no_qualifications",
-        "perc": 20.3282
-      },
-      {
-        "group": "Knockagh",
-        "category": "other_qualifications",
-        "perc": 2.5817
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Knockagh",
+        "category": "apprenticeship",
+        "perc": 6.6134
+      },
+      {
+        "group": "Knockagh",
+        "category": "level_1_qualifications",
+        "perc": 7.1863
+      },
+      {
+        "group": "Knockagh",
+        "category": "level_2_qualifications",
+        "perc": 15.278
+      },
+      {
+        "group": "Knockagh",
+        "category": "level_3_qualifications",
+        "perc": 16.7633
+      },
+      {
+        "group": "Knockagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.2491
+      },
+      {
+        "group": "Knockagh",
+        "category": "no_qualifications",
+        "perc": 20.3282
+      },
+      {
+        "group": "Knockagh",
+        "category": "other_qualifications",
+        "perc": 2.5817
       }
     ],
     "cob": [
-      {
-        "group": "Knockagh",
-        "category": "england",
-        "perc": 4.266
-      },
-      {
-        "group": "Knockagh",
-        "category": "northern_ireland",
-        "perc": 89.2047
-      },
-      {
-        "group": "Knockagh",
-        "category": "other_cob",
-        "perc": 4.3702
-      },
-      {
-        "group": "Knockagh",
-        "category": "republic_of_ireland",
-        "perc": 0.793
-      },
-      {
-        "group": "Knockagh",
-        "category": "scotland",
-        "perc": 1.175
-      },
-      {
-        "group": "Knockagh",
-        "category": "wales",
-        "perc": 0.191
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Knockagh",
+        "category": "england",
+        "perc": 4.266
+      },
+      {
+        "group": "Knockagh",
+        "category": "northern_ireland",
+        "perc": 89.2047
+      },
+      {
+        "group": "Knockagh",
+        "category": "other_cob",
+        "perc": 4.3702
+      },
+      {
+        "group": "Knockagh",
+        "category": "republic_of_ireland",
+        "perc": 0.793
+      },
+      {
+        "group": "Knockagh",
+        "category": "scotland",
+        "perc": 1.175
+      },
+      {
+        "group": "Knockagh",
+        "category": "wales",
+        "perc": 0.191
       }
     ],
     "mainlang": [
-      {
-        "group": "Knockagh",
-        "category": "english",
-        "perc": 98.0719
-      },
-      {
-        "group": "Knockagh",
-        "category": "other_languages",
-        "perc": 1.9281
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Knockagh",
+        "category": "english",
+        "perc": 98.0719
+      },
+      {
+        "group": "Knockagh",
+        "category": "other_languages",
+        "perc": 1.9281
       }
     ],
     "age": [
-      {
-        "group": "Knockagh",
-        "category": "a0to14",
-        "perc": 17.0218
-      },
-      {
-        "group": "Knockagh",
-        "category": "a15to39",
-        "perc": 29.7244
-      },
-      {
-        "group": "Knockagh",
-        "category": "a40to64",
-        "perc": 35.5604
-      },
-      {
-        "group": "Knockagh",
-        "category": "a65plus",
-        "perc": 17.6934
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Knockagh",
+        "category": "a0to14",
+        "perc": 17.0218
+      },
+      {
+        "group": "Knockagh",
+        "category": "a15to39",
+        "perc": 29.7244
+      },
+      {
+        "group": "Knockagh",
+        "category": "a40to64",
+        "perc": 35.5604
+      },
+      {
+        "group": "Knockagh",
+        "category": "a65plus",
+        "perc": 17.6934
       }
     ],
     "provision_care": [
-      {
-        "group": "Knockagh",
-        "category": "a1to19_hours",
-        "perc": 7.152
-      },
-      {
-        "group": "Knockagh",
-        "category": "a20to49_hours",
-        "perc": 3.0207
-      },
-      {
-        "group": "Knockagh",
-        "category": "a50plus_hours",
-        "perc": 4.1923
-      },
-      {
-        "group": "Knockagh",
-        "category": "no_care",
-        "perc": 85.635
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Knockagh",
+        "category": "a1to19_hours",
+        "perc": 7.152
+      },
+      {
+        "group": "Knockagh",
+        "category": "a20to49_hours",
+        "perc": 3.0207
+      },
+      {
+        "group": "Knockagh",
+        "category": "a50plus_hours",
+        "perc": 4.1923
+      },
+      {
+        "group": "Knockagh",
+        "category": "no_care",
+        "perc": 85.635
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Knockagh",
-        "category": "catholic",
-        "perc": 8.922
-      },
-      {
-        "group": "Knockagh",
-        "category": "none",
-        "perc": 16.466
-      },
-      {
-        "group": "Knockagh",
-        "category": "other_religions",
-        "perc": 1.1695
-      },
-      {
-        "group": "Knockagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 73.4426
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Knockagh",
+        "category": "catholic",
+        "perc": 8.922
+      },
+      {
+        "group": "Knockagh",
+        "category": "none",
+        "perc": 16.466
+      },
+      {
+        "group": "Knockagh",
+        "category": "other_religions",
+        "perc": 1.1695
+      },
+      {
+        "group": "Knockagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 73.4426
       }
     ],
     "sex": [
-      {
-        "group": "Knockagh",
-        "category": "females",
-        "perc": 51.2101
-      },
-      {
-        "group": "Knockagh",
-        "category": "males",
-        "perc": 48.7899
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Knockagh",
+        "category": "females",
+        "perc": 51.2101
+      },
+      {
+        "group": "Knockagh",
+        "category": "males",
+        "perc": 48.7899
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Knockagh",
         "category": "FSME",
         "perc": 21.9512
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Knockagh",
         "category": "FSME",
         "perc": 18.9889
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Knockagh",
         "category": "Age 65+",
         "perc": 17.851
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Knockagh",
+        "category": "destHEpct",
+        "perc": 48
+      },
+      {
+        "group": "Knockagh",
+        "category": "destFEpct",
+        "perc": 16.3
+      },
+      {
+        "group": "Knockagh",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "group": "Knockagh",
+        "category": "destTrainpct",
+        "perc": 14.9
+      },
+      {
+        "group": "Knockagh",
+        "category": "destUnempUnkpct",
+        "perc": 6.4
       }
     ]
   },

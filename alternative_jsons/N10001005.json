@@ -561,6 +561,7 @@
         "perc": 49.9322
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Slieve Croob",
         "category": "Age 65+",
         "perc": 16.464
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Slieve Croob",
+        "category": "destHEpct",
+        "perc": 45.8
+      },
+      {
+        "geography": "Slieve Croob",
+        "category": "destFEpct",
+        "perc": 21
+      },
+      {
+        "geography": "Slieve Croob",
+        "category": "destEmploypct",
+        "perc": 15.8
+      },
+      {
+        "geography": "Slieve Croob",
+        "category": "destTrainpct",
+        "perc": 15.2
+      },
+      {
+        "geography": "Slieve Croob",
+        "category": "destUnempUnkpct",
+        "perc": 2.3
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Slieve Croob",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Slieve Croob",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Slieve Croob",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Slieve Croob",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Slieve Croob",
-        "category": "bad",
-        "perc": 4.5168
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "fair",
-        "perc": 12.4094
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "good",
-        "perc": 27.9516
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "very_bad",
-        "perc": 1.6412
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "very_good",
-        "perc": 53.4811
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "bad",
+        "perc": 4.5168
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "fair",
+        "perc": 12.4094
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "good",
+        "perc": 27.9516
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "very_bad",
+        "perc": 1.6412
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "very_good",
+        "perc": 53.4811
       }
     ],
     "hh_size": [
-      {
-        "group": "Slieve Croob",
-        "category": "five_people",
-        "perc": 13.5277
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "four_people",
-        "perc": 16.2127
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "one_person",
-        "perc": 25.1156
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "three_people",
-        "perc": 17.369
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "two_people",
-        "perc": 27.7749
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "five_people",
+        "perc": 13.5277
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "four_people",
+        "perc": 16.2127
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "one_person",
+        "perc": 25.1156
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "three_people",
+        "perc": 17.369
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "two_people",
+        "perc": 27.7749
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Slieve Croob",
-        "category": "apprenticeship",
-        "perc": 8.9921
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "level_1_qualifications",
-        "perc": 5.5502
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "level_2_qualifications",
-        "perc": 13.9116
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "level_3_qualifications",
-        "perc": 17.6658
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.5834
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "no_qualifications",
-        "perc": 20.4829
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "other_qualifications",
-        "perc": 1.814
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "apprenticeship",
+        "perc": 8.9921
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "level_1_qualifications",
+        "perc": 5.5502
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "level_2_qualifications",
+        "perc": 13.9116
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "level_3_qualifications",
+        "perc": 17.6658
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.5834
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "no_qualifications",
+        "perc": 20.4829
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "other_qualifications",
+        "perc": 1.814
       }
     ],
     "cob": [
-      {
-        "group": "Slieve Croob",
-        "category": "england",
-        "perc": 3.596
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "northern_ireland",
-        "perc": 91.4987
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "other_cob",
-        "perc": 2.5719
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "republic_of_ireland",
-        "perc": 1.5385
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "scotland",
-        "perc": 0.6968
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "wales",
-        "perc": 0.0982
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "england",
+        "perc": 3.596
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "northern_ireland",
+        "perc": 91.4987
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "other_cob",
+        "perc": 2.5719
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "republic_of_ireland",
+        "perc": 1.5385
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "scotland",
+        "perc": 0.6968
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "wales",
+        "perc": 0.0982
       }
     ],
     "mainlang": [
-      {
-        "group": "Slieve Croob",
-        "category": "english",
-        "perc": 98.5336
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "other_languages",
-        "perc": 1.4664
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "english",
+        "perc": 98.5336
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "other_languages",
+        "perc": 1.4664
       }
     ],
     "age": [
-      {
-        "group": "Slieve Croob",
-        "category": "a0to14",
-        "perc": 20.9239
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "a15to39",
-        "perc": 29.2748
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "a40to64",
-        "perc": 33.5063
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "a65plus",
-        "perc": 16.2949
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a0to14",
+        "perc": 20.9239
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a15to39",
+        "perc": 29.2748
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a40to64",
+        "perc": 33.5063
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a65plus",
+        "perc": 16.2949
       }
     ],
     "provision_care": [
-      {
-        "group": "Slieve Croob",
-        "category": "a1to19_hours",
-        "perc": 5.8867
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "a20to49_hours",
-        "perc": 2.8886
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "a50plus_hours",
-        "perc": 3.7153
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "no_care",
-        "perc": 87.5093
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a1to19_hours",
+        "perc": 5.8867
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a20to49_hours",
+        "perc": 2.8886
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "a50plus_hours",
+        "perc": 3.7153
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "no_care",
+        "perc": 87.5093
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Slieve Croob",
-        "category": "catholic",
-        "perc": 67.3026
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "none",
-        "perc": 5.6997
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "other_religions",
-        "perc": 0.4535
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 26.5442
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "catholic",
+        "perc": 67.3026
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "none",
+        "perc": 5.6997
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "other_religions",
+        "perc": 0.4535
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 26.5442
       }
     ],
     "sex": [
-      {
-        "group": "Slieve Croob",
-        "category": "females",
-        "perc": 50.0678
-      },
-      {
-        "group": "Slieve Croob",
-        "category": "males",
-        "perc": 49.9322
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "females",
+        "perc": 50.0678
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "males",
+        "perc": 49.9322
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Slieve Croob",
         "category": "FSME",
         "perc": 15.1446
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Slieve Croob",
         "category": "FSME",
         "perc": 15.2327
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Slieve Croob",
         "category": "Age 65+",
         "perc": 16.464
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "destHEpct",
+        "perc": 45.8
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "destFEpct",
+        "perc": 21
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "destEmploypct",
+        "perc": 15.8
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "destTrainpct",
+        "perc": 15.2
+      },
+      {
+        "group": "Slieve Croob",
+        "category": "destUnempUnkpct",
+        "perc": 2.3
       }
     ]
   },

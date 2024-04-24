@@ -551,6 +551,7 @@
         "perc": 50.1964
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,33 @@
         "geography": "Benbradagh",
         "category": "Age 65+",
         "perc": 14.8315
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Benbradagh",
+        "category": "destHEpct",
+        "perc": 40.9
+      },
+      {
+        "geography": "Benbradagh",
+        "category": "destFEpct",
+        "perc": 30.4
+      },
+      {
+        "geography": "Benbradagh",
+        "category": "destEmploypct",
+        "perc": 11
+      },
+      {
+        "geography": "Benbradagh",
+        "category": "destTrainpct",
+        "perc": 13.1
+      },
+      {
+        "geography": "Benbradagh",
+        "category": "destUnempUnkpct",
+        "perc": 4.6
       }
     ]
   },
@@ -821,54 +849,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Benbradagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Benbradagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Benbradagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Benbradagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Benbradagh",
-        "category": "bad",
-        "perc": 5.5278
-      },
-      {
-        "group": "Benbradagh",
-        "category": "fair",
-        "perc": 13.1152
-      },
-      {
-        "group": "Benbradagh",
-        "category": "good",
-        "perc": 26.8421
-      },
-      {
-        "group": "Benbradagh",
-        "category": "very_bad",
-        "perc": 1.7902
-      },
-      {
-        "group": "Benbradagh",
-        "category": "very_good",
-        "perc": 52.7246
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +896,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Benbradagh",
+        "category": "bad",
+        "perc": 5.5278
+      },
+      {
+        "group": "Benbradagh",
+        "category": "fair",
+        "perc": 13.1152
+      },
+      {
+        "group": "Benbradagh",
+        "category": "good",
+        "perc": 26.8421
+      },
+      {
+        "group": "Benbradagh",
+        "category": "very_bad",
+        "perc": 1.7902
+      },
+      {
+        "group": "Benbradagh",
+        "category": "very_good",
+        "perc": 52.7246
       }
     ],
     "hh_size": [
-      {
-        "group": "Benbradagh",
-        "category": "five_people",
-        "perc": 12.773
-      },
-      {
-        "group": "Benbradagh",
-        "category": "four_people",
-        "perc": 15.9361
-      },
-      {
-        "group": "Benbradagh",
-        "category": "one_person",
-        "perc": 24.808
-      },
-      {
-        "group": "Benbradagh",
-        "category": "three_people",
-        "perc": 17.3369
-      },
-      {
-        "group": "Benbradagh",
-        "category": "two_people",
-        "perc": 29.146
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +948,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Benbradagh",
+        "category": "five_people",
+        "perc": 12.773
+      },
+      {
+        "group": "Benbradagh",
+        "category": "four_people",
+        "perc": 15.9361
+      },
+      {
+        "group": "Benbradagh",
+        "category": "one_person",
+        "perc": 24.808
+      },
+      {
+        "group": "Benbradagh",
+        "category": "three_people",
+        "perc": 17.3369
+      },
+      {
+        "group": "Benbradagh",
+        "category": "two_people",
+        "perc": 29.146
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Benbradagh",
-        "category": "apprenticeship",
-        "perc": 7.6409
-      },
-      {
-        "group": "Benbradagh",
-        "category": "level_1_qualifications",
-        "perc": 5.1496
-      },
-      {
-        "group": "Benbradagh",
-        "category": "level_2_qualifications",
-        "perc": 13.4587
-      },
-      {
-        "group": "Benbradagh",
-        "category": "level_3_qualifications",
-        "perc": 17.0976
-      },
-      {
-        "group": "Benbradagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 27.7528
-      },
-      {
-        "group": "Benbradagh",
-        "category": "no_qualifications",
-        "perc": 27.2443
-      },
-      {
-        "group": "Benbradagh",
-        "category": "other_qualifications",
-        "perc": 1.656
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1010,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Benbradagh",
+        "category": "apprenticeship",
+        "perc": 7.6409
+      },
+      {
+        "group": "Benbradagh",
+        "category": "level_1_qualifications",
+        "perc": 5.1496
+      },
+      {
+        "group": "Benbradagh",
+        "category": "level_2_qualifications",
+        "perc": 13.4587
+      },
+      {
+        "group": "Benbradagh",
+        "category": "level_3_qualifications",
+        "perc": 17.0976
+      },
+      {
+        "group": "Benbradagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 27.7528
+      },
+      {
+        "group": "Benbradagh",
+        "category": "no_qualifications",
+        "perc": 27.2443
+      },
+      {
+        "group": "Benbradagh",
+        "category": "other_qualifications",
+        "perc": 1.656
       }
     ],
     "cob": [
-      {
-        "group": "Benbradagh",
-        "category": "england",
-        "perc": 3.1657
-      },
-      {
-        "group": "Benbradagh",
-        "category": "northern_ireland",
-        "perc": 92.0689
-      },
-      {
-        "group": "Benbradagh",
-        "category": "other_cob",
-        "perc": 1.9758
-      },
-      {
-        "group": "Benbradagh",
-        "category": "republic_of_ireland",
-        "perc": 1.7344
-      },
-      {
-        "group": "Benbradagh",
-        "category": "scotland",
-        "perc": 0.9205
-      },
-      {
-        "group": "Benbradagh",
-        "category": "wales",
-        "perc": 0.1347
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1077,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Benbradagh",
+        "category": "england",
+        "perc": 3.1657
+      },
+      {
+        "group": "Benbradagh",
+        "category": "northern_ireland",
+        "perc": 92.0689
+      },
+      {
+        "group": "Benbradagh",
+        "category": "other_cob",
+        "perc": 1.9758
+      },
+      {
+        "group": "Benbradagh",
+        "category": "republic_of_ireland",
+        "perc": 1.7344
+      },
+      {
+        "group": "Benbradagh",
+        "category": "scotland",
+        "perc": 0.9205
+      },
+      {
+        "group": "Benbradagh",
+        "category": "wales",
+        "perc": 0.1347
       }
     ],
     "mainlang": [
-      {
-        "group": "Benbradagh",
-        "category": "english",
-        "perc": 98.7493
-      },
-      {
-        "group": "Benbradagh",
-        "category": "other_languages",
-        "perc": 1.2507
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1119,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Benbradagh",
+        "category": "english",
+        "perc": 98.7493
+      },
+      {
+        "group": "Benbradagh",
+        "category": "other_languages",
+        "perc": 1.2507
       }
     ],
     "age": [
-      {
-        "group": "Benbradagh",
-        "category": "a0to14",
-        "perc": 21.5288
-      },
-      {
-        "group": "Benbradagh",
-        "category": "a15to39",
-        "perc": 30.7947
-      },
-      {
-        "group": "Benbradagh",
-        "category": "a40to64",
-        "perc": 32.9947
-      },
-      {
-        "group": "Benbradagh",
-        "category": "a65plus",
-        "perc": 14.6818
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1151,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a0to14",
+        "perc": 21.5288
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a15to39",
+        "perc": 30.7947
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a40to64",
+        "perc": 32.9947
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a65plus",
+        "perc": 14.6818
       }
     ],
     "provision_care": [
-      {
-        "group": "Benbradagh",
-        "category": "a1to19_hours",
-        "perc": 5.1369
-      },
-      {
-        "group": "Benbradagh",
-        "category": "a20to49_hours",
-        "perc": 3.0206
-      },
-      {
-        "group": "Benbradagh",
-        "category": "a50plus_hours",
-        "perc": 3.7441
-      },
-      {
-        "group": "Benbradagh",
-        "category": "no_care",
-        "perc": 88.0984
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1193,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a1to19_hours",
+        "perc": 5.1369
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a20to49_hours",
+        "perc": 3.0206
+      },
+      {
+        "group": "Benbradagh",
+        "category": "a50plus_hours",
+        "perc": 3.7441
+      },
+      {
+        "group": "Benbradagh",
+        "category": "no_care",
+        "perc": 88.0984
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Benbradagh",
-        "category": "catholic",
-        "perc": 71.1752
-      },
-      {
-        "group": "Benbradagh",
-        "category": "none",
-        "perc": 3.6817
-      },
-      {
-        "group": "Benbradagh",
-        "category": "other_religions",
-        "perc": 0.2862
-      },
-      {
-        "group": "Benbradagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 24.8569
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1235,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Benbradagh",
+        "category": "catholic",
+        "perc": 71.1752
+      },
+      {
+        "group": "Benbradagh",
+        "category": "none",
+        "perc": 3.6817
+      },
+      {
+        "group": "Benbradagh",
+        "category": "other_religions",
+        "perc": 0.2862
+      },
+      {
+        "group": "Benbradagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.8569
       }
     ],
     "sex": [
-      {
-        "group": "Benbradagh",
-        "category": "females",
-        "perc": 49.8036
-      },
-      {
-        "group": "Benbradagh",
-        "category": "males",
-        "perc": 50.1964
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1267,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Benbradagh",
+        "category": "females",
+        "perc": 49.8036
+      },
+      {
+        "group": "Benbradagh",
+        "category": "males",
+        "perc": 50.1964
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1325,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Benbradagh",
         "category": "FSME",
         "perc": 20.5106
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Benbradagh",
         "category": "FSME",
         "perc": 22.1182
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1407,58 @@
         "group": "Benbradagh",
         "category": "Age 65+",
         "perc": 14.8315
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Benbradagh",
+        "category": "destHEpct",
+        "perc": 40.9
+      },
+      {
+        "group": "Benbradagh",
+        "category": "destFEpct",
+        "perc": 30.4
+      },
+      {
+        "group": "Benbradagh",
+        "category": "destEmploypct",
+        "perc": 11
+      },
+      {
+        "group": "Benbradagh",
+        "category": "destTrainpct",
+        "perc": 13.1
+      },
+      {
+        "group": "Benbradagh",
+        "category": "destUnempUnkpct",
+        "perc": 4.6
       }
     ]
   },

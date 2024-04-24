@@ -551,6 +551,7 @@
         "perc": 50.3809
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,31 @@
         "geography": "Mid Tyrone",
         "category": "Age 65+",
         "perc": 15.6517
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Mid Tyrone",
+        "category": "destHEpct",
+        "perc": 56.6
+      },
+      {
+        "geography": "Mid Tyrone",
+        "category": "destFEpct",
+        "perc": 18.9
+      },
+      {
+        "geography": "Mid Tyrone",
+        "category": "destEmploypct"
+      },
+      {
+        "geography": "Mid Tyrone",
+        "category": "destTrainpct",
+        "perc": 16.2
+      },
+      {
+        "geography": "Mid Tyrone",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -821,54 +847,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Mid Tyrone",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Tyrone",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Mid Tyrone",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Mid Tyrone",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Mid Tyrone",
-        "category": "bad",
-        "perc": 4.2467
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "fair",
-        "perc": 12.6208
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "good",
-        "perc": 25.9636
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "very_bad",
-        "perc": 1.6032
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "very_good",
-        "perc": 55.5657
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +894,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "bad",
+        "perc": 4.2467
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "fair",
+        "perc": 12.6208
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "good",
+        "perc": 25.9636
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "very_bad",
+        "perc": 1.6032
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "very_good",
+        "perc": 55.5657
       }
     ],
     "hh_size": [
-      {
-        "group": "Mid Tyrone",
-        "category": "five_people",
-        "perc": 17.0903
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "four_people",
-        "perc": 16.8948
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "one_person",
-        "perc": 24.8452
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "three_people",
-        "perc": 15.9335
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "two_people",
-        "perc": 25.2362
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +946,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "five_people",
+        "perc": 17.0903
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "four_people",
+        "perc": 16.8948
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "one_person",
+        "perc": 24.8452
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "three_people",
+        "perc": 15.9335
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "two_people",
+        "perc": 25.2362
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Mid Tyrone",
-        "category": "apprenticeship",
-        "perc": 6.8194
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "level_1_qualifications",
-        "perc": 4.4843
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "level_2_qualifications",
-        "perc": 12.7463
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "level_3_qualifications",
-        "perc": 16.4275
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.2381
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "no_qualifications",
-        "perc": 23.455
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "other_qualifications",
-        "perc": 1.8294
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1008,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "apprenticeship",
+        "perc": 6.8194
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "level_1_qualifications",
+        "perc": 4.4843
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "level_2_qualifications",
+        "perc": 12.7463
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "level_3_qualifications",
+        "perc": 16.4275
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.2381
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "no_qualifications",
+        "perc": 23.455
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "other_qualifications",
+        "perc": 1.8294
       }
     ],
     "cob": [
-      {
-        "group": "Mid Tyrone",
-        "category": "england",
-        "perc": 2.797
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "northern_ireland",
-        "perc": 91.5861
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "other_cob",
-        "perc": 2.9278
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "republic_of_ireland",
-        "perc": 2.2968
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "scotland",
-        "perc": 0.3354
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "wales",
-        "perc": 0.0569
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1075,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "england",
+        "perc": 2.797
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "northern_ireland",
+        "perc": 91.5861
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "other_cob",
+        "perc": 2.9278
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "republic_of_ireland",
+        "perc": 2.2968
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "scotland",
+        "perc": 0.3354
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "wales",
+        "perc": 0.0569
       }
     ],
     "mainlang": [
-      {
-        "group": "Mid Tyrone",
-        "category": "english",
-        "perc": 97.8867
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "other_languages",
-        "perc": 2.1133
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1117,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "english",
+        "perc": 97.8867
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "other_languages",
+        "perc": 2.1133
       }
     ],
     "age": [
-      {
-        "group": "Mid Tyrone",
-        "category": "a0to14",
-        "perc": 22.0965
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "a15to39",
-        "perc": 30.2484
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "a40to64",
-        "perc": 32.2153
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "a65plus",
-        "perc": 15.4397
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1149,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a0to14",
+        "perc": 22.0965
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a15to39",
+        "perc": 30.2484
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a40to64",
+        "perc": 32.2153
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a65plus",
+        "perc": 15.4397
       }
     ],
     "provision_care": [
-      {
-        "group": "Mid Tyrone",
-        "category": "a1to19_hours",
-        "perc": 5.3155
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "a20to49_hours",
-        "perc": 2.8683
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "a50plus_hours",
-        "perc": 3.4114
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "no_care",
-        "perc": 88.4047
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1191,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a1to19_hours",
+        "perc": 5.3155
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a20to49_hours",
+        "perc": 2.8683
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "a50plus_hours",
+        "perc": 3.4114
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "no_care",
+        "perc": 88.4047
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Mid Tyrone",
-        "category": "catholic",
-        "perc": 75.9977
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "none",
-        "perc": 2.4048
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "other_religions",
-        "perc": 0.3184
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 21.2791
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1233,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "catholic",
+        "perc": 75.9977
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "none",
+        "perc": 2.4048
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "other_religions",
+        "perc": 0.3184
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 21.2791
       }
     ],
     "sex": [
-      {
-        "group": "Mid Tyrone",
-        "category": "females",
-        "perc": 49.6191
-      },
-      {
-        "group": "Mid Tyrone",
-        "category": "males",
-        "perc": 50.3809
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1265,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "females",
+        "perc": 49.6191
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "males",
+        "perc": 50.3809
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1323,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Mid Tyrone",
         "category": "FSME",
         "perc": 15.1147
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Mid Tyrone",
         "category": "FSME",
         "perc": 15.8101
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1405,56 @@
         "group": "Mid Tyrone",
         "category": "Age 65+",
         "perc": 15.6517
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "destHEpct",
+        "perc": 56.6
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "destFEpct",
+        "perc": 18.9
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "destEmploypct"
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "destTrainpct",
+        "perc": 16.2
+      },
+      {
+        "group": "Mid Tyrone",
+        "category": "destUnempUnkpct"
       }
     ]
   },

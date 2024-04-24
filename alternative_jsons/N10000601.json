@@ -556,6 +556,7 @@
         "perc": 48.7778
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,31 @@
         "geography": "Enniskillen",
         "category": "Age 65+",
         "perc": 20.4754
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Enniskillen",
+        "category": "destHEpct",
+        "perc": 52
+      },
+      {
+        "geography": "Enniskillen",
+        "category": "destFEpct",
+        "perc": 32.7
+      },
+      {
+        "geography": "Enniskillen",
+        "category": "destEmploypct",
+        "perc": 9.4
+      },
+      {
+        "geography": "Enniskillen",
+        "category": "destTrainpct"
+      },
+      {
+        "geography": "Enniskillen",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -826,54 +852,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Enniskillen",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Enniskillen",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Enniskillen",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Enniskillen",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Enniskillen",
-        "category": "bad",
-        "perc": 5.4848
-      },
-      {
-        "group": "Enniskillen",
-        "category": "fair",
-        "perc": 14.3569
-      },
-      {
-        "group": "Enniskillen",
-        "category": "good",
-        "perc": 29.9117
-      },
-      {
-        "group": "Enniskillen",
-        "category": "very_bad",
-        "perc": 1.9999
-      },
-      {
-        "group": "Enniskillen",
-        "category": "very_good",
-        "perc": 48.2467
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +899,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Enniskillen",
+        "category": "bad",
+        "perc": 5.4848
+      },
+      {
+        "group": "Enniskillen",
+        "category": "fair",
+        "perc": 14.3569
+      },
+      {
+        "group": "Enniskillen",
+        "category": "good",
+        "perc": 29.9117
+      },
+      {
+        "group": "Enniskillen",
+        "category": "very_bad",
+        "perc": 1.9999
+      },
+      {
+        "group": "Enniskillen",
+        "category": "very_good",
+        "perc": 48.2467
       }
     ],
     "hh_size": [
-      {
-        "group": "Enniskillen",
-        "category": "five_people",
-        "perc": 7.5108
-      },
-      {
-        "group": "Enniskillen",
-        "category": "four_people",
-        "perc": 11.799
-      },
-      {
-        "group": "Enniskillen",
-        "category": "one_person",
-        "perc": 35.5874
-      },
-      {
-        "group": "Enniskillen",
-        "category": "three_people",
-        "perc": 15.1865
-      },
-      {
-        "group": "Enniskillen",
-        "category": "two_people",
-        "perc": 29.9163
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +951,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Enniskillen",
+        "category": "five_people",
+        "perc": 7.5108
+      },
+      {
+        "group": "Enniskillen",
+        "category": "four_people",
+        "perc": 11.799
+      },
+      {
+        "group": "Enniskillen",
+        "category": "one_person",
+        "perc": 35.5874
+      },
+      {
+        "group": "Enniskillen",
+        "category": "three_people",
+        "perc": 15.1865
+      },
+      {
+        "group": "Enniskillen",
+        "category": "two_people",
+        "perc": 29.9163
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Enniskillen",
-        "category": "apprenticeship",
-        "perc": 5.203
-      },
-      {
-        "group": "Enniskillen",
-        "category": "level_1_qualifications",
-        "perc": 5.6644
-      },
-      {
-        "group": "Enniskillen",
-        "category": "level_2_qualifications",
-        "perc": 14.5723
-      },
-      {
-        "group": "Enniskillen",
-        "category": "level_3_qualifications",
-        "perc": 14.7261
-      },
-      {
-        "group": "Enniskillen",
-        "category": "level_4_qualifications_and_above",
-        "perc": 32.8095
-      },
-      {
-        "group": "Enniskillen",
-        "category": "no_qualifications",
-        "perc": 24.5636
-      },
-      {
-        "group": "Enniskillen",
-        "category": "other_qualifications",
-        "perc": 2.461
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1013,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Enniskillen",
+        "category": "apprenticeship",
+        "perc": 5.203
+      },
+      {
+        "group": "Enniskillen",
+        "category": "level_1_qualifications",
+        "perc": 5.6644
+      },
+      {
+        "group": "Enniskillen",
+        "category": "level_2_qualifications",
+        "perc": 14.5723
+      },
+      {
+        "group": "Enniskillen",
+        "category": "level_3_qualifications",
+        "perc": 14.7261
+      },
+      {
+        "group": "Enniskillen",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.8095
+      },
+      {
+        "group": "Enniskillen",
+        "category": "no_qualifications",
+        "perc": 24.5636
+      },
+      {
+        "group": "Enniskillen",
+        "category": "other_qualifications",
+        "perc": 2.461
       }
     ],
     "cob": [
-      {
-        "group": "Enniskillen",
-        "category": "england",
-        "perc": 5.4797
-      },
-      {
-        "group": "Enniskillen",
-        "category": "northern_ireland",
-        "perc": 79.2466
-      },
-      {
-        "group": "Enniskillen",
-        "category": "other_cob",
-        "perc": 9.2087
-      },
-      {
-        "group": "Enniskillen",
-        "category": "republic_of_ireland",
-        "perc": 5.2195
-      },
-      {
-        "group": "Enniskillen",
-        "category": "scotland",
-        "perc": 0.71
-      },
-      {
-        "group": "Enniskillen",
-        "category": "wales",
-        "perc": 0.1355
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1080,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Enniskillen",
+        "category": "england",
+        "perc": 5.4797
+      },
+      {
+        "group": "Enniskillen",
+        "category": "northern_ireland",
+        "perc": 79.2466
+      },
+      {
+        "group": "Enniskillen",
+        "category": "other_cob",
+        "perc": 9.2087
+      },
+      {
+        "group": "Enniskillen",
+        "category": "republic_of_ireland",
+        "perc": 5.2195
+      },
+      {
+        "group": "Enniskillen",
+        "category": "scotland",
+        "perc": 0.71
+      },
+      {
+        "group": "Enniskillen",
+        "category": "wales",
+        "perc": 0.1355
       }
     ],
     "mainlang": [
-      {
-        "group": "Enniskillen",
-        "category": "english",
-        "perc": 93.0377
-      },
-      {
-        "group": "Enniskillen",
-        "category": "other_languages",
-        "perc": 6.9623
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1122,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Enniskillen",
+        "category": "english",
+        "perc": 93.0377
+      },
+      {
+        "group": "Enniskillen",
+        "category": "other_languages",
+        "perc": 6.9623
       }
     ],
     "age": [
-      {
-        "group": "Enniskillen",
-        "category": "a0to14",
-        "perc": 17.7172
-      },
-      {
-        "group": "Enniskillen",
-        "category": "a15to39",
-        "perc": 28.8169
-      },
-      {
-        "group": "Enniskillen",
-        "category": "a40to64",
-        "perc": 33.1798
-      },
-      {
-        "group": "Enniskillen",
-        "category": "a65plus",
-        "perc": 20.2862
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1154,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a0to14",
+        "perc": 17.7172
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a15to39",
+        "perc": 28.8169
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a40to64",
+        "perc": 33.1798
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a65plus",
+        "perc": 20.2862
       }
     ],
     "provision_care": [
-      {
-        "group": "Enniskillen",
-        "category": "a1to19_hours",
-        "perc": 5.1549
-      },
-      {
-        "group": "Enniskillen",
-        "category": "a20to49_hours",
-        "perc": 2.8295
-      },
-      {
-        "group": "Enniskillen",
-        "category": "a50plus_hours",
-        "perc": 3.6428
-      },
-      {
-        "group": "Enniskillen",
-        "category": "no_care",
-        "perc": 88.3728
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1196,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a1to19_hours",
+        "perc": 5.1549
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a20to49_hours",
+        "perc": 2.8295
+      },
+      {
+        "group": "Enniskillen",
+        "category": "a50plus_hours",
+        "perc": 3.6428
+      },
+      {
+        "group": "Enniskillen",
+        "category": "no_care",
+        "perc": 88.3728
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Enniskillen",
-        "category": "catholic",
-        "perc": 52.9565
-      },
-      {
-        "group": "Enniskillen",
-        "category": "none",
-        "perc": 6.5308
-      },
-      {
-        "group": "Enniskillen",
-        "category": "other_religions",
-        "perc": 1.9782
-      },
-      {
-        "group": "Enniskillen",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 38.5345
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1238,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Enniskillen",
+        "category": "catholic",
+        "perc": 52.9565
+      },
+      {
+        "group": "Enniskillen",
+        "category": "none",
+        "perc": 6.5308
+      },
+      {
+        "group": "Enniskillen",
+        "category": "other_religions",
+        "perc": 1.9782
+      },
+      {
+        "group": "Enniskillen",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 38.5345
       }
     ],
     "sex": [
-      {
-        "group": "Enniskillen",
-        "category": "females",
-        "perc": 51.2222
-      },
-      {
-        "group": "Enniskillen",
-        "category": "males",
-        "perc": 48.7778
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1270,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Enniskillen",
+        "category": "females",
+        "perc": 51.2222
+      },
+      {
+        "group": "Enniskillen",
+        "category": "males",
+        "perc": 48.7778
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1328,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Enniskillen",
         "category": "FSME",
         "perc": 19.9115
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Enniskillen",
         "category": "FSME",
         "perc": 20.0975
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1410,56 @@
         "group": "Enniskillen",
         "category": "Age 65+",
         "perc": 20.4754
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Enniskillen",
+        "category": "destHEpct",
+        "perc": 52
+      },
+      {
+        "group": "Enniskillen",
+        "category": "destFEpct",
+        "perc": 32.7
+      },
+      {
+        "group": "Enniskillen",
+        "category": "destEmploypct",
+        "perc": 9.4
+      },
+      {
+        "group": "Enniskillen",
+        "category": "destTrainpct"
+      },
+      {
+        "group": "Enniskillen",
+        "category": "destUnempUnkpct"
       }
     ]
   },

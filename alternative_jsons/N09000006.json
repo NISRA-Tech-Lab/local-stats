@@ -599,6 +599,28 @@
         "perc": 49.9349
       }
     ],
+    "LMS": [
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "EMPN",
+        "perc": 53000
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "EMPR",
+        "perc": 73.3
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "UNEMPR",
+        "perc": 1.9
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "INACTR",
+        "perc": 25.2
+      }
+    ],
     "BRES": [
       {
         "geography": "Fermanagh and Omagh",
@@ -655,6 +677,33 @@
         "geography": "Fermanagh and Omagh",
         "category": "Age 65+",
         "perc": 18.9309
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "destHEpct",
+        "perc": 47.4
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "destFEpct",
+        "perc": 30.1
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "destEmploypct",
+        "perc": 9.1
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "geography": "Fermanagh and Omagh",
+        "category": "destUnempUnkpct",
+        "perc": 1.6
       }
     ]
   },
@@ -1095,54 +1144,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Fermanagh and Omagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Fermanagh and Omagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Fermanagh and Omagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Fermanagh and Omagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "bad",
-        "perc": 4.9284
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "fair",
-        "perc": 13.9523
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "good",
-        "perc": 28.1675
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "very_bad",
-        "perc": 1.7318
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "very_good",
-        "perc": 51.2199
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1167,34 +1191,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "bad",
+        "perc": 4.9284
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "fair",
+        "perc": 13.9523
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "good",
+        "perc": 28.1675
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "very_bad",
+        "perc": 1.7318
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "very_good",
+        "perc": 51.2199
       }
     ],
     "hh_size": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "five_people",
-        "perc": 11.6001
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "four_people",
-        "perc": 13.9998
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "one_person",
-        "perc": 30.8258
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "three_people",
-        "perc": 15.3123
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "two_people",
-        "perc": 28.2621
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1219,44 +1243,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "five_people",
+        "perc": 11.6001
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "four_people",
+        "perc": 13.9998
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "one_person",
+        "perc": 30.8258
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "three_people",
+        "perc": 15.3123
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "two_people",
+        "perc": 28.2621
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "apprenticeship",
-        "perc": 6.3393
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "level_1_qualifications",
-        "perc": 5.4884
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "level_2_qualifications",
-        "perc": 13.5992
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "level_3_qualifications",
-        "perc": 15.0772
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.7825
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "no_qualifications",
-        "perc": 25.4834
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "other_qualifications",
-        "perc": 2.2301
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1291,39 +1305,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "apprenticeship",
+        "perc": 6.3393
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "level_1_qualifications",
+        "perc": 5.4884
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "level_2_qualifications",
+        "perc": 13.5992
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "level_3_qualifications",
+        "perc": 15.0772
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.7825
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "no_qualifications",
+        "perc": 25.4834
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "other_qualifications",
+        "perc": 2.2301
       }
     ],
     "cob": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "england",
-        "perc": 4.437
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "northern_ireland",
-        "perc": 84.8252
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "other_cob",
-        "perc": 5.1664
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "republic_of_ireland",
-        "perc": 4.8591
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "scotland",
-        "perc": 0.5873
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "wales",
-        "perc": 0.125
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1353,19 +1372,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "england",
+        "perc": 4.437
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "northern_ireland",
+        "perc": 84.8252
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "other_cob",
+        "perc": 5.1664
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "republic_of_ireland",
+        "perc": 4.8591
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "scotland",
+        "perc": 0.5873
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "wales",
+        "perc": 0.125
       }
     ],
     "mainlang": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "english",
-        "perc": 96.0667
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "other_languages",
-        "perc": 3.9333
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1375,29 +1414,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "english",
+        "perc": 96.0667
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "other_languages",
+        "perc": 3.9333
       }
     ],
     "age": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a0to14",
-        "perc": 19.8918
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a15to39",
-        "perc": 29.039
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a40to64",
-        "perc": 32.7175
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a65plus",
-        "perc": 18.3517
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1417,29 +1446,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a0to14",
+        "perc": 19.8918
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a15to39",
+        "perc": 29.039
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a40to64",
+        "perc": 32.7175
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a65plus",
+        "perc": 18.3517
       }
     ],
     "provision_care": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a1to19_hours",
-        "perc": 5.2411
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a20to49_hours",
-        "perc": 2.8014
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "a50plus_hours",
-        "perc": 3.5029
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "no_care",
-        "perc": 88.4546
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1459,29 +1488,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a1to19_hours",
+        "perc": 5.2411
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a20to49_hours",
+        "perc": 2.8014
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "a50plus_hours",
+        "perc": 3.5029
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "no_care",
+        "perc": 88.4546
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "catholic",
-        "perc": 64.2888
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "none",
-        "perc": 4.0972
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "other_religions",
-        "perc": 0.9186
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 30.6955
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1501,19 +1530,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "catholic",
+        "perc": 64.2888
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "none",
+        "perc": 4.0972
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "other_religions",
+        "perc": 0.9186
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 30.6955
       }
     ],
     "sex": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "females",
-        "perc": 50.0651
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "males",
-        "perc": 49.9349
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1523,29 +1562,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "females",
+        "perc": 50.0651
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "males",
+        "perc": 49.9349
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "EMPN",
+        "perc": 53000
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "EMPR",
+        "perc": 73.3
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "UNEMPR",
+        "perc": 1.9
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "INACTR",
+        "perc": 25.2
       }
     ],
     "BRES": [
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Construction",
-        "perc": 7.1864
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Manufacturing",
-        "perc": 14.2983
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Services",
-        "perc": 75.9963
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Other",
-        "perc": 2.519
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1565,6 +1636,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "Construction",
+        "perc": 7.1864
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "Manufacturing",
+        "perc": 14.2983
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "Services",
+        "perc": 75.9963
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "Other",
+        "perc": 2.519
       }
     ],
     "Primary": [
@@ -1577,11 +1668,6 @@
         "group": "Fermanagh and Omagh",
         "category": "FSME",
         "perc": 18.4412
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1594,11 +1680,6 @@
         "group": "Fermanagh and Omagh",
         "category": "FSME",
         "perc": 18.2553
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1623,26 +1704,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Fermanagh and Omagh",
-        "category": "Age 0-15",
-        "perc": 21.2002
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Age 16-39",
-        "perc": 27.1467
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Age 40-64",
-        "perc": 32.7222
-      },
-      {
-        "group": "Fermanagh and Omagh",
-        "category": "Age 65+",
-        "perc": 18.9309
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1663,24 +1724,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Fermanagh and Omagh",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 21.2002
       },
       {
-        "group": "Northern Ireland",
+        "group": "Fermanagh and Omagh",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 27.1467
       },
       {
-        "group": "Northern Ireland",
+        "group": "Fermanagh and Omagh",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 32.7222
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "Age 65+",
+        "perc": 18.9309
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "destHEpct",
+        "perc": 47.4
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "destFEpct",
+        "perc": 30.1
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "destEmploypct",
+        "perc": 9.1
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Fermanagh and Omagh",
+        "category": "destUnempUnkpct",
+        "perc": 1.6
       }
     ]
   },

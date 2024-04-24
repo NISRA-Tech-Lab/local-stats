@@ -556,6 +556,7 @@
         "perc": 50.7797
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "Clogher Valley",
         "category": "Age 65+",
         "perc": 16.0326
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Clogher Valley",
+        "category": "destHEpct",
+        "perc": 43.5
+      },
+      {
+        "geography": "Clogher Valley",
+        "category": "destFEpct",
+        "perc": 24.5
+      },
+      {
+        "geography": "Clogher Valley",
+        "category": "destEmploypct",
+        "perc": 12.3
+      },
+      {
+        "geography": "Clogher Valley",
+        "category": "destTrainpct",
+        "perc": 17
+      },
+      {
+        "geography": "Clogher Valley",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Clogher Valley",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Clogher Valley",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Clogher Valley",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Clogher Valley",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Clogher Valley",
-        "category": "bad",
-        "perc": 3.7096
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "fair",
-        "perc": 11.4743
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "good",
-        "perc": 26.9037
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "very_bad",
-        "perc": 1.2638
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "very_good",
-        "perc": 56.6486
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "bad",
+        "perc": 3.7096
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "fair",
+        "perc": 11.4743
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "good",
+        "perc": 26.9037
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "very_bad",
+        "perc": 1.2638
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "very_good",
+        "perc": 56.6486
       }
     ],
     "hh_size": [
-      {
-        "group": "Clogher Valley",
-        "category": "five_people",
-        "perc": 15.458
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "four_people",
-        "perc": 16.0687
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "one_person",
-        "perc": 24.7201
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "three_people",
-        "perc": 16.7812
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "two_people",
-        "perc": 26.972
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "five_people",
+        "perc": 15.458
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "four_people",
+        "perc": 16.0687
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "one_person",
+        "perc": 24.7201
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "three_people",
+        "perc": 16.7812
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "two_people",
+        "perc": 26.972
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Clogher Valley",
-        "category": "apprenticeship",
-        "perc": 6.4783
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "level_1_qualifications",
-        "perc": 5.3139
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "level_2_qualifications",
-        "perc": 13.1458
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "level_3_qualifications",
-        "perc": 15.7347
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.4576
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "no_qualifications",
-        "perc": 25.4995
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "other_qualifications",
-        "perc": 2.3703
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "apprenticeship",
+        "perc": 6.4783
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "level_1_qualifications",
+        "perc": 5.3139
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "level_2_qualifications",
+        "perc": 13.1458
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "level_3_qualifications",
+        "perc": 15.7347
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.4576
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "no_qualifications",
+        "perc": 25.4995
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "other_qualifications",
+        "perc": 2.3703
       }
     ],
     "cob": [
-      {
-        "group": "Clogher Valley",
-        "category": "england",
-        "perc": 2.773
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "northern_ireland",
-        "perc": 87.8353
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "other_cob",
-        "perc": 5.5551
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "republic_of_ireland",
-        "perc": 3.3367
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "scotland",
-        "perc": 0.3773
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "wales",
-        "perc": 0.1227
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "england",
+        "perc": 2.773
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "northern_ireland",
+        "perc": 87.8353
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "other_cob",
+        "perc": 5.5551
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "republic_of_ireland",
+        "perc": 3.3367
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "scotland",
+        "perc": 0.3773
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "wales",
+        "perc": 0.1227
       }
     ],
     "mainlang": [
-      {
-        "group": "Clogher Valley",
-        "category": "english",
-        "perc": 95.3143
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "other_languages",
-        "perc": 4.6857
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "english",
+        "perc": 95.3143
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "other_languages",
+        "perc": 4.6857
       }
     ],
     "age": [
-      {
-        "group": "Clogher Valley",
-        "category": "a0to14",
-        "perc": 21.8075
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "a15to39",
-        "perc": 31.4179
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "a40to64",
-        "perc": 30.9224
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "a65plus",
-        "perc": 15.8522
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a0to14",
+        "perc": 21.8075
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a15to39",
+        "perc": 31.4179
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a40to64",
+        "perc": 30.9224
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a65plus",
+        "perc": 15.8522
       }
     ],
     "provision_care": [
-      {
-        "group": "Clogher Valley",
-        "category": "a1to19_hours",
-        "perc": 5.3316
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "a20to49_hours",
-        "perc": 2.4762
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "a50plus_hours",
-        "perc": 3.2885
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "no_care",
-        "perc": 88.9037
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a1to19_hours",
+        "perc": 5.3316
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a20to49_hours",
+        "perc": 2.4762
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "a50plus_hours",
+        "perc": 3.2885
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "no_care",
+        "perc": 88.9037
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Clogher Valley",
-        "category": "catholic",
-        "perc": 56.535
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "none",
-        "perc": 4.1597
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "other_religions",
-        "perc": 0.4501
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 38.8553
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "catholic",
+        "perc": 56.535
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "none",
+        "perc": 4.1597
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "other_religions",
+        "perc": 0.4501
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 38.8553
       }
     ],
     "sex": [
-      {
-        "group": "Clogher Valley",
-        "category": "females",
-        "perc": 49.2203
-      },
-      {
-        "group": "Clogher Valley",
-        "category": "males",
-        "perc": 50.7797
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "females",
+        "perc": 49.2203
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "males",
+        "perc": 50.7797
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Clogher Valley",
         "category": "FSME",
         "perc": 13.2898
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Clogher Valley",
         "category": "FSME",
         "perc": 15.507
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "Clogher Valley",
         "category": "Age 65+",
         "perc": 16.0326
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "destHEpct",
+        "perc": 43.5
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "destFEpct",
+        "perc": 24.5
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "destEmploypct",
+        "perc": 12.3
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "destTrainpct",
+        "perc": 17
+      },
+      {
+        "group": "Clogher Valley",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },

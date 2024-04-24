@@ -566,6 +566,7 @@
         "perc": 49.3241
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,31 @@
         "geography": "Lisburn North",
         "category": "Age 65+",
         "perc": 19.4634
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Lisburn North",
+        "category": "destHEpct",
+        "perc": 47.5
+      },
+      {
+        "geography": "Lisburn North",
+        "category": "destFEpct",
+        "perc": 26
+      },
+      {
+        "geography": "Lisburn North",
+        "category": "destEmploypct",
+        "perc": 13.9
+      },
+      {
+        "geography": "Lisburn North",
+        "category": "destTrainpct"
+      },
+      {
+        "geography": "Lisburn North",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -836,54 +862,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Lisburn North",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lisburn North",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Lisburn North",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lisburn North",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Lisburn North",
-        "category": "bad",
-        "perc": 5.5695
-      },
-      {
-        "group": "Lisburn North",
-        "category": "fair",
-        "perc": 13.8428
-      },
-      {
-        "group": "Lisburn North",
-        "category": "good",
-        "perc": 29.481
-      },
-      {
-        "group": "Lisburn North",
-        "category": "very_bad",
-        "perc": 1.9958
-      },
-      {
-        "group": "Lisburn North",
-        "category": "very_good",
-        "perc": 49.1108
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +909,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Lisburn North",
+        "category": "bad",
+        "perc": 5.5695
+      },
+      {
+        "group": "Lisburn North",
+        "category": "fair",
+        "perc": 13.8428
+      },
+      {
+        "group": "Lisburn North",
+        "category": "good",
+        "perc": 29.481
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_bad",
+        "perc": 1.9958
+      },
+      {
+        "group": "Lisburn North",
+        "category": "very_good",
+        "perc": 49.1108
       }
     ],
     "hh_size": [
-      {
-        "group": "Lisburn North",
-        "category": "five_people",
-        "perc": 6.0447
-      },
-      {
-        "group": "Lisburn North",
-        "category": "four_people",
-        "perc": 12.4963
-      },
-      {
-        "group": "Lisburn North",
-        "category": "one_person",
-        "perc": 35.3548
-      },
-      {
-        "group": "Lisburn North",
-        "category": "three_people",
-        "perc": 15.2754
-      },
-      {
-        "group": "Lisburn North",
-        "category": "two_people",
-        "perc": 30.8288
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +961,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Lisburn North",
+        "category": "five_people",
+        "perc": 6.0447
+      },
+      {
+        "group": "Lisburn North",
+        "category": "four_people",
+        "perc": 12.4963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "one_person",
+        "perc": 35.3548
+      },
+      {
+        "group": "Lisburn North",
+        "category": "three_people",
+        "perc": 15.2754
+      },
+      {
+        "group": "Lisburn North",
+        "category": "two_people",
+        "perc": 30.8288
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Lisburn North",
-        "category": "apprenticeship",
-        "perc": 6.1402
-      },
-      {
-        "group": "Lisburn North",
-        "category": "level_1_qualifications",
-        "perc": 6.7468
-      },
-      {
-        "group": "Lisburn North",
-        "category": "level_2_qualifications",
-        "perc": 13.4409
-      },
-      {
-        "group": "Lisburn North",
-        "category": "level_3_qualifications",
-        "perc": 15.5352
-      },
-      {
-        "group": "Lisburn North",
-        "category": "level_4_qualifications_and_above",
-        "perc": 35.6649
-      },
-      {
-        "group": "Lisburn North",
-        "category": "no_qualifications",
-        "perc": 19.9662
-      },
-      {
-        "group": "Lisburn North",
-        "category": "other_qualifications",
-        "perc": 2.5057
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1023,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Lisburn North",
+        "category": "apprenticeship",
+        "perc": 6.1402
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_1_qualifications",
+        "perc": 6.7468
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_2_qualifications",
+        "perc": 13.4409
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_3_qualifications",
+        "perc": 15.5352
+      },
+      {
+        "group": "Lisburn North",
+        "category": "level_4_qualifications_and_above",
+        "perc": 35.6649
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_qualifications",
+        "perc": 19.9662
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_qualifications",
+        "perc": 2.5057
       }
     ],
     "cob": [
-      {
-        "group": "Lisburn North",
-        "category": "england",
-        "perc": 6.576
-      },
-      {
-        "group": "Lisburn North",
-        "category": "northern_ireland",
-        "perc": 83.3895
-      },
-      {
-        "group": "Lisburn North",
-        "category": "other_cob",
-        "perc": 7.2029
-      },
-      {
-        "group": "Lisburn North",
-        "category": "republic_of_ireland",
-        "perc": 1.4713
-      },
-      {
-        "group": "Lisburn North",
-        "category": "scotland",
-        "perc": 1.1514
-      },
-      {
-        "group": "Lisburn North",
-        "category": "wales",
-        "perc": 0.209
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1090,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Lisburn North",
+        "category": "england",
+        "perc": 6.576
+      },
+      {
+        "group": "Lisburn North",
+        "category": "northern_ireland",
+        "perc": 83.3895
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_cob",
+        "perc": 7.2029
+      },
+      {
+        "group": "Lisburn North",
+        "category": "republic_of_ireland",
+        "perc": 1.4713
+      },
+      {
+        "group": "Lisburn North",
+        "category": "scotland",
+        "perc": 1.1514
+      },
+      {
+        "group": "Lisburn North",
+        "category": "wales",
+        "perc": 0.209
       }
     ],
     "mainlang": [
-      {
-        "group": "Lisburn North",
-        "category": "english",
-        "perc": 95.8963
-      },
-      {
-        "group": "Lisburn North",
-        "category": "other_languages",
-        "perc": 4.1037
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1132,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Lisburn North",
+        "category": "english",
+        "perc": 95.8963
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_languages",
+        "perc": 4.1037
       }
     ],
     "age": [
-      {
-        "group": "Lisburn North",
-        "category": "a0to14",
-        "perc": 18.1124
-      },
-      {
-        "group": "Lisburn North",
-        "category": "a15to39",
-        "perc": 31.444
-      },
-      {
-        "group": "Lisburn North",
-        "category": "a40to64",
-        "perc": 31.1711
-      },
-      {
-        "group": "Lisburn North",
-        "category": "a65plus",
-        "perc": 19.2724
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1164,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a0to14",
+        "perc": 18.1124
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a15to39",
+        "perc": 31.444
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a40to64",
+        "perc": 31.1711
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a65plus",
+        "perc": 19.2724
       }
     ],
     "provision_care": [
-      {
-        "group": "Lisburn North",
-        "category": "a1to19_hours",
-        "perc": 6.0103
-      },
-      {
-        "group": "Lisburn North",
-        "category": "a20to49_hours",
-        "perc": 2.6511
-      },
-      {
-        "group": "Lisburn North",
-        "category": "a50plus_hours",
-        "perc": 3.618
-      },
-      {
-        "group": "Lisburn North",
-        "category": "no_care",
-        "perc": 87.7207
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1206,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a1to19_hours",
+        "perc": 6.0103
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a20to49_hours",
+        "perc": 2.6511
+      },
+      {
+        "group": "Lisburn North",
+        "category": "a50plus_hours",
+        "perc": 3.618
+      },
+      {
+        "group": "Lisburn North",
+        "category": "no_care",
+        "perc": 87.7207
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Lisburn North",
-        "category": "catholic",
-        "perc": 31.0477
-      },
-      {
-        "group": "Lisburn North",
-        "category": "none",
-        "perc": 14.4429
-      },
-      {
-        "group": "Lisburn North",
-        "category": "other_religions",
-        "perc": 2.3368
-      },
-      {
-        "group": "Lisburn North",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 52.1726
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1248,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Lisburn North",
+        "category": "catholic",
+        "perc": 31.0477
+      },
+      {
+        "group": "Lisburn North",
+        "category": "none",
+        "perc": 14.4429
+      },
+      {
+        "group": "Lisburn North",
+        "category": "other_religions",
+        "perc": 2.3368
+      },
+      {
+        "group": "Lisburn North",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.1726
       }
     ],
     "sex": [
-      {
-        "group": "Lisburn North",
-        "category": "females",
-        "perc": 50.6759
-      },
-      {
-        "group": "Lisburn North",
-        "category": "males",
-        "perc": 49.3241
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1280,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Lisburn North",
+        "category": "females",
+        "perc": 50.6759
+      },
+      {
+        "group": "Lisburn North",
+        "category": "males",
+        "perc": 49.3241
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1338,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Lisburn North",
         "category": "FSME",
         "perc": 19.3484
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Lisburn North",
         "category": "FSME",
         "perc": 17.8926
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1420,56 @@
         "group": "Lisburn North",
         "category": "Age 65+",
         "perc": 19.4634
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Lisburn North",
+        "category": "destHEpct",
+        "perc": 47.5
+      },
+      {
+        "group": "Lisburn North",
+        "category": "destFEpct",
+        "perc": 26
+      },
+      {
+        "group": "Lisburn North",
+        "category": "destEmploypct",
+        "perc": 13.9
+      },
+      {
+        "group": "Lisburn North",
+        "category": "destTrainpct"
+      },
+      {
+        "group": "Lisburn North",
+        "category": "destUnempUnkpct"
       }
     ]
   },

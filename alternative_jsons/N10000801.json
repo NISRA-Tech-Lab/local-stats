@@ -566,6 +566,7 @@
         "perc": 48.6067
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Ballymena",
         "category": "Age 65+",
         "perc": 19.8436
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Ballymena",
+        "category": "destHEpct",
+        "perc": 36.6
+      },
+      {
+        "geography": "Ballymena",
+        "category": "destFEpct",
+        "perc": 33
+      },
+      {
+        "geography": "Ballymena",
+        "category": "destEmploypct",
+        "perc": 15.9
+      },
+      {
+        "geography": "Ballymena",
+        "category": "destTrainpct",
+        "perc": 6.5
+      },
+      {
+        "geography": "Ballymena",
+        "category": "destUnempUnkpct",
+        "perc": 8
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Ballymena",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ballymena",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Ballymena",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ballymena",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Ballymena",
-        "category": "bad",
-        "perc": 6.1288
-      },
-      {
-        "group": "Ballymena",
-        "category": "fair",
-        "perc": 14.4762
-      },
-      {
-        "group": "Ballymena",
-        "category": "good",
-        "perc": 30.6606
-      },
-      {
-        "group": "Ballymena",
-        "category": "very_bad",
-        "perc": 1.7411
-      },
-      {
-        "group": "Ballymena",
-        "category": "very_good",
-        "perc": 46.9932
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Ballymena",
+        "category": "bad",
+        "perc": 6.1288
+      },
+      {
+        "group": "Ballymena",
+        "category": "fair",
+        "perc": 14.4762
+      },
+      {
+        "group": "Ballymena",
+        "category": "good",
+        "perc": 30.6606
+      },
+      {
+        "group": "Ballymena",
+        "category": "very_bad",
+        "perc": 1.7411
+      },
+      {
+        "group": "Ballymena",
+        "category": "very_good",
+        "perc": 46.9932
       }
     ],
     "hh_size": [
-      {
-        "group": "Ballymena",
-        "category": "five_people",
-        "perc": 7.0062
-      },
-      {
-        "group": "Ballymena",
-        "category": "four_people",
-        "perc": 11.8462
-      },
-      {
-        "group": "Ballymena",
-        "category": "one_person",
-        "perc": 32.6991
-      },
-      {
-        "group": "Ballymena",
-        "category": "three_people",
-        "perc": 16.3544
-      },
-      {
-        "group": "Ballymena",
-        "category": "two_people",
-        "perc": 32.0941
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Ballymena",
+        "category": "five_people",
+        "perc": 7.0062
+      },
+      {
+        "group": "Ballymena",
+        "category": "four_people",
+        "perc": 11.8462
+      },
+      {
+        "group": "Ballymena",
+        "category": "one_person",
+        "perc": 32.6991
+      },
+      {
+        "group": "Ballymena",
+        "category": "three_people",
+        "perc": 16.3544
+      },
+      {
+        "group": "Ballymena",
+        "category": "two_people",
+        "perc": 32.0941
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Ballymena",
-        "category": "apprenticeship",
-        "perc": 7.217
-      },
-      {
-        "group": "Ballymena",
-        "category": "level_1_qualifications",
-        "perc": 5.853
-      },
-      {
-        "group": "Ballymena",
-        "category": "level_2_qualifications",
-        "perc": 13.3703
-      },
-      {
-        "group": "Ballymena",
-        "category": "level_3_qualifications",
-        "perc": 13.6553
-      },
-      {
-        "group": "Ballymena",
-        "category": "level_4_qualifications_and_above",
-        "perc": 25.4173
-      },
-      {
-        "group": "Ballymena",
-        "category": "no_qualifications",
-        "perc": 31.0464
-      },
-      {
-        "group": "Ballymena",
-        "category": "other_qualifications",
-        "perc": 3.4406
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Ballymena",
+        "category": "apprenticeship",
+        "perc": 7.217
+      },
+      {
+        "group": "Ballymena",
+        "category": "level_1_qualifications",
+        "perc": 5.853
+      },
+      {
+        "group": "Ballymena",
+        "category": "level_2_qualifications",
+        "perc": 13.3703
+      },
+      {
+        "group": "Ballymena",
+        "category": "level_3_qualifications",
+        "perc": 13.6553
+      },
+      {
+        "group": "Ballymena",
+        "category": "level_4_qualifications_and_above",
+        "perc": 25.4173
+      },
+      {
+        "group": "Ballymena",
+        "category": "no_qualifications",
+        "perc": 31.0464
+      },
+      {
+        "group": "Ballymena",
+        "category": "other_qualifications",
+        "perc": 3.4406
       }
     ],
     "cob": [
-      {
-        "group": "Ballymena",
-        "category": "england",
-        "perc": 3.1731
-      },
-      {
-        "group": "Ballymena",
-        "category": "northern_ireland",
-        "perc": 78.1999
-      },
-      {
-        "group": "Ballymena",
-        "category": "other_cob",
-        "perc": 16.7092
-      },
-      {
-        "group": "Ballymena",
-        "category": "republic_of_ireland",
-        "perc": 0.9137
-      },
-      {
-        "group": "Ballymena",
-        "category": "scotland",
-        "perc": 0.8931
-      },
-      {
-        "group": "Ballymena",
-        "category": "wales",
-        "perc": 0.1111
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Ballymena",
+        "category": "england",
+        "perc": 3.1731
+      },
+      {
+        "group": "Ballymena",
+        "category": "northern_ireland",
+        "perc": 78.1999
+      },
+      {
+        "group": "Ballymena",
+        "category": "other_cob",
+        "perc": 16.7092
+      },
+      {
+        "group": "Ballymena",
+        "category": "republic_of_ireland",
+        "perc": 0.9137
+      },
+      {
+        "group": "Ballymena",
+        "category": "scotland",
+        "perc": 0.8931
+      },
+      {
+        "group": "Ballymena",
+        "category": "wales",
+        "perc": 0.1111
       }
     ],
     "mainlang": [
-      {
-        "group": "Ballymena",
-        "category": "english",
-        "perc": 85.2495
-      },
-      {
-        "group": "Ballymena",
-        "category": "other_languages",
-        "perc": 14.7505
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Ballymena",
+        "category": "english",
+        "perc": 85.2495
+      },
+      {
+        "group": "Ballymena",
+        "category": "other_languages",
+        "perc": 14.7505
       }
     ],
     "age": [
-      {
-        "group": "Ballymena",
-        "category": "a0to14",
-        "perc": 17.9543
-      },
-      {
-        "group": "Ballymena",
-        "category": "a15to39",
-        "perc": 30.8376
-      },
-      {
-        "group": "Ballymena",
-        "category": "a40to64",
-        "perc": 31.5867
-      },
-      {
-        "group": "Ballymena",
-        "category": "a65plus",
-        "perc": 19.6213
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Ballymena",
+        "category": "a0to14",
+        "perc": 17.9543
+      },
+      {
+        "group": "Ballymena",
+        "category": "a15to39",
+        "perc": 30.8376
+      },
+      {
+        "group": "Ballymena",
+        "category": "a40to64",
+        "perc": 31.5867
+      },
+      {
+        "group": "Ballymena",
+        "category": "a65plus",
+        "perc": 19.6213
       }
     ],
     "provision_care": [
-      {
-        "group": "Ballymena",
-        "category": "a1to19_hours",
-        "perc": 4.5498
-      },
-      {
-        "group": "Ballymena",
-        "category": "a20to49_hours",
-        "perc": 2.6836
-      },
-      {
-        "group": "Ballymena",
-        "category": "a50plus_hours",
-        "perc": 3.4572
-      },
-      {
-        "group": "Ballymena",
-        "category": "no_care",
-        "perc": 89.3094
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Ballymena",
+        "category": "a1to19_hours",
+        "perc": 4.5498
+      },
+      {
+        "group": "Ballymena",
+        "category": "a20to49_hours",
+        "perc": 2.6836
+      },
+      {
+        "group": "Ballymena",
+        "category": "a50plus_hours",
+        "perc": 3.4572
+      },
+      {
+        "group": "Ballymena",
+        "category": "no_care",
+        "perc": 89.3094
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Ballymena",
-        "category": "catholic",
-        "perc": 31.9557
-      },
-      {
-        "group": "Ballymena",
-        "category": "none",
-        "perc": 11.8429
-      },
-      {
-        "group": "Ballymena",
-        "category": "other_religions",
-        "perc": 1.0044
-      },
-      {
-        "group": "Ballymena",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 55.197
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Ballymena",
+        "category": "catholic",
+        "perc": 31.9557
+      },
+      {
+        "group": "Ballymena",
+        "category": "none",
+        "perc": 11.8429
+      },
+      {
+        "group": "Ballymena",
+        "category": "other_religions",
+        "perc": 1.0044
+      },
+      {
+        "group": "Ballymena",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 55.197
       }
     ],
     "sex": [
-      {
-        "group": "Ballymena",
-        "category": "females",
-        "perc": 51.3933
-      },
-      {
-        "group": "Ballymena",
-        "category": "males",
-        "perc": 48.6067
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Ballymena",
+        "category": "females",
+        "perc": 51.3933
+      },
+      {
+        "group": "Ballymena",
+        "category": "males",
+        "perc": 48.6067
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Ballymena",
         "category": "FSME",
         "perc": 24.4389
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Ballymena",
         "category": "FSME",
         "perc": 22.8867
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Ballymena",
         "category": "Age 65+",
         "perc": 19.8436
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Ballymena",
+        "category": "destHEpct",
+        "perc": 36.6
+      },
+      {
+        "group": "Ballymena",
+        "category": "destFEpct",
+        "perc": 33
+      },
+      {
+        "group": "Ballymena",
+        "category": "destEmploypct",
+        "perc": 15.9
+      },
+      {
+        "group": "Ballymena",
+        "category": "destTrainpct",
+        "perc": 6.5
+      },
+      {
+        "group": "Ballymena",
+        "category": "destUnempUnkpct",
+        "perc": 8
       }
     ]
   },

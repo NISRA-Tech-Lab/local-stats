@@ -606,6 +606,7 @@
         "perc": 48.2825
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -641,6 +642,33 @@
         "geography": "Oldpark",
         "category": "Age 65+",
         "perc": 13.1081
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Oldpark",
+        "category": "destHEpct",
+        "perc": 29.3
+      },
+      {
+        "geography": "Oldpark",
+        "category": "destFEpct",
+        "perc": 18
+      },
+      {
+        "geography": "Oldpark",
+        "category": "destEmploypct",
+        "perc": 27.5
+      },
+      {
+        "geography": "Oldpark",
+        "category": "destTrainpct",
+        "perc": 18
+      },
+      {
+        "geography": "Oldpark",
+        "category": "destUnempUnkpct",
+        "perc": 7.2
       }
     ]
   },
@@ -876,54 +904,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Oldpark",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Oldpark",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Oldpark",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Oldpark",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Oldpark",
-        "category": "bad",
-        "perc": 10.3196
-      },
-      {
-        "group": "Oldpark",
-        "category": "fair",
-        "perc": 16.2494
-      },
-      {
-        "group": "Oldpark",
-        "category": "good",
-        "perc": 26.4992
-      },
-      {
-        "group": "Oldpark",
-        "category": "very_bad",
-        "perc": 4.0085
-      },
-      {
-        "group": "Oldpark",
-        "category": "very_good",
-        "perc": 42.9233
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -948,34 +951,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Oldpark",
+        "category": "bad",
+        "perc": 10.3196
+      },
+      {
+        "group": "Oldpark",
+        "category": "fair",
+        "perc": 16.2494
+      },
+      {
+        "group": "Oldpark",
+        "category": "good",
+        "perc": 26.4992
+      },
+      {
+        "group": "Oldpark",
+        "category": "very_bad",
+        "perc": 4.0085
+      },
+      {
+        "group": "Oldpark",
+        "category": "very_good",
+        "perc": 42.9233
       }
     ],
     "hh_size": [
-      {
-        "group": "Oldpark",
-        "category": "five_people",
-        "perc": 7.0804
-      },
-      {
-        "group": "Oldpark",
-        "category": "four_people",
-        "perc": 11.2446
-      },
-      {
-        "group": "Oldpark",
-        "category": "one_person",
-        "perc": 37.7511
-      },
-      {
-        "group": "Oldpark",
-        "category": "three_people",
-        "perc": 17.1238
-      },
-      {
-        "group": "Oldpark",
-        "category": "two_people",
-        "perc": 26.8001
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1000,44 +1003,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Oldpark",
+        "category": "five_people",
+        "perc": 7.0804
+      },
+      {
+        "group": "Oldpark",
+        "category": "four_people",
+        "perc": 11.2446
+      },
+      {
+        "group": "Oldpark",
+        "category": "one_person",
+        "perc": 37.7511
+      },
+      {
+        "group": "Oldpark",
+        "category": "three_people",
+        "perc": 17.1238
+      },
+      {
+        "group": "Oldpark",
+        "category": "two_people",
+        "perc": 26.8001
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Oldpark",
-        "category": "apprenticeship",
-        "perc": 5.9089
-      },
-      {
-        "group": "Oldpark",
-        "category": "level_1_qualifications",
-        "perc": 7.2258
-      },
-      {
-        "group": "Oldpark",
-        "category": "level_2_qualifications",
-        "perc": 15.0095
-      },
-      {
-        "group": "Oldpark",
-        "category": "level_3_qualifications",
-        "perc": 14.945
-      },
-      {
-        "group": "Oldpark",
-        "category": "level_4_qualifications_and_above",
-        "perc": 20.7021
-      },
-      {
-        "group": "Oldpark",
-        "category": "no_qualifications",
-        "perc": 34.2049
-      },
-      {
-        "group": "Oldpark",
-        "category": "other_qualifications",
-        "perc": 2.0038
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1072,39 +1065,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Oldpark",
+        "category": "apprenticeship",
+        "perc": 5.9089
+      },
+      {
+        "group": "Oldpark",
+        "category": "level_1_qualifications",
+        "perc": 7.2258
+      },
+      {
+        "group": "Oldpark",
+        "category": "level_2_qualifications",
+        "perc": 15.0095
+      },
+      {
+        "group": "Oldpark",
+        "category": "level_3_qualifications",
+        "perc": 14.945
+      },
+      {
+        "group": "Oldpark",
+        "category": "level_4_qualifications_and_above",
+        "perc": 20.7021
+      },
+      {
+        "group": "Oldpark",
+        "category": "no_qualifications",
+        "perc": 34.2049
+      },
+      {
+        "group": "Oldpark",
+        "category": "other_qualifications",
+        "perc": 2.0038
       }
     ],
     "cob": [
-      {
-        "group": "Oldpark",
-        "category": "england",
-        "perc": 2.3927
-      },
-      {
-        "group": "Oldpark",
-        "category": "northern_ireland",
-        "perc": 88.2724
-      },
-      {
-        "group": "Oldpark",
-        "category": "other_cob",
-        "perc": 7.4778
-      },
-      {
-        "group": "Oldpark",
-        "category": "republic_of_ireland",
-        "perc": 1.1934
-      },
-      {
-        "group": "Oldpark",
-        "category": "scotland",
-        "perc": 0.5938
-      },
-      {
-        "group": "Oldpark",
-        "category": "wales",
-        "perc": 0.0699
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1134,19 +1132,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Oldpark",
+        "category": "england",
+        "perc": 2.3927
+      },
+      {
+        "group": "Oldpark",
+        "category": "northern_ireland",
+        "perc": 88.2724
+      },
+      {
+        "group": "Oldpark",
+        "category": "other_cob",
+        "perc": 7.4778
+      },
+      {
+        "group": "Oldpark",
+        "category": "republic_of_ireland",
+        "perc": 1.1934
+      },
+      {
+        "group": "Oldpark",
+        "category": "scotland",
+        "perc": 0.5938
+      },
+      {
+        "group": "Oldpark",
+        "category": "wales",
+        "perc": 0.0699
       }
     ],
     "mainlang": [
-      {
-        "group": "Oldpark",
-        "category": "english",
-        "perc": 94.0746
-      },
-      {
-        "group": "Oldpark",
-        "category": "other_languages",
-        "perc": 5.9254
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1156,29 +1174,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Oldpark",
+        "category": "english",
+        "perc": 94.0746
+      },
+      {
+        "group": "Oldpark",
+        "category": "other_languages",
+        "perc": 5.9254
       }
     ],
     "age": [
-      {
-        "group": "Oldpark",
-        "category": "a0to14",
-        "perc": 21.859
-      },
-      {
-        "group": "Oldpark",
-        "category": "a15to39",
-        "perc": 34.7374
-      },
-      {
-        "group": "Oldpark",
-        "category": "a40to64",
-        "perc": 30.3534
-      },
-      {
-        "group": "Oldpark",
-        "category": "a65plus",
-        "perc": 13.0502
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1198,29 +1206,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Oldpark",
+        "category": "a0to14",
+        "perc": 21.859
+      },
+      {
+        "group": "Oldpark",
+        "category": "a15to39",
+        "perc": 34.7374
+      },
+      {
+        "group": "Oldpark",
+        "category": "a40to64",
+        "perc": 30.3534
+      },
+      {
+        "group": "Oldpark",
+        "category": "a65plus",
+        "perc": 13.0502
       }
     ],
     "provision_care": [
-      {
-        "group": "Oldpark",
-        "category": "a1to19_hours",
-        "perc": 4.2623
-      },
-      {
-        "group": "Oldpark",
-        "category": "a20to49_hours",
-        "perc": 3.6266
-      },
-      {
-        "group": "Oldpark",
-        "category": "a50plus_hours",
-        "perc": 5.0359
-      },
-      {
-        "group": "Oldpark",
-        "category": "no_care",
-        "perc": 87.0753
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1240,29 +1248,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Oldpark",
+        "category": "a1to19_hours",
+        "perc": 4.2623
+      },
+      {
+        "group": "Oldpark",
+        "category": "a20to49_hours",
+        "perc": 3.6266
+      },
+      {
+        "group": "Oldpark",
+        "category": "a50plus_hours",
+        "perc": 5.0359
+      },
+      {
+        "group": "Oldpark",
+        "category": "no_care",
+        "perc": 87.0753
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Oldpark",
-        "category": "catholic",
-        "perc": 63.2772
-      },
-      {
-        "group": "Oldpark",
-        "category": "none",
-        "perc": 8.0781
-      },
-      {
-        "group": "Oldpark",
-        "category": "other_religions",
-        "perc": 2.4249
-      },
-      {
-        "group": "Oldpark",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 26.2197
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1282,19 +1290,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Oldpark",
+        "category": "catholic",
+        "perc": 63.2772
+      },
+      {
+        "group": "Oldpark",
+        "category": "none",
+        "perc": 8.0781
+      },
+      {
+        "group": "Oldpark",
+        "category": "other_religions",
+        "perc": 2.4249
+      },
+      {
+        "group": "Oldpark",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 26.2197
       }
     ],
     "sex": [
-      {
-        "group": "Oldpark",
-        "category": "females",
-        "perc": 51.7175
-      },
-      {
-        "group": "Oldpark",
-        "category": "males",
-        "perc": 48.2825
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1304,6 +1322,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Oldpark",
+        "category": "females",
+        "perc": 51.7175
+      },
+      {
+        "group": "Oldpark",
+        "category": "males",
+        "perc": 48.2825
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1330,36 +1380,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Oldpark",
         "category": "FSME",
         "perc": 38.4897
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Oldpark",
         "category": "FSME",
         "perc": 36.9478
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1422,26 +1462,58 @@
         "group": "Oldpark",
         "category": "Age 65+",
         "perc": 13.1081
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Oldpark",
+        "category": "destHEpct",
+        "perc": 29.3
+      },
+      {
+        "group": "Oldpark",
+        "category": "destFEpct",
+        "perc": 18
+      },
+      {
+        "group": "Oldpark",
+        "category": "destEmploypct",
+        "perc": 27.5
+      },
+      {
+        "group": "Oldpark",
+        "category": "destTrainpct",
+        "perc": 18
+      },
+      {
+        "group": "Oldpark",
+        "category": "destUnempUnkpct",
+        "perc": 7.2
       }
     ]
   },

@@ -576,6 +576,7 @@
         "perc": 49.7158
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -611,6 +612,33 @@
         "geography": "Lagan River",
         "category": "Age 65+",
         "perc": 16.0032
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Lagan River",
+        "category": "destHEpct",
+        "perc": 53.1
+      },
+      {
+        "geography": "Lagan River",
+        "category": "destFEpct",
+        "perc": 26.9
+      },
+      {
+        "geography": "Lagan River",
+        "category": "destEmploypct",
+        "perc": 5.9
+      },
+      {
+        "geography": "Lagan River",
+        "category": "destTrainpct",
+        "perc": 11.1
+      },
+      {
+        "geography": "Lagan River",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },
@@ -846,54 +874,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Lagan River",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lagan River",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Lagan River",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lagan River",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Lagan River",
-        "category": "bad",
-        "perc": 4.3783
-      },
-      {
-        "group": "Lagan River",
-        "category": "fair",
-        "perc": 11.2603
-      },
-      {
-        "group": "Lagan River",
-        "category": "good",
-        "perc": 28.1326
-      },
-      {
-        "group": "Lagan River",
-        "category": "very_bad",
-        "perc": 1.3506
-      },
-      {
-        "group": "Lagan River",
-        "category": "very_good",
-        "perc": 54.8782
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -918,34 +921,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Lagan River",
+        "category": "bad",
+        "perc": 4.3783
+      },
+      {
+        "group": "Lagan River",
+        "category": "fair",
+        "perc": 11.2603
+      },
+      {
+        "group": "Lagan River",
+        "category": "good",
+        "perc": 28.1326
+      },
+      {
+        "group": "Lagan River",
+        "category": "very_bad",
+        "perc": 1.3506
+      },
+      {
+        "group": "Lagan River",
+        "category": "very_good",
+        "perc": 54.8782
       }
     ],
     "hh_size": [
-      {
-        "group": "Lagan River",
-        "category": "five_people",
-        "perc": 9.9695
-      },
-      {
-        "group": "Lagan River",
-        "category": "four_people",
-        "perc": 16.5107
-      },
-      {
-        "group": "Lagan River",
-        "category": "one_person",
-        "perc": 24.1245
-      },
-      {
-        "group": "Lagan River",
-        "category": "three_people",
-        "perc": 17.3204
-      },
-      {
-        "group": "Lagan River",
-        "category": "two_people",
-        "perc": 32.0749
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -970,44 +973,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Lagan River",
+        "category": "five_people",
+        "perc": 9.9695
+      },
+      {
+        "group": "Lagan River",
+        "category": "four_people",
+        "perc": 16.5107
+      },
+      {
+        "group": "Lagan River",
+        "category": "one_person",
+        "perc": 24.1245
+      },
+      {
+        "group": "Lagan River",
+        "category": "three_people",
+        "perc": 17.3204
+      },
+      {
+        "group": "Lagan River",
+        "category": "two_people",
+        "perc": 32.0749
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Lagan River",
-        "category": "apprenticeship",
-        "perc": 6.7094
-      },
-      {
-        "group": "Lagan River",
-        "category": "level_1_qualifications",
-        "perc": 5.8271
-      },
-      {
-        "group": "Lagan River",
-        "category": "level_2_qualifications",
-        "perc": 14.6807
-      },
-      {
-        "group": "Lagan River",
-        "category": "level_3_qualifications",
-        "perc": 16.9479
-      },
-      {
-        "group": "Lagan River",
-        "category": "level_4_qualifications_and_above",
-        "perc": 35.84
-      },
-      {
-        "group": "Lagan River",
-        "category": "no_qualifications",
-        "perc": 17.8046
-      },
-      {
-        "group": "Lagan River",
-        "category": "other_qualifications",
-        "perc": 2.1903
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1042,39 +1035,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Lagan River",
+        "category": "apprenticeship",
+        "perc": 6.7094
+      },
+      {
+        "group": "Lagan River",
+        "category": "level_1_qualifications",
+        "perc": 5.8271
+      },
+      {
+        "group": "Lagan River",
+        "category": "level_2_qualifications",
+        "perc": 14.6807
+      },
+      {
+        "group": "Lagan River",
+        "category": "level_3_qualifications",
+        "perc": 16.9479
+      },
+      {
+        "group": "Lagan River",
+        "category": "level_4_qualifications_and_above",
+        "perc": 35.84
+      },
+      {
+        "group": "Lagan River",
+        "category": "no_qualifications",
+        "perc": 17.8046
+      },
+      {
+        "group": "Lagan River",
+        "category": "other_qualifications",
+        "perc": 2.1903
       }
     ],
     "cob": [
-      {
-        "group": "Lagan River",
-        "category": "england",
-        "perc": 3.6489
-      },
-      {
-        "group": "Lagan River",
-        "category": "northern_ireland",
-        "perc": 90.8596
-      },
-      {
-        "group": "Lagan River",
-        "category": "other_cob",
-        "perc": 3.2901
-      },
-      {
-        "group": "Lagan River",
-        "category": "republic_of_ireland",
-        "perc": 1.1814
-      },
-      {
-        "group": "Lagan River",
-        "category": "scotland",
-        "perc": 0.762
-      },
-      {
-        "group": "Lagan River",
-        "category": "wales",
-        "perc": 0.258
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1104,19 +1102,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Lagan River",
+        "category": "england",
+        "perc": 3.6489
+      },
+      {
+        "group": "Lagan River",
+        "category": "northern_ireland",
+        "perc": 90.8596
+      },
+      {
+        "group": "Lagan River",
+        "category": "other_cob",
+        "perc": 3.2901
+      },
+      {
+        "group": "Lagan River",
+        "category": "republic_of_ireland",
+        "perc": 1.1814
+      },
+      {
+        "group": "Lagan River",
+        "category": "scotland",
+        "perc": 0.762
+      },
+      {
+        "group": "Lagan River",
+        "category": "wales",
+        "perc": 0.258
       }
     ],
     "mainlang": [
-      {
-        "group": "Lagan River",
-        "category": "english",
-        "perc": 98.2579
-      },
-      {
-        "group": "Lagan River",
-        "category": "other_languages",
-        "perc": 1.7421
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1126,29 +1144,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Lagan River",
+        "category": "english",
+        "perc": 98.2579
+      },
+      {
+        "group": "Lagan River",
+        "category": "other_languages",
+        "perc": 1.7421
       }
     ],
     "age": [
-      {
-        "group": "Lagan River",
-        "category": "a0to14",
-        "perc": 20.0653
-      },
-      {
-        "group": "Lagan River",
-        "category": "a15to39",
-        "perc": 30.1484
-      },
-      {
-        "group": "Lagan River",
-        "category": "a40to64",
-        "perc": 33.9421
-      },
-      {
-        "group": "Lagan River",
-        "category": "a65plus",
-        "perc": 15.8442
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1168,29 +1176,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Lagan River",
+        "category": "a0to14",
+        "perc": 20.0653
+      },
+      {
+        "group": "Lagan River",
+        "category": "a15to39",
+        "perc": 30.1484
+      },
+      {
+        "group": "Lagan River",
+        "category": "a40to64",
+        "perc": 33.9421
+      },
+      {
+        "group": "Lagan River",
+        "category": "a65plus",
+        "perc": 15.8442
       }
     ],
     "provision_care": [
-      {
-        "group": "Lagan River",
-        "category": "a1to19_hours",
-        "perc": 7.0418
-      },
-      {
-        "group": "Lagan River",
-        "category": "a20to49_hours",
-        "perc": 2.6289
-      },
-      {
-        "group": "Lagan River",
-        "category": "a50plus_hours",
-        "perc": 3.285
-      },
-      {
-        "group": "Lagan River",
-        "category": "no_care",
-        "perc": 87.0443
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1210,29 +1218,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Lagan River",
+        "category": "a1to19_hours",
+        "perc": 7.0418
+      },
+      {
+        "group": "Lagan River",
+        "category": "a20to49_hours",
+        "perc": 2.6289
+      },
+      {
+        "group": "Lagan River",
+        "category": "a50plus_hours",
+        "perc": 3.285
+      },
+      {
+        "group": "Lagan River",
+        "category": "no_care",
+        "perc": 87.0443
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Lagan River",
-        "category": "catholic",
-        "perc": 14.4211
-      },
-      {
-        "group": "Lagan River",
-        "category": "none",
-        "perc": 11.0708
-      },
-      {
-        "group": "Lagan River",
-        "category": "other_religions",
-        "perc": 0.9111
-      },
-      {
-        "group": "Lagan River",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 73.597
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1252,19 +1260,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Lagan River",
+        "category": "catholic",
+        "perc": 14.4211
+      },
+      {
+        "group": "Lagan River",
+        "category": "none",
+        "perc": 11.0708
+      },
+      {
+        "group": "Lagan River",
+        "category": "other_religions",
+        "perc": 0.9111
+      },
+      {
+        "group": "Lagan River",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 73.597
       }
     ],
     "sex": [
-      {
-        "group": "Lagan River",
-        "category": "females",
-        "perc": 50.2842
-      },
-      {
-        "group": "Lagan River",
-        "category": "males",
-        "perc": 49.7158
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1274,6 +1292,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Lagan River",
+        "category": "females",
+        "perc": 50.2842
+      },
+      {
+        "group": "Lagan River",
+        "category": "males",
+        "perc": 49.7158
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1300,36 +1350,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Lagan River",
         "category": "FSME",
         "perc": 12.2517
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Lagan River",
         "category": "FSME",
         "perc": 11.1529
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1392,26 +1432,58 @@
         "group": "Lagan River",
         "category": "Age 65+",
         "perc": 16.0032
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Lagan River",
+        "category": "destHEpct",
+        "perc": 53.1
+      },
+      {
+        "group": "Lagan River",
+        "category": "destFEpct",
+        "perc": 26.9
+      },
+      {
+        "group": "Lagan River",
+        "category": "destEmploypct",
+        "perc": 5.9
+      },
+      {
+        "group": "Lagan River",
+        "category": "destTrainpct",
+        "perc": 11.1
+      },
+      {
+        "group": "Lagan River",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },

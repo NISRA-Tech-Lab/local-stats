@@ -359,7 +359,7 @@
 	function moreData (subject, place) {
 
 		if (place.type != "ni") {
-			return "Also look at  " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
 		} else {
 			return "";
 		}
@@ -587,12 +587,8 @@
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
 					},
 		
-					sdz: {
-						prev:" nothing further",
-						ni:" nothing further"},
-					dz: {
-						prev:" no comparisons",
-						ni:" nothing further"}
+					sdz: "Data not available for time comparison",
+					dz: " Data not available for time comparison"
 				}}
 			/>
 
@@ -778,7 +774,12 @@
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: "<span >"  + " population growth/shrink to be added</span> "},
+						content: 
+						{ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
+						lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>'
+						}
+					},
+
 					box_2: {
 						id: "age",
 						year: pullCensusYear("age"),
@@ -852,8 +853,8 @@
 							ni: "StackedBarChart",
 							lgd: "StackedBarChart",
 							dea: "StackedBarChart",
-							sdz: "not available - needs missing 2011",
-							dz: "not available - needs missing 2011"
+							sdz: "StackedBarChart",
+							dz: "StackedBarChart"
 						},				
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
 						zKey: chart_compare_type,
@@ -864,8 +865,8 @@
 						id: "wellbeing",
 						year: pullYear("Happy", data.place),
 						content: 
-							 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 happiness</p>"	+
-							"<p><span class='text-big' style='font-size: 1.8em'>"+ (check("Satisfy.value")).toLocaleString() + "</span> / 10 life satisfaction</p>"
+							 "<p><span class='text-big' style='font-size: 1.5em'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 happiness</p>"	+
+							"<p><span class='text-big' style='font-size: 1.5em'>"+ (check("Satisfy.value")).toLocaleString() + "</span>/ 10 life satisfaction</p>"
 
 						,	
 						show: ["ni", "lgd"]
@@ -873,9 +874,9 @@
 				box_3: {
 						id: "lifeexpectancy",
 						year: pullYear("LE", data.place),
-						content: "<p>Male <span class='text-big' style='font-size: 1.8em'>" + 
+						content: "<p>Male <span class='text-big' style='font-size: 1.5em'>" + 
 							(check("LE.value.Males")).toLocaleString() +
-							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
+							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.5em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
 						show: ["ni", "lgd"]
 					},
 				box_4: {
@@ -895,7 +896,7 @@
 						year: pullYear("Admiss", data.place),
 						content:  
 						// needs checked - sticks
-						"<p><span class='text-big' style='font-size: 1.8em'>" + 
+						"<p><span class='text-big' style='font-size: 1.5em'>" + 
 							(check("Admiss.value")).toLocaleString() + 
 							"</span> hospital patients</p><p>  The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
 						 show: ["ni", "dea"]
@@ -903,14 +904,14 @@
 				box_6a: {
 						id: "primarycare",
 						year: pullYear("GP", data.place)   ,
-						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+						content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
 								 (check("GP.value.PRACS")).toLocaleString() +
-								"</span> GP practices with an average of <span class='text-big' style='font-size: 1.2em'>" + 
+								"</span> GP practices with an average of <span class='text-big' style='font-size: 1.5em'>" + 
 								(check("GP.value.PRACLIST")).toLocaleString() +
-								"</span> patients per practice</p><p><span class='text-big' style='font-size: 1.2em'>" + 
+								"</span> patients per practice</p><p><span class='text-big' style='font-size: 1.5em'>" + 
 									+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								 "</span> dental surgeries" +
-								 "</span> with an average of <span class='text-big' style='font-size: 1.2em'>" + 
+								 "</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
 								(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
 								"</span> patients per surgery</p>",
 						show: ["ni", "lgd"]
@@ -918,10 +919,10 @@
 					box_6b: {
 						id: "primarycare",
 						year: pullYear("DEN", data.place),
-						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
+						content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
 									+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 								 "</span> dental surgeries" +
-								 "</span> with an average of <span class='text-big' style='font-size: 1.2em'>" + 
+								 "</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
 								(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
 								"</span> patients per surgery</p>",
 						show: ["dea"]
@@ -965,17 +966,23 @@
 				box_1: {
 						id: "employmentrates",
 						year: pullYear("LMS", data.place),
-						content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
-						show: ["ni", "lgd"]
+						// content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
+						// 		 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
+						// 		 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
+						content:  "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.LMS, "LMS"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.LMS, "LMS"),
+						},
+
+					show: ["ni", "lgd"]
 					},
 				
 				box_2: {
 						id: "employed",
 						year: pullYear("LMS", data.place),
 						content: 
-						"<p>" + "<span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() +
+						"<p>" + "<span class='text-big' style='font-size: 1.5em'>"  + (check("LMS.value.EMPN")).toLocaleString() +
 							 "</span> employed out of "+ 
 							data.place.data.MYETotal.value.toLocaleString() + " who live in this area (including children and pensioners)</p>",
 						show: ["ni", "lgd"]
@@ -984,18 +991,19 @@
 					box_3b: {
 					id: "bres",
 					year: pullYear("BRES", data.place),
-					content: "To be changed to a chart<p style='margin:0'>"+
-						"Construction <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[0].perc").toLocaleString() + "</span> </p>" +
-							 "<p style='margin:0'>Manufacturing <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[1].perc").toLocaleString() + "</span> </p>" +
-							 "<p style='margin:0'>Services <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[2].perc").toLocaleString() + "</span></p>" +
-							 "<p style='margin:0'>Other <span class='text-big' style='font-size: 1.8em'>" + check("grouped_data_nocompare.BRES[3].perc").toLocaleString() + "</span></p>",
+					content:  "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
+						},
+
 					show: ["ni", "lgd"]
 				}	,	
 				
 				box_3: {
 						id: "wages",
 						year: pullYear("ASHE", data.place),
-						content: '<p><span class="text-big" style="font-size: 1.8em">£' + (check("ASHE.value")).toLocaleString() + '</span> median salary</p>',
+						content: '<p><span class="text-big" style="font-size: 1.5em">£' + (check("ASHE.value")).toLocaleString() + '</span> median salary</p>',
 						show: ["ni", "lgd"]
 					},
 					
@@ -1006,7 +1014,7 @@
 				box_4: {
 					id: "disabilitybenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.8em">' +
+					content: '<span class="text-big" style="font-size: 1.5em">' +
 						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
 				
 				},
@@ -1014,7 +1022,7 @@
 				box_5: {
 					id: "workingagebenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.8em">' +
+					content: '<span class="text-big" style="font-size: 1.5em">' +
 						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 					
 				},
@@ -1022,9 +1030,9 @@
 				box_6: {
 					id: "pensionagebenefits",
 					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.8em">' +
+					content: '<span class="text-big" style="font-size: 1.5em">' +
 						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
-				}		
+				}	
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
@@ -1053,26 +1061,26 @@
 
 			box_1: {
 						id: "enrollments",
-						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.2em'>" + 
+						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.5em'>" + 
 							(check("Primary.value")).toLocaleString() 
 							+ "</span></p>"+
-						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.2em'>" + 
+						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.5em'>" + 
 							(check("PostPrimary.value")).toLocaleString() 
 							+ " </span></p>" +
-						"<p style='margin:0'>Further education <span class='text-big' style='font-size: 1.2em'>"+ 
+						"<p style='margin:0'>Further education <span class='text-big' style='font-size: 1.5em'>"+ 
 							(check("FE.value")).toLocaleString() 
 							+ "</span></p>" +
-						"<p style='margin:0'>Higher education <span class='text-big' style='font-size: 1.2em'>"+(check("HE.value")).toLocaleString() +" </span></p>",
+						"<p style='margin:0'>Higher education <span class='text-big' style='font-size: 1.5em'>"+(check("HE.value")).toLocaleString() +" </span></p>",
 					
 						year: pullYear("Primary", data.place) ,
 						show: ["ni", "lgd", "dea"]},
 				
 			box_2: {
 						id: "fsme",
-						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span></p>"+
-						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span></p>",
-						// content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.8em'> x% </span></p>"+
-						// "<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.8em'>x% </span></p>",
+						content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.5em'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span></p>"+
+						"<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.5em'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span></p>",
+						// content: "<p style='margin:0'>Primary school <span class='text-big' style='font-size: 1.5em'> x% </span></p>"+
+						// "<p style='margin:0'>Secondary school <span class='text-big' style='font-size: 1.5em'>x% </span></p>",
 					
 						year: pullYear("Primary", data.place),
 						show: ["ni", "lgd", "dea"]
@@ -1081,7 +1089,7 @@
 			box_3: {
 						id: "teachers",
 						year: pullYear("ClassSize", data.place),
-						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
+						content: "<p><span class='text-big' style='font-size: 1.5em'>"  + 
 							(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
 ,
 					
@@ -1103,7 +1111,7 @@
 			box_5: {
 						id: "attainment",
 						year: pullYear("Attainment", data.place),
-						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
+						content: "<p><span class='text-big' style='font-size: 1.5em'>"  + 
 							(check("Attainment.value")).toLocaleString() +"%</span> of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>"
 						,
 					
@@ -1114,14 +1122,19 @@
 			box_6: {
 				id: "destination",
 				year: pullYear("Destination", data.place),
-				content: "To be changed to a chart"+
-						"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "%</span> </p>" +
-						"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "%</span> </p>" +
-						"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "%</span> </p>" +
-						"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "%</span> </p>" +
-						"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "%</span> </p>" 
+				content:  "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.Destination, "Destination"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.Destination, "Destination"),
+						},
+				// content: "To be changed to a chart"+
+				// 		"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "%</span> </p>" +
+				// 		"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "%</span> </p>" +
+				// 		"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "%</span> </p>" +
+				// 		"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "%</span> </p>" +
+				// 		"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "%</span> </p>" 
 						
-						,
+				// 		,
 			
 				show: ["ni", "lgd", "dea"]
 			}

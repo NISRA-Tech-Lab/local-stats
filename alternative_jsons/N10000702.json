@@ -561,6 +561,7 @@
         "perc": 48.6121
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Castlereagh South",
         "category": "Age 65+",
         "perc": 17.6195
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Castlereagh South",
+        "category": "destHEpct",
+        "perc": 70.3
+      },
+      {
+        "geography": "Castlereagh South",
+        "category": "destFEpct",
+        "perc": 14.9
+      },
+      {
+        "geography": "Castlereagh South",
+        "category": "destEmploypct",
+        "perc": 8.4
+      },
+      {
+        "geography": "Castlereagh South",
+        "category": "destTrainpct",
+        "perc": 3.6
+      },
+      {
+        "geography": "Castlereagh South",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Castlereagh South",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Castlereagh South",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Castlereagh South",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Castlereagh South",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Castlereagh South",
-        "category": "bad",
-        "perc": 3.6614
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "fair",
-        "perc": 10.9205
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "good",
-        "perc": 29.2575
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "very_bad",
-        "perc": 1.2091
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "very_good",
-        "perc": 54.9515
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "bad",
+        "perc": 3.6614
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "fair",
+        "perc": 10.9205
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "good",
+        "perc": 29.2575
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "very_bad",
+        "perc": 1.2091
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "very_good",
+        "perc": 54.9515
       }
     ],
     "hh_size": [
-      {
-        "group": "Castlereagh South",
-        "category": "five_people",
-        "perc": 7.3791
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "four_people",
-        "perc": 16.4925
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "one_person",
-        "perc": 26.8879
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "three_people",
-        "perc": 17.9037
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "two_people",
-        "perc": 31.3369
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "five_people",
+        "perc": 7.3791
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "four_people",
+        "perc": 16.4925
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "one_person",
+        "perc": 26.8879
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "three_people",
+        "perc": 17.9037
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "two_people",
+        "perc": 31.3369
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Castlereagh South",
-        "category": "apprenticeship",
-        "perc": 4.2121
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "level_1_qualifications",
-        "perc": 4.44
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "level_2_qualifications",
-        "perc": 11.5715
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "level_3_qualifications",
-        "perc": 13.606
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "level_4_qualifications_and_above",
-        "perc": 51.3405
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "no_qualifications",
-        "perc": 12.8537
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "other_qualifications",
-        "perc": 1.9763
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "apprenticeship",
+        "perc": 4.2121
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "level_1_qualifications",
+        "perc": 4.44
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "level_2_qualifications",
+        "perc": 11.5715
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "level_3_qualifications",
+        "perc": 13.606
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "level_4_qualifications_and_above",
+        "perc": 51.3405
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "no_qualifications",
+        "perc": 12.8537
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "other_qualifications",
+        "perc": 1.9763
       }
     ],
     "cob": [
-      {
-        "group": "Castlereagh South",
-        "category": "england",
-        "perc": 3.0654
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "northern_ireland",
-        "perc": 87.3042
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "other_cob",
-        "perc": 6.2713
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "republic_of_ireland",
-        "perc": 2.4779
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "scotland",
-        "perc": 0.7323
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "wales",
-        "perc": 0.149
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "england",
+        "perc": 3.0654
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "northern_ireland",
+        "perc": 87.3042
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "other_cob",
+        "perc": 6.2713
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "republic_of_ireland",
+        "perc": 2.4779
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "scotland",
+        "perc": 0.7323
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "wales",
+        "perc": 0.149
       }
     ],
     "mainlang": [
-      {
-        "group": "Castlereagh South",
-        "category": "english",
-        "perc": 96.4213
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "other_languages",
-        "perc": 3.5787
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "english",
+        "perc": 96.4213
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "other_languages",
+        "perc": 3.5787
       }
     ],
     "age": [
-      {
-        "group": "Castlereagh South",
-        "category": "a0to14",
-        "perc": 18.4682
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "a15to39",
-        "perc": 28.8305
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "a40to64",
-        "perc": 35.2548
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "a65plus",
-        "perc": 17.4465
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a0to14",
+        "perc": 18.4682
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a15to39",
+        "perc": 28.8305
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a40to64",
+        "perc": 35.2548
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a65plus",
+        "perc": 17.4465
       }
     ],
     "provision_care": [
-      {
-        "group": "Castlereagh South",
-        "category": "a1to19_hours",
-        "perc": 7.2063
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "a20to49_hours",
-        "perc": 2.5109
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "a50plus_hours",
-        "perc": 3.1091
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "no_care",
-        "perc": 87.1737
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a1to19_hours",
+        "perc": 7.2063
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a20to49_hours",
+        "perc": 2.5109
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "a50plus_hours",
+        "perc": 3.1091
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "no_care",
+        "perc": 87.1737
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Castlereagh South",
-        "category": "catholic",
-        "perc": 50.3108
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "none",
-        "perc": 10.3883
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "other_religions",
-        "perc": 2.4481
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 36.8529
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "catholic",
+        "perc": 50.3108
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "none",
+        "perc": 10.3883
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "other_religions",
+        "perc": 2.4481
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 36.8529
       }
     ],
     "sex": [
-      {
-        "group": "Castlereagh South",
-        "category": "females",
-        "perc": 51.3879
-      },
-      {
-        "group": "Castlereagh South",
-        "category": "males",
-        "perc": 48.6121
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "females",
+        "perc": 51.3879
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "males",
+        "perc": 48.6121
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Castlereagh South",
         "category": "FSME",
         "perc": 8.9434
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Castlereagh South",
         "category": "FSME",
         "perc": 10.2527
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Castlereagh South",
         "category": "Age 65+",
         "perc": 17.6195
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "destHEpct",
+        "perc": 70.3
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "destFEpct",
+        "perc": 14.9
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "destEmploypct",
+        "perc": 8.4
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "destTrainpct",
+        "perc": 3.6
+      },
+      {
+        "group": "Castlereagh South",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },

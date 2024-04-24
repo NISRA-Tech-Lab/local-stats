@@ -591,6 +591,7 @@
         "perc": 47.6143
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -626,6 +627,33 @@
         "geography": "Black Mountain",
         "category": "Age 65+",
         "perc": 16.0325
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Black Mountain",
+        "category": "destHEpct",
+        "perc": 35.6
+      },
+      {
+        "geography": "Black Mountain",
+        "category": "destFEpct",
+        "perc": 15.3
+      },
+      {
+        "geography": "Black Mountain",
+        "category": "destEmploypct",
+        "perc": 21.6
+      },
+      {
+        "geography": "Black Mountain",
+        "category": "destTrainpct",
+        "perc": 20.7
+      },
+      {
+        "geography": "Black Mountain",
+        "category": "destUnempUnkpct",
+        "perc": 6.9
       }
     ]
   },
@@ -861,54 +889,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Black Mountain",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Black Mountain",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Black Mountain",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Black Mountain",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Black Mountain",
-        "category": "bad",
-        "perc": 10.3512
-      },
-      {
-        "group": "Black Mountain",
-        "category": "fair",
-        "perc": 16.0368
-      },
-      {
-        "group": "Black Mountain",
-        "category": "good",
-        "perc": 24.7603
-      },
-      {
-        "group": "Black Mountain",
-        "category": "very_bad",
-        "perc": 4.0106
-      },
-      {
-        "group": "Black Mountain",
-        "category": "very_good",
-        "perc": 44.8411
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -933,34 +936,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Black Mountain",
+        "category": "bad",
+        "perc": 10.3512
+      },
+      {
+        "group": "Black Mountain",
+        "category": "fair",
+        "perc": 16.0368
+      },
+      {
+        "group": "Black Mountain",
+        "category": "good",
+        "perc": 24.7603
+      },
+      {
+        "group": "Black Mountain",
+        "category": "very_bad",
+        "perc": 4.0106
+      },
+      {
+        "group": "Black Mountain",
+        "category": "very_good",
+        "perc": 44.8411
       }
     ],
     "hh_size": [
-      {
-        "group": "Black Mountain",
-        "category": "five_people",
-        "perc": 8.7956
-      },
-      {
-        "group": "Black Mountain",
-        "category": "four_people",
-        "perc": 12.824
-      },
-      {
-        "group": "Black Mountain",
-        "category": "one_person",
-        "perc": 32.6995
-      },
-      {
-        "group": "Black Mountain",
-        "category": "three_people",
-        "perc": 18.5281
-      },
-      {
-        "group": "Black Mountain",
-        "category": "two_people",
-        "perc": 27.1527
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -985,44 +988,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Black Mountain",
+        "category": "five_people",
+        "perc": 8.7956
+      },
+      {
+        "group": "Black Mountain",
+        "category": "four_people",
+        "perc": 12.824
+      },
+      {
+        "group": "Black Mountain",
+        "category": "one_person",
+        "perc": 32.6995
+      },
+      {
+        "group": "Black Mountain",
+        "category": "three_people",
+        "perc": 18.5281
+      },
+      {
+        "group": "Black Mountain",
+        "category": "two_people",
+        "perc": 27.1527
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Black Mountain",
-        "category": "apprenticeship",
-        "perc": 5.9349
-      },
-      {
-        "group": "Black Mountain",
-        "category": "level_1_qualifications",
-        "perc": 6.8915
-      },
-      {
-        "group": "Black Mountain",
-        "category": "level_2_qualifications",
-        "perc": 15.2925
-      },
-      {
-        "group": "Black Mountain",
-        "category": "level_3_qualifications",
-        "perc": 15.3988
-      },
-      {
-        "group": "Black Mountain",
-        "category": "level_4_qualifications_and_above",
-        "perc": 22.0565
-      },
-      {
-        "group": "Black Mountain",
-        "category": "no_qualifications",
-        "perc": 32.5337
-      },
-      {
-        "group": "Black Mountain",
-        "category": "other_qualifications",
-        "perc": 1.8921
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1057,39 +1050,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Black Mountain",
+        "category": "apprenticeship",
+        "perc": 5.9349
+      },
+      {
+        "group": "Black Mountain",
+        "category": "level_1_qualifications",
+        "perc": 6.8915
+      },
+      {
+        "group": "Black Mountain",
+        "category": "level_2_qualifications",
+        "perc": 15.2925
+      },
+      {
+        "group": "Black Mountain",
+        "category": "level_3_qualifications",
+        "perc": 15.3988
+      },
+      {
+        "group": "Black Mountain",
+        "category": "level_4_qualifications_and_above",
+        "perc": 22.0565
+      },
+      {
+        "group": "Black Mountain",
+        "category": "no_qualifications",
+        "perc": 32.5337
+      },
+      {
+        "group": "Black Mountain",
+        "category": "other_qualifications",
+        "perc": 1.8921
       }
     ],
     "cob": [
-      {
-        "group": "Black Mountain",
-        "category": "england",
-        "perc": 1.5357
-      },
-      {
-        "group": "Black Mountain",
-        "category": "northern_ireland",
-        "perc": 93.1438
-      },
-      {
-        "group": "Black Mountain",
-        "category": "other_cob",
-        "perc": 3.4309
-      },
-      {
-        "group": "Black Mountain",
-        "category": "republic_of_ireland",
-        "perc": 1.5552
-      },
-      {
-        "group": "Black Mountain",
-        "category": "scotland",
-        "perc": 0.2982
-      },
-      {
-        "group": "Black Mountain",
-        "category": "wales",
-        "perc": 0.0362
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1119,19 +1117,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Black Mountain",
+        "category": "england",
+        "perc": 1.5357
+      },
+      {
+        "group": "Black Mountain",
+        "category": "northern_ireland",
+        "perc": 93.1438
+      },
+      {
+        "group": "Black Mountain",
+        "category": "other_cob",
+        "perc": 3.4309
+      },
+      {
+        "group": "Black Mountain",
+        "category": "republic_of_ireland",
+        "perc": 1.5552
+      },
+      {
+        "group": "Black Mountain",
+        "category": "scotland",
+        "perc": 0.2982
+      },
+      {
+        "group": "Black Mountain",
+        "category": "wales",
+        "perc": 0.0362
       }
     ],
     "mainlang": [
-      {
-        "group": "Black Mountain",
-        "category": "english",
-        "perc": 95.0743
-      },
-      {
-        "group": "Black Mountain",
-        "category": "other_languages",
-        "perc": 4.9257
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1141,29 +1159,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Black Mountain",
+        "category": "english",
+        "perc": 95.0743
+      },
+      {
+        "group": "Black Mountain",
+        "category": "other_languages",
+        "perc": 4.9257
       }
     ],
     "age": [
-      {
-        "group": "Black Mountain",
-        "category": "a0to14",
-        "perc": 20.1644
-      },
-      {
-        "group": "Black Mountain",
-        "category": "a15to39",
-        "perc": 32.5641
-      },
-      {
-        "group": "Black Mountain",
-        "category": "a40to64",
-        "perc": 31.3991
-      },
-      {
-        "group": "Black Mountain",
-        "category": "a65plus",
-        "perc": 15.8724
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1183,29 +1191,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a0to14",
+        "perc": 20.1644
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a15to39",
+        "perc": 32.5641
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a40to64",
+        "perc": 31.3991
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a65plus",
+        "perc": 15.8724
       }
     ],
     "provision_care": [
-      {
-        "group": "Black Mountain",
-        "category": "a1to19_hours",
-        "perc": 4.8093
-      },
-      {
-        "group": "Black Mountain",
-        "category": "a20to49_hours",
-        "perc": 4.0231
-      },
-      {
-        "group": "Black Mountain",
-        "category": "a50plus_hours",
-        "perc": 5.4019
-      },
-      {
-        "group": "Black Mountain",
-        "category": "no_care",
-        "perc": 85.7658
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1225,29 +1233,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a1to19_hours",
+        "perc": 4.8093
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a20to49_hours",
+        "perc": 4.0231
+      },
+      {
+        "group": "Black Mountain",
+        "category": "a50plus_hours",
+        "perc": 5.4019
+      },
+      {
+        "group": "Black Mountain",
+        "category": "no_care",
+        "perc": 85.7658
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Black Mountain",
-        "category": "catholic",
-        "perc": 91.8841
-      },
-      {
-        "group": "Black Mountain",
-        "category": "none",
-        "perc": 2.8735
-      },
-      {
-        "group": "Black Mountain",
-        "category": "other_religions",
-        "perc": 1.8924
-      },
-      {
-        "group": "Black Mountain",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 3.3501
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1267,19 +1275,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Black Mountain",
+        "category": "catholic",
+        "perc": 91.8841
+      },
+      {
+        "group": "Black Mountain",
+        "category": "none",
+        "perc": 2.8735
+      },
+      {
+        "group": "Black Mountain",
+        "category": "other_religions",
+        "perc": 1.8924
+      },
+      {
+        "group": "Black Mountain",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 3.3501
       }
     ],
     "sex": [
-      {
-        "group": "Black Mountain",
-        "category": "females",
-        "perc": 52.3857
-      },
-      {
-        "group": "Black Mountain",
-        "category": "males",
-        "perc": 47.6143
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1289,6 +1307,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Black Mountain",
+        "category": "females",
+        "perc": 52.3857
+      },
+      {
+        "group": "Black Mountain",
+        "category": "males",
+        "perc": 47.6143
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1315,36 +1365,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Black Mountain",
         "category": "FSME",
         "perc": 37.363
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Black Mountain",
         "category": "FSME",
         "perc": 34.9494
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1407,26 +1447,58 @@
         "group": "Black Mountain",
         "category": "Age 65+",
         "perc": 16.0325
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Black Mountain",
+        "category": "destHEpct",
+        "perc": 35.6
+      },
+      {
+        "group": "Black Mountain",
+        "category": "destFEpct",
+        "perc": 15.3
+      },
+      {
+        "group": "Black Mountain",
+        "category": "destEmploypct",
+        "perc": 21.6
+      },
+      {
+        "group": "Black Mountain",
+        "category": "destTrainpct",
+        "perc": 20.7
+      },
+      {
+        "group": "Black Mountain",
+        "category": "destUnempUnkpct",
+        "perc": 6.9
       }
     ]
   },

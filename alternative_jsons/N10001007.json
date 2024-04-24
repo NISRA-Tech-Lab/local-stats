@@ -581,6 +581,7 @@
         "perc": 49.4471
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -616,6 +617,33 @@
         "geography": "The Mournes",
         "category": "Age 65+",
         "perc": 19.0822
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "The Mournes",
+        "category": "destHEpct",
+        "perc": 41.4
+      },
+      {
+        "geography": "The Mournes",
+        "category": "destFEpct",
+        "perc": 27.8
+      },
+      {
+        "geography": "The Mournes",
+        "category": "destEmploypct",
+        "perc": 12.4
+      },
+      {
+        "geography": "The Mournes",
+        "category": "destTrainpct",
+        "perc": 14.6
+      },
+      {
+        "geography": "The Mournes",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },
@@ -851,54 +879,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "The Mournes",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "The Mournes",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "The Mournes",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "The Mournes",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "The Mournes",
-        "category": "bad",
-        "perc": 5.3935
-      },
-      {
-        "group": "The Mournes",
-        "category": "fair",
-        "perc": 13.1808
-      },
-      {
-        "group": "The Mournes",
-        "category": "good",
-        "perc": 27.59
-      },
-      {
-        "group": "The Mournes",
-        "category": "very_bad",
-        "perc": 1.7747
-      },
-      {
-        "group": "The Mournes",
-        "category": "very_good",
-        "perc": 52.0611
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -923,34 +926,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "The Mournes",
+        "category": "bad",
+        "perc": 5.3935
+      },
+      {
+        "group": "The Mournes",
+        "category": "fair",
+        "perc": 13.1808
+      },
+      {
+        "group": "The Mournes",
+        "category": "good",
+        "perc": 27.59
+      },
+      {
+        "group": "The Mournes",
+        "category": "very_bad",
+        "perc": 1.7747
+      },
+      {
+        "group": "The Mournes",
+        "category": "very_good",
+        "perc": 52.0611
       }
     ],
     "hh_size": [
-      {
-        "group": "The Mournes",
-        "category": "five_people",
-        "perc": 12.4404
-      },
-      {
-        "group": "The Mournes",
-        "category": "four_people",
-        "perc": 14.433
-      },
-      {
-        "group": "The Mournes",
-        "category": "one_person",
-        "perc": 28.5714
-      },
-      {
-        "group": "The Mournes",
-        "category": "three_people",
-        "perc": 15.1001
-      },
-      {
-        "group": "The Mournes",
-        "category": "two_people",
-        "perc": 29.4551
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -975,44 +978,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "The Mournes",
+        "category": "five_people",
+        "perc": 12.4404
+      },
+      {
+        "group": "The Mournes",
+        "category": "four_people",
+        "perc": 14.433
+      },
+      {
+        "group": "The Mournes",
+        "category": "one_person",
+        "perc": 28.5714
+      },
+      {
+        "group": "The Mournes",
+        "category": "three_people",
+        "perc": 15.1001
+      },
+      {
+        "group": "The Mournes",
+        "category": "two_people",
+        "perc": 29.4551
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "The Mournes",
-        "category": "apprenticeship",
-        "perc": 9.3586
-      },
-      {
-        "group": "The Mournes",
-        "category": "level_1_qualifications",
-        "perc": 5.5729
-      },
-      {
-        "group": "The Mournes",
-        "category": "level_2_qualifications",
-        "perc": 13.0936
-      },
-      {
-        "group": "The Mournes",
-        "category": "level_3_qualifications",
-        "perc": 16.5033
-      },
-      {
-        "group": "The Mournes",
-        "category": "level_4_qualifications_and_above",
-        "perc": 29.6265
-      },
-      {
-        "group": "The Mournes",
-        "category": "no_qualifications",
-        "perc": 23.555
-      },
-      {
-        "group": "The Mournes",
-        "category": "other_qualifications",
-        "perc": 2.29
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1047,39 +1040,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "The Mournes",
+        "category": "apprenticeship",
+        "perc": 9.3586
+      },
+      {
+        "group": "The Mournes",
+        "category": "level_1_qualifications",
+        "perc": 5.5729
+      },
+      {
+        "group": "The Mournes",
+        "category": "level_2_qualifications",
+        "perc": 13.0936
+      },
+      {
+        "group": "The Mournes",
+        "category": "level_3_qualifications",
+        "perc": 16.5033
+      },
+      {
+        "group": "The Mournes",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.6265
+      },
+      {
+        "group": "The Mournes",
+        "category": "no_qualifications",
+        "perc": 23.555
+      },
+      {
+        "group": "The Mournes",
+        "category": "other_qualifications",
+        "perc": 2.29
       }
     ],
     "cob": [
-      {
-        "group": "The Mournes",
-        "category": "england",
-        "perc": 4.4136
-      },
-      {
-        "group": "The Mournes",
-        "category": "northern_ireland",
-        "perc": 88.3849
-      },
-      {
-        "group": "The Mournes",
-        "category": "other_cob",
-        "perc": 4.1421
-      },
-      {
-        "group": "The Mournes",
-        "category": "republic_of_ireland",
-        "perc": 2.1323
-      },
-      {
-        "group": "The Mournes",
-        "category": "scotland",
-        "perc": 0.7582
-      },
-      {
-        "group": "The Mournes",
-        "category": "wales",
-        "perc": 0.1689
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1109,19 +1107,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "The Mournes",
+        "category": "england",
+        "perc": 4.4136
+      },
+      {
+        "group": "The Mournes",
+        "category": "northern_ireland",
+        "perc": 88.3849
+      },
+      {
+        "group": "The Mournes",
+        "category": "other_cob",
+        "perc": 4.1421
+      },
+      {
+        "group": "The Mournes",
+        "category": "republic_of_ireland",
+        "perc": 2.1323
+      },
+      {
+        "group": "The Mournes",
+        "category": "scotland",
+        "perc": 0.7582
+      },
+      {
+        "group": "The Mournes",
+        "category": "wales",
+        "perc": 0.1689
       }
     ],
     "mainlang": [
-      {
-        "group": "The Mournes",
-        "category": "english",
-        "perc": 97.2493
-      },
-      {
-        "group": "The Mournes",
-        "category": "other_languages",
-        "perc": 2.7507
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1131,29 +1149,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "The Mournes",
+        "category": "english",
+        "perc": 97.2493
+      },
+      {
+        "group": "The Mournes",
+        "category": "other_languages",
+        "perc": 2.7507
       }
     ],
     "age": [
-      {
-        "group": "The Mournes",
-        "category": "a0to14",
-        "perc": 20.4251
-      },
-      {
-        "group": "The Mournes",
-        "category": "a15to39",
-        "perc": 29.2388
-      },
-      {
-        "group": "The Mournes",
-        "category": "a40to64",
-        "perc": 31.3181
-      },
-      {
-        "group": "The Mournes",
-        "category": "a65plus",
-        "perc": 19.018
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1173,29 +1181,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "The Mournes",
+        "category": "a0to14",
+        "perc": 20.4251
+      },
+      {
+        "group": "The Mournes",
+        "category": "a15to39",
+        "perc": 29.2388
+      },
+      {
+        "group": "The Mournes",
+        "category": "a40to64",
+        "perc": 31.3181
+      },
+      {
+        "group": "The Mournes",
+        "category": "a65plus",
+        "perc": 19.018
       }
     ],
     "provision_care": [
-      {
-        "group": "The Mournes",
-        "category": "a1to19_hours",
-        "perc": 5.6176
-      },
-      {
-        "group": "The Mournes",
-        "category": "a20to49_hours",
-        "perc": 3.0712
-      },
-      {
-        "group": "The Mournes",
-        "category": "a50plus_hours",
-        "perc": 4.3338
-      },
-      {
-        "group": "The Mournes",
-        "category": "no_care",
-        "perc": 86.9773
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1215,29 +1223,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "The Mournes",
+        "category": "a1to19_hours",
+        "perc": 5.6176
+      },
+      {
+        "group": "The Mournes",
+        "category": "a20to49_hours",
+        "perc": 3.0712
+      },
+      {
+        "group": "The Mournes",
+        "category": "a50plus_hours",
+        "perc": 4.3338
+      },
+      {
+        "group": "The Mournes",
+        "category": "no_care",
+        "perc": 86.9773
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "The Mournes",
-        "category": "catholic",
-        "perc": 57.6996
-      },
-      {
-        "group": "The Mournes",
-        "category": "none",
-        "perc": 5.8272
-      },
-      {
-        "group": "The Mournes",
-        "category": "other_religions",
-        "perc": 0.6655
-      },
-      {
-        "group": "The Mournes",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 35.8077
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1257,19 +1265,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "The Mournes",
+        "category": "catholic",
+        "perc": 57.6996
+      },
+      {
+        "group": "The Mournes",
+        "category": "none",
+        "perc": 5.8272
+      },
+      {
+        "group": "The Mournes",
+        "category": "other_religions",
+        "perc": 0.6655
+      },
+      {
+        "group": "The Mournes",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 35.8077
       }
     ],
     "sex": [
-      {
-        "group": "The Mournes",
-        "category": "females",
-        "perc": 50.5529
-      },
-      {
-        "group": "The Mournes",
-        "category": "males",
-        "perc": 49.4471
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1279,6 +1297,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "The Mournes",
+        "category": "females",
+        "perc": 50.5529
+      },
+      {
+        "group": "The Mournes",
+        "category": "males",
+        "perc": 49.4471
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1305,36 +1355,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "The Mournes",
         "category": "FSME",
         "perc": 20.0156
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "The Mournes",
         "category": "FSME",
         "perc": 19.043
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1397,26 +1437,58 @@
         "group": "The Mournes",
         "category": "Age 65+",
         "perc": 19.0822
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "The Mournes",
+        "category": "destHEpct",
+        "perc": 41.4
+      },
+      {
+        "group": "The Mournes",
+        "category": "destFEpct",
+        "perc": 27.8
+      },
+      {
+        "group": "The Mournes",
+        "category": "destEmploypct",
+        "perc": 12.4
+      },
+      {
+        "group": "The Mournes",
+        "category": "destTrainpct",
+        "perc": 14.6
+      },
+      {
+        "group": "The Mournes",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },

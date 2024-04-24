@@ -586,6 +586,7 @@
         "perc": 49.1757
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -621,6 +622,33 @@
         "geography": "Banbridge",
         "category": "Age 65+",
         "perc": 17.3665
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Banbridge",
+        "category": "destHEpct",
+        "perc": 42.1
+      },
+      {
+        "geography": "Banbridge",
+        "category": "destFEpct",
+        "perc": 33.8
+      },
+      {
+        "geography": "Banbridge",
+        "category": "destEmploypct",
+        "perc": 9.5
+      },
+      {
+        "geography": "Banbridge",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "geography": "Banbridge",
+        "category": "destUnempUnkpct",
+        "perc": 2.4
       }
     ]
   },
@@ -856,54 +884,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Banbridge",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Banbridge",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Banbridge",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Banbridge",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Banbridge",
-        "category": "bad",
-        "perc": 5.6153
-      },
-      {
-        "group": "Banbridge",
-        "category": "fair",
-        "perc": 13.071
-      },
-      {
-        "group": "Banbridge",
-        "category": "good",
-        "perc": 28.6978
-      },
-      {
-        "group": "Banbridge",
-        "category": "very_bad",
-        "perc": 1.7401
-      },
-      {
-        "group": "Banbridge",
-        "category": "very_good",
-        "perc": 50.8758
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -928,34 +931,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Banbridge",
+        "category": "bad",
+        "perc": 5.6153
+      },
+      {
+        "group": "Banbridge",
+        "category": "fair",
+        "perc": 13.071
+      },
+      {
+        "group": "Banbridge",
+        "category": "good",
+        "perc": 28.6978
+      },
+      {
+        "group": "Banbridge",
+        "category": "very_bad",
+        "perc": 1.7401
+      },
+      {
+        "group": "Banbridge",
+        "category": "very_good",
+        "perc": 50.8758
       }
     ],
     "hh_size": [
-      {
-        "group": "Banbridge",
-        "category": "five_people",
-        "perc": 9.3007
-      },
-      {
-        "group": "Banbridge",
-        "category": "four_people",
-        "perc": 14.8511
-      },
-      {
-        "group": "Banbridge",
-        "category": "one_person",
-        "perc": 29.4878
-      },
-      {
-        "group": "Banbridge",
-        "category": "three_people",
-        "perc": 15.9726
-      },
-      {
-        "group": "Banbridge",
-        "category": "two_people",
-        "perc": 30.3879
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -980,44 +983,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Banbridge",
+        "category": "five_people",
+        "perc": 9.3007
+      },
+      {
+        "group": "Banbridge",
+        "category": "four_people",
+        "perc": 14.8511
+      },
+      {
+        "group": "Banbridge",
+        "category": "one_person",
+        "perc": 29.4878
+      },
+      {
+        "group": "Banbridge",
+        "category": "three_people",
+        "perc": 15.9726
+      },
+      {
+        "group": "Banbridge",
+        "category": "two_people",
+        "perc": 30.3879
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Banbridge",
-        "category": "apprenticeship",
-        "perc": 6.8937
-      },
-      {
-        "group": "Banbridge",
-        "category": "level_1_qualifications",
-        "perc": 6.0478
-      },
-      {
-        "group": "Banbridge",
-        "category": "level_2_qualifications",
-        "perc": 14.4335
-      },
-      {
-        "group": "Banbridge",
-        "category": "level_3_qualifications",
-        "perc": 15.6169
-      },
-      {
-        "group": "Banbridge",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.0996
-      },
-      {
-        "group": "Banbridge",
-        "category": "no_qualifications",
-        "perc": 23.8647
-      },
-      {
-        "group": "Banbridge",
-        "category": "other_qualifications",
-        "perc": 2.0438
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1052,39 +1045,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Banbridge",
+        "category": "apprenticeship",
+        "perc": 6.8937
+      },
+      {
+        "group": "Banbridge",
+        "category": "level_1_qualifications",
+        "perc": 6.0478
+      },
+      {
+        "group": "Banbridge",
+        "category": "level_2_qualifications",
+        "perc": 14.4335
+      },
+      {
+        "group": "Banbridge",
+        "category": "level_3_qualifications",
+        "perc": 15.6169
+      },
+      {
+        "group": "Banbridge",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.0996
+      },
+      {
+        "group": "Banbridge",
+        "category": "no_qualifications",
+        "perc": 23.8647
+      },
+      {
+        "group": "Banbridge",
+        "category": "other_qualifications",
+        "perc": 2.0438
       }
     ],
     "cob": [
-      {
-        "group": "Banbridge",
-        "category": "england",
-        "perc": 3.7693
-      },
-      {
-        "group": "Banbridge",
-        "category": "northern_ireland",
-        "perc": 89.1013
-      },
-      {
-        "group": "Banbridge",
-        "category": "other_cob",
-        "perc": 4.2416
-      },
-      {
-        "group": "Banbridge",
-        "category": "republic_of_ireland",
-        "perc": 1.9548
-      },
-      {
-        "group": "Banbridge",
-        "category": "scotland",
-        "perc": 0.7728
-      },
-      {
-        "group": "Banbridge",
-        "category": "wales",
-        "perc": 0.1603
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1114,19 +1112,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Banbridge",
+        "category": "england",
+        "perc": 3.7693
+      },
+      {
+        "group": "Banbridge",
+        "category": "northern_ireland",
+        "perc": 89.1013
+      },
+      {
+        "group": "Banbridge",
+        "category": "other_cob",
+        "perc": 4.2416
+      },
+      {
+        "group": "Banbridge",
+        "category": "republic_of_ireland",
+        "perc": 1.9548
+      },
+      {
+        "group": "Banbridge",
+        "category": "scotland",
+        "perc": 0.7728
+      },
+      {
+        "group": "Banbridge",
+        "category": "wales",
+        "perc": 0.1603
       }
     ],
     "mainlang": [
-      {
-        "group": "Banbridge",
-        "category": "english",
-        "perc": 97.4667
-      },
-      {
-        "group": "Banbridge",
-        "category": "other_languages",
-        "perc": 2.5333
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1136,29 +1154,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Banbridge",
+        "category": "english",
+        "perc": 97.4667
+      },
+      {
+        "group": "Banbridge",
+        "category": "other_languages",
+        "perc": 2.5333
       }
     ],
     "age": [
-      {
-        "group": "Banbridge",
-        "category": "a0to14",
-        "perc": 19.9485
-      },
-      {
-        "group": "Banbridge",
-        "category": "a15to39",
-        "perc": 29.2444
-      },
-      {
-        "group": "Banbridge",
-        "category": "a40to64",
-        "perc": 33.6148
-      },
-      {
-        "group": "Banbridge",
-        "category": "a65plus",
-        "perc": 17.1923
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1178,29 +1186,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Banbridge",
+        "category": "a0to14",
+        "perc": 19.9485
+      },
+      {
+        "group": "Banbridge",
+        "category": "a15to39",
+        "perc": 29.2444
+      },
+      {
+        "group": "Banbridge",
+        "category": "a40to64",
+        "perc": 33.6148
+      },
+      {
+        "group": "Banbridge",
+        "category": "a65plus",
+        "perc": 17.1923
       }
     ],
     "provision_care": [
-      {
-        "group": "Banbridge",
-        "category": "a1to19_hours",
-        "perc": 5.9269
-      },
-      {
-        "group": "Banbridge",
-        "category": "a20to49_hours",
-        "perc": 3.0182
-      },
-      {
-        "group": "Banbridge",
-        "category": "a50plus_hours",
-        "perc": 3.7089
-      },
-      {
-        "group": "Banbridge",
-        "category": "no_care",
-        "perc": 87.346
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1220,29 +1228,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Banbridge",
+        "category": "a1to19_hours",
+        "perc": 5.9269
+      },
+      {
+        "group": "Banbridge",
+        "category": "a20to49_hours",
+        "perc": 3.0182
+      },
+      {
+        "group": "Banbridge",
+        "category": "a50plus_hours",
+        "perc": 3.7089
+      },
+      {
+        "group": "Banbridge",
+        "category": "no_care",
+        "perc": 87.346
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Banbridge",
-        "category": "catholic",
-        "perc": 38.3028
-      },
-      {
-        "group": "Banbridge",
-        "category": "none",
-        "perc": 8.4345
-      },
-      {
-        "group": "Banbridge",
-        "category": "other_religions",
-        "perc": 1.0847
-      },
-      {
-        "group": "Banbridge",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 52.178
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1262,19 +1270,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Banbridge",
+        "category": "catholic",
+        "perc": 38.3028
+      },
+      {
+        "group": "Banbridge",
+        "category": "none",
+        "perc": 8.4345
+      },
+      {
+        "group": "Banbridge",
+        "category": "other_religions",
+        "perc": 1.0847
+      },
+      {
+        "group": "Banbridge",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.178
       }
     ],
     "sex": [
-      {
-        "group": "Banbridge",
-        "category": "females",
-        "perc": 50.8243
-      },
-      {
-        "group": "Banbridge",
-        "category": "males",
-        "perc": 49.1757
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1284,6 +1302,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Banbridge",
+        "category": "females",
+        "perc": 50.8243
+      },
+      {
+        "group": "Banbridge",
+        "category": "males",
+        "perc": 49.1757
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1310,36 +1360,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Banbridge",
         "category": "FSME",
         "perc": 17.5662
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Banbridge",
         "category": "FSME",
         "perc": 16.3115
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1402,26 +1442,58 @@
         "group": "Banbridge",
         "category": "Age 65+",
         "perc": 17.3665
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Banbridge",
+        "category": "destHEpct",
+        "perc": 42.1
+      },
+      {
+        "group": "Banbridge",
+        "category": "destFEpct",
+        "perc": 33.8
+      },
+      {
+        "group": "Banbridge",
+        "category": "destEmploypct",
+        "perc": 9.5
+      },
+      {
+        "group": "Banbridge",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "group": "Banbridge",
+        "category": "destUnempUnkpct",
+        "perc": 2.4
       }
     ]
   },

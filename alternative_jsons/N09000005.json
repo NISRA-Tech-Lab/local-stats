@@ -599,6 +599,28 @@
         "perc": 48.8597
       }
     ],
+    "LMS": [
+      {
+        "geography": "Derry City and Strabane",
+        "category": "EMPN",
+        "perc": 61000
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "EMPR",
+        "perc": 67.6
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "UNEMPR",
+        "perc": 2.5
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "INACTR",
+        "perc": 30.6
+      }
+    ],
     "BRES": [
       {
         "geography": "Derry City and Strabane",
@@ -655,6 +677,33 @@
         "geography": "Derry City and Strabane",
         "category": "Age 65+",
         "perc": 16.4145
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Derry City and Strabane",
+        "category": "destHEpct",
+        "perc": 40.3
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "destFEpct",
+        "perc": 28
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "destTrainpct",
+        "perc": 13.5
+      },
+      {
+        "geography": "Derry City and Strabane",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },
@@ -1095,54 +1144,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Derry City and Strabane",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derry City and Strabane",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Derry City and Strabane",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derry City and Strabane",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "bad",
-        "perc": 7.0433
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "fair",
-        "perc": 14.5065
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "good",
-        "perc": 26.6549
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "very_bad",
-        "perc": 2.4623
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "very_good",
-        "perc": 49.333
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1167,34 +1191,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "bad",
+        "perc": 7.0433
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "fair",
+        "perc": 14.5065
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "good",
+        "perc": 26.6549
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "very_bad",
+        "perc": 2.4623
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "very_good",
+        "perc": 49.333
       }
     ],
     "hh_size": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "five_people",
-        "perc": 9.1379
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "four_people",
-        "perc": 13.4919
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "one_person",
-        "perc": 31.2064
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "three_people",
-        "perc": 17.7835
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "two_people",
-        "perc": 28.3804
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1219,44 +1243,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "five_people",
+        "perc": 9.1379
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "four_people",
+        "perc": 13.4919
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "one_person",
+        "perc": 31.2064
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "three_people",
+        "perc": 17.7835
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "two_people",
+        "perc": 28.3804
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "apprenticeship",
-        "perc": 5.3546
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "level_1_qualifications",
-        "perc": 5.8613
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "level_2_qualifications",
-        "perc": 13.2965
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "level_3_qualifications",
-        "perc": 15.7323
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "level_4_qualifications_and_above",
-        "perc": 29.6424
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "no_qualifications",
-        "perc": 28.3546
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "other_qualifications",
-        "perc": 1.7582
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1291,39 +1305,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "apprenticeship",
+        "perc": 5.3546
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "level_1_qualifications",
+        "perc": 5.8613
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "level_2_qualifications",
+        "perc": 13.2965
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "level_3_qualifications",
+        "perc": 15.7323
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.6424
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "no_qualifications",
+        "perc": 28.3546
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "other_qualifications",
+        "perc": 1.7582
       }
     ],
     "cob": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "england",
-        "perc": 3.4666
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "northern_ireland",
-        "perc": 88.2677
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "other_cob",
-        "perc": 2.9279
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "republic_of_ireland",
-        "perc": 4.2466
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "scotland",
-        "perc": 0.9923
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "wales",
-        "perc": 0.0988
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1353,19 +1372,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "england",
+        "perc": 3.4666
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "northern_ireland",
+        "perc": 88.2677
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "other_cob",
+        "perc": 2.9279
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "republic_of_ireland",
+        "perc": 4.2466
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "scotland",
+        "perc": 0.9923
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "wales",
+        "perc": 0.0988
       }
     ],
     "mainlang": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "english",
-        "perc": 98.1759
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "other_languages",
-        "perc": 1.8241
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1375,29 +1414,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "english",
+        "perc": 98.1759
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "other_languages",
+        "perc": 1.8241
       }
     ],
     "age": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "a0to14",
-        "perc": 19.8851
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "a15to39",
-        "perc": 31.0654
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "a40to64",
-        "perc": 33.0256
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "a65plus",
-        "perc": 16.0239
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1417,29 +1446,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a0to14",
+        "perc": 19.8851
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a15to39",
+        "perc": 31.0654
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a40to64",
+        "perc": 33.0256
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a65plus",
+        "perc": 16.0239
       }
     ],
     "provision_care": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "a1to19_hours",
-        "perc": 5.0437
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "a20to49_hours",
-        "perc": 3.3832
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "a50plus_hours",
-        "perc": 4.2817
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "no_care",
-        "perc": 87.2915
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1459,29 +1488,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a1to19_hours",
+        "perc": 5.0437
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a20to49_hours",
+        "perc": 3.3832
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "a50plus_hours",
+        "perc": 4.2817
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "no_care",
+        "perc": 87.2915
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "catholic",
-        "perc": 72.3892
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "none",
-        "perc": 3.511
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "other_religions",
-        "perc": 0.9844
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 23.1155
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1501,19 +1530,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "catholic",
+        "perc": 72.3892
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "none",
+        "perc": 3.511
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "other_religions",
+        "perc": 0.9844
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 23.1155
       }
     ],
     "sex": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "females",
-        "perc": 51.1403
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "males",
-        "perc": 48.8597
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1523,29 +1562,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "females",
+        "perc": 51.1403
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "males",
+        "perc": 48.8597
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "EMPN",
+        "perc": 61000
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "EMPR",
+        "perc": 67.6
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "UNEMPR",
+        "perc": 2.5
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "INACTR",
+        "perc": 30.6
       }
     ],
     "BRES": [
-      {
-        "group": "Derry City and Strabane",
-        "category": "Construction",
-        "perc": 4.5132
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Manufacturing",
-        "perc": 10.4538
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Services",
-        "perc": 83.6765
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Other",
-        "perc": 1.3566
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1565,6 +1636,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "Construction",
+        "perc": 4.5132
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "Manufacturing",
+        "perc": 10.4538
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "Services",
+        "perc": 83.6765
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "Other",
+        "perc": 1.3566
       }
     ],
     "Primary": [
@@ -1577,11 +1668,6 @@
         "group": "Derry City and Strabane",
         "category": "FSME",
         "perc": 28.5589
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1594,11 +1680,6 @@
         "group": "Derry City and Strabane",
         "category": "FSME",
         "perc": 25.9536
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1623,26 +1704,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Derry City and Strabane",
-        "category": "Age 0-15",
-        "perc": 21.1985
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Age 16-39",
-        "perc": 29.2861
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Age 40-64",
-        "perc": 33.1009
-      },
-      {
-        "group": "Derry City and Strabane",
-        "category": "Age 65+",
-        "perc": 16.4145
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1663,24 +1724,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derry City and Strabane",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 21.1985
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derry City and Strabane",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 29.2861
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derry City and Strabane",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 33.1009
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "Age 65+",
+        "perc": 16.4145
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "destHEpct",
+        "perc": 40.3
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "destFEpct",
+        "perc": 28
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "destTrainpct",
+        "perc": 13.5
+      },
+      {
+        "group": "Derry City and Strabane",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },

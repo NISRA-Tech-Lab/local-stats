@@ -601,6 +601,7 @@
         "perc": 47.8203
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -636,6 +637,33 @@
         "geography": "Ormiston",
         "category": "Age 65+",
         "perc": 20.8731
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Ormiston",
+        "category": "destHEpct",
+        "perc": 57.9
+      },
+      {
+        "geography": "Ormiston",
+        "category": "destFEpct",
+        "perc": 21.8
+      },
+      {
+        "geography": "Ormiston",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "geography": "Ormiston",
+        "category": "destTrainpct",
+        "perc": 4.2
+      },
+      {
+        "geography": "Ormiston",
+        "category": "destUnempUnkpct",
+        "perc": 3.4
       }
     ]
   },
@@ -871,54 +899,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Ormiston",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ormiston",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Ormiston",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ormiston",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Ormiston",
-        "category": "bad",
-        "perc": 4.7869
-      },
-      {
-        "group": "Ormiston",
-        "category": "fair",
-        "perc": 13.1244
-      },
-      {
-        "group": "Ormiston",
-        "category": "good",
-        "perc": 29.9668
-      },
-      {
-        "group": "Ormiston",
-        "category": "very_bad",
-        "perc": 1.7334
-      },
-      {
-        "group": "Ormiston",
-        "category": "very_good",
-        "perc": 50.3886
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -943,34 +946,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Ormiston",
+        "category": "bad",
+        "perc": 4.7869
+      },
+      {
+        "group": "Ormiston",
+        "category": "fair",
+        "perc": 13.1244
+      },
+      {
+        "group": "Ormiston",
+        "category": "good",
+        "perc": 29.9668
+      },
+      {
+        "group": "Ormiston",
+        "category": "very_bad",
+        "perc": 1.7334
+      },
+      {
+        "group": "Ormiston",
+        "category": "very_good",
+        "perc": 50.3886
       }
     ],
     "hh_size": [
-      {
-        "group": "Ormiston",
-        "category": "five_people",
-        "perc": 5.267
-      },
-      {
-        "group": "Ormiston",
-        "category": "four_people",
-        "perc": 12.9962
-      },
-      {
-        "group": "Ormiston",
-        "category": "one_person",
-        "perc": 33.6494
-      },
-      {
-        "group": "Ormiston",
-        "category": "three_people",
-        "perc": 14.6948
-      },
-      {
-        "group": "Ormiston",
-        "category": "two_people",
-        "perc": 33.3926
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -995,44 +998,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Ormiston",
+        "category": "five_people",
+        "perc": 5.267
+      },
+      {
+        "group": "Ormiston",
+        "category": "four_people",
+        "perc": 12.9962
+      },
+      {
+        "group": "Ormiston",
+        "category": "one_person",
+        "perc": 33.6494
+      },
+      {
+        "group": "Ormiston",
+        "category": "three_people",
+        "perc": 14.6948
+      },
+      {
+        "group": "Ormiston",
+        "category": "two_people",
+        "perc": 33.3926
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Ormiston",
-        "category": "apprenticeship",
-        "perc": 5.1132
-      },
-      {
-        "group": "Ormiston",
-        "category": "level_1_qualifications",
-        "perc": 5.2835
-      },
-      {
-        "group": "Ormiston",
-        "category": "level_2_qualifications",
-        "perc": 12.1993
-      },
-      {
-        "group": "Ormiston",
-        "category": "level_3_qualifications",
-        "perc": 13.4838
-      },
-      {
-        "group": "Ormiston",
-        "category": "level_4_qualifications_and_above",
-        "perc": 45.2629
-      },
-      {
-        "group": "Ormiston",
-        "category": "no_qualifications",
-        "perc": 16.4573
-      },
-      {
-        "group": "Ormiston",
-        "category": "other_qualifications",
-        "perc": 2.2
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1067,39 +1060,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Ormiston",
+        "category": "apprenticeship",
+        "perc": 5.1132
+      },
+      {
+        "group": "Ormiston",
+        "category": "level_1_qualifications",
+        "perc": 5.2835
+      },
+      {
+        "group": "Ormiston",
+        "category": "level_2_qualifications",
+        "perc": 12.1993
+      },
+      {
+        "group": "Ormiston",
+        "category": "level_3_qualifications",
+        "perc": 13.4838
+      },
+      {
+        "group": "Ormiston",
+        "category": "level_4_qualifications_and_above",
+        "perc": 45.2629
+      },
+      {
+        "group": "Ormiston",
+        "category": "no_qualifications",
+        "perc": 16.4573
+      },
+      {
+        "group": "Ormiston",
+        "category": "other_qualifications",
+        "perc": 2.2
       }
     ],
     "cob": [
-      {
-        "group": "Ormiston",
-        "category": "england",
-        "perc": 4.1803
-      },
-      {
-        "group": "Ormiston",
-        "category": "northern_ireland",
-        "perc": 87.2599
-      },
-      {
-        "group": "Ormiston",
-        "category": "other_cob",
-        "perc": 5.8761
-      },
-      {
-        "group": "Ormiston",
-        "category": "republic_of_ireland",
-        "perc": 1.4416
-      },
-      {
-        "group": "Ormiston",
-        "category": "scotland",
-        "perc": 1.0545
-      },
-      {
-        "group": "Ormiston",
-        "category": "wales",
-        "perc": 0.1878
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1129,19 +1127,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Ormiston",
+        "category": "england",
+        "perc": 4.1803
+      },
+      {
+        "group": "Ormiston",
+        "category": "northern_ireland",
+        "perc": 87.2599
+      },
+      {
+        "group": "Ormiston",
+        "category": "other_cob",
+        "perc": 5.8761
+      },
+      {
+        "group": "Ormiston",
+        "category": "republic_of_ireland",
+        "perc": 1.4416
+      },
+      {
+        "group": "Ormiston",
+        "category": "scotland",
+        "perc": 1.0545
+      },
+      {
+        "group": "Ormiston",
+        "category": "wales",
+        "perc": 0.1878
       }
     ],
     "mainlang": [
-      {
-        "group": "Ormiston",
-        "category": "english",
-        "perc": 96.918
-      },
-      {
-        "group": "Ormiston",
-        "category": "other_languages",
-        "perc": 3.082
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1151,29 +1169,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Ormiston",
+        "category": "english",
+        "perc": 96.918
+      },
+      {
+        "group": "Ormiston",
+        "category": "other_languages",
+        "perc": 3.082
       }
     ],
     "age": [
-      {
-        "group": "Ormiston",
-        "category": "a0to14",
-        "perc": 17.374
-      },
-      {
-        "group": "Ormiston",
-        "category": "a15to39",
-        "perc": 27.7308
-      },
-      {
-        "group": "Ormiston",
-        "category": "a40to64",
-        "perc": 34.1557
-      },
-      {
-        "group": "Ormiston",
-        "category": "a65plus",
-        "perc": 20.7396
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1193,29 +1201,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Ormiston",
+        "category": "a0to14",
+        "perc": 17.374
+      },
+      {
+        "group": "Ormiston",
+        "category": "a15to39",
+        "perc": 27.7308
+      },
+      {
+        "group": "Ormiston",
+        "category": "a40to64",
+        "perc": 34.1557
+      },
+      {
+        "group": "Ormiston",
+        "category": "a65plus",
+        "perc": 20.7396
       }
     ],
     "provision_care": [
-      {
-        "group": "Ormiston",
-        "category": "a1to19_hours",
-        "perc": 7.4744
-      },
-      {
-        "group": "Ormiston",
-        "category": "a20to49_hours",
-        "perc": 2.5403
-      },
-      {
-        "group": "Ormiston",
-        "category": "a50plus_hours",
-        "perc": 3.5405
-      },
-      {
-        "group": "Ormiston",
-        "category": "no_care",
-        "perc": 86.4449
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1235,29 +1243,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Ormiston",
+        "category": "a1to19_hours",
+        "perc": 7.4744
+      },
+      {
+        "group": "Ormiston",
+        "category": "a20to49_hours",
+        "perc": 2.5403
+      },
+      {
+        "group": "Ormiston",
+        "category": "a50plus_hours",
+        "perc": 3.5405
+      },
+      {
+        "group": "Ormiston",
+        "category": "no_care",
+        "perc": 86.4449
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Ormiston",
-        "category": "catholic",
-        "perc": 12.6564
-      },
-      {
-        "group": "Ormiston",
-        "category": "none",
-        "perc": 15.6175
-      },
-      {
-        "group": "Ormiston",
-        "category": "other_religions",
-        "perc": 1.5311
-      },
-      {
-        "group": "Ormiston",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 70.195
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1277,19 +1285,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Ormiston",
+        "category": "catholic",
+        "perc": 12.6564
+      },
+      {
+        "group": "Ormiston",
+        "category": "none",
+        "perc": 15.6175
+      },
+      {
+        "group": "Ormiston",
+        "category": "other_religions",
+        "perc": 1.5311
+      },
+      {
+        "group": "Ormiston",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 70.195
       }
     ],
     "sex": [
-      {
-        "group": "Ormiston",
-        "category": "females",
-        "perc": 52.1797
-      },
-      {
-        "group": "Ormiston",
-        "category": "males",
-        "perc": 47.8203
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1299,6 +1317,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Ormiston",
+        "category": "females",
+        "perc": 52.1797
+      },
+      {
+        "group": "Ormiston",
+        "category": "males",
+        "perc": 47.8203
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1325,36 +1375,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Ormiston",
         "category": "FSME",
         "perc": 13.8097
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Ormiston",
         "category": "FSME",
         "perc": 13.6719
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1417,26 +1457,58 @@
         "group": "Ormiston",
         "category": "Age 65+",
         "perc": 20.8731
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Ormiston",
+        "category": "destHEpct",
+        "perc": 57.9
+      },
+      {
+        "group": "Ormiston",
+        "category": "destFEpct",
+        "perc": 21.8
+      },
+      {
+        "group": "Ormiston",
+        "category": "destEmploypct",
+        "perc": 12.7
+      },
+      {
+        "group": "Ormiston",
+        "category": "destTrainpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Ormiston",
+        "category": "destUnempUnkpct",
+        "perc": 3.4
       }
     ]
   },

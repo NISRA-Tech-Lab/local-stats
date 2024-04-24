@@ -566,6 +566,7 @@
         "perc": 49.0692
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Downpatrick",
         "category": "Age 65+",
         "perc": 17.4012
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Downpatrick",
+        "category": "destHEpct",
+        "perc": 37.5
+      },
+      {
+        "geography": "Downpatrick",
+        "category": "destFEpct",
+        "perc": 26.1
+      },
+      {
+        "geography": "Downpatrick",
+        "category": "destEmploypct",
+        "perc": 16.2
+      },
+      {
+        "geography": "Downpatrick",
+        "category": "destTrainpct",
+        "perc": 16.5
+      },
+      {
+        "geography": "Downpatrick",
+        "category": "destUnempUnkpct",
+        "perc": 3.7
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Downpatrick",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Downpatrick",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Downpatrick",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Downpatrick",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Downpatrick",
-        "category": "bad",
-        "perc": 6.0914
-      },
-      {
-        "group": "Downpatrick",
-        "category": "fair",
-        "perc": 14.1039
-      },
-      {
-        "group": "Downpatrick",
-        "category": "good",
-        "perc": 28.6549
-      },
-      {
-        "group": "Downpatrick",
-        "category": "very_bad",
-        "perc": 1.9985
-      },
-      {
-        "group": "Downpatrick",
-        "category": "very_good",
-        "perc": 49.1513
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Downpatrick",
+        "category": "bad",
+        "perc": 6.0914
+      },
+      {
+        "group": "Downpatrick",
+        "category": "fair",
+        "perc": 14.1039
+      },
+      {
+        "group": "Downpatrick",
+        "category": "good",
+        "perc": 28.6549
+      },
+      {
+        "group": "Downpatrick",
+        "category": "very_bad",
+        "perc": 1.9985
+      },
+      {
+        "group": "Downpatrick",
+        "category": "very_good",
+        "perc": 49.1513
       }
     ],
     "hh_size": [
-      {
-        "group": "Downpatrick",
-        "category": "five_people",
-        "perc": 10.6448
-      },
-      {
-        "group": "Downpatrick",
-        "category": "four_people",
-        "perc": 14.5487
-      },
-      {
-        "group": "Downpatrick",
-        "category": "one_person",
-        "perc": 28.5698
-      },
-      {
-        "group": "Downpatrick",
-        "category": "three_people",
-        "perc": 17.4912
-      },
-      {
-        "group": "Downpatrick",
-        "category": "two_people",
-        "perc": 28.7456
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Downpatrick",
+        "category": "five_people",
+        "perc": 10.6448
+      },
+      {
+        "group": "Downpatrick",
+        "category": "four_people",
+        "perc": 14.5487
+      },
+      {
+        "group": "Downpatrick",
+        "category": "one_person",
+        "perc": 28.5698
+      },
+      {
+        "group": "Downpatrick",
+        "category": "three_people",
+        "perc": 17.4912
+      },
+      {
+        "group": "Downpatrick",
+        "category": "two_people",
+        "perc": 28.7456
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Downpatrick",
-        "category": "apprenticeship",
-        "perc": 7.1902
-      },
-      {
-        "group": "Downpatrick",
-        "category": "level_1_qualifications",
-        "perc": 5.365
-      },
-      {
-        "group": "Downpatrick",
-        "category": "level_2_qualifications",
-        "perc": 14.5896
-      },
-      {
-        "group": "Downpatrick",
-        "category": "level_3_qualifications",
-        "perc": 16.9902
-      },
-      {
-        "group": "Downpatrick",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.0974
-      },
-      {
-        "group": "Downpatrick",
-        "category": "no_qualifications",
-        "perc": 22.3785
-      },
-      {
-        "group": "Downpatrick",
-        "category": "other_qualifications",
-        "perc": 2.389
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Downpatrick",
+        "category": "apprenticeship",
+        "perc": 7.1902
+      },
+      {
+        "group": "Downpatrick",
+        "category": "level_1_qualifications",
+        "perc": 5.365
+      },
+      {
+        "group": "Downpatrick",
+        "category": "level_2_qualifications",
+        "perc": 14.5896
+      },
+      {
+        "group": "Downpatrick",
+        "category": "level_3_qualifications",
+        "perc": 16.9902
+      },
+      {
+        "group": "Downpatrick",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.0974
+      },
+      {
+        "group": "Downpatrick",
+        "category": "no_qualifications",
+        "perc": 22.3785
+      },
+      {
+        "group": "Downpatrick",
+        "category": "other_qualifications",
+        "perc": 2.389
       }
     ],
     "cob": [
-      {
-        "group": "Downpatrick",
-        "category": "england",
-        "perc": 4.1248
-      },
-      {
-        "group": "Downpatrick",
-        "category": "northern_ireland",
-        "perc": 89.186
-      },
-      {
-        "group": "Downpatrick",
-        "category": "other_cob",
-        "perc": 4.2845
-      },
-      {
-        "group": "Downpatrick",
-        "category": "republic_of_ireland",
-        "perc": 1.6289
-      },
-      {
-        "group": "Downpatrick",
-        "category": "scotland",
-        "perc": 0.6297
-      },
-      {
-        "group": "Downpatrick",
-        "category": "wales",
-        "perc": 0.146
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Downpatrick",
+        "category": "england",
+        "perc": 4.1248
+      },
+      {
+        "group": "Downpatrick",
+        "category": "northern_ireland",
+        "perc": 89.186
+      },
+      {
+        "group": "Downpatrick",
+        "category": "other_cob",
+        "perc": 4.2845
+      },
+      {
+        "group": "Downpatrick",
+        "category": "republic_of_ireland",
+        "perc": 1.6289
+      },
+      {
+        "group": "Downpatrick",
+        "category": "scotland",
+        "perc": 0.6297
+      },
+      {
+        "group": "Downpatrick",
+        "category": "wales",
+        "perc": 0.146
       }
     ],
     "mainlang": [
-      {
-        "group": "Downpatrick",
-        "category": "english",
-        "perc": 96.9724
-      },
-      {
-        "group": "Downpatrick",
-        "category": "other_languages",
-        "perc": 3.0276
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Downpatrick",
+        "category": "english",
+        "perc": 96.9724
+      },
+      {
+        "group": "Downpatrick",
+        "category": "other_languages",
+        "perc": 3.0276
       }
     ],
     "age": [
-      {
-        "group": "Downpatrick",
-        "category": "a0to14",
-        "perc": 20.3002
-      },
-      {
-        "group": "Downpatrick",
-        "category": "a15to39",
-        "perc": 29.9188
-      },
-      {
-        "group": "Downpatrick",
-        "category": "a40to64",
-        "perc": 32.5105
-      },
-      {
-        "group": "Downpatrick",
-        "category": "a65plus",
-        "perc": 17.2705
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a0to14",
+        "perc": 20.3002
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a15to39",
+        "perc": 29.9188
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a40to64",
+        "perc": 32.5105
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a65plus",
+        "perc": 17.2705
       }
     ],
     "provision_care": [
-      {
-        "group": "Downpatrick",
-        "category": "a1to19_hours",
-        "perc": 5.0505
-      },
-      {
-        "group": "Downpatrick",
-        "category": "a20to49_hours",
-        "perc": 3.3071
-      },
-      {
-        "group": "Downpatrick",
-        "category": "a50plus_hours",
-        "perc": 4.4872
-      },
-      {
-        "group": "Downpatrick",
-        "category": "no_care",
-        "perc": 87.1552
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a1to19_hours",
+        "perc": 5.0505
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a20to49_hours",
+        "perc": 3.3071
+      },
+      {
+        "group": "Downpatrick",
+        "category": "a50plus_hours",
+        "perc": 4.4872
+      },
+      {
+        "group": "Downpatrick",
+        "category": "no_care",
+        "perc": 87.1552
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Downpatrick",
-        "category": "catholic",
-        "perc": 80.48
-      },
-      {
-        "group": "Downpatrick",
-        "category": "none",
-        "perc": 5.1332
-      },
-      {
-        "group": "Downpatrick",
-        "category": "other_religions",
-        "perc": 0.7985
-      },
-      {
-        "group": "Downpatrick",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 13.5882
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Downpatrick",
+        "category": "catholic",
+        "perc": 80.48
+      },
+      {
+        "group": "Downpatrick",
+        "category": "none",
+        "perc": 5.1332
+      },
+      {
+        "group": "Downpatrick",
+        "category": "other_religions",
+        "perc": 0.7985
+      },
+      {
+        "group": "Downpatrick",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 13.5882
       }
     ],
     "sex": [
-      {
-        "group": "Downpatrick",
-        "category": "females",
-        "perc": 50.9308
-      },
-      {
-        "group": "Downpatrick",
-        "category": "males",
-        "perc": 49.0692
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Downpatrick",
+        "category": "females",
+        "perc": 50.9308
+      },
+      {
+        "group": "Downpatrick",
+        "category": "males",
+        "perc": 49.0692
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Downpatrick",
         "category": "FSME",
         "perc": 24.2663
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Downpatrick",
         "category": "FSME",
         "perc": 20.272
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Downpatrick",
         "category": "Age 65+",
         "perc": 17.4012
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Downpatrick",
+        "category": "destHEpct",
+        "perc": 37.5
+      },
+      {
+        "group": "Downpatrick",
+        "category": "destFEpct",
+        "perc": 26.1
+      },
+      {
+        "group": "Downpatrick",
+        "category": "destEmploypct",
+        "perc": 16.2
+      },
+      {
+        "group": "Downpatrick",
+        "category": "destTrainpct",
+        "perc": 16.5
+      },
+      {
+        "group": "Downpatrick",
+        "category": "destUnempUnkpct",
+        "perc": 3.7
       }
     ]
   },

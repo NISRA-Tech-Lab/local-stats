@@ -626,6 +626,7 @@
         "perc": 51.6239
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -661,6 +662,33 @@
         "geography": "Botanic",
         "category": "Age 65+",
         "perc": 8.5282
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Botanic",
+        "category": "destHEpct",
+        "perc": 48
+      },
+      {
+        "geography": "Botanic",
+        "category": "destFEpct",
+        "perc": 16.3
+      },
+      {
+        "geography": "Botanic",
+        "category": "destEmploypct",
+        "perc": 13
+      },
+      {
+        "geography": "Botanic",
+        "category": "destTrainpct",
+        "perc": 18.3
+      },
+      {
+        "geography": "Botanic",
+        "category": "destUnempUnkpct",
+        "perc": 4.5
       }
     ]
   },
@@ -896,54 +924,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Botanic",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Botanic",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Botanic",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Botanic",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Botanic",
-        "category": "bad",
-        "perc": 4.0964
-      },
-      {
-        "group": "Botanic",
-        "category": "fair",
-        "perc": 10.5659
-      },
-      {
-        "group": "Botanic",
-        "category": "good",
-        "perc": 29.3106
-      },
-      {
-        "group": "Botanic",
-        "category": "very_bad",
-        "perc": 1.6189
-      },
-      {
-        "group": "Botanic",
-        "category": "very_good",
-        "perc": 54.4082
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -968,34 +971,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Botanic",
+        "category": "bad",
+        "perc": 4.0964
+      },
+      {
+        "group": "Botanic",
+        "category": "fair",
+        "perc": 10.5659
+      },
+      {
+        "group": "Botanic",
+        "category": "good",
+        "perc": 29.3106
+      },
+      {
+        "group": "Botanic",
+        "category": "very_bad",
+        "perc": 1.6189
+      },
+      {
+        "group": "Botanic",
+        "category": "very_good",
+        "perc": 54.4082
       }
     ],
     "hh_size": [
-      {
-        "group": "Botanic",
-        "category": "five_people",
-        "perc": 6.8621
-      },
-      {
-        "group": "Botanic",
-        "category": "four_people",
-        "perc": 9.9304
-      },
-      {
-        "group": "Botanic",
-        "category": "one_person",
-        "perc": 38.9227
-      },
-      {
-        "group": "Botanic",
-        "category": "three_people",
-        "perc": 13.8614
-      },
-      {
-        "group": "Botanic",
-        "category": "two_people",
-        "perc": 30.4235
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1020,44 +1023,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Botanic",
+        "category": "five_people",
+        "perc": 6.8621
+      },
+      {
+        "group": "Botanic",
+        "category": "four_people",
+        "perc": 9.9304
+      },
+      {
+        "group": "Botanic",
+        "category": "one_person",
+        "perc": 38.9227
+      },
+      {
+        "group": "Botanic",
+        "category": "three_people",
+        "perc": 13.8614
+      },
+      {
+        "group": "Botanic",
+        "category": "two_people",
+        "perc": 30.4235
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Botanic",
-        "category": "apprenticeship",
-        "perc": 2.2934
-      },
-      {
-        "group": "Botanic",
-        "category": "level_1_qualifications",
-        "perc": 2.8366
-      },
-      {
-        "group": "Botanic",
-        "category": "level_2_qualifications",
-        "perc": 6.3665
-      },
-      {
-        "group": "Botanic",
-        "category": "level_3_qualifications",
-        "perc": 27.798
-      },
-      {
-        "group": "Botanic",
-        "category": "level_4_qualifications_and_above",
-        "perc": 44.545
-      },
-      {
-        "group": "Botanic",
-        "category": "no_qualifications",
-        "perc": 14.0558
-      },
-      {
-        "group": "Botanic",
-        "category": "other_qualifications",
-        "perc": 2.1047
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1092,39 +1085,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Botanic",
+        "category": "apprenticeship",
+        "perc": 2.2934
+      },
+      {
+        "group": "Botanic",
+        "category": "level_1_qualifications",
+        "perc": 2.8366
+      },
+      {
+        "group": "Botanic",
+        "category": "level_2_qualifications",
+        "perc": 6.3665
+      },
+      {
+        "group": "Botanic",
+        "category": "level_3_qualifications",
+        "perc": 27.798
+      },
+      {
+        "group": "Botanic",
+        "category": "level_4_qualifications_and_above",
+        "perc": 44.545
+      },
+      {
+        "group": "Botanic",
+        "category": "no_qualifications",
+        "perc": 14.0558
+      },
+      {
+        "group": "Botanic",
+        "category": "other_qualifications",
+        "perc": 2.1047
       }
     ],
     "cob": [
-      {
-        "group": "Botanic",
-        "category": "england",
-        "perc": 6.3005
-      },
-      {
-        "group": "Botanic",
-        "category": "northern_ireland",
-        "perc": 65.7041
-      },
-      {
-        "group": "Botanic",
-        "category": "other_cob",
-        "perc": 23.3439
-      },
-      {
-        "group": "Botanic",
-        "category": "republic_of_ireland",
-        "perc": 3.4952
-      },
-      {
-        "group": "Botanic",
-        "category": "scotland",
-        "perc": 0.9371
-      },
-      {
-        "group": "Botanic",
-        "category": "wales",
-        "perc": 0.2192
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1154,19 +1152,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Botanic",
+        "category": "england",
+        "perc": 6.3005
+      },
+      {
+        "group": "Botanic",
+        "category": "northern_ireland",
+        "perc": 65.7041
+      },
+      {
+        "group": "Botanic",
+        "category": "other_cob",
+        "perc": 23.3439
+      },
+      {
+        "group": "Botanic",
+        "category": "republic_of_ireland",
+        "perc": 3.4952
+      },
+      {
+        "group": "Botanic",
+        "category": "scotland",
+        "perc": 0.9371
+      },
+      {
+        "group": "Botanic",
+        "category": "wales",
+        "perc": 0.2192
       }
     ],
     "mainlang": [
-      {
-        "group": "Botanic",
-        "category": "english",
-        "perc": 84.6567
-      },
-      {
-        "group": "Botanic",
-        "category": "other_languages",
-        "perc": 15.3433
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1176,29 +1194,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Botanic",
+        "category": "english",
+        "perc": 84.6567
+      },
+      {
+        "group": "Botanic",
+        "category": "other_languages",
+        "perc": 15.3433
       }
     ],
     "age": [
-      {
-        "group": "Botanic",
-        "category": "a0to14",
-        "perc": 10.9337
-      },
-      {
-        "group": "Botanic",
-        "category": "a15to39",
-        "perc": 60.0901
-      },
-      {
-        "group": "Botanic",
-        "category": "a40to64",
-        "perc": 20.5241
-      },
-      {
-        "group": "Botanic",
-        "category": "a65plus",
-        "perc": 8.4521
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1218,29 +1226,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Botanic",
+        "category": "a0to14",
+        "perc": 10.9337
+      },
+      {
+        "group": "Botanic",
+        "category": "a15to39",
+        "perc": 60.0901
+      },
+      {
+        "group": "Botanic",
+        "category": "a40to64",
+        "perc": 20.5241
+      },
+      {
+        "group": "Botanic",
+        "category": "a65plus",
+        "perc": 8.4521
       }
     ],
     "provision_care": [
-      {
-        "group": "Botanic",
-        "category": "a1to19_hours",
-        "perc": 4.0704
-      },
-      {
-        "group": "Botanic",
-        "category": "a20to49_hours",
-        "perc": 1.8942
-      },
-      {
-        "group": "Botanic",
-        "category": "a50plus_hours",
-        "perc": 1.746
-      },
-      {
-        "group": "Botanic",
-        "category": "no_care",
-        "perc": 92.2894
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1260,29 +1268,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Botanic",
+        "category": "a1to19_hours",
+        "perc": 4.0704
+      },
+      {
+        "group": "Botanic",
+        "category": "a20to49_hours",
+        "perc": 1.8942
+      },
+      {
+        "group": "Botanic",
+        "category": "a50plus_hours",
+        "perc": 1.746
+      },
+      {
+        "group": "Botanic",
+        "category": "no_care",
+        "perc": 92.2894
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Botanic",
-        "category": "catholic",
-        "perc": 43.9178
-      },
-      {
-        "group": "Botanic",
-        "category": "none",
-        "perc": 17.8575
-      },
-      {
-        "group": "Botanic",
-        "category": "other_religions",
-        "perc": 8.6613
-      },
-      {
-        "group": "Botanic",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 29.5634
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1302,19 +1310,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Botanic",
+        "category": "catholic",
+        "perc": 43.9178
+      },
+      {
+        "group": "Botanic",
+        "category": "none",
+        "perc": 17.8575
+      },
+      {
+        "group": "Botanic",
+        "category": "other_religions",
+        "perc": 8.6613
+      },
+      {
+        "group": "Botanic",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 29.5634
       }
     ],
     "sex": [
-      {
-        "group": "Botanic",
-        "category": "females",
-        "perc": 48.3761
-      },
-      {
-        "group": "Botanic",
-        "category": "males",
-        "perc": 51.6239
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1324,6 +1342,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Botanic",
+        "category": "females",
+        "perc": 48.3761
+      },
+      {
+        "group": "Botanic",
+        "category": "males",
+        "perc": 51.6239
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1350,36 +1400,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Botanic",
         "category": "FSME",
         "perc": 29.1139
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Botanic",
         "category": "FSME",
         "perc": 27.7663
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1442,26 +1482,58 @@
         "group": "Botanic",
         "category": "Age 65+",
         "perc": 8.5282
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Botanic",
+        "category": "destHEpct",
+        "perc": 48
+      },
+      {
+        "group": "Botanic",
+        "category": "destFEpct",
+        "perc": 16.3
+      },
+      {
+        "group": "Botanic",
+        "category": "destEmploypct",
+        "perc": 13
+      },
+      {
+        "group": "Botanic",
+        "category": "destTrainpct",
+        "perc": 18.3
+      },
+      {
+        "group": "Botanic",
+        "category": "destUnempUnkpct",
+        "perc": 4.5
       }
     ]
   },

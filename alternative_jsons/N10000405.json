@@ -566,6 +566,7 @@
         "perc": 48.1439
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Coleraine",
         "category": "Age 65+",
         "perc": 19.3739
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Coleraine",
+        "category": "destHEpct",
+        "perc": 37.1
+      },
+      {
+        "geography": "Coleraine",
+        "category": "destFEpct",
+        "perc": 34.3
+      },
+      {
+        "geography": "Coleraine",
+        "category": "destEmploypct",
+        "perc": 15.3
+      },
+      {
+        "geography": "Coleraine",
+        "category": "destTrainpct",
+        "perc": 3.6
+      },
+      {
+        "geography": "Coleraine",
+        "category": "destUnempUnkpct",
+        "perc": 9.7
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Coleraine",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Coleraine",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Coleraine",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Coleraine",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Coleraine",
-        "category": "bad",
-        "perc": 6.3069
-      },
-      {
-        "group": "Coleraine",
-        "category": "fair",
-        "perc": 16.0296
-      },
-      {
-        "group": "Coleraine",
-        "category": "good",
-        "perc": 31.1704
-      },
-      {
-        "group": "Coleraine",
-        "category": "very_bad",
-        "perc": 2.163
-      },
-      {
-        "group": "Coleraine",
-        "category": "very_good",
-        "perc": 44.3302
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Coleraine",
+        "category": "bad",
+        "perc": 6.3069
+      },
+      {
+        "group": "Coleraine",
+        "category": "fair",
+        "perc": 16.0296
+      },
+      {
+        "group": "Coleraine",
+        "category": "good",
+        "perc": 31.1704
+      },
+      {
+        "group": "Coleraine",
+        "category": "very_bad",
+        "perc": 2.163
+      },
+      {
+        "group": "Coleraine",
+        "category": "very_good",
+        "perc": 44.3302
       }
     ],
     "hh_size": [
-      {
-        "group": "Coleraine",
-        "category": "five_people",
-        "perc": 5.653
-      },
-      {
-        "group": "Coleraine",
-        "category": "four_people",
-        "perc": 12.115
-      },
-      {
-        "group": "Coleraine",
-        "category": "one_person",
-        "perc": 33.9376
-      },
-      {
-        "group": "Coleraine",
-        "category": "three_people",
-        "perc": 16.3353
-      },
-      {
-        "group": "Coleraine",
-        "category": "two_people",
-        "perc": 31.9591
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Coleraine",
+        "category": "five_people",
+        "perc": 5.653
+      },
+      {
+        "group": "Coleraine",
+        "category": "four_people",
+        "perc": 12.115
+      },
+      {
+        "group": "Coleraine",
+        "category": "one_person",
+        "perc": 33.9376
+      },
+      {
+        "group": "Coleraine",
+        "category": "three_people",
+        "perc": 16.3353
+      },
+      {
+        "group": "Coleraine",
+        "category": "two_people",
+        "perc": 31.9591
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Coleraine",
-        "category": "apprenticeship",
-        "perc": 5.5874
-      },
-      {
-        "group": "Coleraine",
-        "category": "level_1_qualifications",
-        "perc": 6.8319
-      },
-      {
-        "group": "Coleraine",
-        "category": "level_2_qualifications",
-        "perc": 15.2729
-      },
-      {
-        "group": "Coleraine",
-        "category": "level_3_qualifications",
-        "perc": 15.7988
-      },
-      {
-        "group": "Coleraine",
-        "category": "level_4_qualifications_and_above",
-        "perc": 26.7236
-      },
-      {
-        "group": "Coleraine",
-        "category": "no_qualifications",
-        "perc": 27.4891
-      },
-      {
-        "group": "Coleraine",
-        "category": "other_qualifications",
-        "perc": 2.2964
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Coleraine",
+        "category": "apprenticeship",
+        "perc": 5.5874
+      },
+      {
+        "group": "Coleraine",
+        "category": "level_1_qualifications",
+        "perc": 6.8319
+      },
+      {
+        "group": "Coleraine",
+        "category": "level_2_qualifications",
+        "perc": 15.2729
+      },
+      {
+        "group": "Coleraine",
+        "category": "level_3_qualifications",
+        "perc": 15.7988
+      },
+      {
+        "group": "Coleraine",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.7236
+      },
+      {
+        "group": "Coleraine",
+        "category": "no_qualifications",
+        "perc": 27.4891
+      },
+      {
+        "group": "Coleraine",
+        "category": "other_qualifications",
+        "perc": 2.2964
       }
     ],
     "cob": [
-      {
-        "group": "Coleraine",
-        "category": "england",
-        "perc": 4.364
-      },
-      {
-        "group": "Coleraine",
-        "category": "northern_ireland",
-        "perc": 86.1884
-      },
-      {
-        "group": "Coleraine",
-        "category": "other_cob",
-        "perc": 6.8868
-      },
-      {
-        "group": "Coleraine",
-        "category": "republic_of_ireland",
-        "perc": 1.2148
-      },
-      {
-        "group": "Coleraine",
-        "category": "scotland",
-        "perc": 1.1513
-      },
-      {
-        "group": "Coleraine",
-        "category": "wales",
-        "perc": 0.1947
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Coleraine",
+        "category": "england",
+        "perc": 4.364
+      },
+      {
+        "group": "Coleraine",
+        "category": "northern_ireland",
+        "perc": 86.1884
+      },
+      {
+        "group": "Coleraine",
+        "category": "other_cob",
+        "perc": 6.8868
+      },
+      {
+        "group": "Coleraine",
+        "category": "republic_of_ireland",
+        "perc": 1.2148
+      },
+      {
+        "group": "Coleraine",
+        "category": "scotland",
+        "perc": 1.1513
+      },
+      {
+        "group": "Coleraine",
+        "category": "wales",
+        "perc": 0.1947
       }
     ],
     "mainlang": [
-      {
-        "group": "Coleraine",
-        "category": "english",
-        "perc": 95.2212
-      },
-      {
-        "group": "Coleraine",
-        "category": "other_languages",
-        "perc": 4.7788
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Coleraine",
+        "category": "english",
+        "perc": 95.2212
+      },
+      {
+        "group": "Coleraine",
+        "category": "other_languages",
+        "perc": 4.7788
       }
     ],
     "age": [
-      {
-        "group": "Coleraine",
-        "category": "a0to14",
-        "perc": 17.7185
-      },
-      {
-        "group": "Coleraine",
-        "category": "a15to39",
-        "perc": 30.1503
-      },
-      {
-        "group": "Coleraine",
-        "category": "a40to64",
-        "perc": 32.9947
-      },
-      {
-        "group": "Coleraine",
-        "category": "a65plus",
-        "perc": 19.1365
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Coleraine",
+        "category": "a0to14",
+        "perc": 17.7185
+      },
+      {
+        "group": "Coleraine",
+        "category": "a15to39",
+        "perc": 30.1503
+      },
+      {
+        "group": "Coleraine",
+        "category": "a40to64",
+        "perc": 32.9947
+      },
+      {
+        "group": "Coleraine",
+        "category": "a65plus",
+        "perc": 19.1365
       }
     ],
     "provision_care": [
-      {
-        "group": "Coleraine",
-        "category": "a1to19_hours",
-        "perc": 4.4828
-      },
-      {
-        "group": "Coleraine",
-        "category": "a20to49_hours",
-        "perc": 2.8722
-      },
-      {
-        "group": "Coleraine",
-        "category": "a50plus_hours",
-        "perc": 4.1473
-      },
-      {
-        "group": "Coleraine",
-        "category": "no_care",
-        "perc": 88.4977
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Coleraine",
+        "category": "a1to19_hours",
+        "perc": 4.4828
+      },
+      {
+        "group": "Coleraine",
+        "category": "a20to49_hours",
+        "perc": 2.8722
+      },
+      {
+        "group": "Coleraine",
+        "category": "a50plus_hours",
+        "perc": 4.1473
+      },
+      {
+        "group": "Coleraine",
+        "category": "no_care",
+        "perc": 88.4977
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Coleraine",
-        "category": "catholic",
-        "perc": 24.5249
-      },
-      {
-        "group": "Coleraine",
-        "category": "none",
-        "perc": 12.618
-      },
-      {
-        "group": "Coleraine",
-        "category": "other_religions",
-        "perc": 1.346
-      },
-      {
-        "group": "Coleraine",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 61.5111
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Coleraine",
+        "category": "catholic",
+        "perc": 24.5249
+      },
+      {
+        "group": "Coleraine",
+        "category": "none",
+        "perc": 12.618
+      },
+      {
+        "group": "Coleraine",
+        "category": "other_religions",
+        "perc": 1.346
+      },
+      {
+        "group": "Coleraine",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 61.5111
       }
     ],
     "sex": [
-      {
-        "group": "Coleraine",
-        "category": "females",
-        "perc": 51.8561
-      },
-      {
-        "group": "Coleraine",
-        "category": "males",
-        "perc": 48.1439
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Coleraine",
+        "category": "females",
+        "perc": 51.8561
+      },
+      {
+        "group": "Coleraine",
+        "category": "males",
+        "perc": 48.1439
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Coleraine",
         "category": "FSME",
         "perc": 28.4659
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Coleraine",
         "category": "FSME",
         "perc": 24.3902
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Coleraine",
         "category": "Age 65+",
         "perc": 19.3739
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Coleraine",
+        "category": "destHEpct",
+        "perc": 37.1
+      },
+      {
+        "group": "Coleraine",
+        "category": "destFEpct",
+        "perc": 34.3
+      },
+      {
+        "group": "Coleraine",
+        "category": "destEmploypct",
+        "perc": 15.3
+      },
+      {
+        "group": "Coleraine",
+        "category": "destTrainpct",
+        "perc": 3.6
+      },
+      {
+        "group": "Coleraine",
+        "category": "destUnempUnkpct",
+        "perc": 9.7
       }
     ]
   },

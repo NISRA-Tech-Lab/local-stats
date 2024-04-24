@@ -581,6 +581,7 @@
         "perc": 48.6934
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -616,6 +617,33 @@
         "geography": "Waterside",
         "category": "Age 65+",
         "perc": 16.1568
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Waterside",
+        "category": "destHEpct",
+        "perc": 36
+      },
+      {
+        "geography": "Waterside",
+        "category": "destFEpct",
+        "perc": 28.7
+      },
+      {
+        "geography": "Waterside",
+        "category": "destEmploypct",
+        "perc": 13.9
+      },
+      {
+        "geography": "Waterside",
+        "category": "destTrainpct",
+        "perc": 17.5
+      },
+      {
+        "geography": "Waterside",
+        "category": "destUnempUnkpct",
+        "perc": 3.9
       }
     ]
   },
@@ -851,54 +879,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Waterside",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Waterside",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Waterside",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Waterside",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Waterside",
-        "category": "bad",
-        "perc": 6.2629
-      },
-      {
-        "group": "Waterside",
-        "category": "fair",
-        "perc": 13.8858
-      },
-      {
-        "group": "Waterside",
-        "category": "good",
-        "perc": 28.054
-      },
-      {
-        "group": "Waterside",
-        "category": "very_bad",
-        "perc": 2.0796
-      },
-      {
-        "group": "Waterside",
-        "category": "very_good",
-        "perc": 49.7177
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -923,34 +926,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Waterside",
+        "category": "bad",
+        "perc": 6.2629
+      },
+      {
+        "group": "Waterside",
+        "category": "fair",
+        "perc": 13.8858
+      },
+      {
+        "group": "Waterside",
+        "category": "good",
+        "perc": 28.054
+      },
+      {
+        "group": "Waterside",
+        "category": "very_bad",
+        "perc": 2.0796
+      },
+      {
+        "group": "Waterside",
+        "category": "very_good",
+        "perc": 49.7177
       }
     ],
     "hh_size": [
-      {
-        "group": "Waterside",
-        "category": "five_people",
-        "perc": 6.9716
-      },
-      {
-        "group": "Waterside",
-        "category": "four_people",
-        "perc": 13.3235
-      },
-      {
-        "group": "Waterside",
-        "category": "one_person",
-        "perc": 33.3578
-      },
-      {
-        "group": "Waterside",
-        "category": "three_people",
-        "perc": 16.1122
-      },
-      {
-        "group": "Waterside",
-        "category": "two_people",
-        "perc": 30.2348
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -975,44 +978,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Waterside",
+        "category": "five_people",
+        "perc": 6.9716
+      },
+      {
+        "group": "Waterside",
+        "category": "four_people",
+        "perc": 13.3235
+      },
+      {
+        "group": "Waterside",
+        "category": "one_person",
+        "perc": 33.3578
+      },
+      {
+        "group": "Waterside",
+        "category": "three_people",
+        "perc": 16.1122
+      },
+      {
+        "group": "Waterside",
+        "category": "two_people",
+        "perc": 30.2348
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Waterside",
-        "category": "apprenticeship",
-        "perc": 5.0602
-      },
-      {
-        "group": "Waterside",
-        "category": "level_1_qualifications",
-        "perc": 5.6884
-      },
-      {
-        "group": "Waterside",
-        "category": "level_2_qualifications",
-        "perc": 13.2699
-      },
-      {
-        "group": "Waterside",
-        "category": "level_3_qualifications",
-        "perc": 15.8218
-      },
-      {
-        "group": "Waterside",
-        "category": "level_4_qualifications_and_above",
-        "perc": 33.7027
-      },
-      {
-        "group": "Waterside",
-        "category": "no_qualifications",
-        "perc": 24.4024
-      },
-      {
-        "group": "Waterside",
-        "category": "other_qualifications",
-        "perc": 2.0546
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1047,39 +1040,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Waterside",
+        "category": "apprenticeship",
+        "perc": 5.0602
+      },
+      {
+        "group": "Waterside",
+        "category": "level_1_qualifications",
+        "perc": 5.6884
+      },
+      {
+        "group": "Waterside",
+        "category": "level_2_qualifications",
+        "perc": 13.2699
+      },
+      {
+        "group": "Waterside",
+        "category": "level_3_qualifications",
+        "perc": 15.8218
+      },
+      {
+        "group": "Waterside",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.7027
+      },
+      {
+        "group": "Waterside",
+        "category": "no_qualifications",
+        "perc": 24.4024
+      },
+      {
+        "group": "Waterside",
+        "category": "other_qualifications",
+        "perc": 2.0546
       }
     ],
     "cob": [
-      {
-        "group": "Waterside",
-        "category": "england",
-        "perc": 4.6517
-      },
-      {
-        "group": "Waterside",
-        "category": "northern_ireland",
-        "perc": 84.8018
-      },
-      {
-        "group": "Waterside",
-        "category": "other_cob",
-        "perc": 5.7122
-      },
-      {
-        "group": "Waterside",
-        "category": "republic_of_ireland",
-        "perc": 3.6739
-      },
-      {
-        "group": "Waterside",
-        "category": "scotland",
-        "perc": 1.0467
-      },
-      {
-        "group": "Waterside",
-        "category": "wales",
-        "perc": 0.1136
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1109,19 +1107,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Waterside",
+        "category": "england",
+        "perc": 4.6517
+      },
+      {
+        "group": "Waterside",
+        "category": "northern_ireland",
+        "perc": 84.8018
+      },
+      {
+        "group": "Waterside",
+        "category": "other_cob",
+        "perc": 5.7122
+      },
+      {
+        "group": "Waterside",
+        "category": "republic_of_ireland",
+        "perc": 3.6739
+      },
+      {
+        "group": "Waterside",
+        "category": "scotland",
+        "perc": 1.0467
+      },
+      {
+        "group": "Waterside",
+        "category": "wales",
+        "perc": 0.1136
       }
     ],
     "mainlang": [
-      {
-        "group": "Waterside",
-        "category": "english",
-        "perc": 96.8792
-      },
-      {
-        "group": "Waterside",
-        "category": "other_languages",
-        "perc": 3.1208
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1131,29 +1149,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Waterside",
+        "category": "english",
+        "perc": 96.8792
+      },
+      {
+        "group": "Waterside",
+        "category": "other_languages",
+        "perc": 3.1208
       }
     ],
     "age": [
-      {
-        "group": "Waterside",
-        "category": "a0to14",
-        "perc": 19.8795
-      },
-      {
-        "group": "Waterside",
-        "category": "a15to39",
-        "perc": 30.8177
-      },
-      {
-        "group": "Waterside",
-        "category": "a40to64",
-        "perc": 33.1727
-      },
-      {
-        "group": "Waterside",
-        "category": "a65plus",
-        "perc": 16.1301
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1173,29 +1181,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Waterside",
+        "category": "a0to14",
+        "perc": 19.8795
+      },
+      {
+        "group": "Waterside",
+        "category": "a15to39",
+        "perc": 30.8177
+      },
+      {
+        "group": "Waterside",
+        "category": "a40to64",
+        "perc": 33.1727
+      },
+      {
+        "group": "Waterside",
+        "category": "a65plus",
+        "perc": 16.1301
       }
     ],
     "provision_care": [
-      {
-        "group": "Waterside",
-        "category": "a1to19_hours",
-        "perc": 5.2639
-      },
-      {
-        "group": "Waterside",
-        "category": "a20to49_hours",
-        "perc": 3.0363
-      },
-      {
-        "group": "Waterside",
-        "category": "a50plus_hours",
-        "perc": 3.8818
-      },
-      {
-        "group": "Waterside",
-        "category": "no_care",
-        "perc": 87.818
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1215,29 +1223,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Waterside",
+        "category": "a1to19_hours",
+        "perc": 5.2639
+      },
+      {
+        "group": "Waterside",
+        "category": "a20to49_hours",
+        "perc": 3.0363
+      },
+      {
+        "group": "Waterside",
+        "category": "a50plus_hours",
+        "perc": 3.8818
+      },
+      {
+        "group": "Waterside",
+        "category": "no_care",
+        "perc": 87.818
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Waterside",
-        "category": "catholic",
-        "perc": 50.2909
-      },
-      {
-        "group": "Waterside",
-        "category": "none",
-        "perc": 6.1078
-      },
-      {
-        "group": "Waterside",
-        "category": "other_religions",
-        "perc": 1.9866
-      },
-      {
-        "group": "Waterside",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 41.6147
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1257,19 +1265,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Waterside",
+        "category": "catholic",
+        "perc": 50.2909
+      },
+      {
+        "group": "Waterside",
+        "category": "none",
+        "perc": 6.1078
+      },
+      {
+        "group": "Waterside",
+        "category": "other_religions",
+        "perc": 1.9866
+      },
+      {
+        "group": "Waterside",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 41.6147
       }
     ],
     "sex": [
-      {
-        "group": "Waterside",
-        "category": "females",
-        "perc": 51.3066
-      },
-      {
-        "group": "Waterside",
-        "category": "males",
-        "perc": 48.6934
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1279,6 +1297,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Waterside",
+        "category": "females",
+        "perc": 51.3066
+      },
+      {
+        "group": "Waterside",
+        "category": "males",
+        "perc": 48.6934
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1305,36 +1355,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Waterside",
         "category": "FSME",
         "perc": 25.0658
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Waterside",
         "category": "FSME",
         "perc": 22.8177
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1397,26 +1437,58 @@
         "group": "Waterside",
         "category": "Age 65+",
         "perc": 16.1568
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Waterside",
+        "category": "destHEpct",
+        "perc": 36
+      },
+      {
+        "group": "Waterside",
+        "category": "destFEpct",
+        "perc": 28.7
+      },
+      {
+        "group": "Waterside",
+        "category": "destEmploypct",
+        "perc": 13.9
+      },
+      {
+        "group": "Waterside",
+        "category": "destTrainpct",
+        "perc": 17.5
+      },
+      {
+        "group": "Waterside",
+        "category": "destUnempUnkpct",
+        "perc": 3.9
       }
     ]
   },

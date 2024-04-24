@@ -566,6 +566,7 @@
         "perc": 49.3366
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,31 @@
         "geography": "Sperrin",
         "category": "Age 65+",
         "perc": 17.4828
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Sperrin",
+        "category": "destHEpct",
+        "perc": 48.3
+      },
+      {
+        "geography": "Sperrin",
+        "category": "destFEpct",
+        "perc": 25.8
+      },
+      {
+        "geography": "Sperrin",
+        "category": "destEmploypct"
+      },
+      {
+        "geography": "Sperrin",
+        "category": "destTrainpct",
+        "perc": 15.5
+      },
+      {
+        "geography": "Sperrin",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -836,54 +862,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Sperrin",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Sperrin",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Sperrin",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Sperrin",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Sperrin",
-        "category": "bad",
-        "perc": 6.343
-      },
-      {
-        "group": "Sperrin",
-        "category": "fair",
-        "perc": 14.6076
-      },
-      {
-        "group": "Sperrin",
-        "category": "good",
-        "perc": 26.6667
-      },
-      {
-        "group": "Sperrin",
-        "category": "very_bad",
-        "perc": 2.4353
-      },
-      {
-        "group": "Sperrin",
-        "category": "very_good",
-        "perc": 49.9474
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +909,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Sperrin",
+        "category": "bad",
+        "perc": 6.343
+      },
+      {
+        "group": "Sperrin",
+        "category": "fair",
+        "perc": 14.6076
+      },
+      {
+        "group": "Sperrin",
+        "category": "good",
+        "perc": 26.6667
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_bad",
+        "perc": 2.4353
+      },
+      {
+        "group": "Sperrin",
+        "category": "very_good",
+        "perc": 49.9474
       }
     ],
     "hh_size": [
-      {
-        "group": "Sperrin",
-        "category": "five_people",
-        "perc": 10.9562
-      },
-      {
-        "group": "Sperrin",
-        "category": "four_people",
-        "perc": 13.6824
-      },
-      {
-        "group": "Sperrin",
-        "category": "one_person",
-        "perc": 29.2235
-      },
-      {
-        "group": "Sperrin",
-        "category": "three_people",
-        "perc": 17.6064
-      },
-      {
-        "group": "Sperrin",
-        "category": "two_people",
-        "perc": 28.5316
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +961,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Sperrin",
+        "category": "five_people",
+        "perc": 10.9562
+      },
+      {
+        "group": "Sperrin",
+        "category": "four_people",
+        "perc": 13.6824
+      },
+      {
+        "group": "Sperrin",
+        "category": "one_person",
+        "perc": 29.2235
+      },
+      {
+        "group": "Sperrin",
+        "category": "three_people",
+        "perc": 17.6064
+      },
+      {
+        "group": "Sperrin",
+        "category": "two_people",
+        "perc": 28.5316
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Sperrin",
-        "category": "apprenticeship",
-        "perc": 6.1736
-      },
-      {
-        "group": "Sperrin",
-        "category": "level_1_qualifications",
-        "perc": 6.0866
-      },
-      {
-        "group": "Sperrin",
-        "category": "level_2_qualifications",
-        "perc": 13.0019
-      },
-      {
-        "group": "Sperrin",
-        "category": "level_3_qualifications",
-        "perc": 15.1655
-      },
-      {
-        "group": "Sperrin",
-        "category": "level_4_qualifications_and_above",
-        "perc": 26.0396
-      },
-      {
-        "group": "Sperrin",
-        "category": "no_qualifications",
-        "perc": 31.7631
-      },
-      {
-        "group": "Sperrin",
-        "category": "other_qualifications",
-        "perc": 1.7697
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1023,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Sperrin",
+        "category": "apprenticeship",
+        "perc": 6.1736
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_1_qualifications",
+        "perc": 6.0866
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_2_qualifications",
+        "perc": 13.0019
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_3_qualifications",
+        "perc": 15.1655
+      },
+      {
+        "group": "Sperrin",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.0396
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_qualifications",
+        "perc": 31.7631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_qualifications",
+        "perc": 1.7697
       }
     ],
     "cob": [
-      {
-        "group": "Sperrin",
-        "category": "england",
-        "perc": 3.038
-      },
-      {
-        "group": "Sperrin",
-        "category": "northern_ireland",
-        "perc": 88.9684
-      },
-      {
-        "group": "Sperrin",
-        "category": "other_cob",
-        "perc": 1.877
-      },
-      {
-        "group": "Sperrin",
-        "category": "republic_of_ireland",
-        "perc": 5.0405
-      },
-      {
-        "group": "Sperrin",
-        "category": "scotland",
-        "perc": 1.0113
-      },
-      {
-        "group": "Sperrin",
-        "category": "wales",
-        "perc": 0.0647
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1090,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Sperrin",
+        "category": "england",
+        "perc": 3.038
+      },
+      {
+        "group": "Sperrin",
+        "category": "northern_ireland",
+        "perc": 88.9684
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_cob",
+        "perc": 1.877
+      },
+      {
+        "group": "Sperrin",
+        "category": "republic_of_ireland",
+        "perc": 5.0405
+      },
+      {
+        "group": "Sperrin",
+        "category": "scotland",
+        "perc": 1.0113
+      },
+      {
+        "group": "Sperrin",
+        "category": "wales",
+        "perc": 0.0647
       }
     ],
     "mainlang": [
-      {
-        "group": "Sperrin",
-        "category": "english",
-        "perc": 98.5631
-      },
-      {
-        "group": "Sperrin",
-        "category": "other_languages",
-        "perc": 1.4369
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1132,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Sperrin",
+        "category": "english",
+        "perc": 98.5631
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_languages",
+        "perc": 1.4369
       }
     ],
     "age": [
-      {
-        "group": "Sperrin",
-        "category": "a0to14",
-        "perc": 19.5388
-      },
-      {
-        "group": "Sperrin",
-        "category": "a15to39",
-        "perc": 29.7573
-      },
-      {
-        "group": "Sperrin",
-        "category": "a40to64",
-        "perc": 33.3091
-      },
-      {
-        "group": "Sperrin",
-        "category": "a65plus",
-        "perc": 17.3948
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1164,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Sperrin",
+        "category": "a0to14",
+        "perc": 19.5388
+      },
+      {
+        "group": "Sperrin",
+        "category": "a15to39",
+        "perc": 29.7573
+      },
+      {
+        "group": "Sperrin",
+        "category": "a40to64",
+        "perc": 33.3091
+      },
+      {
+        "group": "Sperrin",
+        "category": "a65plus",
+        "perc": 17.3948
       }
     ],
     "provision_care": [
-      {
-        "group": "Sperrin",
-        "category": "a1to19_hours",
-        "perc": 5.0039
-      },
-      {
-        "group": "Sperrin",
-        "category": "a20to49_hours",
-        "perc": 3.3949
-      },
-      {
-        "group": "Sperrin",
-        "category": "a50plus_hours",
-        "perc": 4.2447
-      },
-      {
-        "group": "Sperrin",
-        "category": "no_care",
-        "perc": 87.3566
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1206,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Sperrin",
+        "category": "a1to19_hours",
+        "perc": 5.0039
+      },
+      {
+        "group": "Sperrin",
+        "category": "a20to49_hours",
+        "perc": 3.3949
+      },
+      {
+        "group": "Sperrin",
+        "category": "a50plus_hours",
+        "perc": 4.2447
+      },
+      {
+        "group": "Sperrin",
+        "category": "no_care",
+        "perc": 87.3566
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Sperrin",
-        "category": "catholic",
-        "perc": 72.7427
-      },
-      {
-        "group": "Sperrin",
-        "category": "none",
-        "perc": 2.6335
-      },
-      {
-        "group": "Sperrin",
-        "category": "other_religions",
-        "perc": 0.534
-      },
-      {
-        "group": "Sperrin",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 24.0898
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1248,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Sperrin",
+        "category": "catholic",
+        "perc": 72.7427
+      },
+      {
+        "group": "Sperrin",
+        "category": "none",
+        "perc": 2.6335
+      },
+      {
+        "group": "Sperrin",
+        "category": "other_religions",
+        "perc": 0.534
+      },
+      {
+        "group": "Sperrin",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.0898
       }
     ],
     "sex": [
-      {
-        "group": "Sperrin",
-        "category": "females",
-        "perc": 50.6634
-      },
-      {
-        "group": "Sperrin",
-        "category": "males",
-        "perc": 49.3366
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1280,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Sperrin",
+        "category": "females",
+        "perc": 50.6634
+      },
+      {
+        "group": "Sperrin",
+        "category": "males",
+        "perc": 49.3366
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1338,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Sperrin",
         "category": "FSME",
         "perc": 25.5682
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Sperrin",
         "category": "FSME",
         "perc": 23.7532
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1420,56 @@
         "group": "Sperrin",
         "category": "Age 65+",
         "perc": 17.4828
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Sperrin",
+        "category": "destHEpct",
+        "perc": 48.3
+      },
+      {
+        "group": "Sperrin",
+        "category": "destFEpct",
+        "perc": 25.8
+      },
+      {
+        "group": "Sperrin",
+        "category": "destEmploypct"
+      },
+      {
+        "group": "Sperrin",
+        "category": "destTrainpct",
+        "perc": 15.5
+      },
+      {
+        "group": "Sperrin",
+        "category": "destUnempUnkpct"
       }
     ]
   },

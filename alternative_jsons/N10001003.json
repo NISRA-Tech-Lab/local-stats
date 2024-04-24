@@ -581,6 +581,7 @@
         "perc": 49.425
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -616,6 +617,33 @@
         "geography": "Newry",
         "category": "Age 65+",
         "perc": 15.9928
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Newry",
+        "category": "destHEpct",
+        "perc": 42.2
+      },
+      {
+        "geography": "Newry",
+        "category": "destFEpct",
+        "perc": 29
+      },
+      {
+        "geography": "Newry",
+        "category": "destEmploypct",
+        "perc": 13.2
+      },
+      {
+        "geography": "Newry",
+        "category": "destTrainpct",
+        "perc": 12.4
+      },
+      {
+        "geography": "Newry",
+        "category": "destUnempUnkpct",
+        "perc": 3.2
       }
     ]
   },
@@ -851,54 +879,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Newry",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Newry",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Newry",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Newry",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Newry",
-        "category": "bad",
-        "perc": 6.2157
-      },
-      {
-        "group": "Newry",
-        "category": "fair",
-        "perc": 13.929
-      },
-      {
-        "group": "Newry",
-        "category": "good",
-        "perc": 27.9117
-      },
-      {
-        "group": "Newry",
-        "category": "very_bad",
-        "perc": 2.4433
-      },
-      {
-        "group": "Newry",
-        "category": "very_good",
-        "perc": 49.5002
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -923,34 +926,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Newry",
+        "category": "bad",
+        "perc": 6.2157
+      },
+      {
+        "group": "Newry",
+        "category": "fair",
+        "perc": 13.929
+      },
+      {
+        "group": "Newry",
+        "category": "good",
+        "perc": 27.9117
+      },
+      {
+        "group": "Newry",
+        "category": "very_bad",
+        "perc": 2.4433
+      },
+      {
+        "group": "Newry",
+        "category": "very_good",
+        "perc": 49.5002
       }
     ],
     "hh_size": [
-      {
-        "group": "Newry",
-        "category": "five_people",
-        "perc": 10.7471
-      },
-      {
-        "group": "Newry",
-        "category": "four_people",
-        "perc": 13.8491
-      },
-      {
-        "group": "Newry",
-        "category": "one_person",
-        "perc": 29.4053
-      },
-      {
-        "group": "Newry",
-        "category": "three_people",
-        "perc": 17.511
-      },
-      {
-        "group": "Newry",
-        "category": "two_people",
-        "perc": 28.4875
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -975,44 +978,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Newry",
+        "category": "five_people",
+        "perc": 10.7471
+      },
+      {
+        "group": "Newry",
+        "category": "four_people",
+        "perc": 13.8491
+      },
+      {
+        "group": "Newry",
+        "category": "one_person",
+        "perc": 29.4053
+      },
+      {
+        "group": "Newry",
+        "category": "three_people",
+        "perc": 17.511
+      },
+      {
+        "group": "Newry",
+        "category": "two_people",
+        "perc": 28.4875
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Newry",
-        "category": "apprenticeship",
-        "perc": 7.3347
-      },
-      {
-        "group": "Newry",
-        "category": "level_1_qualifications",
-        "perc": 5.1075
-      },
-      {
-        "group": "Newry",
-        "category": "level_2_qualifications",
-        "perc": 12.7143
-      },
-      {
-        "group": "Newry",
-        "category": "level_3_qualifications",
-        "perc": 14.4652
-      },
-      {
-        "group": "Newry",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.2504
-      },
-      {
-        "group": "Newry",
-        "category": "no_qualifications",
-        "perc": 27.7102
-      },
-      {
-        "group": "Newry",
-        "category": "other_qualifications",
-        "perc": 2.4177
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1047,39 +1040,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Newry",
+        "category": "apprenticeship",
+        "perc": 7.3347
+      },
+      {
+        "group": "Newry",
+        "category": "level_1_qualifications",
+        "perc": 5.1075
+      },
+      {
+        "group": "Newry",
+        "category": "level_2_qualifications",
+        "perc": 12.7143
+      },
+      {
+        "group": "Newry",
+        "category": "level_3_qualifications",
+        "perc": 14.4652
+      },
+      {
+        "group": "Newry",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.2504
+      },
+      {
+        "group": "Newry",
+        "category": "no_qualifications",
+        "perc": 27.7102
+      },
+      {
+        "group": "Newry",
+        "category": "other_qualifications",
+        "perc": 2.4177
       }
     ],
     "cob": [
-      {
-        "group": "Newry",
-        "category": "england",
-        "perc": 3.3109
-      },
-      {
-        "group": "Newry",
-        "category": "northern_ireland",
-        "perc": 78.8734
-      },
-      {
-        "group": "Newry",
-        "category": "other_cob",
-        "perc": 11.7457
-      },
-      {
-        "group": "Newry",
-        "category": "republic_of_ireland",
-        "perc": 5.5289
-      },
-      {
-        "group": "Newry",
-        "category": "scotland",
-        "perc": 0.4515
-      },
-      {
-        "group": "Newry",
-        "category": "wales",
-        "perc": 0.0896
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1109,19 +1107,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Newry",
+        "category": "england",
+        "perc": 3.3109
+      },
+      {
+        "group": "Newry",
+        "category": "northern_ireland",
+        "perc": 78.8734
+      },
+      {
+        "group": "Newry",
+        "category": "other_cob",
+        "perc": 11.7457
+      },
+      {
+        "group": "Newry",
+        "category": "republic_of_ireland",
+        "perc": 5.5289
+      },
+      {
+        "group": "Newry",
+        "category": "scotland",
+        "perc": 0.4515
+      },
+      {
+        "group": "Newry",
+        "category": "wales",
+        "perc": 0.0896
       }
     ],
     "mainlang": [
-      {
-        "group": "Newry",
-        "category": "english",
-        "perc": 90.1412
-      },
-      {
-        "group": "Newry",
-        "category": "other_languages",
-        "perc": 9.8588
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1131,29 +1149,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Newry",
+        "category": "english",
+        "perc": 90.1412
+      },
+      {
+        "group": "Newry",
+        "category": "other_languages",
+        "perc": 9.8588
       }
     ],
     "age": [
-      {
-        "group": "Newry",
-        "category": "a0to14",
-        "perc": 19.8832
-      },
-      {
-        "group": "Newry",
-        "category": "a15to39",
-        "perc": 31.72
-      },
-      {
-        "group": "Newry",
-        "category": "a40to64",
-        "perc": 32.5547
-      },
-      {
-        "group": "Newry",
-        "category": "a65plus",
-        "perc": 15.8421
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1173,29 +1181,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Newry",
+        "category": "a0to14",
+        "perc": 19.8832
+      },
+      {
+        "group": "Newry",
+        "category": "a15to39",
+        "perc": 31.72
+      },
+      {
+        "group": "Newry",
+        "category": "a40to64",
+        "perc": 32.5547
+      },
+      {
+        "group": "Newry",
+        "category": "a65plus",
+        "perc": 15.8421
       }
     ],
     "provision_care": [
-      {
-        "group": "Newry",
-        "category": "a1to19_hours",
-        "perc": 4.8641
-      },
-      {
-        "group": "Newry",
-        "category": "a20to49_hours",
-        "perc": 3.2262
-      },
-      {
-        "group": "Newry",
-        "category": "a50plus_hours",
-        "perc": 4.2671
-      },
-      {
-        "group": "Newry",
-        "category": "no_care",
-        "perc": 87.6426
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1215,29 +1223,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Newry",
+        "category": "a1to19_hours",
+        "perc": 4.8641
+      },
+      {
+        "group": "Newry",
+        "category": "a20to49_hours",
+        "perc": 3.2262
+      },
+      {
+        "group": "Newry",
+        "category": "a50plus_hours",
+        "perc": 4.2671
+      },
+      {
+        "group": "Newry",
+        "category": "no_care",
+        "perc": 87.6426
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Newry",
-        "category": "catholic",
-        "perc": 87.8623
-      },
-      {
-        "group": "Newry",
-        "category": "none",
-        "perc": 3.9802
-      },
-      {
-        "group": "Newry",
-        "category": "other_religions",
-        "perc": 1.1572
-      },
-      {
-        "group": "Newry",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 7.0003
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1257,19 +1265,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Newry",
+        "category": "catholic",
+        "perc": 87.8623
+      },
+      {
+        "group": "Newry",
+        "category": "none",
+        "perc": 3.9802
+      },
+      {
+        "group": "Newry",
+        "category": "other_religions",
+        "perc": 1.1572
+      },
+      {
+        "group": "Newry",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 7.0003
       }
     ],
     "sex": [
-      {
-        "group": "Newry",
-        "category": "females",
-        "perc": 50.575
-      },
-      {
-        "group": "Newry",
-        "category": "males",
-        "perc": 49.425
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1279,6 +1297,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Newry",
+        "category": "females",
+        "perc": 50.575
+      },
+      {
+        "group": "Newry",
+        "category": "males",
+        "perc": 49.425
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1305,36 +1355,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Newry",
         "category": "FSME",
         "perc": 26.4435
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Newry",
         "category": "FSME",
         "perc": 24.5718
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1397,26 +1437,58 @@
         "group": "Newry",
         "category": "Age 65+",
         "perc": 15.9928
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Newry",
+        "category": "destHEpct",
+        "perc": 42.2
+      },
+      {
+        "group": "Newry",
+        "category": "destFEpct",
+        "perc": 29
+      },
+      {
+        "group": "Newry",
+        "category": "destEmploypct",
+        "perc": 13.2
+      },
+      {
+        "group": "Newry",
+        "category": "destTrainpct",
+        "perc": 12.4
+      },
+      {
+        "group": "Newry",
+        "category": "destUnempUnkpct",
+        "perc": 3.2
       }
     ]
   },

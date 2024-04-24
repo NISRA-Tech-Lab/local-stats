@@ -556,6 +556,7 @@
         "perc": 49.4918
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -591,6 +592,33 @@
         "geography": "Derg",
         "category": "Age 65+",
         "perc": 17.2743
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Derg",
+        "category": "destHEpct",
+        "perc": 40.5
+      },
+      {
+        "geography": "Derg",
+        "category": "destFEpct",
+        "perc": 25.5
+      },
+      {
+        "geography": "Derg",
+        "category": "destEmploypct",
+        "perc": 12.5
+      },
+      {
+        "geography": "Derg",
+        "category": "destTrainpct",
+        "perc": 18.5
+      },
+      {
+        "geography": "Derg",
+        "category": "destUnempUnkpct",
+        "perc": 3
       }
     ]
   },
@@ -826,54 +854,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Derg",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derg",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Derg",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Derg",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Derg",
-        "category": "bad",
-        "perc": 6.8115
-      },
-      {
-        "group": "Derg",
-        "category": "fair",
-        "perc": 15.9254
-      },
-      {
-        "group": "Derg",
-        "category": "good",
-        "perc": 27.2406
-      },
-      {
-        "group": "Derg",
-        "category": "very_bad",
-        "perc": 2.3304
-      },
-      {
-        "group": "Derg",
-        "category": "very_good",
-        "perc": 47.692
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -898,34 +901,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Derg",
+        "category": "bad",
+        "perc": 6.8115
+      },
+      {
+        "group": "Derg",
+        "category": "fair",
+        "perc": 15.9254
+      },
+      {
+        "group": "Derg",
+        "category": "good",
+        "perc": 27.2406
+      },
+      {
+        "group": "Derg",
+        "category": "very_bad",
+        "perc": 2.3304
+      },
+      {
+        "group": "Derg",
+        "category": "very_good",
+        "perc": 47.692
       }
     ],
     "hh_size": [
-      {
-        "group": "Derg",
-        "category": "five_people",
-        "perc": 10.2765
-      },
-      {
-        "group": "Derg",
-        "category": "four_people",
-        "perc": 14.7948
-      },
-      {
-        "group": "Derg",
-        "category": "one_person",
-        "perc": 29.5325
-      },
-      {
-        "group": "Derg",
-        "category": "three_people",
-        "perc": 17.8022
-      },
-      {
-        "group": "Derg",
-        "category": "two_people",
-        "perc": 27.5941
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -950,44 +953,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Derg",
+        "category": "five_people",
+        "perc": 10.2765
+      },
+      {
+        "group": "Derg",
+        "category": "four_people",
+        "perc": 14.7948
+      },
+      {
+        "group": "Derg",
+        "category": "one_person",
+        "perc": 29.5325
+      },
+      {
+        "group": "Derg",
+        "category": "three_people",
+        "perc": 17.8022
+      },
+      {
+        "group": "Derg",
+        "category": "two_people",
+        "perc": 27.5941
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Derg",
-        "category": "apprenticeship",
-        "perc": 5.5294
-      },
-      {
-        "group": "Derg",
-        "category": "level_1_qualifications",
-        "perc": 6.1858
-      },
-      {
-        "group": "Derg",
-        "category": "level_2_qualifications",
-        "perc": 13.3419
-      },
-      {
-        "group": "Derg",
-        "category": "level_3_qualifications",
-        "perc": 15.147
-      },
-      {
-        "group": "Derg",
-        "category": "level_4_qualifications_and_above",
-        "perc": 24.365
-      },
-      {
-        "group": "Derg",
-        "category": "no_qualifications",
-        "perc": 33.5402
-      },
-      {
-        "group": "Derg",
-        "category": "other_qualifications",
-        "perc": 1.8907
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1022,39 +1015,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Derg",
+        "category": "apprenticeship",
+        "perc": 5.5294
+      },
+      {
+        "group": "Derg",
+        "category": "level_1_qualifications",
+        "perc": 6.1858
+      },
+      {
+        "group": "Derg",
+        "category": "level_2_qualifications",
+        "perc": 13.3419
+      },
+      {
+        "group": "Derg",
+        "category": "level_3_qualifications",
+        "perc": 15.147
+      },
+      {
+        "group": "Derg",
+        "category": "level_4_qualifications_and_above",
+        "perc": 24.365
+      },
+      {
+        "group": "Derg",
+        "category": "no_qualifications",
+        "perc": 33.5402
+      },
+      {
+        "group": "Derg",
+        "category": "other_qualifications",
+        "perc": 1.8907
       }
     ],
     "cob": [
-      {
-        "group": "Derg",
-        "category": "england",
-        "perc": 3.1671
-      },
-      {
-        "group": "Derg",
-        "category": "northern_ireland",
-        "perc": 88.2805
-      },
-      {
-        "group": "Derg",
-        "category": "other_cob",
-        "perc": 2.0272
-      },
-      {
-        "group": "Derg",
-        "category": "republic_of_ireland",
-        "perc": 5.2392
-      },
-      {
-        "group": "Derg",
-        "category": "scotland",
-        "perc": 1.1736
-      },
-      {
-        "group": "Derg",
-        "category": "wales",
-        "perc": 0.1123
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1084,19 +1082,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Derg",
+        "category": "england",
+        "perc": 3.1671
+      },
+      {
+        "group": "Derg",
+        "category": "northern_ireland",
+        "perc": 88.2805
+      },
+      {
+        "group": "Derg",
+        "category": "other_cob",
+        "perc": 2.0272
+      },
+      {
+        "group": "Derg",
+        "category": "republic_of_ireland",
+        "perc": 5.2392
+      },
+      {
+        "group": "Derg",
+        "category": "scotland",
+        "perc": 1.1736
+      },
+      {
+        "group": "Derg",
+        "category": "wales",
+        "perc": 0.1123
       }
     ],
     "mainlang": [
-      {
-        "group": "Derg",
-        "category": "english",
-        "perc": 98.7702
-      },
-      {
-        "group": "Derg",
-        "category": "other_languages",
-        "perc": 1.2298
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1106,29 +1124,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Derg",
+        "category": "english",
+        "perc": 98.7702
+      },
+      {
+        "group": "Derg",
+        "category": "other_languages",
+        "perc": 1.2298
       }
     ],
     "age": [
-      {
-        "group": "Derg",
-        "category": "a0to14",
-        "perc": 19.8124
-      },
-      {
-        "group": "Derg",
-        "category": "a15to39",
-        "perc": 30.1511
-      },
-      {
-        "group": "Derg",
-        "category": "a40to64",
-        "perc": 32.8186
-      },
-      {
-        "group": "Derg",
-        "category": "a65plus",
-        "perc": 17.2179
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1148,29 +1156,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Derg",
+        "category": "a0to14",
+        "perc": 19.8124
+      },
+      {
+        "group": "Derg",
+        "category": "a15to39",
+        "perc": 30.1511
+      },
+      {
+        "group": "Derg",
+        "category": "a40to64",
+        "perc": 32.8186
+      },
+      {
+        "group": "Derg",
+        "category": "a65plus",
+        "perc": 17.2179
       }
     ],
     "provision_care": [
-      {
-        "group": "Derg",
-        "category": "a1to19_hours",
-        "perc": 4.8344
-      },
-      {
-        "group": "Derg",
-        "category": "a20to49_hours",
-        "perc": 3.3787
-      },
-      {
-        "group": "Derg",
-        "category": "a50plus_hours",
-        "perc": 4.1994
-      },
-      {
-        "group": "Derg",
-        "category": "no_care",
-        "perc": 87.5876
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1190,29 +1198,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Derg",
+        "category": "a1to19_hours",
+        "perc": 4.8344
+      },
+      {
+        "group": "Derg",
+        "category": "a20to49_hours",
+        "perc": 3.3787
+      },
+      {
+        "group": "Derg",
+        "category": "a50plus_hours",
+        "perc": 4.1994
+      },
+      {
+        "group": "Derg",
+        "category": "no_care",
+        "perc": 87.5876
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Derg",
-        "category": "catholic",
-        "perc": 59.7619
-      },
-      {
-        "group": "Derg",
-        "category": "none",
-        "perc": 2.5044
-      },
-      {
-        "group": "Derg",
-        "category": "other_religions",
-        "perc": 0.4885
-      },
-      {
-        "group": "Derg",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 37.2452
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1232,19 +1240,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Derg",
+        "category": "catholic",
+        "perc": 59.7619
+      },
+      {
+        "group": "Derg",
+        "category": "none",
+        "perc": 2.5044
+      },
+      {
+        "group": "Derg",
+        "category": "other_religions",
+        "perc": 0.4885
+      },
+      {
+        "group": "Derg",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 37.2452
       }
     ],
     "sex": [
-      {
-        "group": "Derg",
-        "category": "females",
-        "perc": 50.5082
-      },
-      {
-        "group": "Derg",
-        "category": "males",
-        "perc": 49.4918
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1254,6 +1272,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Derg",
+        "category": "females",
+        "perc": 50.5082
+      },
+      {
+        "group": "Derg",
+        "category": "males",
+        "perc": 49.4918
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1280,36 +1330,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Derg",
         "category": "FSME",
         "perc": 24.8416
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Derg",
         "category": "FSME",
         "perc": 23.9367
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1372,26 +1412,58 @@
         "group": "Derg",
         "category": "Age 65+",
         "perc": 17.2743
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Derg",
+        "category": "destHEpct",
+        "perc": 40.5
+      },
+      {
+        "group": "Derg",
+        "category": "destFEpct",
+        "perc": 25.5
+      },
+      {
+        "group": "Derg",
+        "category": "destEmploypct",
+        "perc": 12.5
+      },
+      {
+        "group": "Derg",
+        "category": "destTrainpct",
+        "perc": 18.5
+      },
+      {
+        "group": "Derg",
+        "category": "destUnempUnkpct",
+        "perc": 3
       }
     ]
   },

@@ -599,6 +599,28 @@
         "perc": 49.0886
       }
     ],
+    "LMS": [
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "EMPN",
+        "perc": 73000
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "EMPR",
+        "perc": 74.8
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "UNEMPR",
+        "perc": 2.1
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "INACTR",
+        "perc": 23.6
+      }
+    ],
     "BRES": [
       {
         "geography": "Antrim and Newtownabbey",
@@ -655,6 +677,33 @@
         "geography": "Antrim and Newtownabbey",
         "category": "Age 65+",
         "perc": 17.6198
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "destHEpct",
+        "perc": 45.5
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "destFEpct",
+        "perc": 26.2
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "destEmploypct",
+        "perc": 14.7
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "destTrainpct",
+        "perc": 9.2
+      },
+      {
+        "geography": "Antrim and Newtownabbey",
+        "category": "destUnempUnkpct",
+        "perc": 4.4
       }
     ]
   },
@@ -1095,54 +1144,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Antrim and Newtownabbey",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Antrim and Newtownabbey",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Antrim and Newtownabbey",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Antrim and Newtownabbey",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "bad",
-        "perc": 5.4853
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "fair",
-        "perc": 13.5046
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "good",
-        "perc": 29.5639
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "very_bad",
-        "perc": 1.7767
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "very_good",
-        "perc": 49.6694
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -1167,34 +1191,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "bad",
+        "perc": 5.4853
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "fair",
+        "perc": 13.5046
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "good",
+        "perc": 29.5639
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "very_bad",
+        "perc": 1.7767
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "very_good",
+        "perc": 49.6694
       }
     ],
     "hh_size": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "five_people",
-        "perc": 7.5012
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "four_people",
-        "perc": 14.3448
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "one_person",
-        "perc": 29.6534
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "three_people",
-        "perc": 16.6322
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "two_people",
-        "perc": 31.8684
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1219,44 +1243,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "five_people",
+        "perc": 7.5012
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "four_people",
+        "perc": 14.3448
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "one_person",
+        "perc": 29.6534
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "three_people",
+        "perc": 16.6322
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "two_people",
+        "perc": 31.8684
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "apprenticeship",
-        "perc": 6.5629
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "level_1_qualifications",
-        "perc": 6.7056
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "level_2_qualifications",
-        "perc": 14.8261
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "level_3_qualifications",
-        "perc": 16.5083
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "level_4_qualifications_and_above",
-        "perc": 31.5217
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "no_qualifications",
-        "perc": 21.5257
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "other_qualifications",
-        "perc": 2.3497
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1291,39 +1305,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "apprenticeship",
+        "perc": 6.5629
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "level_1_qualifications",
+        "perc": 6.7056
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "level_2_qualifications",
+        "perc": 14.8261
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "level_3_qualifications",
+        "perc": 16.5083
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "level_4_qualifications_and_above",
+        "perc": 31.5217
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "no_qualifications",
+        "perc": 21.5257
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "other_qualifications",
+        "perc": 2.3497
       }
     ],
     "cob": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "england",
-        "perc": 3.9063
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "northern_ireland",
-        "perc": 88.3044
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "other_cob",
-        "perc": 5.7393
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "republic_of_ireland",
-        "perc": 0.9728
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "scotland",
-        "perc": 0.922
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "wales",
-        "perc": 0.1552
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1353,19 +1372,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "england",
+        "perc": 3.9063
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "northern_ireland",
+        "perc": 88.3044
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "other_cob",
+        "perc": 5.7393
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "republic_of_ireland",
+        "perc": 0.9728
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "scotland",
+        "perc": 0.922
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "wales",
+        "perc": 0.1552
       }
     ],
     "mainlang": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "english",
-        "perc": 96.2819
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "other_languages",
-        "perc": 3.7181
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1375,29 +1414,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "english",
+        "perc": 96.2819
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "other_languages",
+        "perc": 3.7181
       }
     ],
     "age": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a0to14",
-        "perc": 18.8622
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a15to39",
-        "perc": 30.7012
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a40to64",
-        "perc": 33.205
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a65plus",
-        "perc": 17.2317
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1417,29 +1446,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a0to14",
+        "perc": 18.8622
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a15to39",
+        "perc": 30.7012
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a40to64",
+        "perc": 33.205
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a65plus",
+        "perc": 17.2317
       }
     ],
     "provision_care": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a1to19_hours",
-        "perc": 6.1
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a20to49_hours",
-        "perc": 2.8745
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "a50plus_hours",
-        "perc": 3.9856
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "no_care",
-        "perc": 87.0398
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1459,29 +1488,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a1to19_hours",
+        "perc": 6.1
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a20to49_hours",
+        "perc": 2.8745
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "a50plus_hours",
+        "perc": 3.9856
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "no_care",
+        "perc": 87.0398
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "catholic",
-        "perc": 31.4182
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "none",
-        "perc": 12.3472
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "other_religions",
-        "perc": 1.5261
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 54.7085
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1501,19 +1530,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "catholic",
+        "perc": 31.4182
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "none",
+        "perc": 12.3472
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "other_religions",
+        "perc": 1.5261
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 54.7085
       }
     ],
     "sex": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "females",
-        "perc": 50.9114
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "males",
-        "perc": 49.0886
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1523,29 +1562,61 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "females",
+        "perc": 50.9114
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "males",
+        "perc": 49.0886
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "EMPN",
+        "perc": 73000
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "EMPR",
+        "perc": 74.8
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "UNEMPR",
+        "perc": 2.1
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "INACTR",
+        "perc": 23.6
       }
     ],
     "BRES": [
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Construction",
-        "perc": 4.8091
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Manufacturing",
-        "perc": 12.3255
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Services",
-        "perc": 80.4994
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Other",
-        "perc": 2.3659
-      },
       {
         "group": "Northern Ireland",
         "category": "Construction",
@@ -1565,6 +1636,26 @@
         "group": "Northern Ireland",
         "category": "Other",
         "perc": 1.6119
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "Construction",
+        "perc": 4.8091
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "Manufacturing",
+        "perc": 12.3255
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "Services",
+        "perc": 80.4994
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "Other",
+        "perc": 2.3659
       }
     ],
     "Primary": [
@@ -1577,11 +1668,6 @@
         "group": "Antrim and Newtownabbey",
         "category": "FSME",
         "perc": 19.3404
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
@@ -1594,11 +1680,6 @@
         "group": "Antrim and Newtownabbey",
         "category": "FSME",
         "perc": 17.5841
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1623,26 +1704,6 @@
         "perc": 17.2862
       },
       {
-        "group": "Antrim and Newtownabbey",
-        "category": "Age 0-15",
-        "perc": 19.9455
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Age 16-39",
-        "perc": 29.0938
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Age 40-64",
-        "perc": 33.3409
-      },
-      {
-        "group": "Antrim and Newtownabbey",
-        "category": "Age 65+",
-        "perc": 17.6198
-      },
-      {
         "group": "Northern Ireland",
         "category": "Age 0-15",
         "perc": 20.3835
@@ -1663,24 +1724,76 @@
         "perc": 17.5578
       },
       {
-        "group": "Northern Ireland",
+        "group": "Antrim and Newtownabbey",
         "category": "Age 0-15",
-        "perc": 20.3814
+        "perc": 19.9455
       },
       {
-        "group": "Northern Ireland",
+        "group": "Antrim and Newtownabbey",
         "category": "Age 16-39",
-        "perc": 29.9075
+        "perc": 29.0938
       },
       {
-        "group": "Northern Ireland",
+        "group": "Antrim and Newtownabbey",
         "category": "Age 40-64",
-        "perc": 32.425
+        "perc": 33.3409
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "Age 65+",
+        "perc": 17.6198
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destEmploypct",
+        "perc": 12.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destTrainpct",
+        "perc": 11.8
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "destHEpct",
+        "perc": 45.5
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "destFEpct",
+        "perc": 26.2
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "destEmploypct",
+        "perc": 14.7
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "destTrainpct",
+        "perc": 9.2
+      },
+      {
+        "group": "Antrim and Newtownabbey",
+        "category": "destUnempUnkpct",
+        "perc": 4.4
       }
     ]
   },

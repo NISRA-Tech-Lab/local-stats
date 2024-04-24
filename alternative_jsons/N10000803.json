@@ -566,6 +566,7 @@
         "perc": 49.7566
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Braid",
         "category": "Age 65+",
         "perc": 19.3305
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Braid",
+        "category": "destHEpct",
+        "perc": 47.5
+      },
+      {
+        "geography": "Braid",
+        "category": "destFEpct",
+        "perc": 27.5
+      },
+      {
+        "geography": "Braid",
+        "category": "destEmploypct",
+        "perc": 12.5
+      },
+      {
+        "geography": "Braid",
+        "category": "destTrainpct",
+        "perc": 7.2
+      },
+      {
+        "geography": "Braid",
+        "category": "destUnempUnkpct",
+        "perc": 5.2
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Braid",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Braid",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Braid",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Braid",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Braid",
-        "category": "bad",
-        "perc": 4.4787
-      },
-      {
-        "group": "Braid",
-        "category": "fair",
-        "perc": 13.138
-      },
-      {
-        "group": "Braid",
-        "category": "good",
-        "perc": 29.0128
-      },
-      {
-        "group": "Braid",
-        "category": "very_bad",
-        "perc": 1.4649
-      },
-      {
-        "group": "Braid",
-        "category": "very_good",
-        "perc": 51.9056
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Braid",
+        "category": "bad",
+        "perc": 4.4787
+      },
+      {
+        "group": "Braid",
+        "category": "fair",
+        "perc": 13.138
+      },
+      {
+        "group": "Braid",
+        "category": "good",
+        "perc": 29.0128
+      },
+      {
+        "group": "Braid",
+        "category": "very_bad",
+        "perc": 1.4649
+      },
+      {
+        "group": "Braid",
+        "category": "very_good",
+        "perc": 51.9056
       }
     ],
     "hh_size": [
-      {
-        "group": "Braid",
-        "category": "five_people",
-        "perc": 9.602
-      },
-      {
-        "group": "Braid",
-        "category": "four_people",
-        "perc": 15.331
-      },
-      {
-        "group": "Braid",
-        "category": "one_person",
-        "perc": 26.6173
-      },
-      {
-        "group": "Braid",
-        "category": "three_people",
-        "perc": 16.3073
-      },
-      {
-        "group": "Braid",
-        "category": "two_people",
-        "perc": 32.1425
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Braid",
+        "category": "five_people",
+        "perc": 9.602
+      },
+      {
+        "group": "Braid",
+        "category": "four_people",
+        "perc": 15.331
+      },
+      {
+        "group": "Braid",
+        "category": "one_person",
+        "perc": 26.6173
+      },
+      {
+        "group": "Braid",
+        "category": "three_people",
+        "perc": 16.3073
+      },
+      {
+        "group": "Braid",
+        "category": "two_people",
+        "perc": 32.1425
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Braid",
-        "category": "apprenticeship",
-        "perc": 7.2073
-      },
-      {
-        "group": "Braid",
-        "category": "level_1_qualifications",
-        "perc": 5.8182
-      },
-      {
-        "group": "Braid",
-        "category": "level_2_qualifications",
-        "perc": 14.2415
-      },
-      {
-        "group": "Braid",
-        "category": "level_3_qualifications",
-        "perc": 15.9922
-      },
-      {
-        "group": "Braid",
-        "category": "level_4_qualifications_and_above",
-        "perc": 29.0806
-      },
-      {
-        "group": "Braid",
-        "category": "no_qualifications",
-        "perc": 25.2385
-      },
-      {
-        "group": "Braid",
-        "category": "other_qualifications",
-        "perc": 2.4216
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Braid",
+        "category": "apprenticeship",
+        "perc": 7.2073
+      },
+      {
+        "group": "Braid",
+        "category": "level_1_qualifications",
+        "perc": 5.8182
+      },
+      {
+        "group": "Braid",
+        "category": "level_2_qualifications",
+        "perc": 14.2415
+      },
+      {
+        "group": "Braid",
+        "category": "level_3_qualifications",
+        "perc": 15.9922
+      },
+      {
+        "group": "Braid",
+        "category": "level_4_qualifications_and_above",
+        "perc": 29.0806
+      },
+      {
+        "group": "Braid",
+        "category": "no_qualifications",
+        "perc": 25.2385
+      },
+      {
+        "group": "Braid",
+        "category": "other_qualifications",
+        "perc": 2.4216
       }
     ],
     "cob": [
-      {
-        "group": "Braid",
-        "category": "england",
-        "perc": 3.0763
-      },
-      {
-        "group": "Braid",
-        "category": "northern_ireland",
-        "perc": 91.5726
-      },
-      {
-        "group": "Braid",
-        "category": "other_cob",
-        "perc": 3.5254
-      },
-      {
-        "group": "Braid",
-        "category": "republic_of_ireland",
-        "perc": 0.7009
-      },
-      {
-        "group": "Braid",
-        "category": "scotland",
-        "perc": 1.0115
-      },
-      {
-        "group": "Braid",
-        "category": "wales",
-        "perc": 0.1133
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Braid",
+        "category": "england",
+        "perc": 3.0763
+      },
+      {
+        "group": "Braid",
+        "category": "northern_ireland",
+        "perc": 91.5726
+      },
+      {
+        "group": "Braid",
+        "category": "other_cob",
+        "perc": 3.5254
+      },
+      {
+        "group": "Braid",
+        "category": "republic_of_ireland",
+        "perc": 0.7009
+      },
+      {
+        "group": "Braid",
+        "category": "scotland",
+        "perc": 1.0115
+      },
+      {
+        "group": "Braid",
+        "category": "wales",
+        "perc": 0.1133
       }
     ],
     "mainlang": [
-      {
-        "group": "Braid",
-        "category": "english",
-        "perc": 97.9243
-      },
-      {
-        "group": "Braid",
-        "category": "other_languages",
-        "perc": 2.0757
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Braid",
+        "category": "english",
+        "perc": 97.9243
+      },
+      {
+        "group": "Braid",
+        "category": "other_languages",
+        "perc": 2.0757
       }
     ],
     "age": [
-      {
-        "group": "Braid",
-        "category": "a0to14",
-        "perc": 18.5698
-      },
-      {
-        "group": "Braid",
-        "category": "a15to39",
-        "perc": 28.1925
-      },
-      {
-        "group": "Braid",
-        "category": "a40to64",
-        "perc": 34.0006
-      },
-      {
-        "group": "Braid",
-        "category": "a65plus",
-        "perc": 19.2371
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Braid",
+        "category": "a0to14",
+        "perc": 18.5698
+      },
+      {
+        "group": "Braid",
+        "category": "a15to39",
+        "perc": 28.1925
+      },
+      {
+        "group": "Braid",
+        "category": "a40to64",
+        "perc": 34.0006
+      },
+      {
+        "group": "Braid",
+        "category": "a65plus",
+        "perc": 19.2371
       }
     ],
     "provision_care": [
-      {
-        "group": "Braid",
-        "category": "a1to19_hours",
-        "perc": 6.3323
-      },
-      {
-        "group": "Braid",
-        "category": "a20to49_hours",
-        "perc": 2.8024
-      },
-      {
-        "group": "Braid",
-        "category": "a50plus_hours",
-        "perc": 3.5611
-      },
-      {
-        "group": "Braid",
-        "category": "no_care",
-        "perc": 87.3042
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Braid",
+        "category": "a1to19_hours",
+        "perc": 6.3323
+      },
+      {
+        "group": "Braid",
+        "category": "a20to49_hours",
+        "perc": 2.8024
+      },
+      {
+        "group": "Braid",
+        "category": "a50plus_hours",
+        "perc": 3.5611
+      },
+      {
+        "group": "Braid",
+        "category": "no_care",
+        "perc": 87.3042
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Braid",
-        "category": "catholic",
-        "perc": 18.2993
-      },
-      {
-        "group": "Braid",
-        "category": "none",
-        "perc": 8.9188
-      },
-      {
-        "group": "Braid",
-        "category": "other_religions",
-        "perc": 0.7639
-      },
-      {
-        "group": "Braid",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 72.018
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Braid",
+        "category": "catholic",
+        "perc": 18.2993
+      },
+      {
+        "group": "Braid",
+        "category": "none",
+        "perc": 8.9188
+      },
+      {
+        "group": "Braid",
+        "category": "other_religions",
+        "perc": 0.7639
+      },
+      {
+        "group": "Braid",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 72.018
       }
     ],
     "sex": [
-      {
-        "group": "Braid",
-        "category": "females",
-        "perc": 50.2434
-      },
-      {
-        "group": "Braid",
-        "category": "males",
-        "perc": 49.7566
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Braid",
+        "category": "females",
+        "perc": 50.2434
+      },
+      {
+        "group": "Braid",
+        "category": "males",
+        "perc": 49.7566
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Braid",
         "category": "FSME",
         "perc": 15.1491
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Braid",
         "category": "FSME",
         "perc": 14.1414
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Braid",
         "category": "Age 65+",
         "perc": 19.3305
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Braid",
+        "category": "destHEpct",
+        "perc": 47.5
+      },
+      {
+        "group": "Braid",
+        "category": "destFEpct",
+        "perc": 27.5
+      },
+      {
+        "group": "Braid",
+        "category": "destEmploypct",
+        "perc": 12.5
+      },
+      {
+        "group": "Braid",
+        "category": "destTrainpct",
+        "perc": 7.2
+      },
+      {
+        "group": "Braid",
+        "category": "destUnempUnkpct",
+        "perc": 5.2
       }
     ]
   },

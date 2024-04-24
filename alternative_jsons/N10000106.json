@@ -571,6 +571,7 @@
         "perc": 48.0342
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Macedon",
         "category": "Age 65+",
         "perc": 17.6904
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Macedon",
+        "category": "destHEpct",
+        "perc": 28.4
+      },
+      {
+        "geography": "Macedon",
+        "category": "destFEpct",
+        "perc": 39.2
+      },
+      {
+        "geography": "Macedon",
+        "category": "destEmploypct",
+        "perc": 16.7
+      },
+      {
+        "geography": "Macedon",
+        "category": "destTrainpct",
+        "perc": 9.9
+      },
+      {
+        "geography": "Macedon",
+        "category": "destUnempUnkpct",
+        "perc": 5.9
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Macedon",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Macedon",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Macedon",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Macedon",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Macedon",
-        "category": "bad",
-        "perc": 8.0795
-      },
-      {
-        "group": "Macedon",
-        "category": "fair",
-        "perc": 16.164
-      },
-      {
-        "group": "Macedon",
-        "category": "good",
-        "perc": 29.661
-      },
-      {
-        "group": "Macedon",
-        "category": "very_bad",
-        "perc": 2.9326
-      },
-      {
-        "group": "Macedon",
-        "category": "very_good",
-        "perc": 43.1629
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Macedon",
+        "category": "bad",
+        "perc": 8.0795
+      },
+      {
+        "group": "Macedon",
+        "category": "fair",
+        "perc": 16.164
+      },
+      {
+        "group": "Macedon",
+        "category": "good",
+        "perc": 29.661
+      },
+      {
+        "group": "Macedon",
+        "category": "very_bad",
+        "perc": 2.9326
+      },
+      {
+        "group": "Macedon",
+        "category": "very_good",
+        "perc": 43.1629
       }
     ],
     "hh_size": [
-      {
-        "group": "Macedon",
-        "category": "five_people",
-        "perc": 5.4016
-      },
-      {
-        "group": "Macedon",
-        "category": "four_people",
-        "perc": 10.6523
-      },
-      {
-        "group": "Macedon",
-        "category": "one_person",
-        "perc": 38.717
-      },
-      {
-        "group": "Macedon",
-        "category": "three_people",
-        "perc": 15.0943
-      },
-      {
-        "group": "Macedon",
-        "category": "two_people",
-        "perc": 30.1348
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Macedon",
+        "category": "five_people",
+        "perc": 5.4016
+      },
+      {
+        "group": "Macedon",
+        "category": "four_people",
+        "perc": 10.6523
+      },
+      {
+        "group": "Macedon",
+        "category": "one_person",
+        "perc": 38.717
+      },
+      {
+        "group": "Macedon",
+        "category": "three_people",
+        "perc": 15.0943
+      },
+      {
+        "group": "Macedon",
+        "category": "two_people",
+        "perc": 30.1348
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Macedon",
-        "category": "apprenticeship",
-        "perc": 6.4256
-      },
-      {
-        "group": "Macedon",
-        "category": "level_1_qualifications",
-        "perc": 8.3231
-      },
-      {
-        "group": "Macedon",
-        "category": "level_2_qualifications",
-        "perc": 14.9643
-      },
-      {
-        "group": "Macedon",
-        "category": "level_3_qualifications",
-        "perc": 15.3277
-      },
-      {
-        "group": "Macedon",
-        "category": "level_4_qualifications_and_above",
-        "perc": 24.0513
-      },
-      {
-        "group": "Macedon",
-        "category": "no_qualifications",
-        "perc": 28.3083
-      },
-      {
-        "group": "Macedon",
-        "category": "other_qualifications",
-        "perc": 2.5998
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Macedon",
+        "category": "apprenticeship",
+        "perc": 6.4256
+      },
+      {
+        "group": "Macedon",
+        "category": "level_1_qualifications",
+        "perc": 8.3231
+      },
+      {
+        "group": "Macedon",
+        "category": "level_2_qualifications",
+        "perc": 14.9643
+      },
+      {
+        "group": "Macedon",
+        "category": "level_3_qualifications",
+        "perc": 15.3277
+      },
+      {
+        "group": "Macedon",
+        "category": "level_4_qualifications_and_above",
+        "perc": 24.0513
+      },
+      {
+        "group": "Macedon",
+        "category": "no_qualifications",
+        "perc": 28.3083
+      },
+      {
+        "group": "Macedon",
+        "category": "other_qualifications",
+        "perc": 2.5998
       }
     ],
     "cob": [
-      {
-        "group": "Macedon",
-        "category": "england",
-        "perc": 3.3122
-      },
-      {
-        "group": "Macedon",
-        "category": "northern_ireland",
-        "perc": 88.5821
-      },
-      {
-        "group": "Macedon",
-        "category": "other_cob",
-        "perc": 6.3438
-      },
-      {
-        "group": "Macedon",
-        "category": "republic_of_ireland",
-        "perc": 0.7727
-      },
-      {
-        "group": "Macedon",
-        "category": "scotland",
-        "perc": 0.8809
-      },
-      {
-        "group": "Macedon",
-        "category": "wales",
-        "perc": 0.1083
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Macedon",
+        "category": "england",
+        "perc": 3.3122
+      },
+      {
+        "group": "Macedon",
+        "category": "northern_ireland",
+        "perc": 88.5821
+      },
+      {
+        "group": "Macedon",
+        "category": "other_cob",
+        "perc": 6.3438
+      },
+      {
+        "group": "Macedon",
+        "category": "republic_of_ireland",
+        "perc": 0.7727
+      },
+      {
+        "group": "Macedon",
+        "category": "scotland",
+        "perc": 0.8809
+      },
+      {
+        "group": "Macedon",
+        "category": "wales",
+        "perc": 0.1083
       }
     ],
     "mainlang": [
-      {
-        "group": "Macedon",
-        "category": "english",
-        "perc": 95.9763
-      },
-      {
-        "group": "Macedon",
-        "category": "other_languages",
-        "perc": 4.0237
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Macedon",
+        "category": "english",
+        "perc": 95.9763
+      },
+      {
+        "group": "Macedon",
+        "category": "other_languages",
+        "perc": 4.0237
       }
     ],
     "age": [
-      {
-        "group": "Macedon",
-        "category": "a0to14",
-        "perc": 18.8407
-      },
-      {
-        "group": "Macedon",
-        "category": "a15to39",
-        "perc": 31.3143
-      },
-      {
-        "group": "Macedon",
-        "category": "a40to64",
-        "perc": 32.2738
-      },
-      {
-        "group": "Macedon",
-        "category": "a65plus",
-        "perc": 17.5712
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Macedon",
+        "category": "a0to14",
+        "perc": 18.8407
+      },
+      {
+        "group": "Macedon",
+        "category": "a15to39",
+        "perc": 31.3143
+      },
+      {
+        "group": "Macedon",
+        "category": "a40to64",
+        "perc": 32.2738
+      },
+      {
+        "group": "Macedon",
+        "category": "a65plus",
+        "perc": 17.5712
       }
     ],
     "provision_care": [
-      {
-        "group": "Macedon",
-        "category": "a1to19_hours",
-        "perc": 5.4559
-      },
-      {
-        "group": "Macedon",
-        "category": "a20to49_hours",
-        "perc": 3.2013
-      },
-      {
-        "group": "Macedon",
-        "category": "a50plus_hours",
-        "perc": 4.6503
-      },
-      {
-        "group": "Macedon",
-        "category": "no_care",
-        "perc": 86.6925
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Macedon",
+        "category": "a1to19_hours",
+        "perc": 5.4559
+      },
+      {
+        "group": "Macedon",
+        "category": "a20to49_hours",
+        "perc": 3.2013
+      },
+      {
+        "group": "Macedon",
+        "category": "a50plus_hours",
+        "perc": 4.6503
+      },
+      {
+        "group": "Macedon",
+        "category": "no_care",
+        "perc": 86.6925
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Macedon",
-        "category": "catholic",
-        "perc": 23.9839
-      },
-      {
-        "group": "Macedon",
-        "category": "none",
-        "perc": 14.4228
-      },
-      {
-        "group": "Macedon",
-        "category": "other_religions",
-        "perc": 1.7813
-      },
-      {
-        "group": "Macedon",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 59.812
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Macedon",
+        "category": "catholic",
+        "perc": 23.9839
+      },
+      {
+        "group": "Macedon",
+        "category": "none",
+        "perc": 14.4228
+      },
+      {
+        "group": "Macedon",
+        "category": "other_religions",
+        "perc": 1.7813
+      },
+      {
+        "group": "Macedon",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 59.812
       }
     ],
     "sex": [
-      {
-        "group": "Macedon",
-        "category": "females",
-        "perc": 51.9658
-      },
-      {
-        "group": "Macedon",
-        "category": "males",
-        "perc": 48.0342
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Macedon",
+        "category": "females",
+        "perc": 51.9658
+      },
+      {
+        "group": "Macedon",
+        "category": "males",
+        "perc": 48.0342
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Macedon",
         "category": "FSME",
         "perc": 30.7554
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Macedon",
         "category": "FSME",
         "perc": 29.5506
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Macedon",
         "category": "Age 65+",
         "perc": 17.6904
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Macedon",
+        "category": "destHEpct",
+        "perc": 28.4
+      },
+      {
+        "group": "Macedon",
+        "category": "destFEpct",
+        "perc": 39.2
+      },
+      {
+        "group": "Macedon",
+        "category": "destEmploypct",
+        "perc": 16.7
+      },
+      {
+        "group": "Macedon",
+        "category": "destTrainpct",
+        "perc": 9.9
+      },
+      {
+        "group": "Macedon",
+        "category": "destUnempUnkpct",
+        "perc": 5.9
       }
     ]
   },

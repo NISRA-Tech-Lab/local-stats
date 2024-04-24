@@ -571,6 +571,7 @@
         "perc": 48.9131
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Ballymoney",
         "category": "Age 65+",
         "perc": 18.0294
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Ballymoney",
+        "category": "destHEpct",
+        "perc": 37.7
+      },
+      {
+        "geography": "Ballymoney",
+        "category": "destFEpct",
+        "perc": 43.6
+      },
+      {
+        "geography": "Ballymoney",
+        "category": "destEmploypct",
+        "perc": 6.6
+      },
+      {
+        "geography": "Ballymoney",
+        "category": "destTrainpct",
+        "perc": 8.3
+      },
+      {
+        "geography": "Ballymoney",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Ballymoney",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ballymoney",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Ballymoney",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Ballymoney",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Ballymoney",
-        "category": "bad",
-        "perc": 5.5345
-      },
-      {
-        "group": "Ballymoney",
-        "category": "fair",
-        "perc": 14.3644
-      },
-      {
-        "group": "Ballymoney",
-        "category": "good",
-        "perc": 29.1815
-      },
-      {
-        "group": "Ballymoney",
-        "category": "very_bad",
-        "perc": 1.7089
-      },
-      {
-        "group": "Ballymoney",
-        "category": "very_good",
-        "perc": 49.2108
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Ballymoney",
+        "category": "bad",
+        "perc": 5.5345
+      },
+      {
+        "group": "Ballymoney",
+        "category": "fair",
+        "perc": 14.3644
+      },
+      {
+        "group": "Ballymoney",
+        "category": "good",
+        "perc": 29.1815
+      },
+      {
+        "group": "Ballymoney",
+        "category": "very_bad",
+        "perc": 1.7089
+      },
+      {
+        "group": "Ballymoney",
+        "category": "very_good",
+        "perc": 49.2108
       }
     ],
     "hh_size": [
-      {
-        "group": "Ballymoney",
-        "category": "five_people",
-        "perc": 8.8672
-      },
-      {
-        "group": "Ballymoney",
-        "category": "four_people",
-        "perc": 15.2127
-      },
-      {
-        "group": "Ballymoney",
-        "category": "one_person",
-        "perc": 28.529
-      },
-      {
-        "group": "Ballymoney",
-        "category": "three_people",
-        "perc": 16.8939
-      },
-      {
-        "group": "Ballymoney",
-        "category": "two_people",
-        "perc": 30.4972
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Ballymoney",
+        "category": "five_people",
+        "perc": 8.8672
+      },
+      {
+        "group": "Ballymoney",
+        "category": "four_people",
+        "perc": 15.2127
+      },
+      {
+        "group": "Ballymoney",
+        "category": "one_person",
+        "perc": 28.529
+      },
+      {
+        "group": "Ballymoney",
+        "category": "three_people",
+        "perc": 16.8939
+      },
+      {
+        "group": "Ballymoney",
+        "category": "two_people",
+        "perc": 30.4972
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Ballymoney",
-        "category": "apprenticeship",
-        "perc": 6.9553
-      },
-      {
-        "group": "Ballymoney",
-        "category": "level_1_qualifications",
-        "perc": 6.116
-      },
-      {
-        "group": "Ballymoney",
-        "category": "level_2_qualifications",
-        "perc": 14.5555
-      },
-      {
-        "group": "Ballymoney",
-        "category": "level_3_qualifications",
-        "perc": 16.3263
-      },
-      {
-        "group": "Ballymoney",
-        "category": "level_4_qualifications_and_above",
-        "perc": 26.8489
-      },
-      {
-        "group": "Ballymoney",
-        "category": "no_qualifications",
-        "perc": 27.1713
-      },
-      {
-        "group": "Ballymoney",
-        "category": "other_qualifications",
-        "perc": 2.0267
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Ballymoney",
+        "category": "apprenticeship",
+        "perc": 6.9553
+      },
+      {
+        "group": "Ballymoney",
+        "category": "level_1_qualifications",
+        "perc": 6.116
+      },
+      {
+        "group": "Ballymoney",
+        "category": "level_2_qualifications",
+        "perc": 14.5555
+      },
+      {
+        "group": "Ballymoney",
+        "category": "level_3_qualifications",
+        "perc": 16.3263
+      },
+      {
+        "group": "Ballymoney",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.8489
+      },
+      {
+        "group": "Ballymoney",
+        "category": "no_qualifications",
+        "perc": 27.1713
+      },
+      {
+        "group": "Ballymoney",
+        "category": "other_qualifications",
+        "perc": 2.0267
       }
     ],
     "cob": [
-      {
-        "group": "Ballymoney",
-        "category": "england",
-        "perc": 3.6218
-      },
-      {
-        "group": "Ballymoney",
-        "category": "northern_ireland",
-        "perc": 91.7204
-      },
-      {
-        "group": "Ballymoney",
-        "category": "other_cob",
-        "perc": 2.851
-      },
-      {
-        "group": "Ballymoney",
-        "category": "republic_of_ireland",
-        "perc": 0.8239
-      },
-      {
-        "group": "Ballymoney",
-        "category": "scotland",
-        "perc": 0.8647
-      },
-      {
-        "group": "Ballymoney",
-        "category": "wales",
-        "perc": 0.1183
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Ballymoney",
+        "category": "england",
+        "perc": 3.6218
+      },
+      {
+        "group": "Ballymoney",
+        "category": "northern_ireland",
+        "perc": 91.7204
+      },
+      {
+        "group": "Ballymoney",
+        "category": "other_cob",
+        "perc": 2.851
+      },
+      {
+        "group": "Ballymoney",
+        "category": "republic_of_ireland",
+        "perc": 0.8239
+      },
+      {
+        "group": "Ballymoney",
+        "category": "scotland",
+        "perc": 0.8647
+      },
+      {
+        "group": "Ballymoney",
+        "category": "wales",
+        "perc": 0.1183
       }
     ],
     "mainlang": [
-      {
-        "group": "Ballymoney",
-        "category": "english",
-        "perc": 97.8248
-      },
-      {
-        "group": "Ballymoney",
-        "category": "other_languages",
-        "perc": 2.1752
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Ballymoney",
+        "category": "english",
+        "perc": 97.8248
+      },
+      {
+        "group": "Ballymoney",
+        "category": "other_languages",
+        "perc": 2.1752
       }
     ],
     "age": [
-      {
-        "group": "Ballymoney",
-        "category": "a0to14",
-        "perc": 19.1076
-      },
-      {
-        "group": "Ballymoney",
-        "category": "a15to39",
-        "perc": 29.7565
-      },
-      {
-        "group": "Ballymoney",
-        "category": "a40to64",
-        "perc": 33.366
-      },
-      {
-        "group": "Ballymoney",
-        "category": "a65plus",
-        "perc": 17.7699
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a0to14",
+        "perc": 19.1076
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a15to39",
+        "perc": 29.7565
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a40to64",
+        "perc": 33.366
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a65plus",
+        "perc": 17.7699
       }
     ],
     "provision_care": [
-      {
-        "group": "Ballymoney",
-        "category": "a1to19_hours",
-        "perc": 5.365
-      },
-      {
-        "group": "Ballymoney",
-        "category": "a20to49_hours",
-        "perc": 2.715
-      },
-      {
-        "group": "Ballymoney",
-        "category": "a50plus_hours",
-        "perc": 3.9511
-      },
-      {
-        "group": "Ballymoney",
-        "category": "no_care",
-        "perc": 87.9689
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a1to19_hours",
+        "perc": 5.365
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a20to49_hours",
+        "perc": 2.715
+      },
+      {
+        "group": "Ballymoney",
+        "category": "a50plus_hours",
+        "perc": 3.9511
+      },
+      {
+        "group": "Ballymoney",
+        "category": "no_care",
+        "perc": 87.9689
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Ballymoney",
-        "category": "catholic",
-        "perc": 30.8985
-      },
-      {
-        "group": "Ballymoney",
-        "category": "none",
-        "perc": 8.2304
-      },
-      {
-        "group": "Ballymoney",
-        "category": "other_religions",
-        "perc": 0.7056
-      },
-      {
-        "group": "Ballymoney",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 60.1656
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Ballymoney",
+        "category": "catholic",
+        "perc": 30.8985
+      },
+      {
+        "group": "Ballymoney",
+        "category": "none",
+        "perc": 8.2304
+      },
+      {
+        "group": "Ballymoney",
+        "category": "other_religions",
+        "perc": 0.7056
+      },
+      {
+        "group": "Ballymoney",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 60.1656
       }
     ],
     "sex": [
-      {
-        "group": "Ballymoney",
-        "category": "females",
-        "perc": 51.0869
-      },
-      {
-        "group": "Ballymoney",
-        "category": "males",
-        "perc": 48.9131
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Ballymoney",
+        "category": "females",
+        "perc": 51.0869
+      },
+      {
+        "group": "Ballymoney",
+        "category": "males",
+        "perc": 48.9131
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Ballymoney",
         "category": "FSME",
         "perc": 19.0286
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Ballymoney",
         "category": "FSME",
         "perc": 18.3486
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Ballymoney",
         "category": "Age 65+",
         "perc": 18.0294
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Ballymoney",
+        "category": "destHEpct",
+        "perc": 37.7
+      },
+      {
+        "group": "Ballymoney",
+        "category": "destFEpct",
+        "perc": 43.6
+      },
+      {
+        "group": "Ballymoney",
+        "category": "destEmploypct",
+        "perc": 6.6
+      },
+      {
+        "group": "Ballymoney",
+        "category": "destTrainpct",
+        "perc": 8.3
+      },
+      {
+        "group": "Ballymoney",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },

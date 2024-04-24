@@ -571,6 +571,7 @@
         "perc": 48.7369
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Causeway",
         "category": "Age 65+",
         "perc": 23.6756
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Causeway",
+        "category": "destHEpct",
+        "perc": 49.3
+      },
+      {
+        "geography": "Causeway",
+        "category": "destFEpct",
+        "perc": 32.4
+      },
+      {
+        "geography": "Causeway",
+        "category": "destEmploypct",
+        "perc": 9.3
+      },
+      {
+        "geography": "Causeway",
+        "category": "destTrainpct",
+        "perc": 5.8
+      },
+      {
+        "geography": "Causeway",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Causeway",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Causeway",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Causeway",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Causeway",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Causeway",
-        "category": "bad",
-        "perc": 5.2807
-      },
-      {
-        "group": "Causeway",
-        "category": "fair",
-        "perc": 15.1618
-      },
-      {
-        "group": "Causeway",
-        "category": "good",
-        "perc": 30.8573
-      },
-      {
-        "group": "Causeway",
-        "category": "very_bad",
-        "perc": 1.638
-      },
-      {
-        "group": "Causeway",
-        "category": "very_good",
-        "perc": 47.0622
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Causeway",
+        "category": "bad",
+        "perc": 5.2807
+      },
+      {
+        "group": "Causeway",
+        "category": "fair",
+        "perc": 15.1618
+      },
+      {
+        "group": "Causeway",
+        "category": "good",
+        "perc": 30.8573
+      },
+      {
+        "group": "Causeway",
+        "category": "very_bad",
+        "perc": 1.638
+      },
+      {
+        "group": "Causeway",
+        "category": "very_good",
+        "perc": 47.0622
       }
     ],
     "hh_size": [
-      {
-        "group": "Causeway",
-        "category": "five_people",
-        "perc": 6.6567
-      },
-      {
-        "group": "Causeway",
-        "category": "four_people",
-        "perc": 11.3622
-      },
-      {
-        "group": "Causeway",
-        "category": "one_person",
-        "perc": 33.5169
-      },
-      {
-        "group": "Causeway",
-        "category": "three_people",
-        "perc": 14.4431
-      },
-      {
-        "group": "Causeway",
-        "category": "two_people",
-        "perc": 34.0211
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Causeway",
+        "category": "five_people",
+        "perc": 6.6567
+      },
+      {
+        "group": "Causeway",
+        "category": "four_people",
+        "perc": 11.3622
+      },
+      {
+        "group": "Causeway",
+        "category": "one_person",
+        "perc": 33.5169
+      },
+      {
+        "group": "Causeway",
+        "category": "three_people",
+        "perc": 14.4431
+      },
+      {
+        "group": "Causeway",
+        "category": "two_people",
+        "perc": 34.0211
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Causeway",
-        "category": "apprenticeship",
-        "perc": 5.325
-      },
-      {
-        "group": "Causeway",
-        "category": "level_1_qualifications",
-        "perc": 5.4565
-      },
-      {
-        "group": "Causeway",
-        "category": "level_2_qualifications",
-        "perc": 13.1687
-      },
-      {
-        "group": "Causeway",
-        "category": "level_3_qualifications",
-        "perc": 16.3792
-      },
-      {
-        "group": "Causeway",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.8144
-      },
-      {
-        "group": "Causeway",
-        "category": "no_qualifications",
-        "perc": 22.5275
-      },
-      {
-        "group": "Causeway",
-        "category": "other_qualifications",
-        "perc": 2.3288
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Causeway",
+        "category": "apprenticeship",
+        "perc": 5.325
+      },
+      {
+        "group": "Causeway",
+        "category": "level_1_qualifications",
+        "perc": 5.4565
+      },
+      {
+        "group": "Causeway",
+        "category": "level_2_qualifications",
+        "perc": 13.1687
+      },
+      {
+        "group": "Causeway",
+        "category": "level_3_qualifications",
+        "perc": 16.3792
+      },
+      {
+        "group": "Causeway",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.8144
+      },
+      {
+        "group": "Causeway",
+        "category": "no_qualifications",
+        "perc": 22.5275
+      },
+      {
+        "group": "Causeway",
+        "category": "other_qualifications",
+        "perc": 2.3288
       }
     ],
     "cob": [
-      {
-        "group": "Causeway",
-        "category": "england",
-        "perc": 5.3579
-      },
-      {
-        "group": "Causeway",
-        "category": "northern_ireland",
-        "perc": 87.7073
-      },
-      {
-        "group": "Causeway",
-        "category": "other_cob",
-        "perc": 3.72
-      },
-      {
-        "group": "Causeway",
-        "category": "republic_of_ireland",
-        "perc": 1.6502
-      },
-      {
-        "group": "Causeway",
-        "category": "scotland",
-        "perc": 1.3038
-      },
-      {
-        "group": "Causeway",
-        "category": "wales",
-        "perc": 0.2608
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Causeway",
+        "category": "england",
+        "perc": 5.3579
+      },
+      {
+        "group": "Causeway",
+        "category": "northern_ireland",
+        "perc": 87.7073
+      },
+      {
+        "group": "Causeway",
+        "category": "other_cob",
+        "perc": 3.72
+      },
+      {
+        "group": "Causeway",
+        "category": "republic_of_ireland",
+        "perc": 1.6502
+      },
+      {
+        "group": "Causeway",
+        "category": "scotland",
+        "perc": 1.3038
+      },
+      {
+        "group": "Causeway",
+        "category": "wales",
+        "perc": 0.2608
       }
     ],
     "mainlang": [
-      {
-        "group": "Causeway",
-        "category": "english",
-        "perc": 98.0731
-      },
-      {
-        "group": "Causeway",
-        "category": "other_languages",
-        "perc": 1.9269
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Causeway",
+        "category": "english",
+        "perc": 98.0731
+      },
+      {
+        "group": "Causeway",
+        "category": "other_languages",
+        "perc": 1.9269
       }
     ],
     "age": [
-      {
-        "group": "Causeway",
-        "category": "a0to14",
-        "perc": 15.3824
-      },
-      {
-        "group": "Causeway",
-        "category": "a15to39",
-        "perc": 27.0119
-      },
-      {
-        "group": "Causeway",
-        "category": "a40to64",
-        "perc": 34.1388
-      },
-      {
-        "group": "Causeway",
-        "category": "a65plus",
-        "perc": 23.4669
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Causeway",
+        "category": "a0to14",
+        "perc": 15.3824
+      },
+      {
+        "group": "Causeway",
+        "category": "a15to39",
+        "perc": 27.0119
+      },
+      {
+        "group": "Causeway",
+        "category": "a40to64",
+        "perc": 34.1388
+      },
+      {
+        "group": "Causeway",
+        "category": "a65plus",
+        "perc": 23.4669
       }
     ],
     "provision_care": [
-      {
-        "group": "Causeway",
-        "category": "a1to19_hours",
-        "perc": 5.7783
-      },
-      {
-        "group": "Causeway",
-        "category": "a20to49_hours",
-        "perc": 2.5814
-      },
-      {
-        "group": "Causeway",
-        "category": "a50plus_hours",
-        "perc": 3.5345
-      },
-      {
-        "group": "Causeway",
-        "category": "no_care",
-        "perc": 88.1058
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Causeway",
+        "category": "a1to19_hours",
+        "perc": 5.7783
+      },
+      {
+        "group": "Causeway",
+        "category": "a20to49_hours",
+        "perc": 2.5814
+      },
+      {
+        "group": "Causeway",
+        "category": "a50plus_hours",
+        "perc": 3.5345
+      },
+      {
+        "group": "Causeway",
+        "category": "no_care",
+        "perc": 88.1058
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Causeway",
-        "category": "catholic",
-        "perc": 20.2013
-      },
-      {
-        "group": "Causeway",
-        "category": "none",
-        "perc": 10.4959
-      },
-      {
-        "group": "Causeway",
-        "category": "other_religions",
-        "perc": 1.1368
-      },
-      {
-        "group": "Causeway",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 68.1661
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Causeway",
+        "category": "catholic",
+        "perc": 20.2013
+      },
+      {
+        "group": "Causeway",
+        "category": "none",
+        "perc": 10.4959
+      },
+      {
+        "group": "Causeway",
+        "category": "other_religions",
+        "perc": 1.1368
+      },
+      {
+        "group": "Causeway",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 68.1661
       }
     ],
     "sex": [
-      {
-        "group": "Causeway",
-        "category": "females",
-        "perc": 51.2631
-      },
-      {
-        "group": "Causeway",
-        "category": "males",
-        "perc": 48.7369
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Causeway",
+        "category": "females",
+        "perc": 51.2631
+      },
+      {
+        "group": "Causeway",
+        "category": "males",
+        "perc": 48.7369
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Causeway",
         "category": "FSME",
         "perc": 22.3945
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Causeway",
         "category": "FSME",
         "perc": 18.7277
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Causeway",
         "category": "Age 65+",
         "perc": 23.6756
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Causeway",
+        "category": "destHEpct",
+        "perc": 49.3
+      },
+      {
+        "group": "Causeway",
+        "category": "destFEpct",
+        "perc": 32.4
+      },
+      {
+        "group": "Causeway",
+        "category": "destEmploypct",
+        "perc": 9.3
+      },
+      {
+        "group": "Causeway",
+        "category": "destTrainpct",
+        "perc": 5.8
+      },
+      {
+        "group": "Causeway",
+        "category": "destUnempUnkpct",
+        "perc": 3.1
       }
     ]
   },

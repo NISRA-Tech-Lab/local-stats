@@ -571,6 +571,7 @@
         "perc": 49.6278
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Cusher",
         "category": "Age 65+",
         "perc": 17.4494
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Cusher",
+        "category": "destHEpct",
+        "perc": 39.6
+      },
+      {
+        "geography": "Cusher",
+        "category": "destFEpct",
+        "perc": 43
+      },
+      {
+        "geography": "Cusher",
+        "category": "destEmploypct",
+        "perc": 3.7
+      },
+      {
+        "geography": "Cusher",
+        "category": "destTrainpct",
+        "perc": 11
+      },
+      {
+        "geography": "Cusher",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Cusher",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Cusher",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Cusher",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Cusher",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Cusher",
-        "category": "bad",
-        "perc": 4.0962
-      },
-      {
-        "group": "Cusher",
-        "category": "fair",
-        "perc": 12.3382
-      },
-      {
-        "group": "Cusher",
-        "category": "good",
-        "perc": 27.8985
-      },
-      {
-        "group": "Cusher",
-        "category": "very_bad",
-        "perc": 1.4927
-      },
-      {
-        "group": "Cusher",
-        "category": "very_good",
-        "perc": 54.1745
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Cusher",
+        "category": "bad",
+        "perc": 4.0962
+      },
+      {
+        "group": "Cusher",
+        "category": "fair",
+        "perc": 12.3382
+      },
+      {
+        "group": "Cusher",
+        "category": "good",
+        "perc": 27.8985
+      },
+      {
+        "group": "Cusher",
+        "category": "very_bad",
+        "perc": 1.4927
+      },
+      {
+        "group": "Cusher",
+        "category": "very_good",
+        "perc": 54.1745
       }
     ],
     "hh_size": [
-      {
-        "group": "Cusher",
-        "category": "five_people",
-        "perc": 12.6224
-      },
-      {
-        "group": "Cusher",
-        "category": "four_people",
-        "perc": 15.9711
-      },
-      {
-        "group": "Cusher",
-        "category": "one_person",
-        "perc": 24.8532
-      },
-      {
-        "group": "Cusher",
-        "category": "three_people",
-        "perc": 16.2391
-      },
-      {
-        "group": "Cusher",
-        "category": "two_people",
-        "perc": 30.3143
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Cusher",
+        "category": "five_people",
+        "perc": 12.6224
+      },
+      {
+        "group": "Cusher",
+        "category": "four_people",
+        "perc": 15.9711
+      },
+      {
+        "group": "Cusher",
+        "category": "one_person",
+        "perc": 24.8532
+      },
+      {
+        "group": "Cusher",
+        "category": "three_people",
+        "perc": 16.2391
+      },
+      {
+        "group": "Cusher",
+        "category": "two_people",
+        "perc": 30.3143
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Cusher",
-        "category": "apprenticeship",
-        "perc": 6.7578
-      },
-      {
-        "group": "Cusher",
-        "category": "level_1_qualifications",
-        "perc": 5.6913
-      },
-      {
-        "group": "Cusher",
-        "category": "level_2_qualifications",
-        "perc": 14.6508
-      },
-      {
-        "group": "Cusher",
-        "category": "level_3_qualifications",
-        "perc": 16.4643
-      },
-      {
-        "group": "Cusher",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.4369
-      },
-      {
-        "group": "Cusher",
-        "category": "no_qualifications",
-        "perc": 23.6202
-      },
-      {
-        "group": "Cusher",
-        "category": "other_qualifications",
-        "perc": 2.3787
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Cusher",
+        "category": "apprenticeship",
+        "perc": 6.7578
+      },
+      {
+        "group": "Cusher",
+        "category": "level_1_qualifications",
+        "perc": 5.6913
+      },
+      {
+        "group": "Cusher",
+        "category": "level_2_qualifications",
+        "perc": 14.6508
+      },
+      {
+        "group": "Cusher",
+        "category": "level_3_qualifications",
+        "perc": 16.4643
+      },
+      {
+        "group": "Cusher",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.4369
+      },
+      {
+        "group": "Cusher",
+        "category": "no_qualifications",
+        "perc": 23.6202
+      },
+      {
+        "group": "Cusher",
+        "category": "other_qualifications",
+        "perc": 2.3787
       }
     ],
     "cob": [
-      {
-        "group": "Cusher",
-        "category": "england",
-        "perc": 3.2527
-      },
-      {
-        "group": "Cusher",
-        "category": "northern_ireland",
-        "perc": 89.6541
-      },
-      {
-        "group": "Cusher",
-        "category": "other_cob",
-        "perc": 4.1574
-      },
-      {
-        "group": "Cusher",
-        "category": "republic_of_ireland",
-        "perc": 2.1532
-      },
-      {
-        "group": "Cusher",
-        "category": "scotland",
-        "perc": 0.6185
-      },
-      {
-        "group": "Cusher",
-        "category": "wales",
-        "perc": 0.1642
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Cusher",
+        "category": "england",
+        "perc": 3.2527
+      },
+      {
+        "group": "Cusher",
+        "category": "northern_ireland",
+        "perc": 89.6541
+      },
+      {
+        "group": "Cusher",
+        "category": "other_cob",
+        "perc": 4.1574
+      },
+      {
+        "group": "Cusher",
+        "category": "republic_of_ireland",
+        "perc": 2.1532
+      },
+      {
+        "group": "Cusher",
+        "category": "scotland",
+        "perc": 0.6185
+      },
+      {
+        "group": "Cusher",
+        "category": "wales",
+        "perc": 0.1642
       }
     ],
     "mainlang": [
-      {
-        "group": "Cusher",
-        "category": "english",
-        "perc": 97.0329
-      },
-      {
-        "group": "Cusher",
-        "category": "other_languages",
-        "perc": 2.9671
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Cusher",
+        "category": "english",
+        "perc": 97.0329
+      },
+      {
+        "group": "Cusher",
+        "category": "other_languages",
+        "perc": 2.9671
       }
     ],
     "age": [
-      {
-        "group": "Cusher",
-        "category": "a0to14",
-        "perc": 20.9811
-      },
-      {
-        "group": "Cusher",
-        "category": "a15to39",
-        "perc": 29.4827
-      },
-      {
-        "group": "Cusher",
-        "category": "a40to64",
-        "perc": 32.2619
-      },
-      {
-        "group": "Cusher",
-        "category": "a65plus",
-        "perc": 17.2743
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Cusher",
+        "category": "a0to14",
+        "perc": 20.9811
+      },
+      {
+        "group": "Cusher",
+        "category": "a15to39",
+        "perc": 29.4827
+      },
+      {
+        "group": "Cusher",
+        "category": "a40to64",
+        "perc": 32.2619
+      },
+      {
+        "group": "Cusher",
+        "category": "a65plus",
+        "perc": 17.2743
       }
     ],
     "provision_care": [
-      {
-        "group": "Cusher",
-        "category": "a1to19_hours",
-        "perc": 5.694
-      },
-      {
-        "group": "Cusher",
-        "category": "a20to49_hours",
-        "perc": 2.7447
-      },
-      {
-        "group": "Cusher",
-        "category": "a50plus_hours",
-        "perc": 3.5546
-      },
-      {
-        "group": "Cusher",
-        "category": "no_care",
-        "perc": 88.0067
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Cusher",
+        "category": "a1to19_hours",
+        "perc": 5.694
+      },
+      {
+        "group": "Cusher",
+        "category": "a20to49_hours",
+        "perc": 2.7447
+      },
+      {
+        "group": "Cusher",
+        "category": "a50plus_hours",
+        "perc": 3.5546
+      },
+      {
+        "group": "Cusher",
+        "category": "no_care",
+        "perc": 88.0067
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Cusher",
-        "category": "catholic",
-        "perc": 25.4858
-      },
-      {
-        "group": "Cusher",
-        "category": "none",
-        "perc": 6.4134
-      },
-      {
-        "group": "Cusher",
-        "category": "other_religions",
-        "perc": 1.0307
-      },
-      {
-        "group": "Cusher",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 67.0701
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Cusher",
+        "category": "catholic",
+        "perc": 25.4858
+      },
+      {
+        "group": "Cusher",
+        "category": "none",
+        "perc": 6.4134
+      },
+      {
+        "group": "Cusher",
+        "category": "other_religions",
+        "perc": 1.0307
+      },
+      {
+        "group": "Cusher",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 67.0701
       }
     ],
     "sex": [
-      {
-        "group": "Cusher",
-        "category": "females",
-        "perc": 50.3722
-      },
-      {
-        "group": "Cusher",
-        "category": "males",
-        "perc": 49.6278
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Cusher",
+        "category": "females",
+        "perc": 50.3722
+      },
+      {
+        "group": "Cusher",
+        "category": "males",
+        "perc": 49.6278
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Cusher",
         "category": "FSME",
         "perc": 15.3941
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Cusher",
         "category": "FSME",
         "perc": 13.7917
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Cusher",
         "category": "Age 65+",
         "perc": 17.4494
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Cusher",
+        "category": "destHEpct",
+        "perc": 39.6
+      },
+      {
+        "group": "Cusher",
+        "category": "destFEpct",
+        "perc": 43
+      },
+      {
+        "group": "Cusher",
+        "category": "destEmploypct",
+        "perc": 3.7
+      },
+      {
+        "group": "Cusher",
+        "category": "destTrainpct",
+        "perc": 11
+      },
+      {
+        "group": "Cusher",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },

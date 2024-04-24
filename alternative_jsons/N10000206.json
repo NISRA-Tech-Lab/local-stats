@@ -601,6 +601,7 @@
         "perc": 49.7094
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -636,6 +637,33 @@
         "geography": "Lurgan",
         "category": "Age 65+",
         "perc": 15.26
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Lurgan",
+        "category": "destHEpct",
+        "perc": 38.7
+      },
+      {
+        "geography": "Lurgan",
+        "category": "destFEpct",
+        "perc": 35.3
+      },
+      {
+        "geography": "Lurgan",
+        "category": "destEmploypct",
+        "perc": 8.9
+      },
+      {
+        "geography": "Lurgan",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "geography": "Lurgan",
+        "category": "destUnempUnkpct",
+        "perc": 5
       }
     ]
   },
@@ -871,54 +899,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Lurgan",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lurgan",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Lurgan",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Lurgan",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Lurgan",
-        "category": "bad",
-        "perc": 6.2516
-      },
-      {
-        "group": "Lurgan",
-        "category": "fair",
-        "perc": 13.6159
-      },
-      {
-        "group": "Lurgan",
-        "category": "good",
-        "perc": 27.635
-      },
-      {
-        "group": "Lurgan",
-        "category": "very_bad",
-        "perc": 2.0472
-      },
-      {
-        "group": "Lurgan",
-        "category": "very_good",
-        "perc": 50.4503
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -943,34 +946,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Lurgan",
+        "category": "bad",
+        "perc": 6.2516
+      },
+      {
+        "group": "Lurgan",
+        "category": "fair",
+        "perc": 13.6159
+      },
+      {
+        "group": "Lurgan",
+        "category": "good",
+        "perc": 27.635
+      },
+      {
+        "group": "Lurgan",
+        "category": "very_bad",
+        "perc": 2.0472
+      },
+      {
+        "group": "Lurgan",
+        "category": "very_good",
+        "perc": 50.4503
       }
     ],
     "hh_size": [
-      {
-        "group": "Lurgan",
-        "category": "five_people",
-        "perc": 8.9975
-      },
-      {
-        "group": "Lurgan",
-        "category": "four_people",
-        "perc": 14.2829
-      },
-      {
-        "group": "Lurgan",
-        "category": "one_person",
-        "perc": 29.7816
-      },
-      {
-        "group": "Lurgan",
-        "category": "three_people",
-        "perc": 17.7935
-      },
-      {
-        "group": "Lurgan",
-        "category": "two_people",
-        "perc": 29.1445
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -995,44 +998,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Lurgan",
+        "category": "five_people",
+        "perc": 8.9975
+      },
+      {
+        "group": "Lurgan",
+        "category": "four_people",
+        "perc": 14.2829
+      },
+      {
+        "group": "Lurgan",
+        "category": "one_person",
+        "perc": 29.7816
+      },
+      {
+        "group": "Lurgan",
+        "category": "three_people",
+        "perc": 17.7935
+      },
+      {
+        "group": "Lurgan",
+        "category": "two_people",
+        "perc": 29.1445
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Lurgan",
-        "category": "apprenticeship",
-        "perc": 6.547
-      },
-      {
-        "group": "Lurgan",
-        "category": "level_1_qualifications",
-        "perc": 5.7784
-      },
-      {
-        "group": "Lurgan",
-        "category": "level_2_qualifications",
-        "perc": 14.4008
-      },
-      {
-        "group": "Lurgan",
-        "category": "level_3_qualifications",
-        "perc": 15.6139
-      },
-      {
-        "group": "Lurgan",
-        "category": "level_4_qualifications_and_above",
-        "perc": 28.1933
-      },
-      {
-        "group": "Lurgan",
-        "category": "no_qualifications",
-        "perc": 27.1539
-      },
-      {
-        "group": "Lurgan",
-        "category": "other_qualifications",
-        "perc": 2.3127
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1067,39 +1060,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Lurgan",
+        "category": "apprenticeship",
+        "perc": 6.547
+      },
+      {
+        "group": "Lurgan",
+        "category": "level_1_qualifications",
+        "perc": 5.7784
+      },
+      {
+        "group": "Lurgan",
+        "category": "level_2_qualifications",
+        "perc": 14.4008
+      },
+      {
+        "group": "Lurgan",
+        "category": "level_3_qualifications",
+        "perc": 15.6139
+      },
+      {
+        "group": "Lurgan",
+        "category": "level_4_qualifications_and_above",
+        "perc": 28.1933
+      },
+      {
+        "group": "Lurgan",
+        "category": "no_qualifications",
+        "perc": 27.1539
+      },
+      {
+        "group": "Lurgan",
+        "category": "other_qualifications",
+        "perc": 2.3127
       }
     ],
     "cob": [
-      {
-        "group": "Lurgan",
-        "category": "england",
-        "perc": 2.8719
-      },
-      {
-        "group": "Lurgan",
-        "category": "northern_ireland",
-        "perc": 86.1118
-      },
-      {
-        "group": "Lurgan",
-        "category": "other_cob",
-        "perc": 9.1
-      },
-      {
-        "group": "Lurgan",
-        "category": "republic_of_ireland",
-        "perc": 1.2095
-      },
-      {
-        "group": "Lurgan",
-        "category": "scotland",
-        "perc": 0.6178
-      },
-      {
-        "group": "Lurgan",
-        "category": "wales",
-        "perc": 0.089
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1129,19 +1127,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Lurgan",
+        "category": "england",
+        "perc": 2.8719
+      },
+      {
+        "group": "Lurgan",
+        "category": "northern_ireland",
+        "perc": 86.1118
+      },
+      {
+        "group": "Lurgan",
+        "category": "other_cob",
+        "perc": 9.1
+      },
+      {
+        "group": "Lurgan",
+        "category": "republic_of_ireland",
+        "perc": 1.2095
+      },
+      {
+        "group": "Lurgan",
+        "category": "scotland",
+        "perc": 0.6178
+      },
+      {
+        "group": "Lurgan",
+        "category": "wales",
+        "perc": 0.089
       }
     ],
     "mainlang": [
-      {
-        "group": "Lurgan",
-        "category": "english",
-        "perc": 92.288
-      },
-      {
-        "group": "Lurgan",
-        "category": "other_languages",
-        "perc": 7.712
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1151,29 +1169,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Lurgan",
+        "category": "english",
+        "perc": 92.288
+      },
+      {
+        "group": "Lurgan",
+        "category": "other_languages",
+        "perc": 7.712
       }
     ],
     "age": [
-      {
-        "group": "Lurgan",
-        "category": "a0to14",
-        "perc": 20.4409
-      },
-      {
-        "group": "Lurgan",
-        "category": "a15to39",
-        "perc": 32.3289
-      },
-      {
-        "group": "Lurgan",
-        "category": "a40to64",
-        "perc": 32.054
-      },
-      {
-        "group": "Lurgan",
-        "category": "a65plus",
-        "perc": 15.1762
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1193,29 +1201,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Lurgan",
+        "category": "a0to14",
+        "perc": 20.4409
+      },
+      {
+        "group": "Lurgan",
+        "category": "a15to39",
+        "perc": 32.3289
+      },
+      {
+        "group": "Lurgan",
+        "category": "a40to64",
+        "perc": 32.054
+      },
+      {
+        "group": "Lurgan",
+        "category": "a65plus",
+        "perc": 15.1762
       }
     ],
     "provision_care": [
-      {
-        "group": "Lurgan",
-        "category": "a1to19_hours",
-        "perc": 5.5857
-      },
-      {
-        "group": "Lurgan",
-        "category": "a20to49_hours",
-        "perc": 3.0442
-      },
-      {
-        "group": "Lurgan",
-        "category": "a50plus_hours",
-        "perc": 3.9821
-      },
-      {
-        "group": "Lurgan",
-        "category": "no_care",
-        "perc": 87.388
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1235,29 +1243,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Lurgan",
+        "category": "a1to19_hours",
+        "perc": 5.5857
+      },
+      {
+        "group": "Lurgan",
+        "category": "a20to49_hours",
+        "perc": 3.0442
+      },
+      {
+        "group": "Lurgan",
+        "category": "a50plus_hours",
+        "perc": 3.9821
+      },
+      {
+        "group": "Lurgan",
+        "category": "no_care",
+        "perc": 87.388
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Lurgan",
-        "category": "catholic",
-        "perc": 60.7168
-      },
-      {
-        "group": "Lurgan",
-        "category": "none",
-        "perc": 7.7284
-      },
-      {
-        "group": "Lurgan",
-        "category": "other_religions",
-        "perc": 1.2488
-      },
-      {
-        "group": "Lurgan",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 30.306
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1277,19 +1285,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Lurgan",
+        "category": "catholic",
+        "perc": 60.7168
+      },
+      {
+        "group": "Lurgan",
+        "category": "none",
+        "perc": 7.7284
+      },
+      {
+        "group": "Lurgan",
+        "category": "other_religions",
+        "perc": 1.2488
+      },
+      {
+        "group": "Lurgan",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 30.306
       }
     ],
     "sex": [
-      {
-        "group": "Lurgan",
-        "category": "females",
-        "perc": 50.2906
-      },
-      {
-        "group": "Lurgan",
-        "category": "males",
-        "perc": 49.7094
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1299,6 +1317,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Lurgan",
+        "category": "females",
+        "perc": 50.2906
+      },
+      {
+        "group": "Lurgan",
+        "category": "males",
+        "perc": 49.7094
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1325,36 +1375,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Lurgan",
         "category": "FSME",
         "perc": 21.733
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Lurgan",
         "category": "FSME",
         "perc": 18.9175
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1417,26 +1457,58 @@
         "group": "Lurgan",
         "category": "Age 65+",
         "perc": 15.26
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Lurgan",
+        "category": "destHEpct",
+        "perc": 38.7
+      },
+      {
+        "group": "Lurgan",
+        "category": "destFEpct",
+        "perc": 35.3
+      },
+      {
+        "group": "Lurgan",
+        "category": "destEmploypct",
+        "perc": 8.9
+      },
+      {
+        "group": "Lurgan",
+        "category": "destTrainpct",
+        "perc": 12.1
+      },
+      {
+        "group": "Lurgan",
+        "category": "destUnempUnkpct",
+        "perc": 5
       }
     ]
   },

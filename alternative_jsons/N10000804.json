@@ -561,6 +561,7 @@
         "perc": 48.3451
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Carrick Castle",
         "category": "Age 65+",
         "perc": 20.51
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Carrick Castle",
+        "category": "destHEpct",
+        "perc": 38.9
+      },
+      {
+        "geography": "Carrick Castle",
+        "category": "destFEpct",
+        "perc": 27.6
+      },
+      {
+        "geography": "Carrick Castle",
+        "category": "destEmploypct",
+        "perc": 13.3
+      },
+      {
+        "geography": "Carrick Castle",
+        "category": "destTrainpct",
+        "perc": 16.3
+      },
+      {
+        "geography": "Carrick Castle",
+        "category": "destUnempUnkpct",
+        "perc": 3.9
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Carrick Castle",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Carrick Castle",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Carrick Castle",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Carrick Castle",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Carrick Castle",
-        "category": "bad",
-        "perc": 6.5491
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "fair",
-        "perc": 15.9902
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "good",
-        "perc": 31.1449
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "very_bad",
-        "perc": 2.2897
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "very_good",
-        "perc": 44.026
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "bad",
+        "perc": 6.5491
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "fair",
+        "perc": 15.9902
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "good",
+        "perc": 31.1449
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "very_bad",
+        "perc": 2.2897
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "very_good",
+        "perc": 44.026
       }
     ],
     "hh_size": [
-      {
-        "group": "Carrick Castle",
-        "category": "five_people",
-        "perc": 5.2024
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "four_people",
-        "perc": 12.5776
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "one_person",
-        "perc": 33.3375
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "three_people",
-        "perc": 16.4763
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "two_people",
-        "perc": 32.4063
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "five_people",
+        "perc": 5.2024
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "four_people",
+        "perc": 12.5776
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "one_person",
+        "perc": 33.3375
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "three_people",
+        "perc": 16.4763
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "two_people",
+        "perc": 32.4063
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Carrick Castle",
-        "category": "apprenticeship",
-        "perc": 7.1134
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "level_1_qualifications",
-        "perc": 7.8339
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "level_2_qualifications",
-        "perc": 15.2027
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "level_3_qualifications",
-        "perc": 17.0302
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "level_4_qualifications_and_above",
-        "perc": 28.2439
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "no_qualifications",
-        "perc": 22.1065
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "other_qualifications",
-        "perc": 2.4694
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "apprenticeship",
+        "perc": 7.1134
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "level_1_qualifications",
+        "perc": 7.8339
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "level_2_qualifications",
+        "perc": 15.2027
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "level_3_qualifications",
+        "perc": 17.0302
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "level_4_qualifications_and_above",
+        "perc": 28.2439
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "no_qualifications",
+        "perc": 22.1065
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "other_qualifications",
+        "perc": 2.4694
       }
     ],
     "cob": [
-      {
-        "group": "Carrick Castle",
-        "category": "england",
-        "perc": 4.5741
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "northern_ireland",
-        "perc": 89.1915
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "other_cob",
-        "perc": 4.0966
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "republic_of_ireland",
-        "perc": 0.6023
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "scotland",
-        "perc": 1.3239
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "wales",
-        "perc": 0.2116
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "england",
+        "perc": 4.5741
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "northern_ireland",
+        "perc": 89.1915
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "other_cob",
+        "perc": 4.0966
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "republic_of_ireland",
+        "perc": 0.6023
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "scotland",
+        "perc": 1.3239
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "wales",
+        "perc": 0.2116
       }
     ],
     "mainlang": [
-      {
-        "group": "Carrick Castle",
-        "category": "english",
-        "perc": 98.018
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "other_languages",
-        "perc": 1.982
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "english",
+        "perc": 98.018
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "other_languages",
+        "perc": 1.982
       }
     ],
     "age": [
-      {
-        "group": "Carrick Castle",
-        "category": "a0to14",
-        "perc": 15.9251
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "a15to39",
-        "perc": 28.573
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "a40to64",
-        "perc": 35.2252
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "a65plus",
-        "perc": 20.2767
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a0to14",
+        "perc": 15.9251
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a15to39",
+        "perc": 28.573
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a40to64",
+        "perc": 35.2252
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a65plus",
+        "perc": 20.2767
       }
     ],
     "provision_care": [
-      {
-        "group": "Carrick Castle",
-        "category": "a1to19_hours",
-        "perc": 6.061
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "a20to49_hours",
-        "perc": 2.7851
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "a50plus_hours",
-        "perc": 4.463
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "no_care",
-        "perc": 86.691
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a1to19_hours",
+        "perc": 6.061
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a20to49_hours",
+        "perc": 2.7851
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "a50plus_hours",
+        "perc": 4.463
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "no_care",
+        "perc": 86.691
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Carrick Castle",
-        "category": "catholic",
-        "perc": 8.9962
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "none",
-        "perc": 16.5654
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "other_religions",
-        "perc": 1.427
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 73.0114
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "catholic",
+        "perc": 8.9962
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "none",
+        "perc": 16.5654
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "other_religions",
+        "perc": 1.427
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 73.0114
       }
     ],
     "sex": [
-      {
-        "group": "Carrick Castle",
-        "category": "females",
-        "perc": 51.6549
-      },
-      {
-        "group": "Carrick Castle",
-        "category": "males",
-        "perc": 48.3451
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "females",
+        "perc": 51.6549
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "males",
+        "perc": 48.3451
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Carrick Castle",
         "category": "FSME",
         "perc": 20.9302
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Carrick Castle",
         "category": "FSME",
         "perc": 17.4531
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Carrick Castle",
         "category": "Age 65+",
         "perc": 20.51
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "destHEpct",
+        "perc": 38.9
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "destFEpct",
+        "perc": 27.6
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "destEmploypct",
+        "perc": 13.3
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "destTrainpct",
+        "perc": 16.3
+      },
+      {
+        "group": "Carrick Castle",
+        "category": "destUnempUnkpct",
+        "perc": 3.9
       }
     ]
   },

@@ -546,6 +546,7 @@
         "perc": 51.0197
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -581,6 +582,31 @@
         "geography": "Erne West",
         "category": "Age 65+",
         "perc": 19.6332
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Erne West",
+        "category": "destHEpct",
+        "perc": 49.1
+      },
+      {
+        "geography": "Erne West",
+        "category": "destFEpct",
+        "perc": 33.7
+      },
+      {
+        "geography": "Erne West",
+        "category": "destEmploypct"
+      },
+      {
+        "geography": "Erne West",
+        "category": "destTrainpct",
+        "perc": 8.9
+      },
+      {
+        "geography": "Erne West",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -816,54 +842,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Erne West",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Erne West",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Erne West",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Erne West",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Erne West",
-        "category": "bad",
-        "perc": 3.71
-      },
-      {
-        "group": "Erne West",
-        "category": "fair",
-        "perc": 12.1599
-      },
-      {
-        "group": "Erne West",
-        "category": "good",
-        "perc": 28.889
-      },
-      {
-        "group": "Erne West",
-        "category": "very_bad",
-        "perc": 1.2549
-      },
-      {
-        "group": "Erne West",
-        "category": "very_good",
-        "perc": 53.9862
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -888,34 +889,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Erne West",
+        "category": "bad",
+        "perc": 3.71
+      },
+      {
+        "group": "Erne West",
+        "category": "fair",
+        "perc": 12.1599
+      },
+      {
+        "group": "Erne West",
+        "category": "good",
+        "perc": 28.889
+      },
+      {
+        "group": "Erne West",
+        "category": "very_bad",
+        "perc": 1.2549
+      },
+      {
+        "group": "Erne West",
+        "category": "very_good",
+        "perc": 53.9862
       }
     ],
     "hh_size": [
-      {
-        "group": "Erne West",
-        "category": "five_people",
-        "perc": 14.1461
-      },
-      {
-        "group": "Erne West",
-        "category": "four_people",
-        "perc": 15.2527
-      },
-      {
-        "group": "Erne West",
-        "category": "one_person",
-        "perc": 26.9089
-      },
-      {
-        "group": "Erne West",
-        "category": "three_people",
-        "perc": 15.1973
-      },
-      {
-        "group": "Erne West",
-        "category": "two_people",
-        "perc": 28.495
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -940,44 +941,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Erne West",
+        "category": "five_people",
+        "perc": 14.1461
+      },
+      {
+        "group": "Erne West",
+        "category": "four_people",
+        "perc": 15.2527
+      },
+      {
+        "group": "Erne West",
+        "category": "one_person",
+        "perc": 26.9089
+      },
+      {
+        "group": "Erne West",
+        "category": "three_people",
+        "perc": 15.1973
+      },
+      {
+        "group": "Erne West",
+        "category": "two_people",
+        "perc": 28.495
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Erne West",
-        "category": "apprenticeship",
-        "perc": 6.8474
-      },
-      {
-        "group": "Erne West",
-        "category": "level_1_qualifications",
-        "perc": 5.5794
-      },
-      {
-        "group": "Erne West",
-        "category": "level_2_qualifications",
-        "perc": 13.1176
-      },
-      {
-        "group": "Erne West",
-        "category": "level_3_qualifications",
-        "perc": 14.2632
-      },
-      {
-        "group": "Erne West",
-        "category": "level_4_qualifications_and_above",
-        "perc": 34.4644
-      },
-      {
-        "group": "Erne West",
-        "category": "no_qualifications",
-        "perc": 23.4018
-      },
-      {
-        "group": "Erne West",
-        "category": "other_qualifications",
-        "perc": 2.3262
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1012,39 +1003,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Erne West",
+        "category": "apprenticeship",
+        "perc": 6.8474
+      },
+      {
+        "group": "Erne West",
+        "category": "level_1_qualifications",
+        "perc": 5.5794
+      },
+      {
+        "group": "Erne West",
+        "category": "level_2_qualifications",
+        "perc": 13.1176
+      },
+      {
+        "group": "Erne West",
+        "category": "level_3_qualifications",
+        "perc": 14.2632
+      },
+      {
+        "group": "Erne West",
+        "category": "level_4_qualifications_and_above",
+        "perc": 34.4644
+      },
+      {
+        "group": "Erne West",
+        "category": "no_qualifications",
+        "perc": 23.4018
+      },
+      {
+        "group": "Erne West",
+        "category": "other_qualifications",
+        "perc": 2.3262
       }
     ],
     "cob": [
-      {
-        "group": "Erne West",
-        "category": "england",
-        "perc": 6.2206
-      },
-      {
-        "group": "Erne West",
-        "category": "northern_ireland",
-        "perc": 80.8812
-      },
-      {
-        "group": "Erne West",
-        "category": "other_cob",
-        "perc": 4.0106
-      },
-      {
-        "group": "Erne West",
-        "category": "republic_of_ireland",
-        "perc": 8.1782
-      },
-      {
-        "group": "Erne West",
-        "category": "scotland",
-        "perc": 0.5116
-      },
-      {
-        "group": "Erne West",
-        "category": "wales",
-        "perc": 0.1978
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1074,19 +1070,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Erne West",
+        "category": "england",
+        "perc": 6.2206
+      },
+      {
+        "group": "Erne West",
+        "category": "northern_ireland",
+        "perc": 80.8812
+      },
+      {
+        "group": "Erne West",
+        "category": "other_cob",
+        "perc": 4.0106
+      },
+      {
+        "group": "Erne West",
+        "category": "republic_of_ireland",
+        "perc": 8.1782
+      },
+      {
+        "group": "Erne West",
+        "category": "scotland",
+        "perc": 0.5116
+      },
+      {
+        "group": "Erne West",
+        "category": "wales",
+        "perc": 0.1978
       }
     ],
     "mainlang": [
-      {
-        "group": "Erne West",
-        "category": "english",
-        "perc": 97.2561
-      },
-      {
-        "group": "Erne West",
-        "category": "other_languages",
-        "perc": 2.7439
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1096,29 +1112,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Erne West",
+        "category": "english",
+        "perc": 97.2561
+      },
+      {
+        "group": "Erne West",
+        "category": "other_languages",
+        "perc": 2.7439
       }
     ],
     "age": [
-      {
-        "group": "Erne West",
-        "category": "a0to14",
-        "perc": 20.8035
-      },
-      {
-        "group": "Erne West",
-        "category": "a15to39",
-        "perc": 26.7171
-      },
-      {
-        "group": "Erne West",
-        "category": "a40to64",
-        "perc": 32.8422
-      },
-      {
-        "group": "Erne West",
-        "category": "a65plus",
-        "perc": 19.6371
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1138,29 +1144,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Erne West",
+        "category": "a0to14",
+        "perc": 20.8035
+      },
+      {
+        "group": "Erne West",
+        "category": "a15to39",
+        "perc": 26.7171
+      },
+      {
+        "group": "Erne West",
+        "category": "a40to64",
+        "perc": 32.8422
+      },
+      {
+        "group": "Erne West",
+        "category": "a65plus",
+        "perc": 19.6371
       }
     ],
     "provision_care": [
-      {
-        "group": "Erne West",
-        "category": "a1to19_hours",
-        "perc": 5.5171
-      },
-      {
-        "group": "Erne West",
-        "category": "a20to49_hours",
-        "perc": 2.3103
-      },
-      {
-        "group": "Erne West",
-        "category": "a50plus_hours",
-        "perc": 3.2141
-      },
-      {
-        "group": "Erne West",
-        "category": "no_care",
-        "perc": 88.9585
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1180,29 +1186,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Erne West",
+        "category": "a1to19_hours",
+        "perc": 5.5171
+      },
+      {
+        "group": "Erne West",
+        "category": "a20to49_hours",
+        "perc": 2.3103
+      },
+      {
+        "group": "Erne West",
+        "category": "a50plus_hours",
+        "perc": 3.2141
+      },
+      {
+        "group": "Erne West",
+        "category": "no_care",
+        "perc": 88.9585
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Erne West",
-        "category": "catholic",
-        "perc": 68.0718
-      },
-      {
-        "group": "Erne West",
-        "category": "none",
-        "perc": 4.0857
-      },
-      {
-        "group": "Erne West",
-        "category": "other_religions",
-        "perc": 0.7912
-      },
-      {
-        "group": "Erne West",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 27.0514
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1222,19 +1228,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Erne West",
+        "category": "catholic",
+        "perc": 68.0718
+      },
+      {
+        "group": "Erne West",
+        "category": "none",
+        "perc": 4.0857
+      },
+      {
+        "group": "Erne West",
+        "category": "other_religions",
+        "perc": 0.7912
+      },
+      {
+        "group": "Erne West",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 27.0514
       }
     ],
     "sex": [
-      {
-        "group": "Erne West",
-        "category": "females",
-        "perc": 48.9803
-      },
-      {
-        "group": "Erne West",
-        "category": "males",
-        "perc": 51.0197
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1244,6 +1260,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Erne West",
+        "category": "females",
+        "perc": 48.9803
+      },
+      {
+        "group": "Erne West",
+        "category": "males",
+        "perc": 51.0197
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1270,36 +1318,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Erne West",
         "category": "FSME",
         "perc": 12.5511
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Erne West",
         "category": "FSME",
         "perc": 13.8167
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1362,26 +1400,56 @@
         "group": "Erne West",
         "category": "Age 65+",
         "perc": 19.6332
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Erne West",
+        "category": "destHEpct",
+        "perc": 49.1
+      },
+      {
+        "group": "Erne West",
+        "category": "destFEpct",
+        "perc": 33.7
+      },
+      {
+        "group": "Erne West",
+        "category": "destEmploypct"
+      },
+      {
+        "group": "Erne West",
+        "category": "destTrainpct",
+        "perc": 8.9
+      },
+      {
+        "group": "Erne West",
+        "category": "destUnempUnkpct"
       }
     ]
   },

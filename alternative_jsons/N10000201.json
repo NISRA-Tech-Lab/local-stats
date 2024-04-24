@@ -571,6 +571,7 @@
         "perc": 49.21
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -606,6 +607,33 @@
         "geography": "Armagh",
         "category": "Age 65+",
         "perc": 16.7387
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Armagh",
+        "category": "destHEpct",
+        "perc": 41.8
+      },
+      {
+        "geography": "Armagh",
+        "category": "destFEpct",
+        "perc": 29.3
+      },
+      {
+        "geography": "Armagh",
+        "category": "destEmploypct",
+        "perc": 6.8
+      },
+      {
+        "geography": "Armagh",
+        "category": "destTrainpct",
+        "perc": 19.5
+      },
+      {
+        "geography": "Armagh",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },
@@ -841,54 +869,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Armagh",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Armagh",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Armagh",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Armagh",
-        "category": "bad",
-        "perc": 4.777
-      },
-      {
-        "group": "Armagh",
-        "category": "fair",
-        "perc": 12.4086
-      },
-      {
-        "group": "Armagh",
-        "category": "good",
-        "perc": 27.7334
-      },
-      {
-        "group": "Armagh",
-        "category": "very_bad",
-        "perc": 1.4751
-      },
-      {
-        "group": "Armagh",
-        "category": "very_good",
-        "perc": 53.6059
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -913,34 +916,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Armagh",
+        "category": "bad",
+        "perc": 4.777
+      },
+      {
+        "group": "Armagh",
+        "category": "fair",
+        "perc": 12.4086
+      },
+      {
+        "group": "Armagh",
+        "category": "good",
+        "perc": 27.7334
+      },
+      {
+        "group": "Armagh",
+        "category": "very_bad",
+        "perc": 1.4751
+      },
+      {
+        "group": "Armagh",
+        "category": "very_good",
+        "perc": 53.6059
       }
     ],
     "hh_size": [
-      {
-        "group": "Armagh",
-        "category": "five_people",
-        "perc": 13.0843
-      },
-      {
-        "group": "Armagh",
-        "category": "four_people",
-        "perc": 14.6231
-      },
-      {
-        "group": "Armagh",
-        "category": "one_person",
-        "perc": 28.6866
-      },
-      {
-        "group": "Armagh",
-        "category": "three_people",
-        "perc": 16.3924
-      },
-      {
-        "group": "Armagh",
-        "category": "two_people",
-        "perc": 27.2136
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -965,44 +968,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Armagh",
+        "category": "five_people",
+        "perc": 13.0843
+      },
+      {
+        "group": "Armagh",
+        "category": "four_people",
+        "perc": 14.6231
+      },
+      {
+        "group": "Armagh",
+        "category": "one_person",
+        "perc": 28.6866
+      },
+      {
+        "group": "Armagh",
+        "category": "three_people",
+        "perc": 16.3924
+      },
+      {
+        "group": "Armagh",
+        "category": "two_people",
+        "perc": 27.2136
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Armagh",
-        "category": "apprenticeship",
-        "perc": 6.2418
-      },
-      {
-        "group": "Armagh",
-        "category": "level_1_qualifications",
-        "perc": 5.0797
-      },
-      {
-        "group": "Armagh",
-        "category": "level_2_qualifications",
-        "perc": 13.2543
-      },
-      {
-        "group": "Armagh",
-        "category": "level_3_qualifications",
-        "perc": 15.0274
-      },
-      {
-        "group": "Armagh",
-        "category": "level_4_qualifications_and_above",
-        "perc": 30.3382
-      },
-      {
-        "group": "Armagh",
-        "category": "no_qualifications",
-        "perc": 27.6187
-      },
-      {
-        "group": "Armagh",
-        "category": "other_qualifications",
-        "perc": 2.44
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1037,39 +1030,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Armagh",
+        "category": "apprenticeship",
+        "perc": 6.2418
+      },
+      {
+        "group": "Armagh",
+        "category": "level_1_qualifications",
+        "perc": 5.0797
+      },
+      {
+        "group": "Armagh",
+        "category": "level_2_qualifications",
+        "perc": 13.2543
+      },
+      {
+        "group": "Armagh",
+        "category": "level_3_qualifications",
+        "perc": 15.0274
+      },
+      {
+        "group": "Armagh",
+        "category": "level_4_qualifications_and_above",
+        "perc": 30.3382
+      },
+      {
+        "group": "Armagh",
+        "category": "no_qualifications",
+        "perc": 27.6187
+      },
+      {
+        "group": "Armagh",
+        "category": "other_qualifications",
+        "perc": 2.44
       }
     ],
     "cob": [
-      {
-        "group": "Armagh",
-        "category": "england",
-        "perc": 2.9161
-      },
-      {
-        "group": "Armagh",
-        "category": "northern_ireland",
-        "perc": 82.2255
-      },
-      {
-        "group": "Armagh",
-        "category": "other_cob",
-        "perc": 9.9241
-      },
-      {
-        "group": "Armagh",
-        "category": "republic_of_ireland",
-        "perc": 4.2646
-      },
-      {
-        "group": "Armagh",
-        "category": "scotland",
-        "perc": 0.5184
-      },
-      {
-        "group": "Armagh",
-        "category": "wales",
-        "perc": 0.1512
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1099,19 +1097,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Armagh",
+        "category": "england",
+        "perc": 2.9161
+      },
+      {
+        "group": "Armagh",
+        "category": "northern_ireland",
+        "perc": 82.2255
+      },
+      {
+        "group": "Armagh",
+        "category": "other_cob",
+        "perc": 9.9241
+      },
+      {
+        "group": "Armagh",
+        "category": "republic_of_ireland",
+        "perc": 4.2646
+      },
+      {
+        "group": "Armagh",
+        "category": "scotland",
+        "perc": 0.5184
+      },
+      {
+        "group": "Armagh",
+        "category": "wales",
+        "perc": 0.1512
       }
     ],
     "mainlang": [
-      {
-        "group": "Armagh",
-        "category": "english",
-        "perc": 91.4069
-      },
-      {
-        "group": "Armagh",
-        "category": "other_languages",
-        "perc": 8.5931
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1121,29 +1139,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Armagh",
+        "category": "english",
+        "perc": 91.4069
+      },
+      {
+        "group": "Armagh",
+        "category": "other_languages",
+        "perc": 8.5931
       }
     ],
     "age": [
-      {
-        "group": "Armagh",
-        "category": "a0to14",
-        "perc": 21.4411
-      },
-      {
-        "group": "Armagh",
-        "category": "a15to39",
-        "perc": 30.9458
-      },
-      {
-        "group": "Armagh",
-        "category": "a40to64",
-        "perc": 31.0508
-      },
-      {
-        "group": "Armagh",
-        "category": "a65plus",
-        "perc": 16.5623
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1163,29 +1171,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Armagh",
+        "category": "a0to14",
+        "perc": 21.4411
+      },
+      {
+        "group": "Armagh",
+        "category": "a15to39",
+        "perc": 30.9458
+      },
+      {
+        "group": "Armagh",
+        "category": "a40to64",
+        "perc": 31.0508
+      },
+      {
+        "group": "Armagh",
+        "category": "a65plus",
+        "perc": 16.5623
       }
     ],
     "provision_care": [
-      {
-        "group": "Armagh",
-        "category": "a1to19_hours",
-        "perc": 4.4857
-      },
-      {
-        "group": "Armagh",
-        "category": "a20to49_hours",
-        "perc": 2.8259
-      },
-      {
-        "group": "Armagh",
-        "category": "a50plus_hours",
-        "perc": 3.0578
-      },
-      {
-        "group": "Armagh",
-        "category": "no_care",
-        "perc": 89.6306
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1205,29 +1213,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Armagh",
+        "category": "a1to19_hours",
+        "perc": 4.4857
+      },
+      {
+        "group": "Armagh",
+        "category": "a20to49_hours",
+        "perc": 2.8259
+      },
+      {
+        "group": "Armagh",
+        "category": "a50plus_hours",
+        "perc": 3.0578
+      },
+      {
+        "group": "Armagh",
+        "category": "no_care",
+        "perc": 89.6306
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Armagh",
-        "category": "catholic",
-        "perc": 69.2733
-      },
-      {
-        "group": "Armagh",
-        "category": "none",
-        "perc": 5.2646
-      },
-      {
-        "group": "Armagh",
-        "category": "other_religions",
-        "perc": 0.9782
-      },
-      {
-        "group": "Armagh",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 24.4839
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1247,19 +1255,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Armagh",
+        "category": "catholic",
+        "perc": 69.2733
+      },
+      {
+        "group": "Armagh",
+        "category": "none",
+        "perc": 5.2646
+      },
+      {
+        "group": "Armagh",
+        "category": "other_religions",
+        "perc": 0.9782
+      },
+      {
+        "group": "Armagh",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 24.4839
       }
     ],
     "sex": [
-      {
-        "group": "Armagh",
-        "category": "females",
-        "perc": 50.79
-      },
-      {
-        "group": "Armagh",
-        "category": "males",
-        "perc": 49.21
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1269,6 +1287,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Armagh",
+        "category": "females",
+        "perc": 50.79
+      },
+      {
+        "group": "Armagh",
+        "category": "males",
+        "perc": 49.21
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1295,36 +1345,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Armagh",
         "category": "FSME",
         "perc": 19.519
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Armagh",
         "category": "FSME",
         "perc": 17.793
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1387,26 +1427,58 @@
         "group": "Armagh",
         "category": "Age 65+",
         "perc": 16.7387
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Armagh",
+        "category": "destHEpct",
+        "perc": 41.8
+      },
+      {
+        "group": "Armagh",
+        "category": "destFEpct",
+        "perc": 29.3
+      },
+      {
+        "group": "Armagh",
+        "category": "destEmploypct",
+        "perc": 6.8
+      },
+      {
+        "group": "Armagh",
+        "category": "destTrainpct",
+        "perc": 19.5
+      },
+      {
+        "group": "Armagh",
+        "category": "destUnempUnkpct",
+        "perc": 2.8
       }
     ]
   },

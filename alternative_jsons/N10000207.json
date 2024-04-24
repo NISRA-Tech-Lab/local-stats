@@ -591,6 +591,7 @@
         "perc": 49.9651
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -626,6 +627,33 @@
         "geography": "Portadown",
         "category": "Age 65+",
         "perc": 16.2432
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Portadown",
+        "category": "destHEpct",
+        "perc": 27.6
+      },
+      {
+        "geography": "Portadown",
+        "category": "destFEpct",
+        "perc": 51.4
+      },
+      {
+        "geography": "Portadown",
+        "category": "destEmploypct",
+        "perc": 8.1
+      },
+      {
+        "geography": "Portadown",
+        "category": "destTrainpct",
+        "perc": 7.1
+      },
+      {
+        "geography": "Portadown",
+        "category": "destUnempUnkpct",
+        "perc": 5.7
       }
     ]
   },
@@ -861,54 +889,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Portadown",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Portadown",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Portadown",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Portadown",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Portadown",
-        "category": "bad",
-        "perc": 5.7128
-      },
-      {
-        "group": "Portadown",
-        "category": "fair",
-        "perc": 13.6518
-      },
-      {
-        "group": "Portadown",
-        "category": "good",
-        "perc": 29.4995
-      },
-      {
-        "group": "Portadown",
-        "category": "very_bad",
-        "perc": 1.722
-      },
-      {
-        "group": "Portadown",
-        "category": "very_good",
-        "perc": 49.4138
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -933,34 +936,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Portadown",
+        "category": "bad",
+        "perc": 5.7128
+      },
+      {
+        "group": "Portadown",
+        "category": "fair",
+        "perc": 13.6518
+      },
+      {
+        "group": "Portadown",
+        "category": "good",
+        "perc": 29.4995
+      },
+      {
+        "group": "Portadown",
+        "category": "very_bad",
+        "perc": 1.722
+      },
+      {
+        "group": "Portadown",
+        "category": "very_good",
+        "perc": 49.4138
       }
     ],
     "hh_size": [
-      {
-        "group": "Portadown",
-        "category": "five_people",
-        "perc": 10.6208
-      },
-      {
-        "group": "Portadown",
-        "category": "four_people",
-        "perc": 14.333
-      },
-      {
-        "group": "Portadown",
-        "category": "one_person",
-        "perc": 30.037
-      },
-      {
-        "group": "Portadown",
-        "category": "three_people",
-        "perc": 16.5049
-      },
-      {
-        "group": "Portadown",
-        "category": "two_people",
-        "perc": 28.5043
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -985,44 +988,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Portadown",
+        "category": "five_people",
+        "perc": 10.6208
+      },
+      {
+        "group": "Portadown",
+        "category": "four_people",
+        "perc": 14.333
+      },
+      {
+        "group": "Portadown",
+        "category": "one_person",
+        "perc": 30.037
+      },
+      {
+        "group": "Portadown",
+        "category": "three_people",
+        "perc": 16.5049
+      },
+      {
+        "group": "Portadown",
+        "category": "two_people",
+        "perc": 28.5043
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Portadown",
-        "category": "apprenticeship",
-        "perc": 6.499
-      },
-      {
-        "group": "Portadown",
-        "category": "level_1_qualifications",
-        "perc": 6.3826
-      },
-      {
-        "group": "Portadown",
-        "category": "level_2_qualifications",
-        "perc": 13.3434
-      },
-      {
-        "group": "Portadown",
-        "category": "level_3_qualifications",
-        "perc": 13.9293
-      },
-      {
-        "group": "Portadown",
-        "category": "level_4_qualifications_and_above",
-        "perc": 26.1281
-      },
-      {
-        "group": "Portadown",
-        "category": "no_qualifications",
-        "perc": 30.6018
-      },
-      {
-        "group": "Portadown",
-        "category": "other_qualifications",
-        "perc": 3.1157
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1057,39 +1050,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Portadown",
+        "category": "apprenticeship",
+        "perc": 6.499
+      },
+      {
+        "group": "Portadown",
+        "category": "level_1_qualifications",
+        "perc": 6.3826
+      },
+      {
+        "group": "Portadown",
+        "category": "level_2_qualifications",
+        "perc": 13.3434
+      },
+      {
+        "group": "Portadown",
+        "category": "level_3_qualifications",
+        "perc": 13.9293
+      },
+      {
+        "group": "Portadown",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.1281
+      },
+      {
+        "group": "Portadown",
+        "category": "no_qualifications",
+        "perc": 30.6018
+      },
+      {
+        "group": "Portadown",
+        "category": "other_qualifications",
+        "perc": 3.1157
       }
     ],
     "cob": [
-      {
-        "group": "Portadown",
-        "category": "england",
-        "perc": 2.785
-      },
-      {
-        "group": "Portadown",
-        "category": "northern_ireland",
-        "perc": 79.2231
-      },
-      {
-        "group": "Portadown",
-        "category": "other_cob",
-        "perc": 16.2243
-      },
-      {
-        "group": "Portadown",
-        "category": "republic_of_ireland",
-        "perc": 1.0691
-      },
-      {
-        "group": "Portadown",
-        "category": "scotland",
-        "perc": 0.5528
-      },
-      {
-        "group": "Portadown",
-        "category": "wales",
-        "perc": 0.1458
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1119,19 +1117,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Portadown",
+        "category": "england",
+        "perc": 2.785
+      },
+      {
+        "group": "Portadown",
+        "category": "northern_ireland",
+        "perc": 79.2231
+      },
+      {
+        "group": "Portadown",
+        "category": "other_cob",
+        "perc": 16.2243
+      },
+      {
+        "group": "Portadown",
+        "category": "republic_of_ireland",
+        "perc": 1.0691
+      },
+      {
+        "group": "Portadown",
+        "category": "scotland",
+        "perc": 0.5528
+      },
+      {
+        "group": "Portadown",
+        "category": "wales",
+        "perc": 0.1458
       }
     ],
     "mainlang": [
-      {
-        "group": "Portadown",
-        "category": "english",
-        "perc": 86.569
-      },
-      {
-        "group": "Portadown",
-        "category": "other_languages",
-        "perc": 13.431
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1141,29 +1159,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Portadown",
+        "category": "english",
+        "perc": 86.569
+      },
+      {
+        "group": "Portadown",
+        "category": "other_languages",
+        "perc": 13.431
       }
     ],
     "age": [
-      {
-        "group": "Portadown",
-        "category": "a0to14",
-        "perc": 20.461
-      },
-      {
-        "group": "Portadown",
-        "category": "a15to39",
-        "perc": 31.6376
-      },
-      {
-        "group": "Portadown",
-        "category": "a40to64",
-        "perc": 31.7561
-      },
-      {
-        "group": "Portadown",
-        "category": "a65plus",
-        "perc": 16.1453
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1183,29 +1191,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Portadown",
+        "category": "a0to14",
+        "perc": 20.461
+      },
+      {
+        "group": "Portadown",
+        "category": "a15to39",
+        "perc": 31.6376
+      },
+      {
+        "group": "Portadown",
+        "category": "a40to64",
+        "perc": 31.7561
+      },
+      {
+        "group": "Portadown",
+        "category": "a65plus",
+        "perc": 16.1453
       }
     ],
     "provision_care": [
-      {
-        "group": "Portadown",
-        "category": "a1to19_hours",
-        "perc": 5.0122
-      },
-      {
-        "group": "Portadown",
-        "category": "a20to49_hours",
-        "perc": 3.0495
-      },
-      {
-        "group": "Portadown",
-        "category": "a50plus_hours",
-        "perc": 3.562
-      },
-      {
-        "group": "Portadown",
-        "category": "no_care",
-        "perc": 88.3763
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1225,29 +1233,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Portadown",
+        "category": "a1to19_hours",
+        "perc": 5.0122
+      },
+      {
+        "group": "Portadown",
+        "category": "a20to49_hours",
+        "perc": 3.0495
+      },
+      {
+        "group": "Portadown",
+        "category": "a50plus_hours",
+        "perc": 3.562
+      },
+      {
+        "group": "Portadown",
+        "category": "no_care",
+        "perc": 88.3763
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Portadown",
-        "category": "catholic",
-        "perc": 37.068
-      },
-      {
-        "group": "Portadown",
-        "category": "none",
-        "perc": 9.6064
-      },
-      {
-        "group": "Portadown",
-        "category": "other_religions",
-        "perc": 1.5034
-      },
-      {
-        "group": "Portadown",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 51.8223
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1267,19 +1275,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Portadown",
+        "category": "catholic",
+        "perc": 37.068
+      },
+      {
+        "group": "Portadown",
+        "category": "none",
+        "perc": 9.6064
+      },
+      {
+        "group": "Portadown",
+        "category": "other_religions",
+        "perc": 1.5034
+      },
+      {
+        "group": "Portadown",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 51.8223
       }
     ],
     "sex": [
-      {
-        "group": "Portadown",
-        "category": "females",
-        "perc": 50.0349
-      },
-      {
-        "group": "Portadown",
-        "category": "males",
-        "perc": 49.9651
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1289,6 +1307,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Portadown",
+        "category": "females",
+        "perc": 50.0349
+      },
+      {
+        "group": "Portadown",
+        "category": "males",
+        "perc": 49.9651
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1315,36 +1365,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Portadown",
         "category": "FSME",
         "perc": 20.9974
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Portadown",
         "category": "FSME",
         "perc": 19.2308
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1407,26 +1447,58 @@
         "group": "Portadown",
         "category": "Age 65+",
         "perc": 16.2432
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Portadown",
+        "category": "destHEpct",
+        "perc": 27.6
+      },
+      {
+        "group": "Portadown",
+        "category": "destFEpct",
+        "perc": 51.4
+      },
+      {
+        "group": "Portadown",
+        "category": "destEmploypct",
+        "perc": 8.1
+      },
+      {
+        "group": "Portadown",
+        "category": "destTrainpct",
+        "perc": 7.1
+      },
+      {
+        "group": "Portadown",
+        "category": "destUnempUnkpct",
+        "perc": 5.7
       }
     ]
   },

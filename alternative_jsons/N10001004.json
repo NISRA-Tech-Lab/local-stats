@@ -561,6 +561,7 @@
         "perc": 48.7429
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -596,6 +597,33 @@
         "geography": "Rowallane",
         "category": "Age 65+",
         "perc": 20
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Rowallane",
+        "category": "destHEpct",
+        "perc": 47.6
+      },
+      {
+        "geography": "Rowallane",
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "geography": "Rowallane",
+        "category": "destEmploypct",
+        "perc": 13.2
+      },
+      {
+        "geography": "Rowallane",
+        "category": "destTrainpct",
+        "perc": 8
+      },
+      {
+        "geography": "Rowallane",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },
@@ -831,54 +859,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Rowallane",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Rowallane",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Rowallane",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Rowallane",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Rowallane",
-        "category": "bad",
-        "perc": 5.0612
-      },
-      {
-        "group": "Rowallane",
-        "category": "fair",
-        "perc": 14.0537
-      },
-      {
-        "group": "Rowallane",
-        "category": "good",
-        "perc": 29.7646
-      },
-      {
-        "group": "Rowallane",
-        "category": "very_bad",
-        "perc": 1.3701
-      },
-      {
-        "group": "Rowallane",
-        "category": "very_good",
-        "perc": 49.7505
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -903,34 +906,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Rowallane",
+        "category": "bad",
+        "perc": 5.0612
+      },
+      {
+        "group": "Rowallane",
+        "category": "fair",
+        "perc": 14.0537
+      },
+      {
+        "group": "Rowallane",
+        "category": "good",
+        "perc": 29.7646
+      },
+      {
+        "group": "Rowallane",
+        "category": "very_bad",
+        "perc": 1.3701
+      },
+      {
+        "group": "Rowallane",
+        "category": "very_good",
+        "perc": 49.7505
       }
     ],
     "hh_size": [
-      {
-        "group": "Rowallane",
-        "category": "five_people",
-        "perc": 7.5256
-      },
-      {
-        "group": "Rowallane",
-        "category": "four_people",
-        "perc": 14.3598
-      },
-      {
-        "group": "Rowallane",
-        "category": "one_person",
-        "perc": 28.8579
-      },
-      {
-        "group": "Rowallane",
-        "category": "three_people",
-        "perc": 16.5725
-      },
-      {
-        "group": "Rowallane",
-        "category": "two_people",
-        "perc": 32.6841
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -955,44 +958,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Rowallane",
+        "category": "five_people",
+        "perc": 7.5256
+      },
+      {
+        "group": "Rowallane",
+        "category": "four_people",
+        "perc": 14.3598
+      },
+      {
+        "group": "Rowallane",
+        "category": "one_person",
+        "perc": 28.8579
+      },
+      {
+        "group": "Rowallane",
+        "category": "three_people",
+        "perc": 16.5725
+      },
+      {
+        "group": "Rowallane",
+        "category": "two_people",
+        "perc": 32.6841
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Rowallane",
-        "category": "apprenticeship",
-        "perc": 7.5196
-      },
-      {
-        "group": "Rowallane",
-        "category": "level_1_qualifications",
-        "perc": 6.0425
-      },
-      {
-        "group": "Rowallane",
-        "category": "level_2_qualifications",
-        "perc": 14.0797
-      },
-      {
-        "group": "Rowallane",
-        "category": "level_3_qualifications",
-        "perc": 16.5571
-      },
-      {
-        "group": "Rowallane",
-        "category": "level_4_qualifications_and_above",
-        "perc": 33.2829
-      },
-      {
-        "group": "Rowallane",
-        "category": "no_qualifications",
-        "perc": 20.3373
-      },
-      {
-        "group": "Rowallane",
-        "category": "other_qualifications",
-        "perc": 2.1809
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1027,39 +1020,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Rowallane",
+        "category": "apprenticeship",
+        "perc": 7.5196
+      },
+      {
+        "group": "Rowallane",
+        "category": "level_1_qualifications",
+        "perc": 6.0425
+      },
+      {
+        "group": "Rowallane",
+        "category": "level_2_qualifications",
+        "perc": 14.0797
+      },
+      {
+        "group": "Rowallane",
+        "category": "level_3_qualifications",
+        "perc": 16.5571
+      },
+      {
+        "group": "Rowallane",
+        "category": "level_4_qualifications_and_above",
+        "perc": 33.2829
+      },
+      {
+        "group": "Rowallane",
+        "category": "no_qualifications",
+        "perc": 20.3373
+      },
+      {
+        "group": "Rowallane",
+        "category": "other_qualifications",
+        "perc": 2.1809
       }
     ],
     "cob": [
-      {
-        "group": "Rowallane",
-        "category": "england",
-        "perc": 4.0113
-      },
-      {
-        "group": "Rowallane",
-        "category": "northern_ireland",
-        "perc": 89.7505
-      },
-      {
-        "group": "Rowallane",
-        "category": "other_cob",
-        "perc": 3.7994
-      },
-      {
-        "group": "Rowallane",
-        "category": "republic_of_ireland",
-        "perc": 1.2571
-      },
-      {
-        "group": "Rowallane",
-        "category": "scotland",
-        "perc": 0.9981
-      },
-      {
-        "group": "Rowallane",
-        "category": "wales",
-        "perc": 0.1836
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1089,19 +1087,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Rowallane",
+        "category": "england",
+        "perc": 4.0113
+      },
+      {
+        "group": "Rowallane",
+        "category": "northern_ireland",
+        "perc": 89.7505
+      },
+      {
+        "group": "Rowallane",
+        "category": "other_cob",
+        "perc": 3.7994
+      },
+      {
+        "group": "Rowallane",
+        "category": "republic_of_ireland",
+        "perc": 1.2571
+      },
+      {
+        "group": "Rowallane",
+        "category": "scotland",
+        "perc": 0.9981
+      },
+      {
+        "group": "Rowallane",
+        "category": "wales",
+        "perc": 0.1836
       }
     ],
     "mainlang": [
-      {
-        "group": "Rowallane",
-        "category": "english",
-        "perc": 97.9008
-      },
-      {
-        "group": "Rowallane",
-        "category": "other_languages",
-        "perc": 2.0992
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1111,29 +1129,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Rowallane",
+        "category": "english",
+        "perc": 97.9008
+      },
+      {
+        "group": "Rowallane",
+        "category": "other_languages",
+        "perc": 2.0992
       }
     ],
     "age": [
-      {
-        "group": "Rowallane",
-        "category": "a0to14",
-        "perc": 17.9755
-      },
-      {
-        "group": "Rowallane",
-        "category": "a15to39",
-        "perc": 28.2674
-      },
-      {
-        "group": "Rowallane",
-        "category": "a40to64",
-        "perc": 33.9454
-      },
-      {
-        "group": "Rowallane",
-        "category": "a65plus",
-        "perc": 19.8117
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1153,29 +1161,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Rowallane",
+        "category": "a0to14",
+        "perc": 17.9755
+      },
+      {
+        "group": "Rowallane",
+        "category": "a15to39",
+        "perc": 28.2674
+      },
+      {
+        "group": "Rowallane",
+        "category": "a40to64",
+        "perc": 33.9454
+      },
+      {
+        "group": "Rowallane",
+        "category": "a65plus",
+        "perc": 19.8117
       }
     ],
     "provision_care": [
-      {
-        "group": "Rowallane",
-        "category": "a1to19_hours",
-        "perc": 6.7626
-      },
-      {
-        "group": "Rowallane",
-        "category": "a20to49_hours",
-        "perc": 3.1589
-      },
-      {
-        "group": "Rowallane",
-        "category": "a50plus_hours",
-        "perc": 3.7487
-      },
-      {
-        "group": "Rowallane",
-        "category": "no_care",
-        "perc": 86.3298
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1195,29 +1203,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Rowallane",
+        "category": "a1to19_hours",
+        "perc": 6.7626
+      },
+      {
+        "group": "Rowallane",
+        "category": "a20to49_hours",
+        "perc": 3.1589
+      },
+      {
+        "group": "Rowallane",
+        "category": "a50plus_hours",
+        "perc": 3.7487
+      },
+      {
+        "group": "Rowallane",
+        "category": "no_care",
+        "perc": 86.3298
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Rowallane",
-        "category": "catholic",
-        "perc": 34.5009
-      },
-      {
-        "group": "Rowallane",
-        "category": "none",
-        "perc": 10.6356
-      },
-      {
-        "group": "Rowallane",
-        "category": "other_religions",
-        "perc": 0.8192
-      },
-      {
-        "group": "Rowallane",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 54.0443
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1237,19 +1245,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Rowallane",
+        "category": "catholic",
+        "perc": 34.5009
+      },
+      {
+        "group": "Rowallane",
+        "category": "none",
+        "perc": 10.6356
+      },
+      {
+        "group": "Rowallane",
+        "category": "other_religions",
+        "perc": 0.8192
+      },
+      {
+        "group": "Rowallane",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 54.0443
       }
     ],
     "sex": [
-      {
-        "group": "Rowallane",
-        "category": "females",
-        "perc": 51.2571
-      },
-      {
-        "group": "Rowallane",
-        "category": "males",
-        "perc": 48.7429
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1259,6 +1277,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Rowallane",
+        "category": "females",
+        "perc": 51.2571
+      },
+      {
+        "group": "Rowallane",
+        "category": "males",
+        "perc": 48.7429
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1285,36 +1335,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Rowallane",
         "category": "FSME",
         "perc": 18.9189
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Rowallane",
         "category": "FSME",
         "perc": 16.027
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1377,26 +1417,58 @@
         "group": "Rowallane",
         "category": "Age 65+",
         "perc": 20
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Rowallane",
+        "category": "destHEpct",
+        "perc": 47.6
+      },
+      {
+        "group": "Rowallane",
+        "category": "destFEpct",
+        "perc": 27.4
+      },
+      {
+        "group": "Rowallane",
+        "category": "destEmploypct",
+        "perc": 13.2
+      },
+      {
+        "group": "Rowallane",
+        "category": "destTrainpct",
+        "perc": 8
+      },
+      {
+        "group": "Rowallane",
+        "category": "destUnempUnkpct",
+        "perc": 3.8
       }
     ]
   },

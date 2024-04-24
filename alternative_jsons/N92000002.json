@@ -326,11 +326,11 @@
     },
     "Destination": {
       "value": {
-        "destHEpct": 50.4,
-        "destFEpct": 24.4,
-        "destEmploypct": 11.9,
-        "destTrainpct": 9.9,
-        "destUnempUnkpct": 3.4
+        "destHEpct": 43.7,
+        "destFEpct": 27.4,
+        "destEmploypct": 12.9,
+        "destTrainpct": 11.8,
+        "destUnempUnkpct": 4.2
       }
     },
     "PopChange": {
@@ -622,6 +622,28 @@
         "perc": 49.1879
       }
     ],
+    "LMS": [
+      {
+        "geography": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "geography": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
+      }
+    ],
     "BRES": [
       {
         "geography": "Northern Ireland",
@@ -649,19 +671,9 @@
         "geography": "Northern Ireland",
         "category": "FSME",
         "perc": 22.0341
-      },
-      {
-        "geography": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
-      {
-        "geography": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
       {
         "geography": "Northern Ireland",
         "category": "FSME",
@@ -708,26 +720,33 @@
         "geography": "Northern Ireland",
         "category": "Age 65+",
         "perc": 17.5578
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "geography": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "geography": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "geography": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "geography": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
       }
     ]
   },
@@ -1177,10 +1196,12 @@
     "provision_care": [],
     "religion_or_religion_brought_up_in": [],
     "sex": [],
+    "LMS": [],
     "BRES": [],
     "Primary": [],
     "PostPrimary": [],
-    "BroadAge": []
+    "BroadAge": [],
+    "Destination": []
   },
   "meta_data": {
     "MYETotal": [

@@ -566,6 +566,7 @@
         "perc": 49.5105
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -601,6 +602,33 @@
         "geography": "Cookstown",
         "category": "Age 65+",
         "perc": 15.749
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Cookstown",
+        "category": "destHEpct",
+        "perc": 40.7
+      },
+      {
+        "geography": "Cookstown",
+        "category": "destFEpct",
+        "perc": 27.9
+      },
+      {
+        "geography": "Cookstown",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "geography": "Cookstown",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "geography": "Cookstown",
+        "category": "destUnempUnkpct",
+        "perc": 5.6
       }
     ]
   },
@@ -836,54 +864,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Cookstown",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Cookstown",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Cookstown",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Cookstown",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Cookstown",
-        "category": "bad",
-        "perc": 5.5445
-      },
-      {
-        "group": "Cookstown",
-        "category": "fair",
-        "perc": 13.648
-      },
-      {
-        "group": "Cookstown",
-        "category": "good",
-        "perc": 28.0068
-      },
-      {
-        "group": "Cookstown",
-        "category": "very_bad",
-        "perc": 1.9578
-      },
-      {
-        "group": "Cookstown",
-        "category": "very_good",
-        "perc": 50.8428
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -908,34 +911,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Cookstown",
+        "category": "bad",
+        "perc": 5.5445
+      },
+      {
+        "group": "Cookstown",
+        "category": "fair",
+        "perc": 13.648
+      },
+      {
+        "group": "Cookstown",
+        "category": "good",
+        "perc": 28.0068
+      },
+      {
+        "group": "Cookstown",
+        "category": "very_bad",
+        "perc": 1.9578
+      },
+      {
+        "group": "Cookstown",
+        "category": "very_good",
+        "perc": 50.8428
       }
     ],
     "hh_size": [
-      {
-        "group": "Cookstown",
-        "category": "five_people",
-        "perc": 13.0831
-      },
-      {
-        "group": "Cookstown",
-        "category": "four_people",
-        "perc": 15.0477
-      },
-      {
-        "group": "Cookstown",
-        "category": "one_person",
-        "perc": 26.9455
-      },
-      {
-        "group": "Cookstown",
-        "category": "three_people",
-        "perc": 17.6929
-      },
-      {
-        "group": "Cookstown",
-        "category": "two_people",
-        "perc": 27.2308
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -960,44 +963,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Cookstown",
+        "category": "five_people",
+        "perc": 13.0831
+      },
+      {
+        "group": "Cookstown",
+        "category": "four_people",
+        "perc": 15.0477
+      },
+      {
+        "group": "Cookstown",
+        "category": "one_person",
+        "perc": 26.9455
+      },
+      {
+        "group": "Cookstown",
+        "category": "three_people",
+        "perc": 17.6929
+      },
+      {
+        "group": "Cookstown",
+        "category": "two_people",
+        "perc": 27.2308
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Cookstown",
-        "category": "apprenticeship",
-        "perc": 7.3001
-      },
-      {
-        "group": "Cookstown",
-        "category": "level_1_qualifications",
-        "perc": 5.5183
-      },
-      {
-        "group": "Cookstown",
-        "category": "level_2_qualifications",
-        "perc": 13.7983
-      },
-      {
-        "group": "Cookstown",
-        "category": "level_3_qualifications",
-        "perc": 14.6788
-      },
-      {
-        "group": "Cookstown",
-        "category": "level_4_qualifications_and_above",
-        "perc": 26.711
-      },
-      {
-        "group": "Cookstown",
-        "category": "no_qualifications",
-        "perc": 29.5881
-      },
-      {
-        "group": "Cookstown",
-        "category": "other_qualifications",
-        "perc": 2.4054
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1032,39 +1025,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Cookstown",
+        "category": "apprenticeship",
+        "perc": 7.3001
+      },
+      {
+        "group": "Cookstown",
+        "category": "level_1_qualifications",
+        "perc": 5.5183
+      },
+      {
+        "group": "Cookstown",
+        "category": "level_2_qualifications",
+        "perc": 13.7983
+      },
+      {
+        "group": "Cookstown",
+        "category": "level_3_qualifications",
+        "perc": 14.6788
+      },
+      {
+        "group": "Cookstown",
+        "category": "level_4_qualifications_and_above",
+        "perc": 26.711
+      },
+      {
+        "group": "Cookstown",
+        "category": "no_qualifications",
+        "perc": 29.5881
+      },
+      {
+        "group": "Cookstown",
+        "category": "other_qualifications",
+        "perc": 2.4054
       }
     ],
     "cob": [
-      {
-        "group": "Cookstown",
-        "category": "england",
-        "perc": 2.5025
-      },
-      {
-        "group": "Cookstown",
-        "category": "northern_ireland",
-        "perc": 86.3254
-      },
-      {
-        "group": "Cookstown",
-        "category": "other_cob",
-        "perc": 9.3114
-      },
-      {
-        "group": "Cookstown",
-        "category": "republic_of_ireland",
-        "perc": 1.2594
-      },
-      {
-        "group": "Cookstown",
-        "category": "scotland",
-        "perc": 0.5241
-      },
-      {
-        "group": "Cookstown",
-        "category": "wales",
-        "perc": 0.0772
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1094,19 +1092,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Cookstown",
+        "category": "england",
+        "perc": 2.5025
+      },
+      {
+        "group": "Cookstown",
+        "category": "northern_ireland",
+        "perc": 86.3254
+      },
+      {
+        "group": "Cookstown",
+        "category": "other_cob",
+        "perc": 9.3114
+      },
+      {
+        "group": "Cookstown",
+        "category": "republic_of_ireland",
+        "perc": 1.2594
+      },
+      {
+        "group": "Cookstown",
+        "category": "scotland",
+        "perc": 0.5241
+      },
+      {
+        "group": "Cookstown",
+        "category": "wales",
+        "perc": 0.0772
       }
     ],
     "mainlang": [
-      {
-        "group": "Cookstown",
-        "category": "english",
-        "perc": 92.252
-      },
-      {
-        "group": "Cookstown",
-        "category": "other_languages",
-        "perc": 7.748
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1116,29 +1134,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Cookstown",
+        "category": "english",
+        "perc": 92.252
+      },
+      {
+        "group": "Cookstown",
+        "category": "other_languages",
+        "perc": 7.748
       }
     ],
     "age": [
-      {
-        "group": "Cookstown",
-        "category": "a0to14",
-        "perc": 21.3145
-      },
-      {
-        "group": "Cookstown",
-        "category": "a15to39",
-        "perc": 31.7504
-      },
-      {
-        "group": "Cookstown",
-        "category": "a40to64",
-        "perc": 31.1776
-      },
-      {
-        "group": "Cookstown",
-        "category": "a65plus",
-        "perc": 15.7574
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1158,29 +1166,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Cookstown",
+        "category": "a0to14",
+        "perc": 21.3145
+      },
+      {
+        "group": "Cookstown",
+        "category": "a15to39",
+        "perc": 31.7504
+      },
+      {
+        "group": "Cookstown",
+        "category": "a40to64",
+        "perc": 31.1776
+      },
+      {
+        "group": "Cookstown",
+        "category": "a65plus",
+        "perc": 15.7574
       }
     ],
     "provision_care": [
-      {
-        "group": "Cookstown",
-        "category": "a1to19_hours",
-        "perc": 4.6778
-      },
-      {
-        "group": "Cookstown",
-        "category": "a20to49_hours",
-        "perc": 3.2086
-      },
-      {
-        "group": "Cookstown",
-        "category": "a50plus_hours",
-        "perc": 3.7928
-      },
-      {
-        "group": "Cookstown",
-        "category": "no_care",
-        "perc": 88.3207
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1200,29 +1208,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Cookstown",
+        "category": "a1to19_hours",
+        "perc": 4.6778
+      },
+      {
+        "group": "Cookstown",
+        "category": "a20to49_hours",
+        "perc": 3.2086
+      },
+      {
+        "group": "Cookstown",
+        "category": "a50plus_hours",
+        "perc": 3.7928
+      },
+      {
+        "group": "Cookstown",
+        "category": "no_care",
+        "perc": 88.3207
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Cookstown",
-        "category": "catholic",
-        "perc": 59.5881
-      },
-      {
-        "group": "Cookstown",
-        "category": "none",
-        "perc": 5.8695
-      },
-      {
-        "group": "Cookstown",
-        "category": "other_religions",
-        "perc": 0.6946
-      },
-      {
-        "group": "Cookstown",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 33.8478
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1242,19 +1250,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Cookstown",
+        "category": "catholic",
+        "perc": 59.5881
+      },
+      {
+        "group": "Cookstown",
+        "category": "none",
+        "perc": 5.8695
+      },
+      {
+        "group": "Cookstown",
+        "category": "other_religions",
+        "perc": 0.6946
+      },
+      {
+        "group": "Cookstown",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 33.8478
       }
     ],
     "sex": [
-      {
-        "group": "Cookstown",
-        "category": "females",
-        "perc": 50.4895
-      },
-      {
-        "group": "Cookstown",
-        "category": "males",
-        "perc": 49.5105
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1264,6 +1282,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Cookstown",
+        "category": "females",
+        "perc": 50.4895
+      },
+      {
+        "group": "Cookstown",
+        "category": "males",
+        "perc": 49.5105
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1290,36 +1340,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Cookstown",
         "category": "FSME",
         "perc": 20.2319
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Cookstown",
         "category": "FSME",
         "perc": 21.5142
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1382,26 +1422,58 @@
         "group": "Cookstown",
         "category": "Age 65+",
         "perc": 15.749
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Cookstown",
+        "category": "destHEpct",
+        "perc": 40.7
+      },
+      {
+        "group": "Cookstown",
+        "category": "destFEpct",
+        "perc": 27.9
+      },
+      {
+        "group": "Cookstown",
+        "category": "destEmploypct",
+        "perc": 14.4
+      },
+      {
+        "group": "Cookstown",
+        "category": "destTrainpct",
+        "perc": 11.5
+      },
+      {
+        "group": "Cookstown",
+        "category": "destUnempUnkpct",
+        "perc": 5.6
       }
     ]
   },

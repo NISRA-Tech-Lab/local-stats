@@ -551,6 +551,7 @@
         "perc": 49.4194
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,33 @@
         "geography": "Foyleside",
         "category": "Age 65+",
         "perc": 17.9954
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Foyleside",
+        "category": "destHEpct",
+        "perc": 43.9
+      },
+      {
+        "geography": "Foyleside",
+        "category": "destFEpct",
+        "perc": 24.6
+      },
+      {
+        "geography": "Foyleside",
+        "category": "destEmploypct",
+        "perc": 15
+      },
+      {
+        "geography": "Foyleside",
+        "category": "destTrainpct",
+        "perc": 12.3
+      },
+      {
+        "geography": "Foyleside",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },
@@ -821,54 +849,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Foyleside",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Foyleside",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Foyleside",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Foyleside",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Foyleside",
-        "category": "bad",
-        "perc": 7.9463
-      },
-      {
-        "group": "Foyleside",
-        "category": "fair",
-        "perc": 15.2607
-      },
-      {
-        "group": "Foyleside",
-        "category": "good",
-        "perc": 27.4818
-      },
-      {
-        "group": "Foyleside",
-        "category": "very_bad",
-        "perc": 2.6639
-      },
-      {
-        "group": "Foyleside",
-        "category": "very_good",
-        "perc": 46.6473
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +896,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Foyleside",
+        "category": "bad",
+        "perc": 7.9463
+      },
+      {
+        "group": "Foyleside",
+        "category": "fair",
+        "perc": 15.2607
+      },
+      {
+        "group": "Foyleside",
+        "category": "good",
+        "perc": 27.4818
+      },
+      {
+        "group": "Foyleside",
+        "category": "very_bad",
+        "perc": 2.6639
+      },
+      {
+        "group": "Foyleside",
+        "category": "very_good",
+        "perc": 46.6473
       }
     ],
     "hh_size": [
-      {
-        "group": "Foyleside",
-        "category": "five_people",
-        "perc": 7.7204
-      },
-      {
-        "group": "Foyleside",
-        "category": "four_people",
-        "perc": 11.2088
-      },
-      {
-        "group": "Foyleside",
-        "category": "one_person",
-        "perc": 35.2893
-      },
-      {
-        "group": "Foyleside",
-        "category": "three_people",
-        "perc": 17.2796
-      },
-      {
-        "group": "Foyleside",
-        "category": "two_people",
-        "perc": 28.5019
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +948,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Foyleside",
+        "category": "five_people",
+        "perc": 7.7204
+      },
+      {
+        "group": "Foyleside",
+        "category": "four_people",
+        "perc": 11.2088
+      },
+      {
+        "group": "Foyleside",
+        "category": "one_person",
+        "perc": 35.2893
+      },
+      {
+        "group": "Foyleside",
+        "category": "three_people",
+        "perc": 17.2796
+      },
+      {
+        "group": "Foyleside",
+        "category": "two_people",
+        "perc": 28.5019
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Foyleside",
-        "category": "apprenticeship",
-        "perc": 4.9502
-      },
-      {
-        "group": "Foyleside",
-        "category": "level_1_qualifications",
-        "perc": 5.5552
-      },
-      {
-        "group": "Foyleside",
-        "category": "level_2_qualifications",
-        "perc": 12.2241
-      },
-      {
-        "group": "Foyleside",
-        "category": "level_3_qualifications",
-        "perc": 18.1849
-      },
-      {
-        "group": "Foyleside",
-        "category": "level_4_qualifications_and_above",
-        "perc": 32.9323
-      },
-      {
-        "group": "Foyleside",
-        "category": "no_qualifications",
-        "perc": 24.4414
-      },
-      {
-        "group": "Foyleside",
-        "category": "other_qualifications",
-        "perc": 1.7119
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1010,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Foyleside",
+        "category": "apprenticeship",
+        "perc": 4.9502
+      },
+      {
+        "group": "Foyleside",
+        "category": "level_1_qualifications",
+        "perc": 5.5552
+      },
+      {
+        "group": "Foyleside",
+        "category": "level_2_qualifications",
+        "perc": 12.2241
+      },
+      {
+        "group": "Foyleside",
+        "category": "level_3_qualifications",
+        "perc": 18.1849
+      },
+      {
+        "group": "Foyleside",
+        "category": "level_4_qualifications_and_above",
+        "perc": 32.9323
+      },
+      {
+        "group": "Foyleside",
+        "category": "no_qualifications",
+        "perc": 24.4414
+      },
+      {
+        "group": "Foyleside",
+        "category": "other_qualifications",
+        "perc": 1.7119
       }
     ],
     "cob": [
-      {
-        "group": "Foyleside",
-        "category": "england",
-        "perc": 3.5015
-      },
-      {
-        "group": "Foyleside",
-        "category": "northern_ireland",
-        "perc": 87.2296
-      },
-      {
-        "group": "Foyleside",
-        "category": "other_cob",
-        "perc": 3.2453
-      },
-      {
-        "group": "Foyleside",
-        "category": "republic_of_ireland",
-        "perc": 5.0444
-      },
-      {
-        "group": "Foyleside",
-        "category": "scotland",
-        "perc": 0.854
-      },
-      {
-        "group": "Foyleside",
-        "category": "wales",
-        "perc": 0.1253
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1077,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Foyleside",
+        "category": "england",
+        "perc": 3.5015
+      },
+      {
+        "group": "Foyleside",
+        "category": "northern_ireland",
+        "perc": 87.2296
+      },
+      {
+        "group": "Foyleside",
+        "category": "other_cob",
+        "perc": 3.2453
+      },
+      {
+        "group": "Foyleside",
+        "category": "republic_of_ireland",
+        "perc": 5.0444
+      },
+      {
+        "group": "Foyleside",
+        "category": "scotland",
+        "perc": 0.854
+      },
+      {
+        "group": "Foyleside",
+        "category": "wales",
+        "perc": 0.1253
       }
     ],
     "mainlang": [
-      {
-        "group": "Foyleside",
-        "category": "english",
-        "perc": 97.7762
-      },
-      {
-        "group": "Foyleside",
-        "category": "other_languages",
-        "perc": 2.2238
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1119,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Foyleside",
+        "category": "english",
+        "perc": 97.7762
+      },
+      {
+        "group": "Foyleside",
+        "category": "other_languages",
+        "perc": 2.2238
       }
     ],
     "age": [
-      {
-        "group": "Foyleside",
-        "category": "a0to14",
-        "perc": 16.1885
-      },
-      {
-        "group": "Foyleside",
-        "category": "a15to39",
-        "perc": 33.7659
-      },
-      {
-        "group": "Foyleside",
-        "category": "a40to64",
-        "perc": 32.2461
-      },
-      {
-        "group": "Foyleside",
-        "category": "a65plus",
-        "perc": 17.7994
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1151,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Foyleside",
+        "category": "a0to14",
+        "perc": 16.1885
+      },
+      {
+        "group": "Foyleside",
+        "category": "a15to39",
+        "perc": 33.7659
+      },
+      {
+        "group": "Foyleside",
+        "category": "a40to64",
+        "perc": 32.2461
+      },
+      {
+        "group": "Foyleside",
+        "category": "a65plus",
+        "perc": 17.7994
       }
     ],
     "provision_care": [
-      {
-        "group": "Foyleside",
-        "category": "a1to19_hours",
-        "perc": 4.9077
-      },
-      {
-        "group": "Foyleside",
-        "category": "a20to49_hours",
-        "perc": 3.4396
-      },
-      {
-        "group": "Foyleside",
-        "category": "a50plus_hours",
-        "perc": 4.4163
-      },
-      {
-        "group": "Foyleside",
-        "category": "no_care",
-        "perc": 87.2363
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1193,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Foyleside",
+        "category": "a1to19_hours",
+        "perc": 4.9077
+      },
+      {
+        "group": "Foyleside",
+        "category": "a20to49_hours",
+        "perc": 3.4396
+      },
+      {
+        "group": "Foyleside",
+        "category": "a50plus_hours",
+        "perc": 4.4163
+      },
+      {
+        "group": "Foyleside",
+        "category": "no_care",
+        "perc": 87.2363
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Foyleside",
-        "category": "catholic",
-        "perc": 90.2778
-      },
-      {
-        "group": "Foyleside",
-        "category": "none",
-        "perc": 3.6828
-      },
-      {
-        "group": "Foyleside",
-        "category": "other_religions",
-        "perc": 0.888
-      },
-      {
-        "group": "Foyleside",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 5.1514
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1235,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Foyleside",
+        "category": "catholic",
+        "perc": 90.2778
+      },
+      {
+        "group": "Foyleside",
+        "category": "none",
+        "perc": 3.6828
+      },
+      {
+        "group": "Foyleside",
+        "category": "other_religions",
+        "perc": 0.888
+      },
+      {
+        "group": "Foyleside",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 5.1514
       }
     ],
     "sex": [
-      {
-        "group": "Foyleside",
-        "category": "females",
-        "perc": 50.5806
-      },
-      {
-        "group": "Foyleside",
-        "category": "males",
-        "perc": 49.4194
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1267,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Foyleside",
+        "category": "females",
+        "perc": 50.5806
+      },
+      {
+        "group": "Foyleside",
+        "category": "males",
+        "perc": 49.4194
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1325,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Foyleside",
         "category": "FSME",
         "perc": 30.2918
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Foyleside",
         "category": "FSME",
         "perc": 26.9358
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1407,58 @@
         "group": "Foyleside",
         "category": "Age 65+",
         "perc": 17.9954
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Foyleside",
+        "category": "destHEpct",
+        "perc": 43.9
+      },
+      {
+        "group": "Foyleside",
+        "category": "destFEpct",
+        "perc": 24.6
+      },
+      {
+        "group": "Foyleside",
+        "category": "destEmploypct",
+        "perc": 15
+      },
+      {
+        "group": "Foyleside",
+        "category": "destTrainpct",
+        "perc": 12.3
+      },
+      {
+        "group": "Foyleside",
+        "category": "destUnempUnkpct",
+        "perc": 4.3
       }
     ]
   },

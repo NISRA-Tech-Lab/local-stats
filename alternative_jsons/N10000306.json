@@ -616,6 +616,7 @@
         "perc": 46.9515
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -651,6 +652,33 @@
         "geography": "Court",
         "category": "Age 65+",
         "perc": 15.2122
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Court",
+        "category": "destHEpct",
+        "perc": 31.6
+      },
+      {
+        "geography": "Court",
+        "category": "destFEpct",
+        "perc": 16.5
+      },
+      {
+        "geography": "Court",
+        "category": "destEmploypct",
+        "perc": 20.2
+      },
+      {
+        "geography": "Court",
+        "category": "destTrainpct",
+        "perc": 23.5
+      },
+      {
+        "geography": "Court",
+        "category": "destUnempUnkpct",
+        "perc": 8.1
       }
     ]
   },
@@ -886,54 +914,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Court",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Court",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Court",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Court",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Court",
-        "category": "bad",
-        "perc": 11.0232
-      },
-      {
-        "group": "Court",
-        "category": "fair",
-        "perc": 17.2517
-      },
-      {
-        "group": "Court",
-        "category": "good",
-        "perc": 26.4197
-      },
-      {
-        "group": "Court",
-        "category": "very_bad",
-        "perc": 4.2928
-      },
-      {
-        "group": "Court",
-        "category": "very_good",
-        "perc": 41.0127
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -958,34 +961,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Court",
+        "category": "bad",
+        "perc": 11.0232
+      },
+      {
+        "group": "Court",
+        "category": "fair",
+        "perc": 17.2517
+      },
+      {
+        "group": "Court",
+        "category": "good",
+        "perc": 26.4197
+      },
+      {
+        "group": "Court",
+        "category": "very_bad",
+        "perc": 4.2928
+      },
+      {
+        "group": "Court",
+        "category": "very_good",
+        "perc": 41.0127
       }
     ],
     "hh_size": [
-      {
-        "group": "Court",
-        "category": "five_people",
-        "perc": 5.5152
-      },
-      {
-        "group": "Court",
-        "category": "four_people",
-        "perc": 9.8906
-      },
-      {
-        "group": "Court",
-        "category": "one_person",
-        "perc": 39.5952
-      },
-      {
-        "group": "Court",
-        "category": "three_people",
-        "perc": 17.1022
-      },
-      {
-        "group": "Court",
-        "category": "two_people",
-        "perc": 27.8968
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -1010,44 +1013,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Court",
+        "category": "five_people",
+        "perc": 5.5152
+      },
+      {
+        "group": "Court",
+        "category": "four_people",
+        "perc": 9.8906
+      },
+      {
+        "group": "Court",
+        "category": "one_person",
+        "perc": 39.5952
+      },
+      {
+        "group": "Court",
+        "category": "three_people",
+        "perc": 17.1022
+      },
+      {
+        "group": "Court",
+        "category": "two_people",
+        "perc": 27.8968
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Court",
-        "category": "apprenticeship",
-        "perc": 5.9573
-      },
-      {
-        "group": "Court",
-        "category": "level_1_qualifications",
-        "perc": 7.725
-      },
-      {
-        "group": "Court",
-        "category": "level_2_qualifications",
-        "perc": 14.6924
-      },
-      {
-        "group": "Court",
-        "category": "level_3_qualifications",
-        "perc": 13.9998
-      },
-      {
-        "group": "Court",
-        "category": "level_4_qualifications_and_above",
-        "perc": 17.738
-      },
-      {
-        "group": "Court",
-        "category": "no_qualifications",
-        "perc": 37.6684
-      },
-      {
-        "group": "Court",
-        "category": "other_qualifications",
-        "perc": 2.2192
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1082,39 +1075,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Court",
+        "category": "apprenticeship",
+        "perc": 5.9573
+      },
+      {
+        "group": "Court",
+        "category": "level_1_qualifications",
+        "perc": 7.725
+      },
+      {
+        "group": "Court",
+        "category": "level_2_qualifications",
+        "perc": 14.6924
+      },
+      {
+        "group": "Court",
+        "category": "level_3_qualifications",
+        "perc": 13.9998
+      },
+      {
+        "group": "Court",
+        "category": "level_4_qualifications_and_above",
+        "perc": 17.738
+      },
+      {
+        "group": "Court",
+        "category": "no_qualifications",
+        "perc": 37.6684
+      },
+      {
+        "group": "Court",
+        "category": "other_qualifications",
+        "perc": 2.2192
       }
     ],
     "cob": [
-      {
-        "group": "Court",
-        "category": "england",
-        "perc": 2.342
-      },
-      {
-        "group": "Court",
-        "category": "northern_ireland",
-        "perc": 89.3652
-      },
-      {
-        "group": "Court",
-        "category": "other_cob",
-        "perc": 6.3689
-      },
-      {
-        "group": "Court",
-        "category": "republic_of_ireland",
-        "perc": 0.8603
-      },
-      {
-        "group": "Court",
-        "category": "scotland",
-        "perc": 0.9649
-      },
-      {
-        "group": "Court",
-        "category": "wales",
-        "perc": 0.0986
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1144,19 +1142,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Court",
+        "category": "england",
+        "perc": 2.342
+      },
+      {
+        "group": "Court",
+        "category": "northern_ireland",
+        "perc": 89.3652
+      },
+      {
+        "group": "Court",
+        "category": "other_cob",
+        "perc": 6.3689
+      },
+      {
+        "group": "Court",
+        "category": "republic_of_ireland",
+        "perc": 0.8603
+      },
+      {
+        "group": "Court",
+        "category": "scotland",
+        "perc": 0.9649
+      },
+      {
+        "group": "Court",
+        "category": "wales",
+        "perc": 0.0986
       }
     ],
     "mainlang": [
-      {
-        "group": "Court",
-        "category": "english",
-        "perc": 95.502
-      },
-      {
-        "group": "Court",
-        "category": "other_languages",
-        "perc": 4.498
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1166,29 +1184,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Court",
+        "category": "english",
+        "perc": 95.502
+      },
+      {
+        "group": "Court",
+        "category": "other_languages",
+        "perc": 4.498
       }
     ],
     "age": [
-      {
-        "group": "Court",
-        "category": "a0to14",
-        "perc": 20.7886
-      },
-      {
-        "group": "Court",
-        "category": "a15to39",
-        "perc": 33.5504
-      },
-      {
-        "group": "Court",
-        "category": "a40to64",
-        "perc": 30.6079
-      },
-      {
-        "group": "Court",
-        "category": "a65plus",
-        "perc": 15.053
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1208,29 +1216,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Court",
+        "category": "a0to14",
+        "perc": 20.7886
+      },
+      {
+        "group": "Court",
+        "category": "a15to39",
+        "perc": 33.5504
+      },
+      {
+        "group": "Court",
+        "category": "a40to64",
+        "perc": 30.6079
+      },
+      {
+        "group": "Court",
+        "category": "a65plus",
+        "perc": 15.053
       }
     ],
     "provision_care": [
-      {
-        "group": "Court",
-        "category": "a1to19_hours",
-        "perc": 4.12
-      },
-      {
-        "group": "Court",
-        "category": "a20to49_hours",
-        "perc": 4.0114
-      },
-      {
-        "group": "Court",
-        "category": "a50plus_hours",
-        "perc": 5.043
-      },
-      {
-        "group": "Court",
-        "category": "no_care",
-        "perc": 86.8257
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1250,29 +1258,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Court",
+        "category": "a1to19_hours",
+        "perc": 4.12
+      },
+      {
+        "group": "Court",
+        "category": "a20to49_hours",
+        "perc": 4.0114
+      },
+      {
+        "group": "Court",
+        "category": "a50plus_hours",
+        "perc": 5.043
+      },
+      {
+        "group": "Court",
+        "category": "no_care",
+        "perc": 86.8257
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Court",
-        "category": "catholic",
-        "perc": 36.1195
-      },
-      {
-        "group": "Court",
-        "category": "none",
-        "perc": 9.2427
-      },
-      {
-        "group": "Court",
-        "category": "other_religions",
-        "perc": 1.9447
-      },
-      {
-        "group": "Court",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 52.6931
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1292,19 +1300,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Court",
+        "category": "catholic",
+        "perc": 36.1195
+      },
+      {
+        "group": "Court",
+        "category": "none",
+        "perc": 9.2427
+      },
+      {
+        "group": "Court",
+        "category": "other_religions",
+        "perc": 1.9447
+      },
+      {
+        "group": "Court",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 52.6931
       }
     ],
     "sex": [
-      {
-        "group": "Court",
-        "category": "females",
-        "perc": 53.0485
-      },
-      {
-        "group": "Court",
-        "category": "males",
-        "perc": 46.9515
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1314,6 +1332,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Court",
+        "category": "females",
+        "perc": 53.0485
+      },
+      {
+        "group": "Court",
+        "category": "males",
+        "perc": 46.9515
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1340,36 +1390,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Court",
         "category": "FSME",
         "perc": 39.924
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Court",
         "category": "FSME",
         "perc": 36.9575
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1432,26 +1472,58 @@
         "group": "Court",
         "category": "Age 65+",
         "perc": 15.2122
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Court",
+        "category": "destHEpct",
+        "perc": 31.6
+      },
+      {
+        "group": "Court",
+        "category": "destFEpct",
+        "perc": 16.5
+      },
+      {
+        "group": "Court",
+        "category": "destEmploypct",
+        "perc": 20.2
+      },
+      {
+        "group": "Court",
+        "category": "destTrainpct",
+        "perc": 23.5
+      },
+      {
+        "group": "Court",
+        "category": "destUnempUnkpct",
+        "perc": 8.1
       }
     ]
   },

@@ -551,6 +551,7 @@
         "perc": 49.3426
       }
     ],
+    "LMS": [],
     "BRES": [],
     "Primary": [
       {
@@ -586,6 +587,31 @@
         "geography": "Downshire West",
         "category": "Age 65+",
         "perc": 21.1349
+      }
+    ],
+    "Destination": [
+      {
+        "geography": "Downshire West",
+        "category": "destHEpct",
+        "perc": 63.9
+      },
+      {
+        "geography": "Downshire West",
+        "category": "destFEpct",
+        "perc": 22.8
+      },
+      {
+        "geography": "Downshire West",
+        "category": "destEmploypct",
+        "perc": 6.3
+      },
+      {
+        "geography": "Downshire West",
+        "category": "destTrainpct"
+      },
+      {
+        "geography": "Downshire West",
+        "category": "destUnempUnkpct"
       }
     ]
   },
@@ -821,54 +847,29 @@
   "grouped_data_areacompare": {
     "population": [
       {
-        "group": "Downshire West",
+        "group": "Northern Ireland",
         "category": "all",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Downshire West",
         "category": "all",
         "perc": 100
       }
     ],
     "households": [
       {
-        "group": "Downshire West",
+        "group": "Northern Ireland",
         "category": "all_households",
         "perc": 100
       },
       {
-        "group": "Northern Ireland",
+        "group": "Downshire West",
         "category": "all_households",
         "perc": 100
       }
     ],
     "general_health": [
-      {
-        "group": "Downshire West",
-        "category": "bad",
-        "perc": 3.845
-      },
-      {
-        "group": "Downshire West",
-        "category": "fair",
-        "perc": 11.9132
-      },
-      {
-        "group": "Downshire West",
-        "category": "good",
-        "perc": 29.1897
-      },
-      {
-        "group": "Downshire West",
-        "category": "very_bad",
-        "perc": 1.1983
-      },
-      {
-        "group": "Downshire West",
-        "category": "very_good",
-        "perc": 53.8538
-      },
       {
         "group": "Northern Ireland",
         "category": "bad",
@@ -893,34 +894,34 @@
         "group": "Northern Ireland",
         "category": "very_good",
         "perc": 49.9757
+      },
+      {
+        "group": "Downshire West",
+        "category": "bad",
+        "perc": 3.845
+      },
+      {
+        "group": "Downshire West",
+        "category": "fair",
+        "perc": 11.9132
+      },
+      {
+        "group": "Downshire West",
+        "category": "good",
+        "perc": 29.1897
+      },
+      {
+        "group": "Downshire West",
+        "category": "very_bad",
+        "perc": 1.1983
+      },
+      {
+        "group": "Downshire West",
+        "category": "very_good",
+        "perc": 53.8538
       }
     ],
     "hh_size": [
-      {
-        "group": "Downshire West",
-        "category": "five_people",
-        "perc": 6.8283
-      },
-      {
-        "group": "Downshire West",
-        "category": "four_people",
-        "perc": 14.1967
-      },
-      {
-        "group": "Downshire West",
-        "category": "one_person",
-        "perc": 28.795
-      },
-      {
-        "group": "Downshire West",
-        "category": "three_people",
-        "perc": 14.5845
-      },
-      {
-        "group": "Downshire West",
-        "category": "two_people",
-        "perc": 35.5956
-      },
       {
         "group": "Northern Ireland",
         "category": "five_people",
@@ -945,44 +946,34 @@
         "group": "Northern Ireland",
         "category": "two_people",
         "perc": 30.4284
+      },
+      {
+        "group": "Downshire West",
+        "category": "five_people",
+        "perc": 6.8283
+      },
+      {
+        "group": "Downshire West",
+        "category": "four_people",
+        "perc": 14.1967
+      },
+      {
+        "group": "Downshire West",
+        "category": "one_person",
+        "perc": 28.795
+      },
+      {
+        "group": "Downshire West",
+        "category": "three_people",
+        "perc": 14.5845
+      },
+      {
+        "group": "Downshire West",
+        "category": "two_people",
+        "perc": 35.5956
       }
     ],
     "highest_level_of_qualifications": [
-      {
-        "group": "Downshire West",
-        "category": "apprenticeship",
-        "perc": 5.3747
-      },
-      {
-        "group": "Downshire West",
-        "category": "level_1_qualifications",
-        "perc": 4.7466
-      },
-      {
-        "group": "Downshire West",
-        "category": "level_2_qualifications",
-        "perc": 12.541
-      },
-      {
-        "group": "Downshire West",
-        "category": "level_3_qualifications",
-        "perc": 14.1256
-      },
-      {
-        "group": "Downshire West",
-        "category": "level_4_qualifications_and_above",
-        "perc": 44.0186
-      },
-      {
-        "group": "Downshire West",
-        "category": "no_qualifications",
-        "perc": 16.8665
-      },
-      {
-        "group": "Downshire West",
-        "category": "other_qualifications",
-        "perc": 2.3269
-      },
       {
         "group": "Northern Ireland",
         "category": "apprenticeship",
@@ -1017,39 +1008,44 @@
         "group": "Northern Ireland",
         "category": "other_qualifications",
         "perc": 2.2358
+      },
+      {
+        "group": "Downshire West",
+        "category": "apprenticeship",
+        "perc": 5.3747
+      },
+      {
+        "group": "Downshire West",
+        "category": "level_1_qualifications",
+        "perc": 4.7466
+      },
+      {
+        "group": "Downshire West",
+        "category": "level_2_qualifications",
+        "perc": 12.541
+      },
+      {
+        "group": "Downshire West",
+        "category": "level_3_qualifications",
+        "perc": 14.1256
+      },
+      {
+        "group": "Downshire West",
+        "category": "level_4_qualifications_and_above",
+        "perc": 44.0186
+      },
+      {
+        "group": "Downshire West",
+        "category": "no_qualifications",
+        "perc": 16.8665
+      },
+      {
+        "group": "Downshire West",
+        "category": "other_qualifications",
+        "perc": 2.3269
       }
     ],
     "cob": [
-      {
-        "group": "Downshire West",
-        "category": "england",
-        "perc": 4.8868
-      },
-      {
-        "group": "Downshire West",
-        "category": "northern_ireland",
-        "perc": 87.3175
-      },
-      {
-        "group": "Downshire West",
-        "category": "other_cob",
-        "perc": 4.6134
-      },
-      {
-        "group": "Downshire West",
-        "category": "republic_of_ireland",
-        "perc": 1.8849
-      },
-      {
-        "group": "Downshire West",
-        "category": "scotland",
-        "perc": 1.0879
-      },
-      {
-        "group": "Downshire West",
-        "category": "wales",
-        "perc": 0.2094
-      },
       {
         "group": "Northern Ireland",
         "category": "england",
@@ -1079,19 +1075,39 @@
         "group": "Northern Ireland",
         "category": "wales",
         "perc": 0.1469
+      },
+      {
+        "group": "Downshire West",
+        "category": "england",
+        "perc": 4.8868
+      },
+      {
+        "group": "Downshire West",
+        "category": "northern_ireland",
+        "perc": 87.3175
+      },
+      {
+        "group": "Downshire West",
+        "category": "other_cob",
+        "perc": 4.6134
+      },
+      {
+        "group": "Downshire West",
+        "category": "republic_of_ireland",
+        "perc": 1.8849
+      },
+      {
+        "group": "Downshire West",
+        "category": "scotland",
+        "perc": 1.0879
+      },
+      {
+        "group": "Downshire West",
+        "category": "wales",
+        "perc": 0.2094
       }
     ],
     "mainlang": [
-      {
-        "group": "Downshire West",
-        "category": "english",
-        "perc": 98.0512
-      },
-      {
-        "group": "Downshire West",
-        "category": "other_languages",
-        "perc": 1.9488
-      },
       {
         "group": "Northern Ireland",
         "category": "english",
@@ -1101,29 +1117,19 @@
         "group": "Northern Ireland",
         "category": "other_languages",
         "perc": 4.6338
+      },
+      {
+        "group": "Downshire West",
+        "category": "english",
+        "perc": 98.0512
+      },
+      {
+        "group": "Downshire West",
+        "category": "other_languages",
+        "perc": 1.9488
       }
     ],
     "age": [
-      {
-        "group": "Downshire West",
-        "category": "a0to14",
-        "perc": 17.3647
-      },
-      {
-        "group": "Downshire West",
-        "category": "a15to39",
-        "perc": 26.8179
-      },
-      {
-        "group": "Downshire West",
-        "category": "a40to64",
-        "perc": 34.7644
-      },
-      {
-        "group": "Downshire West",
-        "category": "a65plus",
-        "perc": 21.0529
-      },
       {
         "group": "Northern Ireland",
         "category": "a0to14",
@@ -1143,29 +1149,29 @@
         "group": "Northern Ireland",
         "category": "a65plus",
         "perc": 17.1543
+      },
+      {
+        "group": "Downshire West",
+        "category": "a0to14",
+        "perc": 17.3647
+      },
+      {
+        "group": "Downshire West",
+        "category": "a15to39",
+        "perc": 26.8179
+      },
+      {
+        "group": "Downshire West",
+        "category": "a40to64",
+        "perc": 34.7644
+      },
+      {
+        "group": "Downshire West",
+        "category": "a65plus",
+        "perc": 21.0529
       }
     ],
     "provision_care": [
-      {
-        "group": "Downshire West",
-        "category": "a1to19_hours",
-        "perc": 7.5174
-      },
-      {
-        "group": "Downshire West",
-        "category": "a20to49_hours",
-        "perc": 2.4955
-      },
-      {
-        "group": "Downshire West",
-        "category": "a50plus_hours",
-        "perc": 3.0624
-      },
-      {
-        "group": "Downshire West",
-        "category": "no_care",
-        "perc": 86.9246
-      },
       {
         "group": "Northern Ireland",
         "category": "a1to19_hours",
@@ -1185,29 +1191,29 @@
         "group": "Northern Ireland",
         "category": "no_care",
         "perc": 87.581
+      },
+      {
+        "group": "Downshire West",
+        "category": "a1to19_hours",
+        "perc": 7.5174
+      },
+      {
+        "group": "Downshire West",
+        "category": "a20to49_hours",
+        "perc": 2.4955
+      },
+      {
+        "group": "Downshire West",
+        "category": "a50plus_hours",
+        "perc": 3.0624
+      },
+      {
+        "group": "Downshire West",
+        "category": "no_care",
+        "perc": 86.9246
       }
     ],
     "religion_or_religion_brought_up_in": [
-      {
-        "group": "Downshire West",
-        "category": "catholic",
-        "perc": 17.7196
-      },
-      {
-        "group": "Downshire West",
-        "category": "none",
-        "perc": 10.9773
-      },
-      {
-        "group": "Downshire West",
-        "category": "other_religions",
-        "perc": 1.4485
-      },
-      {
-        "group": "Downshire West",
-        "category": "protestant_and_other_christian_including_christian_related",
-        "perc": 69.8546
-      },
       {
         "group": "Northern Ireland",
         "category": "catholic",
@@ -1227,19 +1233,29 @@
         "group": "Northern Ireland",
         "category": "protestant_and_other_christian_including_christian_related",
         "perc": 43.4824
+      },
+      {
+        "group": "Downshire West",
+        "category": "catholic",
+        "perc": 17.7196
+      },
+      {
+        "group": "Downshire West",
+        "category": "none",
+        "perc": 10.9773
+      },
+      {
+        "group": "Downshire West",
+        "category": "other_religions",
+        "perc": 1.4485
+      },
+      {
+        "group": "Downshire West",
+        "category": "protestant_and_other_christian_including_christian_related",
+        "perc": 69.8546
       }
     ],
     "sex": [
-      {
-        "group": "Downshire West",
-        "category": "females",
-        "perc": 50.6574
-      },
-      {
-        "group": "Downshire West",
-        "category": "males",
-        "perc": 49.3426
-      },
       {
         "group": "Northern Ireland",
         "category": "females",
@@ -1249,6 +1265,38 @@
         "group": "Northern Ireland",
         "category": "males",
         "perc": 49.1879
+      },
+      {
+        "group": "Downshire West",
+        "category": "females",
+        "perc": 50.6574
+      },
+      {
+        "group": "Downshire West",
+        "category": "males",
+        "perc": 49.3426
+      }
+    ],
+    "LMS": [
+      {
+        "group": "Northern Ireland",
+        "category": "EMPN",
+        "perc": 879000
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "EMPR",
+        "perc": 71.9
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "UNEMPR",
+        "perc": 2.2
+      },
+      {
+        "group": "Northern Ireland",
+        "category": "INACTR",
+        "perc": 26.3
       }
     ],
     "BRES": [
@@ -1275,36 +1323,26 @@
     ],
     "Primary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 22.0341
+      },
+      {
         "group": "Downshire West",
         "category": "FSME",
         "perc": 8.9516
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 22.0341
       }
     ],
     "PostPrimary": [
       {
+        "group": "Northern Ireland",
+        "category": "FSME",
+        "perc": 20.2967
+      },
+      {
         "group": "Downshire West",
         "category": "FSME",
         "perc": 7.1177
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
-      },
-      {
-        "group": "Northern Ireland",
-        "category": "FSME",
-        "perc": 20.2967
       }
     ],
     "BroadAge": [
@@ -1367,26 +1405,56 @@
         "group": "Downshire West",
         "category": "Age 65+",
         "perc": 21.1349
+      }
+    ],
+    "Destination": [
+      {
+        "group": "Northern Ireland",
+        "category": "destHEpct",
+        "perc": 43.7
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 0-15",
-        "perc": 20.3814
+        "category": "destFEpct",
+        "perc": 27.4
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 16-39",
-        "perc": 29.9075
+        "category": "destEmploypct",
+        "perc": 12.9
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 40-64",
-        "perc": 32.425
+        "category": "destTrainpct",
+        "perc": 11.8
       },
       {
         "group": "Northern Ireland",
-        "category": "Age 65+",
-        "perc": 17.2862
+        "category": "destUnempUnkpct",
+        "perc": 4.2
+      },
+      {
+        "group": "Downshire West",
+        "category": "destHEpct",
+        "perc": 63.9
+      },
+      {
+        "group": "Downshire West",
+        "category": "destFEpct",
+        "perc": 22.8
+      },
+      {
+        "group": "Downshire West",
+        "category": "destEmploypct",
+        "perc": 6.3
+      },
+      {
+        "group": "Downshire West",
+        "category": "destTrainpct"
+      },
+      {
+        "group": "Downshire West",
+        "category": "destUnempUnkpct"
       }
     ]
   },
