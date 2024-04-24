@@ -359,7 +359,7 @@
 	function moreData (subject, place) {
 
 		if (place.type != "ni") {
-			return "Also look at  " + subject + " data for <a href = '/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
+			return "Also look at  " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
 		} else {
 			return "";
 		}
