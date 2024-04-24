@@ -629,144 +629,7 @@
 
 		</div>
 		<!-- a19e9e -->
-		<div class="grid mt" bind:clientWidth={w}>
-			<div style="grid-column: span {cols};">
-				<h3>
-					<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
-					{#if data.place.type != "ni"}
-					
-					You are currently viewing <span style="color: #3878c5">{data.place.name}</span>
-						<span style="color: #00205b"
-							> 
-							<!-- {geog_types[data.place.type].name} -->
-							</span
-						>  
-						<p><span class="text-bold">Zoom and click on map to explore other areas </span></p>
-						{:else}
-					<p class="text-bold">Zoom and click on map to explore other areas </p>
-					<!-- <span style="color: #3878c5">{data.place.name}</span> -->
-					{/if}
-				</h3>
-			</div>
-			<div
-				id="map"
-				style="padding-right: 45px; grid-column: span {cols == 2
-					? 2
-					: cols && cols > 2
-						? cols - 1
-						: 1};  "
-			>
-				<Map
-					bind:map
-					location={{ bounds: data.place.bounds }}
-					options={{ fitBoundsOptions: { padding: 20 } }}
-					style={mapStyle}
-				>
-					{#each ["dz", "sdz", "dea", "lgd"] as key}
-						<MapSource {...mapSources[key]}>
-							<MapLayer
-								{...mapLayers[key]}
-								id="{key}-fill"
-								type="fill"
-								isChild={isChild[key]}
-								click={true}
-								selected={active.selected}
-								on:select={mapSelect}
-								highlight={true}
-								highlighted={active.highlighted}
-								hover={true}
-								hovered={active.hovered}
-								layout={{
-									visibility:
-										active.type == key ||
-										active.childType == key
-											? "visible"
-											: "none",
-								}}
-								paint={active.type == key
-									? mapPaint["fill-self"]
-									: active.childType == key
-										? mapPaint["fill-child"]
-										: mapPaint.fill}
-							/>
-							<MapLayer
-								{...mapLayers[key]}
-								id="{key}-bounds"
-								type="line"
-								selected={active.selected}
-								highlight={true}
-								highlighted={active.highlighted}
-								layout={{
-									visibility:
-										active.type == key ||
-										active.childType == key
-											? "visible"
-											: "none",
-								}}
-								paint={active.type == key
-									? mapPaint["line-active"]
-									: active.childType == key
-										? mapPaint["line-child"]
-										: mapPaint.line}
-							/>
-							<MapLayer
-								{...mapLayers[key]}
-								id="{key}-self"
-								type="line"
-								selected={active.selected}
-								layout={{
-									visibility:
-										active.type == key ? "visible" : "none",
-								}}
-								paint={active.type == key
-									? mapPaint["line-self"]
-									: mapPaint.line}
-							/>
-						</MapSource>
-					{/each}
-				</Map>
-			</div>
-			
-			<div>
-				{#if data.place.type != "ni"}
-					<span class="text-bold">Select a larger area containing {data.place.name} </span>
-					<span class="text-small">
-						{#each [...data.place.parents].reverse() as parent, i}
-							<span
-								style="display: block; margin-left: {i > 0
-									? (i - 1) * 15
-									: 0}px"
-								>{@html i > 0 ? "↳ " : ""}<a
-									href="{base}/{parent.code}"
-									data-sveltekit-noscroll>{parent.name}</a
-								></span
-							>
-						{/each}
-					</span>
-				{/if}
-			</div>
-			<div>
-				{#if data.place.children[0]}
-					<span class="text-bold"
-						>Select a {data.place.children[0]
-							? geog_types[data.place.children[0].type].name
-							: "Areas"} within {data.place.name}</span
-					><br />
-					<span class="text-small">
-						{#each data.place.children as child, i}
-							<a href="{base}/{child.code}" data-sveltekit-noscroll
-								>{child.name}</a
-							>{i < data.place.children.length - 1 ? ", " : ""}
-						{/each}
-					</span>
-				{:else}
-					<span class="muted"
-						>No areas below {data.place.name}
-						{geog_types[data.place.type].name}</span
-					>
-				{/if}
-			</div>
-		</div>
+		
 
 		 <div class="accordion" id="accordionPanelsStayOpenExample">
 			
@@ -1173,7 +1036,148 @@
 		more = ""
 	/> 
 
+	<div class="grid mt" bind:clientWidth={w}>
+		<div style="grid-column: span {cols};">
+			<h3>
+				<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
+				{#if data.place.type != "ni"}
+				
+				You are currently viewing <span style="color: #3878c5">{data.place.name}</span>
+					<span style="color: #00205b"
+						> 
+						<!-- {geog_types[data.place.type].name} -->
+						</span
+					>  
+					<p><span class="text-bold">Zoom and click on map to explore other areas </span></p>
+					{:else}
+				<p class="text-bold">Zoom and click on map to explore other areas </p>
+				<!-- <span style="color: #3878c5">{data.place.name}</span> -->
+				{/if}
+			</h3>
 		</div>
+		<div
+			id="map"
+			style="padding-right: 45px; grid-column: span {cols == 2
+				? 2
+				: cols && cols > 2
+					? cols - 1
+					: 1};  "
+		>
+			<Map
+				bind:map
+				location={{ bounds: data.place.bounds }}
+				options={{ fitBoundsOptions: { padding: 20 } }}
+				style={mapStyle}
+			>
+				{#each ["dz", "sdz", "dea", "lgd"] as key}
+					<MapSource {...mapSources[key]}>
+						<MapLayer
+							{...mapLayers[key]}
+							id="{key}-fill"
+							type="fill"
+							isChild={isChild[key]}
+							click={true}
+							selected={active.selected}
+							on:select={mapSelect}
+							highlight={true}
+							highlighted={active.highlighted}
+							hover={true}
+							hovered={active.hovered}
+							layout={{
+								visibility:
+									active.type == key ||
+									active.childType == key
+										? "visible"
+										: "none",
+							}}
+							paint={active.type == key
+								? mapPaint["fill-self"]
+								: active.childType == key
+									? mapPaint["fill-child"]
+									: mapPaint.fill}
+						/>
+						<MapLayer
+							{...mapLayers[key]}
+							id="{key}-bounds"
+							type="line"
+							selected={active.selected}
+							highlight={true}
+							highlighted={active.highlighted}
+							layout={{
+								visibility:
+									active.type == key ||
+									active.childType == key
+										? "visible"
+										: "none",
+							}}
+							paint={active.type == key
+								? mapPaint["line-active"]
+								: active.childType == key
+									? mapPaint["line-child"]
+									: mapPaint.line}
+						/>
+						<MapLayer
+							{...mapLayers[key]}
+							id="{key}-self"
+							type="line"
+							selected={active.selected}
+							layout={{
+								visibility:
+									active.type == key ? "visible" : "none",
+							}}
+							paint={active.type == key
+								? mapPaint["line-self"]
+								: mapPaint.line}
+						/>
+					</MapSource>
+				{/each}
+			</Map>
+		</div>
+		
+		<div>
+			{#if data.place.type != "ni"}
+				<span class="text-bold">Select a larger area containing {data.place.name} </span>
+				<span class="text-small">
+					{#each [...data.place.parents].reverse() as parent, i}
+						<span
+							style="display: block; margin-left: {i > 0
+								? (i - 1) * 15
+								: 0}px"
+							>{@html i > 0 ? "↳ " : ""}<a
+								href="{base}/{parent.code}"
+								data-sveltekit-noscroll>{parent.name}</a
+							></span
+						>
+					{/each}
+				</span>
+			{/if}
+		</div>
+		<div>
+			{#if data.place.children[0]}
+				<span class="text-bold"
+					>Select a {data.place.children[0]
+						? geog_types[data.place.children[0].type].name
+						: "Areas"} within {data.place.name}</span
+				><br />
+				<span class="text-small">
+					{#each data.place.children as child, i}
+						<a href="{base}/{child.code}" data-sveltekit-noscroll
+							>{child.name}</a
+						>{i < data.place.children.length - 1 ? ", " : ""}
+					{/each}
+				</span>
+			{:else}
+				<span class="muted"
+					>No areas below {data.place.name}
+					{geog_types[data.place.type].name}</span
+				>
+			{/if}
+		</div>
+	</div>
+
+</div>
+
+
 	{/if}
 </Section>
 
