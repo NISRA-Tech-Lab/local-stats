@@ -366,6 +366,26 @@
 
 	}
 
+	function compareDensity (place) {
+		let pop = place.data.population.value[Object.keys(place.data.population.value).filter(function (x) {if (x == "change") {return false} else {return true}}).splice(-1)].all;
+		let pop_den = pop / place.hectares;
+
+		let ni_pop = data.ni.data.population.value[Object.keys(data.ni.data.population.value).filter(function (x) {if (x == "change") {return false} else {return true}}).splice(-1)].all;
+		let ni_pop_den = ni_pop / data.ni.hectares;
+
+		let comparison = pop_den / ni_pop_den;
+
+		if (comparison.toFixed(0) == "1") {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
+		} else if (comparison > 1) {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times more dense</span> than the Northern Ireland average";
+		} else {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " as dense</span> as the Northern Ireland average";
+		}
+
+		return comparison;
+	}
+
 </script>
 
 <svelte:head>
@@ -591,15 +611,19 @@
 					},
 					lgd: {
 						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
+						ni: compareDensity(data.place)
 					},
 					dea: {
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
+						ni: compareDensity(data.place)
 					},
 					sdz: {
-						prev:" nothing further", ni:" nothing further"},
+						prev:" nothing further",
+						ni: compareDensity(data.place)
+					},
 					dz: {
-						prev:" no comparisons", ni: "no ni comparisons"}
+						prev:" no comparisons",
+						ni: compareDensity(data.place)
+					}
 				}}
 			/>
 
