@@ -977,7 +977,7 @@
 						content: 
 						"<p>" + "<span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() +
 							 "</span> employed out of "+ 
-							data.place.data.MYETotal.value.toLocaleString() + " who live in this area (including children and pensioners) possibly add working age number</p>",
+							data.place.data.MYETotal.value.toLocaleString() + " who live in this area (including children and pensioners)</p>",
 						show: ["ni", "lgd"]
 					},
 
@@ -1104,7 +1104,7 @@
 						id: "attainment",
 						year: pullYear("Attainment", data.place),
 						content: "<p><span class='text-big' style='font-size: 1.8em'>"  + 
-							(check("Attainment.value")).toLocaleString() +"</span>% of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>"
+							(check("Attainment.value")).toLocaleString() +"%</span> of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>"
 						,
 					
 					show: ["ni", "lgd"]
@@ -1115,11 +1115,11 @@
 				id: "destination",
 				year: pullYear("Destination", data.place),
 				content: "To be changed to a chart"+
-						"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "</span> </p>" +
-						"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "</span> </p>" +
-						"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "</span> </p>" +
-						"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "</span> </p>" +
-						"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "</span> </p>" 
+						"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "%</span> </p>" +
+						"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "%</span> </p>" +
+						"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "%</span> </p>" +
+						"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "%</span> </p>" +
+						"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.8em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "%</span> </p>" 
 						
 						,
 			
