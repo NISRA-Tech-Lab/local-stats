@@ -32,7 +32,7 @@ if (topic_prev_available == "false") {
 
 <div class = "div-grey-box" style = {style}>
 
-    {#if (i_button)}
+    {#if (i_button == true | i_button == null)}
         <IButton id = {id} place = {place}/>
     {:else}
         <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{@html heading}</h3>
