@@ -978,9 +978,7 @@
 				year: pullYear("LMS", data.place),
 				content: "<p><span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
-						 "</span> employed out of " +
-						 data.place.data.MYETotal.value.toLocaleString() +
-						 " who live in this area (including children and pensioners)</p>",
+						 "</span> employed</p>",
 				show: ["ni", "lgd"]
 			},
 

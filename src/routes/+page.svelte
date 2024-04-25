@@ -71,15 +71,15 @@
       </div> 
 
 
-    <div class = "div-grey-box">
-      <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Click on the map to view Northern Ireland as a whole</span>
+      <div class = "div-grey-box">
+        <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Click on the map to view Northern Ireland as a whole</span>
 
-      <a href="{base}/N92000002/">
-        <picture id ="ni-map">
-          <img style="width:400px;" src="{assets}/img/Northern_Ireland_Map.svg" alt="Outline of Northern Ireland">
-        </picture>
-      </a>
-    </div>
+        <a href="{base}/N92000002/">
+          <picture id ="ni-map">
+            <img style="width:400px;" src="{assets}/img/Northern_Ireland_Map.svg" alt="Outline of Northern Ireland">
+          </picture>
+        </a>
+      </div>
 
     </div>
 

@@ -21,14 +21,22 @@ export let chart_compare_type;
 export let compare_content = null;
 export let year = null
 
+function divClass (id) {
+    if (id == "empty") {
+        return ""
+    } else {
+        return "div-grey-box"
+    }
+}
+
 </script>
 
-<div class = "div-grey-box" style = {style}>
+<div class = {divClass(id)} style = {style}>
 
     {#if (i_button == true | i_button == null)}
         <IButton id = {id} place = {place}/>
     {:else}
-        <h3 style="margin: 0 0 10px 0; line-height: 1.78;">{@html heading}</h3>
+        <h3 style="margin: 0 0 10px 0;">{@html heading}</h3>
     {/if}
     {#if (year != null)}
         <div class = "text-small">{year}</div>
