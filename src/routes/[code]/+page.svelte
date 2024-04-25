@@ -588,16 +588,13 @@
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + (Math.round(data.place.data.MYETotal.value / 1000) * 1000).toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
-					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census'
-					},
+					ni: "",
 					lgd: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
 						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
 							'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts"
 					},
 					dea: {
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
+					ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
 					},
 		
 					sdz: "Data not available for time comparison",
@@ -612,22 +609,17 @@
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</span> people per hectare'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
-					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census'
-					},
+					ni: "",
 					lgd: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
 						ni: compareDensity(data.place)
 					},
 					dea: {
 						ni: compareDensity(data.place)
 					},
 					sdz: {
-						prev:" nothing further",
 						ni: compareDensity(data.place)
 					},
 					dz: {
-						prev:" no comparisons",
 						ni: compareDensity(data.place)
 					}
 				}}
@@ -802,7 +794,6 @@
 						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
 						}
 					},
@@ -816,7 +807,6 @@
 						content: "GroupChart"		,
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
 						}
 					},
@@ -826,7 +816,6 @@
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 						},
 					},
@@ -836,7 +825,6 @@
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
 						},
 					}
@@ -890,8 +878,7 @@
 				year: pullCensusYear("provision_care"),
 				chart_data: {
 					none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-					prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
+					ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care")
 				}
 			},
 			box_5: {
@@ -1086,8 +1073,7 @@
 				year: pullCensusYear("highest_level_of_qualifications"),
 				chart_data: {
 					none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-					prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
+					ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications")
 				}
 			},
 
