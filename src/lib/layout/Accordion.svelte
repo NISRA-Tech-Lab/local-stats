@@ -72,6 +72,7 @@ let w, cols;
                             label = {boxes[box_list[i]].label}
                             topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                             chart_compare_type = {chart_compare_type}
+                            i_button = {boxes[box_list[i]].i_button}
                         />
 
                         {/if}
@@ -91,6 +92,7 @@ let w, cols;
                             label = {boxes[box_list[i]].label}
                             topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                             chart_compare_type = {chart_compare_type}
+                            i_button = {boxes[box_list[i]].i_button}
                         />
 
                     {/if}
