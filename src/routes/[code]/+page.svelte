@@ -589,16 +589,11 @@
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",
-					lgd: {
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-							'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts"
-					},
-					dea: {
-					ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
-					},
-		
-					sdz: "Data not available for time comparison",
-					dz: " Data not available for time comparison"
+					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
+						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts",
+					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population',
+					sdz: "Data not available for area comparison",
+					dz: " Data not available for area comparison"
 				}}
 			/>
 
@@ -610,18 +605,10 @@
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",
-					lgd: {
-						ni: compareDensity(data.place)
-					},
-					dea: {
-						ni: compareDensity(data.place)
-					},
-					sdz: {
-						ni: compareDensity(data.place)
-					},
-					dz: {
-						ni: compareDensity(data.place)
-					}
+					lgd: compareDensity(data.place),
+					dea: compareDensity(data.place),
+					sdz: compareDensity(data.place),
+					dz: compareDensity(data.place)
 				}}
 			/>
 
