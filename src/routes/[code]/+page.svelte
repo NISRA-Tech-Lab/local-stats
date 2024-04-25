@@ -804,8 +804,7 @@
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
-						},
-						topic_prev_available: "true"
+						}
 					},
 					// box_3: {
 					// 	id: "sex",
@@ -819,8 +818,8 @@
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
-						},
-						topic_prev_available: "true"},
+						}
+					},
 					box_5: {
 						id: "religion",
 						year: pullCensusYear("religion_or_religion_brought_up_in"),
@@ -830,7 +829,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
 						},
-						topic_prev_available: "true"
 					},
 					box_6: {
 						id: "language",
@@ -841,7 +839,6 @@
 							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
 						},
-						topic_prev_available: "true"
 					}
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
@@ -863,65 +860,63 @@
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 			box_1: {
-					id: "generalhealth",
-					year: pullCensusYear("general_health"),
-					content: "StackedBarChart",				
-					chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
-					zKey: chart_compare_type,
-					label: chartLabel,
-					topic_prev_available: "true"
-				},
+				id: "generalhealth",
+				year: pullCensusYear("general_health"),
+				content: "StackedBarChart",				
+				chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
+				zKey: chart_compare_type,
+				label: chartLabel,
+				topic_prev_available: true
+			},
 			box_2: {
-					id: "wellbeing",
-					year: pullYear("Happy", data.place),
-					content: "<p><span class='text-big' style='font-size: 1.5em'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 happiness</p>"	+
-					"<p><span class='text-big' style='font-size: 1.5em'>"+ (check("Satisfy.value")).toLocaleString() + "</span>/ 10 life satisfaction</p>",	
-					show: ["ni", "lgd"]
-				},
+				id: "wellbeing",
+				year: pullYear("Happy", data.place),
+				content: "<p><span class='text-big' style='font-size: 1.5em'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 happiness</p>"	+
+							"<p><span class='text-big' style='font-size: 1.5em'>"+ (check("Satisfy.value")).toLocaleString() + "</span>/ 10 life satisfaction</p>",	
+				show: ["ni", "lgd"]
+			},
 			box_3: {
-					id: "lifeexpectancy",
-					year: pullYear("LE", data.place),
-					content: "<p>Male <span class='text-big' style='font-size: 1.5em'>" + 
-						(check("LE.value.Males")).toLocaleString() +
-						"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.5em'>" +
-						(check("LE.value.Females")).toLocaleString() + "</span> years</p>",
-					show: ["ni", "lgd"]
-				},
+				id: "lifeexpectancy",
+				year: pullYear("LE", data.place),
+				content: "<p>Male <span class='text-big' style='font-size: 1.5em'>" + 
+					(check("LE.value.Males")).toLocaleString() +
+					"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.5em'>" +
+					(check("LE.value.Females")).toLocaleString() + "</span> years</p>",
+				show: ["ni", "lgd"]
+			},
 			box_4: {
-					id: "carers",
-					content: "GroupChart",
-					year: pullCensusYear("provision_care"),
-					chart_data: {
-						none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-						prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
-						ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
-					},
-					label: chartLabel,
-					topic_prev_available: "true"
-				},
+				id: "carers",
+				content: "GroupChart",
+				year: pullCensusYear("provision_care"),
+				chart_data: {
+					none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
+					prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
+					ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
+				}
+			},
 			box_5: {
-					id: "hospitalactivity",
-					year: pullYear("Admiss", data.place),
-					content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
-						(check("Admiss.value")).toLocaleString() + 
-						"</span> hospital patients</p><p>  The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
-						show: ["ni", "dea"]
-				},
+				id: "hospitalactivity",
+				year: pullYear("Admiss", data.place),
+				content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
+					(check("Admiss.value")).toLocaleString() + 
+					"</span> hospital patients</p><p>  The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+					show: ["ni", "dea"]
+			},
 			box_6a: {
-					id: "primarycare",
-					year: pullYear("GP", data.place)   ,
-					content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
-								(check("GP.value.PRACS")).toLocaleString() +
-							"</span> GP practices with an average of <span class='text-big' style='font-size: 1.5em'>" + 
-							(check("GP.value.PRACLIST")).toLocaleString() +
-							"</span> patients per practice</p><p><span class='text-big' style='font-size: 1.5em'>" + 
-								+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-								"</span> dental surgeries" +
-								"</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
-							(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-							"</span> patients per surgery</p>",
-					show: ["ni", "lgd"]
-				},
+				id: "primarycare",
+				year: pullYear("GP", data.place)   ,
+				content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
+							(check("GP.value.PRACS")).toLocaleString() +
+						"</span> GP practices with an average of <span class='text-big' style='font-size: 1.5em'>" + 
+						(check("GP.value.PRACLIST")).toLocaleString() +
+						"</span> patients per practice</p><p><span class='text-big' style='font-size: 1.5em'>" + 
+							+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+							"</span> dental surgeries" +
+							"</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"</span> patients per surgery</p>",
+				show: ["ni", "lgd"]
+			},
 			box_6b: {
 				id: "primarycare",
 				year: pullYear("DEN", data.place),
@@ -967,30 +962,29 @@
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
+			box_1: {
+				id: "employmentrates",
+				year: pullYear("LMS", data.place),
+				content: "GroupChart",
+				chart_data: {
+					none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
+					ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
+				},
+				show: ["ni", "lgd"]
+			},
 				
-				box_1: {
-						id: "employmentrates",
-						year: pullYear("LMS", data.place),
-						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
-							ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
-						},
-						show: ["ni", "lgd"]
-					},
-				
-				box_2: {
-						id: "employed",
-						year: pullYear("LMS", data.place),
-						content: "<p><span class='text-big' style='font-size: 1.5em'>" +
-							     (check("LMS.value.EMPN")).toLocaleString() +
-								 "</span> employed out of " +
-								 data.place.data.MYETotal.value.toLocaleString() +
-								 " who live in this area (including children and pensioners)</p>",
-						show: ["ni", "lgd"]
-					},
+			box_2: {
+				id: "employed",
+				year: pullYear("LMS", data.place),
+				content: "<p><span class='text-big' style='font-size: 1.5em'>" +
+					     (check("LMS.value.EMPN")).toLocaleString() +
+						 "</span> employed out of " +
+						 data.place.data.MYETotal.value.toLocaleString() +
+						 " who live in this area (including children and pensioners)</p>",
+				show: ["ni", "lgd"]
+			},
 
-				box_3b: {
+			box_3b: {
 				id: "bres",
 				year: pullYear("BRES", data.place),
 				content:  "GroupChart",
@@ -998,41 +992,40 @@
 						none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
 						ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
 					},
-
 				show: ["ni", "lgd"]
-					},	
+			},	
 				
-				box_3: {
-						id: "wages",
-						year: pullYear("ASHE", data.place),
-						content: '<p><span class="text-big" style="font-size: 1.5em">£' +
-							     (check("ASHE.value")).toLocaleString() +
-								 '</span> median salary</p>',
-						show: ["ni", "lgd"]
-					},
+			box_3: {
+				id: "wages",
+				year: pullYear("ASHE", data.place),
+				content: '<p><span class="text-big" style="font-size: 1.5em">£' +
+					     (check("ASHE.value")).toLocaleString() +
+						 '</span> median salary</p>',
+				show: ["ni", "lgd"]
+			},
 						
-				box_4: {
-					id: "disabilitybenefits",
-					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.5em">' +
-						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
-				
-				},
+			box_4: {
+				id: "disabilitybenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big" style="font-size: 1.5em">' +
+					(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
+			
+			},
 
-				box_5: {
-					id: "workingagebenefits",
-					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.5em">' +
-						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
-					
-				},
+			box_5: {
+				id: "workingagebenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big" style="font-size: 1.5em">' +
+					(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 				
-				box_6: {
-					id: "pensionagebenefits",
-					year: pullYear("BS", data.place),
-					content: '<span class="text-big" style="font-size: 1.5em">' +
-						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
-				}	
+			},
+			
+			box_6: {
+				id: "pensionagebenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big" style="font-size: 1.5em">' +
+					(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
+			}	
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
@@ -1097,8 +1090,7 @@
 					none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 					prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
 					ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-				},
-				topic_prev_available: "true"
+				}
 			},
 
 			box_5: {

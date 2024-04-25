@@ -14,19 +14,12 @@ export let content;
 export let chart_data = null;
 export let zKey = "ni";
 export let label = null;
-export let topic_prev_available = null;
-export let topic_boolean = null;
+export let topic_prev_available = true;
 export let i_button = true;
 export let heading = null;
 export let chart_compare_type;
 export let compare_content = null;
 export let year = null
-
-if (topic_prev_available == "false") {
-    topic_boolean = false
-} else {
-    topic_boolean = true
-}
 
 </script>
 
@@ -42,13 +35,13 @@ if (topic_prev_available == "false") {
     {/if}
     {#if (content == "StackedBarChart" | (content.hasOwnProperty(place.type) & content[place.type] == "StackedBarChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
-            <StackedBarChart data = {chart_data.none} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
+            <StackedBarChart data = {chart_data.none} zKey = {zKey} label = {label} topic_prev_available = {topic_prev_available}/>
         {:else if (chart_data.hasOwnProperty("prev") & chart_compare_type == "prev")}
-            <StackedBarChart data = {chart_data.prev} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
+            <StackedBarChart data = {chart_data.prev} zKey = {zKey} label = {label} topic_prev_available = {topic_prev_available}/>
         {:else if (chart_data.hasOwnProperty("ni") & chart_compare_type == "ni")}
-            <StackedBarChart data = {chart_data.ni} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
+            <StackedBarChart data = {chart_data.ni} zKey = {zKey} label = {label} topic_prev_available = {topic_prev_available}/>
         {:else}
-            <StackedBarChart data = {chart_data} zKey = {zKey} label = {label} topic_prev_available = {topic_boolean}/>
+            <StackedBarChart data = {chart_data} zKey = {zKey} label = {label} topic_prev_available = {topic_prev_available}/>
         {/if}
     {:else if (content == "GroupChart" | (content.hasOwnProperty(place.type) & content[place.type] == "GroupChart"))}
         {#if (chart_data.hasOwnProperty("none") & chart_compare_type == null)}
