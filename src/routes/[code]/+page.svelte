@@ -301,7 +301,7 @@
 
 		let rtn_value = data.place.data;
 
-		if (props[0] == "grouped_data_nocompare") {
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
 			rtn_value = data.place;
 		}		
 
@@ -313,6 +313,10 @@
 				if (props[i] == "perc") {
 					rtn_value = rtn_value.toFixed(0) + "%";
 				}
+			} else {
+
+				rtn_value = [];
+
 			}
 
 		}
@@ -565,8 +569,8 @@
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas for local-level statistics.",
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are new statistical areas for local-level statistics."							
-							}}
-				
+						  }}
+				chart_compare_type = {chart_compare_type}
 			/>
 
 			<GreyBox
@@ -776,8 +780,8 @@
 					box_1: {
 						id: "popchange",
 						content: 
-						{ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-						lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
+						{ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big" style="font-size: 1.5em;">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
+						lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big" style="font-size: 1.5em;">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
 						dea: '<p>The population of </p>',
 						sdz: '<p>The population of </p>',
 						dz: '<p>The population of </p>'
@@ -853,13 +857,7 @@
 				box_1: {
 						id: "generalhealth",
 						year: pullCensusYear("general_health"),
-						content: {
-							ni: "StackedBarChart",
-							lgd: "StackedBarChart",
-							dea: "StackedBarChart",
-							sdz: "StackedBarChart",
-							dz: "StackedBarChart"
-						},				
+						content: "StackedBarChart",				
 						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
 						zKey: chart_compare_type,
 						label: chartLabel,
@@ -920,28 +918,26 @@
 								"</span> patients per surgery</p>",
 						show: ["ni", "lgd"]
 					},
-					box_6b: {
-						id: "primarycare",
-						year: pullYear("DEN", data.place),
-						content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
-									+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-								 "</span> dental surgeries" +
-								 "</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
-								(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-								"</span> patients per surgery</p>",
-						show: ["dea"]
-					}
-					,
-					box_6c: {
-						id: "empty",
-						
-						content: "",
-						show: ["sdz","dz"]
-					}
+				box_6b: {
+					id: "primarycare",
+					year: pullYear("DEN", data.place),
+					content: "<p><span class='text-big' style='font-size: 1.5em'>" + 
+								+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+								"</span> dental surgeries" +
+								"</span> with an average of <span class='text-big' style='font-size: 1.5em'>" + 
+							(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+							"</span> patients per surgery</p>",
+					show: ["dea"]
+				},
+				box_6c: {
+					id: "empty",
+					content: "",
+					show: ["sdz","dz"]
+				}
 
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
-			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
+				and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
 				Business Services Organisation</a>, including statistics on <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/health-inequalities-statistics'>Health inequalities</a>, 
 				Primary care (including <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/1776-2/'>Medical</a>, 
 				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-dental-services-statistics/'>Dental</a>, 
@@ -970,18 +966,13 @@
 				box_1: {
 						id: "employmentrates",
 						year: pullYear("LMS", data.place),
-						content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
-								 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
-						// content: "GroupChart",
-								
-						// chart_data: {
-						// 	none: makeDataGroupSort(data.place.grouped_data_nocompare.LMS, "LMS"),
-						// 	prev: makeDataGroupSort(data.place.grouped_data_timecompare.LMS, "LMS"),
-						// 	ni: makeDataGroupSort(data.place.grouped_data_areacompare.LMS, "LMS"),
-						// },
+						content: "GroupChart",
+						chart_data: {
+							none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
+							ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
+						},
 						
-					show: ["ni", "lgd"]
+						show: ["ni", "lgd"]
 					},
 				
 				box_2: {
@@ -994,17 +985,17 @@
 						show: ["ni", "lgd"]
 					},
 
-					box_3b: {
-					id: "bres",
-					year: pullYear("BRES", data.place),
-					content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
-						},
+				box_3b: {
+				id: "bres",
+				year: pullYear("BRES", data.place),
+				content:  "GroupChart",
+					chart_data: {
+						none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
+						ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
+					},
 
-					show: ["ni", "lgd"]
-				}	,	
+				show: ["ni", "lgd"]
+					},	
 				
 				box_3: {
 						id: "wages",
@@ -1012,10 +1003,6 @@
 						content: '<p><span class="text-big" style="font-size: 1.5em">£' + (check("ASHE.value")).toLocaleString() + '</span> median salary</p>',
 						show: ["ni", "lgd"]
 					},
-					
-				
-				
-					
 						
 				box_4: {
 					id: "disabilitybenefits",
@@ -1125,32 +1112,30 @@
 				},
 							
 
-			// box_6: {
-			// 	id: "destination",
-			// 	year: pullYear("Destination", data.place),
-			// 	content:  "GroupChart",
-			// 	chart_data: {
-			// 		none: makeDataGroupSort(data.place.grouped_data_nocompare.Destination, "Destination"),
-			// 		prev: makeDataGroupSort(data.place.grouped_data_timecompare.Destination, "Destination"),
-			// 		ni: makeDataGroupSort(data.place.grouped_data_areacompare.Destination, "Destination"),
-			// 		},
-			
-			// 	show: ["ni", "lgd", "dea"]
-			// }
-			// ,
-					box_6a: {
-						id: "empty",
-						
-						content: "",
-						show: ["sdz","dz"]
-					}
-					,
-					box_6b: {
-						id: "empty",
-						
-						content: "",
-						show: ["sdz","dz"]
-					}
+			box_6: {
+				id: "destination",
+				year: pullYear("Destination", data.place),
+				content:  "GroupChart",
+				chart_data: {
+					none: makeDataGroupSort(check("grouped_data_nocompare.Destination"), "Destination"),
+					ni: makeDataGroupSort(check("grouped_data_areacompare.Destination"), "Destination")
+				},
+				show: ["ni", "lgd", "dea"]
+			},
+
+			box_6a: {
+				id: "empty",
+				
+				content: "",
+				show: ["sdz","dz"]
+			},
+					
+			box_6b: {
+				id: "empty",
+				
+				content: "",
+				show: ["sdz","dz"]
+			}
 
 			}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
