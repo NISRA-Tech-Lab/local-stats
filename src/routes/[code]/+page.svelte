@@ -100,6 +100,14 @@
     function makeDataGroupSort(g_data, key) {
       const categ = topics[key];
       let newdata = [];
+
+	  let groups = Object.keys(g_data);
+	  for (let i = 0; i < groups.length; i ++) {
+		if (!g_data[groups[i]].hasOwnProperty("perc")) {
+			g_data[groups[i]].perc = 0;
+		}
+	  }
+
       categ.forEach((c) => {
         let rows = g_data.filter((d) => d.category === c.category);
         let newrows = rows.map((d) => ({
@@ -109,6 +117,7 @@
         }));
         newdata = [...newdata, ...newrows];
       });
+	  
       return newdata;
     }
 
@@ -971,7 +980,6 @@
 							none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
 							ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
 						},
-						
 						show: ["ni", "lgd"]
 					},
 				
