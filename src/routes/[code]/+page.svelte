@@ -104,7 +104,7 @@
 	  let groups = Object.keys(g_data);
 	  for (let i = 0; i < groups.length; i ++) {
 		if (!g_data[groups[i]].hasOwnProperty("perc")) {
-			g_data[groups[i]].perc = 0;
+			g_data[groups[i]].perc = null;
 		}
 	  }
 

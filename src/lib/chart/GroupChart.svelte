@@ -43,7 +43,9 @@
 
 	function toPerc(val) {
 		let str;
-		if (val < 1) {
+		if (val == null) {
+			str = "Not available"
+		} else if (val < 1) {
 			str = '<1%';
 		} else {
 			str = val.toFixed(0) + '%';
