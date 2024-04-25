@@ -94,22 +94,13 @@ export const topics = {
 /* 		{ category: 'wales', label: 'Wales' },
 		{ category: 'republic_of_ireland', label: 'Republic of Ireland' },
  */		{ category: 'other_cob', label: 'Other country of birth' }
-	],//,
-	
-	// FPSGDSDT: [
-	// 	{ category: 'GDSDTF', label: 'Fillings' },
-	// 	{ category: 'GDSDTX', label: 'X-rays' },
-	// 	{ category: 'GDSDTC', label: 'Crowns' },
-	// 	{ category: 'GDSDTE', label: 'Extractions' }
-
-	// ],
-
-	BS: [
-
-		{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
-		{ category: ['PC','RP'], label: 'Pension Age benefits' },
-		{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
 	],
+	// BS: [
+
+	// 	{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
+	// 	{ category: ['PC','RP'], label: 'Pension Age benefits' },
+	// 	{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
+	// ],
 
 	BRES: [
 
@@ -117,8 +108,7 @@ export const topics = {
 		{ category: 'Manufacturing', label: 'Manufacturing' },
 		{ category: 'Services', label: 'Services' }	,
 		{ category: 'Other', label: 'Other' }	
-			
-	],
+			],
 
 
 

@@ -970,22 +970,17 @@
 				box_1: {
 						id: "employmentrates",
 						year: pullYear("LMS", data.place),
-						// content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
-						// 		 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
-						// 		 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
-						content: {
-							ni: "GroupChart",
-							lgd: "GroupChart",
-							dea: "GroupChart",
-							sdz: "gfd",
-							dz: "gfd"
-						},	
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.LMS, "LMS"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.LMS, "LMS"),
-						},
-						label: chartLabel,
-						topic_prev_available: "true",
+						content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
+								 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
+								 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
+						// content: "GroupChart",
+								
+						// chart_data: {
+						// 	none: makeDataGroupSort(data.place.grouped_data_nocompare.LMS, "LMS"),
+						// 	prev: makeDataGroupSort(data.place.grouped_data_timecompare.LMS, "LMS"),
+						// 	ni: makeDataGroupSort(data.place.grouped_data_areacompare.LMS, "LMS"),
+						// },
+						
 					show: ["ni", "lgd"]
 					},
 				
@@ -1130,28 +1125,19 @@
 				},
 							
 
-			box_6: {
-				id: "destination",
-				year: pullYear("Destination", data.place),
-				content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.Destination, "Destination"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.Destination, "Destination"),
-						},
-						label: chartLabel,
-						topic_prev_available: "true",
-				// content: "To be changed to a chart"+
-				// 		"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "%</span> </p>" +
-				// 		"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "%</span> </p>" +
-				// 		"<p style='margin:0'> Employment <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destEmploypct")).toLocaleString() + "%</span> </p>" +
-				// 		"<p style='margin:0'> Training  <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destTrainpct")).toLocaleString() + "%</span> </p>" +
-				// 		"<p style='margin:0'> Unemployed  <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destUnempUnkpct")).toLocaleString() + "%</span> </p>" 
-						
-				// 		,
+			// box_6: {
+			// 	id: "destination",
+			// 	year: pullYear("Destination", data.place),
+			// 	content:  "GroupChart",
+			// 	chart_data: {
+			// 		none: makeDataGroupSort(data.place.grouped_data_nocompare.Destination, "Destination"),
+			// 		prev: makeDataGroupSort(data.place.grouped_data_timecompare.Destination, "Destination"),
+			// 		ni: makeDataGroupSort(data.place.grouped_data_areacompare.Destination, "Destination"),
+			// 		},
 			
-				show: ["ni", "lgd", "dea"]
-			}
-			,
+			// 	show: ["ni", "lgd", "dea"]
+			// }
+			// ,
 					box_6a: {
 						id: "empty",
 						
