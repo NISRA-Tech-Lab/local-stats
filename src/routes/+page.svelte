@@ -27,7 +27,7 @@
 </svelte:head>
 
 <Section column="wide">
-  <div class="block" style = "margin-bottom: 500px">
+  <div class="block" style = "margin-bottom: 300px">
 
 
   <!-- <div>This application contains key statistics for Northern Ireland, the 11 Local Government Districts and the areas within.  
@@ -38,7 +38,7 @@
 
     <div class="grid">
 
-      <div>
+      <div class = "div-grey-box">
 
         <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Explore key statistics for any area in Northern Ireland</span>
 
@@ -71,7 +71,7 @@
       </div> 
 
 
-    <div>
+    <div class = "div-grey-box">
       <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Click on the map to view Northern Ireland as a whole</span>
 
       <a href="{base}/N92000002/">

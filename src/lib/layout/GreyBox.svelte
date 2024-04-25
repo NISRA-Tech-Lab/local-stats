@@ -98,14 +98,3 @@ export let year = null
 
 
 </div>
-
-<style>
-    .div-grey-box {
-		line-height: 1.78;
-		overflow: hidden;
-		box-shadow: 0 2px #4140424d;
-		background-color: #f5f5f6;
-		padding: 16px 16px;
-	}
-
-</style>
