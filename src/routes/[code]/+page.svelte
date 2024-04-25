@@ -551,6 +551,8 @@
 
 
 		<div id="grid" class="grid mt">
+			
+			
 			<GreyBox
 				id = "overview" 
 				i_button = {false}
@@ -565,7 +567,6 @@
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are new statistical areas for local-level statistics."							
 							}}
 				
-				chart_compare_type = {chart_compare_type}
 			/>
 
 			<GreyBox
@@ -776,7 +777,10 @@
 						id: "popchange",
 						content: 
 						{ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-						lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>'
+						lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2011"].all.toLocaleString() +'</span> and in 2021 was <span class="text-big" style="font-size: 1.5em;">' +data.place.data.population.value["2021"].all.toLocaleString() +'</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
+						dea: '<p>The population of </p>',
+						sdz: '<p>The population of </p>',
+						dz: '<p>The population of </p>'
 						}
 					},
 
@@ -969,12 +973,19 @@
 						// content: "To be changed to a chart<p style='margin:0'>Employed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.EMPR")).toLocaleString() + "%</span> </p>" +
 						// 		 "<p style='margin:0'>Unemployed <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "%</span> </p>" +
 						// 		 "<p style='margin:0'>Inactive <span class='text-big' style='font-size: 1.5em'>" + (check("LMS.value.INACTR")).toLocaleString() + "%</span></p>",
-						content:  "GroupChart",
+						content: {
+							ni: "GroupChart",
+							lgd: "GroupChart",
+							dea: "GroupChart",
+							sdz: "gfd",
+							dz: "gfd"
+						},	
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.LMS, "LMS"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.LMS, "LMS"),
 						},
-
+						label: chartLabel,
+						topic_prev_available: "true",
 					show: ["ni", "lgd"]
 					},
 				
@@ -1127,6 +1138,8 @@
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.Destination, "Destination"),
 							ni: makeDataGroupSort(data.place.grouped_data_areacompare.Destination, "Destination"),
 						},
+						label: chartLabel,
+						topic_prev_available: "true",
 				// content: "To be changed to a chart"+
 				// 		"<p style='margin:0'> Higher Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destHEpct")).toLocaleString() + "%</span> </p>" +
 				// 		"<p style='margin:0'> Further Education <span class='text-big' style='font-size: 1.5em'>" + (check("Destination.value.destFEpct")).toLocaleString() + "%</span> </p>" +

@@ -23,7 +23,7 @@ export const app_inputs = {
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
-	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
+	app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
@@ -138,30 +138,10 @@ export const topics = {
 		{ category: 'destFEpct', label: 'Further Education' }	,
 		{ category: 'destEmploypct', label: 'Employment' },
 		{ category: 'destTrainpct', label: 'Training' },
-		{ category: 'destUnempUnkpct', label: 'Unemployed or unknown' },
+		{ category: 'destUnempUnkpct', label: 'Unemployed or unknown' }
 			
 			
-	],
-	// FPSGDSDR: [
-
-	// 	{ category: 'Dental_Registrations_ageGDSDR0_2', label: 'Age 0 to 2' },
-	// 	{ category: 'Dental_Registrations_ageGDSDR3_5', label: 'Age 3 to 5' },
-	// 	{ category: 'Dental_Registrations_ageGDSDR18plus', label: 'Adults' }		
-	// ],
-
-
-	// DESCP: [
-	// 	{ category: 'Reception', label: 'Rec'},
-	// 	{ category: 'Nursery', label: 'Nurs'},
-	// 	{ category: 'Year1', label: '1' },		
-	// 	{ category: 'Year2', label: '2' },		
-	// 	{ category: 'Year3', label: '3' },		
-	// 	{ category: 'Year4', label: '4' },		
-	// 	{ category: 'Year5', label: '5' },		
-	// 	{ category: 'Year6', label: '6' },		
-	// 	{ category: 'Year7', label: '7' }		
-	// ]
-
+	]
 };
 
 

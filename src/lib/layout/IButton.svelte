@@ -217,11 +217,12 @@ let i_button_info = {
 			title: "",
 			info: ""
 					},
+
 			destination: {
 				title: "Next steps for school leavers",
 				info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  +
-					"<p class = 'pibutton'>Last updated: " + checkMeta("Destination[0].last_updated") + "</p> <p class = 'pibutton'>Access data at: " +
-					"<a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"
+					"<p class = 'pibutton'>Last updated: " + checkMeta("Destination[0].last_updated") + "</p> "+
+					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"
 			},
 
 
