@@ -1,1 +1,0 @@
-var e;const a=((e=globalThis.__sveltekit_abee57)==null?void 0:e.base)??"/nisra-geog-explorer";var s;const t=((s=globalThis.__sveltekit_abee57)==null?void 0:s.assets)??"https://NISRA-Tech-Lab.github.io/nisra-geog-explorer";export{t as a,a as b};
