@@ -28,21 +28,22 @@
 		<!-- <header style="color: #ffffff; background-color: #00205b;"> -->
 			<div class="col-wide" data-analytics="header">
 				<div class="grid mtb">
-					<div>
+					<div style = "display: flex; justify-content: left; align-items: center">
 						<a href="https://www.nisra.gov.uk/">
 							<picture>
 								{#if theme.name == 'dark'}
-								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width:300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else if filled == true}
-								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width:300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else}
-								<img style="width:180px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width:300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{/if}
 							</picture>
 						</a>
 					</div>
-					<div>
-						<span style="font-size: 1.5em; font-weight: bold;color: #ffffff;   padding-left: 100px" >Northern Ireland Area Explorer</span>
+					<div style = "display: flex; flex-direction:column; justify-content: right; align-items: center">
+						<h1 style="font-size: 2.5em; font-weight: bold;color: #ffffff; line-height: 1em; margin-bottom: 10px;">Northern Ireland Local Statistics Explorer</h1>
+						<span style = "font-size: 1.5em; line-height: 1em">Find out how your local area compares to the rest of NI</span>
 					</div>
 				</div>
 		

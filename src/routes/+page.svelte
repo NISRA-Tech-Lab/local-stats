@@ -17,7 +17,7 @@
 </script>
 
 <svelte:head>
-  <title>NISRA Area Explorer</title>
+  <title>Northern Ireland Local Statistics Explorer</title>
   <meta name="description" content="">
   <meta property="og:title" content="Census Area Explorer" />
 	<meta property="og:type" content="website" />

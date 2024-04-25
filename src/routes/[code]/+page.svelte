@@ -400,9 +400,9 @@
 </script>
 
 <svelte:head>
-	<title>{data.place.name} NISRA Key Statistics</title>
+	<title>{data.place.name} Local Statistics Explorer</title>
 	<meta name="description" content="" />
-	<meta property="og:title" content="{data.place.name} Census Data" />
+	<meta property="og:title" content="{data.place.name} Local Statistics" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{app_inputs.base}/{data.place.code}/" />
 	<meta
