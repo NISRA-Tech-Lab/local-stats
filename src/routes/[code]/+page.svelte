@@ -431,7 +431,7 @@
 
 					{/if}
 				</span>
-				<br><span class="text-big title">{data.place.name}</span>
+				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name}</span>
 				
 				
 				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
