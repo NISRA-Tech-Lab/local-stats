@@ -1,11 +1,12 @@
 <script>
 	import Section from "$lib/layout/Section.svelte";
+	import { base } from "$app/paths";
 
   </script>
 
 
 <nav>
-	<a href="/">Home</a>
+	<a href='{base}/'>Home</a>
 </nav>
 
 
