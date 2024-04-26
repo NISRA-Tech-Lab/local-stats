@@ -136,7 +136,7 @@ export const topics = {
 
 
 
-export const mapStyle = 'https://raw.githubusercontent.com/nisra-explore/map_tiles/main/basemap_styles/style-omt.json';
+export const mapStyle = 'https://raw.githubusercontent.com/NISRA-Tech-Lab/map_tiles/main/basemap_styles/style-omt.json';
 
 
 export const mapSources = {
