@@ -24,7 +24,6 @@
   let c;
   let f;
   let space_needed;
-  let calculated_space;
 	
 	const debounce = (func, delay) => {
 		let timer;
@@ -39,7 +38,7 @@
 	
 	const setSpaceHeight = () => {
 
-    calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
+    let calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
 
     if (calculated_space < 0) {
       space_needed = `0px`;
@@ -53,7 +52,13 @@
 
   onMount(() => {
 
-    setSpaceHeight();
+    let calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
+
+    if (calculated_space < 0) {
+      space_needed = `0px`;
+    } else {
+		  space_needed = `${calculated_space}px`;
+    }
 
     window.addEventListener('resize', debouncedSetSpaceHeight);
    
