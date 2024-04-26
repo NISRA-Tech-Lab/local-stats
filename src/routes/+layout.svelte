@@ -52,7 +52,7 @@
 
   onMount(() => {
 
-    let calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
+    let calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;    
 
     if (calculated_space < 0) {
       space_needed = `0px`;
@@ -61,6 +61,8 @@
     }
 
     window.addEventListener('resize', debouncedSetSpaceHeight);
+    window.addEventListener('click', debouncedSetSpaceHeight);
+    window.addEventListener('load', debouncedSetSpaceHeight);
    
   });
   
