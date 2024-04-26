@@ -538,7 +538,7 @@
 						<button
 							class="btn"
 							style="width: 33%"
-							alt="Return to the landing page"
+							alt="Opens the About page"
 							onclick="window.location.href='{base}/about';"
 							>About
 						</button>
