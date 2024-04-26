@@ -121,7 +121,7 @@
 		margin: 0;
 		margin-top: 3px;
 		padding: 0;
-		max-height: 170px;
+		max-height: 260px;
 		overflow-y: auto;
 		overflow-x: hidden;
 	}
