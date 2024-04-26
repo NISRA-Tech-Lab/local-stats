@@ -1,11 +1,11 @@
 <script>
-	import { setContext } from "svelte";
+	import { setContext, onMount } from "svelte";
   import "../app.css";
 	import { themes } from "$lib/config";
 //	import Warning from "$lib/ui/Warning.svelte";
 	import NISRAHeader from "$lib/layout/NISRAHeader.svelte";
 	import NISRAFooter from "$lib/layout/NISRAFooter.svelte";
-  import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte"
+  import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
 
   // STYLE CONFIG
   // Set theme globally (options are 'light' or 'dark')
@@ -21,6 +21,19 @@
     "contentType": "exploratory"
   };
 
+  let c;
+  let f;
+  let space_needed;
+
+  onMount(() => {
+    space_needed = window.innerHeight - c.clientHeight - f.clientHeight;
+    if (space_needed < 0) {
+      space_needed = "0px";
+    } else {
+      space_needed = space_needed + "px";
+    }
+  })
+
 </script>
 
 <svelte:head>
@@ -28,11 +41,16 @@
 <link rel="apple-touch-icon" href="https://www.nisra.gov.uk/sites/nisra.gov.uk/themes/nisra_theme/favicon.ico">
 </svelte:head>
 
-<AnalyticsBanner {analyticsId} {analyticsProps}/>
+<div bind:this={c}>
+  <AnalyticsBanner {analyticsId} {analyticsProps}/>
 
-<!-- <Warning/> -->
-<NISRAHeader/>
+  <!-- <Warning/> -->
 
-<slot/>
+    <NISRAHeader/>
 
-<NISRAFooter/>
+  <slot/>
+</div>
+
+<div bind:this={f} style = "margin-top: {space_needed}">
+  <NISRAFooter/>
+</div>

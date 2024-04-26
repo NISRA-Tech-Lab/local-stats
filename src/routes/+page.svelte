@@ -27,7 +27,7 @@
 </svelte:head>
 
 <Section column="wide">
-  <div class="block" style = "margin-bottom: 300px">
+  <div class="block">
 
 
   <!-- <div>This application contains key statistics for Northern Ireland, the 11 Local Government Districts and the areas within.  
