@@ -1,5 +1,5 @@
 <script>
-	import { setContext, onMount } from "svelte";
+	import { setContext, onMount} from "svelte";
   import "../app.css";
 	import { themes } from "$lib/config";
 //	import Warning from "$lib/ui/Warning.svelte";
@@ -24,15 +24,41 @@
   let c;
   let f;
   let space_needed;
+  let calculated_space;
+	
+	const debounce = (func, delay) => {
+		let timer;
+
+		return function () {
+			const context = this;
+			const args = arguments;
+			clearTimeout(timer);
+			timer = setTimeout(() => func.apply(context, args), delay);
+		};
+	};
+	
+	const setSpaceHeight = () => {
+
+    calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
+
+    if (calculated_space < 0) {
+      space_needed = `0px`;
+    } else {
+		  space_needed = `${calculated_space}px`;
+    }
+
+	};
+	
+	const debouncedSetSpaceHeight = debounce(setSpaceHeight, 100);
 
   onMount(() => {
-    space_needed = window.innerHeight - c.clientHeight - f.clientHeight;
-    if (space_needed < 0) {
-      space_needed = "0px";
-    } else {
-      space_needed = space_needed + "px";
-    }
-  })
+
+    setSpaceHeight();
+
+    window.addEventListener('resize', debouncedSetSpaceHeight);
+   
+  });
+  
 
 </script>
 
