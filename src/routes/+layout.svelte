@@ -16,7 +16,7 @@
   // Settings for page analytics. Values must be shared with <AnalyticsBanner> component
   const analyticsId = "GTM-NK3SZVF";
   const analyticsProps = {
-    "contentTitle": "Northern Ireland Area Explorer",
+    "contentTitle": "Northern Ireland Local Statistics Explorer",
     "releaseDate": "20220823",
     "contentType": "exploratory"
   };
@@ -25,7 +25,7 @@
 
 <svelte:head>
 <link rel="icon" href="https://www.nisra.gov.uk/sites/nisra.gov.uk/themes/nisra_theme/favicon.ico" /> 
-
+<link rel="apple-touch-icon" href="https://www.nisra.gov.uk/sites/nisra.gov.uk/themes/nisra_theme/favicon.ico">
 </svelte:head>
 
 <AnalyticsBanner {analyticsId} {analyticsProps}/>

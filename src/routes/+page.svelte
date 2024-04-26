@@ -40,7 +40,7 @@
 
       <div class = "div-grey-box">
 
-        <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Explore key statistics for any area in Northern Ireland</span>
+        <span style="font-size: 1.5em; font-weight: bold;color: #3878c5; line-height: 1em;">Explore key statistics for any area in Northern Ireland</span>
 
 
         <h4></h4>
@@ -72,7 +72,7 @@
 
 
       <div class = "div-grey-box">
-        <span style="font-size: 1.5em; font-weight: bold;color: #3878c5;">Click on the map to view Northern Ireland as a whole</span>
+        <span style="font-size: 1.5em; font-weight: bold; color: #3878c5; line-height: 1em;">Click on the map to view Northern Ireland as a whole</span>
 
         <a href="{base}/N92000002/">
           <picture id ="ni-map">
