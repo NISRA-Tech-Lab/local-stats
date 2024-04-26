@@ -43,7 +43,7 @@ let i_button_info = {
 
 		popden: {
 			title: "Population density",
-			info: "Population density is the number of usual residents per hectare. It is rounded to 1 d.p."
+			info: "Population density is the number of usual residents per square kilometer. A square kilometer is approximately equivalent to the floor space of 8 Titanics. It is rounded to 1 decimal place."
 		},
 
 		pop: {

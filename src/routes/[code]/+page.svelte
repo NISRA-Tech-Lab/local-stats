@@ -356,10 +356,10 @@
 
 	function popDen (place) {
 
-		let pop_den = place.data.MYETotal.value / place.hectares;
+		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
 
-		if (pop_den < 0.1) {
-			pop_den = "< 0.1"
+		if (pop_den < 10) {
+			pop_den = "< 10"
 		} else {
 			pop_den = pop_den.toFixed(1);
 		}
@@ -380,9 +380,9 @@
 
 	function compareDensity (place) {
 		
-		let pop_den = place.data.MYETotal.value / place.hectares;
+		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
 
-		let ni_pop_den = data.ni.data.MYETotal.value / data.ni.hectares;
+		let ni_pop_den = data.ni.data.MYETotal.value / (data.ni.hectares / 100);
 
 		let comparison = pop_den / ni_pop_den;
 
@@ -601,7 +601,7 @@
 				id = "popden"
 				place = {data.place}
 				year = {pullCensusYear("population")}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</span> people per hectare'}
+				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</div><div style = "margin-left: 10px; line-height: 1.25em"> persons per square kilometer</div></div>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",
