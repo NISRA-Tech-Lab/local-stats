@@ -356,8 +356,6 @@
 
 	function popDen (place) {
 
-		console.log(place.data.MYETotal.value);
-
 		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
 
 		if (pop_den < 10) {

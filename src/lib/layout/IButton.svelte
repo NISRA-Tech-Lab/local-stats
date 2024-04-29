@@ -288,7 +288,7 @@ let i_button_info = {
 	aria-controls="{id}-info"
 >
 	<div class="blocktitle" style="margin: 0; width: 100%">
-		{i_button_info[id].title}<span class = "i-button"> 🛈</span>
+		{i_button_info[id].title}<span class = "i-button">&#8505;<span style ="margin-left: -0.7em">&#9711;</span></span>
 	</div>
 </div>
 <div class="collapse" id="{id}-info">
