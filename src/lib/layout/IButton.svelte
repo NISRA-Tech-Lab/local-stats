@@ -1,5 +1,7 @@
 <script>
 
+import { base } from "$app/paths";
+
 export let id;
 export let place;
 
@@ -288,7 +290,7 @@ let i_button_info = {
 	aria-controls="{id}-info"
 >
 	<div class="blocktitle" style="margin: 0; width: 100%">
-		{i_button_info[id].title}<span class = "i-button">&#8505;<span style ="margin-left: -0.7em">&#9711;</span></span>
+		{i_button_info[id].title} <img class = "i-button" src = "{base}\img\i-button.svg" alt = "Information button">
 	</div>
 </div>
 <div class="collapse" id="{id}-info">
