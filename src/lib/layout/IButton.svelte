@@ -114,10 +114,14 @@ let i_button_info = {
 
 
 			employed: {
-			title: "Number of people employed",
-			info:  "possibly add working age number <p class = 'pibutton'>Access data at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"+
+			title: "Work and wages",
+			info:  "<p class = 'pibutton'>Access data on number employed at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p>"+
-				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
+				  "<p class = 'pibutton'>Access wages data at: <a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
+				  "<p>Median is the ..... </p>"  
 		 		 
 		},
 

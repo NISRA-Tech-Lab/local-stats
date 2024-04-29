@@ -952,7 +952,9 @@
 				year: pullYear("LMS", data.place),
 				content: "<p><span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
-						 "</span> employed</p>",
+						 "</span> people employed</p>"+'<p><span class="text-big">£' +
+					     (check("ASHE.value")).toLocaleString() +
+						 '</span> median salary</p>',
 				show: ["ni", "lgd"]
 			},
 
@@ -967,14 +969,14 @@
 				show: ["ni", "lgd"]
 			},	
 				
-			box_3: {
-				id: "wages",
-				year: pullYear("ASHE", data.place),
-				content: '<p><span class="text-big">£' +
-					     (check("ASHE.value")).toLocaleString() +
-						 '</span> median salary</p>',
-				show: ["ni", "lgd"]
-			},
+			// box_3: {
+			// 	id: "wages",
+			// 	year: pullYear("ASHE", data.place),
+			// 	content: '<p><span class="text-big">£' +
+			// 		     (check("ASHE.value")).toLocaleString() +
+			// 			 '</span> median salary</p>',
+			// 	show: ["ni", "lgd"]
+			// },
 						
 			box_4: {
 				id: "disabilitybenefits",
