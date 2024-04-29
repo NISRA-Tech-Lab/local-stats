@@ -53,7 +53,6 @@
   onMount(() => {
 
     let calculated_space = window.innerHeight - c.clientHeight - f.clientHeight;
-    console.log(window.innerHeight, c.clientHeight, f.clientHeight);
 
     if (calculated_space < 0) {
       space_needed = `0px`;

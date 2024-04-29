@@ -356,12 +356,14 @@
 
 	function popDen (place) {
 
+		console.log(place.data.MYETotal.value);
+
 		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
 
 		if (pop_den < 10) {
 			pop_den = "< 10"
 		} else {
-			pop_den = pop_den.toFixed(1);
+			pop_den = (Math.round(pop_den * 10) / 10).toLocaleString(undefined, {minimumFractionDigits: 1});
 		}
 
 		return pop_den;
@@ -601,7 +603,7 @@
 				id = "popden"
 				place = {data.place}
 				year = {pullCensusYear("population")}
-				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</div><div style = "margin-left: 10px; line-height: 1.25em"> persons per square kilometer</div></div>'}
+				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</div><div style = "margin-left: 10px; line-height: 1.25em"> people per square kilometer</div></div>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",
