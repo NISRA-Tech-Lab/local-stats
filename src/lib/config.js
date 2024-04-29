@@ -17,9 +17,9 @@ export const themes = {
 };
 
 export const app_inputs = {
-	search_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/places_dz_extra.csv',
-	//search_data: 'https://datavis.nisra.gov.uk/census/aex-hj77sh/places_dz.csv',
-//	search_data: '/data_jsons_dea_20240408/places_dz_extra.csv',
+//	search_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/places_dz_extra.csv',
+	search_data: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/places_dz_full_postcode.csv',
+	//search_data: '/search_data/places_dz_full_postcode.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
