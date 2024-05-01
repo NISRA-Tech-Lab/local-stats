@@ -334,6 +334,96 @@
 
 	}
 
+
+
+	function compareNIavg (value) {
+
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
+
+		let rtn_value = data.ni.data;
+		let rtn_value_place = check(value);
+		let no_areas = data.place.count;
+
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
+			rtn_value = data.ni;
+		}		
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+
+				if (props[i] == "perc") {
+					rtn_value = rtn_value.toFixed(0) + "%";
+				}
+			} else {
+
+				rtn_value = [];
+
+			}
+
+		}
+
+		let average_ni =  (rtn_value / no_areas).toFixed(0);
+
+		if ( rtn_value_place > (average_ni * 1.1) ) 
+				{
+				rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(higher than the NI average)</span></p>";
+			}
+		else if (rtn_value_place < (average_ni * 0.9)) {
+				rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(lower than the NI average)</span></p>";} 
+		else {
+				rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(similar to the NI average)</span></p>";;
+				} 
+		
+return rtn_value;
+
+}
+
+function compareNIrate (value) {
+
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
+
+		let rtn_value = data.ni.data;
+		let rtn_value_place = check(value);
+
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
+			rtn_value = data.ni;
+		}		
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+
+				// if (props[i] == "perc") {
+				// 	rtn_value = rtn_value.toFixed(0) + "%";
+				// }
+			} else {
+
+				rtn_value = [];
+
+			}
+
+		}
+
+		if ( rtn_value_place > (rtn_value * 1.02) ) 
+				{
+					rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(higher than the NI average)</span></p>";
+			}
+		else if (rtn_value_place < (rtn_value * 0.98)) {
+			rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(lower than the NI average)</span></p>";} 
+		else {
+			rtn_value = "<p><span class = 'text-small' style = 'background-color: lightgrey'>(similar to the NI average)</span></p>";;
+				} 
+
+		return rtn_value;
+
+}
+
+
 	function pullYear (value, place) {
 		
 		if (place.meta_data.hasOwnProperty(value)) {
@@ -396,6 +486,8 @@
 
 		return comparison;
 	}
+
+
 
 </script>
 
@@ -855,8 +947,12 @@
 				year: pullYear("LE", data.place),
 				content: "<p>Male <span class='text-big'>" + 
 					(check("LE.value.Males")).toLocaleString() +
-					"</span> years</p>"+"<p>Female <span class='text-big'>" +
-					(check("LE.value.Females")).toLocaleString() + "</span> years</p>",
+					"</span> years</p>"+
+					"<p>"+(compareNIrate("LE.value.Males")).toLocaleString() + "</p>"+
+						
+					"<p>Female <span class='text-big'>" +
+					(check("LE.value.Females")).toLocaleString() + "</span> years</p>"+
+					"<p>"+(compareNIrate("LE.value.Females")).toLocaleString() + "</p>",
 				show: ["ni", "lgd"]
 			},
 			box_4: {
@@ -872,8 +968,11 @@
 				id: "hospitalactivity",
 				year: pullYear("Admiss", data.place),
 				content: "<p><span class='text-big'>" + 
-					(check("Admiss.value")).toLocaleString() + 
-					"</span> hospital patients</p><p>  The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+					(check("Admiss.value")).toLocaleString() +
+						"</span> hospital patients</p>"+
+						"<p>"+(compareNIavg("Admiss.value")).toLocaleString() + "</p>"+
+						"<p>The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+
 					show: ["ni", "dea"]
 			},
 			box_6a: {
@@ -883,7 +982,9 @@
 							(check("GP.value.PRACS")).toLocaleString() +
 						"</span> GP practices with an average of <span class='text-big'>" + 
 						(check("GP.value.PRACLIST")).toLocaleString() +
-						"</span> patients per practice</p><p><span class='text-big'>" + 
+						"</span> patients per practice</p>" +
+						"<p>"+(compareNIrate("GP.value.PRACLIST")).toLocaleString() + "</p>"+
+					"<p><span class='text-big'>" + 
 							+ (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 							"</span> dental surgeries" +
 							"</span> with an average of <span class='text-big'>" + 
@@ -952,9 +1053,12 @@
 				year: pullYear("LMS", data.place),
 				content: "<p><span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
-						 "</span> people employed</p>"+'<p><span class="text-big">£' +
+						 "</span> people employed</p>"+
+						 "<p>"+(compareNIavg("LMS.value.EMPN")).toLocaleString() + "</p>"+
+						'<p><span class="text-big">£' +
 					     (check("ASHE.value")).toLocaleString() +
-						 '</span> median salary</p>',
+						 '</span> median salary</p>'+
+						 "<p>"+(compareNIrate("ASHE.value")).toLocaleString() + "</p>",
 				show: ["ni", "lgd"]
 			},
 
@@ -1029,13 +1133,16 @@
 			box_1: {
 				id: "enrollments",
 				content: "<p style='margin:0'>Primary school <span class='text-big'>" + 
-						 (check("Primary.value")).toLocaleString() + "</span></p>" +
+						 (check("Primary.value")).toLocaleString() + "</span> "+(compareNIavg("Primary.value")).toLocaleString() + "</p>"+
+
 						 "<p style='margin:0'>Secondary school <span class='text-big'>" + 
-						 (check("PostPrimary.value")).toLocaleString() + " </span></p>" +
+						 (check("PostPrimary.value")).toLocaleString() + " </span>"+(compareNIavg("PostPrimary.value")).toLocaleString() + "</p>"+
+
 						 "<p style='margin:0'>Further education <span class='text-big'>" +
-						 (check("FE.value")).toLocaleString() + "</span></p>" +
+						 (check("FE.value")).toLocaleString() + "</span>"+(compareNIavg("FE.value")).toLocaleString() + "</p>"+
+
 						 "<p style='margin:0'>Higher education <span class='text-big'>" +
-						 (check("HE.value")).toLocaleString() +" </span></p>",
+						 (check("HE.value")).toLocaleString() +" </span>"+(compareNIavg("HE.value")).toLocaleString() + "</p>",
 				year: pullYear("Primary", data.place) ,
 				show: ["ni", "lgd", "dea"]
 			},
@@ -1043,7 +1150,9 @@
 			box_2: {
 				id: "fsme",
 				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span></p>"+
-				         "<p style='margin:0'>Secondary school <span class='text-big'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span></p>",
+						 (compareNIrate("grouped_data_nocompare.Primary[0].perc")).toLocaleString() +
+				         "<p style='margin:0'>Secondary school <span class='text-big'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span></p>"+
+						 (compareNIrate("grouped_data_nocompare.PostPrimary[0].perc")).toLocaleString() +"comp not working here",
 				year: pullYear("Primary", data.place),
 				show: ["ni", "lgd", "dea"]
 			},
@@ -1052,7 +1161,8 @@
 				id: "teachers",
 				year: pullYear("ClassSize", data.place),
 				content: "<p><span class='text-big'>"  + 
-				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>",
+				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>" +
+						 (compareNIrate("ClassSize.value")).toLocaleString() ,
 				show: ["ni", "lgd"]
 			},
 		
@@ -1070,7 +1180,8 @@
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
 				content: "<p><span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>",
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> of pupils left school with 5 or more GCSEs grades A*-C (including Maths and English)</p>" + 
+						 (compareNIrate("Attainment.value")).toLocaleString() ,
 				show: ["ni", "lgd"]
 			},
 							
