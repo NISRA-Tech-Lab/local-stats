@@ -32,11 +32,11 @@
 						<a href="https://www.nisra.gov.uk/">
 							<picture>
 								{#if theme.name == 'dark'}
-									<img style="width: 450px;" src="{assets}/img/nisra-logo-white-bilingual-wide.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else if filled == true}
-									<img style="width: 450px;" src="{assets}/img/nisra-logo-white-bilingual-wide.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else}
-									<img style="width: 450px;" src="{assets}/img/nisra-logo-white-bilingual-wide.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
 								{/if}
 							</picture>
 						</a>

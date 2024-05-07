@@ -715,7 +715,7 @@ function compareNIrate (value) {
 				id = "pop"
 				place = {data.place}
 				year = {pullYear("MYETotal", data.place)}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + (Math.round(data.place.data.MYETotal.value / 1000) * 1000).toLocaleString() + '</span>'}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",

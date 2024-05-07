@@ -101,15 +101,15 @@
 <Section column="wide">
 	<body>
 		<div class="row">
-			<div class="container">
+			<div class="container div-grey-box">
 				<h2>Enter your postcode to find its location</h2>
 				<form on:submit|preventDefault={search}>
 				<input
 					type="text"
 					placeholder="Enter postcode..."
 					bind:this={searchInput}
-				/>
-				<button on:click={search}>Search</button>
+				>
+				<button on:click={search}>&nbsp;</button>
 				</form>
 				<div bind:this={resultTable}></div>
 			</div>
@@ -118,43 +118,62 @@
 
 	<style>
 
+		form {
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			margin-top: 15px;
+		}
+
 		.container {
 			max-width: 600px;
 			margin: 0 auto;
 			padding: 20px;
-			background-color: #fff;
-			border-radius: 8px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
 
 		h2 {
-			text-align: center;
+			text-align: left;
 			color: #333;
-			font-size: 2.2em;
+			font-size: 1.5em;
 			line-height: 1.3;
-			margin: 0px
+			margin: 0px 
 		}
 
 		input[type="text"] {
 			width: 100%;
-			padding: 10px;
+			padding: 10px 40px 10px 10px;
 			margin-bottom: 10px;
-			border: 1px solid #ddd;
-			border-radius: 4px;
+			border: 2px solid #00205b !important;
+			border-radius: 0px;
+			background-color: #f5f5f6;
+			color: #00205b;
+		}
+
+		input[type="text"]:focus-visible {
+			border: 2px solid #00205b;
+			border-radius: 0px;
 		}
 
 		button {
-			padding: 10px 20px;
-			background-color: #007bff;
+			background-color: #00205b;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 0px;
 			color: #fff;
 			border: none;
-			border-radius: 4px;
 			cursor: pointer;
+			background-image: url("/img/search.svg");
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 46px;
 		}
 
-		button:hover {
-			background-color: #0056b3;
+		button:focus {
+			background-color: #00205b;
 		}
+
 
 		#result {
 			margin-top: 20px;
