@@ -2,58 +2,37 @@
 	import Section from "$lib/layout/Section.svelte";
 	import { base } from "$app/paths";
 	import { app_inputs} from "$lib/config";
-</script>
 
-<nav>
-	<a href="{base}/">Home</a>
-</nav>
+	let searchInput;
+	let resultTable;
 
-<Section column="wide">
-	<body>
-		<div class="row">
-			<div class="container">
-				<h1>Enter your postcode to find its location</h1>
-				<input
-					type="text"
-					id="searchInput"
-					placeholder="Enter postcode..."
-				/>
-				<button onclick="search()">Search</button>
-				<div id="resultTable"></div>
-			</div>
-		</div>
-	</body>
+	function normalisePostcode (postcode) {
+		// Remove all spaces from the postcode and convert to uppercase
+		return postcode.replace(/\s/g, "").toUpperCase();
+	}
 
-	<script>
-		function normalizePostcode(postcode) {
-			// Remove all spaces from the postcode and convert to uppercase
-			return postcode.replace(/\s/g, "").toUpperCase();
-		}
-
-		function search() {
-			const searchTerm = normalizePostcode(
-				document.getElementById("searchInput").value,
-			);
-
+	function search () {
+			const searchTerm = normalisePostcode(searchInput.value);
+			
 			if (searchTerm === "") {
 				alert("Please enter a postcode.");
 				return;
 			}
 
-		    fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")
+			fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")
 				.then((response) => response.text())
 				.then((data) => {
 					const rows = data.split("\n");
 					let found = false;
 
 					// Prepare list HTML
-					let pchtml = "<p>";
+					let pHTML = "<p>";
 					let listHTML = "<ul>";
 					let listHTML2 = "<ul>";
 
 					rows.forEach((row) => {
 						const columns = row.split(",");
-						const postcode = normalizePostcode(columns[0]);
+						const postcode = normalisePostcode(columns[0]);
 
 						if (postcode === searchTerm) {
 							// Extract specific columns (lgd and ward)
@@ -73,36 +52,37 @@
 							const SETTLEMENT15 = columns[28].trim();
 							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();
 							
-							pchtml += `<strong>Postcode:</strong> ${postcode}`;
+							pHTML += `<strong>Postcode:</strong> ${postcode.slice(0, -3)} ${postcode.substr(-3)}`;
 
-							listHTML += `<li>Local Government District: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${lgd2014}" target="_blank"><strong>${LGD2014NAME}</strong></a></li>`;
-							listHTML += `<li>District Electoral Area: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${DEA2014}" target="_blank"><strong>${DEA2014NAME}</strong></a></li>`;
-							listHTML += `<li>Super Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${SDZ2021}" target="_blank"><strong>${SDZ2021_name}</strong></a></li>`;
-							listHTML += `<li>Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${DZ2021}" target="_blank"><strong>${DZ2021_name}</strong></a></li>`;
-							
-							listHTML2 += `<li>Urban / Rural:<strong> ${SETTLEMENT15_URBAN_RURAL}</strong></li>`;
-							listHTML2 += `<li>Settlement:<strong> ${SETTLEMENT15}</strong></li>`;
-							listHTML2 += `<li>Health and Social Care Trust:<strong> ${HSCTNAME}</strong></li>`;
-							listHTML2 += `<li>Assembly Area Name:<strong> ${AA2008NAME}</strong></li>`;
-							listHTML2 += `<li>Ward Name:<strong> ${WARD2014NAME}</strong></li>`;
+							listHTML += `<li><strong>Local Government District:</strong> <a href="${base}/${lgd2014}" target="_blank">${LGD2014NAME}</a></li>` +
+										`<li><strong>District Electoral Area:</strong> <a href="${base}/${DEA2014}" target="_blank">${DEA2014NAME}</a></li>` +
+										`<li><strong>Super Data Zone:</strong> <a href="${base}/${SDZ2021}" target="_blank">${SDZ2021_name}</a></li>` +
+										`<li><strong>Data Zone:</strong> <a href="${base}/${DZ2021}" target="_blank">${DZ2021_name}</a></li>`;
+										
+
+							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>` +
+										 `<li><strong>Settlement:</strong> ${SETTLEMENT15}</li>` +
+										 `<li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>` +
+										 `<li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>` +
+										 `<li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
 
 							found = true;
 						}
 					});
 
-					pchtml += "</p>"
-					listHTML += "</ul>";					
+					pHTML += "</p>";
+					listHTML += "</ul>";
 					listHTML2 += "</ul>";
 
 					if (!found) {
-						document.getElementById("resultTable").innerHTML =
+						resultTable.innerHTML =
 							"Postcode not found.";
 					} else {
-						document.getElementById("resultTable").innerHTML =
-							pchtml+ 
-							"<p>Geographies in Area Explorer</p>" + 
-							listHTML + 
-							"<p>Geographies not in Area Explorer</p>" + 
+						resultTable.innerHTML =
+							pHTML +
+							"<p>Geographies in Area Explorer</p>" +
+							listHTML +
+							"<p>Geographies not in Area Explorer</p>" +
 							listHTML2;
 					}
 				})
@@ -110,8 +90,31 @@
 					console.error("Error fetching data:", error);
 					alert("Error fetching data. Please try again.");
 				});
-		}
-	</script>
+		}	
+
+</script>
+
+<nav>
+	<a href="{base}/">Home</a>
+</nav>
+
+<Section column="wide">
+	<body>
+		<div class="row">
+			<div class="container">
+				<h2>Enter your postcode to find its location</h2>
+				<form on:submit|preventDefault={search}>
+				<input
+					type="text"
+					placeholder="Enter postcode..."
+					bind:this={searchInput}
+				/>
+				<button on:click={search}>Search</button>
+				</form>
+				<div bind:this={resultTable}></div>
+			</div>
+		</div>
+	</body>
 
 	<style>
 
@@ -124,9 +127,12 @@
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
 
-		h1 {
+		h2 {
 			text-align: center;
 			color: #333;
+			font-size: 2.2em;
+			line-height: 1.3;
+			margin: 0px
 		}
 
 		input[type="text"] {
