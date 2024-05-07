@@ -109,7 +109,7 @@
 					placeholder="Enter postcode..."
 					bind:this={searchInput}
 				>
-				<button on:click={search}>&nbsp;</button>
+				<button on:click={search}><img src = "/img/search.svg" alt = "Search button" width="40px"></button>
 				</form>
 				<div bind:this={resultTable}></div>
 			</div>
@@ -157,15 +157,14 @@
 		button {
 			background-color: #00205b;
 			background-repeat: no-repeat;
-			background-position: center;
 			border-radius: 0px;
 			color: #fff;
 			border: none;
 			cursor: pointer;
-			background-image: url("/img/search.svg");
 			position: absolute;
 			top: 0;
 			right: 0;
+			padding: 0px;
 			width: 40px;
 			height: 46px;
 		}
