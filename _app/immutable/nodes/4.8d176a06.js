@@ -1,4 +1,4 @@
-import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h as n,c as _,z as W,n as T,b as E,C as s,A as z,g as G,d as V,B as q,D as Y}from"../chunks/index.baf6a862.js";import{S as j}from"../chunks/Section.6106804d.js";import{b as F}from"../chunks/paths.06ba3392.js";function J(N){let o,a,e,u,i,g,t,l,c,S,v,L,H,b,w,$,M,y;return{c(){o=d("body"),a=d("div"),e=d("div"),u=d("h1"),i=x("Enter your postcode to find its location"),g=A(),t=d("input"),l=A(),c=d("button"),S=x("Search"),v=A(),L=d("div"),H=A(),b=d("script"),w=x(`function normalizePostcode(postcode) {\r
+import{S as U,i as B,s as C,k as p,q as L,a as x,y as G,l as d,m as u,r as D,h as n,c as M,z as W,n as E,b as T,C as s,A as z,g as V,d as q,B as O,D as Y}from"../chunks/index.baf6a862.js";import{S as j}from"../chunks/Section.6106804d.js";import{b as F}from"../chunks/paths.ce422f1c.js";function J(N){let o,a,e,m,i,g,t,l,c,S,v,_,H,b,y,$,A,R;return{c(){o=p("body"),a=p("div"),e=p("div"),m=p("h1"),i=L("Enter your postcode to find its location"),g=x(),t=p("input"),l=x(),c=p("button"),S=L("Search"),v=x(),_=p("div"),H=x(),b=p("script"),y=L(`function normalizePostcode(postcode) {\r
 			// Remove all spaces from the postcode and convert to uppercase\r
 			return postcode.replace(/\\s/g, "").toUpperCase();\r
 		}\r
@@ -20,7 +20,9 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 					let found = false;\r
 \r
 					// Prepare list HTML\r
+					let pchtml = "<p>";\r
 					let listHTML = "<ul>";\r
+					let listHTML2 = "<ul>";\r
 \r
 					rows.forEach((row) => {\r
 						const columns = row.split(",");\r
@@ -44,41 +46,44 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 							const SETTLEMENT15 = columns[28].trim();\r
 							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();\r
 							\r
+							pchtml += \`<strong>Postcode:</strong> \${postcode}\`;\r
 \r
-							listHTML += \`<li><strong>Postcode:</strong> \${postcode}</li>\`;\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
-							listHTML += \`<li><strong>Local Government District:</strong> <a href="\${lgd2014}" target="_blank">\${LGD2014NAME}</a></li>\`;\r
-							listHTML += \`<li><strong>District Electoral Area:</strong> <a href="\${DEA2014}" target="_blank">\${DEA2014NAME}</a></li>\`;\r
-							listHTML += \`<li><strong>Super Data Zone:</strong> <a href="\${SDZ2021}" target="_blank">\${SDZ2021_name}</a></li>\`;\r
-							listHTML += \`<li><strong>Data Zone:</strong> <a href="\${DZ2021}" target="_blank">\${DZ2021_name}</a></li>\`;\r
+							listHTML += \`<li>Local Government District: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${lgd2014}" target="_blank"><strong>\${LGD2014NAME}</strong></a></li>\`;\r
+							listHTML += \`<li>District Electoral Area: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${DEA2014}" target="_blank"><strong>\${DEA2014NAME}</strong></a></li>\`;\r
+							listHTML += \`<li>Super Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${SDZ2021}" target="_blank"><strong>\${SDZ2021_name}</strong></a></li>\`;\r
+							listHTML += \`<li>Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${DZ2021}" target="_blank"><strong>\${DZ2021_name}</strong></a></li>\`;\r
 							\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
-							listHTML += \`<li><strong>Urban / Rural:</strong> \${SETTLEMENT15_URBAN_RURAL}</li>\`;\r
-							listHTML += \`<li><strong>Settlement:</strong> \${SETTLEMENT15}</li>\`;\r
-							listHTML += \`<li><strong>Health and Social Care Trust:</strong> \${HSCTNAME}</li>\`;\r
-							listHTML += \`<li><strong>Assembly Area Name:</strong> \${AA2008NAME}</li>\`;\r
-							listHTML += \`<li><strong>Ward Name:</strong> \${WARD2014NAME}</li>\`;\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
+							listHTML2 += \`<li>Urban / Rural:<strong> \${SETTLEMENT15_URBAN_RURAL}</strong></li>\`;\r
+							listHTML2 += \`<li>Settlement:<strong> \${SETTLEMENT15}</strong></li>\`;\r
+							listHTML2 += \`<li>Health and Social Care Trust:<strong> \${HSCTNAME}</strong></li>\`;\r
+							listHTML2 += \`<li>Assembly Area Name:<strong> \${AA2008NAME}</strong></li>\`;\r
+							listHTML2 += \`<li>Ward Name:<strong> \${WARD2014NAME}</strong></li>\`;\r
 \r
 							found = true;\r
 						}\r
 					});\r
 \r
-					listHTML += "</ul>";\r
+					pchtml += "</p>"\r
+					listHTML += "</ul>";					\r
+					listHTML2 += "</ul>";\r
 \r
 					if (!found) {\r
 						document.getElementById("resultTable").innerHTML =\r
 							"Postcode not found.";\r
 					} else {\r
 						document.getElementById("resultTable").innerHTML =\r
-							listHTML;\r
+							pchtml+ \r
+							"<p>Geographies in Area Explorer</p>" + \r
+							listHTML + \r
+							"<p>Geographies not in Area Explorer</p>" + \r
+							listHTML2;\r
 					}\r
 				})\r
 				.catch((error) => {\r
 					console.error("Error fetching data:", error);\r
 					alert("Error fetching data. Please try again.");\r
 				});\r
-		}`),$=A(),M=d("style"),y=x(`.container {\r
+		}`),$=x(),A=p("style"),R=L(`.container {\r
 			max-width: 600px;\r
 			margin: 0 auto;\r
 			padding: 20px;\r
@@ -118,7 +123,7 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 			padding: 10px;\r
 			border: 1px solid #ddd;\r
 			border-radius: 4px;\r
-		}`),this.h()},l(r){o=m(r,"BODY",{});var f=p(o);a=m(f,"DIV",{class:!0});var R=p(a);e=m(R,"DIV",{class:!0});var h=p(e);u=m(h,"H1",{});var Z=p(u);i=D(Z,"Enter your postcode to find its location"),Z.forEach(n),g=_(h),t=m(h,"INPUT",{type:!0,id:!0,placeholder:!0}),l=_(h),c=m(h,"BUTTON",{onclick:!0});var P=p(c);S=D(P,"Search"),P.forEach(n),v=_(h),L=m(h,"DIV",{id:!0}),p(L).forEach(n),h.forEach(n),R.forEach(n),f.forEach(n),H=_(r),b=m(r,"SCRIPT",{});var k=p(b);w=D(k,`function normalizePostcode(postcode) {\r
+		}`),this.h()},l(r){o=d(r,"BODY",{});var h=u(o);a=d(h,"DIV",{class:!0});var w=u(a);e=d(w,"DIV",{class:!0});var f=u(e);m=d(f,"H1",{});var Z=u(m);i=D(Z,"Enter your postcode to find its location"),Z.forEach(n),g=M(f),t=d(f,"INPUT",{type:!0,id:!0,placeholder:!0}),l=M(f),c=d(f,"BUTTON",{onclick:!0});var P=u(c);S=D(P,"Search"),P.forEach(n),v=M(f),_=d(f,"DIV",{id:!0}),u(_).forEach(n),f.forEach(n),w.forEach(n),h.forEach(n),H=M(r),b=d(r,"SCRIPT",{});var k=u(b);y=D(k,`function normalizePostcode(postcode) {\r
 			// Remove all spaces from the postcode and convert to uppercase\r
 			return postcode.replace(/\\s/g, "").toUpperCase();\r
 		}\r
@@ -140,7 +145,9 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 					let found = false;\r
 \r
 					// Prepare list HTML\r
+					let pchtml = "<p>";\r
 					let listHTML = "<ul>";\r
+					let listHTML2 = "<ul>";\r
 \r
 					rows.forEach((row) => {\r
 						const columns = row.split(",");\r
@@ -164,41 +171,44 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 							const SETTLEMENT15 = columns[28].trim();\r
 							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();\r
 							\r
+							pchtml += \`<strong>Postcode:</strong> \${postcode}\`;\r
 \r
-							listHTML += \`<li><strong>Postcode:</strong> \${postcode}</li>\`;\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
-							listHTML += \`<li><strong>Local Government District:</strong> <a href="\${lgd2014}" target="_blank">\${LGD2014NAME}</a></li>\`;\r
-							listHTML += \`<li><strong>District Electoral Area:</strong> <a href="\${DEA2014}" target="_blank">\${DEA2014NAME}</a></li>\`;\r
-							listHTML += \`<li><strong>Super Data Zone:</strong> <a href="\${SDZ2021}" target="_blank">\${SDZ2021_name}</a></li>\`;\r
-							listHTML += \`<li><strong>Data Zone:</strong> <a href="\${DZ2021}" target="_blank">\${DZ2021_name}</a></li>\`;\r
+							listHTML += \`<li>Local Government District: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${lgd2014}" target="_blank"><strong>\${LGD2014NAME}</strong></a></li>\`;\r
+							listHTML += \`<li>District Electoral Area: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${DEA2014}" target="_blank"><strong>\${DEA2014NAME}</strong></a></li>\`;\r
+							listHTML += \`<li>Super Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${SDZ2021}" target="_blank"><strong>\${SDZ2021_name}</strong></a></li>\`;\r
+							listHTML += \`<li>Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/\${DZ2021}" target="_blank"><strong>\${DZ2021_name}</strong></a></li>\`;\r
 							\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
-							listHTML += \`<li><strong>Urban / Rural:</strong> \${SETTLEMENT15_URBAN_RURAL}</li>\`;\r
-							listHTML += \`<li><strong>Settlement:</strong> \${SETTLEMENT15}</li>\`;\r
-							listHTML += \`<li><strong>Health and Social Care Trust:</strong> \${HSCTNAME}</li>\`;\r
-							listHTML += \`<li><strong>Assembly Area Name:</strong> \${AA2008NAME}</li>\`;\r
-							listHTML += \`<li><strong>Ward Name:</strong> \${WARD2014NAME}</li>\`;\r
-							listHTML += \`<hr>\`; // Optional separator between entries\r
+							listHTML2 += \`<li>Urban / Rural:<strong> \${SETTLEMENT15_URBAN_RURAL}</strong></li>\`;\r
+							listHTML2 += \`<li>Settlement:<strong> \${SETTLEMENT15}</strong></li>\`;\r
+							listHTML2 += \`<li>Health and Social Care Trust:<strong> \${HSCTNAME}</strong></li>\`;\r
+							listHTML2 += \`<li>Assembly Area Name:<strong> \${AA2008NAME}</strong></li>\`;\r
+							listHTML2 += \`<li>Ward Name:<strong> \${WARD2014NAME}</strong></li>\`;\r
 \r
 							found = true;\r
 						}\r
 					});\r
 \r
-					listHTML += "</ul>";\r
+					pchtml += "</p>"\r
+					listHTML += "</ul>";					\r
+					listHTML2 += "</ul>";\r
 \r
 					if (!found) {\r
 						document.getElementById("resultTable").innerHTML =\r
 							"Postcode not found.";\r
 					} else {\r
 						document.getElementById("resultTable").innerHTML =\r
-							listHTML;\r
+							pchtml+ \r
+							"<p>Geographies in Area Explorer</p>" + \r
+							listHTML + \r
+							"<p>Geographies not in Area Explorer</p>" + \r
+							listHTML2;\r
 					}\r
 				})\r
 				.catch((error) => {\r
 					console.error("Error fetching data:", error);\r
 					alert("Error fetching data. Please try again.");\r
 				});\r
-		}`),k.forEach(n),$=_(r),M=m(r,"STYLE",{});var I=p(M);y=D(I,`.container {\r
+		}`),k.forEach(n),$=M(r),A=d(r,"STYLE",{});var I=u(A);R=D(I,`.container {\r
 			max-width: 600px;\r
 			margin: 0 auto;\r
 			padding: 20px;\r
@@ -238,4 +248,4 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 			padding: 10px;\r
 			border: 1px solid #ddd;\r
 			border-radius: 4px;\r
-		}`),I.forEach(n),this.h()},h(){T(t,"type","text"),T(t,"id","searchInput"),T(t,"placeholder","Enter postcode..."),T(c,"onclick","search()"),T(L,"id","resultTable"),T(e,"class","container"),T(a,"class","row")},m(r,f){E(r,o,f),s(o,a),s(a,e),s(e,u),s(u,i),s(e,g),s(e,t),s(e,l),s(e,c),s(c,S),s(e,v),s(e,L),E(r,H,f),E(r,b,f),s(b,w),E(r,$,f),E(r,M,f),s(M,y)},p:Y,d(r){r&&n(o),r&&n(H),r&&n(b),r&&n($),r&&n(M)}}}function K(N){let o,a,e,u,i,g;return i=new j({props:{column:"wide",$$slots:{default:[J]},$$scope:{ctx:N}}}),{c(){o=d("nav"),a=d("a"),e=x("Home"),u=A(),O(i.$$.fragment),this.h()},l(t){o=m(t,"NAV",{});var l=p(o);a=m(l,"A",{href:!0});var c=p(a);e=D(c,"Home"),c.forEach(n),l.forEach(n),u=_(t),W(i.$$.fragment,t),this.h()},h(){T(a,"href",F+"/")},m(t,l){E(t,o,l),s(o,a),s(a,e),E(t,u,l),z(i,t,l),g=!0},p(t,[l]){const c={};l&1&&(c.$$scope={dirty:l,ctx:t}),i.$set(c)},i(t){g||(G(i.$$.fragment,t),g=!0)},o(t){V(i.$$.fragment,t),g=!1},d(t){t&&n(o),t&&n(u),q(i,t)}}}class rt extends U{constructor(o){super(),B(this,o,null,K,C,{})}}export{rt as component};
+		}`),I.forEach(n),this.h()},h(){E(t,"type","text"),E(t,"id","searchInput"),E(t,"placeholder","Enter postcode..."),E(c,"onclick","search()"),E(_,"id","resultTable"),E(e,"class","container"),E(a,"class","row")},m(r,h){T(r,o,h),s(o,a),s(a,e),s(e,m),s(m,i),s(e,g),s(e,t),s(e,l),s(e,c),s(c,S),s(e,v),s(e,_),T(r,H,h),T(r,b,h),s(b,y),T(r,$,h),T(r,A,h),s(A,R)},p:Y,d(r){r&&n(o),r&&n(H),r&&n(b),r&&n($),r&&n(A)}}}function K(N){let o,a,e,m,i,g;return i=new j({props:{column:"wide",$$slots:{default:[J]},$$scope:{ctx:N}}}),{c(){o=p("nav"),a=p("a"),e=L("Home"),m=x(),G(i.$$.fragment),this.h()},l(t){o=d(t,"NAV",{});var l=u(o);a=d(l,"A",{href:!0});var c=u(a);e=D(c,"Home"),c.forEach(n),l.forEach(n),m=M(t),W(i.$$.fragment,t),this.h()},h(){E(a,"href",F+"/")},m(t,l){T(t,o,l),s(o,a),s(a,e),T(t,m,l),z(i,t,l),g=!0},p(t,[l]){const c={};l&1&&(c.$$scope={dirty:l,ctx:t}),i.$set(c)},i(t){g||(V(i.$$.fragment,t),g=!0)},o(t){q(i.$$.fragment,t),g=!1},d(t){t&&n(o),t&&n(m),O(i,t)}}}class rt extends U{constructor(o){super(),B(this,o,null,K,C,{})}}export{rt as component};
