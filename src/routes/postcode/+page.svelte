@@ -1,6 +1,7 @@
 <script>
 	import Section from "$lib/layout/Section.svelte";
 	import { base } from "$app/paths";
+	import { app_inputs} from "$lib/config";
 </script>
 
 <nav>
@@ -39,7 +40,7 @@
 				return;
 			}
 
-			fetch("/search_data/CPD_light_with_lat_long_2.csv")
+		    fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")
 				.then((response) => response.text())
 				.then((data) => {
 					const rows = data.split("\n");
