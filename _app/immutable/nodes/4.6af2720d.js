@@ -1,4 +1,4 @@
-import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h as n,c as _,z as W,n as T,b as E,C as s,A as z,g as G,d as V,B as q,D as Y}from"../chunks/index.baf6a862.js";import{S as j}from"../chunks/Section.6106804d.js";import{b as F}from"../chunks/paths.352baea2.js";function J(N){let o,a,e,u,i,f,t,l,c,S,v,L,H,b,w,$,M,y;return{c(){o=d("body"),a=d("div"),e=d("div"),u=d("h1"),i=x("Enter your postcode to find its location"),f=A(),t=d("input"),l=A(),c=d("button"),S=x("Search"),v=A(),L=d("div"),H=A(),b=d("script"),w=x(`function normalizePostcode(postcode) {\r
+import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h as n,c as _,z as W,n as T,b as E,C as s,A as z,g as G,d as V,B as q,D as Y}from"../chunks/index.baf6a862.js";import{S as j}from"../chunks/Section.6106804d.js";import{b as F}from"../chunks/paths.ee8b4ea9.js";function J(N){let o,a,e,u,i,g,t,l,c,S,v,L,H,b,w,$,M,y;return{c(){o=d("body"),a=d("div"),e=d("div"),u=d("h1"),i=x("Enter your postcode to find its location"),g=A(),t=d("input"),l=A(),c=d("button"),S=x("Search"),v=A(),L=d("div"),H=A(),b=d("script"),w=x(`function normalizePostcode(postcode) {\r
 			// Remove all spaces from the postcode and convert to uppercase\r
 			return postcode.replace(/\\s/g, "").toUpperCase();\r
 		}\r
@@ -13,7 +13,7 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 				return;\r
 			}\r
 \r
-			fetch("/search_data/CPD_light_with_lat_long_2.csv")\r
+		    fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")\r
 				.then((response) => response.text())\r
 				.then((data) => {\r
 					const rows = data.split("\\n");\r
@@ -118,7 +118,7 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 			padding: 10px;\r
 			border: 1px solid #ddd;\r
 			border-radius: 4px;\r
-		}`),this.h()},l(r){o=m(r,"BODY",{});var g=p(o);a=m(g,"DIV",{class:!0});var R=p(a);e=m(R,"DIV",{class:!0});var h=p(e);u=m(h,"H1",{});var P=p(u);i=D(P,"Enter your postcode to find its location"),P.forEach(n),f=_(h),t=m(h,"INPUT",{type:!0,id:!0,placeholder:!0}),l=_(h),c=m(h,"BUTTON",{onclick:!0});var Z=p(c);S=D(Z,"Search"),Z.forEach(n),v=_(h),L=m(h,"DIV",{id:!0}),p(L).forEach(n),h.forEach(n),R.forEach(n),g.forEach(n),H=_(r),b=m(r,"SCRIPT",{});var k=p(b);w=D(k,`function normalizePostcode(postcode) {\r
+		}`),this.h()},l(r){o=m(r,"BODY",{});var f=p(o);a=m(f,"DIV",{class:!0});var R=p(a);e=m(R,"DIV",{class:!0});var h=p(e);u=m(h,"H1",{});var Z=p(u);i=D(Z,"Enter your postcode to find its location"),Z.forEach(n),g=_(h),t=m(h,"INPUT",{type:!0,id:!0,placeholder:!0}),l=_(h),c=m(h,"BUTTON",{onclick:!0});var P=p(c);S=D(P,"Search"),P.forEach(n),v=_(h),L=m(h,"DIV",{id:!0}),p(L).forEach(n),h.forEach(n),R.forEach(n),f.forEach(n),H=_(r),b=m(r,"SCRIPT",{});var k=p(b);w=D(k,`function normalizePostcode(postcode) {\r
 			// Remove all spaces from the postcode and convert to uppercase\r
 			return postcode.replace(/\\s/g, "").toUpperCase();\r
 		}\r
@@ -133,7 +133,7 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 				return;\r
 			}\r
 \r
-			fetch("/search_data/CPD_light_with_lat_long_2.csv")\r
+		    fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")\r
 				.then((response) => response.text())\r
 				.then((data) => {\r
 					const rows = data.split("\\n");\r
@@ -238,4 +238,4 @@ import{S as U,i as B,s as C,k as d,q as x,a as A,y as O,l as m,m as p,r as D,h a
 			padding: 10px;\r
 			border: 1px solid #ddd;\r
 			border-radius: 4px;\r
-		}`),I.forEach(n),this.h()},h(){T(t,"type","text"),T(t,"id","searchInput"),T(t,"placeholder","Enter postcode..."),T(c,"onclick","search()"),T(L,"id","resultTable"),T(e,"class","container"),T(a,"class","row")},m(r,g){E(r,o,g),s(o,a),s(a,e),s(e,u),s(u,i),s(e,f),s(e,t),s(e,l),s(e,c),s(c,S),s(e,v),s(e,L),E(r,H,g),E(r,b,g),s(b,w),E(r,$,g),E(r,M,g),s(M,y)},p:Y,d(r){r&&n(o),r&&n(H),r&&n(b),r&&n($),r&&n(M)}}}function K(N){let o,a,e,u,i,f;return i=new j({props:{column:"wide",$$slots:{default:[J]},$$scope:{ctx:N}}}),{c(){o=d("nav"),a=d("a"),e=x("Home"),u=A(),O(i.$$.fragment),this.h()},l(t){o=m(t,"NAV",{});var l=p(o);a=m(l,"A",{href:!0});var c=p(a);e=D(c,"Home"),c.forEach(n),l.forEach(n),u=_(t),W(i.$$.fragment,t),this.h()},h(){T(a,"href",F+"/")},m(t,l){E(t,o,l),s(o,a),s(a,e),E(t,u,l),z(i,t,l),f=!0},p(t,[l]){const c={};l&1&&(c.$$scope={dirty:l,ctx:t}),i.$set(c)},i(t){f||(G(i.$$.fragment,t),f=!0)},o(t){V(i.$$.fragment,t),f=!1},d(t){t&&n(o),t&&n(u),q(i,t)}}}class rt extends U{constructor(o){super(),B(this,o,null,K,C,{})}}export{rt as component};
+		}`),I.forEach(n),this.h()},h(){T(t,"type","text"),T(t,"id","searchInput"),T(t,"placeholder","Enter postcode..."),T(c,"onclick","search()"),T(L,"id","resultTable"),T(e,"class","container"),T(a,"class","row")},m(r,f){E(r,o,f),s(o,a),s(a,e),s(e,u),s(u,i),s(e,g),s(e,t),s(e,l),s(e,c),s(c,S),s(e,v),s(e,L),E(r,H,f),E(r,b,f),s(b,w),E(r,$,f),E(r,M,f),s(M,y)},p:Y,d(r){r&&n(o),r&&n(H),r&&n(b),r&&n($),r&&n(M)}}}function K(N){let o,a,e,u,i,g;return i=new j({props:{column:"wide",$$slots:{default:[J]},$$scope:{ctx:N}}}),{c(){o=d("nav"),a=d("a"),e=x("Home"),u=A(),O(i.$$.fragment),this.h()},l(t){o=m(t,"NAV",{});var l=p(o);a=m(l,"A",{href:!0});var c=p(a);e=D(c,"Home"),c.forEach(n),l.forEach(n),u=_(t),W(i.$$.fragment,t),this.h()},h(){T(a,"href",F+"/")},m(t,l){E(t,o,l),s(o,a),s(a,e),E(t,u,l),z(i,t,l),g=!0},p(t,[l]){const c={};l&1&&(c.$$scope={dirty:l,ctx:t}),i.$set(c)},i(t){g||(G(i.$$.fragment,t),g=!0)},o(t){V(i.$$.fragment,t),g=!1},d(t){t&&n(o),t&&n(u),q(i,t)}}}class rt extends U{constructor(o){super(),B(this,o,null,K,C,{})}}export{rt as component};
