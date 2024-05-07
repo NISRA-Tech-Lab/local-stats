@@ -47,7 +47,9 @@
 					let found = false;
 
 					// Prepare list HTML
+					let pchtml = "<p>";
 					let listHTML = "<ul>";
+					let listHTML2 = "<ul>";
 
 					rows.forEach((row) => {
 						const columns = row.split(",");
@@ -71,34 +73,37 @@
 							const SETTLEMENT15 = columns[28].trim();
 							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();
 							
+							pchtml += `<strong>Postcode:</strong> ${postcode}`;
 
-							listHTML += `<li><strong>Postcode:</strong> ${postcode}</li>`;
-							listHTML += `<hr>`; // Optional separator between entries
-							listHTML += `<li><strong>Local Government District:</strong> <a href="${lgd2014}" target="_blank">${LGD2014NAME}</a></li>`;
-							listHTML += `<li><strong>District Electoral Area:</strong> <a href="${DEA2014}" target="_blank">${DEA2014NAME}</a></li>`;
-							listHTML += `<li><strong>Super Data Zone:</strong> <a href="${SDZ2021}" target="_blank">${SDZ2021_name}</a></li>`;
-							listHTML += `<li><strong>Data Zone:</strong> <a href="${DZ2021}" target="_blank">${DZ2021_name}</a></li>`;
+							listHTML += `<li>Local Government District: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${lgd2014}" target="_blank"><strong>${LGD2014NAME}</strong></a></li>`;
+							listHTML += `<li>District Electoral Area: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${DEA2014}" target="_blank"><strong>${DEA2014NAME}</strong></a></li>`;
+							listHTML += `<li>Super Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${SDZ2021}" target="_blank"><strong>${SDZ2021_name}</strong></a></li>`;
+							listHTML += `<li>Data Zone: <a href="https://nisra-tech-lab.github.io/nisra-geog-explorer/${DZ2021}" target="_blank"><strong>${DZ2021_name}</strong></a></li>`;
 							
-							listHTML += `<hr>`; // Optional separator between entries
-							listHTML += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>`;
-							listHTML += `<li><strong>Settlement:</strong> ${SETTLEMENT15}</li>`;
-							listHTML += `<li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>`;
-							listHTML += `<li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>`;
-							listHTML += `<li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
-							listHTML += `<hr>`; // Optional separator between entries
+							listHTML2 += `<li>Urban / Rural:<strong> ${SETTLEMENT15_URBAN_RURAL}</strong></li>`;
+							listHTML2 += `<li>Settlement:<strong> ${SETTLEMENT15}</strong></li>`;
+							listHTML2 += `<li>Health and Social Care Trust:<strong> ${HSCTNAME}</strong></li>`;
+							listHTML2 += `<li>Assembly Area Name:<strong> ${AA2008NAME}</strong></li>`;
+							listHTML2 += `<li>Ward Name:<strong> ${WARD2014NAME}</strong></li>`;
 
 							found = true;
 						}
 					});
 
-					listHTML += "</ul>";
+					pchtml += "</p>"
+					listHTML += "</ul>";					
+					listHTML2 += "</ul>";
 
 					if (!found) {
 						document.getElementById("resultTable").innerHTML =
 							"Postcode not found.";
 					} else {
 						document.getElementById("resultTable").innerHTML =
-							listHTML;
+							pchtml+ 
+							"<p>Geographies in Area Explorer</p>" + 
+							listHTML + 
+							"<p>Geographies not in Area Explorer</p>" + 
+							listHTML2;
 					}
 				})
 				.catch((error) => {
