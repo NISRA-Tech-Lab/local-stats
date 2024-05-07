@@ -26,7 +26,9 @@
 					let found = false;
 
 					// Prepare list HTML
+					let pHTML = "<p>";
 					let listHTML = "<ul>";
+					let listHTML2 = "<ul>";
 
 					rows.forEach((row) => {
 						const columns = row.split(",");
@@ -48,34 +50,40 @@
 							const SDZ2021 = columns[20].trim();
 							const SDZ2021_name = columns[21].trim();
 							const SETTLEMENT15 = columns[28].trim();
-							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();							
+							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();
+							
+							pHTML += `<strong>Postcode:</strong> ${postcode.slice(0, -3)} ${postcode.substr(-3)}`;
 
-							listHTML += `<li><strong>Postcode:</strong> ${postcode}</li>` +
-										`<hr>` + // Optional separator between entries
-										`<li><strong>Local Government District:</strong> <a href="${base}/${lgd2014}" target="_blank">${LGD2014NAME}</a></li>` +
+							listHTML += `<li><strong>Local Government District:</strong> <a href="${base}/${lgd2014}" target="_blank">${LGD2014NAME}</a></li>` +
 										`<li><strong>District Electoral Area:</strong> <a href="${base}/${DEA2014}" target="_blank">${DEA2014NAME}</a></li>` +
 										`<li><strong>Super Data Zone:</strong> <a href="${base}/${SDZ2021}" target="_blank">${SDZ2021_name}</a></li>` +
-										`<li><strong>Data Zone:</strong> <a href="${base}/${DZ2021}" target="_blank">${DZ2021_name}</a></li>` +
-										`<hr>` + // Optional separator between entries
-										`<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>` +
-										`<li><strong>Settlement:</strong> ${SETTLEMENT15}</li>` +
-										`<li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>` +
-										`<li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>` +
-										`<li><strong>Ward Name:</strong> ${WARD2014NAME}</li>` +
-										`<hr>`; // Optional separator between entries
+										`<li><strong>Data Zone:</strong> <a href="${base}/${DZ2021}" target="_blank">${DZ2021_name}</a></li>`;
+										
+
+							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>` +
+										 `<li><strong>Settlement:</strong> ${SETTLEMENT15}</li>` +
+										 `<li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>` +
+										 `<li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>` +
+										 `<li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
 
 							found = true;
 						}
 					});
 
+					pHTML += "</p>";
 					listHTML += "</ul>";
+					listHTML2 += "</ul>";
 
 					if (!found) {
 						resultTable.innerHTML =
 							"Postcode not found.";
 					} else {
 						resultTable.innerHTML =
-							listHTML;
+							pHTML +
+							"<p>Geographies in Area Explorer</p>" +
+							listHTML +
+							"<p>Geographies not in Area Explorer</p>" +
+							listHTML2;
 					}
 				})
 				.catch((error) => {
