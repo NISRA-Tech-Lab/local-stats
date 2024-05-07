@@ -41,11 +41,7 @@
 
 		<h2>How to interpret?</h2>
 
-		<h2>Information</h2>
-
-		<p>This application contains data for Northern Ireland, the 11 Local Government Districts and the areas within. This was most recently updated on XXXX to update the data and XXXX</p>
-		
-		<h2>Video guides</h2>
+			<h2>Video guides</h2>
 		<ul>
 			<li>Area Explorer</li>
 			<li><a href="https://www.youtube.com/watch?v=HwGsqgdsiHM">Data Portal</a></li>
@@ -53,14 +49,48 @@
 		</ul>
 	
 		<h2>Sources of data</h2>
+		<h3>Statistical data</h3>
+		
 		<p>All of the data is sourced from the <a href="https://explore.nisra.gov.uk/area-explorer-2021/">Census Area Explorer</a> or the <a href="https://data.nisra.gov.uk">NISRA Data Portal</a>.&nbsp; At each statistics the &lsquo;i&rsquo; button provides definitions, source, contact details and date last updated.&nbsp; A more information section provides details of other statistics that are available.</p>
-		<p>Map boundaries &amp; lookup tables &hellip;..</p>
-	
+		
+		<h3>Geographical Levels</h3>
+		<h4>Statistical geographies</h4>
+		<p>Data Zones and Super Data Zones are new statistical output geographies that have been created to support the release of local-level Census 2021 statistics.</p>
+		<p>There are 850 Super Data Zones (SDZ2021) across Northern Ireland and the 3,780 Data Zones (DZ2021) nest within this geography. These two geographies nest within the 80 District Electoral Areas (DEA2014) and 11 Local Government Districts (LGD2014).</p>
+		<p>There is more information in <a href="https://www.nisra.gov.uk/publications/census-2021-output-geography-information-papers">Census 2021 output geography information papers</a></p>			
+			
+			
+		<h4>Postcodes</h4>
+			<p>Postcodes are sourced from the Central Postcode Directory (CPD).  The CPD is a list of postcodes in Northern Ireland, with the average location of the addresses in each postcode. It is used to provide a direct lookup between postcodes and a range of administrative and statistical geographies including Local Government Districts, District Electioral Areas, Data Zones, Super Data Zones and Settlements.   The version of the CPD used is xxxx.</p>
+			
+		<h4>Boundary Files</h4>
+			<p>The Boundary files used in the application are available to download on the OpenDataNI portal at :</p>
+			<ul>
+				<li><a href="https://www.opendatani.gov.uk/@northern-ireland-statistics-and-research-agency/settlement-development-limits-2015">Settlement Development Limits 2015</a></li>
+				<li><a href="https://www.nisra.gov.uk/support/geography/super-data-zones-census-2021">Super Data Zones</a></li>
+				<li><a href="https://www.nisra.gov.uk/support/geography/data-zones-census-2021">Data Zones </a></li>
+				<li><a href="https://www.opendatani.gov.uk/@land-property/osni-open-data-largescale-boundaries-local-government-districts-1993">Local Government Districts (1993)</a></li>
+				<li>DEA??</li>
+		</ul>
+		<h4>Background Mapping</h4>
+			<p>OpenStreet Map has been used to provide background mapping</p>
+
 		<h2>About this app</h2>
 		<p>This web application is based on and inspired by the&nbsp;<a href="https://github.com/ONSvisual">ONS Digital Content team prototypes</a>. It has been modified by NISRA and released as a prototype to explore Census data for Northern Ireland.</p>
 		<p>We welcome feedback from users through our short&nbsp;<a href="https://consultations2.nidirect.gov.uk/dof/area-explorer-feedback/">survey</a>.</p>
 
+		
 
+	
+		<h2>Timelieness</h2>
+		<p> This was most recently updated on XXXX to update the data and XXXX</p>
+
+		<h2>Disclosure</h2>
+		
+		<h2>Rounded figures - </h2>
+		
+		<h2>Feedback and contact details</h2>
+		
 
 	</div>
 
