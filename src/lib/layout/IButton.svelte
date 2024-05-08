@@ -236,10 +236,12 @@ let i_button_info = {
 			title: "Population change",
 			info: "words to be added"},
 
-		age: {
+		broadage: {
 			title: "Age",
-			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"A grouping of ages where a person's age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("BroadAge[0].email") + "'>Email for more information</a> </p>"  +
+			 		"<p class = 'pibutton'>Last updated: " + checkMeta("BroadAge[0].last_updated") + "</p> "+
+			 		" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("BroadAge[0].dataset_url") + "'>" + checkMeta("BroadAge[0].title") + "</a></p>"
+		},
 			
 		sex: {
 			title: "Sex",

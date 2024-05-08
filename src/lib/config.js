@@ -25,8 +25,8 @@ export const app_inputs = {
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
-	// app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
-	app_json_data: "/jsons_nogroup/",
+	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/jsons_nogroup/",
+	//app_json_data: "/jsons_nogroup/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
@@ -135,7 +135,14 @@ export const topics = {
 		{ category: 'destUnempUnkpct', label: 'Unemployed or unknown' }
 			
 			
-	]
+	],
+
+	BroadAge: [
+		{ category: 'Age 0-15', label: '0-15' },
+		{ category: 'Age 16-39', label: '16-39' },
+		{ category: 'Age 40-64', label: '40-64' },
+		{ category: 'Age 65+', label: '65+' }
+	],
 };
 
 

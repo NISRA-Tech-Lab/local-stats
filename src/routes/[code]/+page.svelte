@@ -483,7 +483,7 @@ function compareNIrate (value) {
 	function pullCensusYear (value) {
 
 		if (data.place.data.hasOwnProperty(value)) {
-			return Object.keys(data.place.data[value].perc).slice(-1);
+			return "Census " +  Object.keys(data.place.data[value].perc).slice(-1);
 		} else {
 			return null;
 		}
@@ -738,7 +738,7 @@ function compareNIrate (value) {
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				year = {pullCensusYear("population")}
+				year = {pullYear("MYETotal", data.place)}
 				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</div><div style = "margin-left: 10px; line-height: 1.25em"> people per square kilometer</div></div>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -904,13 +904,15 @@ function compareNIrate (value) {
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: popChange(data.place)
+						content: popChange(data.place),
+						show: ["ni", "lgd"]
 					},
 					box_2: {
-						id: "age",
-						year: pullCensusYear("age"),
+						id: "broadage",
+						year:  pullYear("BroadAge", data.place),
 						content:  "GroupChart",
-						chart_data: makeDataNICompare("age")
+						chart_data: makeDataNICompare("BroadAge"),
+						show: ["ni", "lgd", "dea", "sdz"]
 					},
 					// box_3: {
 					// 	id: "sex",
