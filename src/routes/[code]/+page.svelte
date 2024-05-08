@@ -121,8 +121,30 @@
       return newdata;
     }
 
+	function makeDataNICompare(value) {
 
+		let place_data = data.place.data[value].perc[Object.keys(data.place.data[value].perc).slice(-1)];
+		let ni_data = data.ni.data[value].perc[Object.keys(data.ni.data[value].perc).slice(-1)];
 
+		let newdata = [];
+
+		for (let i = 0; i < Object.keys(place_data).length; i ++) {
+
+			newdata.push({group: "Northern Ireland",
+						  category: Object.values(topics[value])[i].label,
+						  perc: Object.values(ni_data)[i],
+						  width: 0});
+
+			newdata.push({group: data.place.name,
+						  category: Object.values(topics[value])[i].label,
+						  perc: Object.values(place_data)[i],
+						  width: 0});
+
+		}
+
+		return newdata;
+
+	}
 
     function fitMap(bounds) {
       if (map) {
@@ -337,43 +359,44 @@
 
 	function checkNI (value) {
 
-let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
-let props = value_dotted.split(".");
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
 
-let rtn_value = data.ni.data;
+		let rtn_value = data.ni.data;
 
-if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
-	rtn_value = data.ni;
-}		
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
+			rtn_value = data.ni;
+		}		
 
-for (let i = 0; i < props.length; i ++) {
+		for (let i = 0; i < props.length; i ++) {
 
-	if (rtn_value.hasOwnProperty(props[i])) {
-		rtn_value = rtn_value[props[i]]
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
 
-		if (props[i] == "perc") {
-			rtn_value = rtn_value.toFixed(0) + "%";
-		}
-	} else {
-
-		rtn_value = [];
-
-	}
-
-}
-
-		if ( data.place.code != "N92000002"  ) 
-				{
-					rtn_value = rtn_value;
+				if (props[i] == "perc") {
+					rtn_value = rtn_value.toFixed(0) + "%";
+				}
 			} else {
 
 				rtn_value = [];
 
-}
-		
-return rtn_value;
+			}
 
-}
+		}
+
+				if ( data.place.code != "N92000002"  ) 
+						{
+							rtn_value = rtn_value;
+					} else {
+
+						rtn_value = [];
+
+		}
+				
+		return rtn_value;
+
+	}
+
 	function compareNIavg (value) {
 
 		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
@@ -415,9 +438,9 @@ return rtn_value;
 				rtn_value = "<p>This is similar to the NI average.</p>";;
 				} 
 		
-return rtn_value;
+		return rtn_value;
 
-}
+	}
 
 function compareNIrate (value) {
 
@@ -911,7 +934,7 @@ function compareNIrate (value) {
 						content:  "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
+							ni: makeDataNICompare("age"),
 						}
 					},
 					// box_3: {
