@@ -137,40 +137,28 @@
 				place_data = check_value.perc[Object.keys(check_value.perc).slice(-1)];
 				ni_data = data.ni.data[value].perc[Object.keys(data.ni.data[value].perc).slice(-1)];
 
-				for (let i = 0; i < Object.keys(place_data).length; i ++) {
-
-					newdata.push({group: "Northern Ireland",
-								category: Object.values(topics[value])[i].label,
-								perc: Object.values(ni_data)[i],
-								width: 0});
-
-					newdata.push({group: data.place.name,
-								category: Object.values(topics[value])[i].label,
-								perc: Object.values(place_data)[i],
-								width: 0});
-
-				}
-
 			} else {
 
 				place_data = check_value.value;
 				ni_data = data.ni.data[value].value;
 
-				for (let i = 0; i < Object.keys(place_data).length; i ++) {
+			}
 
-					if (Object.values(place_data)[i] <= 100) {
+			for (let i = 0; i < Object.keys(place_data).length; i ++) {
 
-						newdata.push({group: "Northern Ireland",
-									category: Object.values(topics[value])[i].label,
-									perc: Object.values(ni_data)[i],
-									width: 0
-						});
+				if (Object.values(place_data)[i] <= 100) {
+
+					newdata.push({group: "Northern Ireland",
+								  category: Object.values(topics[value])[i].label,
+								  perc: Object.values(ni_data)[i],
+								  width: 0});
+
+					if (data.place.name != "Northern Ireland") {
 
 						newdata.push({group: data.place.name,
-									category: Object.values(topics[value])[i].label,
-									perc: Object.values(place_data)[i],
-									width: 0
-						});
+									  category: Object.values(topics[value])[i].label,
+									  perc: Object.values(place_data)[i],
+									  width: 0});
 
 					}
 
@@ -970,10 +958,7 @@ function compareNIrate (value) {
 						id: "age",
 						year: pullCensusYear("age"),
 						content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							ni: makeDataNICompare("age"),
-						}
+						chart_data: makeDataNICompare("age")
 					},
 					// box_3: {
 					// 	id: "sex",
@@ -982,29 +967,20 @@ function compareNIrate (value) {
 					box_4: {
 						id: "hhsize",
 						year: pullCensusYear("hh_size"),
-						content: "GroupChart"		,
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
-							ni: makeDataNICompare("hh_size"),
-						}
+						content: "GroupChart",
+						chart_data: makeDataNICompare("hh_size")
 					},
 					box_5: {
 						id: "religion",
 						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							ni: makeDataNICompare("religion_or_religion_brought_up_in"),
-						},
+						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
 					box_6: {
 						id: "language",
 						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
-							ni: makeDataNICompare("mainlang"),
-						},
+						chart_data: makeDataNICompare("mainlang")
 					}
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
@@ -1183,10 +1159,7 @@ function compareNIrate (value) {
 				id: "employmentrates",
 				year: pullYear("LMS", data.place),
 				content: "GroupChart",
-				chart_data: {
-					none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
-					ni: makeDataNICompare("LMS"),
-				},
+				chart_data: makeDataNICompare("LMS"),
 				show: ["ni", "lgd"]
 			},
 				
@@ -1338,10 +1311,7 @@ function compareNIrate (value) {
 				id: "qualifications",
 				content:  "GroupChart",
 				year: pullCensusYear("highest_level_of_qualifications"),
-				chart_data: {
-					none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-					ni: makeDataNICompare("highest_level_of_qualifications")
-				}
+				chart_data: makeDataNICompare("highest_level_of_qualifications")
 			},
 
 
@@ -1368,10 +1338,7 @@ function compareNIrate (value) {
 				id: "destination",
 				year: pullYear("Destination", data.place),
 				content:  "GroupChart",
-				chart_data: {
-					none: makeDataGroupSort(check("grouped_data_nocompare.Destination"), "Destination"),
-					ni: makeDataNICompare("Destination")
-				},
+				chart_data: makeDataNICompare("Destination"),
 				show: ["ni", "lgd", "dea"]
 			},
 
