@@ -333,21 +333,25 @@
 
 	}
 
-	function popChange (expr) {
+	function popChange (place) {
 
-		if (data.place.type != "dea") {
+		let output = "";
 
-			let pct = expr.toFixed(1);
+		if (place.data.hasOwnProperty("PopChange")) {
 
-			if (pct > 0) {
-				return "An increase of " + pct + "%" + " since the 2011 Census.";
-			} else if (pct < 0) {
-				return "A decrease of " + pct + "%" + " since the 2011 Census.";
-			} else {
-				return "No change since the 2011 Census.";
-			}
+			let p_data = place.data.PopChange.value;
+			let latest_year = Object.keys(p_data).slice(-1);
+			let comparison_year = latest_year - 10;
+			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+
+			output = '<p>The population of ' + place.name + ' in ' + comparison_year + ' was <span class="text-big">' +
+					p_data[comparison_year].toLocaleString() + '</span> and in ' + latest_year + ' was <span class="text-big">' +
+					p_data[latest_year].toLocaleString() + '</span><p><span class="em ' +
+					changeClass(change) + '">' + changeStr(change, "%", 1,) + '</span> since 2011 Census</p>';
 
 		}
+
+		return output;
 
 	}
 
@@ -945,15 +949,8 @@ function compareNIrate (value) {
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: {
-							ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-							lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-							dea: '<p>The population of </p>',
-							sdz: '<p>The population of </p>',
-							dz: '<p>The population of </p>'
-						}
+						content: popChange(data.place)
 					},
-
 					box_2: {
 						id: "age",
 						year: pullCensusYear("age"),
@@ -1058,10 +1055,7 @@ function compareNIrate (value) {
 				id: "carers",
 				content: "GroupChart",
 				year: pullCensusYear("provision_care"),
-				chart_data: {
-					none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-					ni: makeDataNICompare("provision_care")
-				}
+				chart_data: makeDataNICompare("provision_care")
 			},
 			box_5: {
 				id: "hospitalactivity",
@@ -1274,8 +1268,8 @@ function compareNIrate (value) {
 				
 			box_2a: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> " + check("grouped_data_nocompare.Primary[0].perc") + " </span>"+
+					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + check("grouped_data_nocompare.PostPrimary[0].perc") + " </span>",
 				year: pullYear("Primary", data.place),
 				show: ["ni"]
 			},
