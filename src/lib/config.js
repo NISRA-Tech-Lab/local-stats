@@ -49,6 +49,13 @@ export const topics = {
 		{ category: 'a40to64', label: '40-64' },
 		{ category: 'a65plus', label: '65+' }
 	],
+
+	BroadAge: [
+		{ category: 'Age 0-15', label: '0-15' },
+		{ category: 'Age 16-39', label: '16-39' },
+		{ category: 'Age 40-64', label: '40-64' },
+		{ category: 'Age 65+', label: '65+' }
+	],
 	highest_level_of_qualifications : [
 		{ category: "apprenticeship", label: 'No qualifications' },
 		{ category: "level_1_qualifications", label: 'Level 1' },

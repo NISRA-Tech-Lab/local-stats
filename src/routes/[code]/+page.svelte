@@ -475,7 +475,7 @@ function compareNIrate (value) {
 	function pullCensusYear (value) {
 
 		if (data.place.data.hasOwnProperty(value)) {
-			return Object.keys(data.place.data[value].perc).slice(-1);
+			return "Census " + Object.keys(data.place.data[value].perc).slice(-1);
 		} else {
 			return null;
 		}
@@ -495,6 +495,7 @@ function compareNIrate (value) {
 		return pop_den;
 
 	}
+
 
 	function moreData (subject, place) {
 
@@ -711,7 +712,7 @@ function compareNIrate (value) {
 				chart_compare_type = {chart_compare_type}
 			/>
 
-			<GreyBox
+			<!-- <GreyBox
 				id = "pop"
 				place = {data.place}
 				year = {pullYear("MYETotal", data.place)}
@@ -725,13 +726,24 @@ function compareNIrate (value) {
 					sdz: "Data not available for area comparison",
 					dz: " Data not available for area comparison"
 				}}
+			/> -->
+
+
+			<GreyBox
+				id = "pop"
+				place = {data.place}
+				year = {pullYear("MYETotal", data.place)}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
+				
 			/>
 
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				year = {pullCensusYear("population")}
-				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + popDen(data.place) + '</div><div style = "margin-left: 10px; line-height: 1.25em"> people per square kilometer</div></div>'}
+				year = {pullYear("MYETotal", data.place)}
+				content = {'<div class = "row" style = "display: flex; align-items: center"><div class="text-big" style="font-size: 2.8em;">' + 
+					popDen(data.place) +
+					 '</div><div style = "margin-left: 10px; line-height: 1.25em"> people per square kilometer</div></div>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
 					ni: "",
@@ -897,6 +909,7 @@ function compareNIrate (value) {
 					box_1: {
 						id: "popchange",
 						content: {
+							
 							ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
 							lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
 							dea: '<p>The population of </p>',
@@ -905,14 +918,25 @@ function compareNIrate (value) {
 						}
 					},
 
-					box_2: {
-						id: "age",
-						year: pullCensusYear("age"),
+					// box_2: {
+					// 	id: "age",
+					// 	year: pullCensusYear("age"),
+					// 	content:  "GroupChart",
+					// 	chart_data: {
+					// 		none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
+					// 		ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
+					// 	}
+					// },
+
+					box_2a: {
+						id: "broadage",
+						year: pullYear("BroadAge", data.place),
 						content:  "GroupChart",
 						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
-						}
+							none: makeDataGroupSort(data.place.grouped_data_nocompare.BroadAge, "BroadAge"),
+							ni: makeDataGroupSort(data.place.grouped_data_areacompare.BroadAge, "BroadAge"),
+						},
+						show: ["ni", "lgd", "dea"]
 					},
 					// box_3: {
 					// 	id: "sex",

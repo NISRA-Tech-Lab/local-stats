@@ -45,18 +45,25 @@ let i_button_info = {
 
 		popden: {
 			title: "Population density",
-			info: "Population density is the number of usual residents per square kilometer. A square kilometer is approximately equivalent to the floor space of 8 Titanics. It is rounded to 1 decimal place."
+			info: "Population density is the number of usual residents per square kilometer. A square kilometer is approximately equivalent to the floor space of 8 Titanics. It is rounded to 1 decimal place." 
+			//+
+			// "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("MYETotal[0].dataset_url") + "'>" + checkMeta("MYETotal[0].title") + "</a></p>"+
+			// 	"<p class = 'pibutton'>Last updated: " + checkMeta("MYETotal[0].last_updated") + "</p> "+
+			// 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("MYETotal[0].email") + "'>Email for more information</a> </p>"   
+	
 		},
 
 		pop: {
 			title: "Population",
-			info: "Population is based on the number of usual residents. " +
-			"<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-			"A usual resident is anyone who, on 21 March 2021 is in the UK, and staying in the UK for a period of 3 months or more; " +
-			 	  "or has a permanent UK address and is outside the UK and is staying outside the UK for less than 12 months. " +
-			      "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
+			info: "Population is based on the number of usual residents. " 
+			// "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("MYETotal[0].dataset_url") + "'>" + checkMeta("MYETotal[0].title") + "</a></p>"+
+			// 	"<p class = 'pibutton'>Last updated: " + checkMeta("MYETotal[0].last_updated") + "</p> "+
+			// 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("MYETotal[0].email") + "'>Email for more information</a> </p>"   
+			// 	
 		},
 
+
+	
 		generalhealth: {
 			title: "General Health",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
@@ -235,12 +242,22 @@ let i_button_info = {
 			popchange: {
 			title: "Population change",
 			info: "words to be added"},
-
-		age: {
+			
+			age: {
 			title: "Age",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"A grouping of ages where a person's age is their age at their last birthday on or prior to census day. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
-			
+
+
+			broadage: {
+			title: "Age MYEs",
+			info: "aa"
+			// <p class = 'pibutton'><a href='mailto:" + checkMeta("BroadAge[0].email") + "'>Email for more information</a> </p>"  +
+			// 		"<p class = 'pibutton'>Last updated: " + checkMeta("BroadAge[0].last_updated") + "</p> "+
+			// 		" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("BroadAge[0].dataset_url") + "'>" + checkMeta("BroadAge[0].title") + "</a></p>"
+
+		},
+
 		sex: {
 			title: "Sex",
 			info: "words to be added"},
