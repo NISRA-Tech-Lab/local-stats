@@ -131,8 +131,6 @@
 			let place_data;
 			let ni_data;
 
-			console.log(check_value);
-
 			if (check_value.hasOwnProperty("2021")) {
 
 				place_data = check_value["2021"];
@@ -1186,10 +1184,7 @@ function compareNIrate (value) {
 				id: "bres",
 				year: pullYear("BRES", data.place),
 				content:  "GroupChart",
-					chart_data: {
-						none: makeDataNICompare("BRES"),
-						ni: makeDataNICompare("BRES"),
-					},
+				chart_data: makeDataNICompare("BRES"),
 				show: ["ni", "lgd"]
 			},	
 				
