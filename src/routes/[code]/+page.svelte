@@ -127,20 +127,21 @@
 
 		if (data.place.data.hasOwnProperty(value)) {
 
-			let check_value = data.place.data[value];
+			let check_value = data.place.data[value].perc;
 			let place_data;
 			let ni_data;
-			
 
-			if (check_value.hasOwnProperty("perc")) {
+			console.log(check_value);
 
-				place_data = check_value.perc[Object.keys(check_value.perc).slice(-1)];
-				ni_data = data.ni.data[value].perc[Object.keys(data.ni.data[value].perc).slice(-1)];
+			if (check_value.hasOwnProperty("2021")) {
+
+				place_data = check_value["2021"];
+				ni_data = data.ni.data[value].perc["2021"];
 
 			} else {
 
-				place_data = check_value.value;
-				ni_data = data.ni.data[value].value;
+				place_data = check_value;
+				ni_data = data.ni.data[value].perc;
 
 			}
 
@@ -1186,8 +1187,8 @@ function compareNIrate (value) {
 				year: pullYear("BRES", data.place),
 				content:  "GroupChart",
 					chart_data: {
-						none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
-						ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
+						none: makeDataNICompare("BRES"),
+						ni: makeDataNICompare("BRES"),
 					},
 				show: ["ni", "lgd"]
 			},	
