@@ -123,22 +123,60 @@
 
 	function makeDataNICompare(value) {
 
-		let place_data = data.place.data[value].perc[Object.keys(data.place.data[value].perc).slice(-1)];
-		let ni_data = data.ni.data[value].perc[Object.keys(data.ni.data[value].perc).slice(-1)];
-
 		let newdata = [];
 
-		for (let i = 0; i < Object.keys(place_data).length; i ++) {
+		if (data.place.data.hasOwnProperty(value)) {
 
-			newdata.push({group: "Northern Ireland",
-						  category: Object.values(topics[value])[i].label,
-						  perc: Object.values(ni_data)[i],
-						  width: 0});
+			let check_value = data.place.data[value];
+			let place_data;
+			let ni_data;
+			
 
-			newdata.push({group: data.place.name,
-						  category: Object.values(topics[value])[i].label,
-						  perc: Object.values(place_data)[i],
-						  width: 0});
+			if (check_value.hasOwnProperty("perc")) {
+
+				place_data = check_value.perc[Object.keys(check_value.perc).slice(-1)];
+				ni_data = data.ni.data[value].perc[Object.keys(data.ni.data[value].perc).slice(-1)];
+
+				for (let i = 0; i < Object.keys(place_data).length; i ++) {
+
+					newdata.push({group: "Northern Ireland",
+								category: Object.values(topics[value])[i].label,
+								perc: Object.values(ni_data)[i],
+								width: 0});
+
+					newdata.push({group: data.place.name,
+								category: Object.values(topics[value])[i].label,
+								perc: Object.values(place_data)[i],
+								width: 0});
+
+				}
+
+			} else {
+
+				place_data = check_value.value;
+				ni_data = data.ni.data[value].value;
+
+				for (let i = 0; i < Object.keys(place_data).length; i ++) {
+
+					if (Object.values(place_data)[i] <= 100) {
+
+						newdata.push({group: "Northern Ireland",
+									category: Object.values(topics[value])[i].label,
+									perc: Object.values(ni_data)[i],
+									width: 0
+						});
+
+						newdata.push({group: data.place.name,
+									category: Object.values(topics[value])[i].label,
+									perc: Object.values(place_data)[i],
+									width: 0
+						});
+
+					}
+
+				}
+
+			}
 
 		}
 
@@ -947,7 +985,7 @@ function compareNIrate (value) {
 						content: "GroupChart"		,
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
+							ni: makeDataNICompare("hh_size"),
 						}
 					},
 					box_5: {
@@ -956,7 +994,7 @@ function compareNIrate (value) {
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
+							ni: makeDataNICompare("religion_or_religion_brought_up_in"),
 						},
 					},
 					box_6: {
@@ -965,7 +1003,7 @@ function compareNIrate (value) {
 						content: "GroupChart",
 						chart_data: {
 							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
+							ni: makeDataNICompare("mainlang"),
 						},
 					}
 			}}
@@ -1046,7 +1084,7 @@ function compareNIrate (value) {
 				year: pullCensusYear("provision_care"),
 				chart_data: {
 					none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care")
+					ni: makeDataNICompare("provision_care")
 				}
 			},
 			box_5: {
@@ -1147,7 +1185,7 @@ function compareNIrate (value) {
 				content: "GroupChart",
 				chart_data: {
 					none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
-					ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
+					ni: makeDataNICompare("LMS"),
 				},
 				show: ["ni", "lgd"]
 			},
@@ -1284,7 +1322,7 @@ function compareNIrate (value) {
 				year: pullYear("ClassSize", data.place),
 				content: "<p><span class='text-big'>"  + 
 				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
-			show: ["ni"]
+				show: ["ni"]
 			},
 		
 			box_3n: {
@@ -1293,7 +1331,7 @@ function compareNIrate (value) {
 				content: "<p><span class='text-big'>"  + 
 				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
 						 "<span style='color: #1460aa'> (NI " +(checkNI("ClassSize.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
-			show: [ "lgd"]
+				show: [ "lgd"]
 			},
 
 			box_4: {
@@ -1302,7 +1340,7 @@ function compareNIrate (value) {
 				year: pullCensusYear("highest_level_of_qualifications"),
 				chart_data: {
 					none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications")
+					ni: makeDataNICompare("highest_level_of_qualifications")
 				}
 			},
 
@@ -1332,7 +1370,7 @@ function compareNIrate (value) {
 				content:  "GroupChart",
 				chart_data: {
 					none: makeDataGroupSort(check("grouped_data_nocompare.Destination"), "Destination"),
-					ni: makeDataGroupSort(check("grouped_data_areacompare.Destination"), "Destination")
+					ni: makeDataNICompare("Destination")
 				},
 				show: ["ni", "lgd", "dea"]
 			},
