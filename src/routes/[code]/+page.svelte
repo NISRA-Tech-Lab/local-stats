@@ -346,7 +346,7 @@
 			output = '<p>The population of ' + place.name + ' in ' + comparison_year + ' was <span class="text-big">' +
 					p_data[comparison_year].toLocaleString() + '</span> and in ' + latest_year + ' was <span class="text-big">' +
 					p_data[latest_year].toLocaleString() + '</span><p><span class="em ' +
-					changeClass(change) + '">' + changeStr(change, "%", 1,) + '</span> since 2011 Census</p>';
+					changeClass(change) + '">' + changeStr(change, "%", 1,) + '</span> since ' + comparison_year + ' Mid-Year Population Estimate</p>';
 
 		}
 
