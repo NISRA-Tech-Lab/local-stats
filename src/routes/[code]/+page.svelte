@@ -121,8 +121,55 @@
       return newdata;
     }
 
+	function makeDataNICompare(value) {
 
+		let newdata = [];
 
+		if (data.place.data.hasOwnProperty(value)) {
+
+			let check_value = data.place.data[value].perc;
+			let place_data;
+			let ni_data;
+
+			if (check_value.hasOwnProperty("2021")) {
+
+				place_data = check_value["2021"];
+				ni_data = data.ni.data[value].perc["2021"];
+
+			} else {
+
+				place_data = check_value;
+				ni_data = data.ni.data[value].perc;
+
+			}
+
+			for (let i = 0; i < Object.keys(place_data).length; i ++) {
+
+				if (Object.values(place_data)[i] <= 100) {
+
+					newdata.push({group: "Northern Ireland",
+								  category: Object.values(topics[value])[i].label,
+								  perc: Object.values(ni_data)[i],
+								  width: 0});
+
+					if (data.place.name != "Northern Ireland") {
+
+						newdata.push({group: data.place.name,
+									  category: Object.values(topics[value])[i].label,
+									  perc: Object.values(place_data)[i],
+									  width: 0});
+
+					}
+
+				}
+
+			}
+
+		}
+
+		return newdata;
+
+	}
 
     function fitMap(bounds) {
       if (map) {
@@ -285,21 +332,25 @@
 
 	}
 
-	function popChange (expr) {
+	function popChange (place) {
 
-		if (data.place.type != "dea") {
+		let output = "";
 
-			let pct = expr.toFixed(1);
+		if (place.data.hasOwnProperty("PopChange")) {
 
-			if (pct > 0) {
-				return "An increase of " + pct + "%" + " since the 2011 Census.";
-			} else if (pct < 0) {
-				return "A decrease of " + pct + "%" + " since the 2011 Census.";
-			} else {
-				return "No change since the 2011 Census.";
-			}
+			let p_data = place.data.PopChange.value;
+			let latest_year = Object.keys(p_data).slice(-1);
+			let comparison_year = latest_year - 10;
+			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+
+			output = '<p>The population of ' + place.name + ' in ' + comparison_year + ' was <span class="text-big">' +
+					p_data[comparison_year].toLocaleString() + '</span> and in ' + latest_year + ' was <span class="text-big">' +
+					p_data[latest_year].toLocaleString() + '</span><p><span class="em ' +
+					changeClass(change) + '">' + changeStr(change, "%", 1,) + '</span> since ' + comparison_year + ' Mid-Year Population Estimate</p>';
 
 		}
+
+		return output;
 
 	}
 
@@ -308,20 +359,13 @@
 		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
 		let props = value_dotted.split(".");
 
-		let rtn_value = data.place.data;
-
-		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
-			rtn_value = data.place;
-		}		
+		let rtn_value = data.place.data;	
 
 		for (let i = 0; i < props.length; i ++) {
 
 			if (rtn_value.hasOwnProperty(props[i])) {
 				rtn_value = rtn_value[props[i]]
 
-				if (props[i] == "perc") {
-					rtn_value = rtn_value.toFixed(0) + "%";
-				}
 			} else {
 
 				rtn_value = [];
@@ -330,50 +374,14 @@
 
 		}
 
+		if (rtn_value.length != 0 & props.includes("perc")) {
+			rtn_value = rtn_value.toFixed(0) + "%";
+		}
+
 		return rtn_value;
 
 	}
 
-
-	function checkNI (value) {
-
-let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
-let props = value_dotted.split(".");
-
-let rtn_value = data.ni.data;
-
-if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
-	rtn_value = data.ni;
-}		
-
-for (let i = 0; i < props.length; i ++) {
-
-	if (rtn_value.hasOwnProperty(props[i])) {
-		rtn_value = rtn_value[props[i]]
-
-		if (props[i] == "perc") {
-			rtn_value = rtn_value.toFixed(0) + "%";
-		}
-	} else {
-
-		rtn_value = [];
-
-	}
-
-}
-
-		if ( data.place.code != "N92000002"  ) 
-				{
-					rtn_value = rtn_value;
-			} else {
-
-				rtn_value = [];
-
-}
-		
-return rtn_value;
-
-}
 	function compareNIavg (value) {
 
 		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
@@ -415,9 +423,9 @@ return rtn_value;
 				rtn_value = "<p>This is similar to the NI average.</p>";;
 				} 
 		
-return rtn_value;
+		return rtn_value;
 
-}
+	}
 
 function compareNIrate (value) {
 
@@ -896,23 +904,13 @@ function compareNIrate (value) {
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: {
-							ni: '<p>The population of '+ data.place.name +'in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-							lgd: '<p>The population of '+ data.place.name +' in 2011 was <span class="text-big">' + data.place.data.population.value["2011"].all.toLocaleString() + '</span> and in 2021 was <span class="text-big">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span><p><span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census</p>',
-							dea: '<p>The population of </p>',
-							sdz: '<p>The population of </p>',
-							dz: '<p>The population of </p>'
-						}
+						content: popChange(data.place)
 					},
-
 					box_2: {
 						id: "age",
 						year: pullCensusYear("age"),
 						content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
-						}
+						chart_data: makeDataNICompare("age")
 					},
 					// box_3: {
 					// 	id: "sex",
@@ -921,29 +919,20 @@ function compareNIrate (value) {
 					box_4: {
 						id: "hhsize",
 						year: pullCensusYear("hh_size"),
-						content: "GroupChart"		,
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
-						}
+						content: "GroupChart",
+						chart_data: makeDataNICompare("hh_size")
 					},
 					box_5: {
 						id: "religion",
 						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-						},
+						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
 					box_6: {
 						id: "language",
 						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
-						},
+						chart_data: makeDataNICompare("mainlang")
 					}
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
@@ -985,9 +974,9 @@ function compareNIrate (value) {
 				id: "wellbeing",
 				year: pullYear("Happy", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
-						"<span style='color: #1460aa'> (NI " +(checkNI("Happy.value")).toLocaleString() +"/10) </span></p>"+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
-						"<span style='color: #1460aa'> (NI " +(checkNI("Satisfy.value")).toLocaleString() +"/10) </span></p>",
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>",
 
 				show: [ "lgd"]
 			},
@@ -1009,11 +998,11 @@ function compareNIrate (value) {
 				content: "<p>Male</p> <span class='text-big'>" + 
 					(check("LE.value.Males")).toLocaleString() +
 					"</span> years"+
-					"<span style='color: #1460aa'> (NI " +(checkNI("LE.value.Males")).toLocaleString() +") </span></p>"+
+					"<span style='color: #1460aa'> (NI " + data.ni.data.LE.value.Males +") </span></p>"+
 						
 					"<p>Female</p> <span class='text-big'>" +
 					(check("LE.value.Females")).toLocaleString() + "</span> years"+
-					"<span style='color: #1460aa'> (NI " +(checkNI("LE.value.Females")).toLocaleString() +") </span></p>",
+					"<span style='color: #1460aa'> (NI " + data.ni.data.LE.value.Females +") </span></p>",
 				show: [ "lgd"]
 			},
 
@@ -1021,10 +1010,7 @@ function compareNIrate (value) {
 				id: "carers",
 				content: "GroupChart",
 				year: pullCensusYear("provision_care"),
-				chart_data: {
-					none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care")
-				}
+				chart_data: makeDataNICompare("provision_care")
 			},
 			box_5: {
 				id: "hospitalactivity",
@@ -1064,7 +1050,7 @@ function compareNIrate (value) {
 						(check("GP.value.PRACLIST")).toLocaleString() +
 						"</span> patients per practice</p>" +
 						"<p>"+(compareNIrate("GP.value.PRACLIST")).toLocaleString() +
-							 "<span style='color: #1460aa'> (NI " +  (checkNI("GP.value.PRACLIST")).toLocaleString() +" patients per practice) </span></p>"+
+							 "<span style='color: #1460aa'> (NI " +  data.ni.data.GP.value.PRACLIST.toLocaleString() +" patients per practice) </span></p>"+
 					"<p><span class='text-big'>" + 
 							 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 							"</span> dental surgeries" +
@@ -1122,10 +1108,7 @@ function compareNIrate (value) {
 				id: "employmentrates",
 				year: pullYear("LMS", data.place),
 				content: "GroupChart",
-				chart_data: {
-					none: makeDataGroupSort(check("grouped_data_nocompare.LMS"), "LMS"),
-					ni: makeDataGroupSort(check("grouped_data_areacompare.LMS"), "LMS"),
-				},
+				chart_data: makeDataNICompare("LMS"),
 				show: ["ni", "lgd"]
 			},
 				
@@ -1149,7 +1132,7 @@ function compareNIrate (value) {
 						 "</span> </p>"+
 						'<p>Median salary</p> <span class="text-big">£' +
 					     (check("ASHE.value")).toLocaleString() + '</span> '+
-						 "<span style='color: #1460aa'> (NI £" +(checkNI("ASHE.value")).toLocaleString() +") </span></p>",
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE.value.toLocaleString() +") </span></p>",
 				show: [ "lgd"]
 			},
 			
@@ -1157,10 +1140,7 @@ function compareNIrate (value) {
 				id: "bres",
 				year: pullYear("BRES", data.place),
 				content:  "GroupChart",
-					chart_data: {
-						none: makeDataGroupSort(data.place.grouped_data_nocompare.BRES, "BRES"),
-						ni: makeDataGroupSort(data.place.grouped_data_areacompare.BRES, "BRES"),
-					},
+				chart_data: makeDataNICompare("BRES"),
 				show: ["ni", "lgd"]
 			},	
 				
@@ -1240,18 +1220,18 @@ function compareNIrate (value) {
 				
 			box_2a: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> " + check("Primary.perc.FSME") + " </span>"+
+					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + check("PostPrimary.perc.FSME") + " </span>",
 				year: pullYear("Primary", data.place),
 				show: ["ni"]
 			},
 			
 			box_2b: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ check("grouped_data_nocompare.Primary[0].perc") + " </span>"+
-				"<span style='color: #1460aa'> (NI " +(checkNI("grouped_data_nocompare.Primary[0].perc")).toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ check("grouped_data_nocompare.PostPrimary[0].perc") + " </span>"+
-					 "<span style='color: #1460aa'> (NI " +(checkNI("grouped_data_nocompare.PostPrimary[0].perc")).toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ check("Primary.perc.FSME") + " </span>"+
+				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(0) +"%) </span></p>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ check("PostPrimary.perc.FSME") + " </span>"+
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(0) + "%) </span></p>",
 				year: pullYear("Primary", data.place),
 				show: [ "lgd", "dea"]
 			},
@@ -1261,7 +1241,7 @@ function compareNIrate (value) {
 				year: pullYear("ClassSize", data.place),
 				content: "<p><span class='text-big'>"  + 
 				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
-			show: ["ni"]
+				show: ["ni"]
 			},
 		
 			box_3n: {
@@ -1269,18 +1249,15 @@ function compareNIrate (value) {
 				year: pullYear("ClassSize", data.place),
 				content: "<p><span class='text-big'>"  + 
 				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
-						 "<span style='color: #1460aa'> (NI " +(checkNI("ClassSize.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
-			show: [ "lgd"]
+						 "<span style='color: #1460aa'> (NI " + data.ni.data.ClassSize.value.toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
+				show: [ "lgd"]
 			},
 
 			box_4: {
 				id: "qualifications",
 				content:  "GroupChart",
 				year: pullCensusYear("highest_level_of_qualifications"),
-				chart_data: {
-					none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-					ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications")
-				}
+				chart_data: makeDataNICompare("highest_level_of_qualifications")
 			},
 
 
@@ -1297,7 +1274,7 @@ function compareNIrate (value) {
 				year: pullYear("Attainment", data.place),
 				content: "<p>Percentage of pupils who left school with 5 or more GCSEs grades A*-C (including Maths and English)</p><p> <span class='text-big'>"  + 
 				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
-						 "<span style='color: #1460aa'>(NI " +(checkNI("Attainment.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) +"%) </span></p>" + 
+						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span></p>" + 
 						  (compareNIrate("Attainment.value")).toLocaleString() ,
 				show: ["lgd"]
 			},
@@ -1307,10 +1284,7 @@ function compareNIrate (value) {
 				id: "destination",
 				year: pullYear("Destination", data.place),
 				content:  "GroupChart",
-				chart_data: {
-					none: makeDataGroupSort(check("grouped_data_nocompare.Destination"), "Destination"),
-					ni: makeDataGroupSort(check("grouped_data_areacompare.Destination"), "Destination")
-				},
+				chart_data: makeDataNICompare("Destination"),
 				show: ["ni", "lgd", "dea"]
 			},
 

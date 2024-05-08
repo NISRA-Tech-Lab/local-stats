@@ -25,7 +25,8 @@ export const app_inputs = {
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
-	app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
+	// app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/alternative_jsons/",
+	app_json_data: "/jsons_nogroup/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
 
@@ -116,6 +117,7 @@ export const topics = {
 
 	LMS: [
 
+		{ category: 'EMPN', label: 'Employed'},
 		{ category: 'EMPR', label: 'Employed' },
 		{ category: 'UNEMPR', label: 'Unemployed' }	,
 		{ category: 'INACTR', label: 'Inactive' }	
