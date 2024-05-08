@@ -54,17 +54,17 @@
 							
 							pHTML += `<strong>Postcode:</strong> ${postcode.slice(0, -3)} ${postcode.substr(-3)}`;
 
-							listHTML += `<li><strong>Local Government District:</strong> <a href="${base}/${lgd2014}" target="_blank">${LGD2014NAME}</a></li>` +
-										`<li><strong>District Electoral Area:</strong> <a href="${base}/${DEA2014}" target="_blank">${DEA2014NAME}</a></li>` +
-										`<li><strong>Super Data Zone:</strong> <a href="${base}/${SDZ2021}" target="_blank">${SDZ2021_name}</a></li>` +
-										`<li><strong>Data Zone:</strong> <a href="${base}/${DZ2021}" target="_blank">${DZ2021_name}</a></li>`;
+							listHTML += `<li><strong>Local Government District:</strong> <a href="${base}/${lgd2014}" target="_blank">${LGD2014NAME}</a></li>
+										 <li><strong>District Electoral Area:</strong> <a href="${base}/${DEA2014}" target="_blank">${DEA2014NAME}</a></li>
+										 <li><strong>Super Data Zone:</strong> <a href="${base}/${SDZ2021}" target="_blank">${SDZ2021_name}</a></li>
+										 <li><strong>Data Zone:</strong> <a href="${base}/${DZ2021}" target="_blank">${DZ2021_name}</a></li>`;
 										
 
-							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>` +
-										 `<li><strong>Settlement:</strong> ${SETTLEMENT15}</li>` +
-										 `<li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>` +
-										 `<li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>` +
-										 `<li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
+							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>
+										  <li><strong>Settlement:</strong> ${SETTLEMENT15}</li>
+										  <li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>
+										  <li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>
+										  <li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
 
 							found = true;
 						}
