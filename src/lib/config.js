@@ -117,7 +117,7 @@ export const topics = {
 
 	LMS: [
 
-		{ category: 'EMPN', label: 'Employed'},
+//		{ category: 'EMPN', label: 'Employed'},
 		{ category: 'EMPR', label: 'Employed' },
 		{ category: 'UNEMPR', label: 'Unemployed' }	,
 		{ category: 'INACTR', label: 'Inactive' }	
