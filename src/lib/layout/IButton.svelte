@@ -31,17 +31,17 @@ function checkMeta (value) {
 
 let i_button_info = {
 
-	location: {
-			title: "About the area",
-			info: "Information about the area including its geographical hierarchy."
-		},
+	// location: {
+	// 		title: "About the area",
+	// 		info: "Information about the area including its geographical hierarchy."
+	// 	},
 		
 
 
-		area: {
-			title: "Area",
-			info: "Area is measured in hectares (ha), it is rounded to the nearest whole number."
-		},
+		// area: {
+		// 	title: "Area",
+		// 	info: "Area is measured in hectares (ha), it is rounded to the nearest whole number."
+		// },
 
 		popden: {
 			title: "Population density",
@@ -148,16 +148,17 @@ let i_button_info = {
 
 			pensionagebenefits: {
 			title: "Pension Age benefits",
-			info: "Benefits included are: SP and PC" + 
+			info: "Benefits included are: Retirement Pension and Pension Credit" + 
 			"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 			"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
 			"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  				
 				},
 
 
+
 			workingagebenefits: {
 			title: "Working Age benefits",
-			info:  "Benefits included are: UC, JSA, IS and ESA" + 
+			info:  "Benefits included are: Universal Credit, Jobseekers Allowance, Income Support and Employment & Support Allowance" + 
 					"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
@@ -165,7 +166,7 @@ let i_button_info = {
 						,
 			disabilitybenefits: {
 			title: "Disability and Carer’s benefits",
-			info:   "Benefits included are: PIP, CA, AA and DLA" + 
+			info:   "Benefits included are: Personal Independence Payment, Carer's Allowance, Attendance Allowance and Disability Living Allowance" + 
 				  "<p class = 'pibutton'>Access data at:  <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
@@ -229,29 +230,29 @@ let i_button_info = {
 
 			destination: {
 				title: "Next steps for school leavers",
-				info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  +
+				info: 
+				" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("Destination[0].last_updated") + "</p> "+
-					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Destination[0].dataset_url") + "'>" + checkMeta("Destination[0].title") + "</a></p>"
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("Destination[0].email") + "'>Email for more information</a> </p>"  ,
 			},
 
 
 			popchange: {
 			title: "Population change",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("PopChange[0].email") + "'>Email for more information</a> </p>"  +
+			info: 
+					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("PopChange[0].dataset_url") + "'>" + checkMeta("PopChange[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("PopChange[0].last_updated") + "</p> "+
-					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("PopChange[0].dataset_url") + "'>" + checkMeta("PopChange[0].title") + "</a></p>"
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("PopChange[0].email") + "'>Email for more information</a> </p>"  
 		},
 
 		broadage: {
 			title: "Age",
-			info: "<p class = 'pibutton'><a href='mailto:" + checkMeta("BroadAge[0].email") + "'>Email for more information</a> </p>"  +
+			info: 
+			 		" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("BroadAge[0].dataset_url") + "'>" + checkMeta("BroadAge[0].title") + "</a></p>"+
 			 		"<p class = 'pibutton'>Last updated: " + checkMeta("BroadAge[0].last_updated") + "</p> "+
-			 		" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("BroadAge[0].dataset_url") + "'>" + checkMeta("BroadAge[0].title") + "</a></p>"
-		},
+					 "<p class = 'pibutton'><a href='mailto:" + checkMeta("BroadAge[0].email") + "'>Email for more information</a> </p>"  
+			},
 			
-		sex: {
-			title: "Sex",
-			info: "words to be added"},
 			
 		hhsize: {
 			title: "Household size",
@@ -280,15 +281,7 @@ let i_button_info = {
 			"A household is either one person living alone or a group of people living at the same address " +
 				  "who share cooking facilities and share a living room, sitting room or dining area. " +
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
-		}//,
-
-
-		// dentalreg: {
-		// 	title: "Number of dental registrations",
-		// 	info: "<a href='mailto:" + checkMeta("FPSGDSDR.email") + "'>Email for more information</a> " + 
-		// 		  "Last updated: " + checkMeta("FPSGDSDR.last_updated") + " Access data at: " +
-		// 		  "<a href='" + checkMeta("FPSGDSDR.dataset_url") + "'>" + checkMeta("FPSGDSDR.title") + "</a>"
-		// }
+		}
 
 }
 
