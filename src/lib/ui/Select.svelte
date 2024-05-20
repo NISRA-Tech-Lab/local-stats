@@ -126,7 +126,11 @@
 			{:else if filtered[0] && group}
 			{#each filtered as option, i}
 			<li class:highlight="{active == i}" on:click="{() => select(option)}" on:mouseover="{() => active = i}" bind:this="{items[i]}">
-				{option[label]} <small>{option[group]}</small>
+				{#if option[group].slice(0, 4) == "View"}
+					<small>{option[label]}</small> <span class = "view">{option[group]}</span>
+				{:else}
+					<span class = "view">View: {option[label]} {option[group]}</span>
+				{/if}
 			</li>
 			{/each}
 			{:else if filtered[0]}
@@ -182,6 +186,15 @@
 		background-color: #00205b;
 		font-weight: 500;
 		cursor: pointer;
+	}
+
+	small {
+		color: rgb(56, 120, 197);
+		font-weight: bold;
+	}
+
+	#dropdown .highlight small {
+		color: #bbb;
 	}
 	/* normalize the input elements, make them look like everything else */
 	#select input {
@@ -262,5 +275,9 @@
 	}
 	#dropdown small {
 		/* font-weight: bold; */
+	}
+
+	.highlight .view {
+		text-decoration: underline;
 	}
 </style>
