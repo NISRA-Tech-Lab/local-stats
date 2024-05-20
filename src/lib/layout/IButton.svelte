@@ -4,6 +4,8 @@ import { base } from "$app/paths";
 
 export let id;
 export let place;
+let card;
+let row;
 
 function checkMeta (value) {
 
@@ -28,6 +30,9 @@ function checkMeta (value) {
 
 }
 
+function changeAria () {
+	card.ariaHidden = !row.ariaExpanded;
+}
 
 let i_button_info = {
 
@@ -293,13 +298,14 @@ let i_button_info = {
 	data-bs-target="#{id}-info"
 	aria-expanded="false"
 	aria-controls="{id}-info"
+	bind:this={row}
 >
-	<div class="blocktitle" style="margin: 0; width: 100%">
+	<div class="blocktitle" style="margin: 0; width: 100%" on:click={changeAria}>
 		{i_button_info[id].title} <img class = "i-button" src = "{base}\img\i-button.svg" alt = "Information button">
 	</div>
 </div>
 <div class="collapse" id="{id}-info">
-    <div class="card card-body">
+    <div class="card card-body" aria-hidden="true" bind:this={card}>
         {@html i_button_info[id].info} 
     </div>
 </div>
