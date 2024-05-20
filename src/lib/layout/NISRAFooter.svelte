@@ -53,19 +53,19 @@
 			<div class="column left">
 				<h3 style="padding-top: 0px">Links</h3><br>
 				<ul>
-					<li><a href="https://data.nisra.gov.uk/" class="link" style="color: #ffffff">NISRA Data Portal</a></li><br/>
-					<li><a href="https://build.nisra.gov.uk/" class="link" style="color: #ffffff">Census Flexible Table Builder</a></li><br/>
-					<li><a href="https://www.opendatani.gov.uk/" class="link" style="color: #ffffff">OpenDataNI</a></li><br/>
-					<li><a href="https://www.nidirect.gov.uk" class="link" style="color: #ffffff">NIDirect</a></li><br>
-					<li><a href="https://www.gov.uk/" class="link" style="color: #ffffff">GOV.UK</a></li><br>
+					<li><a href="https://data.nisra.gov.uk/" class="link" style="color: #ffffff">NISRA Data Portal</a></li>
+					<li><a href="https://build.nisra.gov.uk/" class="link" style="color: #ffffff">Census Flexible Table Builder</a></li>
+					<li><a href="https://www.opendatani.gov.uk/" class="link" style="color: #ffffff">OpenDataNI</a></li>
+					<li><a href="https://www.nidirect.gov.uk" class="link" style="color: #ffffff">NIDirect</a></li>
+					<li><a href="https://www.gov.uk/" class="link" style="color: #ffffff">GOV.UK</a></li>
 				</ul>
 			</div>	
 			<div class="column right">
 				<h3>Follow NISRA</h3><br>
 				<ul> 
-					<li><a href="https://www.facebook.com/nisra.gov.uk" class="link" style="color: #ffffff">Facebook</a></li><br>
-					<li><a href="https://twitter.com/NISRA" class="link" style="color: #ffffff">X (Twitter)</a></li><br>
-					<li><a href="https://www.youtube.com/user/nisrastats" class="link" style="color: #ffffff">YouTube</a></li><br>
+					<li><a href="https://www.facebook.com/nisra.gov.uk" class="link" style="color: #ffffff">Facebook</a></li>
+					<li><a href="https://twitter.com/NISRA" class="link" style="color: #ffffff">X (Twitter)</a></li>
+					<li><a href="https://www.youtube.com/user/nisrastats" class="link" style="color: #ffffff">YouTube</a></li>
 				</ul>
 			</div>
 		</div>
@@ -111,7 +111,7 @@
 	}
 	li {
 		margin-right: 18px;
-		display: inline-block;
+		list-style-type: none;
 	}
 /* 	.logo-img {
 		margin-bottom: 2px;
