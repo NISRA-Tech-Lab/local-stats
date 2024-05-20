@@ -21,7 +21,7 @@
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<div class="back_to_start" on:click={goStart} class:hidden>Back to top</div>
+<div role = "region" class="back_to_start" on:click={goStart} class:hidden><a href="#" tabindex="0">Back to top</a></div>
 
 <style>
     .back_to_start {
@@ -40,6 +40,11 @@
         padding-bottom: 5px;
         font-weight: 700;
         cursor: pointer;
+        overflow: auto;
+    }
+
+    a {
+        color: #00205b;             
     }
 
     .back_to_start.hidden {
