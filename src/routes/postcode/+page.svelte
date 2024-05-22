@@ -80,9 +80,9 @@
 					} else {
 						resultTable.innerHTML =
 							pHTML +
-							"<p>Geographies in Area Explorer</p>" +
+							"<p>Geographies in Northern Ireland Local Statistics Explorer</p>" +
 							listHTML +
-							"<p>Geographies not in Area Explorer</p>" +
+							"<p>Geographies not in Northern Ireland Local Statistics Explorer</p>" +
 							listHTML2;
 					}
 				})

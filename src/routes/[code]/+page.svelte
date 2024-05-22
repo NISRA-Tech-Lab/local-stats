@@ -714,7 +714,7 @@ function compareNIrate (value) {
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description,
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
-							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Super Data Zones are smaller divisions of Data Zones. There are on average 4 in each Super Data Zone."							
+							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
 						  }}
 				chart_compare_type = {chart_compare_type}
 			/>
@@ -930,12 +930,22 @@ function compareNIrate (value) {
 						content: "GroupChart",
 						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
-					box_6: {
+					// box_6: {
+					// 	id: "language",
+					// 	year: pullCensusYear("mainlang"),
+					// 	content: "GroupChart",
+					// 	chart_data: makeDataNICompare("mainlang")
+					// },
+					box_7 :{
 						id: "language",
 						year: pullCensusYear("mainlang"),
-						content: "GroupChart",
-						chart_data: makeDataNICompare("mainlang")
-					}
+						content: "StackedBarChart",				
+							chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+							zKey: chart_compare_type,
+							label: chartLabel,
+							topic_prev_available: true}
+
+
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
 					which includes an <a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, 
@@ -955,15 +965,23 @@ function compareNIrate (value) {
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
-			box_1: {
+			box_0: {
 				id: "generalhealth",
 				year: pullCensusYear("general_health"),
-				content: "StackedBarChart",				
-				chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
-				zKey: chart_compare_type,
-				label: chartLabel,
-				topic_prev_available: true
+				content: "GroupChart",
+				chart_data: makeDataNICompare("general_health")
+						
 			},
+			
+			// box_1: {
+			// 	id: "generalhealth",
+			// 	year: pullCensusYear("general_health"),
+			// 	content: "StackedBarChart",				
+			// 	chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
+			// 	zKey: chart_compare_type,
+			// 	label: chartLabel,
+			// 	topic_prev_available: true
+			// },
 			box_2a: {
 				id: "wellbeing",
 				year: pullYear("Happy", data.place),
