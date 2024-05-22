@@ -19,11 +19,11 @@
 <svelte:head>
   <title>Northern Ireland Local Statistics Explorer</title>
   <meta name="description" content="">
-  <meta property="og:title" content="Census Area Explorer" />
+  <meta property="og:title" content="Northern Ireland Local Statistics Explorer" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{app_inputs.base}/" />
-	<meta property="og:description" content="Explore census data for places in Northern Ireland." />
-	<meta name="description" content="Explore census data for places in Northern Ireland." />
+	<meta property="og:description" content="Explore NISRA data for places in Northern Ireland." />
+	<meta name="description" content="Explore NISRA data for places in Northern Ireland." />
 </svelte:head>
 
 <Section column="wide">
