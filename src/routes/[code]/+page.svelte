@@ -132,39 +132,38 @@
 			let ni_data;
 
 			if (check_value.hasOwnProperty("2021")) {
-
 				place_data = check_value["2021"];
 				ni_data = data.ni.data[value].perc["2021"];
-
 			} else {
-
 				place_data = check_value;
 				ni_data = data.ni.data[value].perc;
-
 			}
 
-			for (let i = 0; i < Object.keys(place_data).length; i ++) {
+			let category_lookup;
+			let label_lookup;
+			let v_topics = Object.keys(topics[value]);
 
-				if (Object.values(place_data)[i] <= 100) {
-
-					newdata.push({group: "Northern Ireland",
-								  category: Object.values(topics[value])[i].label,
-								  perc: Object.values(ni_data)[i],
-								  width: 0});
-
-					if (data.place.name != "Northern Ireland") {
-
-						newdata.push({group: data.place.name,
-									  category: Object.values(topics[value])[i].label,
-									  perc: Object.values(place_data)[i],
-									  width: 0});
-
+			for (let i = 0; i < v_topics.length; i ++) {											
+				for (let j = 0; j < Object.keys(place_data).length; j ++) {
+					if (topics[value][v_topics[i]].category == Object.keys(place_data)[j]) {
+						category_lookup = topics[value][v_topics[i]].category;
+						label_lookup = topics[value][v_topics[i]].label;
+						break;
 					}
-
 				}
-
+				if (place_data[category_lookup] <= 100) {
+					newdata.push({group: "Northern Ireland",
+								  category: label_lookup,
+								  perc: ni_data[category_lookup],
+								  width: 0});
+					if (data.place.name != "Northern Ireland") {
+						newdata.push({group: data.place.name,
+									  category: label_lookup,
+									  perc: place_data[category_lookup],
+									  width: 0});
+					}
+				}
 			}
-
 		}
 
 		return newdata;
