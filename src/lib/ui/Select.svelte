@@ -105,9 +105,9 @@
 
 <svelte:window on:click={onClick}/>
 
-<div id="select" class:active={expanded} on:keydown={doKeydown}>
+<div id="select" class:active={expanded} on:keydown={doKeydown} tabindex="0"	>
 	{#if selectedItem && !search}
-	<a id="toggle" class="selected" on:click={toggle}>
+	<a id="toggle" class="selected" on:click={toggle} tabindex="0">
 		<span class="selection">{selectedItem[label]} {#if group}<small>{selectedItem[group]}</small>{/if}</span>
 		<span class="button close" on:click={unSelect}>&nbsp;</span>
 	</a>
