@@ -341,11 +341,18 @@
 			let latest_year = Object.keys(p_data).slice(-1);
 			let comparison_year = latest_year - 10;
 			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+			let change_word;
+
+			if (change < 0) {
+				change_word = "Down"
+			} else if (change > 0) {
+				change_word  = "Up"
+			}
 
 			output = '<p>The population of ' + place.name + ' in ' + comparison_year + ' was <span class="text-big">' +
 					p_data[comparison_year].toLocaleString() + '</span> and in ' + latest_year + ' was <span class="text-big">' +
 					p_data[latest_year].toLocaleString() + '</span><p><span class="em ' +
-					changeClass(change) + '">' + changeStr(change, "%", 1,) + '</span> since ' + comparison_year + ' Mid-Year Population Estimate</p>';
+					changeClass(change) + '">' + change_word + " " + changeStr(change, "%", 1,) + '</span> since ' + comparison_year + ' Mid-Year Population Estimate</p>';
 
 		}
 
