@@ -57,6 +57,8 @@
 	function select(option) {
 		selected = option;
 		expanded = false;
+		localStorage.setItem("search_term", input.value);
+		localStorage.setItem("search_result", option.code);
 		dispatch('select', {
 			selected: option,
 			value: option[value]
