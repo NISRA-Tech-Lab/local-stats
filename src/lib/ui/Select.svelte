@@ -49,6 +49,10 @@
 			}
 		});
 	}
+
+	function typing(ev) {
+		expanded = true;
+	}
 	
 	function select(option) {
 		selected = option;
@@ -105,21 +109,21 @@
 
 <svelte:window on:click={onClick}/>
 
-<div id="select" class:active={expanded} on:keydown={doKeydown} tabindex="0"	>
+<div id="select" class:active={expanded} on:keydown={doKeydown}	>
 	{#if selectedItem && !search}
-	<a id="toggle" class="selected" on:click={toggle} tabindex="0">
+	<a id="toggle" class="selected" on:click={toggle}>
 		<span class="selection">{selectedItem[label]} {#if group}<small>{selectedItem[group]}</small>{/if}</span>
 		<span class="button close" on:click={unSelect}>&nbsp;</span>
 	</a>
 	{:else}
-	<a id="toggle" on:click={toggle}>
-		<span>{placeholder ? placeholder : 'Select one'}</span>
+	<a id="toggle" on:click={toggle} on:focus={toggle} >
+		<input on:keydown={typing} type="text" placeholder={placeholder} bind:value={filter} autocomplete="false" bind:this={input} on:keyup={doKeyup} autofocus="autofocus" onfocus="this.select()" />
 		<span class="button" class:search class:down={!search}>&nbsp;</span>
 	</a>
 	{/if}
+	
 	{#if expanded}
-	<div id="dropdown" bind:this={el} style="top: 0;">
-		<input type="text" placeholder="" bind:value={filter} autocomplete="false" bind:this={input} on:keyup={doKeyup} autofocus="autofocus" onfocus="this.select()" />
+	<div id="dropdown" bind:this={el} style="top: 0; margin-top: 50px;">
 		<ul>
 			{#if filter.length < 3}
 			<li>Type a name...</li>
@@ -207,10 +211,10 @@
 		font-weight: inherit;
 		line-height: inherit;
 		display: inline-block;
-		padding: 10px 5px;
+		padding: 8px 5px;
 		margin: 0;
 		background-color: #fff;
-		border: 2px solid #00205b !important;
+		/* border: 2px solid #00205b !important; */
 		border-radius: 0px;
 		-webkit-appearance: none;
 		-moz-appearance: none;
