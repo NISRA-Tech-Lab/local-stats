@@ -28,7 +28,7 @@
                 name = storage.search_name;
                 result_text();
             };
-        }, 200)
+        }, 500)
     })
 
     function lookupPostcode (postcode) {
