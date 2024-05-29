@@ -24,7 +24,7 @@
 
     onMount(() => {
         setInterval(function() {
-            if (check_result()) {
+            if (check_result() & storage.search_code == place.code) {
                 name = storage.search_name;
                 result_text();
             };
