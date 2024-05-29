@@ -1,19 +1,24 @@
 <script>
     export let place;
+    export let storage = localStorage;
+
+    let result;
 
     function check_result() {
-        return localStorage.hasOwnProperty("search_term");
+        return storage.hasOwnProperty("search_term");
     }
 
     function result_text () {
-        let result = "Search result for <strong>" + localStorage.search_term + "</strong>";
-        localStorage.removeItem("search_term");   
-        return result;
+        result = storage.search_term;
+        storage.removeItem("search_term");
+        return true;
     };
+
+    
 </script>
 
-{#if check_result() & localStorage.search_result == place.code}
-		<div id = "search-result">{@html result_text()}</div>
+{#if check_result() & storage.search_result == place.code & result_text()}
+	<div id = "search-result">Search result for <strong>{result}</strong></div>
 {/if}
 
 <style>
