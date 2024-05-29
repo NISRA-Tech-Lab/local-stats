@@ -3,6 +3,7 @@
     export let storage = localStorage;
 
     import { base } from "$app/paths";
+    import { onMount } from "svelte";
 
     let name;
 
@@ -19,8 +20,16 @@
     let SDZ_name;
     let SDZ_code;    
     let DZ_name; 
-    let DZ_code; 
+    let DZ_code;
 
+    onMount(() => {
+        setInterval(function() {
+            if (check_result()) {
+                name = storage.search_name;
+                result_text();
+            };
+        }, 200)
+    })
 
     function lookupPostcode (postcode) {
 

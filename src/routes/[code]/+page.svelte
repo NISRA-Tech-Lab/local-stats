@@ -35,7 +35,7 @@
 	import IButton from "$lib/layout/IButton.svelte";
 	import Accordion from "$lib/layout/Accordion.svelte";
 	import GreyBox from "$lib/layout/GreyBox.svelte";  
-    import SearchResult from "$lib/layout/SearchResult.svelte";
+    import SearchResult from "$lib/ui/SearchResult.svelte";
     
     
     export let data;
