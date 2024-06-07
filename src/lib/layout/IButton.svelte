@@ -169,8 +169,8 @@ let i_button_info = {
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
 			}
 						,
-			disabilitybenefits: {
-			title: "Disability and Carer’s benefits",
+			pipbenefits: {
+			title: "Personal Independence Payment",
 			info:   "Benefits included are: Personal Independence Payment, Carer's Allowance, Attendance Allowance and Disability Living Allowance" + 
 				  "<p class = 'pibutton'>Access data at:  <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+

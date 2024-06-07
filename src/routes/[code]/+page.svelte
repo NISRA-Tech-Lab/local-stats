@@ -1184,21 +1184,21 @@ function compareNIrate (value) {
 			// 			 '</span> median salary</p>',
 			// 	show: ["ni", "lgd"]
 			// },
-						
-			box_4: {
-				id: "disabilitybenefits",
-				year: pullYear("BS", data.place),
-				content: '<span class="text-big">' +
-					(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
-			
-			},
 
-			box_5: {
+			box_4: {
 				id: "workingagebenefits",
 				year: pullYear("BS", data.place),
 				content: '<span class="text-big">' +
 					(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
 				
+			},
+
+			box_5: {
+				id: "pipbenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big">' +
+					(data.place.data.BS.value.PIP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+			
 			},
 			
 			box_6: {
