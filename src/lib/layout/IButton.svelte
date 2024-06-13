@@ -152,27 +152,24 @@ let i_button_info = {
 
 
 			pensionagebenefits: {
-			title: "Pension Age benefits",
-			info: "Benefits included are: Retirement Pension and Pension Credit" + 
-			"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+			title: "State Pension",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 			"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
 			"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  				
 				},
 
 
 
-			workingagebenefits: {
-			title: "Working Age benefits",
-			info:  "Benefits included are: Universal Credit, Jobseekers Allowance, Income Support and Employment & Support Allowance" + 
-					"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
-					"<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
+			ucbenefits: {
+			title: "Universal Credit",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
 			}
 						,
-			disabilitybenefits: {
-			title: "Disability and Carer’s benefits",
-			info:   "Benefits included are: Personal Independence Payment, Carer's Allowance, Attendance Allowance and Disability Living Allowance" + 
-				  "<p class = 'pibutton'>Access data at:  <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
+			pipbenefits: {
+			title: "Personal Independence Payment",
+			info: "<p class = 'pibutton'>Access data at:  <a href='" + checkMeta("BS[0].dataset_url") + "'>" + checkMeta("BS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("BS[0].last_updated") + "</p> "+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("BS[0].email") + "'>Email for more information</a> </p>"  
 					},
@@ -188,7 +185,7 @@ let i_button_info = {
 
 			fsme: {
 			title: "Pupils entitled to Free School Meals",
-			info:  		  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
 				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" +
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> "+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>" 

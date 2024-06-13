@@ -1184,28 +1184,46 @@ function compareNIrate (value) {
 			// 			 '</span> median salary</p>',
 			// 	show: ["ni", "lgd"]
 			// },
-						
+
 			box_4: {
-				id: "disabilitybenefits",
+				id: "ucbenefits",
 				year: pullYear("BS", data.place),
-				content: '<span class="text-big">' +
-					(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
-			
+				content: '<span class="text-big">' + data.place.data.BS.value.UC.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.UC / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
+				
 			},
 
 			box_5: {
-				id: "workingagebenefits",
+				id: "pipbenefits",
 				year: pullYear("BS", data.place),
-				content: '<span class="text-big">' +
-					(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
-				
+				content: '<span class="text-big">' + data.place.data.BS.value.PIP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.PIP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
+			
 			},
 			
 			box_6: {
 				id: "pensionagebenefits",
 				year: pullYear("BS", data.place),
-				content: '<span class="text-big">' +
-					(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
+				content: '<span class="text-big">' + data.place.data.BS.value.RP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.RP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
 			}	
 							
 		}}
