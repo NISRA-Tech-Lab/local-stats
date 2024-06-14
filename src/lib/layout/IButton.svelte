@@ -287,7 +287,10 @@ let i_button_info = {
 
 		SEN: {
 			title: "Special Educational Needs",
-			info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("SEN[0].dataset_url") + "'>" + checkMeta("SEN[0].title") + "</a></p>"+
+			info: " <p class = 'pibutton'>Access data at:</p>" +
+				  "<p class = 'pibutton'><a href='" + checkMeta("SEN[0].dataset_url") + "'>" + checkMeta("SEN[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'><a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'><a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("SEN[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("SEN[0].email") + "'>Email for more information</a> </p>" + 
 				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools.</p>"

@@ -1401,6 +1401,34 @@ function compareNIrate (value) {
 		more = ""
 	/> 
 
+	<Accordion
+		id = "economy"
+		img = "nisra-taxonomy-icon-economy.png"
+		heading = "Economy"
+		place = {data.place}
+		sub_heading = {moreData("Economy", data.place)}
+		description = " "
+		chart_compare_type = {chart_compare_type}
+		boxes = {{
+				
+		}}
+		more = ""
+	/>
+
+	<Accordion
+		id = "environment"
+		img = "nisra-taxonomy-icon-agriculture.png"
+		heading = "Environment"
+		place = {data.place}
+		sub_heading = {moreData("Environment", data.place)}
+		description = " "
+		chart_compare_type = {chart_compare_type}
+		boxes = {{
+				
+		}}
+		more = ""
+	/> 
+
 		</div>
 	{/if}
 </Section>
