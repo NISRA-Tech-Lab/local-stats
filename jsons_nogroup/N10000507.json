@@ -324,15 +324,29 @@
       }
     },
     "Primary": {
-      "value": 2846,
+      "value": {
+        "SENNonStatemented": 356,
+        "SENStatement": 149,
+        "All": 2846
+      },
       "perc": {
-        "FSME": 25.0658
+        "FSME": 22.1241
       }
     },
     "PostPrimary": {
-      "value": 2405,
+      "value": {
+        "SENNonStatemented": 181,
+        "SENStatement": 141,
+        "All": 2405
+      },
       "perc": {
-        "FSME": 22.8177
+        "FSME": 20.6806
+      }
+    },
+    "SEN": {
+      "value": {
+        "SENNonStatemented": 0,
+        "SENStatement": 76
       }
     },
     "Attainment": {
@@ -349,10 +363,10 @@
     },
     "BroadAge": {
       "perc": {
-        "Age 0-15": 21.0382,
-        "Age 16-39": 29.5634,
-        "Age 40-64": 33.2417,
-        "Age 65+": 16.1568
+        "Age 0-15": 21.5472,
+        "Age 16-39": 28.0374,
+        "Age 40-64": 34.3718,
+        "Age 65+": 16.0436
       }
     },
     "Destination": {
@@ -496,6 +510,24 @@
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
         "year": "2021/22"
+      }
+    ],
+    "SEN": [
+      {
+        "table_code": "DESCSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
+      },
+      {
+        "table_code": "DESCSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
       }
     ]
   }

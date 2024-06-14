@@ -352,6 +352,32 @@
         "2022": 1910543
       }
     },
+    "Primary": {
+      "value": {
+        "SENNonStatemented": 24448,
+        "SENStatement": 8723,
+        "All": 181075
+      },
+      "perc": {
+        "FSME": 19.2804
+      }
+    },
+    "PostPrimary": {
+      "value": {
+        "SENNonStatemented": 16023,
+        "SENStatement": 8562,
+        "All": 154312
+      },
+      "perc": {
+        "FSME": 18.0097
+      }
+    },
+    "SEN": {
+      "value": {
+        "SENNonStatemented": 195,
+        "SENStatement": 6735
+      }
+    },
     "Satisfy": {
       "value": 7.6
     },
@@ -360,18 +386,6 @@
     },
     "ASHE": {
       "value": 27102
-    },
-    "Primary": {
-      "value": 181075,
-      "perc": {
-        "FSME": 22.0341
-      }
-    },
-    "PostPrimary": {
-      "value": 154312,
-      "perc": {
-        "FSME": 20.2967
-      }
     },
     "ClassSize": {
       "value": 17.4
@@ -473,7 +487,7 @@
       {
         "table_code": "WBPERSWLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/WBPERSWLGD",
-        "last_updated": "2023-12-14",
+        "last_updated": "2024-06-12",
         "email": "pfganalytics@executiveoffice-ni.gov.uk",
         "title": "Personal Wellbeing",
         "year": "2022/23"
@@ -627,6 +641,16 @@
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
         "year": "2021/22"
+      }
+    ],
+    "SEN": [
+      {
+        "table_code": "DESCSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
       }
     ]
   }
