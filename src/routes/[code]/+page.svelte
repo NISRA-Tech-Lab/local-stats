@@ -1254,10 +1254,10 @@ function compareNIrate (value) {
 			box_1: {
 				id: "enrollments",
 				content: "<p style='margin:0'>Primary school <span class='text-big'>" + 
-						 (check("Primary.value")).toLocaleString() + "</span> "+
+						 (check("Primary.value.All")).toLocaleString() + "</span> "+
 
 						 "<p style='margin:0'>Post primary school <span class='text-big'>" + 
-						 (check("PostPrimary.value")).toLocaleString() + " </span>"+
+						 (check("PostPrimary.value.All")).toLocaleString() + " </span>"+
 
 						 "<p style='margin:0'>Further education <span class='text-big'>" +
 						 (check("FE.value")).toLocaleString() + "</span>"+
@@ -1286,21 +1286,29 @@ function compareNIrate (value) {
 				show: [ "lgd", "dea"]
 			},
 
-			box_3a: {
-				id: "teachers",
-				year: pullYear("ClassSize", data.place),
-				content: "<p><span class='text-big'>"  + 
-				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
-				show: ["ni"]
-			},
+			// box_3a: {
+			// 	id: "teachers",
+			// 	year: pullYear("ClassSize", data.place),
+			// 	content: "<p><span class='text-big'>"  + 
+			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
+			// 	show: ["ni"]
+			// },
 		
-			box_3n: {
-				id: "teachers",
-				year: pullYear("ClassSize", data.place),
-				content: "<p><span class='text-big'>"  + 
-				         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
-						 "<span style='color: #1460aa'> (NI " + data.ni.data.ClassSize.value.toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
-				show: [ "lgd"]
+			// box_3n: {
+			// 	id: "teachers",
+			// 	year: pullYear("ClassSize", data.place),
+			// 	content: "<p><span class='text-big'>"  + 
+			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
+			// 			 "<span style='color: #1460aa'> (NI " + data.ni.data.ClassSize.value.toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
+			// 	show: [ "lgd"]
+			// },
+
+			box_3: {
+				id: "SEN",
+				year: pullYear("SEN", data.place),
+				content: "<p><span class='text-big'>" + (check("SEN.value.SENNonStatemented") + check("Primary.value.SENNonStatemented") + check("PostPrimary.value.SENNonStatemented")).toLocaleString() + "</span> Non Statemented</p>" +
+						"<p><span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> Statemented</p>",
+				show: ["ni", "lgd", "dea"]
 			},
 
 			box_4: {

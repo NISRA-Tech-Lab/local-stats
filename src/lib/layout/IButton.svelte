@@ -283,6 +283,11 @@ let i_button_info = {
 			"A household is either one person living alone or a group of people living at the same address " +
 				  "who share cooking facilities and share a living room, sitting room or dining area. " +
 				  "<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"
+		},
+
+		SEN: {
+			title: "Special Educational Needs",
+			info: ""
 		}
 
 }
