@@ -276,11 +276,11 @@
     }
 
     function mapSelect(ev) {
-      goto(`${base}/${ev.detail.code}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.code}/`, { noScroll: true, keepFocus: true });
     }
 
     function menuSelect(ev) {
-      goto(`${base}/${ev.detail.value}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.value}/`, { noScroll: true, keepFocus: true });
     }
 
     function onResize() {
@@ -510,7 +510,7 @@ function compareNIrate (value) {
 	function moreData (subject, place) {
 
 		if (place.type != "ni") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll>" + place.parents[0].name + " </a>";
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + " </a>";
 		} else {
 			return "";
 		}
@@ -561,11 +561,11 @@ function compareNIrate (value) {
 		<div class="grid mtl">
 			<div>
 				<span class="text-small">
-					<a href="{base}/" data-sveltekit-noscroll>Home</a
+					<a href="{base}/" data-sveltekit-noscroll data-sveltekit-keepfocus>Home</a
 					>{@html " &gt; "}
 					{#if data.place.type != "ni"}
 						{#each [...data.place.parents].reverse() as parent, i}
-							<a href="{base}/{parent.code}/" data-sveltekit-noscroll
+							<a href="{base}/{parent.code}/" data-sveltekit-noscroll data-sveltekit-keepfocus
 								>{parent.name}</a
 							>{@html " &gt; "}
 						{/each}
@@ -718,7 +718,7 @@ function compareNIrate (value) {
 				content = {{
 							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description,
-							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
 						  }}
@@ -869,7 +869,7 @@ function compareNIrate (value) {
 									: 0}px"
 								>{@html i > 0 ? "↳ " : ""}<a
 									href="{base}/{parent.code}"
-									data-sveltekit-noscroll>{parent.name}</a
+									data-sveltekit-noscroll data-sveltekit-keepfocus>{parent.name}</a
 								></span
 							>
 						{/each}
@@ -885,7 +885,7 @@ function compareNIrate (value) {
 					><br />
 					<span class="text-small">
 						{#each data.place.children as child, i}
-							<a href="{base}/{child.code}" data-sveltekit-noscroll
+							<a href="{base}/{child.code}" data-sveltekit-noscroll data-sveltekit-keepfocus
 								>{child.name}</a
 							>{i < data.place.children.length - 1 ? ", " : ""}
 						{/each}
