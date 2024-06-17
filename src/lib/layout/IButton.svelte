@@ -75,9 +75,9 @@ let i_button_info = {
 			title: "Personal Wellbeing",
 			info: "Average Happiness score out of 10 for people aged 16+</p>" +
 			"Average Life satisfaction score out of 10 for people aged 16+</p>" +
-				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Happy[0].dataset_url") + "'>" + checkMeta("Happy[0].title") + "</a></p>"+
-				"<p class = 'pibutton'>Last updated: " + checkMeta("Happy[0].last_updated") + "</p> "+
-				"<p class = 'pibutton'><a href='mailto:" + checkMeta("Happy[0].email") + "'>Email for more information</a> </p>"   
+				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("wellbeing[0].dataset_url") + "'>" + checkMeta("wellbeing[0].title") + "</a></p>"+
+				"<p class = 'pibutton'>Last updated: " + checkMeta("wellbeing[0].last_updated") + "</p> "+
+				"<p class = 'pibutton'><a href='mailto:" + checkMeta("wellbeing[0].email") + "'>Email for more information</a> </p>"   
 				},
 
 		lifeexpectancy: {
