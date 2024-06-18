@@ -1,6 +1,6 @@
 on:
-  push:
-    branches: 63-github-actions-to-automate-data-portal-import
+  schedule:
+    - cron: "0 16 * * *"
 
 jobs:
   import-data:
