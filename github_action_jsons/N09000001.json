@@ -1,0 +1,624 @@
+{
+  "code": "N09000001",
+  "name": "Antrim and Newtownabbey",
+  "comment": "This JSON includes data for the area explorer app.",
+  "type": "lgd",
+  "count": 11,
+  "parents": [
+    {
+      "code": "N92000002",
+      "name": "Northern Ireland",
+      "type": "ctry"
+    }
+  ],
+  "children": [
+    {
+      "code": "N10000101",
+      "name": "Airport",
+      "type": "dea"
+    },
+    {
+      "code": "N10000102",
+      "name": "Antrim",
+      "type": "dea"
+    },
+    {
+      "code": "N10000103",
+      "name": "Ballyclare",
+      "type": "dea"
+    },
+    {
+      "code": "N10000104",
+      "name": "Dunsilly",
+      "type": "dea"
+    },
+    {
+      "code": "N10000105",
+      "name": "Glengormley Urban",
+      "type": "dea"
+    },
+    {
+      "code": "N10000106",
+      "name": "Macedon",
+      "type": "dea"
+    },
+    {
+      "code": "N10000107",
+      "name": "Three Mile Water",
+      "type": "dea"
+    }
+  ],
+  "bounds": [
+    [-5.7682, 54.4682],
+    [-6.5959, 54.9119]
+  ],
+  "data": {
+    "population": {
+      "perc": {
+        "2011": {
+          "all": 100
+        },
+        "2021": {
+          "all": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all": 138567
+        },
+        "change": {
+          "all": 5.1195
+        },
+        "2021": {
+          "all": 145661
+        }
+      },
+      "value_rank": {
+        "2011": {
+          "all": 8
+        },
+        "2021": {
+          "all": 8
+        }
+      }
+    },
+    "households": {
+      "perc": {
+        "2011": {
+          "all_households": 100
+        },
+        "2021": {
+          "all_households": 100
+        }
+      },
+      "value": {
+        "2011": {
+          "all_households": 54035
+        },
+        "change": {
+          "all_households": 10.0342
+        },
+        "2021": {
+          "all_households": 59457
+        }
+      }
+    },
+    "general_health": {
+      "perc": {
+        "2011": {
+          "bad": 3.8566,
+          "fair": 14.0257,
+          "good": 33.0952,
+          "very_bad": 1.0298,
+          "very_good": 47.9927
+        },
+        "2021": {
+          "bad": 5.4853,
+          "fair": 13.5046,
+          "good": 29.5639,
+          "very_bad": 1.7767,
+          "very_good": 49.6694
+        }
+      }
+    },
+    "hh_size": {
+      "perc": {
+        "2011": {
+          "five_people": 8.711,
+          "four_people": 15.4566,
+          "one_person": 26.5717,
+          "three_people": 17.5442,
+          "two_people": 31.7165
+        },
+        "2021": {
+          "five_people": 7.5012,
+          "four_people": 14.3448,
+          "one_person": 29.6534,
+          "three_people": 16.6322,
+          "two_people": 31.8684
+        }
+      }
+    },
+    "highest_level_of_qualifications": {
+      "perc": {
+        "2011": {
+          "apprenticeship": 4.7076,
+          "level_1_qualifications": 12.3985,
+          "level_2_qualifications": 15.9127,
+          "level_3_qualifications": 12.9394,
+          "level_4_qualifications_and_above": 23.8636,
+          "no_qualifications": 26.1185,
+          "other_qualifications": 4.0596
+        },
+        "2021": {
+          "apprenticeship": 6.5629,
+          "level_1_qualifications": 6.7056,
+          "level_2_qualifications": 14.8261,
+          "level_3_qualifications": 16.5083,
+          "level_4_qualifications_and_above": 31.5217,
+          "no_qualifications": 21.5257,
+          "other_qualifications": 2.3497
+        }
+      }
+    },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 3.8877,
+          "northern_ireland": 89.7349,
+          "other_cob": 4.2867,
+          "republic_of_ireland": 1.0674,
+          "scotland": 0.8559,
+          "wales": 0.1674
+        },
+        "2021": {
+          "england": 3.9063,
+          "northern_ireland": 88.3044,
+          "other_cob": 5.7393,
+          "republic_of_ireland": 0.9728,
+          "scotland": 0.922,
+          "wales": 0.1552
+        }
+      }
+    },
+    "mainlang": {
+      "perc": {
+        "2011": {
+          "english": 97.2802,
+          "other_languages": 2.7198
+        },
+        "2021": {
+          "english": 96.2819,
+          "other_languages": 3.7181
+        }
+      }
+    },
+    "age": {
+      "perc": {
+        "2011": {
+          "a0to14": 19.8713,
+          "a15to39": 33.6581,
+          "a40to64": 31.903,
+          "a65plus": 14.5677
+        },
+        "2021": {
+          "a0to14": 18.8622,
+          "a15to39": 30.7012,
+          "a40to64": 33.205,
+          "a65plus": 17.2317
+        }
+      }
+    },
+    "provision_care": {
+      "perc": {
+        "2011": {
+          "a1to19_hours": 7.8834,
+          "a20to49_hours": 1.9402,
+          "a50plus_hours": 3.1981,
+          "no_care": 86.9782
+        },
+        "2021": {
+          "a1to19_hours": 6.1,
+          "a20to49_hours": 2.8745,
+          "a50plus_hours": 3.9856,
+          "no_care": 87.0398
+        }
+      }
+    },
+    "religion_or_religion_brought_up_in": {
+      "perc": {
+        "2011": {
+          "catholic": 29.743,
+          "none": 8.0762,
+          "other_religions": 1.0854,
+          "protestant_and_other_christian_including_christian_related": 61.0954
+        },
+        "2021": {
+          "catholic": 31.4182,
+          "none": 12.3472,
+          "other_religions": 1.5261,
+          "protestant_and_other_christian_including_christian_related": 54.7085
+        }
+      }
+    },
+    "sex": {
+      "perc": {
+        "2011": {
+          "females": 51.3896,
+          "males": 48.6104
+        },
+        "2021": {
+          "females": 50.9114,
+          "males": 49.0886
+        }
+      }
+    },
+    "LE": {
+      "value": {
+        "Females": 82.5,
+        "Males": 78.7
+      }
+    },
+    "DEN": {
+      "value": {
+        "GDSDSDentists": 73.43,
+        "GDSDSSurgeries": 20
+      }
+    },
+    "DEN_REG": {
+      "value": {
+        "Dental_Registrations": 97540
+      }
+    },
+    "GP": {
+      "value": {
+        "PRACS": 16,
+        "GPS": 92,
+        "REGPAT": 134878,
+        "PRACLIST": 8430
+      }
+    },
+    "LMS": {
+      "value": {
+        "EMPN": 73000
+      },
+      "perc": {
+        "EMPR": 74.8,
+        "UNEMPR": 2.1,
+        "INACTR": 23.6
+      }
+    },
+    "BS": {
+      "value": {
+        "IS": 770,
+        "JSA": 310,
+        "RP": 22780,
+        "PC": 3430,
+        "AA": 3990,
+        "CA": 4800,
+        "DLA": 5250,
+        "ESA": 7270,
+        "UC": 9590,
+        "PIP": 12740
+      }
+    },
+    "PopChange": {
+      "value": {
+        "2001": 128760,
+        "2002": 129502,
+        "2003": 130356,
+        "2004": 131067,
+        "2005": 132350,
+        "2006": 133216,
+        "2007": 134756,
+        "2008": 136122,
+        "2009": 137422,
+        "2010": 138044,
+        "2011": 138651,
+        "2012": 139397,
+        "2013": 140042,
+        "2014": 140682,
+        "2015": 141364,
+        "2016": 142138,
+        "2017": 142996,
+        "2018": 143952,
+        "2019": 145152,
+        "2020": 145563,
+        "2021": 145852,
+        "2022": 146148
+      }
+    },
+    "Primary": {
+      "value": {
+        "SENNonStatemented": 1678,
+        "SENStatement": 563,
+        "All": 13133
+      },
+      "perc": {
+        "FSME": 17.0005
+      }
+    },
+    "PostPrimary": {
+      "value": {
+        "SENNonStatemented": 1217,
+        "SENStatement": 578,
+        "All": 11858
+      },
+      "perc": {
+        "FSME": 15.6337
+      }
+    },
+    "SEN": {
+      "value": {
+        "SENNonStatemented": 7,
+        "SENStatement": 628
+      }
+    },
+    "Satisfy": {
+      "value": 7.6
+    },
+    "Happy": {
+      "value": 7.5
+    },
+    "ASHE": {
+      "value": 26531
+    },
+    "ClassSize": {
+      "value": 17.1
+    },
+    "Attainment": {
+      "value": 79.1
+    },
+    "FE": {
+      "value": 5495
+    },
+    "HE": {
+      "value": 5425
+    },
+    "MYETotal": {
+      "value": 146148
+    },
+    "Median": {
+      "value": 40.7
+    },
+    "BRES": {
+      "perc": {
+        "Construction": 4.8091,
+        "Manufacturing": 12.3255,
+        "Services": 80.4994,
+        "Other": 2.3659
+      }
+    },
+    "BroadAge": {
+      "perc": {
+        "Age 0-15": 19.9455,
+        "Age 16-39": 29.0938,
+        "Age 40-64": 33.3409,
+        "Age 65+": 17.6198
+      }
+    },
+    "Destination": {
+      "perc": {
+        "destHEpct": 45.5,
+        "destFEpct": 26.2,
+        "destEmploypct": 14.7,
+        "destTrainpct": 9.2,
+        "destUnempUnkpct": 4.4
+      }
+    }
+  },
+  "hectares": 57143,
+  "lgd_location_description": "Antrim, Ballyclare, Crumlin, Greenisland, Newtownabbey and Randalstown",
+  "meta_data": {
+    "MYETotal": [
+      {
+        "table_code": "MYE01T06",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Population totals",
+        "year": "2022"
+      }
+    ],
+    "Median": [
+      {
+        "table_code": "MA01T02",
+        "dataset_url": "https://data.nisra.gov.uk/table/MA01T02",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Median age",
+        "year": "2022"
+      }
+    ],
+    "BroadAge": [
+      {
+        "table_code": "MYE01T04",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T04",
+        "last_updated": "2024-04-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Mid-year population estimates",
+        "year": "2022"
+      }
+    ],
+    "PopChange": [
+      {
+        "table_code": "MYE01T06",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "last_updated": "2023-09-11",
+        "email": "census@nisra.gov.uk",
+        "title": "Population totals",
+        "year": "2022"
+      }
+    ],
+    "LE": [
+      {
+        "table_code": "LELGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/LELGD",
+        "last_updated": "2024-04-11",
+        "email": "healthinequalities@health-ni.gov.uk",
+        "title": "Life expectancy at birth",
+        "year": "2020-22"
+      }
+    ],
+    "wellbeing": [
+      {
+        "table_code": "WBPERSWLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/WBPERSWLGD",
+        "last_updated": "2024-06-12",
+        "email": "pfganalytics@executiveoffice-ni.gov.uk",
+        "title": "Personal Wellbeing",
+        "year": "2022/23"
+      }
+    ],
+    "GP": [
+      {
+        "table_code": "GPPRACPATLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/GPPRACPATLGD",
+        "last_updated": "2023-06-23",
+        "email": "info.bso@hscni.net",
+        "title": "GPs Practices and Registered Patients",
+        "year": "2023"
+      }
+    ],
+    "DEN": [
+      {
+        "table_code": "FPSGDSDSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSLGD",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dentists and Surgeries",
+        "year": "2022/23"
+      }
+    ],
+    "DEN_REG": [
+      {
+        "table_code": "FPSGDSDRLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRLGD",
+        "last_updated": "2023-06-26",
+        "email": "info.bso@hscni.net",
+        "title": "General Dental Services Dental Registrations",
+        "year": "2022/23"
+      }
+    ],
+    "LMS": [
+      {
+        "table_code": "LMSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/LMSLGD",
+        "last_updated": "2024-03-28",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Labour Market Status",
+        "year": "2022"
+      }
+    ],
+    "ASHE": [
+      {
+        "table_code": "GAPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/GAPLGD",
+        "last_updated": "2023-11-01",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Gross Annual Pay",
+        "year": "2023"
+      }
+    ],
+    "BRES": [
+      {
+        "table_code": "BRESHEADLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BRESHEADLGD",
+        "last_updated": "2024-03-19",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Employee Jobs",
+        "year": "2022"
+      }
+    ],
+    "BS": [
+      {
+        "table_code": "BSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
+        "last_updated": "2023-07-06",
+        "email": "psu@communities-ni.gov.uk",
+        "title": "Benefit Statistics",
+        "year": "2023"
+      }
+    ],
+    "Primary": [
+      {
+        "table_code": "DESCPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Primary",
+        "year": "2022/23"
+      }
+    ],
+    "PostPrimary": [
+      {
+        "table_code": "DESCPPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Post Primary",
+        "year": "2022/23"
+      }
+    ],
+    "ClassSize": [
+      {
+        "table_code": "DETNPTRLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DETNPTRLGD",
+        "last_updated": "2023-06-29",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "Pupil Teacher Ratios in Northern Ireland",
+        "year": "2022/23"
+      }
+    ],
+    "Attainment": [
+      {
+        "table_code": "DESLSALGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSALGD",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Attainment",
+        "year": "2021/22"
+      }
+    ],
+    "FE": [
+      {
+        "table_code": "FEENROLLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FEENROLLGD",
+        "last_updated": "2023-06-20",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Regulated enrolments at Further Education Colleges",
+        "year": "2020/21"
+      }
+    ],
+    "HE": [
+      {
+        "table_code": "HEENROLLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/HEENROLLGD",
+        "last_updated": "2023-06-21",
+        "email": "dfemail@economy-ni.gov.uk",
+        "title": "Enrolments at Higher Education Institutions",
+        "year": "2021/22"
+      }
+    ],
+    "Destination": [
+      {
+        "table_code": "DESLSDLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDLGD",
+        "last_updated": "2023-11-22",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Leavers Survey - Destination",
+        "year": "2021/22"
+      }
+    ],
+    "SEN": [
+      {
+        "table_code": "DESCSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
+      }
+    ]
+  }
+}
