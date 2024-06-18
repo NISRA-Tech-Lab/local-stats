@@ -22,17 +22,8 @@ df_geog_codes_for_loop <-
     substr(code, 1, 3) == "N20" ~ "dz",
     substr(code, 1, 3) == "N21" ~ "sdz"
   )) %>%
-  # filter(type %in% geog_types_to_update) %>%
-  # filter(type %in% c("ctry", "lgd", "dea")) %>%
-  arrange(substr(code, 1, 3)) # %>% head(1)
-
-#
-# df_antrim = read.csv(paste0(data_source_root,"Antrim.txt"))
-# 
-
- # df_geog_codes_for_loop = df_geog_codes_for_loop %>% filter(type %in% c('ctry', 'dea', 'lgd','sdz'))
- # 
- # df_geog_codes_for_loop = df_geog_codes_for_loop %>% filter(type %in% c('dz'))
+  filter(type %in% geog_types_to_update) %>%
+  arrange(substr(code, 1, 3))
  
  
  print("looping through geographies")
