@@ -25,7 +25,7 @@ export const app_inputs = {
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
-	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/63-github-actions-to-automate-data-portal-import/github_action_jsons/",
+	 app_json_data: "https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/github_action_jsons/",
 	//app_json_data: "/jsons_nogroup/",
 	base: 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer/'
 };
