@@ -6,6 +6,7 @@
 	import NISRAHeader from "$lib/layout/NISRAHeader.svelte";
 	import NISRAFooter from "$lib/layout/NISRAFooter.svelte";
   import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
+  import Warning from "$lib/ui/Warning.svelte"
 
   // STYLE CONFIG
   // Set theme globally (options are 'light' or 'dark')
@@ -76,9 +77,10 @@
 </svelte:head>
 
 <div bind:this={c}>
+
   <AnalyticsBanner {analyticsId} {analyticsProps}/>
 
-  <!-- <Warning/> -->
+  <Warning/>
 
     <NISRAHeader/>
 

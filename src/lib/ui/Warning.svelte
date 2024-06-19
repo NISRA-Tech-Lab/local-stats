@@ -1,6 +1,6 @@
 <nav class="warning">
   <div class="col-wide middle">
-    <strong>This is a prototype application and we would like to hear you view - please complete this <a href="https://data.nisra.gov.uk/" class="link" style="color: #ffffff">short survey</a>.</strong>
+    <strong>This is a prototype application that will be enhanced as further data becomes available.</strong>
     </div>
 </nav>
 
