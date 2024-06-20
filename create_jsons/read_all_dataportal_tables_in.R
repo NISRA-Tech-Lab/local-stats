@@ -1701,7 +1701,7 @@ dataset_short <- "Env_ghg"
 dataset_subject <- "82/GHG"
 
 # MYE by LGD ####
-dataset_long <- "GHGINSCOPE"
+dataset_long <- "GHGALL"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 json_data <- jsonlite::fromJSON(
