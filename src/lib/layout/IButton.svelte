@@ -66,13 +66,13 @@ let i_button_info = {
 		},
 
 		generalhealth: {
-			title: "General Health",
+			title: "General health",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"General health is a self-assessment of a person's general state of health. It is not " +
 					"based over any specified period of time. <a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 		wellbeing: {
-			title: "Personal Wellbeing",
+			title: "Personal wellbeing",
 			info: "Average Happiness score out of 10 for people aged 16+</p>" +
 			"Average Life satisfaction score out of 10 for people aged 16+</p>" +
 				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("wellbeing[0].dataset_url") + "'>" + checkMeta("wellbeing[0].title") + "</a></p>"+
@@ -81,7 +81,7 @@ let i_button_info = {
 				},
 
 		lifeexpectancy: {
-			title: "Life Expectancy at birth",
+			title: "Life expectancy at birth",
 			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("LE[0].last_updated") + "</p> "+
 				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("LE[0].email") + "'>Email for more information</a> </p>"  
@@ -184,7 +184,7 @@ let i_button_info = {
 
 
 			fsme: {
-			title: "Pupils entitled to Free School Meals",
+			title: "Pupils entitled to free school meals",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
 				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" +
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> "+
@@ -286,7 +286,7 @@ let i_button_info = {
 		},
 
 		SEN: {
-			title: "Special Educational Needs",
+			title: "Special educational needs",
 			info: " <p class = 'pibutton'>Access data at:</p>" +
 				  "<p class = 'pibutton'><a href='" + checkMeta("SEN[0].dataset_url") + "'>" + checkMeta("SEN[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'><a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a></p>"+

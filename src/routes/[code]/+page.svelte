@@ -766,7 +766,7 @@ function compareNIrate (value) {
 					<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
 					{#if data.place.type != "ni"}
 					
-					You are currently viewing <span style="color: #3878c5">{data.place.name}</span>
+					You are currently viewing <span style="color: #3878c5">{data.place.name} </span> {geog_types[data.place.type].name}
 						<span style="color: #00205b"
 							> 
 							<!-- {geog_types[data.place.type].name} -->
@@ -904,9 +904,9 @@ function compareNIrate (value) {
 			<Accordion
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
-			heading = "People and Households"
+			heading = "People and households"
 			place = {data.place} 
-			sub_heading =   {moreData("People and Households", data.place)}
+			sub_heading =   {moreData("People and households", data.place)}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -967,9 +967,9 @@ function compareNIrate (value) {
 		<Accordion
 		id = "health"
 		img = "nisra-taxonomy-icon-health.png"
-		heading = "Health and Social Care"
+		heading = "Health and social care"
 		place = {data.place}
-		sub_heading =   {moreData("Health and Social Care", data.place)}
+		sub_heading =   {moreData("Health and social care", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1031,7 +1031,7 @@ function compareNIrate (value) {
 					"<p>Female</p> <span class='text-big'>" +
 					(check("LE.value.Females")).toLocaleString() + "</span> years"+
 					"<span style='color: #1460aa'> (NI " + data.ni.data.LE.value.Females +") </span></p>",
-				show: [ "lgd"]
+				show: [ "lgd", "dea"]
 			},
 
 			box_4: {
@@ -1045,8 +1045,8 @@ function compareNIrate (value) {
 				year: pullYear("Admiss", data.place),
 				content: "<p><span class='text-big'>" + 
 					(check("Admiss.value")).toLocaleString() +
-						"</span> hospital patients</p>"+
-						"<p>The most frequent reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+						"</span> hospital admissions</p>"+
+						"<p>The most frequent primary reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
 
 					show: ["ni", "dea"]
 			},
@@ -1114,7 +1114,8 @@ function compareNIrate (value) {
 				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-pharmaceutical-services-and-prescribing-statistics/'>
 				Pharmaceutical</a> and <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
 				Ophthalmic</a>), <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/family-health-services-statistics'>
-				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
+				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research/hospital-waiting-times-statistics'>
+				Hospital waiting times statistics</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
 				Mental health, learning disability and autism</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research-social-services/social-care-statistics'>
 				Social care</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/workforce-statistics'>Workforce</a>, and <u>COVID-19</u>.
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
@@ -1126,9 +1127,9 @@ function compareNIrate (value) {
 	<Accordion
 		id = "work"
 		img = "nisra-taxonomy-icon-labour-market.png"
-		heading = "Work and Welfare"
+		heading = "Work and welfare"
 		place = {data.place}
-		sub_heading = {moreData("Work and Welfare", data.place)}
+		sub_heading = {moreData("Work and welfare", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1240,7 +1241,7 @@ function compareNIrate (value) {
 		<Accordion
 		id = "education"
 		img = "nisra-taxonomy-icon-child-education-skills.png"
-		heading = "Education"
+		heading = "Education and skills"
 		place = {data.place}
 		sub_heading =   {moreData("Schools, colleges and universities", data.place)}
 		description = ""
@@ -1255,10 +1256,10 @@ function compareNIrate (value) {
 						 "<p style='margin:0'>Post primary school <span class='text-big'>" + 
 						 (check("PostPrimary.value.All")).toLocaleString() + " </span>"+
 
-						 "<p style='margin:0'>Further education <span class='text-big'>" +
+						 "<p style='margin:0'>NI Further education colleges <span class='text-big'>" +
 						 (check("FE.value")).toLocaleString() + "</span>"+
 
-						 "<p style='margin:0'>Higher education <span class='text-big'>" +
+						 "<p style='margin:0'>UK Higher education institutions <span class='text-big'>" +
 						 (check("HE.value")).toLocaleString() +" </span>",
 				year: pullYear("Primary", data.place) ,
 				show: ["ni", "lgd", "dea"]
@@ -1302,8 +1303,8 @@ function compareNIrate (value) {
 			box_3: {
 				id: "SEN",
 				year: pullYear("SEN", data.place),
-				content: "<p>Non Statemented: <span class='text-big'>" + (check("SEN.value.SENNonStatemented") + check("Primary.value.SENNonStatemented") + check("PostPrimary.value.SENNonStatemented")).toLocaleString() + "</span> pupils</p>" +
-						"<p>Statemented: <span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils</p>",
+				content: "<p>Non statemented <span class='text-big'>" + (check("SEN.value.SENNonStatemented") + check("Primary.value.SENNonStatemented") + check("PostPrimary.value.SENNonStatemented")).toLocaleString() + "</span> pupils</p>" +
+						"<p>Statemented <span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils</p>",
 				show: ["ni", "lgd", "dea"]
 			},
 
@@ -1367,7 +1368,7 @@ function compareNIrate (value) {
 	<Accordion
 		id = "crime"
 		img = "nisra-taxonomy-icon-crime-justice.png"
-		heading = "Crime and Justice"
+		heading = "Crime and justice"
 		place = {data.place}
 		sub_heading = {moreData("Crime and Court Activity", data.place)}
 		description = " "
