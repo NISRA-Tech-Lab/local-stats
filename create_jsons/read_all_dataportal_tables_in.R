@@ -1602,13 +1602,151 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 
 df_sen <- unique(rbind(df_sen, data))
 
+
+
+#### Environment ####
+
+##### Concern #####
+df_env <- list()
+
+dataset_short <- "Env_concern"
+dataset_subject <- "82/PA"
+
+# MYE by LGD ####
+dataset_long <- "CHSCONCERNLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["CONCERNENVI", "NOTCONCERNENVI"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long,
+  "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", dataset_long),
+  "last_updated" = format(substring(updated[which(matrices == dataset_long)], 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = data_portal$label[which(matrices == dataset_long)],
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_env <- rbind(df_env, data)
+
+
+
+
+dataset_short <- "Env_waste"
+dataset_subject <- "82/W"
+
+# MYE by LGD ####
+dataset_long <- "WASTELGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["LACMWR","LACMWL","LACMWER"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long,
+  "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", dataset_long),
+  "last_updated" = format(substring(updated[which(matrices == dataset_long)], 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = data_portal$label[which(matrices == dataset_long)],
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_env <- rbind(df_env, data)
+
+
+
+
+
+
+dataset_short <- "Env_ghg"
+dataset_subject <- "82/GHG"
+
+# MYE by LGD ####
+dataset_long <- "GHGINSCOPE"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "GHGSECTOR", "selection": {"filter": "item", "values": ["GTALL"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long,
+  "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", dataset_long),
+  "last_updated" = format(substring(updated[which(matrices == dataset_long)], 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = data_portal$label[which(matrices == dataset_long)],
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_env <- rbind(df_env, data)
+
+
+
 #### Bind rows ####
 
 df_dp_all_values <- unique(bind_rows(
   rbind(
     df_le, df_dental, df_gps, df_lmr_value, df_bs,
     #df_school_destination, 
-    df_popchange, df_school_value, df_sen
+    df_popchange, df_school_value, df_sen,
+    df_env
   ),
   rbind(
     df_satisfy, df_happy, df_admissions_all, df_ashe,
