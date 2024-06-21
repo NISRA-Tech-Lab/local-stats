@@ -1418,6 +1418,34 @@ function compareNIrate (value) {
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
+
+				box_1: {
+				id: "concern",
+				year: pullYear("Env_concern", data.place),
+				content:  "Concern <span class='text-big'>"  + 
+				    	 (check("Env_concern.value.CONCERNENVI")).toLocaleString() +"%</span> want a chart like mainlang here, need to add details to i buttons",
+						
+				show: ["ni", "lgd"]
+			},
+
+			box_2: {
+				id: "waste",
+				year: pullYear("Env_waste", data.place),
+				content:  "Waste recycled <span class='text-big'>"  + 
+				    	 (check("Env_waste.value.LACMWR")).toLocaleString() +"%</span> want a group chart here, need to add details to i buttons",
+					
+				show: ["ni", "lgd"]
+			},
+
+			box_3: {
+				id: "ghg",
+				year: pullYear("Env_ghg", data.place),
+				content:  "GHG <span class='text-big'>"  + 
+				    	 (check("Env_ghg.value.GHGALL")).toLocaleString() +"</span> need to add details to i buttons",
+						
+				show: ["ni", "lgd"]
+			}
+
 		}}
 		more = ""
 	/> 
