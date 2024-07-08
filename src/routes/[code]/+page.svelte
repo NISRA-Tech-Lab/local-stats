@@ -30,6 +30,7 @@
     import ProfileChart from "$lib/chart/ProfileChart.svelte";
     import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
     import ScrollToTop from "$lib/ui/scroll.svelte";
+	import StickyHeader from "$lib/ui/stickyHeader.svelte";
     import { LayerCake } from "layercake";
     import { text } from "svelte/internal";
 	import IButton from "$lib/layout/IButton.svelte";
@@ -557,6 +558,7 @@ function compareNIrate (value) {
 </svelte:head>
 <ScrollToTop />
 <Section column="wide">
+	<StickyHeader />
 	{#if data.place && data.ni}
 		<div class="grid mtl">
 			<div>
