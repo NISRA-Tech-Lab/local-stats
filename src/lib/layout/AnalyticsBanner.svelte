@@ -100,7 +100,7 @@
       <div>
         <div class="cookies-banner__message font-size--18">
           <h1 class="cookies-banner__heading font-size--h3">
-            Cookies on the NISRA Area Explorer website
+            Cookies on the Northern Ireland Local Statistics Explorer website
           </h1>
           <p class="cookies-banner__body">
             This prototype web application places small amounts of information known as cookies on your device.

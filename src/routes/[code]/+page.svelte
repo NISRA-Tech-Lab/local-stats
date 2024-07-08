@@ -35,6 +35,7 @@
 	import IButton from "$lib/layout/IButton.svelte";
 	import Accordion from "$lib/layout/Accordion.svelte";
 	import GreyBox from "$lib/layout/GreyBox.svelte";  
+    import SearchResult from "$lib/ui/SearchResult.svelte";
     
     
     export let data;
@@ -42,6 +43,8 @@
     let w, cols;
     let map = null;
     let comp_2011 = false;
+	let comp_ni = true;
+	
 
     let active = {
       selected: null,
@@ -98,6 +101,14 @@
     function makeDataGroupSort(g_data, key) {
       const categ = topics[key];
       let newdata = [];
+
+	  let groups = Object.keys(g_data);
+	  for (let i = 0; i < groups.length; i ++) {
+		if (!g_data[groups[i]].hasOwnProperty("perc")) {
+			g_data[groups[i]].perc = null;
+		}
+	  }
+
       categ.forEach((c) => {
         let rows = g_data.filter((d) => d.category === c.category);
         let newrows = rows.map((d) => ({
@@ -107,11 +118,58 @@
         }));
         newdata = [...newdata, ...newrows];
       });
+	  
       return newdata;
     }
 
+	function makeDataNICompare(value) {
 
+		let newdata = [];
 
+		if (data.place.data.hasOwnProperty(value)) {
+
+			let check_value = data.place.data[value].perc;
+			let place_data;
+			let ni_data;
+
+			if (check_value.hasOwnProperty("2021")) {
+				place_data = check_value["2021"];
+				ni_data = data.ni.data[value].perc["2021"];
+			} else {
+				place_data = check_value;
+				ni_data = data.ni.data[value].perc;
+			}
+
+			let category_lookup;
+			let label_lookup;
+			let v_topics = Object.keys(topics[value]);
+
+			for (let i = 0; i < v_topics.length; i ++) {											
+				for (let j = 0; j < Object.keys(place_data).length; j ++) {
+					if (topics[value][v_topics[i]].category == Object.keys(place_data)[j]) {
+						category_lookup = topics[value][v_topics[i]].category;
+						label_lookup = topics[value][v_topics[i]].label;
+						break;
+					}
+				}
+				if (place_data[category_lookup] <= 100) {
+					newdata.push({group: "Northern Ireland",
+								  category: label_lookup,
+								  perc: ni_data[category_lookup],
+								  width: 0});
+					if (data.place.name != "Northern Ireland") {
+						newdata.push({group: data.place.name,
+									  category: label_lookup,
+									  perc: place_data[category_lookup],
+									  width: 0});
+					}
+				}
+			}
+		}
+
+		return newdata;
+
+	}
 
     function fitMap(bounds) {
       if (map) {
@@ -218,11 +276,11 @@
     }
 
     function mapSelect(ev) {
-      goto(`${base}/${ev.detail.code}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.code}/`, { noScroll: true, keepFocus: true });
     }
 
     function menuSelect(ev) {
-      goto(`${base}/${ev.detail.value}/`, { noScroll: true });
+      goto(`${base}/${ev.detail.value}/`, { noScroll: true, keepFocus: true });
     }
 
     function onResize() {
@@ -247,8 +305,8 @@
           : null;
 
     $: data.place && update(data.place);
-    $: comp_ni = false;
-    $: comp_none = true;
+    $: comp_ni = true;
+    $: comp_none = false;
 
 	function returnPct (expr) {
 
@@ -274,34 +332,51 @@
 
 	}
 
-	function popChange (expr) {
+	function popChange (place) {
 
-		if (data.place.type != "dea") {
+		let output = "";
 
-			let pct = expr.toFixed(1);
+		if (place.data.hasOwnProperty("PopChange")) {
 
-			if (pct > 0) {
-				return "An increase of " + pct + "%" + " since the 2011 Census.";
-			} else if (pct < 0) {
-				return "A decrease of " + pct + "%" + " since the 2011 Census.";
-			} else {
-				return "No change since the 2011 Census.";
+			let p_data = place.data.PopChange.value;
+			let latest_year = Object.keys(p_data).slice(-1);
+			let comparison_year = latest_year - 10;
+			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+			let change_word;
+
+			if (change < 0) {
+				change_word = "Down"
+			} else if (change > 0) {
+				change_word  = "Up"
 			}
 
+			output = '<p>The population of ' + place.name + ' in ' + comparison_year + ' was <span class="text-big">' +
+					p_data[comparison_year].toLocaleString() + '</span> and in ' + latest_year + ' was <span class="text-big">' +
+					p_data[latest_year].toLocaleString() + '</span><p><span class="em ' +
+					changeClass(change) + '">' + change_word + " " + changeStr(change, "%", 1,) + '</span> since ' + comparison_year + ' Mid-Year Population Estimate</p>';
+
 		}
+
+		return output;
 
 	}
 
 	function check (value) {
 
-		let props = value.split(".");
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
 
-		let rtn_value = data.place.data;
+		let rtn_value = data.place.data;	
 
 		for (let i = 0; i < props.length; i ++) {
 
 			if (rtn_value.hasOwnProperty(props[i])) {
 				rtn_value = rtn_value[props[i]]
+
+			} else {
+
+				rtn_value = [];
+
 			}
 
 		}
@@ -310,12 +385,165 @@
 
 	}
 
+	function compareNIavg (value) {
+
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
+
+		let rtn_value = data.ni.data;
+		let rtn_value_place = check(value);
+		let no_areas = data.place.count;
+
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
+			rtn_value = data.ni;
+		}		
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+
+				if (props[i] == "perc") {
+					rtn_value = rtn_value.toFixed(0) + "%";
+				}
+			} else {
+
+				rtn_value = [];
+
+			}
+
+		}
+
+		let average_ni =  (rtn_value / no_areas).toFixed(0);
+
+		if ( rtn_value_place > (average_ni * 1.1) ) 
+				{
+				rtn_value = "<p>This is higher than the NI average</p>";
+			}
+		else if (rtn_value_place < (average_ni * 0.9)) {
+				rtn_value = "<p>This is lower than the NI average</p>";} 
+		else {
+				rtn_value = "<p>This is similar to the NI average.</p>";;
+				} 
+		
+		return rtn_value;
+
+	}
+
+function compareNIrate (value) {
+
+		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
+		let props = value_dotted.split(".");
+
+		let rtn_value = data.ni.data;
+		let rtn_value_place = check(value);
+
+		if (props[0] == "grouped_data_nocompare" | props[0] == "grouped_data_areacompare") {
+			rtn_value = data.ni;
+		}		
+
+		for (let i = 0; i < props.length; i ++) {
+
+			if (rtn_value.hasOwnProperty(props[i])) {
+				rtn_value = rtn_value[props[i]]
+
+				// if (props[i] == "perc") {
+				// 	rtn_value = rtn_value.toFixed(0) + "%";
+				// }
+			} else {
+
+				rtn_value = [];
+
+			}
+
+		}
+
+		if ( rtn_value_place > (rtn_value + 2) ) 
+				{
+					rtn_value = "<p>This is higher than the NI value</p>";
+			}
+		else if (rtn_value_place < (rtn_value - 2)) {
+			rtn_value = "<p>This is lower than the NI value</p>";} 
+		else {
+			rtn_value = "<p>This is similar to the NI value</p>";;
+				} 
+
+		return rtn_value;
+
+}
+
+
+	function pullYear (value, place) {
+		
+		if (place.meta_data.hasOwnProperty(value)) {
+			return place.meta_data[value][0].year;
+		} else {
+			return null;
+		}
+
+	}
+
+	function pullCensusYear (value) {
+
+		if (data.place.data.hasOwnProperty(value)) {
+			return "Census " +  Object.keys(data.place.data[value].perc).slice(-1);
+		} else {
+			return null;
+		}
+
+	}
+
+	function popDen (place) {
+
+		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
+
+		if (pop_den < 10) {
+			pop_den = "<10"
+		} else {
+			pop_den = (Math.round(pop_den * 10) / 10).toLocaleString(undefined, {minimumFractionDigits: 1});
+		}
+
+		return pop_den;
+
+	}
+
+	function moreData (subject, place) {
+
+		if (place.type != "ni") {
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + " </a>";
+		} else {
+			return "";
+		}
+
+	}
+
+	function compareDensity (place) {
+		
+		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
+
+		let ni_pop_den = data.ni.data.MYETotal.value / (data.ni.hectares / 100);
+
+		let comparison = pop_den / ni_pop_den;
+
+		if (Math.round(comparison) == 1) {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
+		} else if (comparison > 1) {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times more dense</span> than the Northern Ireland average";
+		} else {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " as dense</span> as the Northern Ireland average";
+		}
+
+		return comparison;
+	}
+
+	
+
 </script>
 
 <svelte:head>
-	<title>{data.place.name} NISRA Key Statistics</title>
+	<title>{data.place.name} Local Statistics Explorer</title>
 	<meta name="description" content="" />
-	<meta property="og:title" content="{data.place.name} Census Data" />
+	<meta property="og:title" content="{data.place.name} Local Statistics" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{app_inputs.base}/{data.place.code}/" />
 	<meta
@@ -333,22 +561,21 @@
 		<div class="grid mtl">
 			<div>
 				<span class="text-small">
-					<a href="{base}/" data-sveltekit-noscroll>Home</a
+					<a href="{base}/" data-sveltekit-noscroll data-sveltekit-keepfocus>Home</a
 					>{@html " &gt; "}
 					{#if data.place.type != "ni"}
 						{#each [...data.place.parents].reverse() as parent, i}
-							<a href="{base}/{parent.code}/" data-sveltekit-noscroll
+							<a href="{base}/{parent.code}/" data-sveltekit-noscroll data-sveltekit-keepfocus
 								>{parent.name}</a
 							>{@html " &gt; "}
 						{/each}
 
-						{data.place.name}
-					{:else}
-						{data.place.name}
 					{/if}
-				</span><br />
-				<span class="text-big title">{data.place.name}</span>
-				<div class="text-bold" style="font-size: 0.85em;">
+				</span>
+				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name}</span>
+				
+				
+				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
 			
 
 					<!-- {#if data.place.type == "ni"}
@@ -370,7 +597,7 @@
 							>No comparison</button
 						>
 					{/if} -->
-					{#if data.place.type != "ni"}
+					<!-- {#if data.place.type != "ni"}
 					Click for: <button
 							class="btn"
 							class:btn-active={comp_ni & !comp_none & !comp_2011}
@@ -378,7 +605,7 @@
 							on:click={() => (comp_none = false)}
 							on:click={() => (comp_2011 = false)}>NI compare</button
 						>
-					{/if}
+					{/if} -->
 
 						<!-- <button
 							class="btn"
@@ -388,7 +615,7 @@
 							on:click={() => (comp_ni = false)}
 							>Same area - previous</button
 						> -->
-				</div> 
+				<!-- </div>  -->
 			</div>
 
 			<div>
@@ -452,8 +679,8 @@
 						<button
 							class="btn"
 							style="width: 33%"
-							alt="Return to the landing page"
-							onclick="window.location.href='/about';"
+							alt="Opens the About page"
+							onclick="window.location.href='{base}/about';"
 							>About
 						</button>
 						<button
@@ -475,72 +702,59 @@
 			</div>
 		</div>
 
+		<SearchResult
+			place = {data.place}
+		/>
 
 		<div id="grid" class="grid mt">
+			
+			
 			<GreyBox
-				id = "overview"
+				id = "overview" 
 				i_button = {false}
-				heading = "Overview"
+				heading = "About {data.place.name}" 
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "The population of " + data.place.name + " was " + data.place.data.population.value["2021"].all.toLocaleString() + " at the time of the 2021 Census.",
-							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".",
-							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + "in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
-							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl ,
-							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl							
-							}}
-				
+							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description,
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
+							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
+							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
+						  }}
 				chart_compare_type = {chart_compare_type}
 			/>
 
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.population.value["2021"].all.toLocaleString() + '</span>'}
+				year = {pullYear("MYETotal", data.place)}
+				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
-					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census'
-					},
-					lgd: {
-						prev: '<span class="em ' + changeClass(data.place.data.population.value.change.all) + '">' + changeStr(data.place.data.population.value.change.all, "%", 1,) + '</span> since 2011 Census',
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-							'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts"
-					},
-					dea: {
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population'
-					},
-		
-					sdz: {
-						prev:" nothing further",
-						ni:" nothing further"},
-					dz: {
-						prev:" no comparisons",
-						ni:" nothing further"}
+					ni: "",
+					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
+						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts",
+					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population',
+					sdz: "Data not available for area comparison",
+					dz: " Data not available for area comparison"
 				}}
 			/>
 
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.households.value["2021"].all_households.toLocaleString() + '</span>'}
+				year = {pullYear("MYETotal", data.place)}
+				content = {'<div class = "row" style = "display: flex; align-items: center">' +
+					       '<div style="font-weight: bold; font-size: 2.8em;">' + popDen(data.place) + '</div>' +
+						   '<div style = "margin-left: 10px; line-height: 1.25em;"> people per square kilometer</div></div>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
-					ni: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census'
-					},
-					lgd: {
-						prev: '<span class="em ' + changeClass(data.place.data.households.value.change.all_households) + '">' + changeStr(data.place.data.households.value.change.all_households, "%", 1,) + '</span> since 2011 Census',
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
-					},
-					dea: {
-						ni: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.households.value["2021"].all_households / data.ni.data.households.value["2021"].all_households) + '</span> of Northern Ireland households'
-					},
-					sdz: {
-						prev:" nothing further", ni:" nothing further"},
-					dz: {
-						prev:" no comparisons", ni: "no ni comparisons"}
+					ni: "",
+					lgd: compareDensity(data.place),
+					dea: compareDensity(data.place),
+					sdz: compareDensity(data.place),
+					dz: compareDensity(data.place)
 				}}
 			/>
 
@@ -551,13 +765,17 @@
 				<h3>
 					<!-- Explore <span style="color: #93328E">{data.place.name}</span> -->
 					{#if data.place.type != "ni"}
-					Explore 
-					<span style="color: #3878c5">{data.place.name}</span>
+					
+					You are currently viewing <span style="color: #3878c5">{data.place.name} </span> {geog_types[data.place.type].name}
 						<span style="color: #00205b"
-							> {geog_types[data.place.type].name}</span
-						>
-					{:else}
-						Explore <span style="color: #3878c5">{data.place.name}</span>
+							> 
+							<!-- {geog_types[data.place.type].name} -->
+							</span
+						>  
+						<p><span class="text-bold">Zoom and click on map to explore other areas </span></p>
+						{:else}
+					<p class="text-bold">Zoom and click on map to explore other areas </p>
+					<!-- <span style="color: #3878c5">{data.place.name}</span> -->
 					{/if}
 				</h3>
 			</div>
@@ -575,7 +793,7 @@
 					options={{ fitBoundsOptions: { padding: 20 } }}
 					style={mapStyle}
 				>
-					{#each ["dz", "sdz", "ward", "dea", "lgd"] as key}
+					{#each ["dz", "sdz", "dea", "lgd"] as key}
 						<MapSource {...mapSources[key]}>
 							<MapLayer
 								{...mapLayers[key]}
@@ -642,7 +860,7 @@
 			
 			<div>
 				{#if data.place.type != "ni"}
-					<span class="text-bold">Parents of {data.place.name} </span>
+					<span class="text-bold">Select a larger area containing {data.place.name} </span>
 					<span class="text-small">
 						{#each [...data.place.parents].reverse() as parent, i}
 							<span
@@ -651,7 +869,7 @@
 									: 0}px"
 								>{@html i > 0 ? "↳ " : ""}<a
 									href="{base}/{parent.code}"
-									data-sveltekit-noscroll>{parent.name}</a
+									data-sveltekit-noscroll data-sveltekit-keepfocus>{parent.name}</a
 								></span
 							>
 						{/each}
@@ -661,13 +879,13 @@
 			<div>
 				{#if data.place.children[0]}
 					<span class="text-bold"
-						>{data.place.children[0]
-							? geog_types[data.place.children[0].type].pl
+						>Select a {data.place.children[0]
+							? geog_types[data.place.children[0].type].name
 							: "Areas"} within {data.place.name}</span
 					><br />
 					<span class="text-small">
 						{#each data.place.children as child, i}
-							<a href="{base}/{child.code}" data-sveltekit-noscroll
+							<a href="{base}/{child.code}" data-sveltekit-noscroll data-sveltekit-keepfocus
 								>{child.name}</a
 							>{i < data.place.children.length - 1 ? ", " : ""}
 						{/each}
@@ -686,58 +904,56 @@
 			<Accordion
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
-			heading = "People and Households"
+			heading = "People and households"
 			place = {data.place} 
-			sub_heading =   {"There is more People and Households data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+			sub_heading =   {moreData("People and households", data.place)}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
 					box_1: {
 						id: "popchange",
-						content: "<span >"  + " population growth/shrink to be added</span> "},
+						content: popChange(data.place),
+						show: ["ni", "lgd"]
+					},
 					box_2: {
-						id: "age",
+						id: "broadage",
+						year:  pullYear("BroadAge", data.place),
 						content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.age, "age"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.age, "age"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.age, "age"),
-						},
-						topic_prev_available: "true"
+						chart_data: makeDataNICompare("BroadAge"),
+						show: ["ni", "lgd", "dea", "sdz"]
 					},
-					box_3: {
-						id: "sex",
-						content: "<span >"  + " sex split to be added</span>"
-					},
+					// box_3: {
+					// 	id: "sex",
+					// 	content: "<span >"  + " sex split to be added</span>"
+					// },
 					box_4: {
 						id: "hhsize",
-						content: "GroupChart"		,
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.hh_size, "hh_size"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.hh_size, "hh_size"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.hh_size, "hh_size"),
-						},
-						topic_prev_available: "true"},
+						year: pullCensusYear("hh_size"),
+						content: "GroupChart",
+						chart_data: makeDataNICompare("hh_size")
+					},
 					box_5: {
 						id: "religion",
+						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.religion_or_religion_brought_up_in, "religion_or_religion_brought_up_in"),
-						},
-						topic_prev_available: "true"
+						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
-					box_6: {
+					// box_6: {
+					// 	id: "language",
+					// 	year: pullCensusYear("mainlang"),
+					// 	content: "GroupChart",
+					// 	chart_data: makeDataNICompare("mainlang")
+					// },
+					box_7 :{
 						id: "language",
-						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.mainlang, "mainlang"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.mainlang, "mainlang"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.mainlang, "mainlang"),
-						},
-						topic_prev_available: "true"
-					}
+						year: pullCensusYear("mainlang"),
+						content: "StackedBarChart",				
+							chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
+							zKey: chart_compare_type,
+							label: chartLabel,
+							topic_prev_available: true}
+
+
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
 					which includes an <a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, 
@@ -745,106 +961,161 @@
 					a <a href='https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> 
 					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
 					bespoke tables can be created using the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has 
-					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics.
-					"
+					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics."
 		/>
 
 		<Accordion
 		id = "health"
 		img = "nisra-taxonomy-icon-health.png"
-		heading = "Health and Social Care"
+		heading = "Health and social care"
 		place = {data.place}
-		sub_heading =   {"There is more Health and Social Care data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
-		description = "xxxx"
+		sub_heading =   {moreData("Health and social care", data.place)}
+		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
-				box_1: {
-						id: "generalhealth",
-						content: {
-							ni: "StackedBarChart",
-							lgd: "StackedBarChart",
-							dea: "StackedBarChart",
-							sdz: "not available - needs missing 2011",
-							dz: "not available - needs missing 2011"
-						},				
-						chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
-						zKey: chart_compare_type,
-						label: chartLabel,
-						topic_prev_available: "true"
-					},
-				box_2: {
-						id: "wellbeing",
-						content: {
-							ni: "<p><span class='text-big' style='font-size: 2.8em'>7.5"+ "</span> / 10 </p>",
-							lgd: "<p><span class='text-big' style='font-size: 2.8em'>" + (check("Happy.value")).toLocaleString() + "</span> / 10 </p>"
-						},	
-						show: ["ni", "lgd"]
-					},
-				box_3: {
-						id: "lifeexpectancy",
-						content: "<p>Males <span class='text-big' style='font-size: 1.8em'>" + 
-							(check("LE.value.Males")).toLocaleString() +
-							"</span> years</p>"+"<p>Female <span class='text-big' style='font-size: 1.8em'>"+(check("LE.value.Females")).toLocaleString()+ "</span> years</p>",
-						show: ["ni", "lgd"]
-					},
-				box_4: {
-						id: "carers",
-						content: "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.provision_care, "provision_care"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.provision_care, "provision_care"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.provision_care, "provision_care"),
-						},
-						label: chartLabel,
-						topic_prev_available: "true"
-					},
-				box_5: {
-						id: "hospitalactivity",
-						content:  
-						// needs checked - sticks
-						"<p><span class='text-big' style='font-size: 1.8em'>" + 
-							(check("Admiss.value")).toLocaleString() + 
-							"</span> hospital admissions.  The most frequent reason was xxx</p>",
-						 show: ["ni", "dea"]
-					},
-				box_6: {
-						id: "primarycare",
-						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
-								 (check("GP.value.PRACS")).toLocaleString() +
-								"</span> practices, <span class='text-big' style='font-size: 1.2em'>" + 
-								(check("GP.value.GPS")).toLocaleString() + 
-								"</span> GPs, and <span class='text-big' style='font-size: 1.2em'>" + 
-								(check("GP.value.PRACLIST")).toLocaleString() +
-								"</span> patients per practice<span class='text-big' style='font-size: 1.2em'></p><p>" + 
-								(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-								"</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
-								(check("DEN.value.GDSDSDentists")).toLocaleString() +
-								"</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
-								(check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
-								"</span> patients registered in total</p>",
-						show: ["ni", "lgd"]
-					},
-					box_7: {
-						id: "primarycare",
-						content: "<p><span class='text-big' style='font-size: 1.2em'>" + 
-								 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-								 "</span> dental surgeries, <span class='text-big' style='font-size: 1.2em'>" + 
-								 (check("DEN.value.GDSDSDentists")).toLocaleString() +
-								 "</span> dentists and <span class='text-big' style='font-size: 1.2em'>" + 
-								 (check("DEN_REG.value.Dental_Registrations")).toLocaleString() +
-								 "</span> patients registered in total</p>",
-						show: ["dea"]
-					}
+			box_0: {
+				id: "generalhealth",
+				year: pullCensusYear("general_health"),
+				content: "GroupChart",
+				chart_data: makeDataNICompare("general_health")
+						
+			},
+			
+			// box_1: {
+			// 	id: "generalhealth",
+			// 	year: pullCensusYear("general_health"),
+			// 	content: "StackedBarChart",				
+			// 	chart_data: data.place && makeData_year(["general_health"], ["2011"], ["2021"]),
+			// 	zKey: chart_compare_type,
+			// 	label: chartLabel,
+			// 	topic_prev_available: true
+			// },
+			box_2a: {
+				id: "wellbeing",
+				year: pullYear("Happy", data.place),
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 ",
+
+				show: ["ni"]
+			},
+			box_2b: {
+				id: "wellbeing",
+				year: pullYear("Happy", data.place),
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>",
+
+				show: [ "lgd"]
+			},
+
+			box_3a: {
+				id: "lifeexpectancy",
+				year: pullYear("LE", data.place),
+				content: "<p>Male</p> <span class='text-big'>" + 
+					(check("LE.value.Males")).toLocaleString() +
+					"</span> years"+
+					"<p>Female</p> <span class='text-big'>" +
+					(check("LE.value.Females")).toLocaleString() + "</span> years",
+				show: ["ni"]
+			},
+
+			box_3b: {
+				id: "lifeexpectancy",
+				year: pullYear("LE", data.place),
+				content: "<p>Male</p> <span class='text-big'>" + 
+					(check("LE.value.Males")).toLocaleString() +
+					"</span> years"+
+					"<span style='color: #1460aa'> (NI " + data.ni.data.LE.value.Males +") </span></p>"+
+						
+					"<p>Female</p> <span class='text-big'>" +
+					(check("LE.value.Females")).toLocaleString() + "</span> years"+
+					"<span style='color: #1460aa'> (NI " + data.ni.data.LE.value.Females +") </span></p>",
+				show: [ "lgd", "dea"]
+			},
+
+			box_4: {
+				id: "carers",
+				content: "GroupChart",
+				year: pullCensusYear("provision_care"),
+				chart_data: makeDataNICompare("provision_care")
+			},
+			box_5: {
+				id: "hospitalactivity",
+				year: pullYear("Admiss", data.place),
+				content: "<p><span class='text-big'>" + 
+					(check("Admiss.value")).toLocaleString() +
+						"</span> hospital admissions</p>"+
+						"<p>The most frequent primary reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+
+					show: ["ni", "dea"]
+			},
+
+			
+			box_6: {
+				id: "primarycare",
+				year: pullYear("GP", data.place)   ,
+				content: "<p><span class='text-big'>" + 
+							(check("GP.value.PRACS")).toLocaleString() +
+						"</span> GP practices with an average of <span class='text-big'>" + 
+						(check("GP.value.PRACLIST")).toLocaleString() +
+						"</span> patients per practice</p>" +
+					"<p><span class='text-big'>" + 
+							 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+							"</span> dental surgeries" +
+							"</span> with an average of <span class='text-big'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"</span> patients per surgery</p>",
+				show: ["ni"]
+			},
+			
+			box_6a: {
+				id: "primarycare",
+				year: pullYear("GP", data.place)   ,
+				content: "<p><span class='text-big'>" + 
+							(check("GP.value.PRACS")).toLocaleString() +
+						"</span> GP practices with an average of <span class='text-big'>" + 
+						(check("GP.value.PRACLIST")).toLocaleString() +
+						"</span> patients per practice</p>" +
+						"<p>"+(compareNIrate("GP.value.PRACLIST")).toLocaleString() +
+							 "<span style='color: #1460aa'> (NI " +  data.ni.data.GP.value.PRACLIST.toLocaleString() +" patients per practice) </span></p>"+
+					"<p><span class='text-big'>" + 
+							 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+							"</span> dental surgeries" +
+							"</span> with an average of <span class='text-big'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"</span> patients per surgery</p>",
+				show: [ "lgd"]
+			},
+			box_6b: {
+				id: "primarycare",
+				year: pullYear("DEN", data.place),
+				content: "<p><span class='text-big'>" +
+					(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+					"</span> dental surgeries" +
+					"</span> with an average of <span class='text-big'>" + 
+					(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+					"</span> patients per surgery</p>",
+				show: ["dea"]
+			},
+			box_6c: {
+				id: "empty",
+				i_button: false,
+				content: "",
+				show: ["sdz","dz"]
+			}
+
 		}}
 		more = "<p>Significant volumes of information are prepared by the <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research'>Department of Health</a> 
-			and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
+				and the <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
 				Business Services Organisation</a>, including statistics on <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/health-inequalities-statistics'>Health inequalities</a>, 
 				Primary care (including <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/1776-2/'>Medical</a>, 
 				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-dental-services-statistics/'>Dental</a>, 
 				<a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-pharmaceutical-services-and-prescribing-statistics/'>
 				Pharmaceutical</a> and <a href='https://bso.hscni.net/directorates/operations/family-practitioner-services/directorates-operations-family-practitioner-services-information-unit/general-ophthalmic-services-statistics/'>
 				Ophthalmic</a>), <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/family-health-services-statistics'>
-				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
+				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research/hospital-waiting-times-statistics'>
+				Hospital waiting times statistics</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
 				Mental health, learning disability and autism</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research-social-services/social-care-statistics'>
 				Social care</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/workforce-statistics'>Workforce</a>, and <u>COVID-19</u>.
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
@@ -856,132 +1127,251 @@
 	<Accordion
 		id = "work"
 		img = "nisra-taxonomy-icon-labour-market.png"
-		heading = "Work and Welfare"
+		heading = "Work and welfare"
 		place = {data.place}
-		sub_heading =   {"There is more Work and Welfare data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
-		description = "xxxx"
+		sub_heading = {moreData("Work and welfare", data.place)}
+		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
+			box_1: {
+				id: "employmentrates",
+				year: pullYear("LMS", data.place),
+				content: "GroupChart",
+				chart_data: makeDataNICompare("LMS"),
+				show: ["ni", "lgd"]
+			},
 				
-				box_1: {
-						id: "employmentrates",
-						content: "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.EMPR")).toLocaleString() + "</span> employment rate</p>" +
-								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.UNEMPR")).toLocaleString() + "</span> unemployment rate</p>" +
-								 "<p><span class='text-big' style='font-size: 1.8em'>" + (check("LMS.value.INACTR")).toLocaleString() + "</span> inactivity rate</p>",
-						show: ["ni", "lgd"]
-					},
-				
-				box_2: {
-						id: "employed",
-						content: 
-						"<p><span class='text-big' style='font-size: 1.8em'>"  + (check("LMS.value.EMPN")).toLocaleString() + "</span> employed</p>",
-						show: ["ni", "lgd"]
-					},
+			box_2a: {
+				id: "employed",
+				year: pullYear("LMS", data.place),
+				content: "<p>People employed</p> <span class='text-big'>" +
+					     (check("LMS.value.EMPN")).toLocaleString() +
+						 "</span> </p>"+
+						'<p>Median salary</p> <span class="text-big">£' +
+					     (check("ASHE.value")).toLocaleString() + '</span> ',
+						 
+				show: ["ni"]
+			},
 
-				box_3: {
-						id: "wages",
-						content: '<p><span class="text-big" style="font-size: 1.8em">' + (check("ASHE.value")).toLocaleString() + '</span> annual median salary</p>',
-						show: ["ni", "lgd"]
-					},
-						
-				box_4: {
-					id: "disabilitybenefits",
-					content: '<span class="text-big">' +
-						(data.place.data.BS.value.PIP + data.place.data.BS.value.DLA + data.place.data.BS.value.CA + data.place.data.BS.value.AA).toLocaleString() + '</span> claimants',
+			box_2b: {
+				id: "employed",
+				year: pullYear("LMS", data.place),
+				content: "<p>People employed</p> <span class='text-big'>" +
+					     (check("LMS.value.EMPN")).toLocaleString() +
+						 "</span> </p>"+
+						'<p>Median salary</p> <span class="text-big">£' +
+					     (check("ASHE.value")).toLocaleString() + '</span> '+
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE.value.toLocaleString() +") </span></p>",
+				show: [ "lgd"]
+			},
+			
+			box_3b: {
+				id: "bres",
+				year: pullYear("BRES", data.place),
+				content:  "GroupChart",
+				chart_data: makeDataNICompare("BRES"),
+				show: ["ni", "lgd"]
+			},	
 				
-				},
+			// box_3: {
+			// 	id: "wages",
+			// 	year: pullYear("ASHE", data.place),
+			// 	content: '<p><span class="text-big">£' +
+			// 		     (check("ASHE.value")).toLocaleString() +
+			// 			 '</span> median salary</p>',
+			// 	show: ["ni", "lgd"]
+			// },
 
-				box_5: {
-					id: "workingagebenefits",
-					content: '<span class="text-big">' +
-						(data.place.data.BS.value.UC + data.place.data.BS.value.JSA + data.place.data.BS.value.IS + data.place.data.BS.value.ESA).toLocaleString() + '</span> claimants',
-					
-				},
+			box_4: {
+				id: "ucbenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big">' + data.place.data.BS.value.UC.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.UC / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
 				
-				box_6: {
-					id: "pensionagebenefits",
-					content: '<span class="text-big">' +
-						(data.place.data.BS.value.RP + data.place.data.BS.value.PC).toLocaleString() + '</span> claimants',
-				}		
+			},
+
+			box_5: {
+				id: "pipbenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big">' + data.place.data.BS.value.PIP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.PIP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
+			
+			},
+			
+			box_6: {
+				id: "pensionagebenefits",
+				year: pullYear("BS", data.place),
+				content: '<span class="text-big">' + data.place.data.BS.value.RP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.RP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
+				compare_content: {
+					ni: "",
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+				}
+			}	
 							
 		}}
 		more = "<p>The monthly <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/labour-market-overview'>Labour Market Report</a>
-			contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
-				Annual Survey of Hours and Earnings</a> providesdata on hourly, weekly and annual earnings. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/quarterly-employment-survey'>
-					Quarterly Employment Survey</a> provides short-term employee jobs estimates for NI. Further information is available for the 
-					unemployed <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/claimant-count'>Claimant Count</a>, 
-					claimant numbers for <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/disability-benefits'>Disability Benefits</a>, 
-					and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/work-related-benefits'>Work Related Benefits</a>. 
-					Statistics on <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/redundancies'>Redundancies</a> 
-					and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/job-vacancies'>Job Vacancies</a> are also available. 
-					A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
-					The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
-					explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+				contains the most up to date labour market statistics. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/annual-survey-hours-and-earnings'>
+				Annual Survey of Hours and Earnings</a> provides data on hourly, weekly and annual earnings. The <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/quarterly-employment-survey'>
+				Quarterly Employment Survey</a> provides short-term employee jobs estimates for NI. Further information is available for the 
+				unemployed <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/claimant-count'>Claimant Count</a>, 
+				claimant numbers for <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/disability-benefits'>Disability Benefits</a>, 
+				and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/work-related-benefits'>Work Related Benefits</a>. 
+				Statistics on <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/redundancies'>Redundancies</a> 
+				and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/job-vacancies'>Job Vacancies</a> are also available. 
+				A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
+				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 	/>
 
 		<Accordion
 		id = "education"
 		img = "nisra-taxonomy-icon-child-education-skills.png"
-		heading = "Education"
+		heading = "Education and skills"
 		place = {data.place}
-		sub_heading =   {"There is more Schools, colleges and universities data available for <a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll>" + data.place.parents[0].name + " </a>"}
+		sub_heading =   {moreData("Schools, colleges and universities", data.place)}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 
 			box_1: {
-						id: "enrollments",
-						content: "<p>Primary school <span class='text-big' style='font-size: 1.2em'>500 </span></p>"+
-						"<p>Secondary school <span class='text-big' style='font-size: 1.2em'>320 </span></p>" +
-						"<p>Further education colleges <span class='text-big' style='font-size: 1.2em'>45 </span></p>" +
-						"<p>University <span class='text-big' style='font-size: 1.2em'>200 </span></p>",
-					
-						show: ["ni", "lgd", "dea"]},
-				
-			box_2: {
-						id: "fsme",
-						content: "<p>Primary school <span class='text-big' style='font-size: 1.8em'>33.2%</span></p>"+
-						"<p>Secondary school <span class='text-big' style='font-size: 1.8em'>25.2%</span></p>",
-					
-					show: ["ni", "lgd", "dea"]},
-			
-			box_3: {
-						id: "teachers",
-						content: 		
-										"<p><span class='text-big' style='font-size: 1.8em'>"  + 
-											(check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher</p>"
-,
-					
-					show: ["ni", "lgd"]},
-		
-			box_4: {
-						id: "qualifications",
-						content:  "GroupChart",
-						chart_data: {
-							none: makeDataGroupSort(data.place.grouped_data_nocompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-							prev: makeDataGroupSort(data.place.grouped_data_timecompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-							ni: makeDataGroupSort(data.place.grouped_data_areacompare.highest_level_of_qualifications, "highest_level_of_qualifications"),
-						},
-						topic_prev_available: "true"},
+				id: "enrollments",
+				content: "<p style='margin:0'>Primary school <span class='text-big'>" + 
+						 (check("Primary.value.All")).toLocaleString() + "</span> "+
 
-			box_5: {
-						id: "attainment",
-						content: "<span >"  + " attainment to be added</span>"
-						,
+						 "<p style='margin:0'>Post primary school <span class='text-big'>" + 
+						 (check("PostPrimary.value.All")).toLocaleString() + " </span>"+
+
+						 "<p style='margin:0'>NI Further education colleges <span class='text-big'>" +
+						 (check("FE.value")).toLocaleString() + "</span>"+
+
+						 "<p style='margin:0'>UK Higher education institutions <span class='text-big'>" +
+						 (check("HE.value")).toLocaleString() +" </span>",
+				year: pullYear("Primary", data.place) ,
+				show: ["ni", "lgd", "dea"]
+			},
+				
+			box_2a: {
+				id: "fsme",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> " + Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
+					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + Number(check("PostPrimary.perc.FSME")).toFixed(0) + "% </span>",
+				year: pullYear("Primary", data.place),
+				show: ["ni"]
+			},
+			
+			box_2b: {
+				id: "fsme",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
+				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(0) +"%) </span></p>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(0) + "%) </span></p>",
+				year: pullYear("Primary", data.place),
+				show: [ "lgd", "dea"]
+			},
+
+			// box_3a: {
+			// 	id: "teachers",
+			// 	year: pullYear("ClassSize", data.place),
+			// 	content: "<p><span class='text-big'>"  + 
+			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
+			// 	show: ["ni"]
+			// },
+		
+			// box_3n: {
+			// 	id: "teachers",
+			// 	year: pullYear("ClassSize", data.place),
+			// 	content: "<p><span class='text-big'>"  + 
+			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
+			// 			 "<span style='color: #1460aa'> (NI " + data.ni.data.ClassSize.value.toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
+			// 	show: [ "lgd"]
+			// },
+
+			box_3: {
+				id: "SEN",
+				year: pullYear("SEN", data.place),
+				content: "<p>Non statemented <span class='text-big'>" + (check("SEN.value.SENNonStatemented") + check("Primary.value.SENNonStatemented") + check("PostPrimary.value.SENNonStatemented")).toLocaleString() + "</span> pupils</p>" +
+						"<p>Statemented <span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils</p>",
+				show: ["ni", "lgd", "dea"]
+			},
+
+			box_4: {
+				id: "qualifications",
+				content:  "GroupChart",
+				year: pullCensusYear("highest_level_of_qualifications"),
+				chart_data: makeDataNICompare("highest_level_of_qualifications")
+			},
+
+
+			box_5a: {
+				id: "attainment",
+				year: pullYear("Attainment", data.place),
+				content: "<p>Pupils who left school with 5 or more GCSEs (or equivalents) grades A*-C</p><p> <span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> " + 
+						 "<p>including GCSE English and maths</p>",
+				show: ["ni"]
+			},
+			
+			box_5b: {
+				id: "attainment",
+				year: pullYear("Attainment", data.place),
+				content: "Pupils who left school with 5 or more GCSEs (or equivalents) grades A*-C:<br><span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
+						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" + 
+						 "<br>including GCSE English and maths" +
+						  (compareNIrate("Attainment.value")).toLocaleString() ,
+				show: ["lgd"]
+			},
+							
+
+			box_6: {
+				id: "destination",
+				year: pullYear("Destination", data.place),
+				content:  "GroupChart",
+				chart_data: makeDataNICompare("Destination"),
+				show: ["ni", "lgd", "dea"]
+			},
+
+			box_6a: {
+				id: "empty",
+				i_button: false,
+				content: "",
+				show: ["sdz","dz"]
+			},
 					
-					show: ["ni", "lgd"]},
-							}}
+			box_6b: {
+				id: "empty",
+				i_button: false,
+				content: "",
+				show: ["sdz","dz"]
+			}
+
+		}}
 		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
-	/>
+		
+		/>
 
 
 	<Accordion
 		id = "crime"
 		img = "nisra-taxonomy-icon-crime-justice.png"
-		heading = "Crime and Justice"
+		heading = "Crime and justice"
 		place = {data.place}
-		sub_heading = "Crime and court activity"
-		description = "xxxx"
+		sub_heading = {moreData("Crime and Court Activity", data.place)}
+		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
@@ -995,8 +1385,36 @@
 		img = "nisra-taxonomy-icon-travel-transport.png"
 		heading = "Travel and Transport"
 		place = {data.place}
-		sub_heading = "Travel and transport .... "
-		description = "xxxx"
+		sub_heading = {moreData("Travel and transport", data.place)}
+		description = " "
+		chart_compare_type = {chart_compare_type}
+		boxes = {{
+				
+		}}
+		more = ""
+	/> 
+
+	<Accordion
+		id = "economy"
+		img = "nisra-taxonomy-icon-economy.png"
+		heading = "Economy"
+		place = {data.place}
+		sub_heading = {moreData("Economy", data.place)}
+		description = " "
+		chart_compare_type = {chart_compare_type}
+		boxes = {{
+				
+		}}
+		more = ""
+	/>
+
+	<Accordion
+		id = "environment"
+		img = "nisra-taxonomy-icon-agriculture.png"
+		heading = "Environment"
+		place = {data.place}
+		sub_heading = {moreData("Environment", data.place)}
+		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				

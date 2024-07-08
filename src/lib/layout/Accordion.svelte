@@ -49,7 +49,7 @@ let w, cols;
 
         <div class="accordion-body">
             <!-- change order -->
-            {place.name} - {@html sub_heading}
+            {place.name} {place.type.toLocaleUpperCase()} - {@html sub_heading}
             <span class="accordion-button-title-sub"
                 >{description}</span>
 
@@ -65,12 +65,15 @@ let w, cols;
                             id = {boxes[box_list[i]].id}
                             style = {boxes[box_list[i]].style}
                             place = {place}
+                            year = {boxes[box_list[i]].year}
                             content = {boxes[box_list[i]].content}
                             chart_data = {boxes[box_list[i]].chart_data}
                             zKey = {boxes[box_list[i]].zKey}
                             label = {boxes[box_list[i]].label}
                             topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                             chart_compare_type = {chart_compare_type}
+                            i_button = {boxes[box_list[i]].i_button}
+                            compare_content = {boxes[box_list[i]].compare_content}
                         />
 
                         {/if}
@@ -83,12 +86,15 @@ let w, cols;
                             id = {boxes[box_list[i]].id}
                             style = {boxes[box_list[i]].style}
                             place = {place}
+                            year = {boxes[box_list[i]].year}
                             content = {boxes[box_list[i]].content}
                             chart_data = {boxes[box_list[i]].chart_data}
                             zKey = {boxes[box_list[i]].zKey}
                             label = {boxes[box_list[i]].label}
                             topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                             chart_compare_type = {chart_compare_type}
+                            i_button = {boxes[box_list[i]].i_button}
+                            compare_content = {boxes[box_list[i]].compare_content}
                         />
 
                     {/if}
@@ -126,6 +132,112 @@ let w, cols;
     .mt {
 		margin-top: 20px;
 	}
+
+    .collapse:not(.show){
+        display:none
+    }
+    .accordion-button{
+        position:relative;
+        display:flex;
+        align-items:center;
+        width:100%;
+        padding:var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+        font-size:1rem;
+        color:var(--bs-accordion-btn-color);
+        text-align:left;
+        background-color:#f5f5f6;
+        box-shadow: 0 2px #4140424d;
+        border-radius:0;
+        overflow-anchor:none;
+        transition:var(--bs-accordion-transition);
+        cursor:pointer;
+        margin-bottom:0px;
+    }
+    @media (prefers-reduced-motion:reduce){
+        .accordion-button{
+            transition:none
+        }
+    }
+    .accordion-button:not(.collapsed){
+        color:var(--bs-accordion-active-color);
+        background-color: rgb(0, 32, 91, 0.1);
+        box-shadow:inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color)
+    }
+    .accordion-button:not(.collapsed)::after{
+        background-image:var(--bs-accordion-btn-active-icon);
+        transform:var(--bs-accordion-btn-icon-transform)
+    }
+    .accordion-button::after{
+        flex-shrink:0;
+        width:var(--bs-accordion-btn-icon-width);
+        height:var(--bs-accordion-btn-icon-width);
+        margin-left:auto;
+        content:"";
+        background-image:var(--bs-accordion-btn-icon);
+        background-repeat:no-repeat;
+        background-size:var(--bs-accordion-btn-icon-width);
+        transition:var(--bs-accordion-btn-icon-transition)
+    }
+    @media (prefers-reduced-motion:reduce){
+        .accordion-button::after{
+            transition:none
+        }
+    }
+    .accordion-button:hover{
+        z-index:2
+    }
+    .accordion-button:focus{
+        z-index:3;
+        border-color:var(--bs-accordion-btn-focus-border-color);
+        outline:0;
+        box-shadow:var(--bs-accordion-btn-focus-box-shadow)
+    }
+    .accordion-header{
+        margin-bottom:0
+    }
+    .accordion-item{
+        color:var(--bs-accordion-color);
+        background-color:var(--bs-accordion-bg);
+        border:var(--bs-accordion-border-width) solid var(--bs-accordion-border-color)
+    }
+    .accordion-item:first-of-type{
+        border-top-left-radius:var(--bs-accordion-border-radius);
+        border-top-right-radius:var(--bs-accordion-border-radius)
+    }
+    .accordion-item:first-of-type .accordion-button{
+        border-top-left-radius:var(--bs-accordion-inner-border-radius);
+        border-top-right-radius:var(--bs-accordion-inner-border-radius)
+    }
+    .accordion-item:not(:first-of-type){
+        border-top:0
+    }
+    .accordion-item:last-of-type{
+        border-bottom-right-radius:var(--bs-accordion-border-radius);
+        border-bottom-left-radius:var(--bs-accordion-border-radius)
+    }
+    .accordion-item:last-of-type .accordion-button.collapsed{
+        border-bottom-right-radius:var(--bs-accordion-inner-border-radius);
+        border-bottom-left-radius:var(--bs-accordion-inner-border-radius)
+    }
+    .accordion-item:last-of-type .accordion-collapse{
+        border-bottom-right-radius:var(--bs-accordion-border-radius);
+        border-bottom-left-radius:var(--bs-accordion-border-radius)
+    }
+    .accordion-body{
+        padding:var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+        background-color: #fcfcfc;
+        border: 1px solid #4140424d;
+    }
+
+    .accordion-button-title {
+        margin-right:10px;
+        font-weight:bold;
+    }
+
+    .accordion-button-title-sub {
+        color: black;
+    }
+
 
 </style>
 
