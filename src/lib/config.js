@@ -150,6 +150,10 @@ export const topics = {
 		{ category: 'LACMWER', label: 'Energy Recovery' }
 	],
 
+	Env_concern: [
+		{ category: 'CONCERNENVI', label: 'Concerned' },
+		{ category: 'NOTCONCERNENVI', label: 'Not concerned' }
+		],
 
 
 };
