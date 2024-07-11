@@ -224,7 +224,24 @@ let i_button_info = {
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  
 		},
 
-		
+		concern: {
+			title: "Concern about the environment",
+			info: "dasd"
+					},
+
+			waste: {
+			title: "Household waste",
+			info: "dasd"
+					},
+
+
+			ghg: {
+			title: "Greenhouse gas",
+			info: "dasd"
+					},
+
+
+
 		empty: {
 			title: "",
 			info: ""
