@@ -1605,9 +1605,10 @@ df_sen <- unique(rbind(df_sen, data))
 
 
 #### Environment ####
+df_env <- list()
+df_env_perc <- list()
 
 ##### Concern #####
-df_env <- list()
 
 dataset_short <- "Env_concern"
 dataset_subject <- "82/PA"
@@ -1645,9 +1646,10 @@ categories <- factor(json_data$dimension$STATISTIC$category$index,
 data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
-         source = dataset_short)
+         source = dataset_short) %>%
+  mutate(perc = VALUE )
 
-df_env <- rbind(df_env, data)
+df_env_perc <- rbind(df_env_perc, data)
 
 
 
@@ -1688,9 +1690,10 @@ categories <- factor(json_data$dimension$STATISTIC$category$index,
 data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
-         source = dataset_short)
+         source = dataset_short,
+         perc = VALUE)
 
-df_env <- rbind(df_env, data)
+df_env_perc <- rbind(df_env_perc, data)
 
 
 
@@ -1757,6 +1760,6 @@ df_dp_all_values <- unique(bind_rows(
 
 df_dp_all_text <- bind_rows(df_admissions_top)
 
-df_dp_all_perc <- unique(rbind(df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc))
+df_dp_all_perc <- unique(rbind(df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc,df_env_perc))
 
 
