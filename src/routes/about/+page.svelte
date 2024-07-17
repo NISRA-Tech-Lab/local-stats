@@ -119,7 +119,7 @@
 
 		<h2>Feedback and contact details</h2>
 		<p>This is a prototype application and we are very keen to get feedback on how it can be improved.</p>
-		<p>We welcome feedback from users through our short&nbsp;<a href="https://consultations2.nidirect.gov.uk/dof/area-explorer-feedback/">survey</a>.</p>
+		<p>We welcome feedback from users through our short <a href="https://dttselfserve.nidirect.gov.uk/NISRA/RateIt#/Northern_Ireland_Local_Statistics_Explorer">survey</a>.</p>
 		<p>or email <a href="mailto:info@nisra.gov.uk">xxx@nisra.gov.uk</a> with any suggestions.</p>
 		<p>Contact details for each of the datasets are available at </p><p>Contact <a href="mailto:info@nisra.gov.uk">xxx@nisra.gov.uk</a> for further infrmationThis is a prototype application and we are very keen to get feedback on how it can be improved.  Please email with any suggestions.</p>
 
