@@ -728,7 +728,7 @@ function compareNIrate (value) {
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				year = {pullYear("MYETotal", data.place)}
+				year =  {"30th June " + pullYear("MYETotal", data.place)}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -994,7 +994,8 @@ function compareNIrate (value) {
 				id: "wellbeing",
 				year: pullYear("Happy", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 ",
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
+						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 ",
 
 				show: ["ni"]
 			},
@@ -1004,7 +1005,9 @@ function compareNIrate (value) {
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
-						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>",
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
+						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>" ,
 
 				show: [ "lgd"]
 			},
@@ -1117,9 +1120,13 @@ function compareNIrate (value) {
 				Family health services</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research/hospital-waiting-times-statistics'>
 				Hospital waiting times statistics</a>, <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research-mental-health-and-learning-disabilities/mental-health-learning-disability-and-autism-statistics'>
 				Mental health, learning disability and autism</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research-social-services/social-care-statistics'>
-				Social care</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/workforce-statistics'>Workforce</a>, and <u>COVID-19</u>.
+				Social care</a>, <a href='https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/workforce-statistics'>Workforce</a>, and COVID-19.
+				DoH also have information on 				<a href = 'https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/health-inequalities-statistics'>Health Inequalities</a>
+				and <a href='https://www.health-ni.gov.uk/topics/doh-statistics-and-research/doh-commissioned-surveys'> Commissioned Surveys</a> which includes the Health Survey Northern Ireland.
+
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
 				Making Life Better</a>.
+				
 				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
 				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
 	/>
@@ -1319,7 +1326,7 @@ function compareNIrate (value) {
 			box_5a: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "<p>Pupils who left school with 5 or more GCSEs (or equivalents) grades A*-C</p><p> <span class='text-big'>"  + 
+				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) grades A*-C</p><p> <span class='text-big'>"  + 
 				    	 (check("Attainment.value")).toLocaleString() +"%</span> " + 
 						 "<p>including GCSE English and maths</p>",
 				show: ["ni"]

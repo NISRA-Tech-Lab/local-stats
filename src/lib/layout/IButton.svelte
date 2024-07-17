@@ -59,7 +59,7 @@ let i_button_info = {
 
 		pop: {
 			title: "Population",
-			info: "Population is based on the number of usual residents. " +
+			info: "Population is based on the number of usual residents at 30th June in the mid-year population estimates. " +
 			" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("MYETotal[0].dataset_url") + "'>" + checkMeta("MYETotal[0].title") + "</a></p>" +
 			"<p class = 'pibutton'>Last updated: " + checkMeta("MYETotal[0].last_updated") + "</p> "+
 			 "<p class = 'pibutton'><a href='mailto:" + checkMeta("MYETotal[0].email") + "'>Email for more information</a> </p>"  
@@ -82,7 +82,9 @@ let i_button_info = {
 
 		lifeexpectancy: {
 			title: "Life expectancy at birth",
-			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"+
+			info:  "<p class = 'pibutton'>Life expectancy at birth is the average number of years a person born in the current period could expect to live if the current mortality patterns remain constant. "+
+				" Further information on definitions is available on the <a href = 'https://www.health-ni.gov.uk/topics/dhssps-statistics-and-research/health-inequalities-statistics'>Health Inequalities webpage</a></p>" +
+			"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LE[0].dataset_url") + "'>" + checkMeta("LE[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("LE[0].last_updated") + "</p> "+
 				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("LE[0].email") + "'>Email for more information</a> </p>"  
 		 		  
@@ -117,7 +119,7 @@ let i_button_info = {
 			info:  "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>" + 
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p> "+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
-		 		  "<p>Inactive includes students, early retirees, or people looking after a home, who are long-term sick or disabled. </p>"
+		 		  "<p>Unemployed rates are based on those aged 16 and over, while both Employed and Inactive rates are based on those aged 16 to 64. Inactive includes students, early retirees, or people looking after a home, who are long-term sick or disabled. </p>"
 				},
 
 
@@ -129,7 +131,7 @@ let i_button_info = {
 				  "<p >Access wages data at: <a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p>Median is the ..... </p>"  
+				  "<p>Median salary is the Median gross annual earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
 		 		 
 		},
 
