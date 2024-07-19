@@ -528,9 +528,9 @@ function compareNIrate (value) {
 		if (Math.round(comparison) == 1) {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
 		} else if (comparison > 1) {
-			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times more dense</span> than the Northern Ireland average";
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times </span> the Northern Ireland average";
 		} else {
-			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " as dense</span> as the Northern Ireland average";
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " </span> of the Northern Ireland average";
 		}
 
 		return comparison;
@@ -1059,16 +1059,15 @@ function compareNIrate (value) {
 				id: "primarycare",
 				year: pullYear("GP", data.place)   ,
 				content: "<p><span class='text-big'>" + 
-							(check("GP.value.PRACS")).toLocaleString() +
+						(check("GP.value.PRACS")).toLocaleString() +
 						"</span> GP practices with an average of <span class='text-big'>" + 
 						(check("GP.value.PRACLIST")).toLocaleString() +
 						"</span> patients per practice</p>" +
-					"<p><span class='text-big'>" + 
-							 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-							"</span> dental surgeries" +
-							"</span> with an average of <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"</span> patients per surgery</p>",
+						"<p><span class='text-big'>" + 
+						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+						"</span> dental surgeries.  </span> <span class='text-big'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"%</span> of the population are registered with a dentist</p>",
 				show: ["ni"]
 			},
 			
@@ -1081,13 +1080,13 @@ function compareNIrate (value) {
 						(check("GP.value.PRACLIST")).toLocaleString() +
 						"</span> patients per practice</p>" +
 						"<p>"+(compareNIrate("GP.value.PRACLIST")).toLocaleString() +
-							 "<span style='color: #1460aa'> (NI " +  data.ni.data.GP.value.PRACLIST.toLocaleString() +" patients per practice) </span></p>"+
-					"<p><span class='text-big'>" + 
-							 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-							"</span> dental surgeries" +
-							"</span> with an average of <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"</span> patients per surgery</p>",
+						 "<span style='color: #1460aa'> (NI " +  data.ni.data.GP.value.PRACLIST.toLocaleString() +" patients per practice) </span></p>"+
+						"<p><span class='text-big'>" + 
+						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+						"</span> dental surgeries." +
+						"</span>  <span class='text-big'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"%</span> of the population are registered with a dentist</p>",
 				show: [ "lgd"]
 			},
 			box_6b: {
