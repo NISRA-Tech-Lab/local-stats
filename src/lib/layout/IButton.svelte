@@ -73,11 +73,13 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Personal wellbeing",
-			info: "Average Happiness score out of 10 for people aged 16+</p>" +
-			"Average Life satisfaction score out of 10 for people aged 16+</p>" +
+			info: "<p>Average Happiness score out of 10 for people aged 16+.  Average Life satisfaction score out of 10 for people aged 16+</p>" +
 				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("wellbeing[0].dataset_url") + "'>" + checkMeta("wellbeing[0].title") + "</a></p>"+
 				"<p class = 'pibutton'>Last updated: " + checkMeta("wellbeing[0].last_updated") + "</p> "+
-				"<p class = 'pibutton'><a href='mailto:" + checkMeta("wellbeing[0].email") + "'>Email for more information</a> </p>"   
+				"<p>Loneliness is the percentage of people aged 16+ who were lonely 'often/always' or 'some of the time'.</p>" +
+				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("lonely[0].dataset_url") + "'>" + checkMeta("lonely[0].title") + "</a></p>"+
+				"<p class = 'pibutton'>Last updated: " + checkMeta("lonely[0].last_updated") + "</p> "+
+				"<p class = 'pibutton'><a href='mailto:" + checkMeta("lonely[0].email") + "'>Email for more information</a> </p>"   
 				},
 
 		lifeexpectancy: {
@@ -91,7 +93,39 @@ let i_button_info = {
 			},
 
 		
-		carers: {
+
+		
+			renewable: {
+			title: "Household renewable energy systems",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			"Renewable energy systems used to generate heat or energy for a household. Examples include: solar panels for electricity; solar panels for heating water; biomass and wind turbines." + 
+			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+
+	
+	
+			cars: {
+			title: "Car or van availability",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			"The number of cars or vans that are owned, or available for use, by members of a household. It includes company cars and vans that are available for private use." +
+			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+
+			active: {
+			title: "Active travel",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_active[0].dataset_url") + "'>" + checkMeta("Env_active[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("Env_active[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_active[0].email") + "'>Email for more information</a> </p>"  
+		 		  },
+
+
+			crime: {
+			title: "Police recorded crimes",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crime[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
+		 		  },
+
+
+			carers: {
 			title: "Unpaid care giving",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"Unpaid care covers looking after giving help or support to anyone because they have long-term physical or "+
@@ -128,10 +162,10 @@ let i_button_info = {
 			info:  "<p class = 'pibutton'>Access data on number employed at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p >Access wages data at: <a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
-					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p>Median salary is the Median gross annual earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
+				  "<p >Access wages data at: <a href='" + checkMeta("ASHE_weekly[0].dataset_url") + "'>" + checkMeta("ASHE_weekly[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE_weekly[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE_weekly[0].email") + "'>Email for more information</a> </p>"  +
+				  "<p>Median salary is the Median gross weekly earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
 		 		 
 		},
 
@@ -228,18 +262,26 @@ let i_button_info = {
 
 		concern: {
 			title: "Concern about the environment",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_concern[0].dataset_url") + "'>" + checkMeta("Env_concern[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_concern[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_concern[0].email") + "'>Email for more information</a> </p>"  
 					},
 
 			waste: {
 			title: "Household waste",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_waste[0].dataset_url") + "'>" + checkMeta("Env_waste[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_waste[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_waste[0].email") + "'>Email for more information</a> </p>"  
+
 					},
 
 
 			ghg: {
 			title: "Greenhouse gas",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_ghg[0].dataset_url") + "'>" + checkMeta("Env_ghg[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_ghg[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_ghg[0].email") + "'>Email for more information</a> </p>"  
+
 					},
 
 

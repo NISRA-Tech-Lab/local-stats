@@ -904,9 +904,9 @@ function compareNIrate (value) {
 			<Accordion
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
-			heading = "People and households"
+			heading = "People and communities"
 			place = {data.place} 
-			sub_heading =   {moreData("People and households", data.place)}
+			sub_heading =   {moreData("People and communities", data.place)}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -995,7 +995,7 @@ function compareNIrate (value) {
 				year: pullYear("Happy", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
-						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 ",
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>%",
 
 				show: ["ni"]
 			},
@@ -1006,8 +1006,8 @@ function compareNIrate (value) {
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
-						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>" ,
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>"+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
 			},
@@ -1134,9 +1134,9 @@ function compareNIrate (value) {
 	<Accordion
 		id = "work"
 		img = "nisra-taxonomy-icon-labour-market.png"
-		heading = "Work and welfare"
+		heading = "Work, pay and benefits"
 		place = {data.place}
-		sub_heading = {moreData("Work and welfare", data.place)}
+		sub_heading = {moreData("Work, pay and benefits", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1154,8 +1154,8 @@ function compareNIrate (value) {
 				content: "<p>People employed</p> <span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
-						'<p>Median salary</p> <span class="text-big">£' +
-					     (check("ASHE.value")).toLocaleString() + '</span> ',
+						'<p>Median weekly salary</p> <span class="text-big">£' +
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> ',
 						 
 				show: ["ni"]
 			},
@@ -1166,9 +1166,9 @@ function compareNIrate (value) {
 				content: "<p>People employed</p> <span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
-						'<p>Median salary</p> <span class="text-big">£' +
-					     (check("ASHE.value")).toLocaleString() + '</span> '+
-						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE.value.toLocaleString() +") </span></p>",
+						'<p>Median weekly salary</p> <span class="text-big">£' +
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> '+
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0}) +") </span></p>",
 				show: [ "lgd"]
 			},
 			
@@ -1371,6 +1371,118 @@ function compareNIrate (value) {
 		
 		/>
 
+		
+	<Accordion
+	id = "environment"
+	img = "nisra-taxonomy-icon-summary-stats.png"
+	heading = "Environment"
+	place = {data.place}
+	sub_heading = {moreData("Environment", data.place)}
+	description = " "
+	chart_compare_type = {chart_compare_type}
+	boxes = {{
+			
+
+		box_1 :{
+			id: "concern",
+			year: pullYear("Env_concern", data.place),
+			content:  "GroupChart",
+			chart_data: makeDataNICompare("Env_concern"),
+			show: ["ni", "lgd"],
+		},	
+
+					
+
+						
+		box_2: {
+			id: "waste",
+			year: pullYear("Env_waste", data.place),
+			content:  "GroupChart",
+			chart_data: makeDataNICompare("Env_waste"),
+			show: ["ni", "lgd"]
+		},
+
+		box_3: {
+			id: "ghg",
+			year: pullYear("Env_ghg", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
+					
+			show: ["ni", "lgd"]
+		},
+
+		box_4: {
+			id: "cars",
+			year: pullCensusYear("car_or_van"),
+			content: "GroupChart",
+			chart_data: makeDataNICompare("car_or_van")
+					
+		},
+		
+		box_5: {
+			id: "active",
+			year: pullYear("Env_active", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
+			show: ["ni"]
+					
+		},
+
+		box_5a: {
+			id: "active",
+			year: pullYear("Env_active", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
+					 " by walking, cycling and public transport" ,						
+			show: ["lgd"]
+					
+		},
+
+		box_6: {
+			id: "renewable",
+			year: pullCensusYear("renewable_energy"),
+			// content: "GroupChart",
+			// chart_data: makeDataNICompare("renewable_energy")
+
+			
+			content: "StackedBarChart",				
+						chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
+						zKey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: true
+
+		},
+
+		box_7a: {
+			id: "empty",
+			i_button: false,
+			content: "",
+			show: ["dea","sdz","dz"]
+		},
+				
+		box_7b: {
+			id: "empty",
+			i_button: false,
+			content: "",
+			show: ["dea","sdz","dz"]
+		}
+
+	}}
+	more = "<p>The <a href='https://www.daera-ni.gov.uk/landing-pages/statistics'>Department of Agriculture, Environment and Rural Affairs</a>
+				publishes statistics on the Environment from a range of sources, including 
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-greenhouse-gas-inventory'>greenhouse gas inventory</a>,
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-local-authority-collected-municipal-waste-management-statistics'>
+				local authority collected municipal waste management statistics</a>, 
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-environmental-statistics'>environmental statistics report</a>, 
+				<a href=' https://www.daera-ni.gov.uk/topics/water/bathing-water-quality'>bathing water quality</a>  and air pollution.  
+				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> 
+				collected data on availability of cars and household renewable energy systems which can be
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> 
+				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+        
+/> 
+
 
 	<Accordion
 		id = "crime"
@@ -1381,6 +1493,31 @@ function compareNIrate (value) {
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
+
+			box_1: {
+				id: "crime",
+				year: pullYear("crime", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded" ,
+						//  +
+						//  "<p>"+(compareNIavg("crime.value.allcrime")).toLocaleString() ,
+				show: ["ni", "lgd", "dea"]
+						
+			},
+
+			box_7a: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			},
+
+			box_7b: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			}
+
+
 				
 		}}
 		more = ""
@@ -1388,11 +1525,11 @@ function compareNIrate (value) {
 
 
 	<Accordion
-		id = "travel"
-		img = "nisra-taxonomy-icon-travel-transport.png"
-		heading = "Travel and Transport"
+		id = "business"
+		img = "nisra-taxonomy-icon-business-energy.png"
+		heading = "Business sectors"
 		place = {data.place}
-		sub_heading = {moreData("Travel and transport", data.place)}
+		sub_heading = {moreData("Business sectors", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1404,9 +1541,9 @@ function compareNIrate (value) {
 	<Accordion
 		id = "economy"
 		img = "nisra-taxonomy-icon-economy.png"
-		heading = "Economy"
+		heading = "Economy and trade"
 		place = {data.place}
-		sub_heading = {moreData("Economy", data.place)}
+		sub_heading = {moreData("Economy and trade", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1414,49 +1551,6 @@ function compareNIrate (value) {
 		}}
 		more = ""
 	/>
-
-	<Accordion
-		id = "environment"
-		img = "nisra-taxonomy-icon-agriculture.png"
-		heading = "Environment"
-		place = {data.place}
-		sub_heading = {moreData("Environment", data.place)}
-		description = " "
-		chart_compare_type = {chart_compare_type}
-		boxes = {{
-				
-
-			box_1 :{
-				id: "concern",
-				year: pullYear("Env_concern", data.place),
-				content:  "GroupChart",
-				chart_data: makeDataNICompare("Env_concern"),
-				show: ["ni", "lgd"],
-			},	
-
-						
-
-							
-			box_2: {
-				id: "waste",
-				year: pullYear("Env_waste", data.place),
-				content:  "GroupChart",
-				chart_data: makeDataNICompare("Env_waste"),
-				show: ["ni", "lgd"]
-			},
-
-			box_3: {
-				id: "ghg",
-				year: pullYear("Env_ghg", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
-						
-				show: ["ni", "lgd"]
-			}
-
-		}}
-		more = ""
-	/> 
 
 		</div>
 	{/if}
