@@ -1381,6 +1381,31 @@ function compareNIrate (value) {
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
+
+			box_1: {
+				id: "crime",
+				year: pullYear("crime", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded" ,
+						//  +
+						//  "<p>"+(compareNIavg("crime.value.allcrime")).toLocaleString() ,
+				show: ["ni", "lgd", "dea"]
+						
+			},
+
+			box_7a: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			},
+
+			box_7b: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			}
+
+
 				
 		}}
 		more = ""
