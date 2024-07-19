@@ -66,7 +66,7 @@ df_pop <- list()
 dataset_short <- "MYETotal"
 dataset_subject <- "5/MYE"
 
-# MYE by LGD ####
+##### MYE by LGD #####
 dataset_long <- "MYE01T06"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -98,7 +98,7 @@ data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
 
 df_pop <- rbind(df_pop, data)
 
-# MYE by Data Zone ####
+##### MYE by Data Zone #####
 dataset_long <- "MYE01T011"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -129,7 +129,7 @@ data <- data.frame(geog_code = json_data$dimension$DZ2021$category$index,
 
 df_pop <- rbind(df_pop, data)
 
-# MYE by Super Data Zone ####
+##### MYE by Super Data Zone #####
 dataset_long <- "MYE01T012"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -163,7 +163,7 @@ data <- data.frame(geog_code = json_data$dimension$SDZ2021$category$index,
 
 df_pop <- rbind(df_pop, data)
 
-# MYE by DEA ####
+##### MYE by DEA ####
 dataset_long <- "MYE01T010"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -273,7 +273,7 @@ data <- data.frame(geog_code = sort(rep(json_data$dimension$SDZ2021$category$ind
 
 df_popage <- rbind(df_popage, data)
 
-# Age band by LGD ####
+##### Age band by LGD ####
 dataset_long <- "MYE01T04"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -518,6 +518,71 @@ df_happy = data_both %>% filter(STATISTIC == "WBHAP") %>%
 
 df_satisfy = data_both %>% filter(STATISTIC == "WBLIFE") %>% 
   mutate(source = "Satisfy") %>% select(geog_code, VALUE, source)
+
+
+
+
+##### Loneliness #####
+
+dataset_subject <- "96/LONEL"
+
+dataset_long <- "WBLONLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+dataset_short <- "lonely"
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLON"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(STATISTIC = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value)
+
+
+dataset_long <- "WBLONOTHR"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLON"]}},',
+    '{"code": "OTHRCAT", "selection": {"filter": "item", "values": ["N92000002"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+data_ni <- data.frame(geog_code = "N92000002",
+                      STATISTIC = json_data$dimension$STATISTIC$category$index,
+                      VALUE = json_data$value)
+
+data_both = rbind(data, data_ni)
+
+df_lonely = data_both %>% 
+  mutate(source = "Lonely") %>% select(geog_code, VALUE, source)
+
 
 
 
@@ -807,6 +872,7 @@ df_lmr_value = df_lmr %>% filter(statistic == "EMPN")
 ##### ASHE #####
 df_ashe <- list()
 dataset_short <- "ASHE"
+
 dataset_subject <- "85/EARNINGS"
 
 dataset_long <- "GAPLGD"
@@ -841,6 +907,45 @@ data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
                     source = dataset_short)
 
 df_ashe <- rbind(df_ashe, data)
+
+
+dataset_short <- "ASHE_weekly"
+dataset_subject <- "85/EARNINGS"
+
+dataset_long <- "GHWPLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["Median"]}},',
+    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
+    '{"code": "WP", "selection": {"filter": "item", "values": ["All"]}},',
+    '{"code": "PR", "selection": {"filter": "item", "values": ["Wkly"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
+                   VALUE = json_data$value,
+                   source = dataset_short)
+
+df_ashe <- rbind(df_ashe, data)
+
 
 ##### Industry #####
 df_indust <- list()
@@ -1613,7 +1718,6 @@ df_env_perc <- list()
 dataset_short <- "Env_concern"
 dataset_subject <- "82/PA"
 
-# MYE by LGD ####
 dataset_long <- "CHSCONCERNLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1657,7 +1761,7 @@ df_env_perc <- rbind(df_env_perc, data)
 dataset_short <- "Env_waste"
 dataset_subject <- "82/W"
 
-# MYE by LGD ####
+##### waste #####
 dataset_long <- "WASTELGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1698,12 +1802,11 @@ df_env_perc <- rbind(df_env_perc, data)
 
 
 
-
+##### GHG #####
 
 dataset_short <- "Env_ghg"
 dataset_subject <- "82/GHG"
 
-# MYE by LGD ####
 dataset_long <- "GHGALL"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1741,6 +1844,124 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_env <- rbind(df_env, data)
 
 
+##### active travel #####
+
+dataset_short <- "Env_active"
+dataset_subject <- "91/ACTTRV"
+
+dataset_long <- "JMWCPTLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["JWCPT"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long,
+  "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", dataset_long),
+  "last_updated" = format(substring(updated[which(matrices == dataset_long)], 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = data_portal$label[which(matrices == dataset_long)],
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_env <- rbind(df_env, data)
+
+
+#### Crime ####
+##### PSNI recorded crime ####
+
+df_crime <- list()
+dataset_short <- "crime"
+dataset_subject <- "67/PRC"
+
+dataset_long <- "PRCDEA"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "crmclass", "selection": {"filter": "item", "values": ["All"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "dea",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_crime <- rbind(df_crime, data)
+
+dataset_long <- "PRCLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "crmclass", "selection": {"filter": "item", "values": ["All"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+    
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_crime <- unique(rbind(df_crime, data))
+
 
 #### Bind rows ####
 
@@ -1749,10 +1970,12 @@ df_dp_all_values <- unique(bind_rows(
     df_le, df_dental, df_gps, df_lmr_value, df_bs,
     #df_school_destination, 
     df_popchange, df_school_value, df_sen,
-    df_env
+    df_env,
+    df_crime
   ),
   rbind(
-    df_satisfy, df_happy, df_admissions_all, df_ashe,
+    df_satisfy, df_happy, df_lonely, 
+    df_admissions_all, df_ashe,
     df_school_classsize, df_school_attainment, df_FEHE, df_pop
   )
 ))
