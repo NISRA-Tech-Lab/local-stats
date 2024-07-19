@@ -130,10 +130,10 @@ let i_button_info = {
 			info:  "<p class = 'pibutton'>Access data on number employed at: <a href='" + checkMeta("LMS[0].dataset_url") + "'>" + checkMeta("LMS[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("LMS[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("LMS[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p >Access wages data at: <a href='" + checkMeta("ASHE[0].dataset_url") + "'>" + checkMeta("ASHE[0].title") + "</a></p>" + 
-					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p>Median salary is the Median gross annual earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
+				  "<p >Access wages data at: <a href='" + checkMeta("ASHE_weekly[0].dataset_url") + "'>" + checkMeta("ASHE_weekly[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE_weekly[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE_weekly[0].email") + "'>Email for more information</a> </p>"  +
+				  "<p>Median salary is the Median gross weekly earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
 		 		 
 		},
 

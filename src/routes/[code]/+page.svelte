@@ -1154,8 +1154,8 @@ function compareNIrate (value) {
 				content: "<p>People employed</p> <span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
-						'<p>Median salary</p> <span class="text-big">£' +
-					     (check("ASHE.value")).toLocaleString() + '</span> ',
+						'<p>Median weekly salary</p> <span class="text-big">£' +
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> ',
 						 
 				show: ["ni"]
 			},
@@ -1166,9 +1166,9 @@ function compareNIrate (value) {
 				content: "<p>People employed</p> <span class='text-big'>" +
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
-						'<p>Median salary</p> <span class="text-big">£' +
-					     (check("ASHE.value")).toLocaleString() + '</span> '+
-						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE.value.toLocaleString() +") </span></p>",
+						'<p>Median weekly salary</p> <span class="text-big">£' +
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> '+
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0}) +") </span></p>",
 				show: [ "lgd"]
 			},
 			
