@@ -99,6 +99,12 @@ let i_button_info = {
 			"The number of cars or vans that are owned, or available for use, by members of a household. It includes company cars and vans that are available for private use." +
 			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
+			active: {
+			title: "Active travel",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_active[0].dataset_url") + "'>" + checkMeta("Env_active[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("Env_active[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_active[0].email") + "'>Email for more information</a> </p>"  
+		 		  },
 
 			carers: {
 			title: "Unpaid care giving",

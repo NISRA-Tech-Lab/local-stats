@@ -1461,7 +1461,26 @@ function compareNIrate (value) {
 				chart_data: makeDataNICompare("car_or_van")
 						
 			},
+			
+			box_5: {
+				id: "active",
+				year: pullYear("Env_active", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
+				show: ["ni"]
+						
+			},
 
+			box_5a: {
+				id: "active",
+				year: pullYear("Env_active", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
+						 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
+						 " by walking, cycling and public transport" ,						
+				show: ["lgd"]
+						
+			},
 			box_6a: {
 				id: "empty",
 				i_button: false,
