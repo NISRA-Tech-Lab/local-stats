@@ -904,9 +904,9 @@ function compareNIrate (value) {
 			<Accordion
 			id = "people"
 			img = "nisra-taxonomy-icon-census.png"
-			heading = "People and households"
+			heading = "People and communities"
 			place = {data.place} 
-			sub_heading =   {moreData("People and households", data.place)}
+			sub_heading =   {moreData("People and communities", data.place)}
 			description = ""
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
@@ -1134,9 +1134,9 @@ function compareNIrate (value) {
 	<Accordion
 		id = "work"
 		img = "nisra-taxonomy-icon-labour-market.png"
-		heading = "Work and welfare"
+		heading = "Work, pay and benefits"
 		place = {data.place}
-		sub_heading = {moreData("Work and welfare", data.place)}
+		sub_heading = {moreData("Work, pay and benefits", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1388,11 +1388,11 @@ function compareNIrate (value) {
 
 
 	<Accordion
-		id = "travel"
-		img = "nisra-taxonomy-icon-travel-transport.png"
-		heading = "Travel and Transport"
+		id = "business"
+		img = "nisra-taxonomy-icon-business-energy.png"
+		heading = "Business sectors"
 		place = {data.place}
-		sub_heading = {moreData("Travel and transport", data.place)}
+		sub_heading = {moreData("Business sectors", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1404,9 +1404,9 @@ function compareNIrate (value) {
 	<Accordion
 		id = "economy"
 		img = "nisra-taxonomy-icon-economy.png"
-		heading = "Economy"
+		heading = "Economy and trade"
 		place = {data.place}
-		sub_heading = {moreData("Economy", data.place)}
+		sub_heading = {moreData("Economy and trade", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1417,7 +1417,7 @@ function compareNIrate (value) {
 
 	<Accordion
 		id = "environment"
-		img = "nisra-taxonomy-icon-agriculture.png"
+		img = "nisra-taxonomy-icon-summary-stats.png"
 		heading = "Environment"
 		place = {data.place}
 		sub_heading = {moreData("Environment", data.place)}
