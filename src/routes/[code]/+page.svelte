@@ -1371,6 +1371,107 @@ function compareNIrate (value) {
 		
 		/>
 
+		
+	<Accordion
+	id = "environment"
+	img = "nisra-taxonomy-icon-summary-stats.png"
+	heading = "Environment"
+	place = {data.place}
+	sub_heading = {moreData("Environment", data.place)}
+	description = " "
+	chart_compare_type = {chart_compare_type}
+	boxes = {{
+			
+
+		box_1 :{
+			id: "concern",
+			year: pullYear("Env_concern", data.place),
+			content:  "GroupChart",
+			chart_data: makeDataNICompare("Env_concern"),
+			show: ["ni", "lgd"],
+		},	
+
+					
+
+						
+		box_2: {
+			id: "waste",
+			year: pullYear("Env_waste", data.place),
+			content:  "GroupChart",
+			chart_data: makeDataNICompare("Env_waste"),
+			show: ["ni", "lgd"]
+		},
+
+		box_3: {
+			id: "ghg",
+			year: pullYear("Env_ghg", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
+					
+			show: ["ni", "lgd"]
+		},
+
+		box_4: {
+			id: "cars",
+			year: pullCensusYear("car_or_van"),
+			content: "GroupChart",
+			chart_data: makeDataNICompare("car_or_van")
+					
+		},
+		
+		box_5: {
+			id: "active",
+			year: pullYear("Env_active", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
+			show: ["ni"]
+					
+		},
+
+		box_5a: {
+			id: "active",
+			year: pullYear("Env_active", data.place),
+			content:  "<span class='text-big'>"  + 
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
+					 " by walking, cycling and public transport" ,						
+			show: ["lgd"]
+					
+		},
+
+		box_6: {
+			id: "renewable",
+			year: pullCensusYear("renewable_energy"),
+			// content: "GroupChart",
+			// chart_data: makeDataNICompare("renewable_energy")
+
+			
+			content: "StackedBarChart",				
+						chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
+						zKey: chart_compare_type,
+						label: chartLabel,
+						topic_prev_available: true
+
+		},
+
+		box_7a: {
+			id: "empty",
+			i_button: false,
+			content: "",
+			show: ["dea","sdz","dz"]
+		},
+				
+		box_7b: {
+			id: "empty",
+			i_button: false,
+			content: "",
+			show: ["dea","sdz","dz"]
+		}
+
+	}}
+	more = ""
+/> 
+
 
 	<Accordion
 		id = "crime"
@@ -1439,106 +1540,6 @@ function compareNIrate (value) {
 		}}
 		more = ""
 	/>
-
-	<Accordion
-		id = "environment"
-		img = "nisra-taxonomy-icon-summary-stats.png"
-		heading = "Environment"
-		place = {data.place}
-		sub_heading = {moreData("Environment", data.place)}
-		description = " "
-		chart_compare_type = {chart_compare_type}
-		boxes = {{
-				
-
-			box_1 :{
-				id: "concern",
-				year: pullYear("Env_concern", data.place),
-				content:  "GroupChart",
-				chart_data: makeDataNICompare("Env_concern"),
-				show: ["ni", "lgd"],
-			},	
-
-						
-
-							
-			box_2: {
-				id: "waste",
-				year: pullYear("Env_waste", data.place),
-				content:  "GroupChart",
-				chart_data: makeDataNICompare("Env_waste"),
-				show: ["ni", "lgd"]
-			},
-
-			box_3: {
-				id: "ghg",
-				year: pullYear("Env_ghg", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
-						
-				show: ["ni", "lgd"]
-			},
-
-			box_4: {
-				id: "cars",
-				year: pullCensusYear("car_or_van"),
-				content: "GroupChart",
-				chart_data: makeDataNICompare("car_or_van")
-						
-			},
-			
-			box_5: {
-				id: "active",
-				year: pullYear("Env_active", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
-				show: ["ni"]
-						
-			},
-
-			box_5a: {
-				id: "active",
-				year: pullYear("Env_active", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
-						 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
-						 " by walking, cycling and public transport" ,						
-				show: ["lgd"]
-						
-			},
-
-			box_6: {
-				id: "renewable",
-				year: pullCensusYear("renewable_energy"),
-				// content: "GroupChart",
-				// chart_data: makeDataNICompare("renewable_energy")
-
-				
-				content: "StackedBarChart",				
-							chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
-							zKey: chart_compare_type,
-							label: chartLabel,
-							topic_prev_available: true
-
-			},
-
-			box_7a: {
-				id: "empty",
-				i_button: false,
-				content: "",
-				show: ["dea","sdz","dz"]
-			},
-					
-			box_7b: {
-				id: "empty",
-				i_button: false,
-				content: "",
-				show: ["dea","sdz","dz"]
-			}
-
-		}}
-		more = ""
-	/> 
 
 		</div>
 	{/if}
