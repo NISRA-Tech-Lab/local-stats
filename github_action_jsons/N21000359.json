@@ -103,6 +103,26 @@
         }
       }
     },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 5.4559,
+          "northern_ireland": 82.6071,
+          "other_cob": 8.1655,
+          "republic_of_ireland": 2.5998,
+          "scotland": 0.952,
+          "wales": 0.2197
+        }
+      }
+    },
     "general_health": {
       "perc": {
         "2011": {
@@ -161,23 +181,23 @@
         }
       }
     },
-    "cob": {
+    "car_or_van": {
       "perc": {
         "2011": {
-          "england": 100,
-          "northern_ireland": 100,
-          "other_cob": 100,
-          "republic_of_ireland": 100,
-          "scotland": 100,
-          "wales": 100
+          "five_or_more": 100,
+          "four": 100,
+          "none": 100,
+          "one": 100,
+          "three": 100,
+          "two": 100
         },
         "2021": {
-          "england": 5.4559,
-          "northern_ireland": 82.6071,
-          "other_cob": 8.1655,
-          "republic_of_ireland": 2.5998,
-          "scotland": 0.952,
-          "wales": 0.2197
+          "five_or_more": 0.8483,
+          "four": 1.3195,
+          "none": 12.1583,
+          "one": 45.5231,
+          "three": 7.3516,
+          "two": 32.7992
         }
       }
     },
@@ -238,6 +258,18 @@
           "none": 12.5275,
           "other_religions": 2.381,
           "protestant_and_other_christian_including_christian_related": 59.6703
+        }
+      }
+    },
+    "renewable_energy": {
+      "perc": {
+        "2011": {
+          "any_renewable": 100,
+          "no_renewable": 100
+        },
+        "2021": {
+          "any_renewable": 3.2045,
+          "no_renewable": 96.7955
         }
       }
     },
