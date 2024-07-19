@@ -243,18 +243,26 @@ let i_button_info = {
 
 		concern: {
 			title: "Concern about the environment",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_concern[0].dataset_url") + "'>" + checkMeta("Env_concern[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_concern[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_concern[0].email") + "'>Email for more information</a> </p>"  
 					},
 
 			waste: {
 			title: "Household waste",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_waste[0].dataset_url") + "'>" + checkMeta("Env_waste[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_waste[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_waste[0].email") + "'>Email for more information</a> </p>"  
+
 					},
 
 
 			ghg: {
 			title: "Greenhouse gas",
-			info: "dasd"
+			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_ghg[0].dataset_url") + "'>" + checkMeta("Env_ghg[0].title") + "</a></p>"+
+				  "<p class = 'pibutton'>Last updated: " + checkMeta("Env_ghg[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_ghg[0].email") + "'>Email for more information</a> </p>"  
+
 					},
 
 
