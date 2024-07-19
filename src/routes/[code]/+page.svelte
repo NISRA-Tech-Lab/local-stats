@@ -995,7 +995,7 @@ function compareNIrate (value) {
 				year: pullYear("Happy", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
-						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 ",
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>%",
 
 				show: ["ni"]
 			},
@@ -1006,8 +1006,8 @@ function compareNIrate (value) {
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness (to be updated)</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
-						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>" ,
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>"+
+						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
 			},
