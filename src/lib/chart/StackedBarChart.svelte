@@ -8,8 +8,8 @@
 	export let zKey = "ni";
   export let topic_prev_available = true;
 
-  export let colors = ['#8268b6','#00205B', '#308182',   '#3d007a', '#3878c5', 'lightgrey'];
-// export let colors = ['#00205B','#6C63AC', '#781C87',   '#C11B71', '#FB7979', '#801650', '#fbb15f', '#F66068',  'lightgrey'];
+  export let colors = ['#00205B', '#3878c5',   '#002417', '#BD00BD', 'lightgrey'];
+  // export let colors = ['#00205B','#6C63AC', '#781C87',   '#C11B71', '#FB7979', '#801650', '#fbb15f', '#F66068',  'lightgrey'];
 	//	export let colors = ['#212373','#781C87',  '#0D9AA2', '#C11B71', '#FB7979', '#F66068', '#746CB1', '#22D0B6', 'lightgrey'];
 	// export let colors = ['#00205B','#6C63AC', '#781C87',   '#C11B71', '#FB7979', '#F66068', '#801650', '#0D9AA2', 'lightgrey'];
 	export let decimals = null;
