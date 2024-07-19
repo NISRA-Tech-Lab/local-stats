@@ -1481,14 +1481,30 @@ function compareNIrate (value) {
 				show: ["lgd"]
 						
 			},
-			box_6a: {
+
+			box_6: {
+				id: "renewable",
+				year: pullCensusYear("renewable_energy"),
+				// content: "GroupChart",
+				// chart_data: makeDataNICompare("renewable_energy")
+
+				
+				content: "StackedBarChart",				
+							chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
+							zKey: chart_compare_type,
+							label: chartLabel,
+							topic_prev_available: true
+
+			},
+
+			box_7a: {
 				id: "empty",
 				i_button: false,
 				content: "",
 				show: ["dea","sdz","dz"]
 			},
 					
-			box_6b: {
+			box_7b: {
 				id: "empty",
 				i_button: false,
 				content: "",
