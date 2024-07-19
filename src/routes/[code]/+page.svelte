@@ -1469,7 +1469,18 @@ function compareNIrate (value) {
 		}
 
 	}}
-	more = ""
+	more = "<p>The <a href='https://www.daera-ni.gov.uk/landing-pages/statistics'>Department of Agriculture, Environment and Rural Affairs</a>
+				publishes statistics on the Environment from a range of sources, including 
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-greenhouse-gas-inventory'>greenhouse gas inventory</a>,
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-local-authority-collected-municipal-waste-management-statistics'>
+				local authority collected municipal waste management statistics</a>, 
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-environmental-statistics'>environmental statistics report</a>, 
+				<a href=' https://www.daera-ni.gov.uk/topics/water/bathing-water-quality'>bathing water quality</a>  and air pollution.  
+				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> 
+				collected data on availability of cars and household renewable energy systems which can be
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> 
+				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+        
 /> 
 
 
