@@ -93,7 +93,14 @@ let i_button_info = {
 			},
 
 		
-		carers: {
+			cars: {
+			title: "Car or van availability",
+			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
+			"The number of cars or vans that are owned, or available for use, by members of a household. It includes company cars and vans that are available for private use." +
+			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
+
+
+			carers: {
 			title: "Unpaid care giving",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"Unpaid care covers looking after giving help or support to anyone because they have long-term physical or "+

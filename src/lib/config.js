@@ -98,12 +98,21 @@ export const topics = {
 		{ category: 'republic_of_ireland', label: 'Republic of Ireland' },
  */		{ category: 'other_cob', label: 'Other country of birth' }
 	],
-	// BS: [
 
-	// 	{ category: ['CA','DLA','PIP','AA'], label: 'Disability and carers benefits' },
-	// 	{ category: ['PC','RP'], label: 'Pension Age benefits' },
-	// 	{ category: ['ESA','UC','IS', 'JSA'], label: 'Working Age benefits' }		
-	// ],
+	car_or_van: [
+		{ category: 'none', label: 'No cars or vans' },
+		{ category: 'one', label: '1 car or van' },
+		{ category: 'two', label: '2 cars or vans' },
+		{ category: 'three', label: '3 cars or vans' },
+		{ category: 'four', label: '4 cars or vans' },
+		{ category: 'five_or_more', label: '5 or more cars or vans' }
+	],
+
+	renewable_energy: [
+		{ category: 'no_renewable', label: 'No renewable energy systems' },
+		{ category: 'any_renewable', label: 'Any renewable energy systems' }
+	],
+
 
 	BRES: [
 

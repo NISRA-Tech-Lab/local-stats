@@ -1452,6 +1452,28 @@ function compareNIrate (value) {
 				    	 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
 						
 				show: ["ni", "lgd"]
+			},
+
+			box_4: {
+				id: "cars",
+				year: pullCensusYear("car_or_van"),
+				content: "GroupChart",
+				chart_data: makeDataNICompare("car_or_van")
+						
+			},
+
+			box_6a: {
+				id: "empty",
+				i_button: false,
+				content: "",
+				show: ["dea","sdz","dz"]
+			},
+					
+			box_6b: {
+				id: "empty",
+				i_button: false,
+				content: "",
+				show: ["dea","sdz","dz"]
 			}
 
 		}}
