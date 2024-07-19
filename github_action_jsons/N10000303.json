@@ -187,6 +187,26 @@
         }
       }
     },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 100,
+          "northern_ireland": 100,
+          "other_cob": 100,
+          "republic_of_ireland": 100,
+          "scotland": 100,
+          "wales": 100
+        },
+        "2021": {
+          "england": 6.3005,
+          "northern_ireland": 65.7041,
+          "other_cob": 23.3439,
+          "republic_of_ireland": 3.4952,
+          "scotland": 0.9371,
+          "wales": 0.2192
+        }
+      }
+    },
     "general_health": {
       "perc": {
         "2011": {
@@ -245,23 +265,23 @@
         }
       }
     },
-    "cob": {
+    "car_or_van": {
       "perc": {
         "2011": {
-          "england": 100,
-          "northern_ireland": 100,
-          "other_cob": 100,
-          "republic_of_ireland": 100,
-          "scotland": 100,
-          "wales": 100
+          "five_or_more": 100,
+          "four": 100,
+          "none": 100,
+          "one": 100,
+          "three": 100,
+          "two": 100
         },
         "2021": {
-          "england": 6.3005,
-          "northern_ireland": 65.7041,
-          "other_cob": 23.3439,
-          "republic_of_ireland": 3.4952,
-          "scotland": 0.9371,
-          "wales": 0.2192
+          "five_or_more": 0.7842,
+          "four": 1.4557,
+          "none": 41.3224,
+          "one": 38.1464,
+          "three": 3.8426,
+          "two": 14.4489
         }
       }
     },
@@ -322,6 +342,18 @@
           "none": 17.8575,
           "other_religions": 8.6613,
           "protestant_and_other_christian_including_christian_related": 29.5634
+        }
+      }
+    },
+    "renewable_energy": {
+      "perc": {
+        "2011": {
+          "any_renewable": 100,
+          "no_renewable": 100
+        },
+        "2021": {
+          "any_renewable": 2.3428,
+          "no_renewable": 97.6572
         }
       }
     },
@@ -392,6 +424,11 @@
       "value": {
         "SENNonStatemented": 6,
         "SENStatement": 131
+      }
+    },
+    "crime": {
+      "value": {
+        "allcrime": 11077
       }
     },
     "Attainment": {
@@ -564,6 +601,16 @@
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Census - Special Schools",
+        "year": "2022/23"
+      }
+    ],
+    "crime": [
+      {
+        "table_code": "PRCDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/PRCDEA",
+        "last_updated": "2023-06-29",
+        "email": "statistics@psni.police.uk",
+        "title": "Police Recorded Crime",
         "year": "2022/23"
       }
     ]

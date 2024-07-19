@@ -103,6 +103,26 @@
         }
       }
     },
+    "cob": {
+      "perc": {
+        "2011": {
+          "england": 2.3653,
+          "northern_ireland": 88.904,
+          "other_cob": 6.5481,
+          "republic_of_ireland": 1.6235,
+          "scotland": 0.4885,
+          "wales": 0.0707
+        },
+        "2021": {
+          "england": 2.4586,
+          "northern_ireland": 86.1068,
+          "other_cob": 9.2149,
+          "republic_of_ireland": 1.6794,
+          "scotland": 0.4578,
+          "wales": 0.0825
+        }
+      }
+    },
     "general_health": {
       "perc": {
         "2011": {
@@ -161,23 +181,23 @@
         }
       }
     },
-    "cob": {
+    "car_or_van": {
       "perc": {
         "2011": {
-          "england": 2.3653,
-          "northern_ireland": 88.904,
-          "other_cob": 6.5481,
-          "republic_of_ireland": 1.6235,
-          "scotland": 0.4885,
-          "wales": 0.0707
+          "five_or_more": 1.5721,
+          "four": 3.5669,
+          "none": 15.3395,
+          "one": 38.7361,
+          "three": 8.9341,
+          "two": 31.8513
         },
         "2021": {
-          "england": 2.4586,
-          "northern_ireland": 86.1068,
-          "other_cob": 9.2149,
-          "republic_of_ireland": 1.6794,
-          "scotland": 0.4578,
-          "wales": 0.0825
+          "five_or_more": 2.4405,
+          "four": 4.3385,
+          "none": 13.0358,
+          "one": 35.4856,
+          "three": 10.9416,
+          "two": 33.758
         }
       }
     },
@@ -238,6 +258,18 @@
           "none": 4.3655,
           "other_religions": 0.674,
           "protestant_and_other_christian_including_christian_related": 30.2216
+        }
+      }
+    },
+    "renewable_energy": {
+      "perc": {
+        "2011": {
+          "any_renewable": 100,
+          "no_renewable": 100
+        },
+        "2021": {
+          "any_renewable": 6.8531,
+          "no_renewable": 93.1469
         }
       }
     },
@@ -362,14 +394,30 @@
         "GHGALL": 2641.6899
       }
     },
+    "Env_active": {
+      "value": {
+        "JWCPT": 16
+      }
+    },
+    "crime": {
+      "value": {
+        "allcrime": 5689
+      }
+    },
     "Satisfy": {
       "value": 7.8
     },
     "Happy": {
       "value": 7.9
     },
+    "Lonely": {
+      "value": 16
+    },
     "ASHE": {
       "value": 26785
+    },
+    "ASHE_weekly": {
+      "value": 510.8
     },
     "ClassSize": {
       "value": 17.9
@@ -491,6 +539,16 @@
         "year": "2022/23"
       }
     ],
+    "lonely": [
+      {
+        "table_code": "WBLONLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/WBLONLGD",
+        "last_updated": "2024-06-12",
+        "email": "pfganalytics@executiveoffice-ni.gov.uk",
+        "title": "Wellbeing - Loneliness",
+        "year": "2022/23"
+      }
+    ],
     "GP": [
       {
         "table_code": "GPPRACPATLGD",
@@ -538,6 +596,16 @@
         "last_updated": "2023-11-01",
         "email": "economicstats@nisra.gov.uk",
         "title": "Gross Annual Pay",
+        "year": "2023"
+      }
+    ],
+    "ASHE_weekly": [
+      {
+        "table_code": "GHWPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/GHWPLGD",
+        "last_updated": "2023-11-01",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Gross Hourly (excluding overtime) and Weekly Pay",
         "year": "2023"
       }
     ],
@@ -669,6 +737,26 @@
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Greenhouse Gas Emissions - Full dataset",
         "year": "2021"
+      }
+    ],
+    "Env_active": [
+      {
+        "table_code": "JMWCPTLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/JMWCPTLGD",
+        "last_updated": "2023-10-12",
+        "email": "ASRB@infrastructure-ni.gov.uk",
+        "title": "Journeys made by walking, cycling and public transport",
+        "year": "2017-19"
+      }
+    ],
+    "crime": [
+      {
+        "table_code": "PRCLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/PRCLGD",
+        "last_updated": "2023-06-29",
+        "email": "statistics@psni.police.uk",
+        "title": "Police Recorded Crime",
+        "year": "2022/23"
       }
     ]
   }
