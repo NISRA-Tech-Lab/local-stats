@@ -506,6 +506,7 @@
       {
         "table_code": "MYE01T06",
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "geog_level": "lgd",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
         "title": "Population totals",
@@ -516,6 +517,7 @@
       {
         "table_code": "MA01T02",
         "dataset_url": "https://data.nisra.gov.uk/table/MA01T02",
+        "geog_level": "lgd",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
         "title": "Median age",
@@ -524,18 +526,20 @@
     ],
     "BroadAge": [
       {
-        "table_code": "MYE01T012",
-        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T012",
+        "table_code": "MYE01T04",
+        "dataset_url": "https://data.nisra.gov.uk/table/MYE01T04",
+        "geog_level": "lgd",
         "last_updated": "2024-04-11",
         "email": "census@nisra.gov.uk",
         "title": "Mid-year population estimates",
-        "year": "2021"
+        "year": "2022"
       }
     ],
     "PopChange": [
       {
         "table_code": "MYE01T06",
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T06",
+        "geog_level": "lgd",
         "last_updated": "2023-09-11",
         "email": "census@nisra.gov.uk",
         "title": "Population totals",
@@ -544,8 +548,9 @@
     ],
     "LE": [
       {
-        "table_code": "LEDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
+        "table_code": "LELGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/LELGD",
+        "geog_level": "lgd",
         "last_updated": "2024-04-11",
         "email": "healthinequalities@health-ni.gov.uk",
         "title": "Life expectancy at birth",
@@ -556,6 +561,7 @@
       {
         "table_code": "WBPERSWLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/WBPERSWLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-06-12",
         "email": "pfganalytics@executiveoffice-ni.gov.uk",
         "title": "Personal Wellbeing",
@@ -566,26 +572,18 @@
       {
         "table_code": "WBLONLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/WBLONLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-06-12",
         "email": "pfganalytics@executiveoffice-ni.gov.uk",
         "title": "Wellbeing - Loneliness",
         "year": "2022/23"
       }
     ],
-    "Admiss": [
-      {
-        "table_code": "ADMITDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
-        "last_updated": "2024-04-11",
-        "email": "statistics@health-ni.gov.uk",
-        "title": "Primary Reason for Admissions to HSC Hospitals",
-        "year": "2022"
-      }
-    ],
     "GP": [
       {
         "table_code": "GPPRACPATLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/GPPRACPATLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-06-19",
         "email": "info.bso@hscni.net",
         "title": "GPs Practices and Registered Patients",
@@ -594,8 +592,9 @@
     ],
     "DEN": [
       {
-        "table_code": "FPSGDSDSDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
+        "table_code": "FPSGDSDSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-07-10",
         "email": "info.bso@hscni.net",
         "title": "General Dental Services Dentists and Surgeries",
@@ -606,6 +605,7 @@
       {
         "table_code": "FPSGDSDRLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-07-10",
         "email": "info.bso@hscni.net",
         "title": "General Dental Services Dental Registrations",
@@ -616,6 +616,7 @@
       {
         "table_code": "LMSLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/LMSLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-03-28",
         "email": "economicstats@nisra.gov.uk",
         "title": "Labour Market Status",
@@ -626,6 +627,7 @@
       {
         "table_code": "GAPLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/GAPLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-11-01",
         "email": "economicstats@nisra.gov.uk",
         "title": "Gross Annual Pay",
@@ -636,6 +638,7 @@
       {
         "table_code": "GHWPLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/GHWPLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-11-01",
         "email": "economicstats@nisra.gov.uk",
         "title": "Gross Hourly (excluding overtime) and Weekly Pay",
@@ -646,6 +649,7 @@
       {
         "table_code": "BRESHEADLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/BRESHEADLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-03-19",
         "email": "economicstats@nisra.gov.uk",
         "title": "Employee Jobs",
@@ -654,8 +658,9 @@
     ],
     "BS": [
       {
-        "table_code": "BSDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
+        "table_code": "BSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-07-06",
         "email": "psu@communities-ni.gov.uk",
         "title": "Benefit Statistics",
@@ -664,8 +669,9 @@
     ],
     "Primary": [
       {
-        "table_code": "DESCPDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCPDEA",
+        "table_code": "DESCPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Census - Primary",
@@ -674,8 +680,9 @@
     ],
     "PostPrimary": [
       {
-        "table_code": "DESCPPDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPDEA",
+        "table_code": "DESCPPLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCPPLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Census - Post Primary",
@@ -686,6 +693,7 @@
       {
         "table_code": "DETNPTRLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/DETNPTRLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-06-29",
         "email": "statistics@education-ni.gov.uk",
         "title": "Pupil Teacher Ratios in Northern Ireland",
@@ -696,6 +704,7 @@
       {
         "table_code": "DESLSALGD",
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSALGD",
+        "geog_level": "lgd",
         "last_updated": "2024-06-27",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Attainment",
@@ -706,6 +715,7 @@
       {
         "table_code": "FEENROLLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/FEENROLLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-07-02",
         "email": "dfemail@economy-ni.gov.uk",
         "title": "Regulated enrolments at Further Education Colleges",
@@ -716,6 +726,7 @@
       {
         "table_code": "HEENROLLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/HEENROLLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-06-21",
         "email": "dfemail@economy-ni.gov.uk",
         "title": "Enrolments at Higher Education Institutions",
@@ -724,8 +735,9 @@
     ],
     "Destination": [
       {
-        "table_code": "DESLSDDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
+        "table_code": "DESLSDLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESLSDLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-06-27",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
@@ -734,8 +746,9 @@
     ],
     "SEN": [
       {
-        "table_code": "DESCSDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+        "table_code": "DESCSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-05-31",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Census - Special Schools",
@@ -746,6 +759,7 @@
       {
         "table_code": "CHSCONCERNLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/CHSCONCERNLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-02-23",
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Continuous Household Survey: Concern about the environment",
@@ -756,6 +770,7 @@
       {
         "table_code": "WASTELGD",
         "dataset_url": "https://data.nisra.gov.uk/table/WASTELGD",
+        "geog_level": "lgd",
         "last_updated": "2024-02-26",
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Northern Ireland Local Authority Collected Waste Statistics",
@@ -766,6 +781,7 @@
       {
         "table_code": "GHGALL",
         "dataset_url": "https://data.nisra.gov.uk/table/GHGALL",
+        "geog_level": "lgd",
         "last_updated": "2024-03-19",
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Greenhouse Gas Emissions - Full dataset",
@@ -776,6 +792,7 @@
       {
         "table_code": "JMWCPTLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/JMWCPTLGD",
+        "geog_level": "lgd",
         "last_updated": "2023-10-12",
         "email": "ASRB@infrastructure-ni.gov.uk",
         "title": "Journeys made by walking, cycling and public transport",
@@ -784,12 +801,24 @@
     ],
     "crime": [
       {
-        "table_code": "PRCDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/PRCDEA",
+        "table_code": "PRCLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/PRCLGD",
+        "geog_level": "lgd",
         "last_updated": "2024-07-25",
         "email": "statistics@psni.police.uk",
         "title": "Police Recorded Crime",
         "year": "2023/24"
+      }
+    ],
+    "Admiss": [
+      {
+        "table_code": "ADMITDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
+        "geog_level": "dea",
+        "last_updated": "2024-04-11",
+        "email": "statistics@health-ni.gov.uk",
+        "title": "Primary Reason for Admissions to HSC Hospitals",
+        "year": "2022"
       }
     ]
   }
