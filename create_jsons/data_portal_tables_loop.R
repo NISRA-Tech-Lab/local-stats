@@ -130,6 +130,12 @@ if (nrow(df_all_data_portal_subset_perc) > 0) {
 # 
 # }
 
+
+df_meta_data <- df_meta_data %>%
+  mutate(geog_level = factor(geog_level, levels = c('ni', 'lgd', 'dea', 'sdz', 'dz'))) %>%
+           arrange(geog_level)
+         
+         
 if (geog_type_loop != "ni") {
   df_temp2 <- df_meta_data %>%
     filter(geog_level == geog_type_loop)
@@ -142,7 +148,7 @@ if (geog_type_loop != "ni") {
       "df_json_template$meta_data$", v_datasets[d],
       " = ",
       "df_temp2 %>% filter(dataset =='", v_datasets[d],
-      "') %>%  select(table_code, dataset_url, last_updated, email, title, year)"
+      "') %>%  select(table_code, dataset_url, geog_level, last_updated, email, title, year)"
     )
     eval(parse(text = json_text)) # evaluate the string
   }
@@ -156,8 +162,10 @@ if (geog_type_loop != "ni") {
       "df_json_template$meta_data$", v_datasets[d],
       " = ",
       "df_meta_data %>% filter(dataset =='", v_datasets[d],
-      "') %>%  select(table_code, dataset_url, last_updated, email, title, year) %>% head(1)"
+      "') %>%  select(table_code, dataset_url, geog_level, last_updated, email, title, year) %>% head(1)"
     )
     eval(parse(text = json_text)) # evaluate the string
   }
+  
+ 
 }
