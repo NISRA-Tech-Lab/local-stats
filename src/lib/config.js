@@ -153,6 +153,13 @@ export const topics = {
 		{ category: 'Age 65+', label: '65+' }
 	],
 
+	age: [
+		{ category: 'a0to14', label: '0-14' },
+		{ category: 'a15to39', label: '15-39' },
+		{ category: 'a40to64', label: '40-64' },
+		{ category: 'a65plus', label: '65+' }
+	],
+	
 	Env_waste: [
 		{ category: 'LACMWR', label: 'Recycled' },
 		{ category: 'LACMWL', label: 'Landfill' },

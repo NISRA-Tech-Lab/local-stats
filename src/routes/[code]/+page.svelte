@@ -728,7 +728,7 @@ function compareNIrate (value) {
 			<GreyBox
 				id = "pop"
 				place = {data.place}
-				year =  {"30th June " + pullYear("MYETotal", data.place)}
+				year =  {"Population estimates " + pullYear("MYETotal", data.place)}
 				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
 				chart_compare_type = {chart_compare_type}
 				compare_content = {{
@@ -744,7 +744,7 @@ function compareNIrate (value) {
 			<GreyBox
 				id = "popden"
 				place = {data.place}
-				year = {pullYear("MYETotal", data.place)}
+				year = {"Population estimates " + pullYear("MYETotal", data.place)}
 				content = {'<div class = "row" style = "display: flex; align-items: center">' +
 					       '<div style="font-weight: bold; font-size: 2.8em;">' + popDen(data.place) + '</div>' +
 						   '<div style = "margin-left: 10px; line-height: 1.25em;"> people per square kilometer</div></div>'}
@@ -912,15 +912,23 @@ function compareNIrate (value) {
 			boxes = {{
 					box_1: {
 						id: "popchange",
+						year:  "Population Estimates " + pullYear("BroadAge", data.place),
 						content: popChange(data.place),
 						show: ["ni", "lgd"]
 					},
 					box_2: {
 						id: "broadage",
-						year:  pullYear("BroadAge", data.place),
+						year:  "Population Estimates " + pullYear("BroadAge", data.place),
 						content:  "GroupChart",
 						chart_data: makeDataNICompare("BroadAge"),
 						show: ["ni", "lgd", "dea", "sdz"]
+					},
+					box_2a: {
+						id: "age",
+						year:  pullCensusYear("age"),
+						content:  "GroupChart",
+						chart_data: makeDataNICompare("age"),
+						show: ["dz"]
 					},
 					// box_3: {
 					// 	id: "sex",
