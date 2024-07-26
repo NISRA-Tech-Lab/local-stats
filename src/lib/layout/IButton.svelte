@@ -361,7 +361,7 @@ let i_button_info = {
 				  "<p class = 'pibutton'><a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("SEN[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("SEN[0].email") + "'>Email for more information</a> </p>" + 
-				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools.</p>"
+				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools and include Statemented and Non Statemented pupils.  Definitions are available at xxx</p>"
 		}
 
 }

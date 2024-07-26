@@ -1266,7 +1266,7 @@ function compareNIrate (value) {
 				id: "enrollments",
 				content: "<p style='margin:0'>Primary school <span class='text-big'>" + 
 						 (check("Primary.value.All")).toLocaleString() + "</span> "+
-
+						
 						 "<p style='margin:0'>Post primary school <span class='text-big'>" + 
 						 (check("PostPrimary.value.All")).toLocaleString() + " </span>"+
 
@@ -1314,12 +1314,54 @@ function compareNIrate (value) {
 			// 	show: [ "lgd"]
 			// },
 
-			box_3: {
+			// box_3: {
+			// 	id: "SEN",
+			// 	year: pullYear("SEN", data.place),
+			// 	content: "<p>Non statemented</p>"+
+			// 			"<p> <span class='text-big'>" +
+			// 				(check("SEN.value.SENNonStatemented") + 
+			// 				check("Primary.value.SENNonStatemented") + 
+			// 				check("PostPrimary.value.SENNonStatemented")).toLocaleString() + 
+			// 			"</span> pupils (" +
+			// 			"<span>" + 
+			// 				((check("SEN.value.SENNonStatemented") + 
+			// 				check("Primary.value.SENNonStatemented") + 
+			// 				check("PostPrimary.value.SENNonStatemented"))
+			// 				/( check("Primary.value.All")+
+			// 				check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + 
+			// 			"</span>% of all pupils)"+
+			// 			"</p>" +
+			// 			"<p>Statemented</p><p><span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils ("+
+			// 			"<span>" + ((check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement"))/( check("Primary.value.All")+check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + "</span>% of all pupils)</p>",
+			// 	show: ["ni", "lgd", "dea"]
+			// },
+
+
+
+			box_3a: {
 				id: "SEN",
 				year: pullYear("SEN", data.place),
-				content: "<p>Non statemented <span class='text-big'>" + (check("SEN.value.SENNonStatemented") + check("Primary.value.SENNonStatemented") + check("PostPrimary.value.SENNonStatemented")).toLocaleString() + "</span> pupils</p>" +
-						"<p>Statemented <span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils</p>",
-				show: ["ni", "lgd", "dea"]
+				content: 
+						"<p> <span class='text-big'>" +
+							(check("SEN.value.SENNonStatemented") + 
+							check("Primary.value.SENNonStatemented") + 
+							check("PostPrimary.value.SENNonStatemented")+
+							check("SEN.value.SENStatement") + 
+							check("Primary.value.SENStatement") + 
+							check("PostPrimary.value.SENStatement")).toLocaleString() + 
+						"</span> pupils with some form of special educational need</p>" +
+						"<p><span class='text-big'>" + 
+							((check("SEN.value.SENNonStatemented") + 
+							check("Primary.value.SENNonStatemented") + 
+							check("PostPrimary.value.SENNonStatemented")+
+							check("SEN.value.SENStatement") + 
+							check("Primary.value.SENStatement") + 
+							check("PostPrimary.value.SENStatement"))
+							/( check("Primary.value.All")+
+							check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + 
+						"%</span> of all pupils"+
+						"</p>", 
+						show: ["ni", "lgd", "dea"]
 			},
 
 			box_4: {
