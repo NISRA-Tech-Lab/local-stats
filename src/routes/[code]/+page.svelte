@@ -1281,18 +1281,18 @@ function compareNIrate (value) {
 				
 			box_2a: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> " + Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
-					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + Number(check("PostPrimary.perc.FSME")).toFixed(0) + "% </span>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> " + Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + Number(check("PostPrimary.perc.FSME")).toFixed(1) + "% </span>",
 				year: pullYear("Primary", data.place),
 				show: ["ni"]
 			},
 			
 			box_2b: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
-				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(0) +"%) </span></p>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
-					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(0) + "%) </span></p>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(1) +"%) </span></p>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(1) + "%) </span></p>",
 				year: pullYear("Primary", data.place),
 				show: [ "lgd", "dea"]
 			},
