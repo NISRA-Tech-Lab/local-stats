@@ -1291,7 +1291,7 @@ function compareNIrate (value) {
 				id: "fsme",
 				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
 				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(0) +"%) </span></p>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("PostPrimary.perc.FSME")).toFixed(0) + "% </span>"+
 					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(0) + "%) </span></p>",
 				year: pullYear("Primary", data.place),
 				show: [ "lgd", "dea"]
@@ -1349,7 +1349,7 @@ function compareNIrate (value) {
 							check("SEN.value.SENStatement") + 
 							check("Primary.value.SENStatement") + 
 							check("PostPrimary.value.SENStatement")).toLocaleString() + 
-						"</span> pupils with some form of special educational need</p>" +
+						"</span> pupils with SEN <span class = 'text-small'>(statemented and non statemented)</span></p>" +
 						"<p><span class='text-big'>" + 
 							((check("SEN.value.SENNonStatemented") + 
 							check("Primary.value.SENNonStatemented") + 
@@ -1375,19 +1375,17 @@ function compareNIrate (value) {
 			box_5a: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) grades A*-C</p><p> <span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> " + 
-						 "<p>including GCSE English and maths</p>",
+				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> ",
 				show: ["ni"]
 			},
 			
 			box_5b: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "Pupils who left school with 5 or more GCSEs (or equivalents) grades A*-C:<br><span class='text-big'>"  + 
+				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
 				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
-						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" + 
-						 "<br>including GCSE English and maths" +
+						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" +
 						  (compareNIrate("Attainment.value")).toLocaleString() ,
 				show: ["lgd"]
 			},
