@@ -1291,7 +1291,7 @@ function compareNIrate (value) {
 				id: "fsme",
 				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
 				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(1) +"%) </span></p>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("PostPrimary.perc.FSME")).toFixed(1) + "% </span>"+
 					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(1) + "%) </span></p>",
 				year: pullYear("Primary", data.place),
 				show: [ "lgd", "dea"]
@@ -1351,14 +1351,14 @@ function compareNIrate (value) {
 							check("PostPrimary.value.SENStatement")).toLocaleString() + 
 						"</span> pupils with some form of special educational need</p>" +
 						"<p><span class='text-big'>" + 
-							((check("SEN.value.SENNonStatemented") + 
+							Number(((check("SEN.value.SENNonStatemented") + 
 							check("Primary.value.SENNonStatemented") + 
 							check("PostPrimary.value.SENNonStatemented")+
 							check("SEN.value.SENStatement") + 
 							check("Primary.value.SENStatement") + 
 							check("PostPrimary.value.SENStatement"))
 							/( check("Primary.value.All")+
-							check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + 
+							check("PostPrimary.value.All"))*100)).toFixed(1) + 
 						"%</span> of all pupils"+
 						"</p>", 
 						show: ["ni", "lgd", "dea"]
