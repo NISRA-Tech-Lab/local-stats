@@ -363,49 +363,37 @@
     "Primary": {
       "value": {
         "FSME": 4950,
-        "SENNonStatemented": 2503,
-        "SENStatement": 1195,
         "All": 18886
       },
       "perc": {
         "FSME": 26.2099,
-        "SENNonStatemented": 15.5302,
-        "SENStatement": 3.414,
-        "All": 100
+        "All": 117.1806
       }
     },
     "PostPrimary": {
       "value": {
         "FSME": 3856,
-        "SENNonStatemented": 1725,
-        "SENStatement": 954,
         "All": 16117
       },
       "perc": {
-        "FSME": 23.925,
-        "SENNonStatemented": 4.9281,
-        "SENStatement": 5.0514,
-        "All": 100
-      }
-    },
-    "AllSchools": {
-      "value": {
-        "FSME": 8806,
-        "SENNonStatemented": 4228,
-        "SENStatement": 2149,
-        "All": 35003
-      },
-      "perc": {
-        "FSME": 25.1578,
-        "SENNonStatemented": 22.387,
-        "SENStatement": 13.3337,
-        "All": 100
+        "FSME": 810.084,
+        "All": 85.3383
       }
     },
     "SEN": {
       "value": {
-        "SENNonStatemented": 26,
-        "SENStatement": 450
+        "All": 476
+      },
+      "perc": {
+        "All": 2.9534
+      }
+    },
+    "AllSchools": {
+      "value": {
+        "SEN": 6853
+      },
+      "perc": {
+        "SEN": 19.3157
       }
     },
     "Env_ghg": {
@@ -688,6 +676,17 @@
         "year": "2022/23"
       }
     ],
+    "SEN": [
+      {
+        "table_code": "DESCSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
+        "geog_level": "lgd",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
+      }
+    ],
     "ClassSize": [
       {
         "table_code": "DETNPTRLGD",
@@ -740,17 +739,6 @@
         "last_updated": "2024-06-27",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
-        "year": "2022/23"
-      }
-    ],
-    "SEN": [
-      {
-        "table_code": "DESCSLGD",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCSLGD",
-        "geog_level": "lgd",
-        "last_updated": "2023-05-31",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Special Schools",
         "year": "2022/23"
       }
     ],

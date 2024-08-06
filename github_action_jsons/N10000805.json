@@ -338,49 +338,29 @@
     "Primary": {
       "value": {
         "FSME": 453,
-        "SENNonStatemented": 165,
-        "SENStatement": 72,
         "All": 1377
       },
       "perc": {
         "FSME": 32.8976,
-        "SENNonStatemented": 13.7271,
-        "SENStatement": 2.7918,
-        "All": 100
+        "All": 114.5591
       }
     },
     "PostPrimary": {
       "value": {
         "FSME": 363,
-        "SENNonStatemented": 179,
-        "SENStatement": 70,
         "All": 1202
       },
       "perc": {
-        "FSME": 30.1997,
-        "SENNonStatemented": 6.9407,
-        "SENStatement": 5.0835,
+        "FSME": 26.3617,
         "All": 100
       }
     },
     "AllSchools": {
       "value": {
-        "FSME": 816,
-        "SENNonStatemented": 344,
-        "SENStatement": 142,
-        "All": 2579
+        "SEN": 572
       },
       "perc": {
-        "FSME": 31.6402,
-        "SENNonStatemented": 24.9818,
-        "SENStatement": 11.8136,
-        "All": 100
-      }
-    },
-    "SEN": {
-      "value": {
-        "SENNonStatemented": 0,
-        "SENStatement": 86
+        "SEN": 22.1791
       }
     },
     "crime": {
@@ -520,6 +500,17 @@
         "year": "2022/23"
       }
     ],
+    "SEN": [
+      {
+        "table_code": "DESCSDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
+        "geog_level": "dea",
+        "last_updated": "2023-05-31",
+        "email": "statistics@education-ni.gov.uk",
+        "title": "School Census - Special Schools",
+        "year": "2022/23"
+      }
+    ],
     "Attainment": [
       {
         "table_code": "DESLSADEA",
@@ -561,17 +552,6 @@
         "last_updated": "2024-06-27",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
-        "year": "2022/23"
-      }
-    ],
-    "SEN": [
-      {
-        "table_code": "DESCSDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/DESCSDEA",
-        "geog_level": "dea",
-        "last_updated": "2023-05-31",
-        "email": "statistics@education-ni.gov.uk",
-        "title": "School Census - Special Schools",
         "year": "2022/23"
       }
     ],
