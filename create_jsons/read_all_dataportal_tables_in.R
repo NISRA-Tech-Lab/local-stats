@@ -1379,10 +1379,12 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_school_value <- unique(rbind(df_school_value, data))
 
 
-df_school_FSME <- df_school_value %>%
+df_school_FSME <- df_school_value %>% 
   filter(statistic %in% c('FSME', 'All')) %>% 
-  mutate(perc = VALUE / VALUE[statistic == "All"] *100)
-
+  filter(source != "SEN") %>%  
+  group_by(geog_code, source) %>%
+  mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
+  
 df_school_SEN = df_school_value %>%
   filter(statistic != 'FSME') %>% replace(is.na(.), 0) %>% 
   mutate(statistic = case_when(statistic %in% c("SENNonStatemented", "SENStatement") ~ 'SEN',
