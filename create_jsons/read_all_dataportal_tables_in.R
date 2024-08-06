@@ -1174,19 +1174,14 @@ data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
+  
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-   select(geog_code, statistic, VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_long <- "DESCPLGD"
@@ -1220,20 +1215,13 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
- 
-  select(geog_code, statistic,VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_short <- "PostPrimary"
@@ -1269,19 +1257,12 @@ data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-  select(geog_code, statistic, VALUE, perc, source)
-
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_long <- "DESCPPLGD"
@@ -1315,19 +1296,20 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-  select(geog_code, statistic, VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
+
+
+df_school_value <- rbind(df_school_value, df_school_value %>% group_by(geog_code, statistic) %>% summarise(VALUE = sum(VALUE)) %>% mutate(source = "AllSchools"))
+
+df_school_perc <- df_school_value %>%
+  mutate(perc = VALUE / VALUE[statistic == "All"] *100)
+
 
 ##### Pupil / teacher ratio #####
 df_school_classsize <- list()
