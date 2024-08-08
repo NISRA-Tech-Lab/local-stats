@@ -1342,7 +1342,7 @@ function compareNIrate (value) {
 				content: 
 						"<p> <span class='text-big'>" +
 							check("AllSchools.value.SEN").toLocaleString() + 
-						"</span> pupils with some form of special educational need</p>" +
+						"</span> pupils with SEN <br><span class = 'text-small'>(statemented and non statemented)</span></p>" +
 						"<p><span class='text-big'>" + 
 							Number(check("AllSchools.perc.SEN")).toFixed(1) + 
 						"%</span> of all pupils",
@@ -1355,7 +1355,7 @@ function compareNIrate (value) {
 				content: 
 						"<p> <span class='text-big'>" +
 							check("AllSchools.value.SEN").toLocaleString() + 
-						"</span> pupils with some form of special educational need</p>" +
+						"</span> pupils with SEN <br><span class = 'text-small'>(statemented and non statemented)</span></p>" +
 						"<p><span class='text-big'>" + 
 							Number(check("AllSchools.perc.SEN")).toFixed(1) + 
 						"%</span> of all pupils"+
