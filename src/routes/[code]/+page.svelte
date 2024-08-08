@@ -1281,18 +1281,18 @@ function compareNIrate (value) {
 				
 			box_2a: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> " + Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
-					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + Number(check("PostPrimary.perc.FSME")).toFixed(0) + "% </span>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> " + Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+					 	 "<p style='margin:0'>Post primary school <span class='text-big'>" + Number(check("PostPrimary.perc.FSME")).toFixed(1) + "% </span>",
 				year: pullYear("Primary", data.place),
 				show: ["ni"]
 			},
 			
 			box_2b: {
 				id: "fsme",
-				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(0) + "% </span>"+
-				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(0) +"%) </span></p>"+
-					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("PostPrimary.perc.FSME")).toFixed(0) + "% </span>"+
-					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(0) + "%) </span></p>",
+				content: "<p style='margin:0'>Primary school <span class='text-big'> "+ Number(check("Primary.perc.FSME")).toFixed(1) + "% </span>"+
+				"<span style='color: #1460aa'> (NI " + data.ni.data.Primary.perc.FSME.toFixed(1) +"%) </span></p>"+
+					 "<p style='margin:0'>Post primary school <span class='text-big'>"+ Number(check("PostPrimary.perc.FSME")).toFixed(1) + "% </span>"+
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.PostPrimary.perc.FSME.toFixed(1) + "%) </span></p>",
 				year: pullYear("Primary", data.place),
 				show: [ "lgd", "dea"]
 			},
@@ -1336,33 +1336,58 @@ function compareNIrate (value) {
 			// 	show: ["ni", "lgd", "dea"]
 			// },
 
-
-
 			box_3a: {
 				id: "SEN",
 				year: pullYear("SEN", data.place),
 				content: 
 						"<p> <span class='text-big'>" +
-							(check("SEN.value.SENNonStatemented") + 
-							check("Primary.value.SENNonStatemented") + 
-							check("PostPrimary.value.SENNonStatemented")+
-							check("SEN.value.SENStatement") + 
-							check("Primary.value.SENStatement") + 
-							check("PostPrimary.value.SENStatement")).toLocaleString() + 
-						"</span> pupils with SEN <span class = 'text-small'>(statemented and non statemented)</span></p>" +
+							check("AllSchools.value.SEN").toLocaleString() + 
+						"</span> pupils with some form of special educational need</p>" +
 						"<p><span class='text-big'>" + 
-							((check("SEN.value.SENNonStatemented") + 
-							check("Primary.value.SENNonStatemented") + 
-							check("PostPrimary.value.SENNonStatemented")+
-							check("SEN.value.SENStatement") + 
-							check("Primary.value.SENStatement") + 
-							check("PostPrimary.value.SENStatement"))
-							/( check("Primary.value.All")+
-							check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + 
-						"%</span> of all pupils"+
-						"</p>", 
-						show: ["ni", "lgd", "dea"]
+							Number(check("AllSchools.perc.SEN")).toFixed(1) + 
+						"%</span> of all pupils",
+						show: ["ni"]
 			},
+
+			box_3b: {
+				id: "SEN",
+				year: pullYear("SEN", data.place),
+				content: 
+						"<p> <span class='text-big'>" +
+							check("AllSchools.value.SEN").toLocaleString() + 
+						"</span> pupils with some form of special educational need</p>" +
+						"<p><span class='text-big'>" + 
+							Number(check("AllSchools.perc.SEN")).toFixed(1) + 
+						"%</span> of all pupils"+
+							 "<span style='color: #1460aa'> (NI " + data.ni.data.AllSchools.perc.SEN.toFixed(1) + "%) </span></p>", 
+						show: ["lgd", "dea"]
+			},
+
+			// box_3a: {
+			// 	id: "SEN",
+			// 	year: pullYear("SEN", data.place),
+			// 	content: 
+			// 			"<p> <span class='text-big'>" +
+			// 				(check("SEN.value.SENNonStatemented") + 
+			// 				check("Primary.value.SENNonStatemented") + 
+			// 				check("PostPrimary.value.SENNonStatemented")+
+			// 				check("SEN.value.SENStatement") + 
+			// 				check("Primary.value.SENStatement") + 
+			// 				check("PostPrimary.value.SENStatement")).toLocaleString() + 
+			// 			"</span> pupils with some form of special educational need</p>" +
+			// 			"<p><span class='text-big'>" + 
+			// 				Number(((check("SEN.value.SENNonStatemented") + 
+			// 				check("Primary.value.SENNonStatemented") + 
+			// 				check("PostPrimary.value.SENNonStatemented")+
+			// 				check("SEN.value.SENStatement") + 
+			// 				check("Primary.value.SENStatement") + 
+			// 				check("PostPrimary.value.SENStatement"))
+			// 				/( check("Primary.value.All")+
+			// 				check("PostPrimary.value.All"))*100)).toFixed(1) + 
+			// 			"%</span> of all pupils"+
+			// 			"</p>", 
+			// 			show: ["ni", "lgd", "dea"]
+			// },
 
 			box_4: {
 				id: "qualifications",

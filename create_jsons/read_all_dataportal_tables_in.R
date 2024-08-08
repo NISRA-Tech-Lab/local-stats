@@ -1174,19 +1174,14 @@ data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
+  
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-   select(geog_code, statistic, VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_long <- "DESCPLGD"
@@ -1220,20 +1215,13 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
- 
-  select(geog_code, statistic,VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_short <- "PostPrimary"
@@ -1269,19 +1257,12 @@ data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-  select(geog_code, statistic, VALUE, perc, source)
-
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
 
 
 dataset_long <- "DESCPPLGD"
@@ -1315,19 +1296,114 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  group_by(geog_code) 
 
 data_value <- data %>%
-  filter(statistic != "FSME") %>%
   select(geog_code, statistic, VALUE, source)
 
-data_perc <- data %>%
-  filter(statistic == "FSME") %>%
-  select(geog_code, statistic, VALUE, perc, source)
 
 df_school_value <- rbind(df_school_value, data_value)
-df_school_perc <- rbind(df_school_perc, data_perc)
+
+
+##### SEN ####
+
+dataset_short <- "SEN"
+dataset_subject <- "76/SCEN"
+
+dataset_long <- "DESCSDEA"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["SENNonStatemented", "SENStatement"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "dea",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_school_value <- unique(rbind(df_school_value, data))
+
+dataset_long <- "DESCSLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["All", "SENNonStatemented", "SENStatement"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_school_value <- unique(rbind(df_school_value, data))
+
+
+df_school_FSME <- df_school_value %>% 
+  filter(statistic %in% c('FSME', 'All')) %>% 
+  filter(source != "SEN") %>%  
+  group_by(geog_code, source) %>%
+  mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
+  
+df_school_SEN = df_school_value %>%
+  filter(statistic != 'FSME') %>% replace(is.na(.), 0) %>% 
+  mutate(statistic = case_when(statistic %in% c("SENNonStatemented", "SENStatement") ~ 'SEN',
+                   TRUE ~ statistic)) %>%
+  group_by(geog_code, statistic) %>% summarise(VALUE = sum(VALUE)) %>% 
+  mutate(perc = VALUE / VALUE[statistic == "All"] *100) %>% 
+  filter(statistic != "All") %>%  
+  mutate(source = "AllSchools") 
+
+
+df_school_values <- unique(rbind(df_school_FSME %>% select(-perc), df_school_SEN %>% select(-perc)))
+
+df_school_perc <- unique(rbind(df_school_FSME, df_school_SEN))
+
+
+
+
+
+
 
 ##### Pupil / teacher ratio #####
 df_school_classsize <- list()
@@ -1634,78 +1710,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_school_destination <- unique(rbind(df_school_destination, data))
 df_school_destination_perc = df_school_destination %>% rename(perc = VALUE) %>% mutate(VALUE = NA)
 
-##### SEN ####
-df_sen <- list()
-dataset_short <- "SEN"
-dataset_subject <- "76/SCEN"
 
-dataset_long <- "DESCSDEA"
-latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
-
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-)
-
-df_meta_data <- rbind(df_meta_data, t(c(
-  dataset = dataset_short,
-  "table_code" = dataset_long, "year" = latest_year,
-  "geog_level" = "dea",
-  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
-  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
-  "email" = json_data$extension$contact$email,
-  "title" = json_data$label,
-  "note" = json_data$note
-)))
-
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
-
-df_sen <- unique(rbind(df_sen, data))
-
-dataset_long <- "DESCSLGD"
-latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
-
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-)
-
-df_meta_data <- rbind(df_meta_data, t(c(
-  dataset = dataset_short,
-  "table_code" = dataset_long, "year" = latest_year,
-  "geog_level" = "lgd",
-  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
-  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
-  "email" = json_data$extension$contact$email,
-  "title" = json_data$label,
-  "note" = json_data$note
-)))
-
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
-
-df_sen <- unique(rbind(df_sen, data))
 
 
 
@@ -1969,7 +1974,7 @@ df_dp_all_values <- unique(bind_rows(
   rbind(
     df_le, df_dental, df_gps, df_lmr_value, df_bs,
     #df_school_destination, 
-    df_popchange, df_school_value, df_sen,
+    df_popchange, df_school_values, 
     df_env,
     df_crime
   ),
@@ -1983,6 +1988,6 @@ df_dp_all_values <- unique(bind_rows(
 
 df_dp_all_text <- bind_rows(df_admissions_top)
 
-df_dp_all_perc <- unique(rbind(df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc,df_env_perc))
+df_dp_all_perc <- unique(rbind(df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc))
 
 

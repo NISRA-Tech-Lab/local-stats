@@ -224,7 +224,7 @@ let i_button_info = {
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a> and "+
 				  "<a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>" +
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("Primary[0].last_updated") + "</p> "+
-				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a> </p>" 
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Primary[0].email") + "'>Email for more information</a>.  Definitions are available on the <a href = 'https://www.education-ni.gov.uk/articles/school-enrolments-overview'>statistical publication page</a>. </p>" 
 		
 				  },
 
@@ -361,7 +361,7 @@ let i_button_info = {
 				  "<p class = 'pibutton'><a href='" + checkMeta("PostPrimary[0].dataset_url") + "'>" + checkMeta("PostPrimary[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("SEN[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("SEN[0].email") + "'>Email for more information</a> </p>" + 
-				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools and include Statemented and Non Statemented pupils.  Definitions are available at xxx</p>"
+				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools and include Statemented and Non Statemented pupils.  Definitions are available on the <a href = 'https://www.education-ni.gov.uk/articles/school-enrolments-overview'>statistical publication page</a>.</p>"
 		}
 
 }
