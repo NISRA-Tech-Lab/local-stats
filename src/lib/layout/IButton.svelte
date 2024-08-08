@@ -362,7 +362,20 @@ let i_button_info = {
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("SEN[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("SEN[0].email") + "'>Email for more information</a> </p>" + 
 				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools and include Statemented and Non Statemented pupils.  Definitions are available on the <a href = 'https://www.education-ni.gov.uk/articles/school-enrolments-overview'>statistical publication page</a>.</p>"
-		}
+		},
+
+
+		no_bus: {title: "Number of businesses",
+				info: "to be added"},
+		type_bus: {title: "Type of businesses",
+				info: "to be added"},
+		size_bus: {title: "Size of businesses",
+				info: "to be added"},
+		agri: {title: "Agriculture sector",
+				info: "to be added"},
+		tourism: {title: "Tourism sector",
+				info: "to be added"},
+
 
 }
 
