@@ -1967,6 +1967,210 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 
 df_crime <- unique(rbind(df_crime, data))
 
+#### business sectors ####
+# Number of businesses  - https://data.nisra.gov.uk/table/BUSINESSBIGLGD
+# Type of businesses (4 broad groups) https://data.nisra.gov.uk/table/BUSINESSBIGLGD
+# Size of businesses https://data.nisra.gov.uk/table/BUSINESSBANDLGD
+# One box for tourism (jobs? to be updated later in the year - just 2019 available atm)
+# Agriculture - size of farms 
+
+
+df_business <- list()
+dataset_short <- "business"
+dataset_subject <- "6/IDBR"
+
+dataset_long <- "BUSINESSBIGLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BCOUNTS"]}},',
+    '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_business <- rbind(df_business, data)
+
+ 
+ 
+# latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+# 
+# json_data <- jsonlite::fromJSON(
+#   txt = transform_URL(paste0(
+#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+#     dataset_subject, '/', dataset_long,
+#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
+#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
+#     '"response": {"format": "json-stat2", "pivot": null}}'
+#   ))
+# )
+# 
+# df_meta_data <- rbind(df_meta_data, t(c(
+#   dataset = dataset_short,
+#   "table_code" = dataset_long, "year" = latest_year,
+#   "geog_level" = "lgd",
+#   "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+#   "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+#   "email" = json_data$extension$contact$email,
+#   "title" = json_data$label,
+#   "note" = json_data$note
+# )))
+# 
+# categories <- factor(json_data$dimension$TOBAND$category$index,
+#                      levels = json_data$dimension$TOBAND$category$index)
+# 
+# data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+#   mutate(statistic = sort(rep_len(categories, nrow(.))),
+#          VALUE = json_data$value,
+#          source = dataset_short)%>%
+#   group_by(geog_code) %>%
+#   mutate(correct_total = sum(VALUE[statistic == "All"]),
+#          perc = VALUE / correct_total)
+# 
+
+#### farms #
+dataset_subject <- "89/FS"
+
+dataset_long <- "FCLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["F", "FA"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_business <- rbind(df_business, data)
+
+
+
+
+dataset_subject <- "89/FS"
+
+dataset_long <- "FCDEA"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["F", "FA"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "dea",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_business <- rbind(df_business, data)
+
+#### tourism #
+dataset_subject <- "72/TOU"
+
+dataset_long <- "EJOBSLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["EMJOBS"]}},',
+    '{"code": "EMJOBS", "selection": {"filter": "item", "values": ["All", "TJ"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$EMJOBS$category$index,
+                     levels = json_data$dimension$EMJOBS$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short) %>% 
+  mutate(statistic = gsub("All","AllJobs",statistic),
+         statistic = gsub("TJ","TourismJobs",statistic),
+  )
+
+df_business <- rbind(df_business, data)
+
+
+
 
 #### Bind rows ####
 
@@ -1976,7 +2180,8 @@ df_dp_all_values <- unique(bind_rows(
     #df_school_destination, 
     df_popchange, df_school_values, 
     df_env,
-    df_crime
+    df_crime,
+    df_business
   ),
   rbind(
     df_satisfy, df_happy, df_lonely, 
