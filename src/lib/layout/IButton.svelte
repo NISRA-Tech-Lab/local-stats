@@ -354,7 +354,7 @@ let i_button_info = {
 		},
 
 		SEN: {
-			title: "Special educational needs",
+			title: "Special educational needs (SEN)",
 			info: " <p class = 'pibutton'>Access data at:</p>" +
 				  "<p class = 'pibutton'><a href='" + checkMeta("SEN[0].dataset_url") + "'>" + checkMeta("SEN[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'><a href='" + checkMeta("Primary[0].dataset_url") + "'>" + checkMeta("Primary[0].title") + "</a></p>"+

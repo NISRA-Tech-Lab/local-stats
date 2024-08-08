@@ -1400,19 +1400,17 @@ function compareNIrate (value) {
 			box_5a: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) grades A*-C</p><p> <span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> " + 
-						 "<p>including GCSE English and maths</p>",
+				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> ",
 				show: ["ni"]
 			},
 			
 			box_5b: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "Pupils who left school with 5 or more GCSEs (or equivalents) grades A*-C:<br><span class='text-big'>"  + 
+				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
 				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
-						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" + 
-						 "<br>including GCSE English and maths" +
+						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" +
 						  (compareNIrate("Attainment.value")).toLocaleString() ,
 				show: ["lgd"]
 			},
