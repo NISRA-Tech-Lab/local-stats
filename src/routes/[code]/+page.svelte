@@ -1609,7 +1609,10 @@ function compareNIrate (value) {
 				
 				box_1: {
 				id: "no_bus",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses" ,
+				show: ["ni", "lgd"]
 						},
 
 				box_2: {
@@ -1624,12 +1627,20 @@ function compareNIrate (value) {
 
 				box_4: {
 				id: "agri",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("farms.value.F")).toLocaleString() +" </span> farms with "+
+						 "<span class='text-big'>"  + 
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers",
+						 show: ["ni", "lgd", "dea"]
 						},
 
 				box_5: {
 				id: "tourism",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs",
+				show: ["ni", "lgd"]
 						},
 		}}
 		more = "<p>Further statistics are available on number, type and size of businesses, collected through the
