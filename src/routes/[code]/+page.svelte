@@ -1592,7 +1592,8 @@ function compareNIrate (value) {
 
 				
 		}}
-		more = ""
+		more = "
+"
 	/>
 
 
@@ -1606,8 +1607,46 @@ function compareNIrate (value) {
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
+				box_1: {
+				id: "no_bus",
+				content: ""
+						},
+
+				box_2: {
+				id: "type_bus",
+				content: ""
+						},
+
+				box_3: {
+				id: "size_bus",
+				content: ""
+						},
+
+				box_4: {
+				id: "agri",
+				content: ""
+						},
+
+				box_5: {
+				id: "tourism",
+				content: ""
+						},
 		}}
-		more = ""
+		more = "<p>Further statistics are available on number, type and size of businesses, collected through the
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/annual-business-inquiry'>Annual Business Inquiry</a>,
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/research-and-development'>Research and Development</a>
+		Survey and the <a href='https://www.nisra.gov.uk/statistics/business-statistics/inter-departmental-business-register'>Inter Departmental Business Register</a>.</p>
+		<p>Statistics for specific business sectors include: the <a href='https://www.daera-ni.gov.uk/publications/size-and-performance-ni-food-and-drinks-processing-sector'>
+		Food and Drinks Processing Sector</a> 
+		and the 
+		<a href='https://www.daera-ni.gov.uk/articles/agricultural-statistics'>Agriculture sector</a> 
+		both produced by DAERA; 
+		<a href='https://www.infrastructure-ni.gov.uk/articles/northern-ireland-transport-statistics'>Northern Ireland travel and transport statistics</a> produced by the Department for Infrastructure, and 
+		<a href='https://www.nisra.gov.uk/statistics/tourism/annual-and-quarterly-tourism-statistics-publications'>Tourism sector</a>
+		published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a>. Interactive dashboards are available for 
+		<a href='https://datavis.nisra.gov.uk/tourism/alternative_sources.html'>Tourism statistics</a> and 
+		<a href='https://datavis.nisra.gov.uk/daera/food-drink-processing-sector.html'>Food and Drink Processing Sector Statistics</a>.</p>"
 	/> 
 
 	<Accordion
@@ -1621,7 +1660,14 @@ function compareNIrate (value) {
 		boxes = {{
 				
 		}}
-		more = ""
+		more = "<p>Other economy and trade statistics are published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and&nbsp;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
+		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
+		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
 	/>
 
 		</div>
