@@ -2055,6 +2055,7 @@ df_business <- rbind(df_business, data)
 #### farms #
 dataset_subject <- "89/FS"
 
+dataset_short <- "farms"
 dataset_long <- "FCLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -2094,6 +2095,7 @@ df_business <- rbind(df_business, data)
 
 dataset_subject <- "89/FS"
 
+dataset_short <- "farms"
 dataset_long <- "FCDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -2131,6 +2133,7 @@ df_business <- rbind(df_business, data)
 #### tourism #
 dataset_subject <- "72/TOU"
 
+dataset_short <- "tourism"
 dataset_long <- "EJOBSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
