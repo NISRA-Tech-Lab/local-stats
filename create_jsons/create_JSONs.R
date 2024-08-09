@@ -197,5 +197,6 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
 }
 #
 #
-write_rds(data.frame(date = as.Date(Sys.time())),
-          "date_of_last_run.RDS")
+
+ write_rds(data.frame(date = as.Date(Sys.time())),
+          "create_jsons/date_of_last_run.RDS")
