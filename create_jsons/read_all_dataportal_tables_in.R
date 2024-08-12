@@ -2461,6 +2461,7 @@ df_dp_all_values <- unique(bind_rows(
 
 df_dp_all_text <- bind_rows(df_admissions_top)
 
-df_dp_all_perc <- unique(rbind(df_business_perc, df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc))
+df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc, df_business_perc))
 
+a = unique(rbind(df_dp_all_perc, df_business_perc))
 
