@@ -408,7 +408,31 @@
     },
     "business": {
       "value": {
-        "BCOUNTS": 4815
+        "BCOUNTS": 4815,
+        "E1": 900,
+        "E2": 3405,
+        "E3": 435,
+        "E4": 60,
+        "E5": 15,
+        "All": 4815,
+        "T1": 1780,
+        "T2": 2105,
+        "T3": 440,
+        "T4": 410,
+        "T5": 85
+      },
+      "perc": {
+        "E1": 18.6916,
+        "E2": 70.7165,
+        "E3": 9.0343,
+        "E4": 1.2461,
+        "E5": 0.3115,
+        "All": 100,
+        "T1": 36.9678,
+        "T2": 43.7175,
+        "T3": 9.1381,
+        "T4": 8.5151,
+        "T5": 1.7653
       }
     },
     "farms": {
@@ -809,6 +833,15 @@
     "business": [
       {
         "table_code": "BUSINESSBIGLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBIGLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-03-20",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Number of Businesses",
+        "year": "2023"
+      },
+      {
+        "table_code": "BUSINESSBANDLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBIGLGD",
         "geog_level": "lgd",
         "last_updated": "2024-03-20",
