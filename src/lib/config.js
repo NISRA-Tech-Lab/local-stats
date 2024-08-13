@@ -171,6 +171,14 @@ export const topics = {
 		{ category: 'NOTCONCERNENVI', label: 'Not concerned' }
 		],
 
+		business: [
+			{ category: 'E1', label: '0' },
+			{ category: 'E2', label: '1-9' },
+			{ category: 'E3', label: '10-49' },
+			{ category: 'E4', label: '50-249' },
+			{ category: 'E5', label: '250+' }
+			
+			],
 
 };
 

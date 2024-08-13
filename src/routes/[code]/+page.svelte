@@ -1616,14 +1616,18 @@ function compareNIrate (value) {
 						},
 
 				box_2: {
-				id: "type_bus",
-				content: ""
+					id: "type_bus",
+					content: "",
+					show: ["ni", "lgd"]
 						},
 
 				box_3: {
 				id: "size_bus",
-				content: ""
-						},
+				year: pullYear("business", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("business"),
+					show: ["ni", "lgd"]
+								},
 
 				box_4: {
 				id: "agri",
@@ -1642,6 +1646,21 @@ function compareNIrate (value) {
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs",
 				show: ["ni", "lgd"]
 						},
+
+
+						box_7a: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			},
+
+			box_7b: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			}
+
+			
 		}}
 		more = "<p>Further statistics are available on number, type and size of businesses, collected through the
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/annual-business-inquiry'>Annual Business Inquiry</a>,
