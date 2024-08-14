@@ -1617,7 +1617,7 @@ function compareNIrate (value) {
 
 				box_2: {
 					id: "type_bus",
-					year: pullYear("businesstype", data.place),
+					year: pullYear("business", data.place),
 					content:  "GroupChart",
 					chart_data: makeDataNICompare("businesstype"),
 					show: ["ni", "lgd"]
