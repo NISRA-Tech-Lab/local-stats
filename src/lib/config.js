@@ -171,7 +171,7 @@ export const topics = {
 		{ category: 'NOTCONCERNENVI', label: 'Not concerned' }
 		],
 
-		business: [
+		businessband: [
 			{ category: 'E1', label: '0' },
 			{ category: 'E2', label: '1-9' },
 			{ category: 'E3', label: '10-49' },
@@ -179,6 +179,15 @@ export const topics = {
 			{ category: 'E5', label: '250+' }
 			
 			],
+
+
+			businesstype: [
+				{ category: 'man', label: 'Manufacturing' },
+				{ category: 'cons', label: 'Construction' },
+				{ category: 'serv', label: 'Services' },
+				{ category: 'oth', label: 'Other' }
+				
+				],
 
 };
 

@@ -1621,13 +1621,13 @@ function compareNIrate (value) {
 					show: ["ni", "lgd"]
 						},
 
-				// box_3: {
-				// id: "size_bus",
-				// year: pullYear("business", data.place),
-				// 	content:  "GroupChart",
-				// 	chart_data: makeDataNICompare("business"),
-				// 	show: ["ni", "lgd"]
-				// 				},
+				box_3: {
+				id: "size_bus",
+				year: pullYear("businessband", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("businessband"),
+					show: ["ni", "lgd"]
+								},
 
 				box_4: {
 				id: "agri",

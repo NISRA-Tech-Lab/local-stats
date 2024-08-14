@@ -2015,6 +2015,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_business <- rbind(df_business, data)
 
 
+dataset_short <- "businesstype"
 
 json_data <- jsonlite::fromJSON(
   txt = transform_URL(paste0(
