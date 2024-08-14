@@ -1000,21 +1000,21 @@ function compareNIrate (value) {
 			// },
 			box_2a: {
 				id: "wellbeing",
-				year: pullYear("Happy", data.place),
+				year: pullYear("wellbeing", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>%",
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>% of people who feel lonely at least some of the time.",
 
 				show: ["ni"]
 			},
 			box_2b: {
 				id: "wellbeing",
-				year: pullYear("Happy", data.place),
+				year: pullYear("wellbeing", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>"+
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>of people who feel lonely at least some of the time"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
@@ -1621,13 +1621,13 @@ function compareNIrate (value) {
 					show: ["ni", "lgd"]
 						},
 
-				box_3: {
-				id: "size_bus",
-				year: pullYear("business", data.place),
-					content:  "GroupChart",
-					chart_data: makeDataNICompare("business"),
-					show: ["ni", "lgd"]
-								},
+				// box_3: {
+				// id: "size_bus",
+				// year: pullYear("business", data.place),
+				// 	content:  "GroupChart",
+				// 	chart_data: makeDataNICompare("business"),
+				// 	show: ["ni", "lgd"]
+				// 				},
 
 				box_4: {
 				id: "agri",
