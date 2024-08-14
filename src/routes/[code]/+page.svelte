@@ -1609,28 +1609,58 @@ function compareNIrate (value) {
 				
 				box_1: {
 				id: "no_bus",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses" ,
+				show: ["ni", "lgd"]
 						},
 
 				box_2: {
-				id: "type_bus",
-				content: ""
+					id: "type_bus",
+					content: "",
+					show: ["ni", "lgd"]
 						},
 
 				box_3: {
 				id: "size_bus",
-				content: ""
-						},
+				year: pullYear("business", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("business"),
+					show: ["ni", "lgd"]
+								},
 
 				box_4: {
 				id: "agri",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("farms.value.F")).toLocaleString() +" </span> farms with "+
+						 "<span class='text-big'>"  + 
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers",
+						 show: ["ni", "lgd", "dea"]
 						},
 
 				box_5: {
 				id: "tourism",
-				content: ""
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs",
+				show: ["ni", "lgd"]
 						},
+
+
+						box_7a: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			},
+
+			box_7b: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			}
+
+			
 		}}
 		more = "<p>Further statistics are available on number, type and size of businesses, collected through the
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/annual-business-inquiry'>Annual Business Inquiry</a>,

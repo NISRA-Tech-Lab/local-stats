@@ -369,7 +369,7 @@ let i_button_info = {
 				info: "to be added"},
 		type_bus: {title: "Type of businesses",
 				info: "to be added"},
-		size_bus: {title: "Size of businesses",
+		size_bus: {title: "Size of businesses (number of employees)",
 				info: "to be added"},
 		agri: {title: "Agriculture sector",
 				info: "to be added"},

@@ -409,8 +409,40 @@
     "business": {
       "value": {
         "BCOUNTS": 9540,
+        "E1": 3675,
+        "E2": 5095,
+        "E3": 620,
+        "E4": 125,
+        "E5": 25,
+        "All": 9540,
+        "T1": 4385,
+        "T2": 3340,
+        "T3": 720,
+        "T4": 825,
+        "T5": 270
+      },
+      "perc": {
+        "E1": 38.522,
+        "E2": 53.4067,
+        "E3": 6.499,
+        "E4": 1.3103,
+        "E5": 0.2621,
+        "All": 100,
+        "T1": 45.9644,
+        "T2": 35.0105,
+        "T3": 7.5472,
+        "T4": 8.6478,
+        "T5": 2.8302
+      }
+    },
+    "farms": {
+      "value": {
         "F": 4373,
-        "FA": 6645,
+        "FA": 6645
+      }
+    },
+    "tourism": {
+      "value": {
         "AllJobs": 5377,
         "TourismJobs": 5897
       }
@@ -809,6 +841,17 @@
         "year": "2023"
       },
       {
+        "table_code": "BUSINESSBANDLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBIGLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-03-20",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Number of Businesses",
+        "year": "2023"
+      }
+    ],
+    "farms": [
+      {
         "table_code": "FCLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/FCLGD",
         "geog_level": "lgd",
@@ -816,7 +859,9 @@
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Farm Census",
         "year": "2023"
-      },
+      }
+    ],
+    "tourism": [
       {
         "table_code": "EJOBSLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/EJOBSLGD",
