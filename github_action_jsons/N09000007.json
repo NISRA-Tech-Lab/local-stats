@@ -409,6 +409,22 @@
     "business": {
       "value": {
         "BCOUNTS": 5240,
+        "All": 5240,
+        "cons": 1255,
+        "man": 2000,
+        "oth": 635,
+        "serv": 1355
+      },
+      "perc": {
+        "All": 100,
+        "cons": 23.9504,
+        "man": 38.1679,
+        "oth": 12.1183,
+        "serv": 25.8588
+      }
+    },
+    "businessband": {
+      "value": {
         "E1": 975,
         "E2": 3620,
         "E3": 530,
@@ -457,7 +473,7 @@
       "value": 19.2
     },
     "ASHE": {
-      "value": 25981
+      "value": 30319
     },
     "ASHE_weekly": {
       "value": 508.3
@@ -839,7 +855,9 @@
         "email": "economicstats@nisra.gov.uk",
         "title": "Number of Businesses",
         "year": "2023"
-      },
+      }
+    ],
+    "businessband": [
       {
         "table_code": "BUSINESSBANDLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBIGLGD",
