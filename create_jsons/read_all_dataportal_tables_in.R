@@ -2049,21 +2049,12 @@ data <- data.frame(statistic = rep(categories, length(json_data$dimension$LGD201
 df_business <- rbind(df_business, data)
 
 
+dataset_subject <- "6/IDBR"
 dataset_short <- "businessband"
 dataset_long <- "BUSINESSBANDLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 
-df_meta_data <- rbind(df_meta_data, t(c(
-  dataset = dataset_short,
-  "table_code" = dataset_long, "year" = latest_year,
-  "geog_level" = "lgd",
-  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
-  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
-  "email" = json_data$extension$contact$email,
-  "title" = json_data$label,
-  "note" = json_data$note
-)))
 
 json_data_E <- jsonlite::fromJSON(
   txt = transform_URL(paste0(
@@ -2077,6 +2068,17 @@ json_data_E <- jsonlite::fromJSON(
 )
 
 
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data_E$extension$matrix),
+  "last_updated" = format(substring(json_data_E$updated, 1, 10), format = "%a"),
+  "email" = json_data_E$extension$contact$email,
+  "title" = json_data_E$label,
+  "note" = json_data_E$note
+)))
 
 categories_E <- factor(json_data_E$dimension$EMPBAND$category$index,
                         levels = json_data_E$dimension$EMPBAND$category$index)

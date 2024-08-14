@@ -376,10 +376,12 @@ let i_button_info = {
 				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
+		
 		size_bus: {title: "Size of businesses (number of employees)",
-				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
-					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("businessband[0].dataset_url") + "'>" + checkMeta("businessband[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("businessband[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("businessband[0].email") + "'>Email for more information</a> </p>"  },
+
 		agri: {title: "Agriculture sector",
 				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("farms[0].last_updated") + "</p> "+
