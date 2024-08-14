@@ -73,7 +73,7 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Personal wellbeing",
-			info: "<p>Average Happiness score out of 10 for people aged 16+.  Average Life satisfaction score out of 10 for people aged 16+</p>" +
+			info: "<p>Average Happiness score out of 10 for people aged 16+.  Average Life satisfaction score out of 10 for people aged 16+.<p>Average score out of 10 where 0 is ‘not at all’ and 10 is ‘completely’.</p></p>" +
 				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("wellbeing[0].dataset_url") + "'>" + checkMeta("wellbeing[0].title") + "</a></p>"+
 				"<p class = 'pibutton'>Last updated: " + checkMeta("wellbeing[0].last_updated") + "</p> "+
 				"<p>Loneliness is the percentage of people aged 16+ who were lonely 'often/always' or 'some of the time'.</p>" +
@@ -165,7 +165,7 @@ let i_button_info = {
 				  "<p >Access wages data at: <a href='" + checkMeta("ASHE_weekly[0].dataset_url") + "'>" + checkMeta("ASHE_weekly[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE_weekly[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE_weekly[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p>Median salary is the Median gross weekly earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
+				  "<p>Median salary is the median gross weekly earnings for full-time employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
 		 		 
 		},
 
@@ -366,15 +366,28 @@ let i_button_info = {
 
 
 		no_bus: {title: "Number of businesses",
-				info: "to be added"},
+				info: 
+				" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  
+					
+					},
 		type_bus: {title: "Type of businesses",
-				info: "to be added"},
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
 		size_bus: {title: "Size of businesses (number of employees)",
-				info: "to be added"},
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
 		agri: {title: "Agriculture sector",
-				info: "to be added"},
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("farms[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("farms[0].email") + "'>Email for more information</a> </p>"  },
 		tourism: {title: "Tourism sector",
-				info: "to be added"},
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("tourism[0].dataset_url") + "'>" + checkMeta("tourism[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("tourism[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("tourism[0].email") + "'>Email for more information</a> </p>"  },
 
 
 }
