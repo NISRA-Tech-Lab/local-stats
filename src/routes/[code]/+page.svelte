@@ -1625,7 +1625,17 @@ function compareNIrate (value) {
 
 				
 		}}
-		more = "
+		more = "<p>Police Service of Northern Ireland (PSNI) crime statistics are published by 
+		NISRA statisticians within the
+		<a href='https://www.psni.police.uk/inside-psni/Statistics/'>Police Service of Northern Ireland</a>.
+		 Statistical information is available on 
+		 <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics'>Police Recorded Crime Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/anti-social-behaviour-statistics'>Anti-Social Behaviour Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/domestic-abuse-statistics'>Domestic Abuse Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/hate-motivation-statistics'>Hate Motivation Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/drug-seizure-statistics'>Drug Seizure Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/road-traffic-collision-statistics'>Road Traffic Collision Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/security-situation-statistics'>Security Situation Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/stop-and-search-statistics'>Stop and Search Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/statistics-police-use-force'>Statistics on Police Use of Force</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/motoring-offence-statistics'>Motoring Offence Statistics</a> and <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-and-criminal-evidence-pace-order'>Police and Criminal Evidence (PACE) Order Statistics</a>.</p>
+<p>Statistics on the police complaints system are published by
+<a href='https://www.policeombudsman.org/Statistics-and-Research'>
+Police Ombudsmans Office for Northern Ireland</a>.</p>
+<p><a href='https://www.justice-ni.gov.uk/topics/doj-statistics-and-research'>Department of Justice statistics</a> include reoffending, victims and witnesses, prosecutions and convictions.; Statistics are also available from the <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-prison-service-statistics'>Northern Ireland Prison Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-courts-and-tribunals-service-statistics'>Northern Ireland Courts and Tribunals Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/youth-justice-statistics'>Youth Justice Agency statistics and </a>, <a href='https://www.justice-ni.gov.uk/topics/legal-aid/legal-services-agency-northern-ireland'>Legal Services Agency</a> and <a href='https://www.ppsni.gov.uk/statistics-and-research'>Public Prosecutions Service for Northern Ireland (PPSNI)</a>.</p>
+<p><a href='https://www.pbni.org.uk/statistics-and-research'>Probation Board for Northern Ireland (PBNI)</a> publish statistical information on their Caseload, Stakeholder Survey Reports, and other statistical reports.</p>
+
 "
 	/>
 
@@ -1716,7 +1726,7 @@ function compareNIrate (value) {
 		<p><strong>Economy and trade statistics</strong></p>
 		<p>Other economy and trade statistics are published by 
 		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and&nbsp;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
 		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
 		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
@@ -1737,7 +1747,7 @@ function compareNIrate (value) {
 		}}
 		more = "<p>Other economy and trade statistics are published by 
 		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and&nbsp;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
 		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
 		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
