@@ -158,6 +158,17 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       pull()
   }
   
+  
+
+  if (substr(geog_code_loop, 1, 3) == "N09" | substr(geog_code_loop, 1, 3) == "N92" ) {
+    
+    df_json_template$data$crime$text <- df_dp_all_text %>%
+      subset(geog_code == geog_code_loop) %>%
+      select(reason) %>%
+      pull()
+  }    
+
+  
   if (substr(geog_code_loop, 1, 3) == "N10") {
     df_json_template$dea_location_description <- df_dea_description %>%
       subset(geog_code == geog_code_loop) %>%
