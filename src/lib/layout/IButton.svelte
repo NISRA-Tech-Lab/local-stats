@@ -128,8 +128,17 @@ let i_button_info = {
 			title: "Types of police recorded crimes",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("crime[0].last_updated") + "</p> "+
-				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
-		 		  },
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  +
+				 	"<p class = 'pibutton'>Crime per 1,000 population based on mid-year population estimate</p>"  
+					},
+
+			crimeworry: {
+			title: "Worry about crime",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeworry[0].dataset_url") + "'>" + checkMeta("crimeworry[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeworry[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeworry[0].email") + "'>Email for more information</a> </p>"  
+					},
+
 			carers: {
 			title: "Unpaid care giving",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+

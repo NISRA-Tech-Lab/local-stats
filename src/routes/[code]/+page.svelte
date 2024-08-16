@@ -1600,6 +1600,15 @@ function compareNIrate (value) {
 					show: ["ni", "lgd", "dea"]
 								},
 
+			box_5: {
+				id: "crimeworry",
+				year: pullYear("crimeworry", data.place),
+				content: "<p>Residents in this area are most worried about <span class='text-bold' >" +
+				(check("crime.text"))+ "</span></p>",
+
+					show: ["ni", "lgd"]
+			},
+
 
 			box_7a: {
 				id: "empty",
