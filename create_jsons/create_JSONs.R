@@ -163,7 +163,7 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
   if (substr(geog_code_loop, 1, 3) == "N09" ) {
     
     df_json_template$data$crime$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop & source == "crime") %>%
+      subset(geog_code == geog_code_loop & source == "crimeworry") %>%
       select(reason) %>%
       pull()
   }    
@@ -176,7 +176,7 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       pull()
     
     df_json_template$data$Admiss$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop & source == "admiss") %>%
+      subset(geog_code == geog_code_loop & source == "Admiss") %>%
       select(reason) %>%
       pull()
     
@@ -186,12 +186,12 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
   if (substr(geog_code_loop, 1, 3) == "N92") {
 
     df_json_template$data$Admiss$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop & source == "admiss") %>%
+      subset(geog_code == geog_code_loop & source == "Admiss") %>%
       select(reason) %>%
       pull()
     
     df_json_template$data$crime$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop & source == "crime") %>%
+      subset(geog_code == geog_code_loop & source == "crimeworry") %>%
       select(reason) %>%
       pull()
   
