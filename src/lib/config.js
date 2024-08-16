@@ -189,6 +189,13 @@ export const topics = {
 				
 				],
 
+				crime: [
+					{ category: 'person', label: 'Violence against the person, sexual offences & robbery' },
+					{ category: 'btcd', label: 'Burglary, theft & criminal damage' },
+					{ category: 'other', label: 'Other crimes against society' }
+					
+					],
+
 };
 
 
