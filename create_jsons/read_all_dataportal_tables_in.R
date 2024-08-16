@@ -2510,7 +2510,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_business <- rbind(df_business, data)
 
 df_business_perc <- df_business %>%  group_by(geog_code) %>% 
-                        filter(statistic %in% c('agri', 'cons', 'prod', 'serv', 'E1','E2', 'E3', 'E4', 'E5', 'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
+                        filter(statistic %in% c('agr', 'cons', 'prod', 'serv', 'E1','E2', 'E3', 'E4', 'E5', 'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
                         mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
 
 
