@@ -1901,14 +1901,14 @@ dataset_subject <- "67/PRC"
 dataset_long <- "PRCDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-# json_data <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
 
 
 csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
@@ -1935,6 +1935,7 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "title" = json_data$label,
   "note" = json_data$note
 )))
+
 # 
 # categories <- factor(json_data$dimension$crmclass$category$index,
 #                      levels = json_data$dimension$crmclass$category$index)
@@ -1998,6 +1999,52 @@ df_crime <- unique(rbind(df_crime, csv_data))
 
 df_crime_perc <- df_crime %>%  group_by(geog_code) %>% 
   mutate(perc = VALUE / VALUE[statistic == "allcrime"] *100) 
+
+
+
+dataset_short <- "crime"
+dataset_subject <- "65/NISCS"
+
+dataset_long <- "WORRYCRMLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WorryC1","WorryC2","WorryC3","WorryC4"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short) %>% group_by(geog_code) %>% slice_max(VALUE) %>%
+  mutate(reason = case_when(statistic == "WorryC1" ~ "Car crime",
+                               statistic == "WorryC2" ~ "Crime overall",
+                               statistic == "WorryC3" ~ "Burglary",
+                               statistic == "WorryC4" ~ "Violent crime",
+                               TRUE ~ "")) %>% select(geog_code, reason, source)
+    
+
+df_crime_text  <- data
+
 
 
 #### business sectors ####
@@ -2567,7 +2614,7 @@ df_dp_all_values <- unique(bind_rows(
 ))
 
 
-df_dp_all_text <- bind_rows(df_admissions_top)
+df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text)
 
 df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc, df_business_perc, df_crime_perc))
 
