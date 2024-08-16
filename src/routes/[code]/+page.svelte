@@ -1002,19 +1002,19 @@ function compareNIrate (value) {
 				id: "wellbeing",
 				year: pullYear("wellbeing", data.place),
 				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely happy. </span>"	+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. " +
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>% of people who feel lonely at least some of the time.",
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. </span>" +
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'>  of people who feel lonely at least some of the time. </span>",
 
 				show: ["ni"]
 			},
 			box_2b: {
 				id: "wellbeing",
 				year: pullYear("wellbeing", data.place),
-				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'></span>where 10 is completely happy.</span>"	+
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely happy.</span>"	+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'></span>where 10 is completely satisfied. </span>"+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. </span>"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>of people who feel lonely at least some of the time"+
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'> of people who feel lonely at least some of the time</span> "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
@@ -1057,7 +1057,7 @@ function compareNIrate (value) {
 				content: "<p><span class='text-big'>" + 
 					(check("Admiss.value")).toLocaleString() +
 						"</span> hospital admissions</p>"+
-						"<p>The most frequent primary reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+						"<p>The most frequent primary reason was for <span class='text-bold' >" + (check("Admiss.text"))+ "</span></p>",
 
 					show: ["ni", "dea"]
 			},
