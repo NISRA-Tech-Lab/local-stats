@@ -182,10 +182,10 @@ export const topics = {
 
 
 			businesstype: [
-				{ category: 'man', label: 'cat 1' },
+				{ category: 'agr', label: 'cat 1' },
 				{ category: 'cons', label: 'cat 2' },
-				{ category: 'serv', label: 'cat 3' },
-				{ category: 'oth', label: 'cat 4' }
+				{ category: 'prod', label: 'cat 3' },
+				{ category: 'serv', label: 'cat 4' }
 				
 				],
 

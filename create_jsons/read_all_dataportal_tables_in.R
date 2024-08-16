@@ -2035,10 +2035,10 @@ data <- data.frame(statistic = rep(categories, length(json_data$dimension$LGD201
   mutate(geog_code = sort(rep_len(json_data$dimension$LGD2014$category$index, nrow(.))),
          VALUE = json_data$value,
          source = dataset_short) %>%
-  mutate(big_group = case_when(statistic %in% c(1,2,3,4,5) ~ 'man',
-                               statistic %in% c(6, 7, 8, 9) ~ 'cons',
-                               statistic %in% c(10, 11, 12, 13, 14, 15, 16) ~ 'serv',
-                               statistic %in% c(17, 18, 19) ~ 'oth',
+  mutate(big_group = case_when(statistic %in% c(1) ~ 'agr',
+                               statistic %in% c(4) ~ 'cons',
+                               statistic %in% c(3) ~ 'prod',
+                               statistic %in% c(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ~ 'serv',
                                TRUE ~ statistic) ) %>% 
   group_by(geog_code, big_group, source) %>% summarise(VALUE = sum(VALUE, na.rm=TRUE)) %>%
   rename(statistic = "big_group" )
@@ -2510,7 +2510,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_business <- rbind(df_business, data)
 
 df_business_perc <- df_business %>%  group_by(geog_code) %>% 
-                        filter(statistic %in% c('serv', 'man', 'cons', 'oth', 'E1','E2', 'E3', 'E4', 'E5', 'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
+                        filter(statistic %in% c('agri', 'cons', 'prod', 'serv', 'E1','E2', 'E3', 'E4', 'E5', 'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
                         mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
 
 
