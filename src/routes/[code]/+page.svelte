@@ -1001,8 +1001,8 @@ function compareNIrate (value) {
 			box_2a: {
 				id: "wellbeing",
 				year: pullYear("wellbeing", data.place),
-				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely happy. </span>"	+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. " +
 						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>% of people who feel lonely at least some of the time.",
 
 				show: ["ni"]
@@ -1010,9 +1010,9 @@ function compareNIrate (value) {
 			box_2b: {
 				id: "wellbeing",
 				year: pullYear("wellbeing", data.place),
-				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'></span>where 10 is completely happy.</span>"	+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'></span>where 10 is completely satisfied. </span>"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
 						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>of people who feel lonely at least some of the time"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
@@ -1569,13 +1569,46 @@ function compareNIrate (value) {
 			box_1: {
 				id: "crime",
 				year: pullYear("crime", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded" ,
-						//  +
-						//  "<p>"+(compareNIavg("crime.value.allcrime")).toLocaleString() ,
-				show: ["ni", "lgd", "dea"]
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population</p>"   
+						 ,
+						
+				show: ["ni"]
 						
 			},
+
+
+			box_1a: {
+				id: "crime",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population"  + 
+						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +")</span></p>"
+						 ,
+						
+				show: [ "lgd", "dea"]
+						
+			},
+
+			box_2: {
+					id: "crimetype",
+					year: pullYear("crime", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("crime"),
+					show: ["ni", "lgd", "dea"]
+								},
+
+			box_5: {
+				id: "crimeworry",
+				year: pullYear("crimeworry", data.place),
+				content: "<p>Residents in this area are most worried about <span class='text-bold' >" +
+				(check("crime.text"))+ "</span></p>",
+
+					show: ["ni", "lgd"]
+			},
+
 
 			box_7a: {
 				id: "empty",
@@ -1600,7 +1633,7 @@ function compareNIrate (value) {
 	<Accordion
 		id = "business"
 		img = "nisra-taxonomy-icon-business-energy.png"
-		heading = "Business sectors"
+		heading = "Business, economy and trade"
 		place = {data.place}
 		sub_heading = {moreData("Business sectors", data.place)}
 		description = " "
@@ -1625,7 +1658,7 @@ function compareNIrate (value) {
 
 				box_3: {
 				id: "size_bus",
-				year: pullYear("businessband", data.place),
+				year: pullYear("businessband", data.place) ,
 					content:  "GroupChart",
 					chart_data: makeDataNICompare("businessband"),
 					show: ["ni", "lgd"]
@@ -1664,7 +1697,8 @@ function compareNIrate (value) {
 
 			
 		}}
-		more = "<p>Further statistics are available on number, type and size of businesses, collected through the
+		more = "<strong>Business statistics</strong>
+		<p>Further statistics are available on number, type and size of businesses, collected through the
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/annual-business-inquiry'>Annual Business Inquiry</a>,
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/research-and-development'>Research and Development</a>
 		Survey and the <a href='https://www.nisra.gov.uk/statistics/business-statistics/inter-departmental-business-register'>Inter Departmental Business Register</a>.</p>
@@ -1678,10 +1712,19 @@ function compareNIrate (value) {
 		published by 
 		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a>. Interactive dashboards are available for 
 		<a href='https://datavis.nisra.gov.uk/tourism/alternative_sources.html'>Tourism statistics</a> and 
-		<a href='https://datavis.nisra.gov.uk/daera/food-drink-processing-sector.html'>Food and Drink Processing Sector Statistics</a>.</p>"
+		<a href='https://datavis.nisra.gov.uk/daera/food-drink-processing-sector.html'>Food and Drink Processing Sector Statistics</a>.</p>
+		<p><strong>Economy and trade statistics</strong></p>
+		<p>Other economy and trade statistics are published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and&nbsp;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
+		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
+		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
 	/> 
 
-	<Accordion
+	<!-- <Accordion
 		id = "economy"
 		img = "nisra-taxonomy-icon-economy.png"
 		heading = "Economy and trade"
@@ -1700,7 +1743,7 @@ function compareNIrate (value) {
 		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
 		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
 		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
-	/>
+	/> -->
 
 		</div>
 	{/if}
