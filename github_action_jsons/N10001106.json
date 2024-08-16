@@ -375,7 +375,16 @@
     },
     "crime": {
       "value": {
-        "allcrime": 823
+        "allcrime": 823,
+        "btcd": 342,
+        "other": 103,
+        "person": 378
+      },
+      "perc": {
+        "allcrime": 100,
+        "btcd": 41.5553,
+        "other": 12.5152,
+        "person": 45.9295
       }
     },
     "farms": {
@@ -574,11 +583,11 @@
     "crime": [
       {
         "table_code": "PRCDEA",
-        "dataset_url": "https://data.nisra.gov.uk/table/PRCDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/JMWCPTLGD",
         "geog_level": "dea",
-        "last_updated": "2024-07-25",
-        "email": "statistics@psni.police.uk",
-        "title": "Police Recorded Crime",
+        "last_updated": "2023-10-12",
+        "email": "ASRB@infrastructure-ni.gov.uk",
+        "title": "Journeys made by walking, cycling and public transport",
         "year": "2023/24"
       }
     ],
