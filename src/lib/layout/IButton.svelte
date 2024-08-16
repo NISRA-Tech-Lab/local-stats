@@ -124,7 +124,12 @@ let i_button_info = {
 				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
 		 		  },
 
-
+		   crimetype: {
+			title: "Types of police recorded crimes",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crime[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
+		 		  },
 			carers: {
 			title: "Unpaid care giving",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
@@ -377,7 +382,7 @@ let i_button_info = {
 					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
 		
-		size_bus: {title: "Size of businesses (number of employees)",
+		size_bus: {title: "Employees in businesses",
 				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("businessband[0].dataset_url") + "'>" + checkMeta("businessband[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("businessband[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("businessband[0].email") + "'>Email for more information</a> </p>"  },
