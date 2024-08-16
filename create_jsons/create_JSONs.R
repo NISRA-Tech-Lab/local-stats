@@ -22,8 +22,8 @@ df_geog_codes_for_loop <-
     substr(code, 1, 3) == "N20" ~ "dz",
     substr(code, 1, 3) == "N21" ~ "sdz"
   )) %>%
-# filter(type %in% geog_types_to_update) %>%
-  filter(type %in% c('ctry', 'lgd', 'dea')) %>%
+ filter(type %in% geog_types_to_update) %>%
+#  filter(type %in% c('ctry', 'lgd', 'dea')) %>%
   arrange(substr(code, 1, 3))
  
  
