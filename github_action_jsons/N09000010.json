@@ -474,7 +474,50 @@
     "tourism": {
       "value": {
         "AllJobs": 60501,
-        "TourismJobs": 39219
+        "TourismJobs": 39219,
+        "estab": 8056
+      }
+    },
+    "niets_sales": {
+      "value": {
+        "ALL": 5800.61,
+        "NI": 3321.414,
+        "GB": 1066.9243,
+        "IE": 727.9007,
+        "REU": 249.2634,
+        "ROW": 435.1076,
+        "EXTERN": 2479.196,
+        "EXPORT": 1412.2716,
+        "IMPORT": null
+      },
+      "perc": {
+        "ALL": 100,
+        "NI": 57.2597,
+        "GB": 18.3933,
+        "IE": 12.5487,
+        "REU": 4.2972,
+        "ROW": 7.5011
+      }
+    },
+    "niets_purch": {
+      "value": {
+        "ALL": 3785.7565,
+        "NI": 2070.5046,
+        "GB": 850.1493,
+        "IE": 319.8213,
+        "REU": 213.0293,
+        "ROW": 332.252,
+        "EXTERN": 1715.2519,
+        "EXPORT": null,
+        "IMPORT": 865.1026
+      },
+      "perc": {
+        "ALL": 100,
+        "NI": 54.692,
+        "GB": 22.4565,
+        "IE": 8.448,
+        "REU": 5.6271,
+        "ROW": 8.7764
       }
     },
     "Satisfy": {
@@ -913,6 +956,37 @@
         "email": "Joanne.henderson@nisra.gov.uk",
         "title": "Employee Jobs",
         "year": "2019"
+      },
+      {
+        "table_code": "CASLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/CASLGD",
+        "geog_level": "lgd",
+        "last_updated": "2023-04-21",
+        "email": "Joanne.henderson@nisra.gov.uk",
+        "title": "Certified Accommodation Stock",
+        "year": "2019"
+      }
+    ],
+    "niets_sales": [
+      {
+        "table_code": "NIETS05",
+        "dataset_url": "https://data.nisra.gov.uk/table/NIETS05",
+        "geog_level": "lgd",
+        "last_updated": "2024-07-02",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "NIETS: Trade by Local Government District",
+        "year": "2022"
+      }
+    ],
+    "niets_purch": [
+      {
+        "table_code": "NIETS05",
+        "dataset_url": "https://data.nisra.gov.uk/table/NIETS05",
+        "geog_level": "lgd",
+        "last_updated": "2024-07-02",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "NIETS: Trade by Local Government District",
+        "year": "2022"
       }
     ]
   }
