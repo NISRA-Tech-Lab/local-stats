@@ -379,13 +379,17 @@ let i_button_info = {
 		},
 
 
-		no_bus: {title: "Number of businesses",
+		no_bus: {title: "Business and trade",
 				info: 
 				" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  
 					
-					},
+					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"  
+
+
+				},
 		type_bus: {title: "Type of businesses",
 				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
@@ -396,17 +400,33 @@ let i_button_info = {
 					"<p class = 'pibutton'>Last updated: " + checkMeta("businessband[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("businessband[0].email") + "'>Email for more information</a> </p>"  },
 
-		agri: {title: "Agriculture sector",
-				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
+		sector: {title: "Business sectors",
+				info: " <p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("farms[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("farms[0].email") + "'>Email for more information</a> </p>"  },
-		tourism: {title: "Tourism sector",
-				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("tourism[0].dataset_url") + "'>" + checkMeta("tourism[0].title") + "</a></p>"+
-					"<p class = 'pibutton'>Last updated: " + checkMeta("tourism[0].last_updated") + "</p> "+
-					"<p class = 'pibutton'><a href='mailto:" + checkMeta("tourism[0].email") + "'>Email for more information</a> </p>"  },
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("farms[0].email") + "'>Email for more information</a> </p>"   + 
+					" <p class = 'pibutton'>Access tourism jobs data at: <a href='" + checkMeta("tourism[0].dataset_url") + "'>" + checkMeta("tourism[0].title") + "</a></p>"+
+					" <p class = 'pibutton'>Access tourism accomodation data at: <a href='" + checkMeta("tourism_estab[0].dataset_url") + "'>" + checkMeta("tourism_estab[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("tourism_estab[0].last_updated") + "</p> "+ 				
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("tourism[0].email") + "'>Email for more information</a> </p>"  
+					
+					},
+
+		niets_sales: {title: "Sales partners",
+				info: "<p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
+					
+					},
+
+					niets_purch: {title: "Purchases partners",
+				info: "<p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
+					
+					},
 
 
-}
+				}
 
 </script>
 

@@ -172,11 +172,11 @@ export const topics = {
 		],
 
 		businessband: [
-			{ category: 'E1', label: '0' },
-			{ category: 'E2', label: '1-9' },
-			{ category: 'E3', label: '10-49' },
-			{ category: 'E4', label: '50-249' },
-			{ category: 'E5', label: '250+' }
+			{ category: 'E1', label: '0 employees' },
+			{ category: 'E2', label: '1-9  employees' },
+			{ category: 'E3', label: '10-49  employees' },
+			{ category: 'E4', label: '50-249  employees' },
+			{ category: 'E5', label: '250+  employees' }
 			
 			],
 
@@ -189,12 +189,32 @@ export const topics = {
 				
 				],
 
-				crime: [
-					{ category: 'person', label: 'Violence against the person, sexual offences & robbery' },
-					{ category: 'btcd', label: 'Burglary, theft & criminal damage' },
-					{ category: 'other', label: 'Other crimes against society' }
+			crime: [
+				{ category: 'person', label: 'Violence against the person, sexual offences & robbery' },
+				{ category: 'btcd', label: 'Burglary, theft & criminal damage' },
+				{ category: 'other', label: 'Other crimes against society' }
+				
+				],
+
+			niets_sales: [
+				{ category: 'NI', label: 'Northern Ireland' },
+				{ category: 'GB', label: 'Great Britain' },
+				{ category: 'IE', label: 'Republic of Ireland' },
+				{ category: 'REU', label: 'Rest of EU' },
+				{ category: 'ROW', label: 'Rest of world' }
+				
+				
+				],
+				niets_purch: [
+					{ category: 'NI', label: 'Northern Ireland' },
+					{ category: 'GB', label: 'Great Britain' },
+					{ category: 'IE', label: 'Republic of Ireland' },
+					{ category: 'REU', label: 'Rest of EU' },
+					{ category: 'ROW', label: 'Rest of world' }
+					
 					
 					],
+	
 
 };
 

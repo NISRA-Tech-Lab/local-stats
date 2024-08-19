@@ -1275,7 +1275,7 @@ function compareNIrate (value) {
 
 						 "<p style='margin:0'>UK Higher education institutions <span class='text-big'>" +
 						 (check("HE.value")).toLocaleString() +" </span>",
-				year: pullYear("Primary", data.place) ,
+				year: "School:" + pullYear("Primary", data.place) + ", FE:"+ pullYear("FE", data.place) +", HE:" + pullYear("HE", data.place),
 				show: ["ni", "lgd", "dea"]
 			},
 				
@@ -1654,9 +1654,27 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				id: "no_bus",
 				year: pullYear("business", data.place),
 				content:  "<span class='text-big'>"  + 
-				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses" ,
+				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses, with a total of <span class='text-big'>£"  + 
+				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
+				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in purchases." ,
 				show: ["ni", "lgd"]
 						},
+
+				box_1a: {
+				id: "niets_sales",
+				year: pullYear("niets_sales", data.place) ,
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("niets_sales"),
+					show: ["ni", "lgd"]
+								},
+
+				box_1b: {
+				id: "niets_purch",
+				year: pullYear("niets_purch", data.place) ,
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("niets_purch"),
+					show: ["ni", "lgd"]
+								},
 
 				box_2: {
 					id: "type_bus",
@@ -1674,23 +1692,31 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 					show: ["ni", "lgd"]
 								},
 
+
+
 				box_4: {
-				id: "agri",
-				year: pullYear("business", data.place),
-				content:  "<span class='text-big'>"  + 
+				id: "sector",
+				year: "Agriculture " + pullYear("farms", data.place) + ", Tourism " + pullYear("tourism", data.place) ,
+				content:  "<p><strong>Agriculture</strong></p>" + 
+					"<span class='text-big'>"  + 
 				    	 (check("farms.value.F")).toLocaleString() +" </span> farms with "+
 						 "<span class='text-big'>"  + 
-				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers",
-						 show: ["ni", "lgd", "dea"]
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers"+
+						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
+				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments"  ,
+
+						 show: ["ni", "lgd"]
 						},
 
-				box_5: {
-				id: "tourism",
-				year: pullYear("business", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs",
-				show: ["ni", "lgd"]
-						},
+				// box_5: {
+				// id: "tourism",
+				// year: pullYear("tourism", data.place),
+				// content:  "<span class='text-big'>"  + 
+				//     	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs and " + 
+				//     	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> tourism accomodation establishments"  ,
+				// show: ["ni", "lgd"]
+				// 		},
 
 
 						box_7a: {
