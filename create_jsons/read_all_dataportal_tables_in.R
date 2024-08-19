@@ -2328,7 +2328,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_business <- rbind(df_business, data)
 
 
-dataset_short <- "tourism"
+dataset_short <- "tourism_estab"
 dataset_long <- "CASLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -2348,9 +2348,6 @@ csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxSt
   select(LGD2014, VALUE) %>% group_by(LGD2014) %>% 
   summarise(VALUE  = sum(VALUE, na.rm = TRUE)) %>% 
   rename(geog_code = LGD2014) %>% mutate(source = dataset_short, statistic = 'estab')
-
-
-
 
 
 df_meta_data <- rbind(df_meta_data, t(c(
