@@ -2379,7 +2379,7 @@ df_business_perc <- df_business %>%  group_by(geog_code) %>%
 
 dataset_subject <- "6/NIETS"
 
-dataset_short <- "niets-sales"
+dataset_short <- "niets_sales"
 dataset_long <- "NIETS05"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -2422,7 +2422,7 @@ data <- rbind(data, data_ni)
 df_business <- rbind(df_business, data)
 
 
-dataset_short <- "niets-purch"
+dataset_short <- "niets_purch"
 dataset_long <- "NIETS05"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -2466,8 +2466,7 @@ df_business <- rbind(df_business, data)
 
 
 df_business_perc_niets <- df_business %>%  group_by(geog_code, source) %>% 
-  filter(statistic %in% c('ALL', 'NI','GB','IE','REU', 'ROW'),
-  ) %>%
+  filter(statistic %in% c('ALL', 'NI','GB','IE','REU', 'ROW')  ) %>%
   mutate(perc = VALUE / VALUE[statistic == "ALL"] *100) 
 
 
@@ -2494,6 +2493,8 @@ df_dp_all_values <- unique(bind_rows(
 
 df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text)
 
-df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc, df_business_perc, df_crime_perc, df_business_perc_niets))
+df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, 
+                                df_school_destination_perc, df_env_perc, df_business_perc, 
+                                df_crime_perc, df_business_perc_niets))
 
 
