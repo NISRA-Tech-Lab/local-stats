@@ -2055,6 +2055,8 @@ df_crime_text  <- data
 # Agriculture - size of farms 
 
 
+##### business sectors and size #####
+
 df_business <- list()
 dataset_short <- "business"
 dataset_subject <- "6/IDBR"
@@ -2173,155 +2175,6 @@ data <- data.frame(statistic = rep(categories_E, length(json_data_E$dimension$LG
 
 df_business <- rbind(df_business, data)
 
-# json_data_E1 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["E1"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_E2 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["E2"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_E3 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["E3"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_E4 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["E4"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_E5 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["E5"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# 
-# json_data_All <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# 
-# categories_E1 <- factor(json_data_E1$dimension$STATISTIC$category$index,
-#                      levels = json_data_E1$dimension$STATISTIC$category$index)
-# categories_E2 <- factor(json_data_E2$dimension$STATISTIC$category$index,
-#                         levels = json_data_E2$dimension$STATISTIC$category$index)
-# categories_E3 <- factor(json_data_E3$dimension$STATISTIC$category$index,
-#                         levels = json_data_E3$dimension$STATISTIC$category$index)
-# categories_E4 <- factor(json_data_E4$dimension$STATISTIC$category$index,
-#                         levels = json_data_E4$dimension$STATISTIC$category$index)
-# categories_E5 <- factor(json_data_E5$dimension$STATISTIC$category$index,
-#                         levels = json_data_E5$dimension$STATISTIC$category$index)
-# categories_All <- factor(json_data_All$dimension$STATISTIC$category$index,
-#                         levels = json_data_All$dimension$STATISTIC$category$index)
-# 
-# data <- data.frame(geog_code = rep(json_data_E1$dimension$LGD2014$category$index, length(categories_E1))) %>%
-#   mutate(statistic = sort(rep_len(categories_E1, nrow(.))),
-#          VALUE = json_data_E1$value,
-#          source = dataset_short,
-#          statistic = "E1")%>%
-#   group_by(geog_code)
-# 
-# 
-# df_business <- rbind(df_business, data)
-# 
-# data <- data.frame(geog_code = rep(json_data_E2$dimension$LGD2014$category$index, 
-#                                    length(categories_E2))) %>%
-#   mutate(statistic = sort(rep_len(categories_E2, nrow(.))),
-#          VALUE = json_data_E2$value,
-#          source = dataset_short,
-#          statistic = "E2")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_E3$dimension$LGD2014$category$index, 
-#                                    length(categories_E3))) %>%
-#   mutate(statistic = sort(rep_len(categories_E3, nrow(.))),
-#          VALUE = json_data_E3$value,
-#          source = dataset_short,
-#          statistic = "E3")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# data <- data.frame(geog_code = rep(json_data_E4$dimension$LGD2014$category$index, 
-#                                    length(categories_E4))) %>%
-#   mutate(statistic = sort(rep_len(categories_E4, nrow(.))),
-#          VALUE = json_data_E4$value,
-#          source = dataset_short,
-#          statistic = "E4")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_E5$dimension$LGD2014$category$index, 
-#                                    length(categories_E5))) %>%
-#   mutate(statistic = sort(rep_len(categories_E5, nrow(.))),
-#          VALUE = json_data_E5$value,
-#          source = dataset_short,
-#          statistic = "E5")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_All$dimension$LGD2014$category$index, 
-#                                    length(categories_All))) %>%
-#   mutate(statistic = sort(rep_len(categories_All, nrow(.))),
-#          VALUE = json_data_All$value,
-#          source = dataset_short,
-#          statistic = "All")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
 
 
 
@@ -2351,125 +2204,10 @@ data <- data.frame(statistic = rep(categories_T, length(json_data_T$dimension$LG
 df_business <- rbind(df_business, data)
 
 
-# 
-# json_data_T2 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["T2"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_T3 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["T3"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_T4 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["T4"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# json_data_T5 <- jsonlite::fromJSON(
-#   txt = transform_URL(paste0(
-#     'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-#     dataset_subject, '/', dataset_long,
-#     '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-#     '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-#     '{"code": "TOBAND", "selection": {"filter": "item", "values": ["T5"]}},',
-#     '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-#     '"response": {"format": "json-stat2", "pivot": null}}'
-#   ))
-# )
-# 
-# 
-# 
-# categories_T1 <- factor(json_data_T1$dimension$STATISTIC$category$index,
-#                         levels = json_data_T1$dimension$STATISTIC$category$index)
-# categories_T2 <- factor(json_data_T2$dimension$STATISTIC$category$index,
-#                         levels = json_data_T2$dimension$STATISTIC$category$index)
-# categories_T3 <- factor(json_data_T3$dimension$STATISTIC$category$index,
-#                         levels = json_data_T3$dimension$STATISTIC$category$index)
-# categories_T4 <- factor(json_data_T4$dimension$STATISTIC$category$index,
-#                         levels = json_data_T4$dimension$STATISTIC$category$index)
-# categories_T5 <- factor(json_data_T5$dimension$STATISTIC$category$index,
-#                         levels = json_data_T5$dimension$STATISTIC$category$index)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_T1$dimension$LGD2014$category$index, length(categories_T1))) %>%
-#   mutate(statistic = sort(rep_len(categories_T1, nrow(.))),
-#          VALUE = json_data_T1$value,
-#          source = dataset_short,
-#          statistic = "T1")%>%
-#   group_by(geog_code)
-# 
-# 
-# df_business <- rbind(df_business, data)
-# 
-# data <- data.frame(geog_code = rep(json_data_T2$dimension$LGD2014$category$index, 
-#                                    length(categories_T2))) %>%
-#   mutate(statistic = sort(rep_len(categories_T2, nrow(.))),
-#          VALUE = json_data_T2$value,
-#          source = dataset_short,
-#          statistic = "T2")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_T3$dimension$LGD2014$category$index, 
-#                                    length(categories_T3))) %>%
-#   mutate(statistic = sort(rep_len(categories_T3, nrow(.))),
-#          VALUE = json_data_T3$value,
-#          source = dataset_short,
-#          statistic = "T3")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# data <- data.frame(geog_code = rep(json_data_T4$dimension$LGD2014$category$index, 
-#                                    length(categories_T4))) %>%
-#   mutate(statistic = sort(rep_len(categories_T4, nrow(.))),
-#          VALUE = json_data_T4$value,
-#          source = dataset_short,
-#          statistic = "T4")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
-# 
-# data <- data.frame(geog_code = rep(json_data_T5$dimension$LGD2014$category$index, 
-#                                    length(categories_T5))) %>%
-#   mutate(statistic = sort(rep_len(categories_T5, nrow(.))),
-#          VALUE = json_data_T5$value,
-#          source = dataset_short,
-#          statistic = "T5")%>%
-#   group_by(geog_code)
-# 
-# df_business <- rbind(df_business, data)
-# 
 
 
 
-#### farms #
+##### farms #####
 dataset_subject <- "89/FS"
 
 dataset_short <- "farms"
@@ -2547,7 +2285,7 @@ data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, l
 
 df_business <- rbind(df_business, data)
 
-#### tourism #
+##### tourism #####
 dataset_subject <- "72/TOU"
 
 dataset_short <- "tourism"
@@ -2589,9 +2327,149 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 
 df_business <- rbind(df_business, data)
 
+
+dataset_short <- "tourism"
+dataset_long <- "CASLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["All"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+  filter(`TLIST.A1.` == latest_year) %>% 
+  select(LGD2014, VALUE) %>% group_by(LGD2014) %>% 
+  summarise(VALUE  = sum(VALUE, na.rm = TRUE)) %>% 
+  rename(geog_code = LGD2014) %>% mutate(source = dataset_short, statistic = 'estab')
+
+
+
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+df_business <- rbind(df_business, csv_data)
+
+
+
 df_business_perc <- df_business %>%  group_by(geog_code) %>% 
-                        filter(statistic %in% c('agr', 'cons', 'prod', 'serv', 'E1','E2', 'E3', 'E4', 'E5', 'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
-                        mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
+  filter(statistic %in% c('agr', 'cons', 'prod', 'serv', 
+                          'E1','E2', 'E3', 'E4', 'E5', 
+                          'T1', 'T2', 'T3', 'T4', 'T5', 'All')) %>%
+  mutate(perc = VALUE / VALUE[statistic == "All"] *100) 
+
+
+##### niets #####
+
+dataset_subject <- "6/NIETS"
+
+dataset_short <- "niets-sales"
+dataset_long <- "NIETS05"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BESESVALUE"]}},',
+    '{"code": "FLOW", "selection": {"filter": "item", "values": ["SALES"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+) 
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$BROADDEST$category$index,
+                     levels = json_data$dimension$BROADDEST$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+data_ni <- data %>% group_by(statistic, source) %>% 
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+  mutate(geog_code = "N92000002") 
+
+data <- rbind(data, data_ni)
+
+df_business <- rbind(df_business, data)
+
+
+dataset_short <- "niets-purch"
+dataset_long <- "NIETS05"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BESESVALUE"]}},',
+    '{"code": "FLOW", "selection": {"filter": "item", "values": ["PURCH"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+) 
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$BROADDEST$category$index,
+                     levels = json_data$dimension$BROADDEST$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+data_ni <- data %>% group_by(statistic, source) %>% 
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+  mutate(geog_code = "N92000002") 
+
+data <- rbind(data, data_ni)
+
+df_business <- rbind(df_business, data)
+
+
+df_business_perc_niets <- df_business %>%  group_by(geog_code, source) %>% 
+  filter(statistic %in% c('ALL', 'NI','GB','IE','REU', 'ROW'),
+  ) %>%
+  mutate(perc = VALUE / VALUE[statistic == "ALL"] *100) 
+
 
 
 
@@ -2616,6 +2494,6 @@ df_dp_all_values <- unique(bind_rows(
 
 df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text)
 
-df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc, df_business_perc, df_crime_perc))
+df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, df_school_destination_perc, df_env_perc, df_business_perc, df_crime_perc, df_business_perc_niets))
 
 
