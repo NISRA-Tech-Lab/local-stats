@@ -412,14 +412,14 @@ let i_button_info = {
 					},
 
 		niets_sales: {title: "Sales partners",
-				info: "<p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
 					
 					},
 
 					niets_purch: {title: "Purchases partners",
-				info: "<p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
 					
