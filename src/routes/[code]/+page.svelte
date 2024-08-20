@@ -1000,21 +1000,21 @@ function compareNIrate (value) {
 			// },
 			box_2a: {
 				id: "wellbeing",
-				year: pullYear("Happy", data.place),
-				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 " +
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "</span>%",
+				year: pullYear("wellbeing", data.place),
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely happy. </span>"	+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. </span>" +
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'>  of people who feel lonely at least some of the time. </span>",
 
 				show: ["ni"]
 			},
 			box_2b: {
 				id: "wellbeing",
-				year: pullYear("Happy", data.place),
-				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10 "	+
+				year: pullYear("wellbeing", data.place),
+				content: "<p>Happiness</p><span class='text-big'>" + (check("Happy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely happy.</span>"	+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
-						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10 "+
+						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. </span>"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span>"+
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'> of people who feel lonely at least some of the time</span> "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
@@ -1057,7 +1057,7 @@ function compareNIrate (value) {
 				content: "<p><span class='text-big'>" + 
 					(check("Admiss.value")).toLocaleString() +
 						"</span> hospital admissions</p>"+
-						"<p>The most frequent primary reason was for </p><span class='text-bold' >" + (check("Admiss.text"))+ "</span>",
+						"<p>The most frequent primary reason was for <span class='text-bold' >" + (check("Admiss.text"))+ "</span></p>",
 
 					show: ["ni", "dea"]
 			},
@@ -1275,7 +1275,7 @@ function compareNIrate (value) {
 
 						 "<p style='margin:0'>UK Higher education institutions <span class='text-big'>" +
 						 (check("HE.value")).toLocaleString() +" </span>",
-				year: pullYear("Primary", data.place) ,
+				year: "School:" + pullYear("Primary", data.place) + ", FE:"+ pullYear("FE", data.place) +", HE:" + pullYear("HE", data.place),
 				show: ["ni", "lgd", "dea"]
 			},
 				
@@ -1569,13 +1569,46 @@ function compareNIrate (value) {
 			box_1: {
 				id: "crime",
 				year: pullYear("crime", data.place),
-				content:  "<span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded" ,
-						//  +
-						//  "<p>"+(compareNIavg("crime.value.allcrime")).toLocaleString() ,
-				show: ["ni", "lgd", "dea"]
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population</p>"   
+						 ,
+						
+				show: ["ni"]
 						
 			},
+
+
+			box_1a: {
+				id: "crime",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population"  + 
+						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +")</span></p>"
+						 ,
+						
+				show: [ "lgd", "dea"]
+						
+			},
+
+			box_2: {
+					id: "crimetype",
+					year: pullYear("crime", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("crime"),
+					show: ["ni", "lgd", "dea"]
+								},
+
+			box_5: {
+				id: "crimeworry",
+				year: pullYear("crimeworry", data.place),
+				content: "<p>Residents in this area are most worried about <span class='text-bold' >" +
+				(check("crime.text"))+ "</span></p>",
+
+					show: ["ni", "lgd"]
+			},
+
 
 			box_7a: {
 				id: "empty",
@@ -1592,25 +1625,142 @@ function compareNIrate (value) {
 
 				
 		}}
-		more = ""
+		more = "<p>Police Service of Northern Ireland (PSNI) crime statistics are published by 
+		NISRA statisticians within the
+		<a href='https://www.psni.police.uk/inside-psni/Statistics/'>Police Service of Northern Ireland</a>.
+		 Statistical information is available on 
+		 <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics'>Police Recorded Crime Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/anti-social-behaviour-statistics'>Anti-Social Behaviour Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/domestic-abuse-statistics'>Domestic Abuse Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/hate-motivation-statistics'>Hate Motivation Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/drug-seizure-statistics'>Drug Seizure Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/road-traffic-collision-statistics'>Road Traffic Collision Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/security-situation-statistics'>Security Situation Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/stop-and-search-statistics'>Stop and Search Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/statistics-police-use-force'>Statistics on Police Use of Force</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/motoring-offence-statistics'>Motoring Offence Statistics</a> and <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-and-criminal-evidence-pace-order'>Police and Criminal Evidence (PACE) Order Statistics</a>.</p>
+<p>Statistics on the police complaints system are published by
+<a href='https://www.policeombudsman.org/Statistics-and-Research'>
+Police Ombudsmans Office for Northern Ireland</a>.</p>
+<p><a href='https://www.justice-ni.gov.uk/topics/doj-statistics-and-research'>Department of Justice statistics</a> include reoffending, victims and witnesses, prosecutions and convictions.; Statistics are also available from the <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-prison-service-statistics'>Northern Ireland Prison Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-courts-and-tribunals-service-statistics'>Northern Ireland Courts and Tribunals Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/youth-justice-statistics'>Youth Justice Agency statistics and </a>, <a href='https://www.justice-ni.gov.uk/topics/legal-aid/legal-services-agency-northern-ireland'>Legal Services Agency</a> and <a href='https://www.ppsni.gov.uk/statistics-and-research'>Public Prosecutions Service for Northern Ireland (PPSNI)</a>.</p>
+<p><a href='https://www.pbni.org.uk/statistics-and-research'>Probation Board for Northern Ireland (PBNI)</a> publish statistical information on their Caseload, Stakeholder Survey Reports, and other statistical reports.</p>
+
+"
 	/>
 
 
 	<Accordion
 		id = "business"
 		img = "nisra-taxonomy-icon-business-energy.png"
-		heading = "Business sectors"
+		heading = "Business, economy and trade"
 		place = {data.place}
 		sub_heading = {moreData("Business sectors", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
 				
+				box_1: {
+				id: "no_bus",
+				year: pullYear("business", data.place),
+				content:  "<span class='text-big'>"  + 
+				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses, with a total of <span class='text-big'>£"  + 
+				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
+				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in purchases." ,
+				show: ["ni", "lgd"]
+						},
+
+				box_1a: {
+				id: "niets_sales",
+				year: pullYear("niets_sales", data.place) ,
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("niets_sales"),
+					show: ["ni", "lgd"]
+								},
+
+				box_1b: {
+				id: "niets_purch",
+				year: pullYear("niets_purch", data.place) ,
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("niets_purch"),
+					show: ["ni", "lgd"]
+								},
+
+				box_2: {
+					id: "type_bus",
+					year: pullYear("business", data.place),
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("businesstype"),
+					show: ["ni", "lgd"]
+								},
+
+				box_3: {
+				id: "size_bus",
+				year: pullYear("businessband", data.place) ,
+					content:  "GroupChart",
+					chart_data: makeDataNICompare("businessband"),
+					show: ["ni", "lgd"]
+								},
+
+
+
+				box_4: {
+				id: "sector",
+				year: "Agriculture " + pullYear("farms", data.place) + ", Tourism " + pullYear("tourism", data.place) ,
+				content:  "<p><strong>Agriculture</strong></p>" + 
+					"<span class='text-big'>"  + 
+				    	 (check("farms.value.F")).toLocaleString() +" </span> farms with "+
+						 "<span class='text-big'>"  + 
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers"+
+						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
+				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments"  ,
+
+						 show: ["ni", "lgd"]
+						},
+
+				// box_5: {
+				// id: "tourism",
+				// year: pullYear("tourism", data.place),
+				// content:  "<span class='text-big'>"  + 
+				//     	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs and " + 
+				//     	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> tourism accomodation establishments"  ,
+				// show: ["ni", "lgd"]
+				// 		},
+
+
+						box_7a: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			},
+
+			box_7b: {
+				id: "empty",
+				i_button: false,
+				content: ""
+			}
+
+			
 		}}
-		more = ""
+		more = "<strong>Business statistics</strong>
+		<p>Further statistics are available on number, type and size of businesses, collected through the
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/annual-business-inquiry'>Annual Business Inquiry</a>,
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/research-and-development'>Research and Development</a>
+		Survey and the <a href='https://www.nisra.gov.uk/statistics/business-statistics/inter-departmental-business-register'>Inter Departmental Business Register</a>.</p>
+		<p>Statistics for specific business sectors include: the <a href='https://www.daera-ni.gov.uk/publications/size-and-performance-ni-food-and-drinks-processing-sector'>
+		Food and Drinks Processing Sector</a> 
+		and the 
+		<a href='https://www.daera-ni.gov.uk/articles/agricultural-statistics'>Agriculture sector</a> 
+		both produced by DAERA; 
+		<a href='https://www.infrastructure-ni.gov.uk/articles/northern-ireland-transport-statistics'>Northern Ireland travel and transport statistics</a> produced by the Department for Infrastructure, and 
+		<a href='https://www.nisra.gov.uk/statistics/tourism/annual-and-quarterly-tourism-statistics-publications'>Tourism sector</a>
+		published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a>. Interactive dashboards are available for 
+		<a href='https://datavis.nisra.gov.uk/tourism/alternative_sources.html'>Tourism statistics</a> and 
+		<a href='https://datavis.nisra.gov.uk/daera/food-drink-processing-sector.html'>Food and Drink Processing Sector Statistics</a>.</p>
+		<p><strong>Economy and trade statistics</strong></p>
+		<p>Other economy and trade statistics are published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
+		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
+		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
 	/> 
 
-	<Accordion
+	<!-- <Accordion
 		id = "economy"
 		img = "nisra-taxonomy-icon-economy.png"
 		heading = "Economy and trade"
@@ -1621,8 +1771,15 @@ function compareNIrate (value) {
 		boxes = {{
 				
 		}}
-		more = ""
-	/>
+		more = "<p>Other economy and trade statistics are published by 
+		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
+		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
+		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
+		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
+		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
+	/> -->
 
 		</div>
 	{/if}

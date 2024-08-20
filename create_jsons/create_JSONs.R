@@ -23,8 +23,8 @@ df_geog_codes_for_loop <-
     substr(code, 1, 3) == "N21" ~ "sdz"
   )) %>%
  filter(type %in% geog_types_to_update) %>%
-#  filter(type %in% c('ctry', 'lgd', 'dea')) %>%
-  arrange(substr(code, 1, 3))
+#filter(type %in% c('ctry', 'lgd')) %>%
+  arrange(substr(code, 1, 3))# %>% head(1)
  
  
  print("looping through geographies")
@@ -158,6 +158,17 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       pull()
   }
   
+  
+
+  if (substr(geog_code_loop, 1, 3) == "N09" ) {
+    
+    df_json_template$data$crime$text <- df_dp_all_text %>%
+      subset(geog_code == geog_code_loop & source == "crimeworry") %>%
+      select(reason) %>%
+      pull()
+  }    
+
+  
   if (substr(geog_code_loop, 1, 3) == "N10") {
     df_json_template$dea_location_description <- df_dea_description %>%
       subset(geog_code == geog_code_loop) %>%
@@ -165,7 +176,7 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       pull()
     
     df_json_template$data$Admiss$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop) %>%
+      subset(geog_code == geog_code_loop & source == "Admiss") %>%
       select(reason) %>%
       pull()
     
@@ -175,11 +186,17 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
   if (substr(geog_code_loop, 1, 3) == "N92") {
 
     df_json_template$data$Admiss$text <- df_dp_all_text %>%
-      subset(geog_code == geog_code_loop) %>%
+      subset(geog_code == geog_code_loop & source == "Admiss") %>%
       select(reason) %>%
       pull()
     
-  }
+    df_json_template$data$crime$text <- df_dp_all_text %>%
+      subset(geog_code == geog_code_loop & source == "crimeworry") %>%
+      select(reason) %>%
+      pull()
+  
+    
+    }
   source("create_jsons/census_data_loop.R")
   source("create_jsons/data_portal_tables_loop.R")
 
@@ -197,5 +214,6 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
 }
 #
 #
-write_rds(data.frame(date = as.Date(Sys.time())),
-          "date_of_last_run.RDS")
+
+ write_rds(data.frame(date = as.Date(Sys.time())),
+          "create_jsons/date_of_last_run.RDS")

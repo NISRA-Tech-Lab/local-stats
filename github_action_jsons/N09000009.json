@@ -53,6 +53,21 @@
     [-7.467, 55.052]
   ],
   "data": {
+    "crime": {
+      "text": "Violent crime",
+      "value": {
+        "allcrime": 4915,
+        "btcd": 1748,
+        "other": 764,
+        "person": 2403
+      },
+      "perc": {
+        "allcrime": 100,
+        "btcd": 35.5646,
+        "other": 15.5443,
+        "person": 48.8911
+      }
+    },
     "population": {
       "perc": {
         "2011": {
@@ -401,9 +416,112 @@
         "JWCPT": 16
       }
     },
-    "crime": {
+    "business": {
       "value": {
-        "allcrime": 4915
+        "BCOUNTS": 9540
+      }
+    },
+    "businesstype": {
+      "value": {
+        "All": 9540,
+        "agr": 3300,
+        "cons": 1605,
+        "prod": 920,
+        "serv": 3715
+      },
+      "perc": {
+        "All": 100,
+        "agr": 34.5912,
+        "cons": 16.8239,
+        "prod": 9.6436,
+        "serv": 38.9413
+      }
+    },
+    "businessband": {
+      "value": {
+        "E1": 3675,
+        "E2": 5095,
+        "E3": 620,
+        "E4": 125,
+        "E5": 25,
+        "All": 9540,
+        "T1": 4385,
+        "T2": 3340,
+        "T3": 720,
+        "T4": 825,
+        "T5": 270
+      },
+      "perc": {
+        "E1": 38.522,
+        "E2": 53.4067,
+        "E3": 6.499,
+        "E4": 1.3103,
+        "E5": 0.2621,
+        "All": 100,
+        "T1": 45.9644,
+        "T2": 35.0105,
+        "T3": 7.5472,
+        "T4": 8.6478,
+        "T5": 2.8302
+      }
+    },
+    "farms": {
+      "value": {
+        "F": 4373,
+        "FA": 6645
+      }
+    },
+    "tourism": {
+      "value": {
+        "AllJobs": 5377,
+        "TourismJobs": 5897
+      }
+    },
+    "tourism_estab": {
+      "value": {
+        "estab": 2830
+      }
+    },
+    "niets_sales": {
+      "value": {
+        "ALL": 9214.8946,
+        "NI": 5590.4428,
+        "GB": 1982.3582,
+        "IE": 880.828,
+        "REU": 330.9165,
+        "ROW": 430.349,
+        "EXTERN": 3624.4518,
+        "EXPORT": 1642.0935,
+        "IMPORT": null
+      },
+      "perc": {
+        "ALL": 100,
+        "NI": 60.6675,
+        "GB": 21.5125,
+        "IE": 9.5587,
+        "REU": 3.5911,
+        "ROW": 4.6701
+      }
+    },
+    "niets_purch": {
+      "value": {
+        "ALL": 6629.3622,
+        "NI": 3516.7105,
+        "GB": 1284.2472,
+        "IE": 425.5151,
+        "REU": 305.4392,
+        "ROW": 1097.4501,
+        "EXTERN": 3112.6517,
+        "EXPORT": null,
+        "IMPORT": 1828.4044
+      },
+      "perc": {
+        "ALL": 100,
+        "NI": 53.0475,
+        "GB": 19.3721,
+        "IE": 6.4186,
+        "REU": 4.6074,
+        "ROW": 16.5544
       }
     },
     "Satisfy": {
@@ -416,7 +534,7 @@
       "value": 16
     },
     "ASHE": {
-      "value": 26785
+      "value": 31851
     },
     "ASHE_weekly": {
       "value": 510.8
@@ -466,8 +584,8 @@
     },
     "Env_concern": {
       "perc": {
-        "CONCERNENVI": 82,
-        "NOTCONCERNENVI": 18
+        "CONCERNENVI": 88,
+        "NOTCONCERNENVI": 12
       }
     },
     "Env_waste": {
@@ -739,10 +857,10 @@
         "table_code": "CHSCONCERNLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/CHSCONCERNLGD",
         "geog_level": "lgd",
-        "last_updated": "2024-02-23",
+        "last_updated": "2024-08-20",
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Continuous Household Survey: Concern about the environment",
-        "year": "2022/23"
+        "year": "2023/24"
       }
     ],
     "Env_waste": [
@@ -787,6 +905,94 @@
         "email": "statistics@psni.police.uk",
         "title": "Police Recorded Crime",
         "year": "2023/24"
+      }
+    ],
+    "crimeworry": [
+      {
+        "table_code": "WORRYCRMLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/WORRYCRMLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-06-12",
+        "email": "statistics.research@justice-ni.gov.uk",
+        "title": "NISCS: Worry about Crime and Personal Safety",
+        "year": "2019/20"
+      }
+    ],
+    "business": [
+      {
+        "table_code": "BUSINESSBIGLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBIGLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-03-20",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Number of Businesses",
+        "year": "2023"
+      }
+    ],
+    "businessband": [
+      {
+        "table_code": "BUSINESSBANDLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/BUSINESSBANDLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-03-19",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "Number of Businesses: Activity, Size and Location",
+        "year": "2023"
+      }
+    ],
+    "farms": [
+      {
+        "table_code": "FCLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/FCLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-02-26",
+        "email": "env.stats@daera-ni.gov.uk",
+        "title": "Farm Census",
+        "year": "2023"
+      }
+    ],
+    "tourism": [
+      {
+        "table_code": "EJOBSLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/EJOBSLGD",
+        "geog_level": "lgd",
+        "last_updated": "2023-04-21",
+        "email": "Joanne.henderson@nisra.gov.uk",
+        "title": "Employee Jobs",
+        "year": "2019"
+      }
+    ],
+    "tourism_estab": [
+      {
+        "table_code": "CASLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/CASLGD",
+        "geog_level": "lgd",
+        "last_updated": "2023-04-21",
+        "email": "Joanne.henderson@nisra.gov.uk",
+        "title": "Certified Accommodation Stock",
+        "year": "2019"
+      }
+    ],
+    "niets_sales": [
+      {
+        "table_code": "NIETS05",
+        "dataset_url": "https://data.nisra.gov.uk/table/NIETS05",
+        "geog_level": "lgd",
+        "last_updated": "2024-07-02",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "NIETS: Trade by Local Government District",
+        "year": "2022"
+      }
+    ],
+    "niets_purch": [
+      {
+        "table_code": "NIETS05",
+        "dataset_url": "https://data.nisra.gov.uk/table/NIETS05",
+        "geog_level": "lgd",
+        "last_updated": "2024-07-02",
+        "email": "economicstats@nisra.gov.uk",
+        "title": "NIETS: Trade by Local Government District",
+        "year": "2022"
       }
     ]
   }

@@ -360,7 +360,22 @@
     },
     "crime": {
       "value": {
-        "allcrime": 572
+        "allcrime": 572,
+        "btcd": 257,
+        "other": 55,
+        "person": 260
+      },
+      "perc": {
+        "allcrime": 100,
+        "btcd": 44.9301,
+        "other": 9.6154,
+        "person": 45.4545
+      }
+    },
+    "farms": {
+      "value": {
+        "F": 153,
+        "FA": 256
       }
     },
     "Attainment": {
@@ -559,6 +574,17 @@
         "email": "statistics@psni.police.uk",
         "title": "Police Recorded Crime",
         "year": "2023/24"
+      }
+    ],
+    "farms": [
+      {
+        "table_code": "FCDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/FCDEA",
+        "geog_level": "dea",
+        "last_updated": "2024-02-26",
+        "email": "env.stats@daera-ni.gov.uk",
+        "title": "Farm Census",
+        "year": "2023"
       }
     ]
   }

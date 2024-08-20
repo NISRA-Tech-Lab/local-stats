@@ -73,7 +73,7 @@ let i_button_info = {
 
 		wellbeing: {
 			title: "Personal wellbeing",
-			info: "<p>Average Happiness score out of 10 for people aged 16+.  Average Life satisfaction score out of 10 for people aged 16+</p>" +
+			info: "<p>Average Happiness score out of 10 for people aged 16+.  Average Life satisfaction score out of 10 for people aged 16+.<p>Average score out of 10 where 0 is ‘not at all’ and 10 is ‘completely’.</p></p>" +
 				"<p class = 'pibutton'>Access data at: <a href='" + checkMeta("wellbeing[0].dataset_url") + "'>" + checkMeta("wellbeing[0].title") + "</a></p>"+
 				"<p class = 'pibutton'>Last updated: " + checkMeta("wellbeing[0].last_updated") + "</p> "+
 				"<p>Loneliness is the percentage of people aged 16+ who were lonely 'often/always' or 'some of the time'.</p>" +
@@ -124,6 +124,20 @@ let i_button_info = {
 				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
 		 		  },
 
+		   crimetype: {
+			title: "Types of crime",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crime[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  +
+				 	"<p class = 'pibutton'>Crime per 1,000 population based on mid-year population estimate</p>"  
+					},
+
+			crimeworry: {
+			title: "Worry about crime",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeworry[0].dataset_url") + "'>" + checkMeta("crimeworry[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeworry[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeworry[0].email") + "'>Email for more information</a> </p>"  
+					},
 
 			carers: {
 			title: "Unpaid care giving",
@@ -165,7 +179,7 @@ let i_button_info = {
 				  "<p >Access wages data at: <a href='" + checkMeta("ASHE_weekly[0].dataset_url") + "'>" + checkMeta("ASHE_weekly[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("ASHE_weekly[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("ASHE_weekly[0].email") + "'>Email for more information</a> </p>"  +
-				  "<p>Median salary is the Median gross weekly earnings for all employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
+				  "<p>Median salary is the median gross weekly earnings for full-time employees.  The Median measures the amount earned by the average individual, that is the level of earnings at which half the population are above and half the population are below</p>"  
 		 		 
 		},
 
@@ -362,9 +376,57 @@ let i_button_info = {
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("SEN[0].last_updated") + "</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("SEN[0].email") + "'>Email for more information</a> </p>" + 
 				  "<p class = 'pibutton'>These figures include SEN pupils enrolled in Special Education Schools, Primary Schools and Post-Primary Schools and include Statemented and Non Statemented pupils.  Definitions are available on the <a href = 'https://www.education-ni.gov.uk/articles/school-enrolments-overview'>statistical publication page</a>.</p>"
-		}
+		},
 
-}
+
+		no_bus: {title: "Business and trade",
+				info: 
+				" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
+					
+					" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"  
+
+
+				},
+		type_bus: {title: "Type of businesses",
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("business[0].dataset_url") + "'>" + checkMeta("business[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("business[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("business[0].email") + "'>Email for more information</a> </p>"  },
+		
+		size_bus: {title: "Employees in businesses",
+				info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("businessband[0].dataset_url") + "'>" + checkMeta("businessband[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("businessband[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("businessband[0].email") + "'>Email for more information</a> </p>"  },
+
+		sector: {title: "Business sectors",
+				info: " <p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("farms[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("farms[0].email") + "'>Email for more information</a> </p>"   + 
+					" <p class = 'pibutton'>Access tourism jobs data at: <a href='" + checkMeta("tourism[0].dataset_url") + "'>" + checkMeta("tourism[0].title") + "</a></p>"+
+					" <p class = 'pibutton'>Access tourism accomodation data at: <a href='" + checkMeta("tourism_estab[0].dataset_url") + "'>" + checkMeta("tourism_estab[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("tourism_estab[0].last_updated") + "</p> "+ 				
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("tourism[0].email") + "'>Email for more information</a> </p>"  
+					
+					},
+
+		niets_sales: {title: "Sales partners",
+				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
+					
+					},
+
+					niets_purch: {title: "Purchases partners",
+				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
+					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
+					
+					},
+
+
+				}
 
 </script>
 
