@@ -38,7 +38,7 @@
 
     <div class="grid">
 
-      <div class = "div-grey-box">
+      <div class = "div-grey-box" style = "overflow: visible;">
 
         <span style="font-size: 1.5em; font-weight: bold;color: #3878c5; line-height: 1em;">Explore key statistics for any area in Northern Ireland</span>
 
