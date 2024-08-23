@@ -54,7 +54,7 @@ export const topics = {
 		{ category: "apprenticeship", label: 'No qualifications' },
 		{ category: "level_1_qualifications", label: 'Level 1' },
 		{ category: "level_2_qualifications", label: 'Level 2' },
-		{ category: "level_3_qualifications", label: 'Apprenticeship 3' },
+		{ category: "level_3_qualifications", label: 'Apprenticeship' },
 		{ category: "level_4_qualifications_and_above", label: 'Level 3' },
 		{ category: "no_qualifications", label: 'Level 4 and above ' },
 		{ category: "other_qualifications", label: 'Other' }
