@@ -35,7 +35,7 @@
 
         let search_code = postcode.replaceAll(" ", "");
 
-        fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/97-update-cpd/search_data/CPD_LIGHT_JULY_2024.csv")
+        fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/CPD_LIGHT_JULY_2024.csv")
             .then((response) => response.text())
             .then((data) => {
                 const rows = data.split("\n");
