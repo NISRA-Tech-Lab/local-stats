@@ -13,7 +13,7 @@
 	export let style = "https://raw.githubusercontent.com/NISRA-Tech-Lab/map_tiles/main/basemap_styles/style-omt.json";
 	export let interactive = true;
 	export let minzoom = 0;
-	export let maxzoom = 14;
+	export let maxzoom = 20;
 	export let zoom = null;
 	export let scrollzoom = true;
 	export let geolocate = true;

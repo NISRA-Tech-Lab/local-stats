@@ -147,7 +147,7 @@
 			</li>
 			{/each}
 			{:else}
-			<li>No results</li>
+			<li>Not found, try a postcode instead</li>
 			{/if}
 		</ul>
 	</div>
