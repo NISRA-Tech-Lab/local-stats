@@ -49,8 +49,8 @@
 							const DZ2021_name = columns[19].trim();
 							const SDZ2021 = columns[20].trim();
 							const SDZ2021_name = columns[21].trim();
-							const SETTLEMENT15 = columns[28].trim();
-							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();
+							const SETTLEMENT15 = columns[30].trim();
+							const SETTLEMENT15_URBAN_RURAL = columns[31].trim();
 							
 							pHTML += `<strong>Postcode:</strong> ${postcode.slice(0, -3)} ${postcode.substr(-3)}`;
 
@@ -76,7 +76,7 @@
 
 					if (!found) {
 						resultTable.innerHTML =
-							"Postcode not found.";
+							"Postcode not found XX.";
 					} else {
 						resultTable.innerHTML =
 							pHTML +
