@@ -1495,7 +1495,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport.</p>" ,
 			show: ["ni"]
 					
 		},
@@ -1505,8 +1505,7 @@ function compareNIrate (value) {
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
 					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
-					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
-					 " by walking, cycling and public transport" ,						
+					 "<p> journeys made by walking, cycling and public transport. <span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span></p>" ,						
 			show: ["lgd"]
 					
 		},
