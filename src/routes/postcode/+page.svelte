@@ -44,6 +44,7 @@
 							const DEA2014NAME = columns[9].trim();
 							const AA2008 = columns[10].trim();
 							const AA2008NAME = columns[11].trim();
+							const AA2024NAME = columns[23].trim();
 							const HSCTNAME = columns[17].trim();
 							const DZ2021 = columns[18].trim();
 							const DZ2021_name = columns[19].trim();
@@ -63,7 +64,8 @@
 							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>
 										  <li><strong>Settlement:</strong> ${SETTLEMENT15}</li>
 										  <li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>
-										  <li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>
+										  <li><strong>Assembly Area Name (2008):</strong> ${AA2008NAME}</li>
+										  <li><strong>Assembly Area Name (2024):</strong> ${AA2024NAME}</li>
 										  <li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
 
 							found = true;

@@ -123,7 +123,7 @@
 
 			
 		<h4>Postcodes</h4>
-			<p>Postcodes are sourced from the <a href="https://www.nisra.gov.uk/support/geography/central-postcode-directory">Central Postcode Directory (CPD)</a>.  The CPD is a list of postcodes in Northern Ireland, with the average location of the addresses in each postcode. It is used to provide a direct lookup between postcodes and a range of administrative and statistical geographies including Local Government Districts, District Electioral Areas, Data Zones, Super Data Zones and Settlements.   The version of the CPD used is xxxx.</p>
+			<p>Postcodes are sourced from the <a href="https://www.nisra.gov.uk/support/geography/central-postcode-directory">Central Postcode Directory (CPD)</a>.  The CPD is a list of postcodes in Northern Ireland, with the average location of the addresses in each postcode. It is used to provide a direct lookup between postcodes and a range of administrative and statistical geographies including Local Government Districts, District Electioral Areas, Data Zones, Super Data Zones and Settlements.   The version of the CPD used is July 2024.</p>
 			
 		<h4>Boundary Files</h4>
 			<p>The Boundary files used in the application are available to download on the OpenDataNI portal at :</p>
