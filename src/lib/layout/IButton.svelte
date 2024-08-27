@@ -139,7 +139,14 @@ let i_button_info = {
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeworry[0].email") + "'>Email for more information</a> </p>"  
 					},
 
-			carers: {
+			crimeperception: {
+			title: "Views on crime",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeperception[0].dataset_url") + "'>" + checkMeta("crimeperception[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeperception[0].last_updated") + "</p> "+
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeperception[0].email") + "'>Email for more information</a> </p>"  
+					},
+
+					carers: {
 			title: "Unpaid care giving",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
 			"Unpaid care covers looking after giving help or support to anyone because they have long-term physical or "+

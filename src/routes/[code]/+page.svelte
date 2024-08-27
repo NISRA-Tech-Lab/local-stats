@@ -1573,10 +1573,41 @@ function compareNIrate (value) {
 			box_5: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
-				content: "<p>Residents in this area are most worried about <span class='text-bold' >" +
-				(check("crime.text"))+ "</span>.</p>",
+				content: "<p> <span class='text-big' >" +
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
 
-					show: ["ni", "lgd"]
+					show: ["ni"]
+			},
+
+			box_5: {
+				id: "crimeworry",
+				year: pullYear("crimeworry", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+
+					show: [ "lgd"]
+			},
+
+
+			box_6: {
+				id: "crimeperception",
+				year: pullYear("crimeperception", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
+
+					show: ["ni"]
+			},
+
+			box_6: {
+				id: "crimeperception",
+				year: pullYear("crimeperception", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+
+
+					show: [ "lgd"]
 			},
 
 
