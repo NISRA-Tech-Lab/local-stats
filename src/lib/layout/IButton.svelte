@@ -438,7 +438,7 @@ let i_button_info = {
 	aria-controls="{id}-info"
 	bind:this={row}
 >
-	<div class="blocktitle" style="margin: 0; width: 100%" on:click={changeAria}>
+	<div class="blocktitle" on:click={changeAria}>
 		{i_button_info[id].title} <img class = "i-button" src = "{base}\img\i-button.svg" alt = "Information button">
 	</div>
 </div>
