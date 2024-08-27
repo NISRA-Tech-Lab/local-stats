@@ -2035,7 +2035,8 @@ categories <- factor(json_data$dimension$STATISTIC$category$index,
 data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
-         source = dataset_short) %>% group_by(geog_code) %>% slice_max(VALUE) %>%
+         source = dataset_short) %>% group_by(geog_code) %>% 
+  slice_max(VALUE) %>%
   mutate(reason = case_when(statistic == "WorryC1" ~ "Car crime",
                                statistic == "WorryC2" ~ "Crime overall",
                                statistic == "WorryC3" ~ "Burglary",
@@ -2046,6 +2047,15 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_crime_text  <- data
 
 
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short) %>% 
+  filter( statistic == "WorryC2")
+
+
+
+df_crime <- unique(rbind(df_crime, data))
 
 #### business sectors ####
 # Number of businesses  - https://data.nisra.gov.uk/table/BUSINESSBIGLGD
