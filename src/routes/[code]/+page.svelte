@@ -1570,7 +1570,7 @@ function compareNIrate (value) {
 					show: ["ni", "lgd", "dea"]
 								},
 
-			box_5: {
+			box_3: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1579,7 +1579,7 @@ function compareNIrate (value) {
 					show: ["ni"]
 			},
 
-			box_5: {
+			box_3a: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1590,7 +1590,7 @@ function compareNIrate (value) {
 			},
 
 
-			box_6: {
+			box_4: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1599,7 +1599,7 @@ function compareNIrate (value) {
 					show: ["ni"]
 			},
 
-			box_6: {
+			box_4a: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
