@@ -33,7 +33,7 @@
         user-select: none;
         bottom: 0px;
         color: #00205b;
-        background-color: rgba(170, 170, 170, 0.5);
+        background-color: rgba(170, 170, 170);
         width: 100%;
         text-align: center;
         padding-top: 5px;
