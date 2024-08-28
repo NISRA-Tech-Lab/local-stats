@@ -124,10 +124,10 @@
 		top: 0;
 	}
 	.bar {
-		background-color: #00205B;
+		background-color: #00205B !important;
 	}
 	.bar2 {
-		background-color: #3878c5;
+		background-color: #3878c5 !important;
 	}
 	ul.legend-block {
 		list-style-type: none;

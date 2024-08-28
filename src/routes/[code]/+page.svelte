@@ -1879,9 +1879,10 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 	}
 
 	@media print {
-		.highlited {
-			color: red !important;
-			-webkit-print-color-adjust: exact;
+		* {
+			-webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+			color-adjust: exact !important;  /*Firefox*/
+			
 		}
 	}
 
