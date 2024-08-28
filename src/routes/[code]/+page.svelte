@@ -509,10 +509,28 @@ function compareNIrate (value) {
 
 	function moreData (subject, place) {
 
-		if (place.type != "ni") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + " </a>";
-		} else {
+		// if (place.type != "ni") {
+		// 	return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + " </a>";
+		// } else {
+		// 	return "";
+		// }
+
+		if (place.type == "ni") {
 			return "";
+		} else if (place.type == "lgd") {
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>";
+		} else if (place.type == "dea") {
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>";
+		} else if (place.type == "sdz") {
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			", <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz") {
+			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+		", <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+		", <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
 		}
 
 	}
