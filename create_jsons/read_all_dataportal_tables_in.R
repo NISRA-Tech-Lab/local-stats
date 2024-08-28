@@ -2002,6 +2002,7 @@ df_crime_perc <- df_crime %>%  group_by(geog_code) %>%
 
 
 
+##### Worry ####
 dataset_short <- "crimeworry"
 dataset_subject <- "65/NISCS"
 
@@ -2035,7 +2036,8 @@ categories <- factor(json_data$dimension$STATISTIC$category$index,
 data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
   mutate(statistic = sort(rep_len(categories, nrow(.))),
          VALUE = json_data$value,
-         source = dataset_short) %>% group_by(geog_code) %>% slice_max(VALUE) %>%
+         source = dataset_short) %>% group_by(geog_code) %>% 
+  slice_max(VALUE) %>%
   mutate(reason = case_when(statistic == "WorryC1" ~ "Car crime",
                                statistic == "WorryC2" ~ "Crime overall",
                                statistic == "WorryC3" ~ "Burglary",
@@ -2046,6 +2048,56 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 df_crime_text  <- data
 
 
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short) %>% 
+  filter( statistic == "WorryC2")
+
+
+
+df_crime <- unique(rbind(df_crime, data))
+
+
+
+##### perception ####
+dataset_short <- "crimeperception"
+dataset_subject <- "65/NISCS"
+
+dataset_long <- "NISCSASBLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
+    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["ASB8"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+
+df_crime <- unique(rbind(df_crime, data))
 
 #### business sectors ####
 # Number of businesses  - https://data.nisra.gov.uk/table/BUSINESSBIGLGD

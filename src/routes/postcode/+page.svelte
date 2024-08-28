@@ -19,7 +19,7 @@
 				return;
 			}
 
-			fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv")
+			fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/CPD_LIGHT_JULY_2024.csv")
 				.then((response) => response.text())
 				.then((data) => {
 					const rows = data.split("\n");
@@ -44,13 +44,14 @@
 							const DEA2014NAME = columns[9].trim();
 							const AA2008 = columns[10].trim();
 							const AA2008NAME = columns[11].trim();
+							const AA2024NAME = columns[23].trim();
 							const HSCTNAME = columns[17].trim();
 							const DZ2021 = columns[18].trim();
 							const DZ2021_name = columns[19].trim();
 							const SDZ2021 = columns[20].trim();
 							const SDZ2021_name = columns[21].trim();
-							const SETTLEMENT15 = columns[28].trim();
-							const SETTLEMENT15_URBAN_RURAL = columns[29].trim();
+							const SETTLEMENT15 = columns[30].trim();
+							const SETTLEMENT15_URBAN_RURAL = columns[31].trim();
 							
 							pHTML += `<strong>Postcode:</strong> ${postcode.slice(0, -3)} ${postcode.substr(-3)}`;
 
@@ -63,7 +64,8 @@
 							listHTML2 += `<li><strong>Urban / Rural:</strong> ${SETTLEMENT15_URBAN_RURAL}</li>
 										  <li><strong>Settlement:</strong> ${SETTLEMENT15}</li>
 										  <li><strong>Health and Social Care Trust:</strong> ${HSCTNAME}</li>
-										  <li><strong>Assembly Area Name:</strong> ${AA2008NAME}</li>
+										  <li><strong>Assembly Area Name (2008):</strong> ${AA2008NAME}</li>
+										  <li><strong>Assembly Area Name (2024):</strong> ${AA2024NAME}</li>
 										  <li><strong>Ward Name:</strong> ${WARD2014NAME}</li>`;
 
 							found = true;
@@ -76,7 +78,7 @@
 
 					if (!found) {
 						resultTable.innerHTML =
-							"Postcode not found.";
+							"Postcode not found XX.";
 					} else {
 						resultTable.innerHTML =
 							pHTML +

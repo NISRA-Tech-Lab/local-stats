@@ -717,7 +717,7 @@ function compareNIrate (value) {
 				style = "line-height: 1.3;"
 				content = {{
 							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
-							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description,
+							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
@@ -1014,7 +1014,7 @@ function compareNIrate (value) {
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Happy.value + "/10) </span></p>"+
 						"<p>Life Satisfaction</p><span class='text-big'>" + (check("Satisfy.value")).toLocaleString() + "</span>/ 10, <span class = 'text-small'>where 10 is completely satisfied. </span>"+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Satisfy.value +"/10) </span></p>"+ 
-						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'> of people who feel lonely at least some of the time</span> "+
+						"<p>Loneliness</p><span class='text-big'>" + (check("Lonely.value")).toLocaleString(undefined, {minimumFractionDigits: 1}) + "%</span><span class = 'text-small'> of people who feel lonely at least some of the time. </span> "+
 						"<span style='color: #1460aa'> (NI " + data.ni.data.Lonely.value +"%) </span></p>" ,
 
 				show: [ "lgd"]
@@ -1057,7 +1057,7 @@ function compareNIrate (value) {
 				content: "<p><span class='text-big'>" + 
 					(check("Admiss.value")).toLocaleString() +
 						"</span> hospital admissions</p>"+
-						"<p>The most frequent primary reason was for <span class='text-bold' >" + (check("Admiss.text"))+ "</span></p>",
+						"<p>The most frequent primary reason was for <span class='text-bold' >" + (check("Admiss.text"))+ "</span>.</p>",
 
 					show: ["ni", "dea"]
 			},
@@ -1070,12 +1070,13 @@ function compareNIrate (value) {
 						(check("GP.value.PRACS")).toLocaleString() +
 						"</span> GP practices with an average of <span class='text-big'>" + 
 						(check("GP.value.PRACLIST")).toLocaleString() +
-						"</span> patients per practice</p>" +
+						"</span> patients per practice.</p>" +
 						"<p><span class='text-big'>" + 
 						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 						"</span> dental surgeries.  </span> <span class='text-big'>" + 
 						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"%</span> of the population are registered with a dentist</p>",
+						"%</span> of the population are registered with a dentist.</p>"
+						,
 				show: ["ni"]
 			},
 			
@@ -1086,7 +1087,7 @@ function compareNIrate (value) {
 							(check("GP.value.PRACS")).toLocaleString() +
 						"</span> GP practices with an average of <span class='text-big'>" + 
 						(check("GP.value.PRACLIST")).toLocaleString() +
-						"</span> patients per practice</p>" +
+						"</span> patients per practice.</p>" +
 						"<p>"+(compareNIrate("GP.value.PRACLIST")).toLocaleString() +
 						 "<span style='color: #1460aa'> (NI " +  data.ni.data.GP.value.PRACLIST.toLocaleString() +" patients per practice) </span></p>"+
 						"<p><span class='text-big'>" + 
@@ -1094,7 +1095,9 @@ function compareNIrate (value) {
 						"</span> dental surgeries." +
 						"</span>  <span class='text-big'>" + 
 						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"%</span> of the population are registered with a dentist</p>",
+						"%</span> of the population are registered with a dentist. "+
+						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"%)</span></p>",
 				show: [ "lgd"]
 			},
 			box_6b: {
@@ -1102,10 +1105,12 @@ function compareNIrate (value) {
 				year: pullYear("DEN", data.place),
 				content: "<p><span class='text-big'>" +
 					(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-					"</span> dental surgeries" +
-					"</span> with an average of <span class='text-big'>" + 
-					(check("DEN_REG.value.Dental_Registrations")/check("DEN.value.GDSDSSurgeries")).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-					"</span> patients per surgery</p>",
+					"</span> dental surgeries." +
+						"</span>  <span class='text-big'>" + 
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"%</span> of the population are registered with a dentist. "+
+						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						"%)</span></p>",
 				show: ["dea"]
 			},
 			box_6c: {
@@ -1202,10 +1207,18 @@ function compareNIrate (value) {
 				content: '<span class="text-big">' + data.place.data.BS.value.UC.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.UC / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
 				compare_content: {
 					ni: "",
-					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
+					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
+					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
+					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 				
 			},
@@ -1216,10 +1229,18 @@ function compareNIrate (value) {
 				content: '<span class="text-big">' + data.place.data.BS.value.PIP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.PIP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
 				compare_content: {
 					ni: "",
-					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			
 			},
@@ -1230,10 +1251,18 @@ function compareNIrate (value) {
 				content: '<span class="text-big">' + data.place.data.BS.value.RP.toLocaleString() + '</span> claimants<br><span class="text-big">' + (data.place.data.BS.value.RP / data.place.data.MYETotal.value * 100).toFixed(1) + '%</span> of population',
 				compare_content: {
 					ni: "",
-					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>",
-					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI: <b>" + data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + (data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%</b> of population)</span>"
+					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
+					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
+					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
+					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			}	
 							
@@ -1297,44 +1326,7 @@ function compareNIrate (value) {
 				show: [ "lgd", "dea"]
 			},
 
-			// box_3a: {
-			// 	id: "teachers",
-			// 	year: pullYear("ClassSize", data.place),
-			// 	content: "<p><span class='text-big'>"  + 
-			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" ,
-			// 	show: ["ni"]
-			// },
-		
-			// box_3n: {
-			// 	id: "teachers",
-			// 	year: pullYear("ClassSize", data.place),
-			// 	content: "<p><span class='text-big'>"  + 
-			// 	         (check("ClassSize.value")).toLocaleString() +"</span> pupils per teacher" +
-			// 			 "<span style='color: #1460aa'> (NI " + data.ni.data.ClassSize.value.toLocaleString(undefined, {minimumFractionDigits: 1}) +") </span></p>",
-			// 	show: [ "lgd"]
-			// },
-
-			// box_3: {
-			// 	id: "SEN",
-			// 	year: pullYear("SEN", data.place),
-			// 	content: "<p>Non statemented</p>"+
-			// 			"<p> <span class='text-big'>" +
-			// 				(check("SEN.value.SENNonStatemented") + 
-			// 				check("Primary.value.SENNonStatemented") + 
-			// 				check("PostPrimary.value.SENNonStatemented")).toLocaleString() + 
-			// 			"</span> pupils (" +
-			// 			"<span>" + 
-			// 				((check("SEN.value.SENNonStatemented") + 
-			// 				check("Primary.value.SENNonStatemented") + 
-			// 				check("PostPrimary.value.SENNonStatemented"))
-			// 				/( check("Primary.value.All")+
-			// 				check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + 
-			// 			"</span>% of all pupils)"+
-			// 			"</p>" +
-			// 			"<p>Statemented</p><p><span class='text-big'>" + (check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement")).toLocaleString() + "</span> pupils ("+
-			// 			"<span>" + ((check("SEN.value.SENStatement") + check("Primary.value.SENStatement") + check("PostPrimary.value.SENStatement"))/( check("Primary.value.All")+check("PostPrimary.value.All"))*100).toLocaleString(undefined, {maximumFractionDigits: 1}) + "</span>% of all pupils)</p>",
-			// 	show: ["ni", "lgd", "dea"]
-			// },
+			
 
 			box_3a: {
 				id: "SEN",
@@ -1363,31 +1355,7 @@ function compareNIrate (value) {
 						show: ["lgd", "dea"]
 			},
 
-			// box_3a: {
-			// 	id: "SEN",
-			// 	year: pullYear("SEN", data.place),
-			// 	content: 
-			// 			"<p> <span class='text-big'>" +
-			// 				(check("SEN.value.SENNonStatemented") + 
-			// 				check("Primary.value.SENNonStatemented") + 
-			// 				check("PostPrimary.value.SENNonStatemented")+
-			// 				check("SEN.value.SENStatement") + 
-			// 				check("Primary.value.SENStatement") + 
-			// 				check("PostPrimary.value.SENStatement")).toLocaleString() + 
-			// 			"</span> pupils with some form of special educational need</p>" +
-			// 			"<p><span class='text-big'>" + 
-			// 				Number(((check("SEN.value.SENNonStatemented") + 
-			// 				check("Primary.value.SENNonStatemented") + 
-			// 				check("PostPrimary.value.SENNonStatemented")+
-			// 				check("SEN.value.SENStatement") + 
-			// 				check("Primary.value.SENStatement") + 
-			// 				check("PostPrimary.value.SENStatement"))
-			// 				/( check("Primary.value.All")+
-			// 				check("PostPrimary.value.All"))*100)).toFixed(1) + 
-			// 			"%</span> of all pupils"+
-			// 			"</p>", 
-			// 			show: ["ni", "lgd", "dea"]
-			// },
+			
 
 			box_4: {
 				id: "qualifications",
@@ -1400,18 +1368,21 @@ function compareNIrate (value) {
 			box_5a: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> ",
+				content: "<span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
+						 "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C.</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  , 
+				    	
 				show: ["ni"]
 			},
 			
 			box_5b: {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
-				content: "<p>Pupils who left school with 5 or more GCSEs (including equivalents) at grades A*-C</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
-						 "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" +
-						  (compareNIrate("Attainment.value")).toLocaleString() ,
+				content: "<span class='text-big'>"  + 
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C.</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> "+
+						 						  (compareNIrate("Attainment.value")).toLocaleString() +
+												  "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" ,
+
 				show: ["lgd"]
 			},
 							
@@ -1495,7 +1466,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span>  journeys made by walking, cycling and public transport" ,
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
 			show: ["ni"]
 					
 		},
@@ -1504,9 +1475,8 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> " + 
-					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span> journeys made</p>"+
-					 " by walking, cycling and public transport" ,						
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
+					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span></p>",						
 			show: ["lgd"]
 					
 		},
@@ -1571,7 +1541,7 @@ function compareNIrate (value) {
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
 				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population</p>"   
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population.</p>"   
 						 ,
 						
 				show: ["ni"]
@@ -1584,7 +1554,7 @@ function compareNIrate (value) {
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
 				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population"  + 
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population."  + 
 						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +")</span></p>"
 						 ,
 						
@@ -1600,13 +1570,44 @@ function compareNIrate (value) {
 					show: ["ni", "lgd", "dea"]
 								},
 
-			box_5: {
+			box_3: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
-				content: "<p>Residents in this area are most worried about <span class='text-bold' >" +
-				(check("crime.text"))+ "</span></p>",
+				content: "<p> <span class='text-big' >" +
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
 
-					show: ["ni", "lgd"]
+					show: ["ni"]
+			},
+
+			box_3a: {
+				id: "crimeworry",
+				year: pullYear("crimeworry", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+
+					show: [ "lgd"]
+			},
+
+
+			box_4: {
+				id: "crimeperception",
+				year: pullYear("crimeperception", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
+
+					show: ["ni"]
+			},
+
+			box_4a: {
+				id: "crimeperception",
+				year: pullYear("crimeperception", data.place),
+				content: "<p> <span class='text-big' >" +
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+
+
+					show: [ "lgd"]
 			},
 
 
@@ -1701,22 +1702,14 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 					"<span class='text-big'>"  + 
 				    	 (check("farms.value.F")).toLocaleString() +" </span> farms with "+
 						 "<span class='text-big'>"  + 
-				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers"+
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers."+
 						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
-				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments"  ,
+				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments."  ,
 
 						 show: ["ni", "lgd"]
 						},
 
-				// box_5: {
-				// id: "tourism",
-				// year: pullYear("tourism", data.place),
-				// content:  "<span class='text-big'>"  + 
-				//     	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> tourism jobs and " + 
-				//     	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> tourism accomodation establishments"  ,
-				// show: ["ni", "lgd"]
-				// 		},
 
 
 						box_7a: {

@@ -18,10 +18,10 @@ export const themes = {
 
 export const app_inputs = {
 //	search_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/places_dz_extra.csv',
-	search_data: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/places_dz_full_postcode.csv',
+	search_data: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/places_dz_full_postcode_JULY2024.csv',
 	//search_data: '/search_data/places_dz_full_postcode.csv',
 	//postcode_data: '/search_data/cpd_light_with_lat_long_2.csv',
-	postcode_data: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/cpd_light_with_lat_long_2.csv',
+	postcode_data: 'https://raw.githubusercontent.com/NISRA-Tech-Lab/nisra-geog-explorer/main/search_data/CPD_LIGHT_JULY_2024.csv',
 	// app_json_data: 'https://datavis.nisra.gov.uk/techlab/yalcbs/',
 //	 app_json_data: '/data_jsons_dea_20240408/',
 	//app_json_data: '/alternative_jsons/',
@@ -54,7 +54,7 @@ export const topics = {
 		{ category: "apprenticeship", label: 'No qualifications' },
 		{ category: "level_1_qualifications", label: 'Level 1' },
 		{ category: "level_2_qualifications", label: 'Level 2' },
-		{ category: "level_3_qualifications", label: 'Apprenticeship 3' },
+		{ category: "level_3_qualifications", label: 'Apprenticeship' },
 		{ category: "level_4_qualifications_and_above", label: 'Level 3' },
 		{ category: "no_qualifications", label: 'Level 4 and above ' },
 		{ category: "other_qualifications", label: 'Other' }
