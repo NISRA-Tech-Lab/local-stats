@@ -96,6 +96,37 @@
     }
 
 
+	function makeData_noyear(props) {
+      const sum = (a, b) => a + b;
+      let category = props[0];
+      let val = "perc";
+
+      let source = data.place.data[category][val];
+      let sourceNI = data.ni.data[category][val];
+
+      let keys = topics[category].map((d) => d.category);
+      let labels = topics[category].map((d) =>
+        d.label ? d.label : d.category,
+      );
+      let y_data = keys.map((key, i) => {
+        if (Array.isArray(key)) {
+          return {
+            x: labels[i],
+            y: key.map((k) => source[k]).reduce(sum, 0),
+            ni: key.map((k) => sourceNI[k]).reduce(sum, 0),
+          };
+        } else {
+          return {
+            x: labels[i],
+            y: source[key],
+            ni: sourceNI[key],
+          };
+        }
+      });
+
+      return y_data;
+    }
+
     
 
     function makeDataGroupSort(g_data, key) {
@@ -1453,34 +1484,66 @@ function compareNIrate (value) {
 		},	
 
 					
-
+		// box_1a: {
+		// 	id: "concern",
+		// 	year: pullYear("Env_concern", data.place),
+		// 	content: "StackedBarChart",				
+		// 				chart_data: data.place && makeData_noyear(["Env_concern"]),
+		// 				zKey: chart_compare_type,
+		// 				label: "NI",
+		// 				topic_prev_available: true	,
+		// 	show: ["ni", "lgd"]
+		// },
 						
-		box_2: {
-			id: "waste",
-			year: pullYear("Env_waste", data.place),
-			content:  "GroupChart",
-			chart_data: makeDataNICompare("Env_waste"),
-			show: ["ni", "lgd"]
-		},
+			box_2: {
+				id: "env_problem",
+				year: pullYear("Env_problem", data.place),
+				content: "<p>The 3 most important environment problems in Northern Ireland were: <span class='text-bold' 'text-big'>" + (check("env_problem.text"))+ "</span>.</p>",
+
+					show: ["ni"]
+			},
+			
+			box_2b: {
+				id: "env_problem",
+				year: pullYear("Env_problem", data.place),
+				content: "<p>The 3 most important environment problems in this area were: </p><p><span class='text-bold' >" + (check("env_problem.text"))+ "</span>.</p>"+
+				"<p><span style='color: #1460aa'>(NI: " + data.ni.data.env_problem.text+ ")</span>.</p>",
+
+					show: ["lgd"]
+			},
+
+			
 
 		box_3: {
 			id: "ghg",
 			year: pullYear("Env_ghg", data.place),
-			content:  "<span class='text-big'>"  + 
-					 (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e)",
+			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>",
 					
-			show: ["ni", "lgd"]
+			show: ["ni"]
 		},
 
-		box_4: {
-			id: "cars",
-			year: pullCensusYear("car_or_van"),
-			content: "GroupChart",
-			chart_data: makeDataNICompare("car_or_van")
+		box_3a: {
+			id: "ghg",
+			year: pullYear("Env_ghg", data.place),
+			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>"+
+					 "<span style='color: #1460aa'>(NI " + ((data.ni.data.Env_ghg.value.GHGALL/data.ni.data.Env_ghg.value.GHGALL_BASE-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) + "%) </span>" ,
 					
+			show: [ "lgd"]
 		},
+
+
+
+		// box_4: {
+		// 	id: "cars",
+		// 	year: pullCensusYear("car_or_van"),
+		// 	content: "GroupChart",
+		// 	chart_data: makeDataNICompare("car_or_van")
+					
+		// },
 		
-		box_5: {
+		box_4: {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
@@ -1489,7 +1552,7 @@ function compareNIrate (value) {
 					
 		},
 
-		box_5a: {
+		box_4a: {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
@@ -1499,6 +1562,14 @@ function compareNIrate (value) {
 					
 		},
 
+		box_5: {
+			id: "waste",
+			year: pullYear("Env_waste", data.place),
+			content:  "GroupChart",
+			chart_data: makeDataNICompare("Env_waste"),
+			show: ["ni", "lgd"]
+		},
+		
 		box_6: {
 			id: "renewable",
 			year: pullCensusYear("renewable_energy"),
@@ -1529,17 +1600,32 @@ function compareNIrate (value) {
 		}
 
 	}}
-	more = "<p>The <a href='https://www.daera-ni.gov.uk/landing-pages/statistics'>Department of Agriculture, Environment and Rural Affairs</a>
+	more = "<p>The <a href='https://www.daera-ni.gov.uk/landing-pages/statistics'>Department of Agriculture, Environment and Rural Affairs (DAERA)</a>
 				publishes statistics on the Environment from a range of sources, including 
 				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-greenhouse-gas-inventory'>greenhouse gas inventory</a>,
 				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-local-authority-collected-municipal-waste-management-statistics'>
 				local authority collected municipal waste management statistics</a>, 
-				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-environmental-statistics'>environmental statistics report</a>, 
-				<a href=' https://www.daera-ni.gov.uk/topics/water/bathing-water-quality'>bathing water quality</a>  and air pollution.  
+				<a href='https://www.daera-ni.gov.uk/articles/northern-ireland-environmental-statistics-report'>environmental statistics report</a>, 
+				<a href='https://www.daera-ni.gov.uk/topics/water/bathing-water-quality'>bathing water quality</a> and <a href = 'https://www.daera-ni.gov.uk/articles/air-pollution-northern-ireland'>air pollution</a>.  
+
+
+	
+
 				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> 
-				collected data on availability of cars and household renewable energy systems which can be
+				collected data on renewable energy systems which can be
 				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> 
-				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>
+				
+				
+				<p>Other resources provided by DAERA include a <a href='https://www.daera-ni.gov.uk/publications/lough-neagh-report-and-action-plan'>Lough Neagh Report and Action Plan</a>, 
+				a <a href='https://www.daera-ni.gov.uk/services/natural-environment-map-viewer'>Natural Environment Map Viewer</a>,
+				a <a href='https://www.daera-ni.gov.uk/services/marine-mapviewer'>Marine Mapviewer</a> and a 
+				<a href='https://outdoorrecni.maps.arcgis.com/apps/dashboards/4729f13c1f4a402d844def083dac887c'>GreenspaceNI Dashboard</a>.
+				You can also <a href='https://www.daera-ni.gov.uk/articles/download-digital-datasets'>Download Digital Datasets</a> and access the 
+				<a href='https://www.daera-ni.gov.uk/articles/wmu-spatial-datasets'>Water Management Unit Spatial Datasets</a>.  
+				The <a href='https://www.airqualityni.co.uk/'>Air quality information Northern Ireland</a> includes latest pollution levels, air pollution information and reports.</p>
+				
+				"
         
 /> 
 
