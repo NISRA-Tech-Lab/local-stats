@@ -1762,6 +1762,71 @@ df_env_perc <- rbind(df_env_perc, data)
 
 
 
+dataset_short <- "Env_problem"
+dataset_subject <- "82/PA"
+
+dataset_long <- "CHSENVIPROBLGD"
+latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
+  ##'{"code": "STATISTIC", "selection": {"filter": "item", "values": ["CONCERNENVI", "NOTCONCERNENVI"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long,
+  "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", dataset_long),
+  "last_updated" = format(substring(updated[which(matrices == dataset_long)], 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = data_portal$label[which(matrices == dataset_long)],
+  "note" = json_data$note
+)))
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value) %>%
+  mutate(problem_reason = case_when(statistic =='POLRIVER' ~ 'Pollution in rivers',
+                                    statistic =='POLBWB' ~ 'Pollution in bathing waters and beaches',
+                                    statistic =='TREXUS' ~ 'Traffic exhaust and urban smog',
+                                    statistic =='LOSSPA' ~ 'Loss of plants and animals in NI',
+                                    statistic =='OZLADE' ~ 'Ozone layer depletion',
+                                    statistic =='TRFODE' ~ 'Tropical forest destruction',
+                                    statistic =='CLICHA' ~ 'Climate change',
+                                    statistic =='LOSSTH' ~ 'Loss of trees and hedgerows in NI',
+                                    statistic =='FUMSMO' ~ 'Fumes and smoke from factories',
+                                    statistic =='TRACON' ~ 'Traffic congestion',
+                                    statistic =='PESFER' ~ 'Use of pesticides and fertilisers',
+                                    statistic =='ACIRAI' ~ 'Acid rain',
+                                    statistic =='WASLAN' ~ 'Waste send to landfill',
+                                    statistic =='ILDUWA' ~ 'Illegal dumping of waste',
+                                    statistic =='NOISE' ~ 'Noise',
+                                    statistic =='FRACK' ~ 'Fracking',
+                                    statistic =='LITTER' ~ 'Litter',
+                                    statistic =='RENORE' ~ 'Recyclable waste not being recycled',
+                                    statistic =='OTHER' ~ 'Other',
+                                    statistic =='NONE' ~ 'None of these',
+                                    TRUE ~ ""),
+            perc = VALUE ,
+         source = dataset_short) %>%
+
+    group_by(geog_code, source) %>% slice_max(VALUE, n=3) %>%
+  
+  summarise(reason = paste0(problem_reason, collapse = "; "))
+
+df_env_problems = data
+  
 
 dataset_short <- "Env_waste"
 dataset_subject <- "82/W"
@@ -2540,7 +2605,7 @@ df_dp_all_values <- unique(bind_rows(
 ))
 
 
-df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text)
+df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text, df_env_problems)
 
 df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, 
                                 df_school_destination_perc, df_env_perc, df_business_perc, 
