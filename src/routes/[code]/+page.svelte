@@ -968,7 +968,9 @@ function compareNIrate (value) {
 					box_1a: {
 						id: "popchange",
 						content: "Data is available for NI and Local Government Districts",
-						show: ["dea", "sdz", "dz"]
+						show: ["dea", "sdz", "dz"],
+						i_button: false,
+						title: "<span style='font-size: 0.88em'>Population change</span>"
 					},
 					box_2: {
 						id: "broadage",
@@ -1068,10 +1070,10 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "wellbeing",
-				title: "not available",
-				content: "Data is available for NI and Local Government Districts" ,
-
-				show: [ "dea", "sdz", "dz"]
+				content: "Data on happiness, life satisfaction and loneliness is available for NI and Local Government Districts" ,
+				show: [ "dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Personal wellbeing</span>"
 			},
 			box_3a: {
 				id: "lifeexpectancy",
@@ -1100,7 +1102,9 @@ function compareNIrate (value) {
 			box_3c: {
 				id: "lifeexpectancy",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: [ "sdz", "dz"]
+				show: [ "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Life expectancy at birth</span>"
 			},
 
 			box_4: {
@@ -1123,7 +1127,9 @@ function compareNIrate (value) {
 			box_5a: {
 				id: "hospitalactivity",
 				content: "Data is available for NI and District Electoral Areas",
-					show: ["lgd", "sdz", "dz"]
+					show: ["lgd", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Annual admissions to hospital</span>"
 			},
 
 			box_6: {
@@ -1180,7 +1186,9 @@ function compareNIrate (value) {
 			box_6c: {
 				id: "primarycare",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: ["sdz","dz"]
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Primary care providers</span>"
 			}
 
 		}}
@@ -1225,7 +1233,9 @@ function compareNIrate (value) {
 			box_1b: {
 				id: "employmentrates",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Work status of adults</span>"
 			},	
 
 			box_2a: {
@@ -1255,7 +1265,9 @@ function compareNIrate (value) {
 			box_2c: {
 				id: "employed",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Work and wages</span>"
 			},
 
 			box_3b: {
@@ -1269,7 +1281,9 @@ function compareNIrate (value) {
 			box_3c: {
 				id: "bres",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Type of work</span>"
 			},
 
 			box_4: {
@@ -1383,7 +1397,9 @@ function compareNIrate (value) {
 			box_1b: {
 				id: "enrollments",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: ["sdz", "dz"]
+				show: ["sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>People in education</span>"
 			},
 
 			box_2a: {
@@ -1407,7 +1423,9 @@ function compareNIrate (value) {
 			box_2c: {
 				id: "fsme",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: [ "sdz", "dz"]
+				show: [ "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Pupils entitled to free school meals</span>"
 			},
 			
 
@@ -1441,7 +1459,9 @@ function compareNIrate (value) {
 			box_3c: {
 				id: "SEN",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: ["sdz","dz"]
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Special educational needs (SEN)</span>"
 			},
 
 			box_4: {
@@ -1476,7 +1496,9 @@ function compareNIrate (value) {
 			box_5c: {
 				id: "attainment",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>GCSEs for school leavers</span>"
 			},
 					
 			box_6: {
@@ -1490,7 +1512,9 @@ function compareNIrate (value) {
 			box_6b: {
 				id: "destination",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: ["sdz","dz"]
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Next steps for school leavers</span>"
 			},
 
 		}}
@@ -1529,7 +1553,15 @@ function compareNIrate (value) {
 		// 				topic_prev_available: true	,
 		// 	show: ["ni", "lgd"]
 		// },
-						
+
+			box_1b: {
+				id: "concern",
+				content: "Data is available for NI and Local Government Districts",
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Concern about the environment</span>"
+			},
+		
 			box_2: {
 				id: "env_problem",
 				year: pullYear("Env_problem", data.place),
@@ -1547,7 +1579,14 @@ function compareNIrate (value) {
 					show: ["lgd"]
 			},
 
-			
+			box_2c: {
+				id: "env_problem",
+				content: "Data is available for NI and Local Government Districts",
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Environmental problems</span>"
+			},
+		
 
 		box_3: {
 			id: "ghg",
@@ -1569,7 +1608,14 @@ function compareNIrate (value) {
 		},
 
 
+		box_3c: {
+				id: "ghg",
+				content: "Data is available for NI and Local Government Districts",
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Greenhouse gas</span>"
 
+			},
 		// box_4: {
 		// 	id: "cars",
 		// 	year: pullCensusYear("car_or_van"),
@@ -1597,6 +1643,15 @@ function compareNIrate (value) {
 					
 		},
 
+		box_4b: {
+				id: "active",
+				content: "Data is available for NI and Local Government Districts",
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Active travel</span>"
+
+			},
+
 		box_5: {
 			id: "waste",
 			year: pullYear("Env_waste", data.place),
@@ -1605,6 +1660,15 @@ function compareNIrate (value) {
 			show: ["ni", "lgd"]
 		},
 		
+		box_5a: {
+			id: "waste",
+			content: "Data is available for NI and Local Government Districts",
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Household waste</span>"
+
+		},
+
 		box_6: {
 			id: "renewable",
 			year: pullCensusYear("renewable_energy"),
@@ -1620,19 +1684,19 @@ function compareNIrate (value) {
 
 		},
 
-		box_7a: {
-			id: "empty",
-			i_button: false,
-			content: "",
-			show: ["dea","sdz","dz"]
-		},
+		// box_7a: {
+		// 	id: "empty",
+		// 	i_button: false,
+		// 	content: "",
+		// 	show: ["dea","sdz","dz"]
+		// },
 				
-		box_7b: {
-			id: "empty",
-			i_button: false,
-			content: "",
-			show: ["dea","sdz","dz"]
-		}
+		// box_7b: {
+		// 	id: "empty",
+		// 	i_button: false,
+		// 	content: "",
+		// 	show: ["dea","sdz","dz"]
+		// }
 
 	}}
 	more = "<p>The <a href='https://www.daera-ni.gov.uk/landing-pages/statistics'>Department of Agriculture, Environment and Rural Affairs (DAERA)</a>
@@ -1652,18 +1716,20 @@ function compareNIrate (value) {
 				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>
 				
 				
-				<p>Other resources provided by DAERA include a <a href='https://www.daera-ni.gov.uk/publications/lough-neagh-report-and-action-plan'>Lough Neagh Report and Action Plan</a>, 
-				a <a href='https://www.daera-ni.gov.uk/services/natural-environment-map-viewer'>Natural Environment Map Viewer</a>,
-				a <a href='https://www.daera-ni.gov.uk/services/marine-mapviewer'>Marine Mapviewer</a> and a 
-				<a href='https://outdoorrecni.maps.arcgis.com/apps/dashboards/4729f13c1f4a402d844def083dac887c'>GreenspaceNI Dashboard</a>.
-				You can also <a href='https://www.daera-ni.gov.uk/articles/download-digital-datasets'>Download Digital Datasets</a> and access the 
-				<a href='https://www.daera-ni.gov.uk/articles/wmu-spatial-datasets'>Water Management Unit Spatial Datasets</a>.  
-				The <a href='https://www.airqualityni.co.uk/'>Air quality information Northern Ireland</a> includes latest pollution levels, air pollution information and reports.</p>
-				
+			
 				"
         
 /> 
 
+<!-- 
+<p>Other resources provided by DAERA include a <a href='https://www.daera-ni.gov.uk/publications/lough-neagh-report-and-action-plan'>Lough Neagh Report and Action Plan</a>, 
+	a <a href='https://www.daera-ni.gov.uk/services/natural-environment-map-viewer'>Natural Environment Map Viewer</a>,
+	a <a href='https://www.daera-ni.gov.uk/services/marine-mapviewer'>Marine Mapviewer</a> and a 
+	<a href='https://outdoorrecni.maps.arcgis.com/apps/dashboards/4729f13c1f4a402d844def083dac887c'>GreenspaceNI Dashboard</a>.
+	You can also <a href='https://www.daera-ni.gov.uk/articles/download-digital-datasets'>Download Digital Datasets</a> and access the 
+	<a href='https://www.daera-ni.gov.uk/articles/wmu-spatial-datasets'>Water Management Unit Spatial Datasets</a>.  
+	The <a href='https://www.airqualityni.co.uk/'>Air quality information Northern Ireland</a> includes latest pollution levels, air pollution information and reports.</p>
+	 -->
 
 	<Accordion
 		id = "crime"
@@ -1704,7 +1770,9 @@ function compareNIrate (value) {
 			box_1b: {
 				id: "crime",
 				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-				show: ["sdz","dz"]
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Police recorded crimes</span>"
 				
 			},		
 
@@ -1719,7 +1787,9 @@ function compareNIrate (value) {
 			box_2a: {
 					id: "crimetype",
 					content: "Data is available for NI, Local Government Districts and District Electoral Areas",
-					show: ["sdz","dz"]
+					show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Types of crime</span>"
 								},
 
 			box_3: {
@@ -1744,7 +1814,9 @@ function compareNIrate (value) {
 			box_3b: {
 				id: "crimeworry",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Worry about crime</span>"
 			},
 
 
@@ -1771,7 +1843,9 @@ function compareNIrate (value) {
 			box_4b: {
 				id: "crimeperception",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Views on crime</span>"
 			}
 
 			
@@ -1817,7 +1891,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_1a: {
 				id: "no_bus",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Business and trade</span>"
 						},
 						
 				box_2: {
@@ -1831,7 +1907,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_2a: {
 				id: "niets_sales",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Sales partners</span>"
 								},
 
 
@@ -1846,7 +1924,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_3a: {
 				id: "niets_purch",
 				content: "Data is available for NI and Local Government Districts",
-						show: ["dea", "sdz", "dz"]
+						show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Purchases partners</span>"
 
 								},
 
@@ -1861,7 +1941,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_4a: {
 					id: "type_bus",
 					content: "Data is available for NI and Local Government Districts",
-						show: ["dea", "sdz", "dz"]
+						show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Type of businesses</span>"
 
 								},
 
@@ -1876,7 +1958,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_5a: {
 				id: "size_bus",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Employees in businesses</span>"
 								},
 
 				box_6: {
@@ -1897,7 +1981,9 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				box_6a: {
 				id: "sector",
 				content: "Data is available for NI and Local Government Districts",
-				show: ["dea", "sdz", "dz"]
+				show: ["dea", "sdz", "dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Business sectors</span>"
 						},
 
 			
