@@ -73,6 +73,7 @@ let w, cols;
                             topic_prev_available = {boxes[box_list[i]].topic_prev_available}
                             chart_compare_type = {chart_compare_type}
                             i_button = {boxes[box_list[i]].i_button}
+                            heading = {boxes[box_list[i]].title}
                             compare_content = {boxes[box_list[i]].compare_content}
                         />
 
