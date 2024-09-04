@@ -1498,7 +1498,7 @@ function compareNIrate (value) {
 			box_2: {
 				id: "env_problem",
 				year: pullYear("Env_problem", data.place),
-				content: "<p>The 3 most important environment problems in Northern Ireland were: <span class='text-bold' 'text-big'>" + (check("env_problem.text"))+ "</span>.</p>",
+				content: "<p>The most important environment problems in Northern Ireland were: <span class='text-bold' 'text-big'>" + (check("env_problem.text"))+ "</span>.</p>",
 
 					show: ["ni"]
 			},
