@@ -92,7 +92,11 @@ let i_button_info = {
 		 		  
 			},
 
-		
+			env_problem: {
+			title: "Environmental problems",
+			info: " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_problem[0].dataset_url") + "'>" + checkMeta("Env_problem[0].title") + "</a></p>" +
+			"<p class = 'pibutton'>Last updated: " + checkMeta("Env_problem[0].last_updated") + "</p> "+
+			 "<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_problem[0].email") + "'>Email for more information</a> </p>"  },
 
 		
 			renewable: {

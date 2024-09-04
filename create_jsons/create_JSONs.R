@@ -168,6 +168,14 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       pull()
   }    
 
+  if (substr(geog_code_loop, 1, 3) == "N09" ) {
+    
+    df_json_template$data$env_problem$text <- df_dp_all_text %>%
+      subset(geog_code == geog_code_loop & source == "Env_problem") %>%
+      select(reason) %>%
+      pull()
+  }    
+  
   
   if (substr(geog_code_loop, 1, 3) == "N10") {
     df_json_template$dea_location_description <- df_dea_description %>%
@@ -195,6 +203,10 @@ for (i in 1:nrow(df_geog_codes_for_loop)) {
       select(reason) %>%
       pull()
   
+    df_json_template$data$env_problem$text <- df_dp_all_text %>%
+      subset(geog_code == geog_code_loop & source == "Env_problem") %>%
+      select(reason) %>%
+      pull()
     
     }
   source("create_jsons/census_data_loop.R")

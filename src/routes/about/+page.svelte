@@ -165,7 +165,7 @@
 		<p>This is a prototype application and we are very keen to get feedback on how it can be improved.</p>
 		<p>We welcome feedback from users through our short <a href="https://dttselfserve.nidirect.gov.uk/NISRA/RateIt#/Northern_Ireland_Local_Statistics_Explorer">survey</a>.</p>
 		<p>Contact details for each of the datasets are available in the &lsquo;i&rsquo; button.</p>
-		<p>Contact <a href="mailto:techlab@nisra.gov.uk">techlab@nisra.gov.uk</a> for further infrmation.</p>
+		<p>Contact <a href="mailto:techlab@nisra.gov.uk">techlab@nisra.gov.uk</a> for further information.</p>
 
 	</div>
 

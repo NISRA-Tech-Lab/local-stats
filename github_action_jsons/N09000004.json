@@ -68,6 +68,9 @@
         "person": 49.5769
       }
     },
+    "env_problem": {
+      "text": "Climate change; Pollution in rivers; Illegal dumping of waste"
+    },
     "population": {
       "perc": {
         "2011": {
@@ -408,7 +411,8 @@
         "CO2": 1195.2968,
         "CH4": 674.3785,
         "N2O": 181.579,
-        "GHGALL": 2051.2543
+        "GHGALL": 2051.2543,
+        "GHGALL_BASE": 2442.7722
       }
     },
     "Env_active": {
@@ -871,6 +875,17 @@
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Continuous Household Survey: Concern about the environment",
         "year": "2023/24"
+      }
+    ],
+    "Env_problem": [
+      {
+        "table_code": "CHSENVIPROBLGD",
+        "dataset_url": "https://data.nisra.gov.uk/table/CHSENVIPROBLGD",
+        "geog_level": "lgd",
+        "last_updated": "2024-02-23",
+        "email": "env.stats@daera-ni.gov.uk",
+        "title": "Continuous Household Survey: Environmental problems considered most important",
+        "year": "2019/20"
       }
     ],
     "Env_waste": [
