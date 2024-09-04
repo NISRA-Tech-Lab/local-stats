@@ -1818,10 +1818,12 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
                                     statistic =='OTHER' ~ 'Other',
                                     statistic =='NONE' ~ 'None of these',
                                     TRUE ~ ""),
+
          perc = VALUE ,
          source = dataset_short) %>%
   
   group_by(geog_code, source) %>% slice_max(VALUE, n=3) %>%
+
   
   summarise(reason = paste0(problem_reason, collapse = "; "))
 
