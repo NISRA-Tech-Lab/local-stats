@@ -51,12 +51,12 @@ export const topics = {
 		{ category: 'a65plus', label: '65+' }
 	],
 	highest_level_of_qualifications : [
-		{ category: "apprenticeship", label: 'No qualifications' },
+		{ category: "no_qualifications", label: 'No qualifications' },
 		{ category: "level_1_qualifications", label: 'Level 1' },
 		{ category: "level_2_qualifications", label: 'Level 2' },
-		{ category: "level_3_qualifications", label: 'Apprenticeship' },
-		{ category: "level_4_qualifications_and_above", label: 'Level 3' },
-		{ category: "no_qualifications", label: 'Level 4 and above ' },
+		{ category: "apprenticeship", label: 'Apprenticeship' },
+		{ category: "level_3_qualifications", label: 'Level 3' },
+		{ category: "level_4_qualifications_and_above", label: 'Level 4 and above ' },
 		{ category: "other_qualifications", label: 'Other' }
 		  ],
 
