@@ -767,7 +767,7 @@ function compareNIrate (value) {
 				content = {{
 							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
-							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
+							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '" + base + "/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
 							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
 						  }}
@@ -1573,7 +1573,7 @@ function compareNIrate (value) {
 			box_2b: {
 				id: "env_problem",
 				year: pullYear("Env_problem", data.place),
-				content: "<p>The 3 most important environment problems in this area were: </p><p><span class='text-bold' >" + (check("env_problem.text"))+ "</span>.</p>"+
+				content: "<p>The most important environment problems in this area were: </p><p><span class='text-bold' >" + (check("env_problem.text"))+ "</span>.</p>"+
 				"<p><span style='color: #1460aa'>(NI: " + data.ni.data.env_problem.text+ ")</span>.</p>",
 
 					show: ["lgd"]
