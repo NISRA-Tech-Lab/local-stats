@@ -36,8 +36,12 @@
 
 		<h2>How to Use:</h2>
 
-		<p>Explore by Topic: Browse through various categories such as population, employment, housing, and more to discover relevant statistics and trends.
-		Navigate by Geography: Drill down to specific geographical areas, including local councils, electoral wards, and neighborhoods, to explore statistics tailored to your area of interest.</p>
+		<p><ul>  
+			<li>Explore by Topic: Browse through various categories such as population, employment, 
+				housing, and more to discover relevant statistics and trends.</li>
+			<li>Navigate by Geography: Drill down to specific geographical areas, including local councils, electoral wards, 
+			and neighborhoods, to explore statistics tailored to your area of interest.</li>
+		</ul>
 
 		
 		<h2>Sources of data</h2>
@@ -152,11 +156,11 @@
 
 	
 		<h2>Timeliness</h2>
-		<p>This was most recently updated on XXXX to update the data and content.</p>
+		<p>This web application is refreshed daily with updated data from the NISRA data portal.</p>
 
 		<h2>Versions</h2>
-		<p>This app was originally released on xx</p>
-		<p>In XXXX 2024, further data was added on XXXX</p>
+		<p>This app was originally released in Octover 2024.</p>
+		<!-- <p>In XXXX 2024, further data was added on XXXX</p> -->
 		
 		<h2>About this app</h2>
 		<p>This web application is based on and inspired by the&nbsp;<a href="https://github.com/ONSvisual">ONS Digital Content team prototypes</a>. It has been modified by NISRA and released as a prototype to explore statistical data for Northern Ireland.</p>

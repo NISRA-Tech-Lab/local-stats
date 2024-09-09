@@ -78,7 +78,7 @@
 
 					if (!found) {
 						resultTable.innerHTML =
-							"Postcode not found XX.";
+							"Postcode not found.";
 					} else {
 						resultTable.innerHTML =
 							pHTML +
