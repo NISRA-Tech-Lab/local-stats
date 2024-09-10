@@ -1,4 +1,4 @@
-# nisra-geog-explorer
+# NISRA Local Stats Explorer
 An explorer for NISRA's key statistics
 
 This is a development repo. Final releases will be via a public repo.
@@ -11,7 +11,7 @@ Run `npm run build` to compile the app and create a build folder
 
 Run `npm run preview` to try compiling the app from the build folder. Some paths can be messed up in preview but provided they work ok in dev it should be fine. The main thing to check is the structure and functionality of the app
 
-If happy with the preview then run `npm run deploy` to push your build folder to Github Pages. A message will be posted to the console to confirm successful publishing. After a short period of time, the new Deployment should appear in the Deployments page of your repo on Github (https://github.com/NISRA-Tech-Lab/nisra-geog-explorer/deployments). The code pushed to deployments is held in a branch of the repo named gh-pages.
+If happy with the preview then run `npm run deploy` to push your build folder to Github Pages. A message will be posted to the console to confirm successful publishing. After a short period of time, the new Deployment should appear in the Deployments page of your repo on Github (https://github.com/NISRA-Tech-Lab/local-stats-dev/deployments). The code pushed to deployments is held in a branch of the repo named gh-pages.
 ## Instructions for changing prerender of app
 
 The current setup of the app is to not prerender each of the `[code]/+page.svelte` files to html. This can be changed to prerender by changing code in the following places:

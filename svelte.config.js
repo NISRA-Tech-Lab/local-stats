@@ -18,10 +18,10 @@ const config = {
 		// 		entries: ["*"]
 		// },
 		paths: {
-				assets: production ? 'https://NISRA-Tech-Lab.github.io/nisra-geog-explorer' : '',
+				assets: production ? 'https://NISRA-Tech-Lab.github.io/local-stats-dev' : '',
 				// to allow a prerender app to be built, the below two arguments need to be swapped
-				// base: production ? '' : '/nisra-geog-explorer'
-				base: production ? '/nisra-geog-explorer' : ''
+				// base: production ? '' : '/local-stats-dev'
+				base: production ? '/local-stats-dev' : ''
 		}
 	}
 };
