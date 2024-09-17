@@ -422,14 +422,14 @@ let i_button_info = {
 					
 					},
 
-		niets_sales: {title: "Sales partners",
+		niets_sales: {title: "Places businesses sell to (sales partners)",
 				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   
 					
 					},
 
-					niets_purch: {title: "Purchases partners",
+					niets_purch: {title: "Places businesses buy from (purchases partners)",
 				info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("niets_sales[0].dataset_url") + "'>" + checkMeta("niets_sales[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("niets_sales[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("niets_sales[0].email") + "'>Email for more information</a> </p>"   

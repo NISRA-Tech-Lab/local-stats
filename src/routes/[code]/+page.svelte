@@ -566,6 +566,42 @@ function compareNIrate (value) {
 
 	}
 
+	function parentlinks (place, data_avail) {
+
+
+		// data_avail - can be ni and lgd, ni and dea or ni, lgd and dea
+
+		if (place.type == "ni") {
+			return "";
+		} else if (place.type == "dea" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>";
+		} else if (place.type == "sdz" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} else if (place.type == "lgd" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"
+		} else if (place.type == "sdz" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} else if (place.type == "sdz" & data_avail =="ni, lgd, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>, "+
+			"<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, lgd, dea") {
+			return "<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>, "+
+				"<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+				" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} 
+	
+}
+
 	function compareDensity (place) {
 		
 		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
@@ -609,7 +645,7 @@ function compareNIrate (value) {
 	{#if data.place && data.ni}
 		<div class="grid mtl">
 			<div>
-				<span class="text-small">
+				<p><span>
 					<a href="{base}/" data-sveltekit-noscroll data-sveltekit-keepfocus>Home</a
 					>{@html " &gt; "}
 					{#if data.place.type != "ni"}
@@ -620,51 +656,9 @@ function compareNIrate (value) {
 						{/each}
 
 					{/if}
-				</span>
+				</span></p>
 				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name}</span>
-				
-				
-				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
 			
-
-					<!-- {#if data.place.type == "ni"}
-						<button
-							class="btn"
-							class:btn-active={!comp_2011}
-							on:click={() => (comp_none = true)}
-							on:click={() => (comp_2011 = false)}
-							on:click={() => (comp_ni = false)}
-							>No comparison</button
-						>
-					{:else}
-						<button
-							class="btn"
-							class:btn-active={comp_none}
-							on:click={() => (comp_none = true)}
-							on:click={() => (comp_2011 = false)}
-							on:click={() => (comp_ni = false)}
-							>No comparison</button
-						>
-					{/if} -->
-					<!-- {#if data.place.type != "ni"}
-					Click for: <button
-							class="btn"
-							class:btn-active={comp_ni & !comp_none & !comp_2011}
-							on:click={() => (comp_ni = true)}
-							on:click={() => (comp_none = false)}
-							on:click={() => (comp_2011 = false)}>NI compare</button
-						>
-					{/if} -->
-
-						<!-- <button
-							class="btn"
-							class:btn-active={comp_2011 & !comp_none & !comp_ni}
-							on:click={() => (comp_2011 = true)}
-							on:click={() => (comp_none = false)}
-							on:click={() => (comp_ni = false)}
-							>Same area - previous</button
-						> -->
-				<!-- </div>  -->
 			</div>
 
 			<div>
@@ -765,7 +759,7 @@ function compareNIrate (value) {
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
+							ni: "Northern Ireland has 11 Councils or Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '" + base + "/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
@@ -783,7 +777,7 @@ function compareNIrate (value) {
 				compare_content = {{
 					ni: "",
 					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts",
+						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Councils",
 					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population',
 					sdz: "Data not available for area comparison",
 					dz: " Data not available for area comparison"
@@ -967,7 +961,7 @@ function compareNIrate (value) {
 					},
 					box_1a: {
 						id: "popchange",
-						content: "Data is available for NI and Local Government Districts",
+					content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 						i_button: false,
 						title: "<span style='font-size: 0.88em'>Population change</span>"
@@ -1070,7 +1064,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "wellbeing",
-				content: "Data on happiness, life satisfaction and loneliness is available for NI and Local Government Districts" ,
+				content: "Data on happiness, life satisfaction and loneliness is available for " + parentlinks(data.place,"ni, lgd"),
 				show: [ "dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Personal wellbeing</span>"
@@ -1101,7 +1095,7 @@ function compareNIrate (value) {
 			},
 			box_3c: {
 				id: "lifeexpectancy",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: [ "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Life expectancy at birth</span>"
@@ -1126,7 +1120,7 @@ function compareNIrate (value) {
 
 			box_5a: {
 				id: "hospitalactivity",
-				content: "Data is available for NI and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, dea") + " and District Electoral Areas.",
 					show: ["lgd", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Annual admissions to hospital</span>"
@@ -1185,7 +1179,7 @@ function compareNIrate (value) {
 
 			box_6c: {
 				id: "primarycare",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Primary care providers</span>"
@@ -1232,7 +1226,7 @@ function compareNIrate (value) {
 			},
 			box_1b: {
 				id: "employmentrates",
-				content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Work status of adults</span>"
@@ -1264,7 +1258,7 @@ function compareNIrate (value) {
 			
 			box_2c: {
 				id: "employed",
-				content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Work and wages</span>"
@@ -1280,7 +1274,7 @@ function compareNIrate (value) {
 				
 			box_3c: {
 				id: "bres",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Type of work</span>"
@@ -1396,7 +1390,7 @@ function compareNIrate (value) {
 			
 			box_1b: {
 				id: "enrollments",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>People in education</span>"
@@ -1422,7 +1416,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "fsme",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: [ "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Pupils entitled to free school meals</span>"
@@ -1458,7 +1452,7 @@ function compareNIrate (value) {
 
 			box_3c: {
 				id: "SEN",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Special educational needs (SEN)</span>"
@@ -1495,7 +1489,7 @@ function compareNIrate (value) {
 							
 			box_5c: {
 				id: "attainment",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>GCSEs for school leavers</span>"
@@ -1511,7 +1505,7 @@ function compareNIrate (value) {
 
 			box_6b: {
 				id: "destination",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Next steps for school leavers</span>"
@@ -1556,7 +1550,7 @@ function compareNIrate (value) {
 
 			box_1b: {
 				id: "concern",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Concern about the environment</span>"
@@ -1581,7 +1575,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "env_problem",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Environmental problems</span>"
@@ -1610,7 +1604,7 @@ function compareNIrate (value) {
 
 		box_3c: {
 				id: "ghg",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Greenhouse gas</span>"
@@ -1645,7 +1639,7 @@ function compareNIrate (value) {
 
 		box_4b: {
 				id: "active",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Active travel</span>"
@@ -1662,7 +1656,7 @@ function compareNIrate (value) {
 		
 		box_5a: {
 			id: "waste",
-			content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for "+ parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Household waste</span>"
@@ -1769,7 +1763,7 @@ function compareNIrate (value) {
 
 			box_1b: {
 				id: "crime",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Police recorded crimes</span>"
@@ -1786,7 +1780,7 @@ function compareNIrate (value) {
 
 			box_2a: {
 					id: "crimetype",
-					content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+					content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 					show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Types of crime</span>"
@@ -1813,7 +1807,7 @@ function compareNIrate (value) {
 
 			box_3b: {
 				id: "crimeworry",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Worry about crime</span>"
@@ -1842,7 +1836,7 @@ function compareNIrate (value) {
 
 			box_4b: {
 				id: "crimeperception",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Views on crime</span>"
@@ -1874,7 +1868,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		img = "nisra-taxonomy-icon-business-energy.png"
 		heading = "Business, economy and trade"
 		place = {data.place}
-		sub_heading = {moreData("Business sectors", data.place)}
+		sub_heading = {moreData("Business, economy and trade", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1891,7 +1885,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_1a: {
 				id: "no_bus",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Business and trade</span>"
@@ -1907,10 +1901,10 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_2a: {
 				id: "niets_sales",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Sales partners</span>"
+				title: "<span style='font-size: 0.88em'>Places businesses sell to (sales partners)</span>"
 								},
 
 
@@ -1924,10 +1918,10 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_3a: {
 				id: "niets_purch",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Purchases partners</span>"
+				title: "<span style='font-size: 0.88em'>Places businesses buy from (purchases partners)</span>"
 
 								},
 
@@ -1941,7 +1935,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_4a: {
 					id: "type_bus",
-					content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Type of businesses</span>"
@@ -1958,7 +1952,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_5a: {
 				id: "size_bus",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Employees in businesses</span>"
@@ -1974,14 +1968,14 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers."+
 						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
-				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments."  ,
+				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments."  ,
 
 						 show: ["ni", "lgd"]
 						},
 
 				box_6a: {
 				id: "sector",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Business sectors</span>"
