@@ -666,7 +666,7 @@ function compareNIrate (value) {
 					style="width: 350px; padding-top: 5px;"
 					class:float-right={cols > 1}
 				>
-					<b>Search for your area:</b>
+					<p>Search for your area:</p>
 					<Select
 						search_data = {data.search_data}
 						group="typestr"
@@ -1287,16 +1287,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 				
@@ -1309,16 +1305,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			
@@ -1331,16 +1323,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			}	
@@ -1365,7 +1353,7 @@ function compareNIrate (value) {
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education and skills"
 		place = {data.place}
-		sub_heading =   {moreData("Schools, colleges and universities", data.place)}
+		sub_heading =   {moreData("Education and skills", data.place)}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1730,7 +1718,7 @@ function compareNIrate (value) {
 		img = "nisra-taxonomy-icon-crime-justice.png"
 		heading = "Crime and justice"
 		place = {data.place}
-		sub_heading = {moreData("Crime and Court Activity", data.place)}
+		sub_heading = {moreData("Crime and justice", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -2097,7 +2085,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		margin-top: 10px;
 	}
 	.mtl {
-		margin-top: 55px;
+		margin-top: 25px;
 	}
 	.mbs {
 		margin-bottom: 10px;

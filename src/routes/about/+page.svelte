@@ -5,12 +5,10 @@
   </script>
 
 
-<nav>
-	<a href='{base}/'>Home</a>
-</nav>
 
 
 <Section column="wide">
+	<a  href='{base}/'>Home</a>
 
 	<div class="row">
 
@@ -19,7 +17,7 @@
 
 
 		<h2>What is the app?</h2>
-		<p>Welcome to NISRA's Northern Ireland Local Statistics Explorer: an high level overview of Northern Ireland's statistical information</p>
+		<p>Welcome to NISRA's Northern Ireland Local Statistics Explorer: a high level overview of Northern Ireland's statistical information</p>
 
 		<p>Explore the rich collection of statistical information published by the Northern Ireland Statistics and Research Agency (NISRA) with our 
 			interactive web page, the NISRA Local Statistics Explorer. 
