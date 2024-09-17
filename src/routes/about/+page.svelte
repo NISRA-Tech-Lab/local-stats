@@ -78,47 +78,37 @@
 		<p>There are 850 Super Data Zones (SDZ2021) across Northern Ireland and the 3,780 Data Zones (DZ2021) nest within this geography. These two geographies nest within the 80 District Electoral Areas (DEA2014) and 11 Local Government Districts (LGD2014).</p>
 		<p>There is more information in <a href="https://www.nisra.gov.uk/publications/census-2021-output-geography-information-papers">Census 2021 output geography information papers</a></p>	
 		<p>  </p>
-		<table width="463" border="1">
+		<table>
+			<thead>
+			  <tr>
+				<th>Geography Level</th>
+				<th>Count</th>
+			  </tr>
+			</thead>
 			<tbody>
-			<tr>
-			<td colspan="2" width="463">
-			<p>Northern Ireland</p>
-			</td>
-			</tr>
-			<tr>
-			<td width="340">
-			<p>Local Government District (LGD2014)</p>
-			</td>
-			<td width="123">
-			<p>11</p>
-			</td>
-			</tr>
-			<tr>
-			<td width="340">
-			<p>District Electoral Area (DEA2021)</p>
-			</td>
-			<td width="123">
-			<p>80</p>
-			</td>
-			</tr>
-			<tr>
-			<td width="340">
-			<p>Super Data Zone (SDZ2021)</p>
-			</td>
-			<td width="123">
-			<p>850</p>
-			</td>
-			</tr>
-			<tr>
-			<td width="340">
-			<p>Data Zone (DZ2021)</p>
-			</td>
-			<td width="123">
-			<p>3780</p>
-			</td>
-			</tr>
+			  <tr>
+				<td>Northern Ireland</td>
+				<td>—</td>
+			  </tr>
+			  <tr>
+				<td>Local Government District (LGD2014)</td>
+				<td>11</td>
+			  </tr>
+			  <tr>
+				<td>District Electoral Area (DEA2021)</td>
+				<td>80</td>
+			  </tr>
+			  <tr>
+				<td>Super Data Zone (SDZ2021)</td>
+				<td>850</td>
+			  </tr>
+			  <tr>
+				<td>Data Zone (DZ2021)</td>
+				<td>3,780</td>
+			  </tr>
 			</tbody>
-		</table>
+		  </table>
+		  
 		<p>  </p>
 
 		<p>A summary of other NISRA Statistical Geographies is available in the <a href="https://www.nisra.gov.uk/sites/nisra.gov.uk/files/publications/NISRA%20Geography%20Fact%20Sheet%20-%20March%202019.pdf" >NISRA Geography FactSheet</a></p>
@@ -173,5 +163,21 @@
 
 	</div>
 
+	<style>
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		  margin: 20px 0;
+		}
+		th, td {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		  text-align: left;
+		}
+		th {
+		  background-color: #f2f2f2;
+		}
+	  </style>
 
+	  
 </Section>

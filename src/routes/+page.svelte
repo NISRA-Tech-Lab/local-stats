@@ -43,7 +43,7 @@
         <span style="font-size: 1.5em; font-weight: bold;color: #3878c5; line-height: 1em;">Explore key statistics for any area in Northern Ireland</span>
 
 
-        <h4></h4>
+       
         <Select
         search_data = {data.search_data}
         group="typestr"
@@ -51,25 +51,22 @@
         on:select={menuSelect}
         />
 
-        <!-- <h3>Select an Area</h3><br>
-        <ul>
-        <li><a href="{base}/N92000002"><strong>Northern Ireland</strong></a></li>
-        <ul>
-        <li><a href="{base}/N09000001">Antrim and Newtownabbey</a></li>
-        <li><a href="{base}/N09000011">Ards and North Down</a></li>
-        <li><a href="{base}/N09000002">Armagh City, Banbridge and Craigavon</a></li>
-        <li><a href="{base}/N09000003">Belfast</a></li>
-        <li><a href="{base}/N09000004">Causeway Coast and Glens</a></li>
-        <li><a href="{base}/N09000005">Derry City and Strabane</a></li>
-        <li><a href="{base}/N09000006">Fermanagh and Omagh</a></li>
-        <li><a href="{base}/N09000007">Lisburn and Castlereagh</a></li>
-        <li><a href="{base}/N09000008">Mid and East Antrim</a></li>
-        <li><a href="{base}/N09000009">Mid Ulster</a></li>
-        <li><a href="{base}/N09000010">Newry, Mourne and Down</a></li>
-        </ul>
-        </ul> -->
+        <h4 style="font-size: 1em; font-weight: bold;color: #3878c5; line-height: 0.851em;">Or select your council area: </h4>
+        <a href="{base}/N09000001">Antrim and Newtownabbey</a>,
+          <a href="{base}/N09000011">Ards and North Down</a>,
+          <a href="{base}/N09000002">Armagh City, Banbridge and Craigavon</a>,
+          <a href="{base}/N09000003">Belfast</a>,
+          <a href="{base}/N09000004">Causeway Coast and Glens</a>,
+          <a href="{base}/N09000005">Derry City and Strabane</a>,
+          <a href="{base}/N09000006">Fermanagh and Omagh</a>,
+          <a href="{base}/N09000007">Lisburn and Castlereagh</a>,
+          <a href="{base}/N09000008">Mid and East Antrim</a>,
+          <a href="{base}/N09000009">Mid Ulster</a>,
+          <a href="{base}/N09000010">Newry, Mourne and Down</a>
+       
       </div> 
 
+      
 
       <div class = "div-grey-box">
         <span style="font-size: 1.5em; font-weight: bold; color: #3878c5; line-height: 1em;">Click on the map to view Northern Ireland as a whole</span>
