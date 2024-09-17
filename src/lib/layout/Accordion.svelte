@@ -96,7 +96,7 @@
             {#if more != ""}
                 <!-- Button to toggle visibility of "More Statistics" with + or - sign -->
                 <h3>
-                    More Statistics
+                    More {heading.toLocaleLowerCase()} statistics
                     <button class="btn-toggle-more-stats" on:click={toggleMoreStats}>
                           <span class="text-small">{moreStatsVisible ? "Click to hide -" : "Click to expand +"}</span>
                     </button>

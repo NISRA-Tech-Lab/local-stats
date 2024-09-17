@@ -51,7 +51,7 @@
         on:select={menuSelect}
         />
 
-        <h4 style="font-size: 1em; font-weight: bold;color: #3878c5; line-height: 0.851em;">Or select your council area: </h4>
+       <p style="font-size: 1.5em;color: #3878c5;font-weight: bold; margin-top: 20px"> Or select your council area</p>
         <a href="{base}/N09000001">Antrim and Newtownabbey</a>,
           <a href="{base}/N09000011">Ards and North Down</a>,
           <a href="{base}/N09000002">Armagh City, Banbridge and Craigavon</a>,
