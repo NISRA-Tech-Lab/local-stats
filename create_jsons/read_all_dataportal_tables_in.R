@@ -2484,18 +2484,29 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$EMJOBS$category$index,
-                     levels = json_data$dimension$EMJOBS$category$index)
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>% 
+csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+  filter(`TLIST.A1.` == latest_year & EMJOBS %in% c('All', 'TJ')) %>% 
+  select(LGD2014, EMJOBS, VALUE) %>% group_by(LGD2014, EMJOBS) %>% 
+  summarise(VALUE  = sum(VALUE, na.rm = TRUE)) %>% 
+  rename(geog_code = LGD2014, statistic = EMJOBS) %>% #mutate(source = dataset_short, statistic = EMJOBS) %>%
   mutate(statistic = gsub("All","AllJobs",statistic),
          statistic = gsub("TJ","TourismJobs",statistic),
+         source = dataset_short
   )
 
-df_business <- rbind(df_business, data)
+# categories <- factor(json_data$dimension$EMJOBS$category$index,
+#                      levels = json_data$dimension$EMJOBS$category$index)
+# 
+# data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+#   mutate(statistic = sort(rep_len(categories, nrow(.))),
+#          VALUE = json_data$value,
+#          source = dataset_short) %>% 
+#   mutate(statistic = gsub("All","AllJobs",statistic),
+#          statistic = gsub("TJ","TourismJobs",statistic),
+#   )
+
+df_business <- rbind(df_business, csv_data)
 
 
 dataset_short <- "tourism_estab"

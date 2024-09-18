@@ -151,7 +151,7 @@ let i_button_info = {
 					},
 
 			crimeperception: {
-			title: "Views on anti-social behavior",
+			title: "Views on anti-social behaviour",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeperception[0].dataset_url") + "'>" + checkMeta("crimeperception[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeperception[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeperception[0].email") + "'>Email for more information</a> </p>"  
@@ -272,15 +272,15 @@ let i_button_info = {
 			qualifications: {
 			title: "Highest level of qualifications in the population",
 			info: "<p>From Census 2021 data - "+ "<a href='https://explore.nisra.gov.uk/area-explorer-2021/'><strong>Census Area Explorer</strong></a></p>"+
-						"Needs tidied up with proper CSS.   The highest level of qualification categories are as follows:" +
- 					"No qualifications;" +
-					 "Level 1: 1 to 4 GCSEs, O levels, CSEs (any grades); 1 AS Level; NVQ level 1; or equivalent;" +
-					 "Level 2: 5 or more GCSEs (A*-C or 9-4), O levels (passes) CSEs (grade 1); 1 A level, 2-3 AS Levels; NVQ level 2, BTEC General, City and Guilds Craft; or equivalent;" +
-					 "Apprenticeship;" +
- 					" Level 3: 2 or more A Levels, 4 or more AS Levels; NVQ Level 3, BTEC National, OND, ONC, City and Guilds Advanced Craft; or equivalent;" +
- 					" Level 4 and above: Degree (BA, BSc), foundation degree, NVQ Level 4 and above, HND, HNC, professional qualifications (teaching or nursing, for example), or equivalent; and" +
- 					" Other: Other qualifications, equivalent unknown." +
- 					"Highest level of qualification is derived from the question asking people aged 16 years and over to indicate all qualifications held. For qualifications gained outside Northern Ireland, respondents were directed to select the nearest equivalent."
+						"The highest level of qualification categories are as follows:" +
+ 					"<p>No qualifications;</p>" +
+					 "<p>1 to 4 GCSEs or Level 1: 1 to 4 GCSEs, O levels, CSEs (any grades); 1 AS Level; NVQ level 1; or equivalent;</p>" +
+					 "<p>5 or more GCSEs or Level 2: 5 or more GCSEs (A*-C or 9-4), O levels (passes) CSEs (grade 1); 1 A level, 2-3 AS Levels; NVQ level 2, BTEC General, City and Guilds Craft; or equivalent;</p>" +
+					 "<p>Apprenticeship;</p>" +
+ 					"<p>2 or more A Levels or Level 3: 2 or more A Levels, 4 or more AS Levels; NVQ Level 3, BTEC National, OND, ONC, City and Guilds Advanced Craft; or equivalent;</p>" +
+ 					"<p>Degree (BA, BSc) and above or Level 4 and above: Degree (BA, BSc), foundation degree, NVQ Level 4 and above, HND, HNC, professional qualifications (teaching or nursing, for example), or equivalent; and</p>" +
+ 					"<p>Other: Other qualifications, equivalent unknown.</p>" +
+ 					"<p>Highest level of qualification is derived from the question asking people aged 16 years and over to indicate all qualifications held. For qualifications gained outside Northern Ireland, respondents were directed to select the nearest equivalent.</p>"
 				},
 
 
@@ -418,7 +418,7 @@ let i_button_info = {
 					"<p class = 'pibutton'>Last updated: " + checkMeta("businessband[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("businessband[0].email") + "'>Email for more information</a> </p>"  },
 
-		sector: {title: "Business sectors",
+		sector: {title: "Selected business sectors",
 				info: " <p class = 'pibutton'>Access farms data at: <a href='" + checkMeta("farms[0].dataset_url") + "'>" + checkMeta("farms[0].title") + "</a></p>"+
 					"<p class = 'pibutton'>Last updated: " + checkMeta("farms[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("farms[0].email") + "'>Email for more information</a> </p>"   + 

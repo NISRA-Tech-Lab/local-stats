@@ -759,7 +759,7 @@ function compareNIrate (value) {
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "Northern Ireland has 11 Councils or Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
+							ni: "Northern Ireland has 11 Councils or Local Government Districts (LGDs),  which can be subdivided into electoral areas (District Electoral Areas DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '" + base + "/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
@@ -997,19 +997,16 @@ function compareNIrate (value) {
 					box_7 :{
 						id: "language",
 						year: pullCensusYear("mainlang"),
-						content: "StackedBarChart",				
-							chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
-							zKey: chart_compare_type,
-							label: chartLabel,
-							topic_prev_available: true}
-
+						content: "GroupChart",
+						chart_data: makeDataNICompare("mainlang")
+					}
 
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
 					which includes an <a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, 
 					<a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-Factsheets.pdf'>Fact Sheets</a>, 
 					a <a href='https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> 
-					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
+					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a>, 
 					bespoke tables can be created using the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has 
 					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics."
 		/>
@@ -1120,7 +1117,7 @@ function compareNIrate (value) {
 
 			box_5a: {
 				id: "hospitalactivity",
-				content: "Data is available for " + parentlinks(data.place,"ni, dea") + " and District Electoral Areas.",
+				content: "Data is available for " + parentlinks(data.place,"ni, dea") + " and electoral areas.",
 					show: ["lgd", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Annual admissions to hospital</span>"
@@ -1204,8 +1201,8 @@ function compareNIrate (value) {
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
 				Making Life Better</a>.
 				
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
-				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
+				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
 	/>
 	
 	<Accordion
@@ -1344,8 +1341,8 @@ function compareNIrate (value) {
 				Statistics on <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/redundancies'>Redundancies</a> 
 				and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/job-vacancies'>Job Vacancies</a> are also available. 
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
-				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 	/>
 
 		<Accordion
@@ -1500,7 +1497,7 @@ function compareNIrate (value) {
 			},
 
 		}}
-		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 		
 		/>
 
@@ -1654,15 +1651,10 @@ function compareNIrate (value) {
 		box_6: {
 			id: "renewable",
 			year: pullCensusYear("renewable_energy"),
-			// content: "GroupChart",
-			// chart_data: makeDataNICompare("renewable_energy")
+			content: "GroupChart",
+			chart_data: makeDataNICompare("renewable_energy")
 
 			
-			content: "StackedBarChart",				
-						chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
-						zKey: chart_compare_type,
-						label: chartLabel,
-						topic_prev_available: true
 
 		},
 
@@ -1692,9 +1684,9 @@ function compareNIrate (value) {
 
 	
 
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> 
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> 
 				collected data on renewable energy systems which can be
-				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> 
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> 
 				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>
 				
 				
@@ -1774,7 +1766,43 @@ function compareNIrate (value) {
 				title: "<span style='font-size: 0.88em'>Types of crime</span>"
 								},
 
+			
+			
 			box_3: {
+				id: "burglary",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
+						 ,
+						
+				show: ["ni"]
+						
+			},
+
+
+			box_3a: {
+				id: "burglary",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
+						 "<span style='color: #1460aa'> (NI " +(data.ni.data.crime.value.burglary).toLocaleString() +")</span></p>"
+						 ,
+						
+				show: [ "lgd", "dea"]
+				
+			},		
+
+			box_3b: {
+				id: "burglary",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Police recorded burglaries</span>"
+				
+			},		
+			
+
+			box_4: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1783,7 +1811,7 @@ function compareNIrate (value) {
 					show: ["ni"]
 			},
 
-			box_3a: {
+			box_4a: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1793,7 +1821,7 @@ function compareNIrate (value) {
 					show: [ "lgd"]
 			},
 
-			box_3b: {
+			box_4b: {
 				id: "crimeworry",
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
@@ -1802,7 +1830,7 @@ function compareNIrate (value) {
 			},
 
 
-			box_4: {
+			box_5: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1811,7 +1839,7 @@ function compareNIrate (value) {
 					show: ["ni"]
 			},
 
-			box_4a: {
+			box_5a: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
@@ -1822,12 +1850,12 @@ function compareNIrate (value) {
 					show: [ "lgd"]
 			},
 
-			box_4b: {
+			box_5b: {
 				id: "crimeperception",
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Views on crime</span>"
+				title: "<span style='font-size: 0.88em'>Views on anti-social behaviour</span>"
 			}
 
 			
@@ -1958,15 +1986,35 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
 				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments."  ,
 
-						 show: ["ni", "lgd"]
+						 show: ["ni"]
 						},
 
-				box_6a: {
+						box_6a: {
+				id: "sector",
+				year: "Agriculture " + pullYear("farms", data.place) + ", Tourism " + pullYear("tourism", data.place) ,
+				content:  "<strong>Agriculture</strong>" + 
+					"<p><span class='text-big'>"  + 
+				    	 (check("farms.value.F")).toLocaleString() +" </span> farms "+
+						 "<span style='color: #1460aa'>(" + (check("farms.value.F")/(data.ni.data.farms.value.F)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>.</p>"  +
+						 "<span class='text-big'>"  + 
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers "+
+						 "<span style='color: #1460aa'>(" + (check("farms.value.FA")/(data.ni.data.farms.value.FA)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>."  +
+						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs " + 
+				    	 "<span style='color: #1460aa'>(" + (check("tourism.value.TourismJobs")/(data.ni.data.tourism.value.TourismJobs)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>."  +
+						 "<p><span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments "  +
+						 "<span style='color: #1460aa'>(" + (check("tourism_estab.value.estab")/(data.ni.data.tourism_estab.value.estab)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>.</p>"  ,
+						
+						 show: [ "lgd"]
+						},
+
+
+				box_6b: {
 				id: "sector",
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Business sectors</span>"
+				title: "<span style='font-size: 0.88em'>Selected business sectors</span>"
 						},
 
 			
@@ -1998,27 +2046,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
 	/> 
 
-	<!-- <Accordion
-		id = "economy"
-		img = "nisra-taxonomy-icon-economy.png"
-		heading = "Economy and trade"
-		place = {data.place}
-		sub_heading = {moreData("Economy and trade", data.place)}
-		description = " "
-		chart_compare_type = {chart_compare_type}
-		boxes = {{
-				
-		}}
-		more = "<p>Other economy and trade statistics are published by 
-		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
-		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
-		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
-		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
-		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
-	/> -->
-
+	
 		</div>
 	{/if}
 </Section>

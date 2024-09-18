@@ -51,7 +51,8 @@
         aria-labelledby="panelsStayOpen-heading{id}"
     >
         <div class="accordion-body">
-            {place.name} {place.type.toLocaleUpperCase()}. {@html sub_heading}
+            {place.name}. {@html sub_heading}
+            <!-- {place.name} {place.type.toLocaleUpperCase()}. {@html sub_heading} -->
             <span class="accordion-button-title-sub">{description}</span>
 
             <div class="grid mt" bind:clientWidth={w}>

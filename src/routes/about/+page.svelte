@@ -91,7 +91,7 @@
 				<td>11</td>
 			  </tr>
 			  <tr>
-				<td>District Electoral Area (DEA2021)</td>
+				<td>District Electoral Area (DEA2021), called electoral areas in this web application</td>
 				<td>80</td>
 			  </tr>
 			  <tr>
