@@ -2038,7 +2038,21 @@ df_meta_data <- rbind(df_meta_data, t(c(
 #          VALUE = json_data$value,
 #          source = dataset_short)
 
+  df_crime <- rbind(df_crime, csv_data)
+
+
+
+csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+  filter(`TLIST.A1.` == latest_year & crmclass %in% c(6,7) ) %>% 
+  mutate(crime_group = 'burglary') %>% 
+  select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+  rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
+
+
 df_crime <- rbind(df_crime, csv_data)
+
+
 
 dataset_long <- "PRCLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2090,7 +2104,18 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 df_crime <- unique(rbind(df_crime, csv_data))
 
-df_crime_perc <- df_crime %>%  group_by(geog_code) %>% 
+
+
+csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+  filter(`TLIST.A1.` == latest_year & crmclass %in% c(6,7) ) %>% 
+  mutate(crime_group = 'burglary') %>% 
+  select(LGD2014, crime_group, VALUE) %>% group_by(LGD2014, crime_group) %>% 
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+  rename(geog_code = LGD2014, statistic = crime_group) %>% mutate(source = dataset_short)
+
+df_crime <- unique(rbind(df_crime, csv_data))
+
+df_crime_perc <- df_crime %>%  group_by(geog_code) %>% filter(statistic != "burglary") %>% 
   mutate(perc = VALUE / VALUE[statistic == "allcrime"] *100) 
 
 
