@@ -2052,9 +2052,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 </Section>
 
 <style>
-	a {
-		color: rgb(0, 60, 87);
-	}
+	
 	h3 {
 		margin-top: 12px;
 	}
