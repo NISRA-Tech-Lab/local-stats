@@ -128,6 +128,13 @@ let i_button_info = {
 				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
 		 		  },
 
+			burglary: {
+			title: "Police recorded burglaries",
+			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
+					"<p class = 'pibutton'>Last updated: " + checkMeta("crime[0].last_updated") + "</p> "+
+				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("crime[0].email") + "'>Email for more information</a> </p>"  
+		 		  },
+
 		   crimetype: {
 			title: "Types of crime",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crime[0].dataset_url") + "'>" + checkMeta("crime[0].title") + "</a></p>" + 
@@ -144,7 +151,7 @@ let i_button_info = {
 					},
 
 			crimeperception: {
-			title: "Views on crime",
+			title: "Views on anti-social behavior",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeperception[0].dataset_url") + "'>" + checkMeta("crimeperception[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeperception[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeperception[0].email") + "'>Email for more information</a> </p>"  
