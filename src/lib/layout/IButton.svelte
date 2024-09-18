@@ -151,7 +151,7 @@ let i_button_info = {
 					},
 
 			crimeperception: {
-			title: "Views on anti-social behaviour",
+			title: "Views on antisocial behaviour",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("crimeperception[0].dataset_url") + "'>" + checkMeta("crimeperception[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("crimeperception[0].last_updated") + "</p> "+
 					"<p class = 'pibutton'><a href='mailto:" + checkMeta("crimeperception[0].email") + "'>Email for more information</a> </p>"  

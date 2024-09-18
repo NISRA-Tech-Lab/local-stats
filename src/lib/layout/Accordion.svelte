@@ -99,7 +99,7 @@
                 <h3>
                     More {heading.toLocaleLowerCase()} statistics
                     <button class="btn-toggle-more-stats" on:click={toggleMoreStats}>
-                          <span class="text-small">{moreStatsVisible ? "Click to hide -" : "Click to expand +"}</span>
+                          <span class="text-small">{moreStatsVisible ? "- Click to hide" : "+ Click to expand"}</span>
                     </button>
                 </h3>
                 
@@ -120,15 +120,25 @@
     .btn-toggle-more-stats {
         background-color: transparent;
         border: none;
-        color: #007bff;
+        color:  rgb(0,100,200);
+        text-decoration: underline;
         cursor: pointer;
         font-size: 1.2rem;
         margin-top: 10px;
-        text-decoration: none;
     }
 
     .btn-toggle-more-stats:hover {
-        color: #0056b3;
+
+        text-decoration: underline;
+        text-decoration-color:  #000000;
+        text-decoration-thickness: 2px;
+
+        }
+
+
+    
+    .btn-toggle-more-stats:visited {
+        color: purple;
     }
 
     .grid {

@@ -1134,7 +1134,7 @@ function compareNIrate (value) {
 						"<p><span class='text-big'>" + 
 						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 						"</span> dental surgeries.  </span> <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumFractionDigits: 0 }) +
 						"%</span> of the population are registered with a dentist.</p>"
 						,
 				show: ["ni"]
@@ -1154,7 +1154,7 @@ function compareNIrate (value) {
 						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 						"</span> dental surgeries." +
 						"</span>  <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumFractionDigits: 0 }) +
 						"%</span> of the population are registered with a dentist. "+
 						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
 						"%)</span></p>",
@@ -1236,7 +1236,7 @@ function compareNIrate (value) {
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
 						'<p>Median weekly salary</p> <span class="text-big">£' +
-					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> ',
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) + '</span> ',
 						 
 				show: ["ni"]
 			},
@@ -1248,8 +1248,8 @@ function compareNIrate (value) {
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
 						'<p>Median weekly salary</p> <span class="text-big">£' +
-					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> '+
-						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0}) +") </span></p>",
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) + '</span> '+
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +") </span></p>",
 				show: [ "lgd"]
 			},
 			
@@ -1571,7 +1571,7 @@ function compareNIrate (value) {
 			id: "ghg",
 			year: pullYear("Env_ghg", data.place),
 			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
-					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>",
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span> reduction since 2005.</p>",
 					
 			show: ["ni"]
 		},
@@ -1579,9 +1579,9 @@ function compareNIrate (value) {
 		box_3a: {
 			id: "ghg",
 			year: pullYear("Env_ghg", data.place),
-			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
-					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>"+
-					 "<span style='color: #1460aa'>(NI " + ((data.ni.data.Env_ghg.value.GHGALL/data.ni.data.Env_ghg.value.GHGALL_BASE-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) + "%) </span>" ,
+			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%</span> reduction since 2005.</p>"+
+					 "<span style='color: #1460aa'>(NI " + ((data.ni.data.Env_ghg.value.GHGALL/data.ni.data.Env_ghg.value.GHGALL_BASE-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) + "%) </span>" ,
 					
 			show: [ "lgd"]
 		},
@@ -1607,7 +1607,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
 			show: ["ni"]
 					
 		},
@@ -1616,7 +1616,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
 					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span></p>",						
 			show: ["lgd"]
 					
@@ -1719,8 +1719,8 @@ function compareNIrate (value) {
 				id: "crime",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population.</p>"   
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population.</p>"   
 						 ,
 						
 				show: ["ni"]
@@ -1732,9 +1732,9 @@ function compareNIrate (value) {
 				id: "crime",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population."  + 
-						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +")</span></p>"
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population."  + 
+						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +")</span></p>"
 						 ,
 						
 				show: [ "lgd", "dea"]
@@ -1772,7 +1772,7 @@ function compareNIrate (value) {
 				id: "burglary",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
 						 ,
 						
 				show: ["ni"]
@@ -1784,7 +1784,7 @@ function compareNIrate (value) {
 				id: "burglary",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
 						 "<span style='color: #1460aa'> (NI " +(data.ni.data.crime.value.burglary).toLocaleString() +")</span></p>"
 						 ,
 						
@@ -1806,7 +1806,7 @@ function compareNIrate (value) {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
 
 					show: ["ni"]
 			},
@@ -1815,8 +1815,8 @@ function compareNIrate (value) {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
-				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%)</span></p>",
 
 					show: [ "lgd"]
 			},
@@ -1834,7 +1834,7 @@ function compareNIrate (value) {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
 
 					show: ["ni"]
 			},
@@ -1843,8 +1843,8 @@ function compareNIrate (value) {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
-				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%)</span></p>",
 
 
 					show: [ "lgd"]
@@ -1855,7 +1855,7 @@ function compareNIrate (value) {
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Views on anti-social behaviour</span>"
+				title: "<span style='font-size: 0.88em'>Views on antisocial behaviour</span>"
 			}
 
 			
@@ -1894,8 +1894,8 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				year: pullYear("business", data.place),
 				content:  "<span class='text-big'>"  + 
 				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses, with a total of <span class='text-big'>£"  + 
-				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
-				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in purchases." ,
+				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
+				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>million in purchases." ,
 				show: ["ni", "lgd"]
 						},
 
@@ -1995,15 +1995,15 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				content:  "<strong>Agriculture</strong>" + 
 					"<p><span class='text-big'>"  + 
 				    	 (check("farms.value.F")).toLocaleString() +" </span> farms "+
-						 "<span style='color: #1460aa'>(" + (check("farms.value.F")/(data.ni.data.farms.value.F)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>.</p>"  +
+						 "<span style='color: #1460aa'>(" + (check("farms.value.F")/(data.ni.data.farms.value.F)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>.</p>"  +
 						 "<span class='text-big'>"  + 
 				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers "+
-						 "<span style='color: #1460aa'>(" + (check("farms.value.FA")/(data.ni.data.farms.value.FA)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>."  +
+						 "<span style='color: #1460aa'>(" + (check("farms.value.FA")/(data.ni.data.farms.value.FA)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>."  +
 						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs " + 
-				    	 "<span style='color: #1460aa'>(" + (check("tourism.value.TourismJobs")/(data.ni.data.tourism.value.TourismJobs)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>."  +
+				    	 "<span style='color: #1460aa'>(" + (check("tourism.value.TourismJobs")/(data.ni.data.tourism.value.TourismJobs)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>."  +
 						 "<p><span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments "  +
-						 "<span style='color: #1460aa'>(" + (check("tourism_estab.value.estab")/(data.ni.data.tourism_estab.value.estab)*100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"% of NI)</span>.</p>"  ,
+						 "<span style='color: #1460aa'>(" + (check("tourism_estab.value.estab")/(data.ni.data.tourism_estab.value.estab)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>.</p>"  ,
 						
 						 show: [ "lgd"]
 						},
