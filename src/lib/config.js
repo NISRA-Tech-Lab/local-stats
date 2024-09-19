@@ -50,26 +50,26 @@ export const topics = {
 		{ category: 'a40to64', label: '40-64' },
 		{ category: 'a65plus', label: '65+' }
 	],
-	highest_level_of_qualifications : [
-		{ category: "no_qualifications", label: 'No qualifications' },
-		{ category: "level_1_qualifications", label: '1 to 4 GCSEs' },
-		{ category: "level_2_qualifications", label: '5 or more GCSEs' },
-		{ category: "apprenticeship", label: 'Apprenticeship' },
-		{ category: "level_3_qualifications", label: '2 or more A Levels' },
-		{ category: "level_4_qualifications_and_above", label: 'Degree (BA, BSc) and above' },
-		{ category: "other_qualifications", label: 'Other' }
-		  ],
+	// highest_level_of_qualifications : [
+	// 	{ category: "no_qualifications", label: 'No qualifications' },
+	// 	{ category: "level_1_qualifications", label: '1 to 4 GCSEs' },
+	// 	{ category: "level_2_qualifications", label: '5 or more GCSEs' },
+	// 	{ category: "apprenticeship", label: 'Apprenticeship' },
+	// 	{ category: "level_3_qualifications", label: '2 or more A Levels' },
+	// 	{ category: "level_4_qualifications_and_above", label: 'Degree (BA, BSc) and above' },
+	// 	{ category: "other_qualifications", label: 'Other' }
+	// 	  ],
 
 
-		//   highest_level_of_qualifications : [
-		// 	{ category: "no_qualifications", label: 'No qualifications' },
-		// 	{ category: "level_1_qualifications", label: 'Level 1' },
-		// 	{ category: "level_2_qualifications", label: 'Level 2' },
-		// 	{ category: "apprenticeship", label: 'Apprenticeship' },
-		// 	{ category: "level_3_qualifications", label: 'Level 3' },
-		// 	{ category: "level_4_qualifications_and_above", label: 'Level 4 and above ' },
-		// 	{ category: "other_qualifications", label: 'Other' }
-		// 	  ],
+		  highest_level_of_qualifications : [
+			{ category: "no_qualifications", label: 'No qualifications' },
+			{ category: "level_1_qualifications", label: 'Level 1' },
+			{ category: "level_2_qualifications", label: 'Level 2' },
+			{ category: "apprenticeship", label: 'Apprenticeship' },
+			{ category: "level_3_qualifications", label: 'Level 3' },
+			{ category: "level_4_qualifications_and_above", label: 'Level 4 and above ' },
+			{ category: "other_qualifications", label: 'Other' }
+			  ],
 
 	religion_or_religion_brought_up_in: [
 		{ category: 'catholic', label: 'Catholic' },
