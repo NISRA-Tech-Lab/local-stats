@@ -19,7 +19,7 @@
 				return;
 			}
 
-			fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/local-stats-dev/main/search_data/CPD_LIGHT_JULY_2024.csv")
+			fetch("https://raw.githubusercontent.com/NISRA-Tech-Lab/local-stats/main/search_data/CPD_LIGHT_JULY_2024.csv")
 				.then((response) => response.text())
 				.then((data) => {
 					const rows = data.split("\n");
