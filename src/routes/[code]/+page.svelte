@@ -517,7 +517,7 @@ function compareNIrate (value) {
 	function pullCensusYear (value) {
 
 		if (data.place.data.hasOwnProperty(value)) {
-			return "Census " +  Object.keys(data.place.data[value].perc).slice(-1);
+			return   Object.keys(data.place.data[value].perc).slice(-1) + " Census";
 		} else {
 			return null;
 		}
@@ -566,6 +566,42 @@ function compareNIrate (value) {
 
 	}
 
+	function parentlinks (place, data_avail) {
+
+
+		// data_avail - can be ni and lgd, ni and dea or ni, lgd and dea
+
+		if (place.type == "ni") {
+			return "";
+		} else if (place.type == "dea" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>";
+		} else if (place.type == "sdz" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, lgd") {
+			return "<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} else if (place.type == "lgd" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"
+		} else if (place.type == "sdz" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, dea") {
+			return "<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} else if (place.type == "sdz" & data_avail =="ni, lgd, dea") {
+			return "<a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>, "+
+			"<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+		} else if (place.type == "dz" & data_avail =="ni, lgd, dea") {
+			return "<a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>, "+
+				"<a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+				" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+		} 
+	
+}
+
 	function compareDensity (place) {
 		
 		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
@@ -609,7 +645,7 @@ function compareNIrate (value) {
 	{#if data.place && data.ni}
 		<div class="grid mtl">
 			<div>
-				<span class="text-small">
+				<p><span>
 					<a href="{base}/" data-sveltekit-noscroll data-sveltekit-keepfocus>Home</a
 					>{@html " &gt; "}
 					{#if data.place.type != "ni"}
@@ -620,51 +656,9 @@ function compareNIrate (value) {
 						{/each}
 
 					{/if}
-				</span>
+				</span></p>
 				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name}</span>
-				
-				
-				<!-- <div class="text-bold" style="font-size: 0.85em;"> -->
 			
-
-					<!-- {#if data.place.type == "ni"}
-						<button
-							class="btn"
-							class:btn-active={!comp_2011}
-							on:click={() => (comp_none = true)}
-							on:click={() => (comp_2011 = false)}
-							on:click={() => (comp_ni = false)}
-							>No comparison</button
-						>
-					{:else}
-						<button
-							class="btn"
-							class:btn-active={comp_none}
-							on:click={() => (comp_none = true)}
-							on:click={() => (comp_2011 = false)}
-							on:click={() => (comp_ni = false)}
-							>No comparison</button
-						>
-					{/if} -->
-					<!-- {#if data.place.type != "ni"}
-					Click for: <button
-							class="btn"
-							class:btn-active={comp_ni & !comp_none & !comp_2011}
-							on:click={() => (comp_ni = true)}
-							on:click={() => (comp_none = false)}
-							on:click={() => (comp_2011 = false)}>NI compare</button
-						>
-					{/if} -->
-
-						<!-- <button
-							class="btn"
-							class:btn-active={comp_2011 & !comp_none & !comp_ni}
-							on:click={() => (comp_2011 = true)}
-							on:click={() => (comp_none = false)}
-							on:click={() => (comp_ni = false)}
-							>Same area - previous</button
-						> -->
-				<!-- </div>  -->
 			</div>
 
 			<div>
@@ -672,7 +666,7 @@ function compareNIrate (value) {
 					style="width: 350px; padding-top: 5px;"
 					class:float-right={cols > 1}
 				>
-					<b>Search for your area:</b>
+					<p>Search for your area:</p>
 					<Select
 						search_data = {data.search_data}
 						group="typestr"
@@ -765,7 +759,7 @@ function compareNIrate (value) {
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
-							ni: "Northern Ireland has 11 Local Government Districts (LGDs),  which can be subdivided into District Electoral Areas (DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
+							ni: "Northern Ireland has 11 Councils or Local Government Districts (LGDs),  which can be subdivided into electoral areas (District Electoral Areas DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '" + base + "/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
 							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
@@ -783,7 +777,7 @@ function compareNIrate (value) {
 				compare_content = {{
 					ni: "",
 					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Local Government Districts",
+						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Councils",
 					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population',
 					sdz: "Data not available for area comparison",
 					dz: " Data not available for area comparison"
@@ -967,7 +961,7 @@ function compareNIrate (value) {
 					},
 					box_1a: {
 						id: "popchange",
-						content: "Data is available for NI and Local Government Districts",
+					content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 						i_button: false,
 						title: "<span style='font-size: 0.88em'>Population change</span>"
@@ -1003,19 +997,16 @@ function compareNIrate (value) {
 					box_7 :{
 						id: "language",
 						year: pullCensusYear("mainlang"),
-						content: "StackedBarChart",				
-							chart_data: data.place && makeData_year(["mainlang"], ["2011"], ["2021"]),
-							zKey: chart_compare_type,
-							label: chartLabel,
-							topic_prev_available: true}
-
+						content: "GroupChart",
+						chart_data: makeDataNICompare("mainlang")
+					}
 
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
 					which includes an <a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-summary.pdf'>infographic</a>, 
 					<a href='https://www.nisra.gov.uk/system/files/statistics/MYE22-Factsheets.pdf'>Fact Sheets</a>, 
 					a <a href='https://www.nisra.gov.uk/system/files/statistics/Statistical%20Bulletin%20-%202022%20Mid-year%20Population%20Estimates%20for%20Northern%20Ireland.pdf'>publication</a> 
-					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a>, 
+					and statistical tables. Population characteristics are from the census data which can be explored further in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a>, 
 					bespoke tables can be created using the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a> and the NISRA website has 
 					<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'>statistical bulletins</a> providing commentary on a range of census population characteristics."
 		/>
@@ -1070,7 +1061,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "wellbeing",
-				content: "Data on happiness, life satisfaction and loneliness is available for NI and Local Government Districts" ,
+				content: "Data on happiness, life satisfaction and loneliness is available for " + parentlinks(data.place,"ni, lgd"),
 				show: [ "dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Personal wellbeing</span>"
@@ -1101,7 +1092,7 @@ function compareNIrate (value) {
 			},
 			box_3c: {
 				id: "lifeexpectancy",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: [ "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Life expectancy at birth</span>"
@@ -1126,7 +1117,7 @@ function compareNIrate (value) {
 
 			box_5a: {
 				id: "hospitalactivity",
-				content: "Data is available for NI and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, dea") + " and electoral areas.",
 					show: ["lgd", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Annual admissions to hospital</span>"
@@ -1143,7 +1134,7 @@ function compareNIrate (value) {
 						"<p><span class='text-big'>" + 
 						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 						"</span> dental surgeries.  </span> <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumFractionDigits: 0 }) +
 						"%</span> of the population are registered with a dentist.</p>"
 						,
 				show: ["ni"]
@@ -1163,7 +1154,7 @@ function compareNIrate (value) {
 						 (check("DEN.value.GDSDSSurgeries")).toLocaleString() +
 						"</span> dental surgeries." +
 						"</span>  <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0, minimumFractionDigits: 0 }) +
 						"%</span> of the population are registered with a dentist. "+
 						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
 						"%)</span></p>",
@@ -1185,7 +1176,7 @@ function compareNIrate (value) {
 
 			box_6c: {
 				id: "primarycare",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Primary care providers</span>"
@@ -1210,8 +1201,8 @@ function compareNIrate (value) {
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/health'>interactive dashboards</a> are available and a compendium dashboard for <a href='https://visual.nisra.gov.uk/?body=entity/las'>
 				Making Life Better</a>.
 				
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
-				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on general health, long-term conditions and carers which can 
+				be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p><p></p>"
 	/>
 	
 	<Accordion
@@ -1232,7 +1223,7 @@ function compareNIrate (value) {
 			},
 			box_1b: {
 				id: "employmentrates",
-				content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Work status of adults</span>"
@@ -1245,7 +1236,7 @@ function compareNIrate (value) {
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
 						'<p>Median weekly salary</p> <span class="text-big">£' +
-					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> ',
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) + '</span> ',
 						 
 				show: ["ni"]
 			},
@@ -1257,14 +1248,14 @@ function compareNIrate (value) {
 					     (check("LMS.value.EMPN")).toLocaleString() +
 						 "</span> </p>"+
 						'<p>Median weekly salary</p> <span class="text-big">£' +
-					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0}) + '</span> '+
-						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0}) +") </span></p>",
+					     (check("ASHE_weekly.value")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) + '</span> '+
+						 "<span style='color: #1460aa'> (NI £" + data.ni.data.ASHE_weekly.value.toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +") </span></p>",
 				show: [ "lgd"]
 			},
 			
 			box_2c: {
 				id: "employed",
-				content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Work and wages</span>"
@@ -1280,7 +1271,7 @@ function compareNIrate (value) {
 				
 			box_3c: {
 				id: "bres",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Type of work</span>"
@@ -1293,16 +1284,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.UC.toLocaleString() + "</b> claimants, <b>" +
 					 (data.ni.data.BS.value.UC / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 				
@@ -1315,16 +1302,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.PIP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.PIP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			
@@ -1337,16 +1320,12 @@ function compareNIrate (value) {
 				compare_content: {
 					ni: "",
 					lgd: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dea: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					sdz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>",
 					dz: "<span style='color: #1460aa; font-size: 12pt;'>(NI " + 
-					// data.ni.data.BS.value.RP.toLocaleString() + "</b> claimants, <b>" + 
 					(data.ni.data.BS.value.RP / data.ni.data.MYETotal.value * 100).toFixed(1) + "%)</span>"
 				}
 			}	
@@ -1362,8 +1341,8 @@ function compareNIrate (value) {
 				Statistics on <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/redundancies'>Redundancies</a> 
 				and <a href='https://www.nisra.gov.uk/statistics/labour-market-and-social-welfare/job-vacancies'>Job Vacancies</a> are also available. 
 				A number of <a href='https://visual.nisra.gov.uk/?body=entity/lm'>interactive dashboards</a> are available. 
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
-				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on occupations, industry and number of hours worked which can be 
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 	/>
 
 		<Accordion
@@ -1371,7 +1350,7 @@ function compareNIrate (value) {
 		img = "nisra-taxonomy-icon-child-education-skills.png"
 		heading = "Education and skills"
 		place = {data.place}
-		sub_heading =   {moreData("Schools, colleges and universities", data.place)}
+		sub_heading =   {moreData("Education and skills", data.place)}
 		description = ""
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1396,7 +1375,7 @@ function compareNIrate (value) {
 			
 			box_1b: {
 				id: "enrollments",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>People in education</span>"
@@ -1422,7 +1401,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "fsme",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: [ "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Pupils entitled to free school meals</span>"
@@ -1458,7 +1437,7 @@ function compareNIrate (value) {
 
 			box_3c: {
 				id: "SEN",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Special educational needs (SEN)</span>"
@@ -1495,7 +1474,7 @@ function compareNIrate (value) {
 							
 			box_5c: {
 				id: "attainment",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>GCSEs for school leavers</span>"
@@ -1511,14 +1490,14 @@ function compareNIrate (value) {
 
 			box_6b: {
 				id: "destination",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Next steps for school leavers</span>"
 			},
 
 		}}
-		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
+		more = "<p>The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/school-education-statistics'>Department of Education</a> publishes statistics on <a href='https://www.education-ni.gov.uk/articles/school-enrolments-overview'>school enrolments</a>, <a href='https://www.education-ni.gov.uk/articles/school-performance'>school performance</a>, <a href='https://www.education-ni.gov.uk/articles/school-leavers'>school leavers</a>, qualifications and destinations, <a href='https://www.education-ni.gov.uk/articles/pupil-attendance'>pupil attendance</a>, suspensions and expulsions, school meals and <a href='https://www.education-ni.gov.uk/articles/education-workforce'>education workforce</a>. The <a href='https://www.nisra.gov.uk/statistics/children-education-and-skills/higher-and-further-education-and-training-statistics'>Department for the Economy</a> publishes <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/higher-education-statistics-and-research'>Higher</a> and <a href='https://www.economy-ni.gov.uk/topics/statistics-and-economic-research/further-education-statistics-and-research'>Further</a> education and <a href='https://www.economy-ni.gov.uk/articles/training-success-statistics'>training</a> statistics. The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> collected data on qualifications which can be explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>"
 		
 		/>
 
@@ -1556,7 +1535,7 @@ function compareNIrate (value) {
 
 			box_1b: {
 				id: "concern",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Concern about the environment</span>"
@@ -1581,7 +1560,7 @@ function compareNIrate (value) {
 
 			box_2c: {
 				id: "env_problem",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Environmental problems</span>"
@@ -1592,7 +1571,7 @@ function compareNIrate (value) {
 			id: "ghg",
 			year: pullYear("Env_ghg", data.place),
 			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
-					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>",
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span> reduction since 2005.</p>",
 					
 			show: ["ni"]
 		},
@@ -1600,9 +1579,9 @@ function compareNIrate (value) {
 		box_3a: {
 			id: "ghg",
 			year: pullYear("Env_ghg", data.place),
-			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
-					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span> reduction since 2005.</p>"+
-					 "<span style='color: #1460aa'>(NI " + ((data.ni.data.Env_ghg.value.GHGALL/data.ni.data.Env_ghg.value.GHGALL_BASE-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 0}) + "%) </span>" ,
+			content:  "<p><span class='text-big'>"  + (check("Env_ghg.value.GHGALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"</span> kilotonnes of carbon dioxide equivalent (KtCO2e).</p>"+
+					 "<p><span class='text-big'>" + ((check("Env_ghg.value.GHGALL")/check("Env_ghg.value.GHGALL_BASE")-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%</span> reduction since 2005.</p>"+
+					 "<span style='color: #1460aa'>(NI " + ((data.ni.data.Env_ghg.value.GHGALL/data.ni.data.Env_ghg.value.GHGALL_BASE-1)*-100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) + "%) </span>" ,
 					
 			show: [ "lgd"]
 		},
@@ -1610,7 +1589,7 @@ function compareNIrate (value) {
 
 		box_3c: {
 				id: "ghg",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Greenhouse gas</span>"
@@ -1628,7 +1607,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
 			show: ["ni"]
 					
 		},
@@ -1637,7 +1616,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
 					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span></p>",						
 			show: ["lgd"]
 					
@@ -1645,7 +1624,7 @@ function compareNIrate (value) {
 
 		box_4b: {
 				id: "active",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Active travel</span>"
@@ -1662,7 +1641,7 @@ function compareNIrate (value) {
 		
 		box_5a: {
 			id: "waste",
-			content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for "+ parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Household waste</span>"
@@ -1672,15 +1651,10 @@ function compareNIrate (value) {
 		box_6: {
 			id: "renewable",
 			year: pullCensusYear("renewable_energy"),
-			// content: "GroupChart",
-			// chart_data: makeDataNICompare("renewable_energy")
+			content: "GroupChart",
+			chart_data: makeDataNICompare("renewable_energy")
 
 			
-			content: "StackedBarChart",				
-						chart_data: data.place && makeData_year(["renewable_energy"], ["2011"], ["2021"]),
-						zKey: chart_compare_type,
-						label: chartLabel,
-						topic_prev_available: true
 
 		},
 
@@ -1710,9 +1684,9 @@ function compareNIrate (value) {
 
 	
 
-				The <a href='https://www.nisra.gov.uk/statistics/census'>2021 census</a> 
+				The <a href='https://www.nisra.gov.uk/statistics/census/2021-census'>2021 census</a> 
 				collected data on renewable energy systems which can be
-				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/N92000002/'>Census Area Explorer</a> 
+				explored in the <a href='https://explore.nisra.gov.uk/area-explorer-2021/'>Census Area Explorer</a> 
 				and the <a href='https://build.nisra.gov.uk/en/'>Flexible Table Builder</a>.</p>
 				
 				
@@ -1736,7 +1710,7 @@ function compareNIrate (value) {
 		img = "nisra-taxonomy-icon-crime-justice.png"
 		heading = "Crime and justice"
 		place = {data.place}
-		sub_heading = {moreData("Crime and Court Activity", data.place)}
+		sub_heading = {moreData("Crime and justice", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1745,8 +1719,8 @@ function compareNIrate (value) {
 				id: "crime",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population.</p>"   
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population.</p>"   
 						 ,
 						
 				show: ["ni"]
@@ -1758,9 +1732,9 @@ function compareNIrate (value) {
 				id: "crime",
 				year: pullYear("crime", data.place),
 				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>crimes recorded</p>" +
-						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population."  + 
-						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0}) +")</span></p>"
+				    	 (check("crime.value.allcrime")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>crimes recorded</p>" +
+						 "<p><span class='text-big'>" +(check("crime.value.allcrime")/check("MYETotal.value")*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> crimes recorded per 1,000 population."  + 
+						 "<span style='color: #1460aa'> (NI " +((data.ni.data.crime.value.allcrime)/(data.ni.data.MYETotal.value)*1000).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +")</span></p>"
 						 ,
 						
 				show: [ "lgd", "dea"]
@@ -1769,7 +1743,7 @@ function compareNIrate (value) {
 
 			box_1b: {
 				id: "crime",
-				content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 				show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Police recorded crimes</span>"
@@ -1786,66 +1760,102 @@ function compareNIrate (value) {
 
 			box_2a: {
 					id: "crimetype",
-					content: "Data is available for NI, Local Government Districts and District Electoral Areas",
+					content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
 					show: ["sdz","dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Types of crime</span>"
 								},
 
+			
+			
 			box_3: {
+				id: "burglary",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
+						 ,
+						
+				show: ["ni"]
+						
+			},
+
+
+			box_3a: {
+				id: "burglary",
+				year: pullYear("crime", data.place),
+				content:  "<p><span class='text-big'>"  + 
+				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
+						 "<span style='color: #1460aa'> (NI " +(data.ni.data.crime.value.burglary).toLocaleString() +")</span></p>"
+						 ,
+						
+				show: [ "lgd", "dea"]
+				
+			},		
+
+			box_3b: {
+				id: "burglary",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+				show: ["sdz","dz"],
+				i_button: false,
+				title: "<span style='font-size: 0.88em'>Police recorded burglaries</span>"
+				
+			},		
+			
+
+			box_4: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> of people are highly worried about crime.</p>",
 
 					show: ["ni"]
 			},
 
-			box_3a: {
+			box_4a: {
 				id: "crimeworry",
 				year: pullYear("crimeworry", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
-				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+				(check("crimeworry.value.WorryC2")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> of people are highly worried about crime."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeworry.value.WorryC2)).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%)</span></p>",
 
 					show: [ "lgd"]
 			},
 
-			box_3b: {
+			box_4b: {
 				id: "crimeworry",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Worry about crime</span>"
 			},
 
 
-			box_4: {
+			box_5: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area.</p>",
 
 					show: ["ni"]
 			},
 
-			box_4a: {
+			box_5a: {
 				id: "crimeperception",
 				year: pullYear("crimeperception", data.place),
 				content: "<p> <span class='text-big' >" +
-				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
-				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1}) +"%)</span></p>",
+				(check("crimeperception.value.ASB8")).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1})+ "%</span> think there is a high level of antisocial behaviour in the area."+
+				"<span style='color: #1460aa'> (NI " +((data.ni.data.crimeperception.value.ASB8)).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"%)</span></p>",
 
 
 					show: [ "lgd"]
 			},
 
-			box_4b: {
+			box_5b: {
 				id: "crimeperception",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Views on crime</span>"
+				title: "<span style='font-size: 0.88em'>Views on antisocial behaviour</span>"
 			}
 
 			
@@ -1857,8 +1867,9 @@ function compareNIrate (value) {
 		NISRA statisticians within the
 		<a href='https://www.psni.police.uk/inside-psni/Statistics/'>Police Service of Northern Ireland</a>.
 		 Statistical information is available on 
-		 <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics'>Police Recorded Crime Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/anti-social-behaviour-statistics'>Anti-Social Behaviour Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/domestic-abuse-statistics'>Domestic Abuse Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/hate-motivation-statistics'>Hate Motivation Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/drug-seizure-statistics'>Drug Seizure Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/road-traffic-collision-statistics'>Road Traffic Collision Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/security-situation-statistics'>Security Situation Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/stop-and-search-statistics'>Stop and Search Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/statistics-police-use-force'>Statistics on Police Use of Force</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/motoring-offence-statistics'>Motoring Offence Statistics</a> and <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-and-criminal-evidence-pace-order'>Police and Criminal Evidence (PACE) Order Statistics</a>.</p>
-<p>Statistics on the police complaints system are published by
+		 <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics'>Police Recorded Crime Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/anti-social-behaviour-statistics'>Anti-Social Behaviour Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/domestic-abuse-statistics'>Domestic Abuse Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/hate-motivation-statistics'>Hate Motivation Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/drug-seizure-statistics'>Drug Seizure Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/road-traffic-collision-statistics'>Road Traffic Collision Statistics</a>, <a href='https://www.psni.police.uk/official-statistics/security-situation-statistics'>Security Situation Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/stop-and-search-statistics'>Stop and Search Statistics</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/statistics-police-use-force'>Statistics on Police Use of Force</a>, <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/motoring-offence-statistics'>Motoring Offence Statistics</a> and <a href='https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-and-criminal-evidence-pace-order'>Police and Criminal Evidence (PACE) Order Statistics</a>.  Statistics on the <a href='https://www.nisra.gov.uk/statistics/ni-road-safety-partnership/ni-road-safety-partnership-statistics'>Road Safety Partnership (RSP)</a> detections for speeding or red light running are also published by NISRA PSNI statisticians.</p>
+
+		 <p>Statistics on the police complaints system are published by
 <a href='https://www.policeombudsman.org/Statistics-and-Research'>
 Police Ombudsmans Office for Northern Ireland</a>.</p>
 <p><a href='https://www.justice-ni.gov.uk/topics/doj-statistics-and-research'>Department of Justice statistics</a> include reoffending, victims and witnesses, prosecutions and convictions.; Statistics are also available from the <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-prison-service-statistics'>Northern Ireland Prison Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/ni-courts-and-tribunals-service-statistics'>Northern Ireland Courts and Tribunals Service</a>, <a href='https://www.justice-ni.gov.uk/topics/statistics-and-research/youth-justice-statistics'>Youth Justice Agency statistics and </a>, <a href='https://www.justice-ni.gov.uk/topics/legal-aid/legal-services-agency-northern-ireland'>Legal Services Agency</a> and <a href='https://www.ppsni.gov.uk/statistics-and-research'>Public Prosecutions Service for Northern Ireland (PPSNI)</a>.</p>
@@ -1873,7 +1884,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		img = "nisra-taxonomy-icon-business-energy.png"
 		heading = "Business, economy and trade"
 		place = {data.place}
-		sub_heading = {moreData("Business sectors", data.place)}
+		sub_heading = {moreData("Business, economy and trade", data.place)}
 		description = " "
 		chart_compare_type = {chart_compare_type}
 		boxes = {{
@@ -1883,14 +1894,14 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				year: pullYear("business", data.place),
 				content:  "<span class='text-big'>"  + 
 				    	 (check("business.value.BCOUNTS")).toLocaleString() +" </span> businesses, with a total of <span class='text-big'>£"  + 
-				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
-				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0}) +" </span>million in purchases." ,
+				    	 (check("niets_sales.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>million in sales and <span class='text-big'>£"  + 
+				    	 (check("niets_purch.value.ALL")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>million in purchases." ,
 				show: ["ni", "lgd"]
 						},
 
 				box_1a: {
 				id: "no_bus",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Business and trade</span>"
@@ -1906,10 +1917,10 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_2a: {
 				id: "niets_sales",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Sales partners</span>"
+				title: "<span style='font-size: 0.88em'>Places businesses sell to (sales partners)</span>"
 								},
 
 
@@ -1923,10 +1934,10 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_3a: {
 				id: "niets_purch",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Purchases partners</span>"
+				title: "<span style='font-size: 0.88em'>Places businesses buy from (purchases partners)</span>"
 
 								},
 
@@ -1940,7 +1951,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_4a: {
 					id: "type_bus",
-					content: "Data is available for NI and Local Government Districts",
+				content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Type of businesses</span>"
@@ -1957,7 +1968,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 
 				box_5a: {
 				id: "size_bus",
-				content: "Data is available for NI and Local Government Districts",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Employees in businesses</span>"
@@ -1973,17 +1984,37 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers."+
 						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
 				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs and " + 
-				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accomodation establishments."  ,
+				    	 "<span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments."  ,
 
-						 show: ["ni", "lgd"]
+						 show: ["ni"]
 						},
 
-				box_6a: {
+						box_6a: {
 				id: "sector",
-				content: "Data is available for NI and Local Government Districts",
+				year: "Agriculture " + pullYear("farms", data.place) + ", Tourism " + pullYear("tourism", data.place) ,
+				content:  "<strong>Agriculture</strong>" + 
+					"<p><span class='text-big'>"  + 
+				    	 (check("farms.value.F")).toLocaleString() +" </span> farms "+
+						 "<span style='color: #1460aa'>(" + (check("farms.value.F")/(data.ni.data.farms.value.F)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>.</p>"  +
+						 "<span class='text-big'>"  + 
+				    	 (check("farms.value.FA")).toLocaleString() +" </span> farmers "+
+						 "<span style='color: #1460aa'>(" + (check("farms.value.FA")/(data.ni.data.farms.value.FA)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>."  +
+						  "<p><strong>Tourism</strong></p><span class='text-big'>"  + 
+				    	 (check("tourism.value.TourismJobs")).toLocaleString() +" </span> jobs " + 
+				    	 "<span style='color: #1460aa'>(" + (check("tourism.value.TourismJobs")/(data.ni.data.tourism.value.TourismJobs)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>."  +
+						 "<p><span class='text-big'>" + (check("tourism_estab.value.estab")).toLocaleString() +" </span> accommodation establishments "  +
+						 "<span style='color: #1460aa'>(" + (check("tourism_estab.value.estab")/(data.ni.data.tourism_estab.value.estab)*100).toLocaleString(undefined, {maximumFractionDigits: 1, minimumFractionDigits: 1}) +"% of NI)</span>.</p>"  ,
+						
+						 show: [ "lgd"]
+						},
+
+
+				box_6b: {
+				id: "sector",
+			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Business sectors</span>"
+				title: "<span style='font-size: 0.88em'>Selected business sectors</span>"
 						},
 
 			
@@ -2015,35 +2046,13 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
 	/> 
 
-	<!-- <Accordion
-		id = "economy"
-		img = "nisra-taxonomy-icon-economy.png"
-		heading = "Economy and trade"
-		place = {data.place}
-		sub_heading = {moreData("Economy and trade", data.place)}
-		description = " "
-		chart_compare_type = {chart_compare_type}
-		boxes = {{
-				
-		}}
-		more = "<p>Other economy and trade statistics are published by 
-		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a> NISRA, including 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-output-statistics'>Economic Output Statistics</a> (which includes the Index of Services, Index of Production and;Construction Output Statistics), 
-		<a href='https://www.nisra.gov.uk/statistics/economy/economic-accounts-project'>Economic Accounts</a> (including Supply-Use Tables and Input-Output tables), 
-		<a href='https://www.nisra.gov.uk/statistics/economy/eu-exit-analysis'>research and analysis on EU Exit</a>, and 
-		<a href='https://www.nisra.gov.uk/statistics/business-statistics/broad-economy-sales-and-exports-statistics'>Economic Trade Statistics</a> (NIETS) (formerly known as Broad Economy Sales and Exports Statistics). Interactive dashboards are available for the 
-		<a href='https://datavis.nisra.gov.uk/economy-and-labour-market/economic-output-quarterly.html'>quarterly economic outputs</a> and NI 
-		<a href='https://visual.nisra.gov.uk/?body=entity/niets'>Economic Trade</a> statistics.</p>"
-	/> -->
-
+	
 		</div>
 	{/if}
 </Section>
 
 <style>
-	a {
-		color: rgb(0, 60, 87);
-	}
+	
 	h3 {
 		margin-top: 12px;
 	}
@@ -2102,7 +2111,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		margin-top: 10px;
 	}
 	.mtl {
-		margin-top: 55px;
+		margin-top: 25px;
 	}
 	.mbs {
 		margin-bottom: 10px;
