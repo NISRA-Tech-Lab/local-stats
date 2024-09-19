@@ -114,11 +114,12 @@ let i_button_info = {
 			"<a href='https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins'><strong>Statistical bulletins</strong></a>"},
 
 			active: {
-			title: "Active travel",
+			title: "Active and substainable travel",
 			info: "<p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_active[0].dataset_url") + "'>" + checkMeta("Env_active[0].title") + "</a></p>" + 
 					"<p class = 'pibutton'>Last updated: " + checkMeta("Env_active[0].last_updated") + "</p> "+
-				 	"<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_active[0].email") + "'>Email for more information</a> </p>"  
-		 		  },
+					"<p>Publications and associated documentation available at: <a href = 'https://www.infrastructure-ni.gov.uk/topics/statistics-and-research/travel-survey-tsni'>Travel Survey for Northern Ireland</a></p>"  +
+					"<p class = 'pibutton'><a href='mailto:" + checkMeta("Env_active[0].email") + "'>Email for more information</a> </p>" 
+				},
 
 
 			crime: {

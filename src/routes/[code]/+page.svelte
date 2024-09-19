@@ -1607,7 +1607,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>  journeys made by walking, cycling and public transport.</p>" ,
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>of all journeys were made by walking, cycling and public transport.</p>" ,
 			show: ["ni"]
 					
 		},
@@ -1616,7 +1616,7 @@ function compareNIrate (value) {
 			id: "active",
 			year: pullYear("Env_active", data.place),
 			content:  "<span class='text-big'>"  + 
-					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>journeys made by walking, cycling and public transport." +
+					 (check("Env_active.value.JWCPT")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +"%</span><p>of all journeys were made by walking, cycling and public transport." +
 					 "<span style='color: #1460aa'> (NI " + data.ni.data.Env_active.value.JWCPT + "%) </span></p>",						
 			show: ["lgd"]
 					
@@ -1627,7 +1627,7 @@ function compareNIrate (value) {
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>Active travel</span>"
+				title: "<span style='font-size: 0.88em'>Active and substainable travel</span>"
 
 			},
 
