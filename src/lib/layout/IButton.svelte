@@ -286,7 +286,7 @@ let i_button_info = {
 
 
 			attainment: {
-			title: "GCSEs for school leavers",
+			title: "Attainment of school leavers",
 			info: 
 				  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Attainment[0].dataset_url") + "'>" + checkMeta("Attainment[0].title") + "</a></p>"+
 				  "<p class = 'pibutton'>Last updated: " + checkMeta("Attainment[0].last_updated") + "</p>"+

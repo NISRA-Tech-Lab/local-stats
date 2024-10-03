@@ -1456,7 +1456,7 @@ function compareNIrate (value) {
 				year: pullYear("Attainment", data.place),
 				content: "<span class='text-big'>"  + 
 				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ 
-						 "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C.</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> <span class='text-big'>"  , 
+						 "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C, including GCSE English and maths.</span> <span class='text-big'>"  , 
 				    	
 				show: ["ni"]
 			},
@@ -1465,9 +1465,9 @@ function compareNIrate (value) {
 				id: "attainment",
 				year: pullYear("Attainment", data.place),
 				content: "<span class='text-big'>"  + 
-				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C.</p><span class = 'text-small'>Includes GCSE English and Maths</span> <br> "+
+				    	 (check("Attainment.value")).toLocaleString() +"%</span> "+ "<p>of pupils left school with 5 or more GCSEs (including equivalents) at grades A*-C, including GCSE English and maths.</span>"+
 						 						  (compareNIrate("Attainment.value")).toLocaleString() +
-												  "<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" ,
+						"<span style='color: #1460aa'>(NI " + data.ni.data.Attainment.value.toLocaleString(undefined, {minimumFractionDigits: 1}) + "%) </span>" ,
 
 				show: ["lgd"]
 			},
@@ -1477,7 +1477,7 @@ function compareNIrate (value) {
 			content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 				show: ["dea", "sdz", "dz"],
 				i_button: false,
-				title: "<span style='font-size: 0.88em'>GCSEs for school leavers</span>"
+				title: "<span style='font-size: 0.88em'>Attainment of school leavers</span>"
 			},
 					
 			box_6: {
@@ -2029,7 +2029,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		and the 
 		<a href='https://www.daera-ni.gov.uk/articles/agricultural-statistics'>Agriculture sector</a> 
 		both produced by DAERA; 
-		<a href='https://www.infrastructure-ni.gov.uk/articles/northern-ireland-transport-statistics'>Northern Ireland travel and transport statistics</a> produced by the Department for Infrastructure, and 
+		and 
 		<a href='https://www.nisra.gov.uk/statistics/tourism/annual-and-quarterly-tourism-statistics-publications'>Tourism sector</a>
 		published by 
 		<a href='https://www.nisra.gov.uk/statistics/economy/nisra-economic-and-labour-market-statistics-elms'>Economic and Labour Market Statistics (ELMS)</a>. Interactive dashboards are available for 

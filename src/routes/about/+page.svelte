@@ -153,7 +153,7 @@
 		<p>This web application is refreshed daily with updated data from the NISRA data portal.</p>
 
 		<h2>Versions</h2>
-		<p>This app was originally released in Octover 2024.</p>
+		<p>This app was originally released in October 2024.</p>
 		<!-- <p>In XXXX 2024, further data was added on XXXX</p> -->
 		
 		<h2>About this app</h2>
