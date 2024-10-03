@@ -43,7 +43,7 @@
 					</div>
 					<div style = "display: flex; flex-direction:column; justify-content: right; align-items: center">
 						<h1 style="font-size: 2.5em; font-weight: bold;color: #ffffff; line-height: 1em; margin-bottom: 10px;">Northern Ireland Local Statistics Explorer</h1>
-						<span style = "font-size: 1.5em; line-height: 1em">Find out how your local area compares to NI</span>
+						<span style = "font-size: 1.5em; line-height: 1em">MB Find out how your local area compares to NI</span>
 					</div>
 				</div>
 		
