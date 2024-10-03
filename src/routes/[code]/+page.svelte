@@ -981,25 +981,52 @@ function compareNIrate (value) {
 						show: ["dz"]
 					},
 
-					box_4: {
+					box_3: {
 						id: "hhsize",
 						year: pullCensusYear("hh_size"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("hh_size")
 					},
-					box_5: {
+					box_4: {
 						id: "religion",
 						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
 
-					box_7 :{
+					box_5 :{
 						id: "language",
 						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("mainlang")
-					}
+					 }
+					,
+
+					// box_6: {
+					// 	id: "houseprices",
+					// 	year: "Q2 2024",
+					// 	content: "<span class='text-big'>£185,025</span>",
+					// 	show: ["ni"]
+					// },
+
+					// box_6a: {
+					// 	id: "houseprices",
+					// 	year: "Q2 2024",
+					// 	content: "<span class='text-big'>£190,567</span>"+
+					// 		"<span style='color: #1460aa'> (NI £185,025) </span>" ,
+					// 	show: ["lgd"]
+					// },
+
+					// box_6b: {
+					// 	id: "houseprices",
+					// 	year: "Q2 2024",
+					// 	content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+					// 	show: ["dea","sdz","dz"],
+					// 	i_button: false,
+					// 	title: "<span style='font-size: 0.88em'>Average house price</span>"
+					// }
+
+				
 
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 

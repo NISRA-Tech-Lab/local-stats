@@ -293,6 +293,14 @@ let i_button_info = {
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  
 		},
 
+
+		houseprices: {
+			title: "Average house price",
+			info: 
+				  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Attainment[0].dataset_url") + "'>LPS Standardised House Prices</a></p>"+
+				  "<p class = 'pibutton'>Last updated: XXXX </p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  
+		},
 		concern: {
 			title: "Concern about the environment",
 			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_concern[0].dataset_url") + "'>" + checkMeta("Env_concern[0].title") + "</a></p>"+
