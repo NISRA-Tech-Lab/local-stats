@@ -1795,38 +1795,38 @@ function compareNIrate (value) {
 
 			
 			
-			box_3: {
-				id: "burglary",
-				year: pullYear("crime", data.place),
-				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
-						 ,
+			// box_3: {
+			// 	id: "burglary",
+			// 	year: pullYear("crime", data.place),
+			// 	content:  "<p><span class='text-big'>"  + 
+			// 	    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span>recorded burglaries</p>" 
+			// 			 ,
 						
-				show: ["ni"]
+			// 	show: ["ni"]
 						
-			},
+			// },
 
 
-			box_3a: {
-				id: "burglary",
-				year: pullYear("crime", data.place),
-				content:  "<p><span class='text-big'>"  + 
-				    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
-						 "<span style='color: #1460aa'> (NI " +(data.ni.data.crime.value.burglary).toLocaleString() +")</span></p>"
-						 ,
+			// box_3a: {
+			// 	id: "burglary",
+			// 	year: pullYear("crime", data.place),
+			// 	content:  "<p><span class='text-big'>"  + 
+			// 	    	 (check("crime.value.burglary")).toLocaleString(undefined, {maximumFractionDigits: 0, minimumFractionDigits: 0}) +" </span> recorded burglaries</p>" +
+			// 			 "<span style='color: #1460aa'> (NI " +(data.ni.data.crime.value.burglary).toLocaleString() +")</span></p>"
+			// 			 ,
 						
-				show: [ "lgd", "dea"]
+			// 	show: [ "lgd", "dea"]
 				
-			},		
+			// },		
 
-			box_3b: {
-				id: "burglary",
-				content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
-				show: ["sdz","dz"],
-				i_button: false,
-				title: "<span style='font-size: 0.88em'>Police recorded burglaries</span>"
+			// box_3b: {
+			// 	id: "burglary",
+			// 	content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+			// 	show: ["sdz","dz"],
+			// 	i_button: false,
+			// 	title: "<span style='font-size: 0.88em'>Police recorded burglaries</span>"
 				
-			},		
+			// },		
 			
 
 			box_4: {

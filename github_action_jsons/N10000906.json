@@ -318,16 +318,16 @@
     },
     "BS": {
       "value": {
-        "IS": 70,
+        "IS": 50,
         "JSA": 20,
-        "RP": 2570,
-        "PC": 630,
-        "AA": 590,
+        "RP": 2540,
+        "PC": 610,
+        "AA": 600,
         "CA": 730,
-        "DLA": 720,
-        "ESA": 750,
-        "UC": 960,
-        "PIP": 1440
+        "DLA": 730,
+        "ESA": 730,
+        "UC": 1120,
+        "PIP": 1620
       }
     },
     "Primary": {
@@ -361,16 +361,24 @@
     "crime": {
       "value": {
         "allcrime": 399,
-        "btcd": 132,
+        "criminal": 65,
         "other": 78,
-        "person": 189,
+        "person": 169,
+        "robbery": 0,
+        "sexual": 20,
+        "theft": 56,
+        "theft_burglary": 11,
         "burglary": 11
       },
       "perc": {
         "allcrime": 100,
-        "btcd": 33.0827,
+        "criminal": 16.2907,
         "other": 19.5489,
-        "person": 47.3684
+        "person": 42.3559,
+        "robbery": 0,
+        "sexual": 5.0125,
+        "theft": 14.0351,
+        "theft_burglary": 2.7569
       }
     },
     "farms": {
@@ -483,10 +491,10 @@
         "table_code": "BSDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
         "geog_level": "dea",
-        "last_updated": "2023-07-06",
+        "last_updated": "2024-09-25",
         "email": "analyticsdivision@communities-ni.gov.uk",
         "title": "Benefit Statistics",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "Primary": [

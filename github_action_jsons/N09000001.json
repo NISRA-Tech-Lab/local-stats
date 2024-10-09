@@ -57,16 +57,24 @@
       "text": "Burglary",
       "value": {
         "allcrime": 6896,
-        "btcd": 2812,
+        "criminal": 1015,
         "other": 987,
-        "person": 3097,
+        "person": 2835,
+        "robbery": 17,
+        "sexual": 245,
+        "theft": 1596,
+        "theft_burglary": 201,
         "burglary": 201
       },
       "perc": {
         "allcrime": 100,
-        "btcd": 40.7773,
+        "criminal": 14.7187,
         "other": 14.3126,
-        "person": 44.9101
+        "person": 41.1108,
+        "robbery": 0.2465,
+        "sexual": 3.5528,
+        "theft": 23.1439,
+        "theft_burglary": 2.9147
       }
     },
     "env_problem": {
@@ -341,16 +349,16 @@
     },
     "BS": {
       "value": {
-        "IS": 770,
-        "JSA": 310,
-        "RP": 22780,
-        "PC": 3430,
-        "AA": 3990,
-        "CA": 4800,
-        "DLA": 5250,
-        "ESA": 7270,
-        "UC": 9590,
-        "PIP": 12740
+        "IS": 650,
+        "JSA": 270,
+        "RP": 22270,
+        "PC": 3370,
+        "AA": 4270,
+        "CA": 4860,
+        "DLA": 5290,
+        "ESA": 6960,
+        "UC": 11200,
+        "PIP": 14220
       }
     },
     "PopChange": {
@@ -729,8 +737,8 @@
         "table_code": "LMSLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/LMSLGD",
         "geog_level": "lgd",
-        "last_updated": "2024-03-28",
-        "email": "economicstats@nisra.gov.uk",
+        "last_updated": "2024-09-27",
+        "email": "info@nisra.gov.uk",
         "title": "Labour Market Status",
         "year": "2022"
       }
@@ -773,10 +781,10 @@
         "table_code": "BSLGD",
         "dataset_url": "https://data.nisra.gov.uk/table/BSLGD",
         "geog_level": "lgd",
-        "last_updated": "2023-07-06",
+        "last_updated": "2024-09-24",
         "email": "analyticsdivision@communities-ni.gov.uk",
         "title": "Benefit Statistics",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "Primary": [

@@ -1,11 +1,17 @@
+# This R script is structured to process and collate data from the NISRA data portal API, 
+# transforming it into various data frames for reporting purposes. 
+# Below are detailed comments explaining the key sections and operations within the script.
+
+
+
+#source("create_jsons/config.R")
 
 df_meta_data <- data.frame()
 
 # Read in script to extract names of tables needed
 this_script <- read_lines("create_jsons/read_all_dataportal_tables_in.R") %>% .[12:length(.)]
 
-tables_needed <- this_script[grepl("dataset_long <-", this_script)] %>%
-  gsub("dataset_long <- ", "", ., fixed = TRUE) %>%
+tables_needed <- this_script[grepl("dataset_long <-", this_script)] %>% gsub("dataset_long <- ", "", ., fixed = TRUE) %>% 
   gsub('"', "", ., fixed = TRUE) %>%
   unique()
 
@@ -20,7 +26,7 @@ titles <- c()
 updates <- c()
 id_cols <- c()
 
-for (i in 1:length(tables_needed)) {
+for (i in 3:length(tables_needed)) {
   
   titles[i] <- data_portal$label[which(matrices == tables_needed[i])]
   updates[i] <- substr(updated[which(matrices == tables_needed[i])], 1, 10)
@@ -2004,17 +2010,32 @@ json_data <- jsonlite::fromJSON(
 )
 
 
+# csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+#   filter(`TLIST.A1.` == latest_year) %>% 
+#   mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
+#                                  crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
+#                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
+#                                  crmclass == 'All' ~ 'allcrime',
+#                                  TRUE ~ crmclass)) %>% 
+#   select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
+#   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+#   rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
+
+
 csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
   filter(`TLIST.A1.` == latest_year) %>% 
-  mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
-                                 crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
+  mutate(crime_group = case_when(crmclass %in% c(1,2,3) ~ 'person',
+                                 crmclass %in% c(4) ~ 'sexual',
+                                 crmclass %in% c(5) ~ 'robbery',
+                                 crmclass %in% c(6,7,8,9) ~ 'theft_burglary',
+                                 crmclass %in% c(10,11,12,13,14) ~ 'theft',
+                                 crmclass %in% c(15) ~ 'criminal',
                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
                                  crmclass == 'All' ~ 'allcrime',
                                  TRUE ~ crmclass)) %>% 
   select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
   rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
-
 
 
 
@@ -2067,12 +2088,27 @@ json_data <- jsonlite::fromJSON(
     
   ))
 )
-
+# 
+# 
+# csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+#   filter(`TLIST.A1.` == latest_year) %>% 
+#   mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
+#                                  crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
+#                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
+#                                  crmclass == 'All' ~ 'allcrime',
+#                                  TRUE ~ crmclass)) %>% 
+#   select(LGD2014, crime_group, VALUE) %>% group_by(LGD2014, crime_group) %>% 
+#   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+#   rename(geog_code = LGD2014, statistic = crime_group) %>% mutate(source = dataset_short)
 
 csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
   filter(`TLIST.A1.` == latest_year) %>% 
-  mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
-                                 crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
+  mutate(crime_group = case_when(crmclass %in% c(1,2,3) ~ 'person',
+                                 crmclass %in% c(4) ~ 'sexual',
+                                 crmclass %in% c(5) ~ 'robbery',
+                                 crmclass %in% c(6,7,8,9) ~ 'theft_burglary',
+                                 crmclass %in% c(10,11,12,13,14) ~ 'theft',
+                                 crmclass %in% c(15) ~ 'criminal',
                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
                                  crmclass == 'All' ~ 'allcrime',
                                  TRUE ~ crmclass)) %>% 
@@ -2118,7 +2154,7 @@ df_crime <- unique(rbind(df_crime, csv_data))
 df_crime_perc <- df_crime %>%  group_by(geog_code) %>% filter(statistic != "burglary") %>% 
   mutate(perc = VALUE / VALUE[statistic == "allcrime"] *100) 
 
-
+df_crime_perc %>% filter(geog_code == "N92000002")
 
 ##### Worry ####
 dataset_short <- "crimeworry"
