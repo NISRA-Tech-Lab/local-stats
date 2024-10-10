@@ -35,8 +35,8 @@ jobs:
 
       - name: Commit results
         run: |
-          git config --local user.email "brian.quinn@nisra.gov.uk"
-          git config --local user.name "brianq-nisra"
+          git config --local user.email " "
+          git config --local user.name "NISRA-Tech-Lab"
           git add github_action_jsons
           git add date_of_last_run.RDS
           git commit -m 'Data updated' || echo "No changes to commit"
