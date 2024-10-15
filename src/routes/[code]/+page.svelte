@@ -755,15 +755,15 @@ function compareNIrate (value) {
 			<GreyBox
 				id = "overview" 
 				i_button = {false}
-				heading = "About {data.place.name}" 
+				heading = "About {data.place.name.replace(/_/g," ")}" 
 				place = {data.place}
 				style = "line-height: 1.3;"
 				content = {{
 							ni: "Northern Ireland has 11 Councils or Local Government Districts (LGDs),  which can be subdivided into electoral areas (District Electoral Areas DEAs), then further into Super Data Zones and Data Zones. Statistics can be viewed for these smaller areas." ,
 							lgd: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl +  ".  It includes the larger settlements of " + data.place.lgd_location_description +".",
 							dea: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + " in Northern Ireland.  It is within " + "<a href = '" + base + "/" + data.place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + data.place.parents[0].name + " </a>" + " and covers " + data.place.dea_location_description + ".",
-							sdz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
-							dz: data.place.name + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
+							sdz: data.place.name.replace(/_/g," ") + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ". Super Data Zones are new statistical areas developed for census. They are broadly similar in population size and housing type.",
+							dz: data.place.name.replace(/_/g," ") + " is one of " + data.place.count.toLocaleString() + " " + geog_types[data.place.type].pl + ".  Data Zones are smaller divisions of Super Data Zones. There are on average 4 in each Super Data Zone."							
 						  }}
 				chart_compare_type = {chart_compare_type}
 			/>
