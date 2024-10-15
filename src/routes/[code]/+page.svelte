@@ -538,6 +538,9 @@ function compareNIrate (value) {
 
 	}
 
+
+
+
 	function moreData (subject, place) {
 
 		// if (place.type != "ni") {
@@ -602,7 +605,7 @@ function compareNIrate (value) {
 	
 }
 
-	function compareDensity (place) {
+function compareDensity (place) {
 		
 		let pop_den = place.data.MYETotal.value / (place.hectares / 100);
 
@@ -610,11 +613,13 @@ function compareNIrate (value) {
 
 		let comparison = pop_den / ni_pop_den;
 
-		if (Math.round(comparison/10) == 1) {
-			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
-		} else if (comparison/10 > 1) {
+		if (comparison < 0.8 ) {
+			comparison = "Lower than the Northern Ireland average";}
+		else if (comparison.toFixed(0) > 1) {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times </span> the Northern Ireland average";
-		} else {
+		} else if (comparison.toFixed(0) == 1) {
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
+		} else {	
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " </span> of the Northern Ireland average";
 		}
 
