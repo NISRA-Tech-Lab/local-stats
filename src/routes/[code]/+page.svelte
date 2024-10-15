@@ -610,9 +610,9 @@ function compareNIrate (value) {
 
 		let comparison = pop_den / ni_pop_den;
 
-		if (Math.round(comparison) == 1) {
+		if (Math.round(comparison/10) == 1) {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the Northern Ireland average';
-		} else if (comparison > 1) {
+		} else if (comparison/10 > 1) {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times </span> the Northern Ireland average";
 		} else {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " </span> of the Northern Ireland average";
@@ -657,7 +657,7 @@ function compareNIrate (value) {
 
 					{/if}
 				</span></p>
-				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name}</span>
+				<br><span class="text-big title" style = "font-size: 2.5em; line-height: 1em;">{data.place.name.replace(/_/g," ")}</span>
 			
 			</div>
 

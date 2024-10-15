@@ -266,10 +266,10 @@
 		background-image: url("/img/chevron-down.svg");
 		width: 30px;
 	}
-	.search {
+	/* .search {
 		background-image: url("/img/search.svg");
 		width: 30px;
-	}
+	} */
 	.close {
 		background-image: url("/img/x-close.svg");
 		width: 30px;
