@@ -9,7 +9,7 @@
 df_meta_data <- data.frame()
 
 # Read in script to extract names of tables needed
-this_script <- read_lines("create_jsons/read_all_dataportal_tables_in.R") %>% .[12:length(.)]
+this_script <- read_lines("create_jsons/read_all_dataportal_tables_in.R") %>% .[17:length(.)]
 
 tables_needed <- this_script[grepl("dataset_long <-", this_script)] %>% gsub("dataset_long <- ", "", ., fixed = TRUE) %>% 
   gsub('"', "", ., fixed = TRUE) %>%
