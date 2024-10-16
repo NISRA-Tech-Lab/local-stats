@@ -9,7 +9,7 @@
 df_meta_data <- data.frame()
 
 # Read in script to extract names of tables needed
-this_script <- read_lines("create_jsons/read_all_dataportal_tables_in.R") %>% .[12:length(.)]
+this_script <- read_lines("create_jsons/read_all_dataportal_tables_in.R") %>% .[17:length(.)]
 
 tables_needed <- this_script[grepl("dataset_long <-", this_script)] %>% gsub("dataset_long <- ", "", ., fixed = TRUE) %>% 
   gsub('"', "", ., fixed = TRUE) %>%
@@ -26,7 +26,7 @@ titles <- c()
 updates <- c()
 id_cols <- c()
 
-for (i in 3:length(tables_needed)) {
+for (i in 1:length(tables_needed)) {
   
   titles[i] <- data_portal$label[which(matrices == tables_needed[i])]
   updates[i] <- substr(updated[which(matrices == tables_needed[i])], 1, 10)
