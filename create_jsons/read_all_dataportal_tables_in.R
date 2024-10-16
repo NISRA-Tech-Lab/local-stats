@@ -26,7 +26,7 @@ titles <- c()
 updates <- c()
 id_cols <- c()
 
-for (i in 3:length(tables_needed)) {
+for (i in 1:length(tables_needed)) {
   
   titles[i] <- data_portal$label[which(matrices == tables_needed[i])]
   updates[i] <- substr(updated[which(matrices == tables_needed[i])], 1, 10)
