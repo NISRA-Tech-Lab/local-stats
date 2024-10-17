@@ -304,9 +304,9 @@ function get_i_button_info () {
 		houseprices: {
 			title: "Average house price",
 			info: 
-				  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Attainment[0].dataset_url") + "'>LPS Standardised House Prices</a></p>"+
-				  "<p class = 'pibutton'>Last updated: XXXX </p>"+
-				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("Attainment[0].email") + "'>Email for more information</a> </p>"  
+				  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("houseprices[0].dataset_url") + "'>"+ checkMeta("houseprices[0].title") +"</a></p>"+
+				  "<p class = 'pibutton'>Last updated:" + checkMeta("houseprices[0].last_updated") + "</p>"+
+				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("houseprices[0].email") + "'>Email for more information</a> </p>"  
 		},
 		concern: {
 			title: "Concern about the environment",

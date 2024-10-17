@@ -1010,22 +1010,24 @@ function compareDensity (place) {
 					box_6: {
 						id: "houseprices",
 						year: "Q2 2024",
-						content: "<span class='text-big'>£185,025</span>",
+						content: "<span class='text-big'>£"+(check("houseprices.value.SP")).toLocaleString(undefined, {maximumFractionDigits: 0})+"</span>"+
+						"<p><span class='text-big'>"+((check("houseprices.value.HPI")-100)).toLocaleString(undefined, {maximumFractionDigits: 1})+"%</span> higher than Q1 2015</p>",
 						show: ["ni"]
 					},
 
 					box_6a: {
 						id: "houseprices",
 						year: "Q2 2024",
-						content: "<span class='text-big'>£190,567</span>"+
-							"<span style='color: #1460aa'> (NI £185,025) </span>" ,
+						content: "<p><span class='text-big'>£"+(check("houseprices.value.SP")).toLocaleString(undefined, {maximumFractionDigits: 0})+"</span>"+
+						"<span style='color: #1460aa'> (NI £"+(data.ni.data.houseprices.value.SP).toLocaleString(undefined, {maximumFractionDigits: 0})+") </span></p>" +
+						"<p><span class='text-big'>"+((check("houseprices.value.HPI")-100)).toLocaleString(undefined, {maximumFractionDigits: 1})+"%</span> higher than in quarter 1 2015"+
+						"<span style='color: #1460aa'> (NI "+((data.ni.data.houseprices.value.HPI-100)).toLocaleString(undefined, {maximumFractionDigits: 1})+"%)</span></p>",
 						show: ["lgd"]
 					},
 
 					box_6b: {
 						id: "houseprices",
-						year: "Q2 2024",
-						content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+						content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea","sdz","dz"],
 						i_button: false,
 						title: "<span style='font-size: 0.88em'>Average house price</span>"
