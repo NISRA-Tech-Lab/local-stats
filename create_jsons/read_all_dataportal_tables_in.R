@@ -2158,9 +2158,9 @@ df_crime_perc %>% filter(geog_code == "N92000002")
 
 ##### Worry ####
 dataset_short <- "crimeworry"
-dataset_subject <- "65/NISCS"
+dataset_subject <- "65/NISCTS"
 
-dataset_long <- "WORRYCRMLGD"
+dataset_long <- "TWORRYCRMLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 json_data <- jsonlite::fromJSON(
@@ -2216,9 +2216,9 @@ df_crime <- unique(rbind(df_crime, data))
 
 ##### perception ####
 dataset_short <- "crimeperception"
-dataset_subject <- "65/NISCS"
+dataset_subject <- "65/NISCTS"
 
-dataset_long <- "NISCSASBLGD"
+dataset_long <- "TNISCSASBLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 json_data <- jsonlite::fromJSON(
