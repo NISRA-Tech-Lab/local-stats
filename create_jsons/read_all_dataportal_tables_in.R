@@ -26,6 +26,7 @@ titles <- c()
 updates <- c()
 id_cols <- c()
 
+
 for (i in 1:length(tables_needed)) {
   
   titles[i] <- data_portal$label[which(matrices == tables_needed[i])]
@@ -390,6 +391,50 @@ data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, l
 
 df_popchange <- rbind(df_popchange, data)
 
+
+##### house prices  ##### 
+df_lps <- list()
+dataset_subject <- "95/NIHPI"
+dataset_long <- "LPSHPI01"
+#latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
+
+
+latest_year <- data_portal$dimension$`TLIST(Q1)`$category$index[[which(matrices == dataset_long)]] %>% tail(1)
+
+dataset_short <- "houseprices"
+
+
+json_data <- jsonlite::fromJSON(
+  txt = transform_URL(paste0(
+    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
+    dataset_subject, '/', dataset_long,
+    '?query={"query": [{"code": "TLIST(Q1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
+    '"response": {"format": "json-stat2", "pivot": null}}'
+  ))
+)
+
+df_meta_data <- rbind(df_meta_data, t(c(
+  dataset = dataset_short,
+  "table_code" = dataset_long, "year" = latest_year,
+  "geog_level" = "lgd",
+  "dataset_url" = paste0("https://data.nisra.gov.uk/table/", json_data$extension$matrix),
+  "last_updated" = format(substring(json_data$updated, 1, 10), format = "%a"),
+  "email" = json_data$extension$contact$email,
+  "title" = json_data$label,
+  "note" = json_data$note
+)))
+
+
+categories <- factor(json_data$dimension$STATISTIC$category$index,
+                     levels = json_data$dimension$STATISTIC$category$index)
+
+data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
+  mutate(statistic = sort(rep_len(categories, nrow(.))),
+         VALUE = json_data$value,
+         source = dataset_short)
+
+df_lps = rbind(df_lps, data)
+
 #### Health ####
 ##### LE #####
 ###### LE by DEA ######
@@ -459,6 +504,9 @@ data <- data.frame(geog_code = sort(rep(json_data$dimension$LGD2014$category$ind
          source = dataset_short)
 
 df_le <- unique(rbind(df_le, data))
+
+
+
 
 
 ##### Happiness #####
@@ -2695,7 +2743,7 @@ df_dp_all_values <- unique(bind_rows(
     df_popchange, df_school_values, 
     df_env,
     df_crime,
-    df_business
+    df_business, df_lps
   ),
   rbind(
     df_satisfy, df_happy, df_lonely, 

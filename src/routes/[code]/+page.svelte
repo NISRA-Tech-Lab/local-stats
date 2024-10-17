@@ -1007,29 +1007,29 @@ function compareDensity (place) {
 					 }
 					,
 
-					// box_6: {
-					// 	id: "houseprices",
-					// 	year: "Q2 2024",
-					// 	content: "<span class='text-big'>£185,025</span>",
-					// 	show: ["ni"]
-					// },
+					box_6: {
+						id: "houseprices",
+						year: "Q2 2024",
+						content: "<span class='text-big'>£185,025</span>",
+						show: ["ni"]
+					},
 
-					// box_6a: {
-					// 	id: "houseprices",
-					// 	year: "Q2 2024",
-					// 	content: "<span class='text-big'>£190,567</span>"+
-					// 		"<span style='color: #1460aa'> (NI £185,025) </span>" ,
-					// 	show: ["lgd"]
-					// },
+					box_6a: {
+						id: "houseprices",
+						year: "Q2 2024",
+						content: "<span class='text-big'>£190,567</span>"+
+							"<span style='color: #1460aa'> (NI £185,025) </span>" ,
+						show: ["lgd"]
+					},
 
-					// box_6b: {
-					// 	id: "houseprices",
-					// 	year: "Q2 2024",
-					// 	content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
-					// 	show: ["dea","sdz","dz"],
-					// 	i_button: false,
-					// 	title: "<span style='font-size: 0.88em'>Average house price</span>"
-					// }
+					box_6b: {
+						id: "houseprices",
+						year: "Q2 2024",
+						content: "Data is available for " + parentlinks(data.place,"ni, lgd, dea"),
+						show: ["dea","sdz","dz"],
+						i_button: false,
+						title: "<span style='font-size: 0.88em'>Average house price</span>"
+					}
 
 				
 
