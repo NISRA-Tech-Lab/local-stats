@@ -13,6 +13,7 @@
   
   tables_needed <- this_script[grepl("dataset_long <-", this_script)] %>% gsub("dataset_long <- ", "", ., fixed = TRUE) %>% 
     gsub('"', "", ., fixed = TRUE) %>%
+    gsub(' ', "", ., fixed = TRUE) %>%
     unique()
   
   # All metadata from data portal read in:
@@ -29,6 +30,7 @@
   
   for (i in 1:length(tables_needed)) {
     
+  print(i)
     titles[i] <- data_portal$label[which(matrices == tables_needed[i])]
     updates[i] <- substr(updated[which(matrices == tables_needed[i])], 1, 10)
     id_cols[i] <- paste(data_portal$id[[which(matrices == tables_needed[i])]], collapse = "; ") %>%
