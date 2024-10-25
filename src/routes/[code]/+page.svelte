@@ -1178,7 +1178,7 @@ function compareDensity (place) {
 				id: "primarycare",
 				year: pullYear("GP", data.place)   ,
 				content: "<p><span class='text-big'>" + 
-							(check("GP.value.PRACS")).toLocaleString() +
+						(check("GP.value.PRACS")).toLocaleString() +
 						"</span> GP practices with an average of <span class='text-big'>" + 
 						(check("GP.value.PRACLIST")).toLocaleString() +
 						"</span> patients per practice.</p>" +
@@ -1192,21 +1192,21 @@ function compareDensity (place) {
 						"%</span> of the population are registered with a dentist. "+
 						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
 						"%)</span></p>",
-				show: [ "lgd"]
+				show: [ "lgd", "dea"]
 			},
-			box_6b: {
-				id: "primarycare",
-				year: pullYear("DEN", data.place),
-				content: "<p><span class='text-big'>" +
-					(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
-					"</span> dental surgeries." +
-						"</span>  <span class='text-big'>" + 
-						(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"%</span> of the population are registered with a dentist. "+
-						"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
-						"%)</span></p>",
-				show: ["dea"]
-			},
+			// box_6b: {
+			// 	id: "primarycare",
+			// 	year: pullYear("DEN", data.place),
+			// 	content: "<p><span class='text-big'>" +
+			// 		(check("DEN.value.GDSDSSurgeries")).toLocaleString() +
+			// 		"</span> dental surgeries." +
+			// 			"</span>  <span class='text-big'>" + 
+			// 			(check("DEN_REG.value.Dental_Registrations") / check("MYETotal.value")*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+			// 			"%</span> of the population are registered with a dentist. "+
+			// 			"<span style='color: #1460aa'> (NI " + ((data.ni.data.DEN_REG.value.Dental_Registrations / data.ni.data.MYETotal.value)*100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) +
+			// 			"%)</span></p>",
+			// 	show: ["dea"]
+			// },
 
 			box_6c: {
 				id: "primarycare",
