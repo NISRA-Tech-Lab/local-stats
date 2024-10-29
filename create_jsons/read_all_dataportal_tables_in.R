@@ -345,6 +345,19 @@
   
   categories <- unlist(json_data$dimension$broadage4$category$label)
   
+  csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
+    filter(`TLIST.A1.` == latest_year & Sex == "All") %>%
+    mutate(statistic = `Broad.age.band..4.cat.`) %>%
+  select(DEA2014, statistic, VALUE) %>% group_by(DEA2014, statistic) %>% 
+       summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
+       rename(geog_code = DEA2014, statistic = statistic) %>% 
+    group_by(geog_code) %>%
+    mutate(perc = VALUE / VALUE[statistic == "All"] *100,
+           source = dataset_short) %>% 
+    filter(statistic != "All")
+  
+    
+    
   data <- data.frame(geog_code = sort(rep(json_data$dimension$DEA2014$category$index, length(categories)))) %>%
     mutate(statistic = rep_len(categories, nrow(.)),
            VALUE = json_data$value,
@@ -353,7 +366,7 @@
     mutate(perc = VALUE / sum(VALUE) * 100) %>%
     filter(geog_code != "N92000002")
   
-  df_popage <- rbind(df_popage, data)
+  df_popage <- rbind(df_popage, csv_data)
   
   df_popage <- unique(df_popage)
   ##### population growth ####
