@@ -204,15 +204,48 @@ df_pop <- rbind(df_pop, data)
 dataset_long <- "MYE01T012"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "broadage4", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"broadage4"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"broadage4": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 
@@ -238,15 +271,56 @@ df_pop <- rbind(df_pop, data)
 dataset_long <- "MYE01T010"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "broadage4", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+  	"jsonrpc": "2.0",
+  	"method": "PxStat.Data.Cube_API.ReadDataset",
+  	"params": {
+  		"class": "query",
+  		"id": [
+  			"TLIST(A1)",
+  			"broadage4",
+  			"Sex"
+  		],
+  		"dimension": {
+  			"TLIST(A1)": {
+  				"category": {
+  					"index": [
+  						"', latest_year, '"
+  					]
+  				}
+  			},
+  			"broadage4": {
+  				"category": {
+  					"index": [
+  						"All"
+  					]
+  				}
+  			},
+  			"Sex": {
+  				"category": {
+  					"index": [
+  						"All"
+  					]
+  				}
+  			}
+  		},
+  		"extension": {
+  			"pivot": null,
+  			"codes": false,
+  			"language": {
+  				"code": "en"
+  			},
+  			"format": {
+  				"type": "JSON-stat",
+  				"version": "2.0"
+  			},
+  			"matrix": "', dataset_long, '"
+  		},
+  		"version": "2.0"
+  	}
+  }')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -274,14 +348,48 @@ dataset_short <- "Median"
 dataset_long <- "MA01T02"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"Sex"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"Sex": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -301,8 +409,6 @@ data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
 
 df_pop <- rbind(df_pop, data)
 
-
-
 ##### age band ####
 df_popage <- list()
 dataset_short <- "BroadAge"
@@ -310,15 +416,59 @@ dataset_short <- "BroadAge"
 dataset_long <- "MYE01T012"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "broadage4", "selection": {"filter": "item", "values": ["1", "2", "3", "4"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"broadage4",
+			"Sex"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"broadage4": {
+				"category": {
+					"index": [
+						"1",
+						"2",
+						"3",
+						"4"
+					]
+				}
+			},
+			"Sex": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -334,13 +484,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 categories <- unlist(json_data$dimension$broadage4$category$label)
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$SDZ2021$category$index, length(categories)))) %>%
+# Allowing for whatever order geog codes appear in raw data
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$SDZ2021$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$SDZ2021$category$index[i], length(categories)))
+}
+
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
+         VALUE = json_data$value) %>%
   group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100) %>%
-  filter(geog_code != "N92000002")
+  mutate(perc = VALUE / sum(VALUE) * 100,
+         source = dataset_short) %>%
+  filter(geog_code != "N92000002") %>%
+  arrange(geog_code, statistic)
 
 df_popage <- rbind(df_popage, data)
 
@@ -348,15 +505,48 @@ df_popage <- rbind(df_popage, data)
 dataset_long <- "MYE01T04"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "broadage4", "selection": {"filter": "item", "values": ["1", "2", "3", "4"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"Sex"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"Sex": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -372,27 +562,78 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 categories <- unlist(json_data$dimension$broadage4$category$label)
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$LGD2014$category$index, length(categories)))) %>%
+# Allowing for whatever order geog codes appear in raw data
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
+
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
+         VALUE = json_data$value) %>%
   group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100)
+  mutate(perc = VALUE / sum(VALUE) * 100,
+         source = dataset_short) %>%
+  arrange(geog_code, statistic)
 
 df_popage <- rbind(df_popage, data)
 
 dataset_long <- "MYE01T010"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "broadage4", "selection": {"filter": "item", "values": ["1", "2", "3", "4"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+  	"jsonrpc": "2.0",
+  	"method": "PxStat.Data.Cube_API.ReadDataset",
+  	"params": {
+  		"class": "query",
+  		"id": [
+  			"TLIST(A1)",
+  			"broadage4",
+  			"Sex"
+  		],
+  		"dimension": {
+  			"TLIST(A1)": {
+  				"category": {
+  					"index": [
+  						"', latest_year, '"
+  					]
+  				}
+  			},
+  			"broadage4": {
+  				"category": {
+  					"index": [
+  						"1",
+  						"2",
+  						"3",
+  						"4"
+  					]
+  				}
+  			},
+  			"Sex": {
+  				"category": {
+  					"index": [
+  						"All"
+  					]
+  				}
+  			}
+  		},
+  		"extension": {
+  			"pivot": null,
+  			"codes": false,
+  			"language": {
+  				"code": "en"
+  			},
+  			"format": {
+  				"type": "JSON-stat",
+  				"version": "2.0"
+  			},
+  			"matrix": "', dataset_long, '"
+  		},
+  		"version": "2.0"
+  	}
+  }')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -408,28 +649,22 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 categories <- unlist(json_data$dimension$broadage4$category$label)
 
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year & Sex == "All") %>%
-  mutate(statistic = `Broad.age.band..4.cat.`) %>%
-  select(DEA2014, statistic, VALUE) %>% group_by(DEA2014, statistic) %>% 
-  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = DEA2014, statistic = statistic) %>% 
-  group_by(geog_code) %>%
-  mutate(perc = VALUE / VALUE[statistic == "All"] *100,
-         source = dataset_short) %>% 
-  filter(statistic != "All")
+# Allowing for whatever order geog codes appear in raw data
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$DEA2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$DEA2014$category$index[i], length(categories)))
+}
 
-
-
-data <- data.frame(geog_code = sort(rep(json_data$dimension$DEA2014$category$index, length(categories)))) %>%
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
+         VALUE = json_data$value) %>%
   group_by(geog_code) %>%
-  mutate(perc = VALUE / sum(VALUE) * 100) %>%
-  filter(geog_code != "N92000002")
+  mutate(perc = VALUE / sum(VALUE) * 100,
+         source = dataset_short) %>%
+  filter(geog_code != "N92000002") %>%
+  arrange(geog_code, statistic)
 
-df_popage <- rbind(df_popage, csv_data)
+df_popage <- rbind(df_popage, data)
 
 df_popage <- unique(df_popage)
 ##### population growth ####
@@ -439,13 +674,40 @@ dataset_short <- "PopChange"
 dataset_long <- "MYE01T06"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "rounded_unrounded", "selection": {"filter": "item", "values": ["Unrounded"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"rounded_unrounded"
+		],
+		"dimension": {
+			"rounded_unrounded": {
+				"category": {
+					"index": [
+						"Unrounded"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -480,15 +742,43 @@ latest_year <- data_portal$dimension$`TLIST(Q1)`$category$index[[which(matrices 
 
 dataset_short <- "houseprices"
 
-
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(Q1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(Q1)"
+		],
+		"dimension": {
+			"TLIST(Q1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
+
+
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -522,15 +812,41 @@ dataset_subject <- "8/HILEGH"
 dataset_long <- "LEDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -545,23 +861,56 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 categories <- unlist(json_data$dimension$SEX$category$label)
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$DEA2014$category$index, length(categories)))) %>%
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$DEA2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$DEA2014$category$index[i], length(categories)))
+}
+
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
          VALUE = json_data$value,
-         source = dataset_short)
+         source = dataset_short) %>%
+  arrange(geog_code, statistic)
 
 df_le <- rbind(df_le, data)
 ###### LE by LGD ######
 dataset_long <- "LELGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}')
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -577,16 +926,18 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 categories <- unlist(json_data$dimension$SEX$category$label)
 
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$LGD2014$category$index, length(categories)))) %>%
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
          VALUE = json_data$value,
-         source = dataset_short)
+         source = dataset_short) %>%
+  arrange(geog_code, statistic)
 
 df_le <- unique(rbind(df_le, data))
-
-
-
 
 
 ##### Happiness #####
@@ -598,14 +949,50 @@ latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 dataset_short <- "wellbeing"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLIFE", "WBHAP"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"WBLIFE",
+						"WBHAP"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"2022/23"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "WBPERSWLGD"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -619,26 +1006,72 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(STATISTIC = sort(rep_len(categories, nrow(.))),
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories)))) %>%
+  mutate(STATISTIC = categories,
          VALUE = json_data$value)
-
 
 dataset_long <- "WBPERSWOTHR"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLIFE", "WBHAP"]}},',
-    '{"code": "OTHRCAT", "selection": {"filter": "item", "values": ["N92000002"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"OTHRCAT"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"WBLIFE",
+						"WBHAP"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"OTHRCAT": {
+				"category": {
+					"index": [
+						"N92000002"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 data_ni <- data.frame(geog_code = "N92000002",
@@ -665,14 +1098,41 @@ latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 dataset_short <- "lonely"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLON"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -686,26 +1146,57 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(STATISTIC = sort(rep_len(categories, nrow(.))),
+data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index) %>%
+  mutate(STATISTIC = json_data$dimension$STATISTIC$category$index,
          VALUE = json_data$value)
 
 
 dataset_long <- "WBLONOTHR"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WBLON"]}},',
-    '{"code": "OTHRCAT", "selection": {"filter": "item", "values": ["N92000002"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"OTHRCAT"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"OTHRCAT": {
+				"category": {
+					"index": [
+						"N92000002"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 data_ni <- data.frame(geog_code = "N92000002",
@@ -716,8 +1207,6 @@ data_both = rbind(data, data_ni)
 
 df_lonely = data_both %>% 
   mutate(source = "Lonely") %>% select(geog_code, VALUE, source)
-
-
 
 
 ##### Hospital attendance #####
@@ -732,13 +1221,41 @@ latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 dataset_short <- "Admiss"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -755,7 +1272,12 @@ df_meta_data <- rbind(df_meta_data, t(c(
 pdiag <- json_data$dimension$PDIAG$category$index
 reason <- unlist(json_data$dimension$PDIAG$category$label)
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$DEA2014$category$index, length(pdiag))),
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$DEA2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$DEA2014$category$index[i], length(pdiag)))
+}
+
+data <- data.frame(geog_code = geog_codes,
                    VALUE = json_data$value) %>%
   mutate(PDIAG = rep_len(pdiag, nrow(.)),
          reason = rep_len(reason, nrow(.)),
@@ -789,14 +1311,52 @@ latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 dataset_short <- "GP"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["PRACS", "GPS", "REGPAT", "PRACLIST"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"PRACS",
+						"GPS",
+						"REGPAT",
+						"PRACLIST"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -810,16 +1370,19 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories)),
-                   VALUE = json_data$value) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_gps <- rbind(df_gps, data)
-
 
 dataset_subject <- "66/GMS"
 
@@ -828,14 +1391,52 @@ latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 dataset_short <- "GP"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["PRACS", "GPS", "REGPAT", "PRACLIST"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"PRACS",
+						"GPS",
+						"REGPAT",
+						"PRACLIST"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -849,18 +1450,22 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories)),
-                   VALUE = json_data$value) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         source = dataset_short)
+
+geog_codes <- json_data$dimension$DEA2014$category$index
+
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short) %>%
+  arrange(statistic, geog_code)
 
 df_gps <- rbind(df_gps, data)
-
-
-
 
 
 df_dental <- list()
@@ -870,13 +1475,41 @@ dataset_subject <- "66/GDS"
 dataset_long <- "FPSGDSDSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 
@@ -891,29 +1524,59 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_dental <- rbind(df_dental, data)
-
-
 
 
 dataset_long <- "FPSGDSDSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -927,13 +1590,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_dental <- rbind(df_dental, data)
 
@@ -942,14 +1609,49 @@ dataset_short <- "DEN_REG"
 dataset_long <- "FPSGDSDRLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Age", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"Age"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"Age": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -974,14 +1676,49 @@ df_dental <- rbind(df_dental, data)
 dataset_long <- "FPSGDSDRDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "Age", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"Age"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"Age": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1012,14 +1749,52 @@ dataset_subject <- "79/LMS"
 dataset_long <- "LMSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["EMPN", "EMPR", "UNEMPR", "INACTR"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"EMPN",
+						"EMPR",
+						"UNEMPR",
+						"INACTR"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1033,13 +1808,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_lmr <- rbind(df_lmr, data)
 
@@ -1055,18 +1834,66 @@ dataset_subject <- "85/EARNINGS"
 dataset_long <- "GAPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["Median"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "WP", "selection": {"filter": "item", "values": ["FT"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"WP",
+			"Sex"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"Median"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"WP": {
+				"category": {
+					"index": [
+						"FT"
+					]
+				}
+			},
+			"Sex": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -1092,19 +1919,74 @@ dataset_subject <- "85/EARNINGS"
 dataset_long <- "GHWPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["Median"]}},',
-    '{"code": "Sex", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "WP", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "PR", "selection": {"filter": "item", "values": ["Wkly"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"PR",
+			"WP",
+			"Sex"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"Median"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"PR": {
+				"category": {
+					"index": [
+						"Wkly"
+					]
+				}
+			},
+			"WP": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"Sex": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -1132,15 +2014,60 @@ dataset_subject <- "12/BRES"
 dataset_long <- "BRESHEADLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "GENWP", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "HEADLINE", "selection": {"filter": "item", "values": ["Construction", "Manufacturing", "Services", "Other"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"GENWP",
+			"HEADLINE"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year,'"
+					]
+				}
+			},
+			"GENWP": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"HEADLINE": {
+				"category": {
+					"index": [
+						"Construction",
+						"Manufacturing",
+						"Services",
+						"Other"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1154,10 +2081,14 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$HEADLINE$category$index,
-                     levels = json_data$dimension$HEADLINE$category$index)
+categories <- json_data$dimension$HEADLINE$category$index
 
-data <- data.frame(geog_code = sort(rep(json_data$dimension$LGD2014$category$index, length(categories)))) %>%
+geog_codes <- c()
+for(i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
+
+data <- data.frame(geog_code = geog_codes) %>%
   mutate(statistic = rep_len(categories, nrow(.)),
          VALUE = json_data$value,
          source = dataset_short) %>%
@@ -1176,13 +2107,41 @@ dataset_subject <- "92/BEN"
 dataset_long <- "BSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1195,27 +2154,59 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "title" = json_data$label,
   "note" = json_data$note
 )))
+    
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_bs <- rbind(df_bs, data)
 
 dataset_long <- "BSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1229,28 +2220,59 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_bs <- rbind(df_bs, data)
 
 dataset_long <- "BSSDZ"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -1263,13 +2285,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$SDZ2021$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$SDZ2021$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_bs <- rbind(df_bs, data)
 
@@ -1277,13 +2303,41 @@ df_bs <- rbind(df_bs, data)
 dataset_long <- "BSDZ"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1297,13 +2351,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$DZ2021$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$DZ2021$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_bs <- rbind(df_bs, data)
 
@@ -1321,14 +2379,54 @@ dataset_subject <- "76/SCEN"
 dataset_long <- "DESCPDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["FSME", "All", "SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+
+
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"FSME",
+						"SENNonStatemented",
+						"SENStatement",
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 latest_year <- as.character(json_data$dimension$`TLIST(A1)`$category$label %>% tail(1))
@@ -1343,15 +2441,19 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "title" = json_data$label,
   "note" = json_data$note
 )))
+  
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
-  group_by(geog_code) 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short) %>%
+  group_by(geog_code)
 
 
 data_value <- data %>%
@@ -1364,14 +2466,52 @@ df_school_value <- rbind(df_school_value, data_value)
 dataset_long <- "DESCPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["FSME", "All", "SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"FSME",
+						"SENNonStatemented",
+						"SENStatement",
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1385,14 +2525,18 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
-  group_by(geog_code) 
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short) %>%
+  group_by(geog_code)
 
 data_value <- data %>%
   select(geog_code, statistic, VALUE, source)
@@ -1406,14 +2550,53 @@ dataset_short <- "PostPrimary"
 dataset_long <- "DESCPPDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["FSME", "All", "SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"FSME",
+						"SENNonStatemented",
+						"SENStatement",
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1426,15 +2609,19 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "title" = json_data$label,
   "note" = json_data$note
 )))
+ 
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
-  group_by(geog_code) 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short) %>%
+  group_by(geog_code)
 
 data_value <- data %>%
   select(geog_code, statistic, VALUE, source)
@@ -1445,14 +2632,52 @@ df_school_value <- rbind(df_school_value, data_value)
 dataset_long <- "DESCPPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["FSME", "All", "SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"FSME",
+						"SENNonStatemented",
+						"SENStatement",
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1465,15 +2690,19 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "title" = json_data$label,
   "note" = json_data$note
 )))
+   
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
-  group_by(geog_code) 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short) %>%
+  group_by(geog_code)
 
 data_value <- data %>%
   select(geog_code, statistic, VALUE, source)
@@ -1490,14 +2719,50 @@ dataset_subject <- "76/SCEN"
 dataset_long <- "DESCSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"SENNonStatemented",
+						"SENStatement"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1511,27 +2776,68 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_school_value <- unique(rbind(df_school_value, data))
 
 dataset_long <- "DESCSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["All", "SENNonStatemented", "SENStatement"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"SENNonStatemented",
+						"SENStatement",
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1545,13 +2851,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   VALUE = json_data$value,
+                   statistic = categories,
+                   source = dataset_short)
 
 df_school_value <- unique(rbind(df_school_value, data))
 
@@ -1577,11 +2887,6 @@ df_school_values <- unique(rbind(df_school_FSME %>% select(-perc), df_school_SEN
 df_school_perc <- unique(rbind(df_school_FSME, df_school_SEN))
 
 
-
-
-
-
-
 ##### Pupil / teacher ratio #####
 df_school_classsize <- list()
 dataset_short <- "ClassSize"
@@ -1590,14 +2895,49 @@ dataset_subject <- "76/SWF"
 dataset_long <- "DETNPTRLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "TNschooltype", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"TNschooltype"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"TNschooltype": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1624,15 +2964,57 @@ dataset_subject <- "76/SL"
 dataset_long <- "DESLSALGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "FSME", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["fivegcseatocincengmathpct"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"FSME"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"fivegcseatocincengmathpct"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"FSME": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1656,15 +3038,57 @@ df_school_attainment <- rbind(df_school_attainment, data)
 dataset_long <- "DESLSADEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "FSME", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["fivegcseatocincengmathpct"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"FSME"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"fivegcseatocincengmathpct"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"FSME": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1693,13 +3117,41 @@ dataset_subject <- "77/FES"
 dataset_long <- "FEENROLLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year,'"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1722,13 +3174,41 @@ df_FEHE <- rbind(df_FEHE, data)
 dataset_long <- "FEENROLDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1754,13 +3234,41 @@ dataset_subject <- "77/HES"
 dataset_long <- "HEENROLLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1783,13 +3291,41 @@ df_FEHE <- rbind(df_FEHE, data)
 dataset_long <- "HEENROLDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1819,14 +3355,53 @@ dataset_subject <- "76/SL"
 dataset_long <- "DESLSDDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["destHEpct", "destFEpct", "destEmploypct", "destTrainpct", "destUnempUnkpct"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"destHEpct",
+						"destFEpct",
+						"destEmploypct",
+						"destTrainpct",
+						"destUnempUnkpct"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1840,29 +3415,78 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_school_destination <- unique(rbind(df_school_destination, data))
-
 
 dataset_long <- "DESLSDLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["destHEpct", "destFEpct", "destEmploypct", "destTrainpct", "destUnempUnkpct"]}},',
-    '{"code": "FSME", "selection": {"filter": "item", "values":["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"FSME"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"destHEpct",
+						"destFEpct",
+						"destEmploypct",
+						"destTrainpct",
+						"destUnempUnkpct"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"FSME": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -1876,20 +3500,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_school_destination <- unique(rbind(df_school_destination, data))
 df_school_destination_perc = df_school_destination %>% rename(perc = VALUE) %>% mutate(VALUE = NA)
-
-
-
-
 
 #### Environment ####
 df_env <- list()
@@ -1903,14 +3527,41 @@ dataset_subject <- "82/PA"
 dataset_long <- "CHSCONCERNLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["CONCERNENVI", "NOTCONCERNENVI"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 
@@ -1926,14 +3577,18 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>%
-  mutate(perc = VALUE )
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short,
+                   perc = json_data$value)
 
 df_env_perc <- rbind(df_env_perc, data)
 
@@ -1945,16 +3600,43 @@ dataset_subject <- "82/PA"
 dataset_long <- "CHSENVIPROBLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    ##'{"code": "STATISTIC", "selection": {"filter": "item", "values": ["CONCERNENVI", "NOTCONCERNENVI"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-)
 
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"2019/20"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "CHSENVIPROBLGD"
+		},
+		"version": "2.0"
+	}
+}'
+  )
+)
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -1968,41 +3650,25 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value) %>%
-  mutate(problem_reason = case_when(statistic =='POLRIVER' ~ 'Pollution in rivers',
-                                    statistic =='POLBWB' ~ 'Pollution in bathing waters and beaches',
-                                    statistic =='TREXUS' ~ 'Traffic exhaust and urban smog',
-                                    statistic =='LOSSPA' ~ 'Loss of plants and animals in NI',
-                                    statistic =='OZLADE' ~ 'Ozone layer depletion',
-                                    statistic =='TRFODE' ~ 'Tropical forest destruction',
-                                    statistic =='CLICHA' ~ 'Climate change',
-                                    statistic =='LOSSTH' ~ 'Loss of trees and hedgerows in NI',
-                                    statistic =='FUMSMO' ~ 'Fumes and smoke from factories',
-                                    statistic =='TRACON' ~ 'Traffic congestion',
-                                    statistic =='PESFER' ~ 'Use of pesticides and fertilisers',
-                                    statistic =='ACIRAI' ~ 'Acid rain',
-                                    statistic =='WASLAN' ~ 'Waste send to landfill',
-                                    statistic =='ILDUWA' ~ 'Illegal dumping of waste',
-                                    statistic =='NOISE' ~ 'Noise',
-                                    statistic =='FRACK' ~ 'Fracking',
-                                    statistic =='LITTER' ~ 'Litter',
-                                    statistic =='RENORE' ~ 'Recyclable waste not being recycled',
-                                    statistic =='OTHER' ~ 'Other',
-                                    statistic =='NONE' ~ 'None of these',
-                                    TRUE ~ ""),
-         
-         perc = VALUE ,
-         source = dataset_short) %>%
-  
-  group_by(geog_code, source) %>% slice_max(VALUE, n=3) %>%
-  
-  
-  summarise(reason = paste0(problem_reason, collapse = "; "))
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short,
+                   perc = json_data$value) %>%
+  mutate(problem_reason = factor(statistic,
+                                 levels = json_data$dimension$STATISTIC$category$index,
+                                 labels = unlist(json_data$dimension$STATISTIC$category$label))) %>%
+  group_by(geog_code, source) %>%
+  slice_max(VALUE, n = 3) %>%
+  summarise(reason = paste(problem_reason, collapse = "; "))
+
 
 df_env_problems = data
 
@@ -2014,16 +3680,53 @@ dataset_subject <- "82/W"
 dataset_long <- "WASTELGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["LACMWR","LACMWL","LACMWER"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-)
 
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"LACMWR",
+						"LACMWL",
+						"LACMWER"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
+)
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -2037,19 +3740,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short,
-         perc = VALUE)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short,
+                   perc = json_data$value)
 
 df_env_perc <- rbind(df_env_perc, data)
-
-
-
 
 ##### GHG #####
 
@@ -2059,14 +3763,49 @@ dataset_subject <- "82/GHG"
 dataset_long <- "GHGALL"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "GHGSECTOR", "selection": {"filter": "item", "values": ["GTALL"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"GHGSECTOR"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"GHGSECTOR": {
+				"category": {
+					"index": [
+						"GTALL"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 
@@ -2082,40 +3821,78 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_env <- rbind(df_env, data)
 
 
-
-
-json_data_base <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["2005"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["GHGALL"]}},',
-    '{"code": "GHGSECTOR", "selection": {"filter": "item", "values": ["GTALL"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data_base <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"GHGSECTOR"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"GHGALL"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"2005"
+					]
+				}
+			},
+			"GHGSECTOR": {
+				"category": {
+					"index": [
+						"GTALL"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "GHGALL"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
-
-
-
-categories <- factor(json_data_base$dimension$STATISTIC$category$index,
-                     levels = json_data_base$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data_base$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = "GHGALL_BASE",
-         VALUE = json_data_base$value,
-         source = dataset_short)
+data <- data.frame(geog_code = json_data_base$dimension$LGD2014$category$index,
+                   statistic = "GHGALL_BASE",
+                   VALUE = json_data_base$value,
+                   source = dataset_short)
 
 df_env <- rbind(df_env, data)
 
@@ -2127,16 +3904,42 @@ dataset_subject <- "72/AST"
 dataset_long <- "JMWCPTLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["JWCPT"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -2150,13 +3953,10 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
+                   statistic = json_data$dimension$STATISTIC$category$index,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_env <- rbind(df_env, data)
 
@@ -2171,42 +3971,42 @@ dataset_subject <- "67/PRC"
 dataset_long <- "PRCDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year,'"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
-
-# csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-#   filter(`TLIST.A1.` == latest_year) %>% 
-#   mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
-#                                  crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
-#                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
-#                                  crmclass == 'All' ~ 'allcrime',
-#                                  TRUE ~ crmclass)) %>% 
-#   select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
-#   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-#   rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
-
-
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year) %>% 
-  mutate(crime_group = case_when(crmclass %in% c(1,2,3) ~ 'person',
-                                 crmclass %in% c(4) ~ 'sexual',
-                                 crmclass %in% c(5) ~ 'robbery',
-                                 crmclass %in% c(6,7,8,9) ~ 'theft_burglary',
-                                 crmclass %in% c(10,11,12,13,14) ~ 'theft',
-                                 crmclass %in% c(15) ~ 'criminal',
-                                 crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
-                                 crmclass == 'All' ~ 'allcrime',
-                                 TRUE ~ crmclass)) %>% 
-  select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
-  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
 
 
 
@@ -2221,74 +4021,84 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-# 
-# categories <- factor(json_data$dimension$crmclass$category$index,
-#                      levels = json_data$dimension$crmclass$category$index)
-# 
-# data <- data.frame(statistic = rep(categories, length(json_data$dimension$DEA2014$category$index))) %>%
-#   mutate(geog_code = sort(rep_len(json_data$dimension$DEA2014$category$index, nrow(.))),
-#          VALUE = json_data$value,
-#          source = dataset_short)
+categories <- json_data$dimension$crmclass$category$index
 
-df_crime <- rbind(df_crime, csv_data)
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$DEA2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$DEA2014$category$index[i], length(categories)))
+}
 
+data <- data.frame(geog_code = geog_codes,
+                   statistic = rep(categories, length(unique(geog_codes))),
+                   VALUE = json_data$value) %>%
+  mutate(crime_group = case_when(as.numeric(statistic) <= 3 ~ "person",
+                                 as.numeric(statistic) == 4 ~ "sexual",
+                                 as.numeric(statistic) == 5 ~ "robbery",
+                                 as.numeric(statistic) <= 9 ~ "theft_burglary",
+                                 as.numeric(statistic) <= 14 ~ "theft",
+                                 as.numeric(statistic) == 15 ~ "criminal",
+                                 as.numeric(statistic) <= 20 ~ "other",
+                                 statistic == "All" ~ "allcrime",
+                                 TRUE ~ statistic)) %>%
+  group_by(geog_code, crime_group) %>%
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
+  mutate(source = dataset_short) %>%
+  rename(statistic = crime_group)
 
+df_crime <- rbind(df_crime, data)
 
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year & crmclass %in% c(6,7) ) %>% 
-  mutate(crime_group = 'burglary') %>% 
-  select(DEA2014, crime_group, VALUE) %>% group_by(DEA2014, crime_group) %>% 
-  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = DEA2014, statistic = crime_group) %>% mutate(source = dataset_short)
+burglary_data <- data.frame(geog_code = geog_codes,
+                            statistic = rep(categories, length(unique(geog_codes))),
+                            VALUE = json_data$value) %>%
+  filter(as.numeric(statistic) %in% 6:7) %>%
+  mutate(crime_group = "burglary") %>%
+  group_by(geog_code, crime_group) %>%
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
+  mutate(source = dataset_short) %>%
+  rename(statistic = crime_group)
 
-
-df_crime <- rbind(df_crime, csv_data)
-
+df_crime <- rbind(df_crime, burglary_data)
 
 
 dataset_long <- "PRCLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "crmclass", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-    
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-# 
-# 
-# csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-#   filter(`TLIST.A1.` == latest_year) %>% 
-#   mutate(crime_group = case_when(crmclass %in% c(1,2,3,4,5) ~ 'person',
-#                                  crmclass %in% c(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) ~ 'btcd',
-#                                  crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
-#                                  crmclass == 'All' ~ 'allcrime',
-#                                  TRUE ~ crmclass)) %>% 
-#   select(LGD2014, crime_group, VALUE) %>% group_by(LGD2014, crime_group) %>% 
-#   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-#   rename(geog_code = LGD2014, statistic = crime_group) %>% mutate(source = dataset_short)
-
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year) %>% 
-  mutate(crime_group = case_when(crmclass %in% c(1,2,3) ~ 'person',
-                                 crmclass %in% c(4) ~ 'sexual',
-                                 crmclass %in% c(5) ~ 'robbery',
-                                 crmclass %in% c(6,7,8,9) ~ 'theft_burglary',
-                                 crmclass %in% c(10,11,12,13,14) ~ 'theft',
-                                 crmclass %in% c(15) ~ 'criminal',
-                                 crmclass %in% c(16, 17, 18, 19, 20) ~ 'other',
-                                 crmclass == 'All' ~ 'allcrime',
-                                 TRUE ~ crmclass)) %>% 
-  select(LGD2014, crime_group, VALUE) %>% group_by(LGD2014, crime_group) %>% 
-  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = LGD2014, statistic = crime_group) %>% mutate(source = dataset_short)
-
-
-
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -2301,26 +4111,43 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-# categories <- factor(json_data$dimension$STATISTIC$category$index,
-#                      levels = json_data$dimension$STATISTIC$category$index)
-# 
-# data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-#   mutate(statistic = sort(rep_len(categories, nrow(.))),
-#          VALUE = json_data$value,
-#          source = dataset_short)
+categories <- json_data$dimension$crmclass$category$index
 
-df_crime <- unique(rbind(df_crime, csv_data))
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
 
+data <- data.frame(geog_code = geog_codes,
+                   statistic = rep(categories, length(unique(geog_codes))),
+                   VALUE = json_data$value) %>%
+  mutate(crime_group = case_when(as.numeric(statistic) <= 3 ~ "person",
+                                 as.numeric(statistic) == 4 ~ "sexual",
+                                 as.numeric(statistic) == 5 ~ "robbery",
+                                 as.numeric(statistic) <= 9 ~ "theft_burglary",
+                                 as.numeric(statistic) <= 14 ~ "theft",
+                                 as.numeric(statistic) == 15 ~ "criminal",
+                                 as.numeric(statistic) <= 20 ~ "other",
+                                 statistic == "All" ~ "allcrime",
+                                 TRUE ~ statistic)) %>%
+  group_by(geog_code, crime_group) %>%
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
+  mutate(source = dataset_short) %>%
+  rename(statistic = crime_group)
 
+df_crime <- unique(rbind(df_crime, data))
 
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year & crmclass %in% c(6,7) ) %>% 
-  mutate(crime_group = 'burglary') %>% 
-  select(LGD2014, crime_group, VALUE) %>% group_by(LGD2014, crime_group) %>% 
-  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = LGD2014, statistic = crime_group) %>% mutate(source = dataset_short)
+burglary_data <- data.frame(geog_code = geog_codes,
+                            statistic = rep(categories, length(unique(geog_codes))),
+                            VALUE = json_data$value) %>%
+  filter(as.numeric(statistic) %in% 6:7) %>%
+  mutate(crime_group = "burglary") %>%
+  group_by(geog_code, crime_group) %>%
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
+  mutate(source = dataset_short) %>%
+  rename(statistic = crime_group)
 
-df_crime <- unique(rbind(df_crime, csv_data))
+df_crime <- unique(rbind(df_crime, burglary_data))
 
 df_crime_perc <- df_crime %>%  group_by(geog_code) %>% filter(statistic != "burglary") %>% 
   mutate(perc = VALUE / VALUE[statistic == "allcrime"] *100) 
@@ -2334,14 +4161,52 @@ dataset_subject <- "65/NISCTS"
 dataset_long <- "TWORRYCRMLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["WorryC1","WorryC2","WorryC3","WorryC4"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"WorryC1",
+						"WorryC2",
+						"WorryC3",
+						"WorryC4"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2355,34 +4220,37 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$LGD2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>% group_by(geog_code) %>% 
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short) %>%
+  group_by(geog_code) %>% 
   slice_max(VALUE) %>%
-  mutate(reason = case_when(statistic == "WorryC1" ~ "Car crime",
-                            statistic == "WorryC2" ~ "Crime overall",
-                            statistic == "WorryC3" ~ "Burglary",
-                            statistic == "WorryC4" ~ "Violent crime",
-                            TRUE ~ "")) %>% select(geog_code, reason, source)
+  mutate(reason = factor(statistic,
+                         levels = json_data$dimension$STATISTIC$category$index,
+                         labels = gsub("High level of Worry: ",
+                                       "",
+                                       unlist(json_data$dimension$STATISTIC$category$label)))) %>%
+  select(geog_code, reason, source)
 
 
 df_crime_text  <- data
 
-
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short) %>% 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short) %>% 
   filter( statistic == "WorryC2")
 
 
-
 df_crime <- unique(rbind(df_crime, data))
-
 
 
 ##### perception ####
@@ -2392,14 +4260,49 @@ dataset_subject <- "65/NISCTS"
 dataset_long <- "TNISCSASBLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["ASB8"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"ASB8"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2413,13 +4316,11 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
+                   statistic = json_data$dimension$STATISTIC$category$index,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 
 df_crime <- unique(rbind(df_crime, data))
@@ -2441,15 +4342,49 @@ dataset_subject <- "6/IDBR"
 dataset_long <- "BUSINESSBIGLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BCOUNTS"]}},',
-    '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"BIG"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"BIG": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2463,47 +4398,71 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
-
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+data <- data.frame(geog_code = json_data$dimension$LGD2014$category$index,
+                   statistic = json_data$dimension$STATISTIC$category$index,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_business <- rbind(df_business, data)
 
 
 dataset_short <- "businesstype"
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BCOUNTS"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
-categories <- factor(json_data$dimension$BIG$category$index,
-                     levels = json_data$dimension$BIG$category$index)
+categories <- json_data$dimension$BIG$category$index
 
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
 
-data <- data.frame(statistic = rep(categories, length(json_data$dimension$LGD2014$category$index))) %>%
-  mutate(geog_code = sort(rep_len(json_data$dimension$LGD2014$category$index, nrow(.))),
+data <- data.frame(statistic = rep(categories, length(unique(geog_codes)))) %>%
+  mutate(geog_code = geog_codes,
          VALUE = json_data$value,
          source = dataset_short) %>%
   mutate(big_group = case_when(statistic %in% c(1) ~ 'agr',
                                statistic %in% c(4) ~ 'cons',
                                statistic %in% c(3) ~ 'prod',
                                statistic %in% c(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) ~ 'serv',
-                               TRUE ~ statistic) ) %>% 
+                               TRUE ~ statistic)) %>% 
   group_by(geog_code, big_group, source) %>% summarise(VALUE = sum(VALUE, na.rm=TRUE)) %>%
   rename(statistic = "big_group" )
-
-
-
 
 df_business <- rbind(df_business, data)
 
@@ -2514,18 +4473,58 @@ dataset_long <- "BUSINESSBANDLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
 
-
-json_data_E <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "TOBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data_E <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"BIG",
+			"TOBAND"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"BIG": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"TOBAND": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": false,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
-
 
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2539,48 +4538,90 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data_E$note
 )))
 
-categories_E <- factor(json_data_E$dimension$EMPBAND$category$index,
-                       levels = json_data_E$dimension$EMPBAND$category$index)
+categories_E <- json_data_E$dimension$EMPBAND$category$index
+                
+geog_codes <- c()
+for (i in 1:length(json_data_E$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data_E$dimension$LGD2014$category$index[i], length(categories_E)))
+}
 
-
-data <- data.frame(statistic = rep(categories_E, length(json_data_E$dimension$LGD2014$category$index))) %>%
-  mutate(geog_code = sort(rep_len(json_data_E$dimension$LGD2014$category$index, nrow(.))),
-         VALUE = json_data_E$value,
-         source = dataset_short)%>%
+data <- data.frame(statistic = rep(categories_E, length(unique(geog_codes))),
+                   geog_code = geog_codes,
+                   VALUE = json_data_E$value,
+                   source = dataset_short) %>%
   group_by(geog_code)
 
 
 df_business <- rbind(df_business, data)
 
-
-
-
-
-json_data_T <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "BIG", "selection": {"filter": "item", "values": ["All"]}},',
-    '{"code": "EMPBAND", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data_T <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"BIG",
+			"EMPBAND"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"BIG": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"EMPBAND": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
-categories_T <- factor(json_data_T$dimension$TOBAND$category$index,
-                       levels = json_data_T$dimension$TOBAND$category$index)
+categories_T <- json_data_T$dimension$EMPBAND$category$index
 
+geog_codes <- c()
+for (i in 1:length(json_data_T$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data_T$dimension$LGD2014$category$index[i], length(categories_T)))
+}
 
-data <- data.frame(statistic = rep(categories_T, length(json_data_T$dimension$LGD2014$category$index))) %>%
-  mutate(geog_code = sort(rep_len(json_data_T$dimension$LGD2014$category$index, nrow(.))),
-         VALUE = json_data_T$value,
-         source = dataset_short)%>%
+data <- data.frame(statistic = rep(categories_T, length(unique(geog_codes))),
+                   geog_code = geog_codes,
+                   VALUE = json_data_T$value,
+                   source = dataset_short) %>%
   group_by(geog_code)
 
 
 df_business <- rbind(df_business, data)
-
-
 
 
 
@@ -2591,14 +4632,50 @@ dataset_short <- "farms"
 dataset_long <- "FCLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["F", "FA"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"F",
+						"FA"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year,'"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2612,17 +4689,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+geog_codes <- json_data$dimension$LGD2014$category$index
+
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_business <- rbind(df_business, data)
-
-
 
 
 dataset_subject <- "89/FS"
@@ -2631,14 +4711,50 @@ dataset_short <- "farms"
 dataset_long <- "FCDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["F", "FA"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"F",
+						"FA"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2652,13 +4768,17 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$STATISTIC$category$index,
-                     levels = json_data$dimension$STATISTIC$category$index)
+geog_codes <- json_data$dimension$DEA2014$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$DEA2014$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$STATISTIC$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$STATISTIC$category$index[i], length(geog_codes)))
+}
+
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
 
 df_business <- rbind(df_business, data)
 
@@ -2669,15 +4789,50 @@ dataset_short <- "tourism"
 dataset_long <- "EJOBSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["EMJOBS"]}},',
-    '{"code": "EMJOBS", "selection": {"filter": "item", "values": ["All", "TJ"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"TLIST(A1)",
+			"EMJOBS"
+		],
+		"dimension": {
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"EMJOBS": {
+				"category": {
+					"index": [
+						"All",
+						"TJ"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long ,'"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2692,50 +4847,89 @@ df_meta_data <- rbind(df_meta_data, t(c(
 )))
 
 
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year & EMJOBS %in% c('All', 'TJ')) %>% 
-  select(LGD2014, EMJOBS, VALUE) %>% group_by(LGD2014, EMJOBS) %>% 
-  summarise(VALUE  = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = LGD2014, statistic = EMJOBS) %>% #mutate(source = dataset_short, statistic = EMJOBS) %>%
-  mutate(statistic = gsub("All","AllJobs",statistic),
-         statistic = gsub("TJ","TourismJobs",statistic),
-         source = dataset_short
-  )
+categories <- json_data$dimension$EMJOBS$category$index
 
-# categories <- factor(json_data$dimension$EMJOBS$category$index,
-#                      levels = json_data$dimension$EMJOBS$category$index)
-# 
-# data <- data.frame(geog_code = rep(json_data$dimension$LGD2014$category$index, length(categories))) %>%
-#   mutate(statistic = sort(rep_len(categories, nrow(.))),
-#          VALUE = json_data$value,
-#          source = dataset_short) %>% 
-#   mutate(statistic = gsub("All","AllJobs",statistic),
-#          statistic = gsub("TJ","TourismJobs",statistic),
-#   )
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
 
-df_business <- rbind(df_business, csv_data)
+data <- data.frame(geog_code = geog_codes,
+                   statistic = rep(categories, length(unique(geog_codes))),
+                   VALUE = json_data$value,
+                   source = dataset_short) %>%
+  mutate(statistic = factor(statistic,
+                            levels = c("All", "TJ"),
+                            labels = c("AllJobs", "TourismJobs"))) %>%
+  arrange(geog_code)
+
+df_business <- rbind(df_business, data)
 
 
 dataset_short <- "tourism_estab"
 dataset_long <- "CASLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["All"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
 )
 
 
-csv_data = read.csv(paste0("https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.ReadDataset/",dataset_long,"/CSV/1.0/")) %>%
-  filter(`TLIST.A1.` == latest_year) %>% 
-  select(LGD2014, VALUE) %>% group_by(LGD2014) %>% 
-  summarise(VALUE  = sum(VALUE, na.rm = TRUE)) %>% 
-  rename(geog_code = LGD2014) %>% mutate(source = dataset_short, statistic = 'estab')
+categories <- json_data$dimension$Estb$category$index
+
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+}
+
+data <- data.frame(geog_code = geog_codes,
+                   statistic = rep(categories, length(geog_codes)),
+                   VALUE = json_data$value) %>%
+  group_by(geog_code) %>%
+  summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
+  mutate(source = dataset_short,
+         statistic = "estab")
 
 
 df_meta_data <- rbind(df_meta_data, t(c(
@@ -2749,8 +4943,7 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-df_business <- rbind(df_business, csv_data)
-
+df_business <- rbind(df_business, data)
 
 
 df_business_perc <- df_business %>%  group_by(geog_code) %>% 
@@ -2768,16 +4961,58 @@ dataset_short <- "niets_sales"
 dataset_long <- "NIETS05"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BESESVALUE"]}},',
-    '{"code": "FLOW", "selection": {"filter": "item", "values": ["SALES"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-) 
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"FLOW"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"BESESVALUE"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"', latest_year, '"
+					]
+				}
+			},
+			"FLOW": {
+				"category": {
+					"index": [
+						"SALES"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "', dataset_long, '"
+		},
+		"version": "2.0"
+	}
+}'
+  )
+)
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -2790,15 +5025,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$BROADDEST$category$index,
-                     levels = json_data$dimension$BROADDEST$category$index)
+geog_codes <- json_data$dimension$LGD$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$BROADDEST$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$BROADDEST$category$index[i], length(geog_codes)))
+}
 
-data_ni <- data %>% group_by(statistic, source) %>% 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
+
+data_ni <- data %>%
+  group_by(statistic, source) %>% 
   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
   mutate(geog_code = "N92000002") 
 
@@ -2811,16 +5051,58 @@ dataset_short <- "niets_purch"
 dataset_long <- "NIETS05"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
-json_data <- jsonlite::fromJSON(
-  txt = transform_URL(paste0(
-    'https://ws-data.nisra.gov.uk/public/api.restful/PxStat.Data.Cube_API.PxAPIv1/en/',
-    dataset_subject, '/', dataset_long,
-    '?query={"query": [{"code": "TLIST(A1)", "selection": {"filter": "item", "values": ["', latest_year, '"]}},',
-    '{"code": "STATISTIC", "selection": {"filter": "item", "values": ["BESESVALUE"]}},',
-    '{"code": "FLOW", "selection": {"filter": "item", "values": ["PURCH"]}}],',
-    '"response": {"format": "json-stat2", "pivot": null}}'
-  ))
-) 
+json_data <- json_data_from_rpc(
+  query = paste0(
+    '{
+	"jsonrpc": "2.0",
+	"method": "PxStat.Data.Cube_API.ReadDataset",
+	"params": {
+		"class": "query",
+		"id": [
+			"STATISTIC",
+			"TLIST(A1)",
+			"FLOW"
+		],
+		"dimension": {
+			"STATISTIC": {
+				"category": {
+					"index": [
+						"BESESVALUE"
+					]
+				}
+			},
+			"TLIST(A1)": {
+				"category": {
+					"index": [
+						"2022"
+					]
+				}
+			},
+			"FLOW": {
+				"category": {
+					"index": [
+						"PURCH"
+					]
+				}
+			}
+		},
+		"extension": {
+			"pivot": null,
+			"codes": true,
+			"language": {
+				"code": "en"
+			},
+			"format": {
+				"type": "JSON-stat",
+				"version": "2.0"
+			},
+			"matrix": "NIETS05"
+		},
+		"version": "2.0"
+	}
+}'
+  )
+)
 
 df_meta_data <- rbind(df_meta_data, t(c(
   dataset = dataset_short,
@@ -2833,15 +5115,20 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-categories <- factor(json_data$dimension$BROADDEST$category$index,
-                     levels = json_data$dimension$BROADDEST$category$index)
+geog_codes <- json_data$dimension$LGD$category$index
 
-data <- data.frame(geog_code = rep(json_data$dimension$LGD$category$index, length(categories))) %>%
-  mutate(statistic = sort(rep_len(categories, nrow(.))),
-         VALUE = json_data$value,
-         source = dataset_short)
+categories <- c()
+for (i in 1:length(json_data$dimension$BROADDEST$category$index)) {
+  categories <- c(categories, rep(json_data$dimension$BROADDEST$category$index[i], length(geog_codes)))
+}
 
-data_ni <- data %>% group_by(statistic, source) %>% 
+data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
+                   statistic = categories,
+                   VALUE = json_data$value,
+                   source = dataset_short)
+
+data_ni <- data %>% 
+  group_by(statistic, source) %>% 
   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>% 
   mutate(geog_code = "N92000002") 
 
