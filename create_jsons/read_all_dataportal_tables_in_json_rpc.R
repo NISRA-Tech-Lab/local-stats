@@ -72,7 +72,6 @@ for (geog_type in c("dea", "lgd", "sdz", "dz")) {
 df_pop <- list()
 
 dataset_short <- "MYETotal"
-dataset_subject <- "5/MYE"
 
 ##### MYE by LGD #####
 dataset_long <- "MYE01T06"
@@ -733,7 +732,6 @@ df_popchange <- rbind(df_popchange, data)
 
 ##### house prices  ##### 
 df_lps <- list()
-dataset_subject <- "95/NIHPI"
 dataset_long <- "LPSHPI01"
 #latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -807,7 +805,6 @@ df_lps = rbind(df_lps, data)
 ###### LE by DEA ######
 df_le <- list()
 dataset_short <- "LE"
-dataset_subject <- "8/HILEGH"
 
 dataset_long <- "LEDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -941,8 +938,6 @@ df_le <- unique(rbind(df_le, data))
 
 
 ##### Happiness #####
-
-dataset_subject <- "96/PW"
 
 dataset_long <- "WBPERSWLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -1091,8 +1086,6 @@ df_satisfy = data_both %>% filter(STATISTIC == "WBLIFE") %>%
 
 ##### Loneliness #####
 
-dataset_subject <- "96/LONEL"
-
 dataset_long <- "WBLONLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1214,8 +1207,6 @@ df_lonely = data_both %>%
 df_admissions_all <- list()
 df_admissions_top <- list()
 
-dataset_subject <- "70/HAS"
-
 dataset_long <- "ADMITDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1304,8 +1295,6 @@ df_admissions_top <- rbind(df_admissions_top, data_top)
 
 df_gps <- list()
 
-dataset_subject <- "66/GMS"
-
 dataset_long <- "GPPRACPATLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1383,8 +1372,6 @@ data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
                    source = dataset_short)
 
 df_gps <- rbind(df_gps, data)
-
-dataset_subject <- "66/GMS"
 
 dataset_long <- "GPPRACPATDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -1470,7 +1457,6 @@ df_gps <- rbind(df_gps, data)
 
 df_dental <- list()
 dataset_short <- "DEN"
-dataset_subject <- "66/GDS"
 
 dataset_long <- "FPSGDSDSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -1744,7 +1730,6 @@ df_dental <- rbind(df_dental, data)
 ##### LMR #####
 df_lmr <- list()
 dataset_short <- "LMS"
-dataset_subject <- "79/LMS"
 
 dataset_long <- "LMSLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -1829,8 +1814,6 @@ df_lmr_value = df_lmr %>% filter(statistic == "EMPN")
 df_ashe <- list()
 dataset_short <- "ASHE"
 
-dataset_subject <- "85/EARNINGS"
-
 dataset_long <- "GAPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
 
@@ -1914,7 +1897,6 @@ df_ashe <- rbind(df_ashe, data)
 
 
 dataset_short <- "ASHE_weekly"
-dataset_subject <- "85/EARNINGS"
 
 dataset_long <- "GHWPLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2009,7 +1991,6 @@ df_ashe <- rbind(df_ashe, data)
 ##### Industry #####
 df_indust <- list()
 dataset_short <- "BRES"
-dataset_subject <- "12/BRES"
 
 dataset_long <- "BRESHEADLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2102,7 +2083,6 @@ df_indust <- rbind(df_indust, data)
 ##### Benefits #####
 df_bs <- list()
 dataset_short <- "BS"
-dataset_subject <- "92/BEN"
 
 dataset_long <- "BSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2374,7 +2354,6 @@ df_bs <- rbind(df_bs, data)
 df_school_value <- list()
 df_school_perc <- list()
 dataset_short <- "Primary"
-dataset_subject <- "76/SCEN"
 
 dataset_long <- "DESCPDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2714,7 +2693,6 @@ df_school_value <- rbind(df_school_value, data_value)
 ##### SEN ####
 
 dataset_short <- "SEN"
-dataset_subject <- "76/SCEN"
 
 dataset_long <- "DESCSDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2890,7 +2868,6 @@ df_school_perc <- unique(rbind(df_school_FSME, df_school_SEN))
 ##### Pupil / teacher ratio #####
 df_school_classsize <- list()
 dataset_short <- "ClassSize"
-dataset_subject <- "76/SWF"
 
 dataset_long <- "DETNPTRLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -2959,7 +2936,6 @@ df_school_classsize <- rbind(df_school_classsize, data)
 ##### GCSEs #####
 df_school_attainment <- list()
 dataset_short <- "Attainment"
-dataset_subject <- "76/SL"
 
 dataset_long <- "DESLSALGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3112,7 +3088,6 @@ df_school_attainment <- rbind(df_school_attainment, data)
 
 df_FEHE <- list()
 dataset_short <- "FE"
-dataset_subject <- "77/FES"
 
 dataset_long <- "FEENROLLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3229,7 +3204,6 @@ data <- data.frame(geog_code = json_data$dimension$DEA2014$category$index,
 df_FEHE <- rbind(df_FEHE, data)
 
 dataset_short <- "HE"
-dataset_subject <- "77/HES"
 
 dataset_long <- "HEENROLLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3350,7 +3324,6 @@ df_FEHE <- rbind(df_FEHE, data)
 
 df_school_destination <- list()
 dataset_short <- "Destination"
-dataset_subject <- "76/SL"
 
 dataset_long <- "DESLSDDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3522,7 +3495,6 @@ df_env_perc <- list()
 ##### Concern #####
 
 dataset_short <- "Env_concern"
-dataset_subject <- "82/PA"
 
 dataset_long <- "CHSCONCERNLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3595,7 +3567,6 @@ df_env_perc <- rbind(df_env_perc, data)
 
 
 dataset_short <- "Env_problem"
-dataset_subject <- "82/PA"
 
 dataset_long <- "CHSENVIPROBLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3674,7 +3645,6 @@ df_env_problems = data
 
 
 dataset_short <- "Env_waste"
-dataset_subject <- "82/W"
 
 ##### waste #####
 dataset_long <- "WASTELGD"
@@ -3758,7 +3728,6 @@ df_env_perc <- rbind(df_env_perc, data)
 ##### GHG #####
 
 dataset_short <- "Env_ghg"
-dataset_subject <- "82/GHG"
 
 dataset_long <- "GHGALL"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3899,7 +3868,6 @@ df_env <- rbind(df_env, data)
 ##### active travel #####
 
 dataset_short <- "Env_active"
-dataset_subject <- "72/AST"
 
 dataset_long <- "JMWCPTLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -3966,7 +3934,6 @@ df_env <- rbind(df_env, data)
 
 df_crime <- list()
 dataset_short <- "crime"
-dataset_subject <- "67/PRC"
 
 dataset_long <- "PRCDEA"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4156,7 +4123,6 @@ df_crime_perc %>% filter(geog_code == "N92000002")
 
 ##### Worry ####
 dataset_short <- "crimeworry"
-dataset_subject <- "65/NISCTS"
 
 dataset_long <- "TWORRYCRMLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4255,7 +4221,6 @@ df_crime <- unique(rbind(df_crime, data))
 
 ##### perception ####
 dataset_short <- "crimeperception"
-dataset_subject <- "65/NISCTS"
 
 dataset_long <- "TNISCSASBLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4337,7 +4302,6 @@ df_crime <- unique(rbind(df_crime, data))
 
 df_business <- list()
 dataset_short <- "business"
-dataset_subject <- "6/IDBR"
 
 dataset_long <- "BUSINESSBIGLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4466,8 +4430,6 @@ data <- data.frame(statistic = rep(categories, length(unique(geog_codes)))) %>%
 
 df_business <- rbind(df_business, data)
 
-
-dataset_subject <- "6/IDBR"
 dataset_short <- "businessband"
 dataset_long <- "BUSINESSBANDLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4626,8 +4588,6 @@ df_business <- rbind(df_business, data)
 
 
 ##### farms #####
-dataset_subject <- "89/FS"
-
 dataset_short <- "farms"
 dataset_long <- "FCLGD"
 latest_year <- years[[which(matrices == dataset_long)]] %>% tail(1)
@@ -4703,9 +4663,6 @@ data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
                    source = dataset_short)
 
 df_business <- rbind(df_business, data)
-
-
-dataset_subject <- "89/FS"
 
 dataset_short <- "farms"
 dataset_long <- "FCDEA"
@@ -4783,7 +4740,6 @@ data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
 df_business <- rbind(df_business, data)
 
 ##### tourism #####
-dataset_subject <- "72/TOU"
 
 dataset_short <- "tourism"
 dataset_long <- "EJOBSLGD"
@@ -4954,8 +4910,6 @@ df_business_perc <- df_business %>%  group_by(geog_code) %>%
 
 
 ##### niets #####
-
-dataset_subject <- "6/NIETS"
 
 dataset_short <- "niets_sales"
 dataset_long <- "NIETS05"
