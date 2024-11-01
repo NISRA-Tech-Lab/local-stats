@@ -264,6 +264,8 @@ data <- data.frame(geog_code = json_data$dimension$SDZ2021$category$index,
                    source = dataset_short) %>%
   filter(geog_code != "N92000002")
 
+
+
 df_pop <- rbind(df_pop, data)
 
 ##### MYE by DEA ####
@@ -4569,7 +4571,7 @@ json_data_T <- json_data_from_rpc(
   )
 )
 
-categories_T <- json_data_T$dimension$EMPBAND$category$index
+categories_T <- json_data_T$dimension$TOBAND$category$index
 
 geog_codes <- c()
 for (i in 1:length(json_data_T$dimension$LGD2014$category$index)) {
@@ -4807,7 +4809,8 @@ categories <- json_data$dimension$EMJOBS$category$index
 
 geog_codes <- c()
 for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
-  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], 
+                                  length(categories)))
 }
 
 data <- data.frame(geog_code = geog_codes,
@@ -4880,7 +4883,7 @@ for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
 }
 
 data <- data.frame(geog_code = geog_codes,
-                   statistic = rep(categories, length(geog_codes)),
+                   statistic = rep(categories, length(unique(geog_codes))),
                    VALUE = json_data$value) %>%
   group_by(geog_code) %>%
   summarise(VALUE = sum(VALUE, na.rm = TRUE)) %>%
@@ -4901,6 +4904,7 @@ df_meta_data <- rbind(df_meta_data, t(c(
 
 df_business <- rbind(df_business, data)
 
+df_business <- unique(df_business)
 
 df_business_perc <- df_business %>%  group_by(geog_code) %>% 
   filter(statistic %in% c('agr', 'cons', 'prod', 'serv', 
@@ -5122,5 +5126,7 @@ df_dp_all_text <- bind_rows(df_admissions_top, df_crime_text, df_env_problems)
 df_dp_all_perc <- unique(rbind( df_lmr_perc, df_indust, df_school_perc, df_popage, 
                                 df_school_destination_perc, df_env_perc, df_business_perc, 
                                 df_crime_perc, df_business_perc_niets))
+
+df_dp_all_perc$statistic <- as.factor(df_dp_all_perc$statistic)
 
 
