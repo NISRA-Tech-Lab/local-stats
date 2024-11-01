@@ -212,7 +212,8 @@ json_data <- json_data_from_rpc(
 		"class": "query",
 		"id": [
 			"TLIST(A1)",
-			"broadage4"
+			"broadage4",
+			"Sex"
 		],
 		"dimension": {
 			"TLIST(A1)": {
@@ -223,6 +224,13 @@ json_data <- json_data_from_rpc(
 				}
 			},
 			"broadage4": {
+				"category": {
+					"index": [
+						"All"
+					]
+				}
+			},
+			"Sex": {
 				"category": {
 					"index": [
 						"All"
