@@ -7,7 +7,7 @@ source("create_jsons/read_and_process_census_data.R")
 
 # Load and process data portal tables
 print("processing data portal tables")
-source("create_jsons/read_all_dataportal_tables_in.R")
+source("create_jsons/read_all_dataportal_tables_in_json_rpc.R")
 
 #### Set up loop for geographies ####
 # Select geographic codes for loop processing, based on the list 'v_geocode' and 'geog_types_to_update'
@@ -21,8 +21,8 @@ df_geog_codes_for_loop <- df_children %>%
     substr(code, 1, 3) == "N20" ~ "dz",   # Data zone
     substr(code, 1, 3) == "N21" ~ "sdz"   # Super data zone
   )) %>%
-  filter(type %in% geog_types_to_update) %>% # Filter only required types
- # filter(type %in% c('ctry', 'lgd')) %>% # Filter only required types
+#  filter(type %in% geog_types_to_update) %>% # Filter only required types
+ # filter(type %in% c('ctry', 'lgd', 'dea')) %>% # Filter only required types
   arrange(substr(code, 1, 3)) # Order by code prefix
 
 print("looping through geographies")

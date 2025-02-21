@@ -321,6 +321,14 @@
         "Dental_Registrations": 11456
       }
     },
+    "GP": {
+      "value": {
+        "GPS": 22,
+        "PRACLIST": 6855,
+        "PRACS": 4,
+        "REGPAT": 27418
+      }
+    },
     "BS": {
       "value": {
         "IS": 100,
@@ -406,10 +414,10 @@
     },
     "BroadAge": {
       "perc": {
-        "Age 0-15": 16.893,
-        "Age 16-39": 27.2135,
-        "Age 40-64": 35.0896,
-        "Age 65+": 20.8039
+        "Age 0-15": 17.3784,
+        "Age 16-39": 26.038,
+        "Age 40-64": 34.4009,
+        "Age 65+": 22.1827
       }
     },
     "Destination": {
@@ -452,7 +460,7 @@
         "table_code": "LEDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/LEDEA",
         "geog_level": "dea",
-        "last_updated": "2024-04-11",
+        "last_updated": "2024-10-22",
         "email": "healthinequalities@health-ni.gov.uk",
         "title": "Life expectancy at birth",
         "year": "2020-22"
@@ -467,6 +475,17 @@
         "email": "statistics@health-ni.gov.uk",
         "title": "Primary Reason for Admissions to HSC Hospitals",
         "year": "2022"
+      }
+    ],
+    "GP": [
+      {
+        "table_code": "GPPRACPATDEA",
+        "dataset_url": "https://data.nisra.gov.uk/table/GPPRACPATDEA",
+        "geog_level": "dea",
+        "last_updated": "2024-10-23",
+        "email": "info.bso@hscni.net",
+        "title": "GPs Practices and Registered Patients",
+        "year": "2024"
       }
     ],
     "DEN": [
