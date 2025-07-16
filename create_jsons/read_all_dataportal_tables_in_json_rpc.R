@@ -3535,15 +3535,15 @@ df_meta_data <- rbind(df_meta_data, t(c(
   "note" = json_data$note
 )))
 
-geog_codes <- json_data$dimension$LGD2014$category$index
+categories <- paste0(json_data$dimension$DESTINATION$category$index, "pct")
 
-categories <- c()
-for (i in 1:length(json_data$dimension$DESTINATION$category$index)) {
-  categories <- c(categories, rep(paste0(json_data$dimension$DESTINATION$category$index[i], "pct"), length(geog_codes)))
+geog_codes <- c()
+for (i in 1:length(json_data$dimension$LGD2014$category$index)) {
+  geog_codes <- c(geog_codes, rep(json_data$dimension$LGD2014$category$index[i], length(categories)))
 }
 
-data <- data.frame(geog_code = rep(geog_codes, length(unique(categories))),
-                   statistic = categories,
+data <- data.frame(geog_code = geog_codes,
+                   statistic = rep(categories, length(unique(geog_codes))),
                    VALUE = json_data$value,
                    source = dataset_short)
 
