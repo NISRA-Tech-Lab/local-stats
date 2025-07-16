@@ -65,7 +65,7 @@
   "data": {
     "Admiss": {
       "text": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified",
-      "value": 2661
+      "value": 2561
     },
     "population": {
       "perc": {
@@ -307,13 +307,13 @@
     },
     "DEN": {
       "value": {
-        "GDSDSDentists": 21.93,
+        "GDSDSDentists": 23.18,
         "GDSDSSurgeries": 9
       }
     },
     "DEN_REG": {
       "value": {
-        "Dental_Registrations": 8920
+        "Dental_Registrations": 5711
       }
     },
     "GP": {
@@ -368,35 +368,35 @@
     },
     "crime": {
       "value": {
-        "allcrime": 1260,
-        "criminal": 163,
-        "other": 194,
-        "person": 551,
-        "robbery": 5,
-        "sexual": 48,
-        "theft": 251,
-        "theft_burglary": 48,
-        "burglary": 48
+        "allcrime": 1049,
+        "criminal": 136,
+        "other": 178,
+        "person": 425,
+        "robbery": 0,
+        "sexual": 41,
+        "theft": 254,
+        "theft_burglary": 15,
+        "burglary": 15
       },
       "perc": {
         "allcrime": 100,
-        "criminal": 12.9365,
-        "other": 15.3968,
-        "person": 43.7302,
-        "robbery": 0.3968,
-        "sexual": 3.8095,
-        "theft": 19.9206,
-        "theft_burglary": 3.8095
+        "criminal": 12.9647,
+        "other": 16.9685,
+        "person": 40.5148,
+        "robbery": 0,
+        "sexual": 3.9085,
+        "theft": 24.2135,
+        "theft_burglary": 1.4299
       }
     },
     "farms": {
       "value": {
-        "F": 36,
-        "FA": 50
+        "F": 31,
+        "FA": 41
       }
     },
     "Attainment": {
-      "value": 73.1
+      "value": 70.8
     },
     "FE": {
       "value": 1125
@@ -405,23 +405,23 @@
       "value": 640
     },
     "MYETotal": {
-      "value": 18530
+      "value": 18690
     },
     "BroadAge": {
       "perc": {
-        "Age 0-15": 18.5205,
-        "Age 16-39": 29.1577,
-        "Age 40-64": 32.7754,
-        "Age 65+": 19.5464
+        "Age 0-15": 18.2888,
+        "Age 16-39": 29.3583,
+        "Age 40-64": 32.3529,
+        "Age 65+": 20
       }
     },
     "Destination": {
       "perc": {
-        "destHEpct": 44.5,
-        "destFEpct": 39.1,
-        "destEmploypct": null,
-        "destTrainpct": 8.4,
-        "destUnempUnkpct": null
+        "destHEpct": 41.5385,
+        "destFEpct": 36.4103,
+        "destEmploypct": 5.1282,
+        "destTrainpct": 12.8205,
+        "destUnempUnkpct": 0
       }
     }
   },
@@ -433,10 +433,10 @@
         "table_code": "MYE01T010",
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
         "geog_level": "dea",
-        "last_updated": "2024-07-31",
+        "last_updated": "2025-06-10",
         "email": "census@nisra.gov.uk",
         "title": "Mid-year population estimates",
-        "year": "2022"
+        "year": "2023"
       }
     ],
     "BroadAge": [
@@ -444,10 +444,10 @@
         "table_code": "MYE01T010",
         "dataset_url": "https://data.nisra.gov.uk/table/MYE01T010",
         "geog_level": "dea",
-        "last_updated": "2024-07-31",
+        "last_updated": "2025-06-10",
         "email": "census@nisra.gov.uk",
         "title": "Mid-year population estimates",
-        "year": "2022"
+        "year": "2023"
       }
     ],
     "LE": [
@@ -466,10 +466,10 @@
         "table_code": "ADMITDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/ADMITDEA",
         "geog_level": "dea",
-        "last_updated": "2024-04-11",
+        "last_updated": "2025-05-21",
         "email": "statistics@health-ni.gov.uk",
         "title": "Primary Reason for Admissions to HSC Hospitals",
-        "year": "2022"
+        "year": "2023"
       }
     ],
     "GP": [
@@ -488,10 +488,10 @@
         "table_code": "FPSGDSDSDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDSDEA",
         "geog_level": "dea",
-        "last_updated": "2024-07-10",
+        "last_updated": "2025-06-30",
         "email": "info.bso@hscni.net",
         "title": "General Dental Services Dentists and Surgeries",
-        "year": "2023/24"
+        "year": "2024/25"
       }
     ],
     "DEN_REG": [
@@ -499,10 +499,10 @@
         "table_code": "FPSGDSDRDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/FPSGDSDRDEA",
         "geog_level": "dea",
-        "last_updated": "2024-07-10",
+        "last_updated": "2025-06-30",
         "email": "info.bso@hscni.net",
         "title": "General Dental Services Dental Registrations",
-        "year": "2023/24"
+        "year": "2024/25"
       }
     ],
     "BS": [
@@ -510,7 +510,7 @@
         "table_code": "BSDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/BSDEA",
         "geog_level": "dea",
-        "last_updated": "2024-09-25",
+        "last_updated": "2025-05-28",
         "email": "analyticsdivision@communities-ni.gov.uk",
         "title": "Benefit Statistics",
         "year": "2024"
@@ -554,10 +554,10 @@
         "table_code": "DESLSADEA",
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSADEA",
         "geog_level": "dea",
-        "last_updated": "2024-06-27",
+        "last_updated": "2025-07-09",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Attainment",
-        "year": "2022/23"
+        "year": "2023/24"
       }
     ],
     "FE": [
@@ -587,10 +587,10 @@
         "table_code": "DESLSDDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/DESLSDDEA",
         "geog_level": "dea",
-        "last_updated": "2024-06-27",
+        "last_updated": "2025-07-09",
         "email": "statistics@education-ni.gov.uk",
         "title": "School Leavers Survey - Destination",
-        "year": "2022/23"
+        "year": "2023/24"
       }
     ],
     "crime": [
@@ -598,10 +598,10 @@
         "table_code": "PRCDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/PRCDEA",
         "geog_level": "dea",
-        "last_updated": "2024-07-25",
+        "last_updated": "2025-06-16",
         "email": "statistics@psni.police.uk",
         "title": "Police Recorded Crime",
-        "year": "2023/24"
+        "year": "2024/25"
       }
     ],
     "farms": [
@@ -609,10 +609,10 @@
         "table_code": "FCDEA",
         "dataset_url": "https://data.nisra.gov.uk/table/FCDEA",
         "geog_level": "dea",
-        "last_updated": "2024-08-26",
+        "last_updated": "2025-03-04",
         "email": "env.stats@daera-ni.gov.uk",
         "title": "Farm Census",
-        "year": "2023"
+        "year": "2024"
       }
     ]
   }
