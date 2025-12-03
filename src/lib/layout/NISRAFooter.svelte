@@ -105,7 +105,7 @@
           <li class="list-inline-item">|</li>
           <li class="list-inline-item"><a href="https://www.nisra.gov.uk/nisra-privacy-notice">Privacy</a></li>
           <li class="list-inline-item">|</li>
-          <li class="list-inline-item"><a href="https://www.nisra.gov.uk/accessibility-statement-nisra">Accessibility Statement</a></li>
+          <li class="list-inline-item"><a href="https://datavis.nisra.gov.uk/dissemination/accessibility-statement-visualisations.html">Accessibility Statement</a></li>
         </ul>
       </div>
       
