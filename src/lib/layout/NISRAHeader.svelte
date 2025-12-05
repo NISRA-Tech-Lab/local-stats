@@ -11,11 +11,11 @@
 			<a href="https://www.nisra.gov.uk/">
 				<picture>
 					{#if theme.name == 'dark'}
-					<img style="width:180px;" src="{assets}/img/nisra-logo-white-bilingual-wide.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 					{:else if filled == true}
-					<img style="width:180px;" src="{assets}/img/nisra-logo-white-bilingual-wide.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 					{:else}
-					<img style="width:180px;" src="{assets}/img/nisra-logo-white-bilingual-wide.png" alt="Northern Ireland Statistics and Research Agency">
+					<img style="width:180px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 					{/if}
 				</picture>
 			</a>
@@ -26,24 +26,24 @@
   
 	<nav  style="color: #ffffff; background-color: #00205b;">
 		<!-- <header style="color: #ffffff; background-color: #00205b;"> -->
-			<div class="col-wide" data-analytics="header">
+			<div  data-analytics="header">
 				<div class="grid mtb">
 					<div style = "display: flex; justify-content: left; align-items: center">
 						<a href="https://www.nisra.gov.uk/">
 							<picture>
 								{#if theme.name == 'dark'}
-									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 200px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else if filled == true}
-									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 200px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 								{:else}
-									<img style="width: 300px;" src="{assets}/img/white bilingual.svg" alt="Northern Ireland Statistics and Research Agency">
+									<img style="width: 200px;" src="{assets}/img/logo/nisra-only-white.svg" alt="Northern Ireland Statistics and Research Agency">
 								{/if}
 							</picture>
 						</a>
 					</div>
 					<div style = "display: flex; flex-direction:column; justify-content: right; align-items: center">
-						<h1 style="font-size: 2.5em; font-weight: bold;color: #ffffff; line-height: 1em; margin-bottom: 10px;">Northern Ireland Local Statistics Explorer</h1>
-						<span style = "font-size: 1.5em; line-height: 1em">Find out how your local area compares to NI</span>
+						<h1 style="font-size: 28px; font-weight: 700;color: #ffffff; line-height: 1em; margin-bottom: 10px;">Northern Ireland Local Statistics Explorer</h1>
+						<span style = "font-size: 24px; line-height: 1.333">Find out how your local area compares to NI</span>
 					</div>
 				</div>
 		
@@ -75,11 +75,9 @@
 	  }
 
 	  .grid {
-		display: grid;
+		display: flex;
 		width: 100%;
-		grid-gap: 30px;
-		grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-		justify-content: stretch;
+		grid-gap: 750px;
 		page-break-inside: avoid;
 	}
 
