@@ -751,14 +751,14 @@ function compareDensity (place) {
 							class="btn"
 							style="width: 33%"
 							alt="Opens the About page"
-							onclick="window.location.href='{base}/about';"
+							on:click={() => goto('/about')}
 							>About
 						</button>
 						<button
 							class="btn"
 							style="width: 33%"
 							title="Click to print this page to pdf or printer"
-							onclick="window.print();return false;"
+							on:click={() => window.print()}
 							>Print / PDF
 						</button>
 						<button
