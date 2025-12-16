@@ -18,5 +18,6 @@
     margin-bottom: 0px;
     padding: 10px 0;
     font-size: 1em;
+    text-align: center;
   }
 </style>
