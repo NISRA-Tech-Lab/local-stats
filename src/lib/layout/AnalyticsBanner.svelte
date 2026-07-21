@@ -224,9 +224,9 @@
     padding:0;
     margin:8px 0;
   }
-  .wrapper,.clearfix{  
+  /*.wrapper,.clearfix{  
     *zoom:1;
-  }
+  }*/
   .wrapper:before,.clearfix:before,.wrapper:after,.clearfix:after{
     content:"";
     display:table;
