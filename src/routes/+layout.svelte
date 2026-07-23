@@ -7,6 +7,7 @@
 	import NISRAFooter from "$lib/layout/NISRAFooter.svelte";
   import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
   import Warning from "$lib/ui/Warning.svelte"
+  import { initCookieConsent } from "$lib/cookies";
 
   // STYLE CONFIG
   // Set theme globally (options are 'light' or 'dark')
@@ -65,6 +66,12 @@
     window.addEventListener('click', debouncedSetSpaceHeight);
     window.addEventListener('load', debouncedSetSpaceHeight);
     window.addEventListener('mousemove', debouncedSetSpaceHeight);
+
+    initCookieConsent({
+    bannerId: 'cookie-banner',
+    gtmId: 'GTM-WKK8ZWP',
+    cookieDomain: window.location.hostname
+  });
    
   });
   
@@ -77,6 +84,8 @@
 </svelte:head>
 
 <div bind:this={c}>
+
+  <div id="cookie-banner"></div>
 
   <AnalyticsBanner {analyticsId} {analyticsProps}/>
 
