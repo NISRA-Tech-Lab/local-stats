@@ -11,32 +11,7 @@
 <Section column="wide">
 <div class="block" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); justify-content: stretch;">
 <div style="margin-left:16px; padding-right:16px;">
-	<!-- <h3 style="margin-bottom:10px; line-height: 1.78;">Download</h3>
-	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		 <a href="https://www.nisra.gov.uk/publications/census-area-explorer-2021-and-2011-data" class="link"><strong>Download</strong> Census 2011 and 2021 data from this app</a>
-	</li>
-  </div>
-  
-  <div style="margin-left:16px; padding-right:16px;">
-	<h3 style="margin-bottom:10px; line-height: 1.78;">Contact and further resources</h3>
-	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		<a href="https://www.nisra.gov.uk/contacts/census-customer-services">Contact Census</a>
-  	</li>
-	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		<a href="https://www.nisra.gov.uk/statistics/census/2021-census">Census 2021</a>
-  	</li>
-	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		<a href="https://www.nisra.gov.uk/statistics/2021-census/results">Census 2021 results</a>
-  	</li>
-	<li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		<a href="https://www.nisra.gov.uk/publications/census-2021-statistical-bulletins">Statistical Bulletins</a>
-  	</li>
-	  <li style="margin: 0px; display: block; line-height: 20px; padding-bottom: 5px">
-		<a href="https://www.nisra.gov.uk/publications/census-2021-infographics">Infographics</a>
-  	</li>
 	
-  </div> -->
-
   <div style="margin-left:16px;">
 	<h3 style="margin-bottom:10px; line-height: 1.78;">About this app</h3>
 	This web application is based on and inspired by the <a href="https://github.com/ONSvisual">ONS Digital Content team prototypes</a>. 
