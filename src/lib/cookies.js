@@ -3,7 +3,8 @@ export function initCookieConsent(options = {}) {
     bannerId = 'cookie-banner',
     gtmId = 'GTM-WKK8ZWP',
     cookieDomain = '.nisra.gov.uk',
-    cookieDays = 365
+    cookieDays = 365,
+    analyticsProps = {}
   } = options;
 
   const cookieBanner = document.getElementById(bannerId);
@@ -52,6 +53,11 @@ export function initCookieConsent(options = {}) {
     window.__nisraGtmLoaded = true;
 
     window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+      ...analyticsProps
+    });
+
     window.dataLayer.push({
       'gtm.start': new Date().getTime(),
       event: 'gtm.js'

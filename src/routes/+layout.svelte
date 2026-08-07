@@ -5,7 +5,6 @@
 //	import Warning from "$lib/ui/Warning.svelte";
 	import NISRAHeader from "$lib/layout/NISRAHeader.svelte";
 	import NISRAFooter from "$lib/layout/NISRAFooter.svelte";
-  import AnalyticsBanner from "$lib/layout/AnalyticsBanner.svelte";
   import Warning from "$lib/ui/Warning.svelte"
   import { initCookieConsent } from "$lib/cookies";
 
@@ -70,7 +69,8 @@
     initCookieConsent({
     bannerId: 'cookie-banner',
     gtmId: 'GTM-WKK8ZWP',
-    cookieDomain: window.location.hostname
+    cookieDomain: window.location.hostname,
+    analyticsProps
   });
    
   });
@@ -86,8 +86,6 @@
 <div bind:this={c}>
 
   <div id="cookie-banner"></div>
-
-  <AnalyticsBanner {analyticsId} {analyticsProps}/>
 
   <Warning/>
 
