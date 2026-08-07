@@ -57,7 +57,6 @@
         <ul class="footer-list">
           <li><a href="https://explore.nisra.gov.uk/local-stats/">Local Statistics Explorer</a></li>
           <li><a href="https://data.nisra.gov.uk">Data Portal</a></li>
-          <li><a href="https://build.nisra.gov.uk/en/">Census Flexible Table Builder</a></li>
         </ul>
       </div>
 
@@ -77,23 +76,28 @@
         <ul class="footer-social">
           <li>
             <a href="https://www.facebook.com/nisra.gov.uk">
-              <img src="img/logo/facebook-brands-solid-full.svg" title="Facebook" role="img" class="img" />
-            </a>
+               <img src="/img/logo/facebook-brands-solid-full.svg" alt="NISRA on Facebook" role="img" class="img-50"/>
+             </a>
           </li>
           <li>
-            <a href="https://x.com/NISRA/">
-              <img src="img/logo/x-twitter-brands-solid-full.svg" title="Twitter/X" role="img" class="img" />
-            </a>
+             <a href="https://x.com/NISRA/">
+               <img src="/img/logo/x-twitter-brands-solid-full.svg" alt="NISRA on Twitter/X" role="img" class="img-50"/>
+             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/user/nisrastats">
-              <img src="img/logo/youtube-brands-solid-full.svg" title="YouTube" role="img" class="img" />
-            </a>
+             <a href="https://www.youtube.com/user/nisrastats">
+               <img src="/img/logo/youtube-brands-solid-full.svg" alt="NISRA on YouTube" role="img" class="img-50"/>
+             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/northern-ireland-statistics-and-research-agency/">
-              <img src="img/logo/linkedin-in-brands-solid-full.svg" title="LinkedIn" role="img" class="img" />
-            </a>
+             <a href="https://www.linkedin.com/company/northern-ireland-statistics-and-research-agency/">
+               <img src="/img/logo/linkedin-in-brands-solid-full.svg" alt="NISRA on LinkedIn" role="img" class="img-50"/>
+             </a>
+          </li>
+          <li>
+             <a href="https://www.instagram.com/nisra.gov.uk/">
+               <img src="/img/logo/instagram-brands-solid-full.svg" alt="NISRA on Instagram" role="img" class="img-50"/>
+             </a>
           </li>
         </ul>
       </div>
