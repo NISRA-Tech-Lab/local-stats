@@ -32,6 +32,7 @@
         <ul class="footer-list">
           <li><a href="https://explore.nisra.gov.uk/local-stats/">Local Statistics Explorer</a></li>
           <li><a href="https://data.nisra.gov.uk">Data Portal</a></li>
+          <li><a href="https://build.nisra.gov.uk/en/">Census Flexible Table Builder</a></li>
         </ul>
       </div>
 
