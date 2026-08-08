@@ -759,10 +759,7 @@ function compareDensity (place) {
 							class="btn"
 							style="width: 33%"
 							title="Click to print this page to pdf or printer"
-							on:click={() => {
-								window.print();
-								return false;
-							}}
+							on:click={() => window.print()}
 							>Print / PDF
 						</button>
 						<button
