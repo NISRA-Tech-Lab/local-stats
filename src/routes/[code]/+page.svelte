@@ -1,5 +1,5 @@
 <script>
-    import { base } from "$app/paths";
+    import { base, resolve } from "$app/paths";
     import { goto } from "$app/navigation";
     import { 
       adjectify,
@@ -562,11 +562,12 @@ function gps (value, place) {
 
 	}
 
-
-
+	function areaUrl(code) {
+		return resolve(`/${code}/`);
+	}
 
 	function moreData (subject, place) {
-
+		
 		// if (place.type != "ni") {
 		// 	return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + " </a>";
 		// } else {
@@ -576,19 +577,19 @@ function gps (value, place) {
 		if (place.type == "ni") {
 			return "";
 		} else if (place.type == "lgd") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>";
+			return "You can also explore " + subject + " data for <a href = '" + areaUrl(place.parents[0].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>";
 		} else if (place.type == "dea") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
-			" and <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>";
+			return "You can also explore " + subject + " data for <a href = '" + areaUrl(place.parents[0].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			" and <a href = '" + areaUrl(place.parents[1].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>";
 		} else if (place.type == "sdz") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
-			", <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
-			" and <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
+			return "You can also explore " + subject + " data for <a href = '" + areaUrl(place.parents[0].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			", <a href = '" + areaUrl(place.parents[1].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			" and <a href = '" + areaUrl(place.parents[2].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>";
 		} else if (place.type == "dz") {
-			return "You can also explore " + subject + " data for <a href = '" + base + "/" + place.parents[0].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
-		", <a href = '" + base + "/" + place.parents[1].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
-		", <a href = '" + base + "/" + place.parents[2].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
-			" and <a href = '" + base + "/" + place.parents[3].code + "/' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
+			return "You can also explore " + subject + " data for <a href = '" + areaUrl(place.parents[0].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[0].name + "</a>"+
+			", <a href = '" + areaUrl(place.parents[1].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[1].name + "</a>"+
+			", <a href = '" + areaUrl(place.parents[2].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[2].name + "</a>"+
+			" and <a href = '" + areaUrl(place.parents[3].code) + "' data-sveltekit-noscroll data-sveltekit-keepfocus>" + place.parents[3].name + "</a>";
 		}
 
 	}
@@ -719,32 +720,6 @@ function compareDensity (place) {
 							inputc.parentNode.removeChild(inputc);
 							alert("URL Copied.");
 						}
-
-						(function (win, doc) {
-							const testButton = doc.createElement("button");
-							testButton.setAttribute("type", "share");
-							if (testButton.type != "share") {
-								win.addEventListener("click", function (ev) {
-									ev = ev || win.event;
-									let target = ev.target;
-									let button = target.closest(
-										'button[type="share"]',
-									);
-									if (button) {
-										const title = "Share URL";
-										const url = win.location.href;
-										if (navigator.share) {
-											navigator.share({
-												title: title,
-												url: url,
-											});
-										} else {
-											copyToClipboard();
-										}
-									}
-								});
-							}
-						})(this, this.document);
 					</script>
 
 					<div width="100%">
@@ -765,8 +740,17 @@ function compareDensity (place) {
 						<button
 							class="btn"
 							style="width: 30%"
-							type="share"
 							alt="Share this page"
+							on:click={async () => {
+								const title = "Share URL";
+								const url = window.location.href;
+
+								if (navigator.share) {
+									await navigator.share({ title, url });
+								} else {
+									copyToClipboard();
+								}
+							}}
 							>Share
 						</button>
 					</div>
