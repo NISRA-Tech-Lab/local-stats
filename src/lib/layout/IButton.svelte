@@ -308,6 +308,15 @@ function get_i_button_info () {
 				  "<p class = 'pibutton'>Last updated:" + checkMeta("houseprices[0].last_updated") + ".</p>"+
 				  "<p class = 'pibutton'><a href='mailto:" + checkMeta("houseprices[0].email") + "'>Email for more information</a> </p>"  
 		},
+
+		housingstock: {
+			title: "Housing stock",
+			info:
+				" <p class = 'pibutton'>Access data at: <a href='" + checkMeta("HousingStock[0].dataset_url") + "'>" + checkMeta("HousingStock[0].title") + "</a></p>"+
+				"<p class = 'pibutton'>Last updated: " + checkMeta("HousingStock[0].last_updated") + ".</p>"+
+				"<p class = 'pibutton'><a href='mailto:" + checkMeta("HousingStock[0].email") + "'>Email for more information</a> </p>"
+		},
+
 		concern: {
 			title: "Concern about the environment",
 			info:  " <p class = 'pibutton'>Access data at: <a href='" + checkMeta("Env_concern[0].dataset_url") + "'>" + checkMeta("Env_concern[0].title") + "</a></p>"+
