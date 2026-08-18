@@ -405,6 +405,34 @@
 
 	}
 
+	function popChangenew (place) {
+
+		let output = "";
+
+		if (place.data.hasOwnProperty("PopChange")) {
+
+			let p_data = place.data.PopChange.value;
+			let latest_year = Object.keys(p_data).slice(-1);
+			let comparison_year = latest_year - 10;
+			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+			let change_word;
+
+			if (change < 0) {
+				change_word = "Down"
+			} else if (change > 0) {
+				change_word  = "Up"
+			}
+
+			output = '<p><span class="em ' +
+					changeClass(change) + '">' +
+					change_word + " " + changeStr(change, "%", 1) +
+					'</span> since ' + comparison_year;
+		}
+
+		return output;
+
+	}
+
 	function check (value) {
 
 		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
@@ -797,19 +825,24 @@ function compareDensity (place) {
 			/>
 
 			<GreyBox
-				id = "pop"
-				place = {data.place}
-				year =  {"Population estimates " + pullYear("MYETotal", data.place)}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
-				chart_compare_type = {chart_compare_type}
-				compare_content = {{
+				id="pop"
+				place={data.place}
+				year={"Population estimates " + pullYear("MYETotal", data.place)}
+				content={
+					'<span class="text-big" style="font-size: 2.8em;">' +
+					data.place.data.MYETotal.value.toLocaleString() +
+					'</span>'
+				}
+				chart_compare_type={chart_compare_type}
+				compare_content={{
 					ni: "",
 					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of ' + comp_full + ' population<br>' +
 						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Councils",
 					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of ' + comp_full + ' population',
 					sdz: "Data not available for area comparison",
-					dz: " Data not available for area comparison"
+					dz: "Data not available for area comparison"
 				}}
+				content_after={popChangenew(data.place)}
 			/>
 
 			<GreyBox
