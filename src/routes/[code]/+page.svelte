@@ -1003,7 +1003,7 @@ function compareDensity (place) {
 			</div>
 			<!-- Comparison selector. Councils only -->
     		{#if data.place.type == "lgd"}
-      			<div style="grid-column: {cols};">
+      			<div style="grid-column: {cols}; margin-top: -110px;">
         			<p style="margin-bottom: 2px;">
           			<label for="compare-select">Compare with another LGD:</label>
         			</p>
