@@ -686,7 +686,7 @@ function compareDensity (place) {
 		else if (comparison.toFixed(0) > 1) {
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">' + comparison.toFixed(0) + " times </span> the " + comp_full + " average";
 		} else if (comparison.toFixed(0) == 1) {
-			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the " + comp_full + " average';
+			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">the same density level</span> as the ' + comp_full + " average";
 		} else {	
 			comparison = 'Approximately <span class = "em" style = "background-color: lightgrey">1/' + (1 / comparison).toFixed(0) + " </span> of the " + comp_full + " average";
 		}
