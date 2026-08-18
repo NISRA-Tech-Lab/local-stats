@@ -1012,8 +1012,7 @@ function compareDensity (place) {
 						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("mainlang")
-					 }
-					,
+					},
 
 					box_6: {
 						id: "houseprices",
@@ -1039,9 +1038,23 @@ function compareDensity (place) {
 						show: ["dea","sdz","dz"],
 						i_button: false,
 						title: "<span style='font-size: 0.88em'>Average house price</span>"
-					}
+					},
 
-				
+					box_7: {
+						id: "housingstock",
+						year: pullYear("HousingStock", data.place),
+						content: "GroupChart",
+						chart_data: makeDataNICompare("HousingStock"),
+						show: ["ni", "lgd"]
+					},
+
+					box_7a: {
+						id: "housingstock",
+						content: "Data is available for " + parentlinks(data.place, "ni, lgd"),
+						show: ["dea", "sdz", "dz"],
+						i_button: false,
+						title: "Housing stock"
+					}
 
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 
