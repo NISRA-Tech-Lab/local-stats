@@ -390,6 +390,34 @@
 
 	}
 
+	function popChangenew (place) {
+
+		let output = "";
+
+		if (place.data.hasOwnProperty("PopChange")) {
+
+			let p_data = place.data.PopChange.value;
+			let latest_year = Object.keys(p_data).slice(-1);
+			let comparison_year = latest_year - 10;
+			let change = (p_data[latest_year] - p_data[comparison_year]) / p_data[comparison_year] * 100;
+			let change_word;
+
+			if (change < 0) {
+				change_word = "Down"
+			} else if (change > 0) {
+				change_word  = "Up"
+			}
+
+			output = '<p><span class="em ' +
+					changeClass(change) + '">' +
+					change_word + " " + changeStr(change, "%", 1) +
+					'</span> since ' + comparison_year;
+		}
+
+		return output;
+
+	}
+
 	function check (value) {
 
 		let value_dotted = value.replaceAll("[", ".").replaceAll("]", "");
@@ -782,19 +810,38 @@ function compareDensity (place) {
 			/>
 
 			<GreyBox
-				id = "pop"
-				place = {data.place}
-				year =  {"Population estimates " + pullYear("MYETotal", data.place)}
-				content = {'<span class="text-big" style="font-size: 2.8em;">' + data.place.data.MYETotal.value.toLocaleString() + '</span>'}
-				chart_compare_type = {chart_compare_type}
-				compare_content = {{
+				id="pop"
+				place={data.place}
+				year={"Population estimates " + pullYear("MYETotal", data.place)}
+				content={
+					'<span class="text-big" style="font-size: 2.8em;">' +
+					data.place.data.MYETotal.value.toLocaleString() +
+					'</span>'
+				}
+				chart_compare_type={chart_compare_type}
+				compare_content={{
 					ni: "",
-					lgd: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population<br>' +
-						 'The ' + returnRank(data.place.data.population.value_rank["2021"].all) + " population of 11 Councils",
-					dea: '<span class = "em" style = "background-color: lightgrey">' + returnPct(data.place.data.population.value["2021"].all / data.ni.data.population.value["2021"].all) + '</span> of Northern Ireland population',
+					lgd:
+						'<span class="em" style="background-color: lightgrey">' +
+						returnPct(
+							data.place.data.population.value["2021"].all /
+							data.ni.data.population.value["2021"].all
+						) +
+						'</span> of Northern Ireland population<br>' +
+						'The ' +
+						returnRank(data.place.data.population.value_rank["2021"].all) +
+						' population of 11 Councils',
+					dea:
+						'<span class="em" style="background-color: lightgrey">' +
+						returnPct(
+							data.place.data.population.value["2021"].all /
+							data.ni.data.population.value["2021"].all
+						) +
+						'</span> of Northern Ireland population',
 					sdz: "Data not available for area comparison",
-					dz: " Data not available for area comparison"
+					dz: "Data not available for area comparison"
 				}}
+				content_after={popChangenew(data.place)}
 			/>
 
 			<GreyBox
@@ -967,26 +1014,13 @@ function compareDensity (place) {
 			chart_compare_type = {chart_compare_type}
 			boxes = {{
 					box_1: {
-						id: "popchange",
-						year:  "Population Estimates " + pullYear("BroadAge", data.place),
-						content: popChange(data.place),
-						show: ["ni", "lgd"]
-					},
-					box_1a: {
-						id: "popchange",
-					content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
-						show: ["dea", "sdz", "dz"],
-						i_button: false,
-						title: "<span style='font-size: 0.88em'>Population change</span>"
-					},
-					box_2: {
 						id: "broadage",
 						year:  "Population Estimates " + pullYear("BroadAge", data.place),
 						content:  "GroupChart",
 						chart_data: makeDataNICompare("BroadAge"),
 						show: ["ni", "lgd", "dea", "sdz"]
 					},
-					box_2a: {
+					box_1a: {
 						id: "age",
 						year:  pullCensusYear("age"),
 						content:  "GroupChart",
@@ -994,28 +1028,27 @@ function compareDensity (place) {
 						show: ["dz"]
 					},
 
-					box_3: {
+					box_2: {
 						id: "hhsize",
 						year: pullCensusYear("hh_size"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("hh_size")
 					},
-					box_4: {
+					box_3: {
 						id: "religion",
 						year: pullCensusYear("religion_or_religion_brought_up_in"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("religion_or_religion_brought_up_in")
 					},
 
-					box_5 :{
+					box_4 :{
 						id: "language",
 						year: pullCensusYear("mainlang"),
 						content: "GroupChart",
 						chart_data: makeDataNICompare("mainlang")
-					 }
-					,
+					},
 
-					box_6: {
+					box_5: {
 						id: "houseprices",
 						year: pullYear("houseprices", data.place),
 						content: "<span class='text-big'>£"+(check("houseprices.value.SP")).toLocaleString(undefined, {maximumFractionDigits: 0})+"</span>"+
@@ -1023,7 +1056,7 @@ function compareDensity (place) {
 						show: ["ni"]
 					},
 
-					box_6a: {
+					box_5a: {
 						id: "houseprices",
 						year: pullYear("houseprices", data.place),
 						content: "<p><span class='text-big'>£"+(check("houseprices.value.SP")).toLocaleString(undefined, {maximumFractionDigits: 0})+"</span>"+
@@ -1033,15 +1066,29 @@ function compareDensity (place) {
 						show: ["lgd"]
 					},
 
-					box_6b: {
+					box_5b: {
 						id: "houseprices",
 						content: "Data is available for " + parentlinks(data.place,"ni, lgd"),
 						show: ["dea","sdz","dz"],
 						i_button: false,
 						title: "<span style='font-size: 0.88em'>Average house price</span>"
-					}
+					},
 
-				
+					box_6: {
+						id: "housingstock",
+						year: pullYear("HousingStock", data.place),
+						content: "GroupChart",
+						chart_data: makeDataNICompare("HousingStock"),
+						show: ["ni", "lgd"]
+					},
+
+					box_6a: {
+						id: "housingstock",
+						content: "Data is available for " + parentlinks(data.place, "ni, lgd"),
+						show: ["dea", "sdz", "dz"],
+						i_button: false,
+						title: "Housing stock"
+					}
 
 			}}
 			more = "More information on the size of the population is available in the latest <a href='https://www.nisra.gov.uk/publications/2022-mid-year-population-estimates-northern-ireland'>mid-year estimates release</a>, 

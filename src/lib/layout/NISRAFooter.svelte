@@ -30,7 +30,7 @@
       <div class="footer-col">
         <h3 style="color: #fff; font-size: 15px; font-weight: normal; margin-top: 0;">Data Tools</h3>
         <ul class="footer-list">
-          <li><a href="https://explore.nisra.gov.uk/local-stats/">Local Statistics Explorer</a></li>
+          <li><a href="https://explore.nisra.gov.uk/custom-profiles/#map/">Custom Area Profiles</a></li>
           <li><a href="https://data.nisra.gov.uk">Data Portal</a></li>
           <li><a href="https://build.nisra.gov.uk/en/">Census Flexible Table Builder</a></li>
         </ul>
