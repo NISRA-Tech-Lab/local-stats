@@ -8,7 +8,7 @@
 </script>
 
 <!-- svelte-ignore missing-declaration -->
-<Section column="wide">
+<!-- <Section column="wide">
 <div class="block" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); justify-content: stretch;">
 <div style="margin-left:16px; padding-right:16px;">
 	
@@ -20,7 +20,7 @@
   </div>
 
   </div>
-</Section>
+</Section> -->
   
 <footer class="nisra-footer">
   <div class="footer-container">
@@ -41,7 +41,7 @@
         <h3 style="color: #fff; font-size: 15px; font-weight: normal; margin-top: 0;">Corporate</h3>
         <ul class="footer-list">
           <li><a href="https://www.nisra.gov.uk/">NISRA Website</a></li>
-          <li><a href="https://www.nisra.gov.uk/statistics/about-nisra/careers">Careers</a></li>
+          <li><a href="https://www.nisra.gov.uk/about-us/careers">Careers</a></li>
           <li><a href="https://www.nisra.gov.uk/contact">Contact</a></li>
         </ul>
       </div>
