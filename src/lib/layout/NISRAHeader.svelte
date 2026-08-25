@@ -39,6 +39,8 @@
 					<span class="header-subtitle">Find out how your local area compares to NI</span>
 					</div>
 				</div>
+        <!-- Green bar -->
+				<div class="header-green-bar"></div>
 				</nav>
 
   <style>
@@ -46,10 +48,19 @@
 .nisra-header {
   background-color: #00205b;
   color: #fff;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-green-bar {
+  width: 100%;
+  height: 10px;
+  flex: 0 0 10px;
+  background-color: #68a41e;
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 980px; /* align with main body content */
   margin: 0 auto;
   padding: 12px 12px;
   display: flex;
