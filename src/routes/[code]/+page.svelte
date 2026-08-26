@@ -2168,14 +2168,7 @@ Police Ombudsmans Office for Northern Ireland</a>.</p>
 		background-color: #f5f5f6;
 		padding: 16px 16px;
 	}
-	.btn {
-		padding: 2px 4px;
-		margin: 0.2;
-		border: 2px solid #00205b;
-		cursor: pointer;
-		color: #00205b;
-		background-color: lightgrey;
-	}
+
 	.btn-active {
 		color: white;
 		background-color: #00205b;
