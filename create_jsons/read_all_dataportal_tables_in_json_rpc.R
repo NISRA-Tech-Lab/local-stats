@@ -4582,7 +4582,7 @@ json_data_E <- json_data_from_rpc(
 		"class": "query",
 		"id": [
 			"TLIST(A1)",
-			"BroadIndustryGroup",
+			"BIG",
 			"TOBAND"
 		],
 		"dimension": {
@@ -4593,7 +4593,7 @@ json_data_E <- json_data_from_rpc(
 					]
 				}
 			},
-			"BroadIndustryGroup": {
+			"BIG": {
 				"category": {
 					"index": [
 						"All"
@@ -4663,7 +4663,7 @@ json_data_T <- json_data_from_rpc(
 		"class": "query",
 		"id": [
 			"TLIST(A1)",
-			"BroadIndustryGroup",
+			"BIG",
 			"EMPBAND"
 		],
 		"dimension": {
@@ -4674,7 +4674,7 @@ json_data_T <- json_data_from_rpc(
 					]
 				}
 			},
-			"BroadIndustryGroup": {
+			"BIG": {
 				"category": {
 					"index": [
 						"All"
