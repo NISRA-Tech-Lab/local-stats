@@ -10,6 +10,14 @@
 
   export let data;
 
+  function formatLastUpdated(value) {
+    if (!value) return value;
+    let numbers = String(value).split("-");
+    return numbers.length === 3
+      ? numbers[2] + "/" + numbers[1] + "/" + numbers[0]
+      : value;
+  }
+
   function menuSelect(ev) {
       goto(`${base}/${ev.detail.value}/`, { noscroll: true });
     }
@@ -99,7 +107,7 @@
               </a>
 
               <div>
-                Last updated: {item.last_updated}
+                Last updated: {formatLastUpdated(item.last_updated)}
 
                 {#if item.year}
                   ({item.year})
