@@ -2,7 +2,16 @@
 	import Section from "$lib/layout/Section.svelte";
 	import { base } from "$app/paths";
 
-  </script>
+	export let data;
+
+	function formatLastUpdated(value) {
+		if (!value) return value;
+		const numbers = String(value).split("-");
+		return numbers.length === 3
+			? `${numbers[2]}/${numbers[1]}/${numbers[0]}`
+			: value;
+	}
+</script>
 
 
 
@@ -126,6 +135,32 @@
 		<p>The Local Statistics Explorer is refreshed daily with updated data from the NISRA Data Portal.</p>
 		<p>The &lsquo;i&rsquo; button beside each statistic shows the date on which that statistic was last updated.</p>
 
+		<div class="div-grey-box new-datasets" aria-labelledby="new-datasets-heading">
+			<h3 id="new-datasets-heading">New Datasets</h3>
+
+			{#if data.new_datasets.length > 0}
+				<ul>
+					{#each data.new_datasets as item (item.table_code || item.dataset_url)}
+						<li>
+							<a href={item.dataset_url} target="_blank" rel="noreferrer">
+								{item.title}
+							</a>
+
+							<div>
+								Last updated: {formatLastUpdated(item.last_updated)}
+
+								{#if item.year}
+									({item.year})
+								{/if}
+							</div>
+						</li>
+					{/each}
+				</ul>
+			{:else}
+				<p>No new datasets have been added recently.</p>
+			{/if}
+		</div>
+
 		<h2>Video guides</h2>
 		<ul>
 			<li>Northern Ireland Local Statistics Explorer</li>
@@ -163,7 +198,49 @@
 		th {
 		  background-color: #f2f2f2;
 		}
+
+		/* Styles for the New Datasets section */
+  		.new-datasets {
+    		margin-top: 30px;
+  		}
+
+  		.new-datasets h3 {
+    		margin: 0 0 12px;
+    		color: #3878c5;
+    		font-size: 1.5em;
+    		line-height: 1.2;
+  		}
+
+  		.new-datasets ul {
+    		list-style: none;
+    		margin: 0;
+    		padding: 0;
+  		}
+
+  		.new-datasets li {
+    		padding: 10px 0;
+    		border-bottom: 1px solid #d9d9d9;
+    		overflow-wrap: anywhere;
+  		}
+
+  		.new-datasets li:first-child {
+    		padding-top: 0;
+  		}
+
+  		.new-datasets li:last-child {
+    		padding-bottom: 0;
+    		border-bottom: 0;
+  		}
+
+  		.new-datasets a {
+    		color: #3878c5;
+    		font-weight: bold;
+  		}
+
+  		.new-datasets li div,
+  		.new-datasets > p {
+    		margin: 4px 0 0;
+  		}
 	  </style>
 
-	  
 </Section>

@@ -87,41 +87,22 @@
       </div>
 
     </div>
-    <!-- add a "What's new" section to the home page, showing the most recent dataset updates -->
-    <div
-      class="div-grey-box whats-new"
-      aria-labelledby="whats-new-heading"
-    >
-      <h2 id="whats-new-heading">What's new</h2>
-
-      {#if data.whats_new.length > 0}
-        <ul>
-          {#each data.whats_new as item (item.table_code || item.dataset_url)}
-            <li>
-              <a
-                href={item.dataset_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {item.title}
-              </a>
-
-              <div>
-                Last updated: {formatLastUpdated(item.last_updated)}
-
-                {#if item.year}
-                  ({item.year})
-                {/if}
-              </div>
-            </li>
-          {/each}
-        </ul>
-      {:else}
-        <p>No recent dataset updates are available.</p>
-      {/if}
-    </div>
-
   </div>
+</Section>
+
+<Section column="wide">
+	<div class="row">
+
+
+		<h3>Whats new in the Local Statistics Explorer</h3>
+
+
+		<h4>Recent Updates</h4>
+
+		<ul> 
+			<li><strong>LGD area comparison:</strong> Added a dropdown to allow users to compare LGD areas with each other.</li>
+			<li><strong>New dataset:</strong> Housing Stock data has been added as a tile under People and Communities with a chart for the dataset NIHSLGD.</li>
+		</ul>
 </Section>
 
 <style>
@@ -174,49 +155,6 @@
 
   #ni-map:hover {
     filter: brightness(0.75) drop-shadow(5px 7px 4px rgb(0 0 0 / 0.5));
-  }
-
-  /* Styles for the "What's new" section */
-  .whats-new {
-    margin-top: 30px;
-  }
-
-  .whats-new h2 {
-    margin: 0 0 12px;
-    color: #3878c5;
-    font-size: 1.5em;
-    line-height: 1.2;
-  }
-
-  .whats-new ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .whats-new li {
-    padding: 10px 0;
-    border-bottom: 1px solid #d9d9d9;
-    overflow-wrap: anywhere;
-  }
-
-  .whats-new li:first-child {
-    padding-top: 0;
-  }
-
-  .whats-new li:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
-  }
-
-  .whats-new a {
-    color: #3878c5;
-    font-weight: bold;
-  }
-
-  .whats-new li div,
-  .whats-new > p {
-    margin: 4px 0 0;
   }
 
 </style>
