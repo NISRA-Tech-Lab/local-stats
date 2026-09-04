@@ -136,7 +136,7 @@
 		<p>The &lsquo;i&rsquo; button beside each statistic shows the date on which that statistic was last updated.</p>
 
 		<div class="div-grey-box new-datasets" aria-labelledby="new-datasets-heading">
-			<h3 id="new-datasets-heading">New Datasets</h3>
+			<h3 id="new-datasets-heading">Latest Updates</h3>
 
 			{#if data.new_datasets.length > 0}
 				<ul>
