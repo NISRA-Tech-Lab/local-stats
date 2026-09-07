@@ -507,10 +507,10 @@ async function handleClick() {
 	bind:this={row}
 >
 	<div class="blocktitle" on:click={changeAria}>
-		{i_button_info[id].title} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0d6efd" class="i-button" viewBox="0 0 20 20" aria-hidden="true">
-			<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-			<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-		</svg>
+		{i_button_info[id].title} <button
+    								type="button" class="info-btn" id="infoButton" aria-expanded="false" aria-controls="infoContent" aria-label="Show more information">
+    							  <i class="bi bi-info-circle" aria-hidden="true"></i>
+								  </button>
 	</div>
 </div>
 <div class="collapse" id="{id}-info">
@@ -569,5 +569,25 @@ async function handleClick() {
 
 	.show {
 		display: block !important;
+	}
+
+	.info-btn {
+  	width: 32px;
+  	height: 32px;
+  	padding: 0;
+  	background: transparent;
+  	color:#222222;
+  	border: none;
+  	display: inline-flex;
+  	align-items: center;
+  	justify-content: center;
+
+  	cursor: pointer;
+  	font-size: 20px;
+	}
+
+	.info-btn:hover {
+  	background-color: #732777;
+  	color:#fff;
 	}
 </style>
