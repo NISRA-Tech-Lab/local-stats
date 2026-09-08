@@ -1176,29 +1176,28 @@ function compareDensity (place) {
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Personal wellbeing</span>"
 			},
+			
 			box_3a: {
 				id: "lifeexpectancy",
 				year: pullYear("LE", data.place),
 				content: "<p>Male</p> <span class='text-big'>" + 
-					(check("LE.value.Males")).toLocaleString() +
-					"</span> years"+
-					"<p>Female</p> <span class='text-big'>" +
-					(check("LE.value.Females")).toLocaleString() + "</span> years",
+						Number(check("LE.value.Males")).toFixed(1) +
+						"</span> years"+
+						"<p>Female</p> <span class='text-big'>" +
+						Number(check("LE.value.Females")).toFixed(1) + "</span> years",
 				show: ["ni"]
 			},
-
 			box_3b: {
 				id: "lifeexpectancy",
 				year: pullYear("LE", data.place),
-				content: "<p>Male</p> <span class='text-big'>" + 
-					(check("LE.value.Males")).toLocaleString() +
-					"</span> years"+
-					"<span style='color: #1460aa'> (" + comp_short + " " + data.ni.data.LE.value.Males +") </span></p>"+
-						
-					"<p>Female</p> <span class='text-big'>" +
-					(check("LE.value.Females")).toLocaleString() + "</span> years"+
-					"<span style='color: #1460aa'> (" + comp_short + " " + data.ni.data.LE.value.Females +") </span></p>",
-				show: [ "lgd", "dea"]
+				content: "<p>Male</p> <span class='text-big'>" +
+						Number(check("LE.value.Males")).toFixed(1) +
+						"</span> years"+
+						"<span style='color: #1460aa'> (" + comp_short + " " + Number(data.ni.data.LE.value.Males).toFixed(1) +") </span></p>"+
+						"<p>Female</p> <span class='text-big'>" +
+						Number(check("LE.value.Females")).toFixed(1) + "</span> years"+
+						"<span style='color: #1460aa'> (" + comp_short + " " + Number(data.ni.data.LE.value.Females).toFixed(1) +") </span></p>",
+				show: ["lgd", "dea"]
 			},
 			box_3c: {
 				id: "lifeexpectancy",
@@ -1207,7 +1206,7 @@ function compareDensity (place) {
 				i_button: false,
 				title: "<span style='font-size: 0.88em'>Life expectancy at birth</span>"
 			},
-
+			
 			box_4: {
 				id: "carers",
 				content: "GroupChart",
