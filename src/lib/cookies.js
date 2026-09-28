@@ -134,7 +134,7 @@ export function initCookieConsent(options = {}) {
     <div class="container">
       <p>
         <strong>
-          Cookies on the NISRA Data Explorer
+          Cookies on the NISRA Local Statistics Explorer
         </strong>
       </p>
 
